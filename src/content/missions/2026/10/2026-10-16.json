@@ -232,7 +232,7 @@
   ],
   "outcome": {
     "articleId": "article-20261016-001",
-    "githubCommit": null,
+    "githubCommit": "90d3704be8bc5d3ce1b16145253f40efc10e8818",
     "githubPullRequest": null,
     "deploymentUrl": null,
     "publicationStatus": "in_review"
