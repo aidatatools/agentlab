@@ -23,7 +23,7 @@ Daily mission ID, timezone-aware research window, source constraints, tool budge
 4. Record the concrete skill version and executionId in the parent mission JSON.
 
 ## Output contract
-MD/MDX and fully populated verified metadata, alt text, appropriately cited sources.
+MD/MDX and fully populated verified metadata, alt text, appropriately cited sources. For eligible+verified+score≥80 candidates, set `status: published` with real `publishedAt` and `humanReviewed: true` in the daily PR; otherwise write no article. Demo samples stay `demo`.
 
 ## Acceptance / safety
 Do not invent quotations, timestamps, metrics or citations.

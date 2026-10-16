@@ -18,6 +18,12 @@
 - AI-generated concept art must be visibly labeled illustration, particularly for product announcements.
 - YouTube third-party embeds only for valid publicly embeddable URLs; self-upload is **disabled by default**, only with OAuth, rights review and account owner approval.
 
+## Publication status in the daily PR
+
+- Qualifying article (eligible + verified + score ≥ 80): write `status: published` in the daily PR so `/discoveries/` goes live on merge. `humanReviewed: true` means the designated reviewer will merge after checking (e.g. on a DEV computer); do not leave qualifying articles at `review`.
+- Mission in the same PR: `awaiting_review`. A later follow-up PR after a real DigitalOcean smoke test may set mission `published`.
+- Demo samples stay `demo` and are excluded from KPIs.
+
 ## Auditing
 
 - Mission record always captures goal, agent/model, candidates, selected score, actual skill versions, timeline, evidence pointers, CI checks, outcomes, run costs if measured, human interventions and lessons.

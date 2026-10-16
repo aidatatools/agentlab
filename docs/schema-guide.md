@@ -2,7 +2,7 @@
 
 ## Articles
 
-`src/content/articles/YYYY/MM/article-slug.md` frontmatter must match `schemas/article.schema.json` as well as `src/content.config.ts`. The body is Markdown/MDX; all source references belong in `sources`. `missionId` and `candidateId` join the run and discovery dataset. `status: demo` is visibly tagged and excluded from publication statistics. `status: published` requires factualStatus verified and humanReviewed true under this MVP policy.
+`src/content/articles/YYYY/MM/article-slug.md` frontmatter must match `schemas/article.schema.json` as well as `src/content.config.ts`. The body is Markdown/MDX; all source references belong in `sources`. `missionId` and `candidateId` join the run and discovery dataset. `status: demo` is visibly tagged and excluded from publication statistics. `status: published` requires factualStatus verified and humanReviewed true. Qualifying daily articles should ship as `published` in the daily PR (merge = human review); demo stays `demo`.
 
 ## Missions
 

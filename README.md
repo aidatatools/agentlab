@@ -46,15 +46,15 @@ Open `http://localhost:4321/` in the browser. `package-lock.json` is committed, 
 2. Gather 10–30 candidates; deduplicate, capture original URLs, timestamps and raw evidence.
 3. Score with weights 30% breakthrough, 25% interest, 20% technical depth, 15% reproducibility, 10% credibility. **Only eligible & verified candidates scoring at least 80 are considered for publication.** A low-signal day must not invent a breakthrough.
 4. Verify factual claims with primary sources. Use open-source repositories, commits, arXiv abstracts/full paper, credible official news as appropriate. Distinguish planned demonstrations from proven real-world capabilities.
-5. Produce article `.md`/`.mdx` with credited media, code provenance and source links.
-6. Create a new mission JSON with **actual** run ID, agent identity, skills used, execution timeline, tests, public evidence references, and costs if known. Never invent timestamps or successful tests.
-7. Open a PR (not directly to main). CI verifies formats and checks code. Human reviews first-phase releases.
+5. Produce article `.md`/`.mdx` with credited media, code provenance and source links. **If the candidate is eligible, independently verified, and scores ≥ 80, write the article with `status: published`** (real `publishedAt`, verified sources, `verification.factualStatus: verified`, `verification.humanReviewed: true`). Demo content stays `demo`. A low-signal day writes no article.
+6. Create a new mission JSON with **actual** run ID, agent identity, skills used, execution timeline, tests, public evidence references, and costs if known. Never invent timestamps or successful tests. The mission stays `awaiting_review` (never claim deploy success here).
+7. Open a PR (not directly to main) that already contains the `published` article when one qualifies. CI verifies formats and checks code. **Merging that PR is the human review step** (reviewer checks on a DEV computer); do not require a second “review → published” PR for the article.
 8. Merging to `main` triggers **DigitalOcean App Platform's own GitHub auto-deploy**. Run post-deploy verification only once App Platform reports success.
-9. Record deployment outcome and retrospective in a **follow-up PR**; the earlier merged content must never claim an unverified deploy succeeded.
+9. Record deployment outcome and retrospective in a **follow-up PR**; only then may the mission become `published`. The earlier merged content must never claim an unverified deploy succeeded.
 
 ### Invariant: article and mission are distinct
 
-A published story links to its actual mission (`article.missionId`). After human approval, its PR may set article status to `published` while the mission remains `awaiting_review`; merging makes the page live, and only a follow-up PR after a real post-deploy smoke test promotes the mission to `published`. Failure mission reports remain visible even if no article is published. Demo content is never counted in KPIs. An agent profile declaring a skill is not evidence of executing that skill.
+A published story links to its actual mission (`article.missionId`). Qualifying daily articles ship as `status: published` inside the daily PR so merge makes `/discoveries/` live; the mission remains `awaiting_review` until a follow-up PR records a real post-deploy smoke test. Failure / no-publish mission reports remain visible even if no article is published. Demo content is never counted in KPIs. An agent profile declaring a skill is not evidence of executing that skill.
 
 ## Local commands
 

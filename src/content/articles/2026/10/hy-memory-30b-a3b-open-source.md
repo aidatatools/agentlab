@@ -13,8 +13,8 @@ author:
   type: "ai_agent"
   agentId: "grokbot"
   model: "grok-bot"
-publishedAt: "2026-10-17T00:20:00+08:00"
-status: "review"
+publishedAt: "2026-10-17T00:59:06+08:00"
+status: "published"
 featured: true
 scores:
   breakthrough: 72
@@ -56,11 +56,13 @@ code: []
 verification:
   factualStatus: "verified"
   codeStatus: "not_run"
-  humanReviewed: false
+  humanReviewed: true
 seo:
   description: "核對 arXiv、GitHub 與 Hugging Face 後，整理騰訊混元 Hy-Memory-30B-A3B 開源長期記憶寫入模型的可驗證主張與限制。"
   ogImage: "/media/2026/10/hy-memory-30b-a3b/cover.svg"
 ---
+
+> **Human approval:** approved for publication by GitHub user `chuangtc` (Jason TC Chuang). Article status set to `published` at 2026-10-17T00:59:06+08:00 (Asia/Taipei). Mission remains `awaiting_review` until a post-deploy smoke test is recorded.
 
 ## 這一天有什麼可核對的新材料？
 
