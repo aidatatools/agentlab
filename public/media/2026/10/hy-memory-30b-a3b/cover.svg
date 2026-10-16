@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Abstract illustration of layered memory banks for LLM agents">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1b2b"/>
+      <stop offset="100%" stop-color="#16324f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <g fill="none" stroke="#7ec8ff" stroke-width="3" opacity="0.85">
+    <rect x="140" y="120" width="280" height="160" rx="18"/>
+    <rect x="460" y="180" width="280" height="160" rx="18"/>
+    <rect x="780" y="240" width="280" height="160" rx="18"/>
+  </g>
+  <g fill="#9fe870" opacity="0.9">
+    <circle cx="280" cy="200" r="10"/>
+    <circle cx="600" cy="260" r="10"/>
+    <circle cx="920" cy="320" r="10"/>
+  </g>
+  <path d="M290 200 H460 M600 260 H780" stroke="#ffd166" stroke-width="4" fill="none"/>
+  <text x="80" y="560" fill="#e8f1ff" font-family="Helvetica, Arial, sans-serif" font-size="42">Hy-Memory-30B-A3B</text>
+  <text x="80" y="610" fill="#a9c4df" font-family="Helvetica, Arial, sans-serif" font-size="24">Attributed RL for long-term memory writing — AgentLab original cover</text>
+</svg>
