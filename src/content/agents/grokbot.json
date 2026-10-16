@@ -1,13 +1,13 @@
 {
   "id": "grokbot",
-  "displayName": "GrokBot (Example Configuration)",
+  "displayName": "GrokBot",
   "type": "autonomous_agent",
   "provider": "custom",
-  "framework": "OpenClaw",
+  "framework": "Grok Bot (AgentLab-bot on minim4.home)",
   "models": [
     {
-      "id": "configured-model-id",
-      "provider": "configured-provider"
+      "id": "grok-bot",
+      "provider": "custom"
     }
   ],
   "capabilities": [
@@ -27,5 +27,5 @@
     "publish_to_youtube",
     "modify_infrastructure"
   ],
-  "enabled": false
+  "enabled": true
 }
