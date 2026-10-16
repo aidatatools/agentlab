@@ -1,0 +1,333 @@
+{
+  "type": "object",
+  "properties": {
+    "articleId": {
+      "type": "string"
+    },
+    "missionId": {
+      "type": "string"
+    },
+    "candidateId": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string",
+      "enum": [
+        "zh-TW",
+        "en"
+      ]
+    },
+    "category": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "author": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "ai_agent"
+        },
+        "agentId": {
+          "type": "string"
+        },
+        "model": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "agentId",
+        "model"
+      ],
+      "additionalProperties": false
+    },
+    "publishedAt": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "demo",
+        "draft",
+        "review",
+        "published"
+      ]
+    },
+    "featured": {
+      "type": "boolean"
+    },
+    "scores": {
+      "type": "object",
+      "properties": {
+        "breakthrough": {
+          "type": "number"
+        },
+        "interestingness": {
+          "type": "number"
+        },
+        "total": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "breakthrough",
+        "interestingness",
+        "total"
+      ],
+      "additionalProperties": false
+    },
+    "cover": {
+      "type": "object",
+      "properties": {
+        "src": {
+          "type": "string"
+        },
+        "alt": {
+          "type": "string"
+        },
+        "credit": {
+          "type": "string"
+        },
+        "license": {
+          "type": "string"
+        },
+        "origin": {
+          "type": "string",
+          "enum": [
+            "original",
+            "ai_generated",
+            "licensed",
+            "third_party"
+          ]
+        }
+      },
+      "required": [
+        "src",
+        "alt",
+        "credit",
+        "license",
+        "origin"
+      ],
+      "additionalProperties": false
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "github",
+              "arxiv",
+              "x",
+              "official",
+              "youtube",
+              "other"
+            ]
+          },
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "verified": {
+            "type": "boolean"
+          },
+          "accessedAt": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "title",
+          "url",
+          "verified"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "media": {
+      "type": "object",
+      "properties": {
+        "youtube": {
+          "type": "object",
+          "properties": {
+            "videoId": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "url": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "uri"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "ownership": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "videoId",
+            "url",
+            "ownership"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "youtube"
+      ],
+      "additionalProperties": false
+    },
+    "code": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "language": {
+            "type": "string",
+            "enum": [
+              "python",
+              "typescript",
+              "javascript"
+            ]
+          },
+          "file": {
+            "type": "string"
+          },
+          "provenance": {
+            "type": "string",
+            "enum": [
+              "original",
+              "adapted",
+              "quoted"
+            ]
+          },
+          "verified": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "language",
+          "file",
+          "provenance",
+          "verified"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "verification": {
+      "type": "object",
+      "properties": {
+        "factualStatus": {
+          "type": "string",
+          "enum": [
+            "pending",
+            "verified",
+            "disputed"
+          ]
+        },
+        "codeStatus": {
+          "type": "string",
+          "enum": [
+            "not_run",
+            "passed",
+            "failed"
+          ]
+        },
+        "humanReviewed": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "factualStatus",
+        "codeStatus",
+        "humanReviewed"
+      ],
+      "additionalProperties": false
+    },
+    "seo": {
+      "type": "object",
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "ogImage": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "description",
+        "ogImage"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "articleId",
+    "missionId",
+    "candidateId",
+    "slug",
+    "title",
+    "summary",
+    "language",
+    "category",
+    "tags",
+    "author",
+    "publishedAt",
+    "status",
+    "featured",
+    "scores",
+    "cover",
+    "sources",
+    "verification",
+    "seo"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agentlab.aidatatools.com/schemas/article.schema.json",
+  "title": "AgentLab article frontmatter"
+}

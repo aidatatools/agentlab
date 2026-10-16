@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-16",
+  "timezone": "Asia/Taipei",
+  "demo": true,
+  "discoveredBy": "none",
+  "candidates": [
+    {
+      "id": "candidate-demo-001",
+      "title": "Sample: hypothetical Python robotics repository",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://example.org/fake-robotics",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": null,
+        "license": null,
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 70,
+        "interestingness": 80,
+        "technicalDepth": 65,
+        "reproducibility": 40,
+        "credibility": 20
+      },
+      "eligibility": "rejected",
+      "reason": "Placeholder with unverified example URL: never publish as real research."
+    }
+  ],
+  "selectedCandidateId": null
+}

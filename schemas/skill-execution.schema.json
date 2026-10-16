@@ -1,0 +1,72 @@
+{
+  "type": "object",
+  "properties": {
+    "skill": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "executionId": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "planned",
+        "success",
+        "failed",
+        "skipped"
+      ]
+    },
+    "inputArtifact": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "outputArtifact": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "durationMs": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "evidenceIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "skill",
+    "version",
+    "executionId",
+    "status",
+    "inputArtifact",
+    "outputArtifact",
+    "durationMs",
+    "evidenceIds"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agentlab.aidatatools.com/schemas/skill-execution.schema.json"
+}

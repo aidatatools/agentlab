@@ -1,0 +1,75 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "provider": {
+      "type": "string"
+    },
+    "framework": {
+      "type": "string"
+    },
+    "models": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "provider": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "provider"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "allowedActions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "requireApproval": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "enabled": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "id",
+    "displayName",
+    "type",
+    "provider",
+    "framework",
+    "models",
+    "capabilities",
+    "allowedActions",
+    "requireApproval",
+    "enabled"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agentlab.aidatatools.com/schemas/agent.schema.json"
+}

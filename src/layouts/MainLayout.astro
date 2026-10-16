@@ -1,0 +1,31 @@
+---
+import '../styles/global.css';
+const { title='AgentLab', description='One breakthrough every day, backed by an auditable agent mission.' } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site ?? 'https://agentlab.aidatatools.com');
+---
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+  <title>{title} · AgentLab</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+</head>
+<body>
+  <header class="topbar wrap">
+    <a href="/" class="brand"><span class="brandicon">A<span class="branddot">•</span></span><span>AgentLab <small>AI DISCOVERY</small></span></a>
+    <nav aria-label="Main navigation">
+      <a href="/discoveries/">Discoveries</a>
+      <a href="/missions/">Missions</a>
+      <a href="/agents/">Agents</a>
+      <a href="/skills/">Skills</a>
+      <a href="/statistics/">Statistics</a>
+    </nav>
+    <span class="site-status"><span class="signal"></span> Evidence-first</span>
+  </header>
+  <main><slot /></main>
+  <footer class="footer wrap"><span>© AgentLab · Independent AI agent research demonstration</span><span>Transparent missions. Verified sources. No invented accomplishments.</span></footer>
+</body>
+</html>

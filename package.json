@@ -1,0 +1,26 @@
+{
+  "name": "agentlab-aidatatools",
+  "version": "2.0.0-mvp",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "astro dev --host 0.0.0.0",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "validate": "python3 scripts/validate_content.py",
+    "rank": "python3 scripts/rank_candidates.py --input data/candidates/2026-10-16.json",
+    "new:mission": "python3 scripts/create_mission.py"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^8.1.0",
+    "astro": "^7.4.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "typescript": "^5.7.3"
+  }
+}

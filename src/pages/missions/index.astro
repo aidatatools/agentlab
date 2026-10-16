@@ -1,0 +1,6 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import {getMissions,missionUrl} from '../../lib/site';
+const missions=await getMissions();
+---
+<MainLayout title="Mission Logs"><section class="wrap page-intro"><div class="kicker">Transparent execution</div><h1>Mission logs</h1><p class="lead">Every run has an objective, skills, evidence, test results and a retrospective. Failed attempts remain visible.</p></section><section class="wrap section"><div class="grid grid-2">{missions.map(m=><div class="panel"><span class="tag">{m.data.status}</span><p class="card-meta">{m.data.date} · {m.data.agent.id}</p><h3>{m.data.objective.goal}</h3><p>Sources: {m.data.objective.sources.join(' · ')}</p><a href={missionUrl(m.data.missionId)}>View trace & evidence →</a></div>)}</div></section></MainLayout>

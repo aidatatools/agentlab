@@ -1,0 +1,25 @@
+---
+import MainLayout from './MainLayout.astro';
+import type { CollectionEntry } from 'astro:content';
+const { article } = Astro.props as {article:CollectionEntry<'articles'>};
+---
+<MainLayout title={article.data.title} description={article.data.seo.description}>
+  <article class="wrap article-layout">
+    <a class="crumb" href="/discoveries/">← Discoveries</a>
+    {article.data.status==='demo' && <div class="warning">DEMONSTRATION CONTENT · Example data only. Not a verified breakthrough or published news.</div>}
+    <div class="eyebrow">{article.data.category} <span>•</span> {article.data.language} <span>•</span> {article.data.publishedAt.toLocaleDateString('en-CA')}</div>
+    <h1>{article.data.title}</h1>
+    <p class="lead">{article.data.summary}</p>
+    <img class="article-cover" src={article.data.cover.src} alt={article.data.cover.alt} loading="eager" />
+    <div class="credit">{article.data.cover.credit} · {article.data.cover.origin} · {article.data.cover.license}</div>
+    <div class="article-metrics"><span>Breakthrough: {article.data.scores.breakthrough}/100</span><span>Interestingness: {article.data.scores.interestingness}/100</span><span>Fact check: {article.data.verification.factualStatus}</span></div>
+    <div class="article-grid"><div class="article-body prose"><slot /></div>
+      <aside class="panel sidebar"><h3>Research sources</h3>
+        {article.data.sources.length === 0 ? <p>No verified sources yet.</p> : article.data.sources.map(s=><p><span class="tag">{s.type}</span> <a href={s.url} rel="noopener noreferrer" target="_blank">{s.title} ↗</a><br/><small>{s.verified?'Verified':'Not verified'}</small></p>)}
+        <hr/><h3>Agent trail</h3><a href={`/missions/${article.data.missionId}/`}>View mission →</a>
+        <p><small>Code review: {article.data.verification.codeStatus}</small></p>
+        {article.data.media?.youtube?.url && <p><a href={article.data.media.youtube.url} target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a></p>}
+      </aside>
+    </div>
+  </article>
+</MainLayout>

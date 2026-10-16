@@ -1,0 +1,207 @@
+{
+  "type": "object",
+  "properties": {
+    "date": {
+      "type": "string"
+    },
+    "timezone": {
+      "type": "string",
+      "const": "Asia/Taipei"
+    },
+    "demo": {
+      "type": "boolean"
+    },
+    "discoveredBy": {
+      "type": "string"
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "github_project",
+              "research_paper",
+              "technology_news",
+              "video",
+              "other"
+            ]
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "platform": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "publishedAt": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "retrievedAt": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "platform",
+                "url",
+                "publishedAt",
+                "retrievedAt"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "repository": {
+            "type": "object",
+            "properties": {
+              "language": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "stars": {
+                "anyOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "license": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "commit": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "language",
+              "stars",
+              "license",
+              "commit"
+            ],
+            "additionalProperties": false
+          },
+          "scores": {
+            "type": "object",
+            "properties": {
+              "breakthrough": {
+                "type": "number"
+              },
+              "interestingness": {
+                "type": "number"
+              },
+              "technicalDepth": {
+                "type": "number"
+              },
+              "reproducibility": {
+                "type": "number"
+              },
+              "credibility": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "breakthrough",
+              "interestingness",
+              "technicalDepth",
+              "reproducibility",
+              "credibility"
+            ],
+            "additionalProperties": false
+          },
+          "eligibility": {
+            "type": "string",
+            "enum": [
+              "pending_verification",
+              "eligible",
+              "rejected"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "type",
+          "sources",
+          "scores",
+          "eligibility",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "selectedCandidateId": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "date",
+    "timezone",
+    "demo",
+    "discoveredBy",
+    "candidates",
+    "selectedCandidateId"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agentlab.aidatatools.com/schemas/candidate.schema.json"
+}

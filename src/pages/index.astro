@@ -1,0 +1,33 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import { getMissions, getPublicArticles, getDemoArticles, articleUrl } from '../lib/site';
+const articles=await getPublicArticles();
+const demos=await getDemoArticles();
+const missions=(await getMissions()).filter(m=>m.data.status!=='demo');
+const featured=articles[0];
+---
+<MainLayout title="One Breakthrough Every Day" description="Daily AI discoveries with original-source verification and transparent agent execution logs.">
+  <section class="hero wrap">
+    <div class="eyebrow">Autonomous discovery / human-readable evidence</div>
+    <h1>One breakthrough.<br/><span class="gradient">Every single day.</span></h1>
+    <p class="lead">AI agents explore X, GitHub, and arXiv to find the most interesting idea worth sharing. Each article is accompanied by evidence, skills used, tests, and a transparent mission trail.</p>
+    <div class="hero-actions"><a class="btn btn-primary" href="/discoveries/">Explore discoveries ↗</a><a class="btn" href="/missions/">Inspect agent missions →</a></div>
+    <div class="eyebrowline">Research • Open-source code • Breakthrough technology • Verifiable AI workflows</div>
+  </section>
+  <section class="wrap section">
+    <div class="section-head"><div><span class="kicker">Daily spotlight</span><h2>Today's discovery</h2></div><a href="/discoveries/">See archive →</a></div>
+    {featured ? <div class="feature"><div><span class="tag">{featured.data.category}</span><h2>{featured.data.title}</h2><p class="muted">{featured.data.summary}</p><a class="btn btn-primary" href={articleUrl(featured.data.slug)}>Read researched story →</a></div><img class="feature-image" src={featured.data.cover.src} alt={featured.data.cover.alt}/></div> : <div class="feature"><div><span class="tag">Ready to launch</span><h2>The next discovery starts with the first verified mission.</h2><p class="muted">This is a working website starter. No unverified demo material is presented as breaking news. Start a daily mission, review its sources and approve publication.</p><a href="/missions/" class="btn">Explore mission records →</a></div><img class="feature-image" src="/media/2026/10/example-robotics/cover.svg" alt="Abstract editorial illustration of connected research findings"/></div>}
+  </section>
+  <section class="wrap section"><div class="section-head"><div><span class="kicker">Editorial intelligence</span><h2>How it works</h2><p>Evidence-first, agent-agnostic and auditable.</p></div></div>
+    <div class="grid">
+      <div class="panel"><span class="tag">01 / Research</span><h3>Discover & rank</h3><p>Collect candidates from primary sources. Deduplicate, score novelty and impact, and record why one candidate wins.</p></div>
+      <div class="panel"><span class="tag">02 / Verify</span><h3>Read the original</h3><p>Validate claims and dates. Check open-source licenses and code provenance; distinguish research from marketing claims.</p></div>
+      <div class="panel"><span class="tag">03 / Publish</span><h3>Show the evidence</h3><p>Publish richly formatted research while keeping the full mission trail, tools, skills, tests and retrospective.</p></div>
+    </div>
+  </section>
+  <section class="wrap section">
+    <div class="section-head"><div><span class="kicker">Public accountability</span><h2>Lab activity</h2></div><a href="/statistics/">Performance →</a></div>
+    <div class="statstrip"><div class="stat"><strong>{articles.length}</strong><span>Verified published articles</span></div><div class="stat"><strong>{missions.length}</strong><span>Recorded real missions</span></div><div class="stat"><strong>{missions.filter(m=>m.data.status==='published').length}</strong><span>Published missions</span></div><div class="stat"><strong>{demos.length}</strong><span>Clearly marked samples</span></div></div>
+  </section>
+  {demos.length>0 && <section class="wrap section"><div class="section-head"><div><span class="kicker">Sample content</span><h2>Preview the article experience</h2><p>Explicitly labeled placeholders — never counted as news.</p></div></div><div class="grid">{demos.map(a=><a class="panel card" href={articleUrl(a.data.slug)}><img class="card-cover" src={a.data.cover.src} alt={a.data.cover.alt}/><div class="card-meta">DEMO · {a.data.category}</div><h3>{a.data.title}</h3><p>{a.data.summary}</p><span>Open demonstration →</span></a>)}</div></section>}
+</MainLayout>

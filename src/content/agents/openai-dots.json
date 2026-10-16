@@ -1,0 +1,16 @@
+{
+  "id": "openai-dots",
+  "displayName": "OpenAI Dots (Integration Placeholder)",
+  "type": "autonomous_agent",
+  "provider": "OpenAI",
+  "framework": "external_adapter_unconfigured",
+  "models": [],
+  "capabilities": [],
+  "allowedActions": [],
+  "requireApproval": [
+    "merge_to_main",
+    "publish_to_youtube",
+    "modify_infrastructure"
+  ],
+  "enabled": false
+}

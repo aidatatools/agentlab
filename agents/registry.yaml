@@ -1,0 +1,14 @@
+# Configuration example, not proof that these providers have been connected.
+agents:
+  - id: grokbot
+    adapter: openclaw
+    enabled: false
+    repository_scope: agentlab-aidatatools
+  - id: openai-dots
+    adapter: unconfigured
+    enabled: false
+    note: Verify available provider permissions and tools before enabling.
+publication:
+  human_approval_required: true
+  direct_push_main: false
+  youtube_upload_enabled: false

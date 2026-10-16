@@ -1,0 +1,31 @@
+{
+  "id": "grokbot",
+  "displayName": "GrokBot (Example Configuration)",
+  "type": "autonomous_agent",
+  "provider": "custom",
+  "framework": "OpenClaw",
+  "models": [
+    {
+      "id": "configured-model-id",
+      "provider": "configured-provider"
+    }
+  ],
+  "capabilities": [
+    "web_research",
+    "github_tools",
+    "code_execution",
+    "content_authoring"
+  ],
+  "allowedActions": [
+    "read_public_sources",
+    "create_content",
+    "create_branch",
+    "open_pull_request"
+  ],
+  "requireApproval": [
+    "merge_to_main",
+    "publish_to_youtube",
+    "modify_infrastructure"
+  ],
+  "enabled": false
+}

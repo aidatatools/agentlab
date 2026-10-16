@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "mission-20261016-demo",
+  "date": "2026-10-16",
+  "timezone": "Asia/Taipei",
+  "status": "demo",
+  "objective": {
+    "goal": "Demonstrate an evidence-first AI research and publication workflow (no actual discovery performed).",
+    "sources": [
+      "x",
+      "github",
+      "arxiv"
+    ],
+    "deliverables": [
+      "Example article",
+      "Example skill trace",
+      "Validation evidence"
+    ]
+  },
+  "agent": {
+    "id": "grokbot",
+    "framework": "OpenClaw (illustrative)",
+    "model": "illustrative-no-model-executed",
+    "runId": null
+  },
+  "selection": {
+    "candidatesEvaluated": 0,
+    "selectedCandidateId": "candidate-demo-001",
+    "selectionScore": null,
+    "rankingArtifact": "data/candidates/2026-10-16.json"
+  },
+  "skillsUsed": [
+    {
+      "skill": "github-discovery",
+      "version": "1.0.0",
+      "status": "skipped",
+      "executionId": null
+    },
+    {
+      "skill": "fact-check",
+      "version": "1.0.0",
+      "status": "skipped",
+      "executionId": null
+    }
+  ],
+  "timeline": [],
+  "tests": [
+    {
+      "name": "Sample code local unit tests",
+      "status": "not_run",
+      "artifact": null
+    },
+    {
+      "name": "Live source verification",
+      "status": "not_run",
+      "artifact": null
+    },
+    {
+      "name": "Production deployment",
+      "status": "not_run",
+      "artifact": null
+    }
+  ],
+  "evidence": [],
+  "outcome": {
+    "articleId": "article-20261016-demo",
+    "githubCommit": null,
+    "githubPullRequest": null,
+    "deploymentUrl": null,
+    "publicationStatus": "not_published"
+  },
+  "metrics": {
+    "durationSeconds": null,
+    "tokens": null,
+    "estimatedCostUsd": null,
+    "humanInterventions": 0
+  },
+  "retrospective": {
+    "successes": [],
+    "failures": [],
+    "lessonsLearned": [
+      "Illustrative data must be clearly labeled and excluded from production KPIs."
+    ],
+    "nextActions": [
+      "Connect real agent runner and primary source APIs."
+    ]
+  }
+}

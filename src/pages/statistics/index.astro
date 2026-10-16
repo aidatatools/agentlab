@@ -1,0 +1,8 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';import {getMissions,getPublicArticles} from '../../lib/site';
+const missions=(await getMissions()).filter(m=>m.data.status!=='demo');const articles=await getPublicArticles();
+const completed=missions.filter(m=>m.data.status==='published');
+const costs=missions.map(m=>m.data.metrics.estimatedCostUsd).filter((n):n is number=>typeof n==='number');
+const cost=costs.length?costs.reduce((a,b)=>a+b,0).toFixed(2):'N/A';
+---
+<MainLayout title="Statistics"><section class="wrap page-intro"><div class="kicker">Measured, never invented</div><h1>AgentLab statistics</h1><p class="lead">Counts exclude demonstration content. Missing token and API cost fields are shown as unavailable, not as zero.</p></section><section class="wrap section"><div class="statstrip"><div class="stat"><strong>{articles.length}</strong><span>Published articles</span></div><div class="stat"><strong>{missions.length}</strong><span>Real mission records</span></div><div class="stat"><strong>{completed.length}</strong><span>Published missions</span></div><div class="stat"><strong>{cost}</strong><span>Reported total cost (USD)</span></div></div></section><section class="wrap section"><div class="empty">Visual analytics and agent-to-agent benchmarks become available after genuine mission records are collected.</div></section></MainLayout>

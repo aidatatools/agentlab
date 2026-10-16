@@ -1,0 +1,455 @@
+{
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "type": "string"
+    },
+    "missionId": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "timezone": {
+      "type": "string",
+      "const": "Asia/Taipei"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "demo",
+        "planned",
+        "running",
+        "awaiting_review",
+        "failed",
+        "published"
+      ]
+    },
+    "objective": {
+      "type": "object",
+      "properties": {
+        "goal": {
+          "type": "string"
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "deliverables": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "goal",
+        "sources",
+        "deliverables"
+      ],
+      "additionalProperties": false
+    },
+    "agent": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "framework": {
+          "type": "string"
+        },
+        "model": {
+          "type": "string"
+        },
+        "runId": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "framework",
+        "model",
+        "runId"
+      ],
+      "additionalProperties": false
+    },
+    "selection": {
+      "type": "object",
+      "properties": {
+        "candidatesEvaluated": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "selectedCandidateId": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "selectionScore": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "rankingArtifact": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "candidatesEvaluated",
+        "selectedCandidateId",
+        "selectionScore",
+        "rankingArtifact"
+      ],
+      "additionalProperties": false
+    },
+    "skillsUsed": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "skill": {
+            "type": "string"
+          },
+          "version": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "planned",
+              "success",
+              "failed",
+              "skipped"
+            ]
+          },
+          "executionId": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "skill",
+          "version",
+          "status",
+          "executionId"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "timeline": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string"
+          },
+          "tool": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "startedAt": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "finishedAt": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "evidenceIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "action",
+          "tool",
+          "status",
+          "startedAt",
+          "finishedAt",
+          "evidenceIds"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "tests": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "not_run",
+              "passed",
+              "failed",
+              "skipped"
+            ]
+          },
+          "artifact": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "name",
+          "status",
+          "artifact"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "ref": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "type",
+          "ref"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "outcome": {
+      "type": "object",
+      "properties": {
+        "articleId": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "githubCommit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "githubPullRequest": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "deploymentUrl": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "publicationStatus": {
+          "type": "string",
+          "enum": [
+            "not_published",
+            "in_review",
+            "published",
+            "failed"
+          ]
+        }
+      },
+      "required": [
+        "articleId",
+        "githubCommit",
+        "githubPullRequest",
+        "deploymentUrl",
+        "publicationStatus"
+      ],
+      "additionalProperties": false
+    },
+    "metrics": {
+      "type": "object",
+      "properties": {
+        "durationSeconds": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "tokens": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "estimatedCostUsd": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "humanInterventions": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "durationSeconds",
+        "tokens",
+        "estimatedCostUsd",
+        "humanInterventions"
+      ],
+      "additionalProperties": false
+    },
+    "retrospective": {
+      "type": "object",
+      "properties": {
+        "successes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "failures": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "lessonsLearned": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "nextActions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "successes",
+        "failures",
+        "lessonsLearned",
+        "nextActions"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "missionId",
+    "date",
+    "timezone",
+    "status",
+    "objective",
+    "agent",
+    "selection",
+    "skillsUsed",
+    "timeline",
+    "tests",
+    "evidence",
+    "outcome",
+    "metrics",
+    "retrospective"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agentlab.aidatatools.com/schemas/mission.schema.json",
+  "title": "AgentLab mission result"
+}

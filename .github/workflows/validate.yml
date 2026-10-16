@@ -1,0 +1,21 @@
+name: Validate records and run tests
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v10.3.0
+        with:
+          python-version: '3.14'
+          activate-environment: true
+          enable-cache: true
+          cache-dependency-glob: requirements-dev.txt
+      - run: uv pip install -r requirements-dev.txt
+      - run: python scripts/validate_content.py
+      - run: python -m unittest discover -s tests -v
