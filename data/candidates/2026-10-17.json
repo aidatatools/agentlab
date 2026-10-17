@@ -1,0 +1,681 @@
+{
+  "date": "2026-10-17",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "candidates": [
+    {
+      "id": "c20261017-deepseek-v41-flash-1017",
+      "title": "DeepSeek releases DeepSeek-V4.1-Flash-1017 open weights (MIT) with self-reported agentic/coding gains",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/deepseek_ai/status/2111375640717033777",
+          "publishedAt": "2026-10-17T08:35:54Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+          "publishedAt": "2026-10-17T02:40:38Z",
+          "retrievedAt": "2026-10-18T01:09:20+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/deepseek-ai/deepseek-recipe",
+          "publishedAt": "2026-09-10T05:36:48Z",
+          "retrievedAt": "2026-10-18T01:10:40+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": null,
+        "license": "MIT",
+        "commit": "1bae0e1088993b9b82de08f59de5be5a34e42170 (HF repo sha)"
+      },
+      "scores": {
+        "breakthrough": 70,
+        "interestingness": 95,
+        "technicalDepth": 72,
+        "reproducibility": 82,
+        "credibility": 90
+      },
+      "eligibility": "eligible",
+      "reason": "Verified against primary sources: official @deepseek_ai post (2026-10-17T08:35:54Z, in window); HF repo created 2026-10-17T02:40:38Z, sha 1bae0e1088993b9b82de08f59de5be5a34e42170, license MIT (card + API tag), 57 files incl. safetensors, inference/ and encoding/ code; config.json inspected (deepseek_v41, 384 routed + 1 shared experts, 6 active, 1M max positions). Card calls it a minor update; all benchmark numbers are self-reported and were not reproduced by AgentLab; still behind Opus 5 on HLE, Terminal-Bench 4.0, ProgramBench and NL2Repo. Tech report linked is for base V4.1-Flash (URL resolves, not read this run)."
+    },
+    {
+      "id": "c20261017-nvidia-dory1-4b",
+      "title": "NVIDIA Nemotron-Labs Dory1.0-4B looped (latent-recurrent) LM released on Hugging Face",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
+          "publishedAt": "2026-10-16T18:25:29Z",
+          "retrievedAt": "2026-10-18T01:09:20+08:00"
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF",
+          "publishedAt": "2026-10-16T16:25:01Z",
+          "retrievedAt": "2026-10-18T01:08:53+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/sakikoazu/status/2111430645243314592",
+          "publishedAt": "2026-10-17T12:14:28Z",
+          "retrievedAt": null
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": null,
+        "license": "OpenMDW-1.1",
+        "commit": "b366b87f762ea334ba3eb55912031baba1515810 (HF repo sha)"
+      },
+      "scores": {
+        "breakthrough": 68,
+        "interestingness": 75,
+        "technicalDepth": 80,
+        "reproducibility": 80,
+        "credibility": 88
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 75.95 < 80. Model card read: 4B looped nGPT with SWA/full attention, 1/2/4 loops from one checkpoint, last-loop KV caching, native NVFP4 pre-training, OpenMDW-1.1 license, release date October 16, 2026. Technically interesting but no paper read and no official NVIDIA X announcement located this run."
+    },
+    {
+      "id": "c20261017-x-reflection-beam-1",
+      "title": "Reflection Beam 1.0 (501B MoE / 23B active, Apache-2.0) open weights discussed on X",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/soycronus/status/2111147363444105567",
+          "publishedAt": "2026-10-16T17:28:49Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/sakikoazu/status/2111414447017193824",
+          "publishedAt": "2026-10-17T11:10:07Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
+          "publishedAt": "2026-10-07T19:52:01Z",
+          "retrievedAt": "2026-10-18T01:08:53+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 70,
+        "interestingness": 85,
+        "technicalDepth": 60,
+        "reproducibility": 75,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 72.5. HF repos created 2026-10-07..10-13 and last modified 2026-10-16T13:22Z, before the window; posts in window are third-party; official announcement not located; likely a pre-window release."
+    },
+    {
+      "id": "c20261017-x-anthropic-quantum-circuits",
+      "title": "Anthropic: Claude Mythos 5 designs quantum circuits improving on best published ones (STEM Fellows)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/AnthropicAI/status/2111152183240511640",
+          "publishedAt": "2026-10-16T17:47:58Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 75,
+        "interestingness": 85,
+        "technicalDepth": 60,
+        "reproducibility": 40,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 70.25. Official post in window; proprietary model; underlying paper/blog not read this run; may overlap prior candidate c20261016-ax-quantum-llm (arXiv 2610.22367), not confirmed."
+    },
+    {
+      "id": "c20261017-x-elorian-glimpse",
+      "title": "Elorian AI announces Glimpse, its first frontier visual reasoning model",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/ElorianAI/status/2111142036208501070",
+          "publishedAt": "2026-10-16T17:07:39Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 75,
+        "technicalDepth": 40,
+        "reproducibility": 30,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 55.75. Closed model via platform.elorian.ai; vendor benchmark claims only; no paper/weights."
+    },
+    {
+      "id": "c20261017-x-pplx-decider-v12",
+      "title": "Perplexity upgrades pplx-decider to v1.2 and flash-v1.2 (Apache-2.0 weights)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/denisyarats/status/2111171780249317798",
+          "publishedAt": "2026-10-16T19:05:50Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/perplexity-ai/pplx-decider-v1.2",
+          "publishedAt": "2026-10-15T07:40:00Z",
+          "retrievedAt": "2026-10-18T01:08:53+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 65,
+        "technicalDepth": 55,
+        "reproducibility": 80,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 62.25. Incremental version upgrade; HF repo (apache-2.0) created before window."
+    },
+    {
+      "id": "c20261017-x-nemotron-35-super-vl",
+      "title": "NVIDIA highlights partner post-training of Nemotron 3.5 Super VL",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/NVIDIAAI/status/2111216377935831403",
+          "publishedAt": "2026-10-16T22:03:03Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 70,
+        "technicalDepth": 50,
+        "reproducibility": 70,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 62.0. Partner showcase thread; model release date not verified to fall in window."
+    },
+    {
+      "id": "c20261017-x-openai-gpt6-pro-parallel-agents",
+      "title": "OpenAI: GPT-6 Pro / Astra Pro in ChatGPT get parallel multi-agent tasks",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/OpenAI/status/2111185504746213705",
+          "publishedAt": "2026-10-16T20:00:22Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/OpenAI/status/2111192259073094035",
+          "publishedAt": "2026-10-16T20:27:13Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 75,
+        "technicalDepth": 30,
+        "reproducibility": 20,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 49.75. Closed product update; no technical detail or reproducible artifact."
+    },
+    {
+      "id": "c20261017-x-china-ai-export-draft",
+      "title": "Reports: China MOFCOM/MOST draft export-control catalogue adds frontier AI models and agents",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/pranaykotas/status/2111300127852019955",
+          "publishedAt": "2026-10-17T03:35:51Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/Xiaoweisuper6/status/2111208016280449489",
+          "publishedAt": "2026-10-16T21:29:50Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 85,
+        "technicalDepth": 30,
+        "reproducibility": 10,
+        "credibility": 40
+      },
+      "eligibility": "pending_verification",
+      "reason": "Weighted 44.75. Policy story; primary MOFCOM/MOST document not retrieved this run; secondary posts only."
+    },
+    {
+      "id": "c20261017-x-deepmind-minecraft-repost",
+      "title": "Google DeepMind post: four Gemini 4 Argon agents beat Minecraft in 27 hours",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/GoogleDeepMind/status/2111127991401247033",
+          "publishedAt": "2026-10-16T16:11:50Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 80,
+        "interestingness": 95,
+        "technicalDepth": 70,
+        "reproducibility": 55,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Duplicate event of prior candidate c20261016-ax-minecraft-gemini4 (arXiv 2610.22319, already evaluated at 77.5); kept only for dedup traceability."
+    },
+    {
+      "id": "c20261017-x-stepfun-step5-preview",
+      "title": "StepFun Step 5 Preview open weights (600B / 27B active) promoted on X",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/CNopenmodels/status/2111264754547233188",
+          "publishedAt": "2026-10-17T01:15:17Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/stepfun-ai/Step-5-Preview",
+          "publishedAt": "2026-09-20T03:15:06Z",
+          "retrievedAt": "2026-10-18T01:08:53+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 75,
+        "technicalDepth": 60,
+        "reproducibility": 70,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 67.75. HF repo created 2026-09-20, last modified 2026-10-15: outside window; low-follower promoter account."
+    },
+    {
+      "id": "c20261017-gh-esp32-iphone-agent",
+      "title": "onehumanbeing/esp32-iphone-agent: AI agent drives a stock iPhone via a $7 ESP32",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/poweredbymuse/status/2111433185678741728",
+          "publishedAt": "2026-10-17T12:24:34Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/onehumanbeing/esp32-iphone-agent",
+          "publishedAt": "2026-10-11T19:10:25Z",
+          "retrievedAt": "2026-10-18T01:08:53+08:00"
+        }
+      ],
+      "repository": {
+        "language": "C",
+        "stars": 2975,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 85,
+        "technicalDepth": 55,
+        "reproducibility": 70,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 65.25. Repo created 2026-10-11 (2,975 stars, MIT, C): outside window; code not audited."
+    },
+    {
+      "id": "c20261017-x-akhaliq-omnicompass",
+      "title": "OmniCompass: holistic benchmark for omni-modal video grounding (paper link via @_akhaliq)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/_akhaliq/status/2111145194511012301",
+          "publishedAt": "2026-10-16T17:20:12Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 55,
+        "technicalDepth": 60,
+        "reproducibility": 50,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 52.25. Benchmark paper; arXiv ID not resolved this run (arXiv API returned 0 results for the window)."
+    },
+    {
+      "id": "c20261017-x-akhaliq-few-step-generation",
+      "title": "Few-Step Generation via Data-Space Iteration (paper link via @_akhaliq)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/_akhaliq/status/2111146269855146487",
+          "publishedAt": "2026-10-16T17:24:28Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 55,
+        "technicalDepth": 65,
+        "reproducibility": 50,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 54.75. Generative-modeling paper; abstract not read; arXiv ID not resolved this run."
+    },
+    {
+      "id": "c20261017-gh-leanrea",
+      "title": "aicodeking/leanrea: 8 KB CLI skill replacing REA for agentic reverse engineering",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/aicodeking/leanrea",
+          "publishedAt": "2026-10-17T02:53:24Z",
+          "retrievedAt": "2026-10-18T01:07:09+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 263,
+        "license": "MIT",
+        "commit": "09ba4aa0217f82cd880f855a60b877f59f39b22b"
+      },
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 60,
+        "technicalDepth": 40,
+        "reproducibility": 65,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 47.75. New repo (263 stars, MIT); self-reported benchmark claims; incremental tooling."
+    },
+    {
+      "id": "c20261017-gh-romulus",
+      "title": "remnient/romulus: Lean 4 hypervisor memory-ownership model with machine-checked isolation proofs",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/remnient/romulus",
+          "publishedAt": "2026-10-16T17:14:28Z",
+          "retrievedAt": "2026-10-18T01:07:09+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Lean",
+        "stars": 19,
+        "license": null,
+        "commit": "8bb13d7c1314317132dde887fd6f5d9d0d742ba9"
+      },
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 55,
+        "technicalDepth": 70,
+        "reproducibility": 60,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 54.75. Formal-methods repo (19 stars, no license); not AI-agent focused; proofs not checked."
+    },
+    {
+      "id": "c20261017-gh-tokenforge",
+      "title": "speedydivid/TokenForge: context-window optimization for AI coding agents",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/speedydivid/TokenForge",
+          "publishedAt": "2026-10-17T01:16:47Z",
+          "retrievedAt": "2026-10-18T01:07:09+08:00"
+        }
+      ],
+      "repository": {
+        "language": "JavaScript",
+        "stars": 30,
+        "license": null,
+        "commit": "da81bd42ee4fdf8d238b559ab574ecd2d5c12db0"
+      },
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 55,
+        "technicalDepth": 40,
+        "reproducibility": 45,
+        "credibility": 35
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 41.0. 30 stars, no license; 98% reduction claim is self-reported."
+    },
+    {
+      "id": "c20261017-gh-hy-memory-writer",
+      "title": "hermitdave/hy-memory-writer: Hermes Agent skill running Hy-Memory-30B-A3B on Apple Silicon MLX",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/hermitdave/hy-memory-writer",
+          "publishedAt": "2026-10-17T10:50:19Z",
+          "retrievedAt": "2026-10-18T01:07:09+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 1,
+        "license": "MIT",
+        "commit": "d899d088681f3a458b233b62a1a3d0d15394153e"
+      },
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 50,
+        "technicalDepth": 40,
+        "reproducibility": 60,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 41.0. Community wrapper (1 star) for already-covered Hy-Memory release."
+    },
+    {
+      "id": "c20261017-gh-tencentmusic-modus",
+      "title": "tencentmusic/modus: agent coding harness from requirement clarification to trusted delivery",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/tencentmusic/modus",
+          "publishedAt": "2026-10-17T03:30:27Z",
+          "retrievedAt": "2026-10-18T01:07:09+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 5,
+        "license": "NOASSERTION",
+        "commit": "b18625bca956b131f9ea61c5870879538043c60b"
+      },
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 55,
+        "technicalDepth": 50,
+        "reproducibility": 50,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 48.75. New org repo (5 stars, NOASSERTION license); early stage."
+    },
+    {
+      "id": "c20261017-gh-claude-code-v2-1-302",
+      "title": "anthropics/claude-code v2.1.302 release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.302",
+          "publishedAt": "2026-10-16T20:53:06Z",
+          "retrievedAt": "2026-10-18T01:07:57+08:00"
+        }
+      ],
+      "repository": {
+        "language": "TypeScript",
+        "stars": 151508,
+        "license": null,
+        "commit": "c017428c8c27e604840435048d5bce6a9a22c040"
+      },
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 60,
+        "technicalDepth": 35,
+        "reproducibility": 60,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 48.5. Routine patch release."
+    },
+    {
+      "id": "c20261017-gh-ollama-v0-40-6",
+      "title": "ollama/ollama v0.40.6 release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.6",
+          "publishedAt": "2026-10-16T22:00:46Z",
+          "retrievedAt": "2026-10-18T01:07:57+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Go",
+        "stars": 183604,
+        "license": "MIT",
+        "commit": "2476d5ead197abe04629651028f83d48dc75d2b2"
+      },
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 50,
+        "technicalDepth": 35,
+        "reproducibility": 75,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 46.75. Routine patch release."
+    },
+    {
+      "id": "c20261017-gh-goose-v1-55-0",
+      "title": "aaif-goose/goose v1.55.0 release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/aaif-goose/goose/releases/tag/v1.55.0",
+          "publishedAt": "2026-10-16T16:58:21Z",
+          "retrievedAt": "2026-10-18T01:07:57+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Rust",
+        "stars": 55362,
+        "license": "Apache-2.0",
+        "commit": "2bcb8583a18a0623eb78c9ed845d597ed99fae48"
+      },
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 50,
+        "technicalDepth": 40,
+        "reproducibility": 70,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 48.0. Incremental minor release."
+    },
+    {
+      "id": "c20261017-gh-deepseek-harness-rc2",
+      "title": "deepseek-ai/deepseek-harness dsh-v0.2.1-rc.2 pre-release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.1-rc.2",
+          "publishedAt": "2026-10-17T08:16:33Z",
+          "retrievedAt": "2026-10-18T01:07:57+08:00"
+        }
+      ],
+      "repository": {
+        "language": "TypeScript",
+        "stars": 251994,
+        "license": "MIT",
+        "commit": "687f282e8625c6b8d11ff58211a90524be2e4317"
+      },
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 60,
+        "technicalDepth": 45,
+        "reproducibility": 60,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 52.0. Release candidate; related to selected DeepSeek story but incremental."
+    },
+    {
+      "id": "c20261017-gh-langchain-core-1-6-12",
+      "title": "langchain-ai/langchain langchain-core==1.6.12 release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.12",
+          "publishedAt": "2026-10-16T19:28:44Z",
+          "retrievedAt": "2026-10-18T01:07:57+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 147982,
+        "license": "MIT",
+        "commit": "bd5b134d876ef47858beef27bd29c81eeda03293"
+      },
+      "scores": {
+        "breakthrough": 20,
+        "interestingness": 40,
+        "technicalDepth": 35,
+        "reproducibility": 75,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 42.75. Routine patch release."
+    }
+  ],
+  "selectedCandidateId": "c20261017-deepseek-v41-flash-1017"
+}

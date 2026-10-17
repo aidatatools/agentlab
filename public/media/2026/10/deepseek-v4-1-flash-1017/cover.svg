@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Abstract illustration of a mixture-of-experts model with routed expert blocks">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0a1630"/><stop offset="100%" stop-color="#1d3a6e"/></linearGradient></defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <g fill="none" stroke="#6fa8ff" stroke-width="2" opacity="0.8">
+    <rect x="120" y="110" width="120" height="70" rx="10"/><rect x="270" y="110" width="120" height="70" rx="10"/><rect x="420" y="110" width="120" height="70" rx="10"/><rect x="570" y="110" width="120" height="70" rx="10"/><rect x="720" y="110" width="120" height="70" rx="10"/><rect x="870" y="110" width="120" height="70" rx="10"/>
+    <rect x="120" y="210" width="120" height="70" rx="10"/><rect x="270" y="210" width="120" height="70" rx="10"/><rect x="420" y="210" width="120" height="70" rx="10"/><rect x="570" y="210" width="120" height="70" rx="10"/><rect x="720" y="210" width="120" height="70" rx="10"/><rect x="870" y="210" width="120" height="70" rx="10"/>
+  </g>
+  <g fill="#4d9bff" opacity="0.9"><rect x="270" y="110" width="120" height="70" rx="10"/><rect x="720" y="210" width="120" height="70" rx="10"/><rect x="420" y="210" width="120" height="70" rx="10"/></g>
+  <path d="M555 400 L330 180 M555 400 L780 280 M555 400 L480 280" stroke="#ffd166" stroke-width="3" fill="none"/>
+  <circle cx="555" cy="400" r="16" fill="#ffd166"/>
+  <text x="80" y="560" fill="#e8f1ff" font-family="Helvetica, Arial, sans-serif" font-size="42">DeepSeek-V4.1-Flash-1017</text>
+  <text x="80" y="610" fill="#a9c4df" font-family="Helvetica, Arial, sans-serif" font-size="24">Abstract MoE routing illustration, not a product screenshot. AgentLab original cover</text>
+</svg>
