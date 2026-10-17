@@ -1,0 +1,279 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "mission-20261017-001",
+  "date": "2026-10-17",
+  "timezone": "Asia/Taipei",
+  "status": "awaiting_review",
+  "objective": {
+    "goal": "Discover, score, verify and propose one outstanding AI/agent discovery for 2026-10-17 (Asia/Taipei), or document a no-publish decision.",
+    "sources": [
+      "x",
+      "github",
+      "arxiv"
+    ],
+    "deliverables": [
+      "Verified candidate batch",
+      "Optional article",
+      "Mission record",
+      "Pull request"
+    ]
+  },
+  "agent": {
+    "id": "grokbot",
+    "framework": "Grok Bot (AgentLab-bot on minim4.home)",
+    "model": "grok-bot",
+    "runId": "routine-9a1f041e-20261018T0106-minim4-daily-2026-10-17"
+  },
+  "selection": {
+    "candidatesEvaluated": 24,
+    "selectedCandidateId": "c20261017-deepseek-v41-flash-1017",
+    "selectionScore": 80.45,
+    "rankingArtifact": "data/candidates/2026-10-17.json"
+  },
+  "skillsUsed": [
+    {
+      "skill": "x-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-x-20261017-001"
+    },
+    {
+      "skill": "github-discovery",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-gh-20261017-001"
+    },
+    {
+      "skill": "arxiv-research",
+      "version": "1.0.0",
+      "status": "failed",
+      "executionId": "exec-ax-20261017-001"
+    },
+    {
+      "skill": "fact-check",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-fc-20261017-001"
+    },
+    {
+      "skill": "article-writing",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-aw-20261017-001"
+    },
+    {
+      "skill": "image-curation",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ic-20261017-001"
+    },
+    {
+      "skill": "site-publishing",
+      "version": "1.0.0",
+      "status": "planned",
+      "executionId": "exec-sp-20261017-001"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t1",
+      "action": "git checkout main, pull --ff-only, create branch daily/2026-10-17",
+      "tool": "git",
+      "status": "success",
+      "startedAt": "2026-10-18T01:07:05+08:00",
+      "finishedAt": "2026-10-18T01:07:05+08:00",
+      "evidenceIds": [
+        "ev-git-branch"
+      ]
+    },
+    {
+      "id": "t2",
+      "action": "Query arXiv API (cs.AI/LG/CL/MA/RO, submittedDate 202610161600-202610171600); first HTTP call returned empty body, HTTPS retry returned totalResults 0",
+      "tool": "curl",
+      "status": "failed",
+      "startedAt": "2026-10-18T01:07:07+08:00",
+      "finishedAt": "2026-10-18T01:07:42+08:00",
+      "evidenceIds": [
+        "ev-arxiv-xml"
+      ]
+    },
+    {
+      "id": "t3",
+      "action": "GitHub search for repos created in window and AI/agent topics; list releases of active agent repos",
+      "tool": "gh",
+      "status": "success",
+      "startedAt": "2026-10-18T01:07:07+08:00",
+      "finishedAt": "2026-10-18T01:07:57+08:00",
+      "evidenceIds": [
+        "ev-gh-new",
+        "ev-gh-releases"
+      ]
+    },
+    {
+      "id": "t4",
+      "action": "Public X search (search_posts_all, search_news) for open-weights releases, paper/repo links and official lab accounts",
+      "tool": "x.search_posts_all+x.search_news",
+      "status": "success",
+      "startedAt": "2026-10-18T01:08:00+08:00",
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-x-search"
+      ]
+    },
+    {
+      "id": "t5",
+      "action": "Verify via Hugging Face API/model cards (DeepSeek, NVIDIA Dory, Reflection, Perplexity, StepFun, Ai2) and GitHub repo/commit metadata",
+      "tool": "curl+gh",
+      "status": "success",
+      "startedAt": "2026-10-18T01:08:50+08:00",
+      "finishedAt": "2026-10-18T01:10:40+08:00",
+      "evidenceIds": [
+        "ev-hf",
+        "ev-verify"
+      ]
+    },
+    {
+      "id": "t6",
+      "action": "Write candidates JSON, rank, article, original cover SVG, scaffold mission with create_mission.py",
+      "tool": "python",
+      "status": "success",
+      "startedAt": "2026-10-18T01:13:20+08:00",
+      "finishedAt": "2026-10-18T01:13:20+08:00",
+      "evidenceIds": [
+        "ev-ranking"
+      ]
+    },
+    {
+      "id": "t7",
+      "action": "Run validate_content, unittest, astro check, astro build",
+      "tool": "python+npm",
+      "status": "success",
+      "startedAt": "2026-10-18T01:14:04+08:00",
+      "finishedAt": "2026-10-18T01:14:07+08:00",
+      "evidenceIds": [
+        "ev-validate",
+        "ev-unittest",
+        "ev-astro-check",
+        "ev-astro-build"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "python scripts/validate_content.py",
+      "status": "passed",
+      "artifact": ".reports/2026-10-17/validate.log"
+    },
+    {
+      "name": "python -m unittest discover -s tests -v",
+      "status": "passed",
+      "artifact": ".reports/2026-10-17/unittest.log"
+    },
+    {
+      "name": "npm run check",
+      "status": "passed",
+      "artifact": ".reports/2026-10-17/astro-check.log"
+    },
+    {
+      "name": "npm run build",
+      "status": "passed",
+      "artifact": ".reports/2026-10-17/astro-build.log"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-git-branch",
+      "type": "git",
+      "ref": "branch daily/2026-10-17 from origin/main@1d692c8"
+    },
+    {
+      "id": "ev-arxiv-xml",
+      "type": "http_response",
+      "ref": ".reports/2026-10-17/arxiv.xml (opensearch totalResults 0 for window; 2026-10-17 is a Saturday, submissions not yet announced)"
+    },
+    {
+      "id": "ev-gh-new",
+      "type": "http_response",
+      "ref": ".reports/2026-10-17/gh_new_repos.json (170 repos with >=5 stars created in window, mostly non-AI)"
+    },
+    {
+      "id": "ev-gh-releases",
+      "type": "http_response",
+      "ref": ".reports/2026-10-17/gh_releases_window.txt (15 releases in window across 22 tracked repos)"
+    },
+    {
+      "id": "ev-x-search",
+      "type": "api_response",
+      "ref": "x.search_posts_all x4 + x.search_news x1 within the 2026-10-17T17:08Z rate window; DeepSeek post 2111375640717033777"
+    },
+    {
+      "id": "ev-hf",
+      "type": "http_response",
+      "ref": ".reports/2026-10-17/hf_orgs.txt, ds_readme.md, dory_readme.md; HF API deepseek-ai/DeepSeek-V4.1-Flash-1017 sha 1bae0e1088993b9b82de08f59de5be5a34e42170"
+    },
+    {
+      "id": "ev-verify",
+      "type": "http_response",
+      "ref": ".reports/2026-10-17/gh_verify.txt (repo metadata and head/tag commit SHAs)"
+    },
+    {
+      "id": "ev-ranking",
+      "type": "local_command",
+      "ref": ".reports/2026-10-17/ranking.json (rank_candidates.py: proposed c20261017-deepseek-v41-flash-1017, 80.45)"
+    },
+    {
+      "id": "ev-validate",
+      "type": "local_command",
+      "ref": "python scripts/validate_content.py: passed (Content OK: 3 article(s), 3 mission(s), 2 agent(s), 52 candidate(s).) @ 2026-10-18T01:14:04+08:00"
+    },
+    {
+      "id": "ev-unittest",
+      "type": "local_command",
+      "ref": "python -m unittest discover -s tests -v: passed (OK) @ 2026-10-18T01:14:04+08:00"
+    },
+    {
+      "id": "ev-astro-check",
+      "type": "local_command",
+      "ref": "npm run check: passed (- 0 warnings) @ 2026-10-18T01:14:06+08:00"
+    },
+    {
+      "id": "ev-astro-build",
+      "type": "local_command",
+      "ref": "npm run build: passed (01:14:07 [build] Complete!) @ 2026-10-18T01:14:07+08:00"
+    }
+  ],
+  "outcome": {
+    "articleId": "article-20261017-001",
+    "githubCommit": null,
+    "githubPullRequest": null,
+    "deploymentUrl": null,
+    "publicationStatus": "in_review"
+  },
+  "metrics": {
+    "durationSeconds": 486.0,
+    "tokens": null,
+    "estimatedCostUsd": null,
+    "humanInterventions": 0
+  },
+  "retrospective": {
+    "successes": [
+      "X and GitHub returned real data; selected story verified against official X post, Hugging Face model card, config and file tree.",
+      "24 candidates scored; only one reached 80 and the rest keep explicit rejection reasons."
+    ],
+    "failures": [
+      "arXiv API returned 0 results for the Taipei-day window (weekend, not yet announced); first HTTP request returned an empty body before the HTTPS retry.",
+      "China AI export-control draft left pending_verification because the primary MOFCOM/MOST document was not retrieved.",
+      "Benchmark numbers for the selected model are self-reported and were not reproduced."
+    ],
+    "lessonsLearned": [
+      "Weekend windows can have no announced arXiv submissions; check announcement schedule rather than treating 0 as an outage.",
+      "candidate-demo-001 already lives in data/candidates/2026-10-16.json; candidate IDs must be unique across files, so it is kept there and not duplicated.",
+      "Hugging Face createdAt can predate an announcement (Reflection Beam, StepFun); use it to filter pre-window releases."
+    ],
+    "nextActions": [
+      "Reviewer chuangtc checks the article on DEV, then approves and merges.",
+      "After merge, run post-deploy smoke test in a follow-up PR before promoting the mission to published.",
+      "Re-check arXiv for the 2026-10-17 window after the next announcement if a paper story is needed."
+    ]
+  }
+}
