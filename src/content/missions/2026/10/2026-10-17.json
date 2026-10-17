@@ -70,7 +70,7 @@
     {
       "skill": "site-publishing",
       "version": "1.0.0",
-      "status": "planned",
+      "status": "success",
       "executionId": "exec-sp-20261017-001"
     }
   ],
@@ -156,6 +156,17 @@
         "ev-astro-check",
         "ev-astro-build"
       ]
+    },
+    {
+      "id": "t8",
+      "action": "Commit as agentlab-aidatatools-bot[bot], push daily/2026-10-17, open PR to main and request review from chuangtc",
+      "tool": "git+gh (GitHub App installation token)",
+      "status": "success",
+      "startedAt": "2026-10-18T01:14:44+08:00",
+      "finishedAt": "2026-10-18T01:14:50+08:00",
+      "evidenceIds": [
+        "ev-pr"
+      ]
     }
   ],
   "tests": [
@@ -240,12 +251,17 @@
       "id": "ev-astro-build",
       "type": "local_command",
       "ref": "npm run build: passed (01:14:07 [build] Complete!) @ 2026-10-18T01:14:07+08:00"
+    },
+    {
+      "id": "ev-pr",
+      "type": "github",
+      "ref": "https://github.com/aidatatools/agentlab/pull/6"
     }
   ],
   "outcome": {
     "articleId": "article-20261017-001",
-    "githubCommit": null,
-    "githubPullRequest": null,
+    "githubCommit": "8955d9bfbee1b9307d88f45c91754bcbf86c815a",
+    "githubPullRequest": "https://github.com/aidatatools/agentlab/pull/6",
     "deploymentUrl": null,
     "publicationStatus": "in_review"
   },
