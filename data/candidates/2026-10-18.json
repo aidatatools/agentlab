@@ -1,0 +1,599 @@
+{
+  "date": "2026-10-18",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "candidates": [
+    {
+      "id": "c20261018-gh-vllm-v0-32-0",
+      "title": "vllm-project/vllm v0.32.0 release (814 commits, NVFP4 KV cache, Model Runner V2, security fixes)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0",
+          "publishedAt": "2026-10-18T06:50:48Z",
+          "retrievedAt": "2026-10-19T01:02:37+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 94066,
+        "license": "Apache-2.0",
+        "commit": "5df63a7203cdb9328d824a27b682e77c7b9928be"
+      },
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 70,
+        "technicalDepth": 75,
+        "reproducibility": 85,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 67.75 < 80. Release notes read: 814 commits from 363 contributors; NVFP4 KV cache on more GPU generations, Model Runner V2 features, /v1/systemone structured-decision endpoint, three GHSA security fixes, Python 3.10 dropped. Throughput figures are from the PRs' own benchmarks and were not reproduced. Substantial but incremental infrastructure release."
+    },
+    {
+      "id": "c20261018-x-google-harness2",
+      "title": "Google Research Harness2 (Harness^2): recursive test-time harness optimization for agents, open source",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/aigclink/status/2111789021290430767",
+          "publishedAt": "2026-10-18T11:58:32Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/che_shr_cat/status/2111760115317502450",
+          "publishedAt": "2026-10-18T10:03:40Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/google-research/harness2",
+          "publishedAt": "2026-10-06T21:48:11Z",
+          "retrievedAt": "2026-10-19T01:05:13+08:00"
+        },
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.14224",
+          "publishedAt": "2026-10-09T18:34:25Z",
+          "retrievedAt": "2026-10-19T01:04:15+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 4717,
+        "license": "Apache-2.0",
+        "commit": "1cfe254e8d25b15f37048c3730134686abe60335"
+      },
+      "scores": {
+        "breakthrough": 70,
+        "interestingness": 85,
+        "technicalDepth": 80,
+        "reproducibility": 80,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 78.75 < 80 and pre-window. Repo google-research/harness2 (Apache-2.0, 4,717 stars) created 2026-10-06, last push 2026-10-14; arXiv 2610.14224v1 submitted 2026-10-09. The 2026-10-18 X wave is third-party coverage of an earlier release; no official Google post found in window. Paper not read in full this run."
+    },
+    {
+      "id": "c20261018-x-perplexity-space",
+      "title": "Perplexity open-sources SPACE agent sandbox platform (highlighted by NVIDIA AI)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/NVIDIAAI/status/2111488462264410553",
+          "publishedAt": "2026-10-17T16:04:13Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/perplexity_ai/status/2110778478312481167",
+          "publishedAt": null,
+          "retrievedAt": null
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/perplexityai/SPACE",
+          "publishedAt": "2026-10-01T18:43:46Z",
+          "retrievedAt": "2026-10-19T01:05:13+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Rust",
+        "stars": 1510,
+        "license": "Apache-2.0",
+        "commit": "57c7c0c47a73373a974c5b542d180599795465da"
+      },
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 70,
+        "technicalDepth": 60,
+        "reproducibility": 75,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 63.75. NVIDIA post is in window but quotes an earlier Perplexity announcement; repo created 2026-10-01 (Apache-2.0, Rust, 1,510 stars): pre-window release; code not audited."
+    },
+    {
+      "id": "c20261018-x-flux3-image-klein",
+      "title": "Black Forest Labs FLUX 3 Image Klein (5.6B) open weights",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/conradlotz/status/2111515348503535762",
+          "publishedAt": "2026-10-17T17:51:03Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
+          "publishedAt": "2026-10-13T10:58:40Z",
+          "retrievedAt": "2026-10-19T01:04:15+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 75,
+        "technicalDepth": 60,
+        "reproducibility": 75,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 67.0. HF repo created 2026-10-13, last modified 2026-10-16; partner launch posts dated 2026-10-15: pre-window. License tag is \"other\" (commercial conditions per secondary posts, not read this run)."
+    },
+    {
+      "id": "c20261018-x-jais-3",
+      "title": "MBZUAI / Inception Jais 3 open Arabic model family (900M to 375B) discussed on X",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/avynsrc/status/2111718690790023502",
+          "publishedAt": "2026-10-18T07:19:04Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/mradermacher/Jais-3-7B-GGUF",
+          "publishedAt": "2026-10-16T06:22:42Z",
+          "retrievedAt": "2026-10-19T01:04:15+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 70,
+        "technicalDepth": 55,
+        "reproducibility": 70,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 61.5. Third-party X post only; community GGUF quantizations already existed on 2026-10-16, so the release predates the window; official model repo and announcement not located this run."
+    },
+    {
+      "id": "c20261018-x-anthropic-expectations-gap",
+      "title": "Anthropic research report on the \"AI Expectations Gap\" (staff vs public expectations of AI by 2030)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/rohanpaul_ai/status/2111698696337514705",
+          "publishedAt": "2026-10-18T05:59:37Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/TraffAlex/status/2111834768136401145",
+          "publishedAt": "2026-10-18T15:00:19Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 80,
+        "technicalDepth": 40,
+        "reproducibility": 30,
+        "credibility": 60
+      },
+      "eligibility": "pending_verification",
+      "reason": "Weighted 49.0. Survey/report story; primary Anthropic report and its publication date not retrieved this run; no official @AnthropicAI post found in window (search returned 0 posts from major lab accounts)."
+    },
+    {
+      "id": "c20261018-x-meta-agents-learn-experience",
+      "title": "Meta paper: frontier agents differ widely in how they learn from experience (via @rohanpaul_ai)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/rohanpaul_ai/status/2111690655655162337",
+          "publishedAt": "2026-10-18T05:27:40Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 70,
+        "technicalDepth": 65,
+        "reproducibility": 50,
+        "credibility": 55
+      },
+      "eligibility": "pending_verification",
+      "reason": "Weighted 60.0. arXiv ID not resolved; title search found candidate papers but none confirmed as this Meta work; abstract not read."
+    },
+    {
+      "id": "c20261018-x-salesforce-8b-idea-generation",
+      "title": "Salesforce et al. train an 8B reasoning model to write multiple diverse research ideas in one generation (via @omarsar0)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/omarsar0/status/2111579013072433395",
+          "publishedAt": "2026-10-17T22:04:02Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 60,
+        "technicalDepth": 60,
+        "reproducibility": 50,
+        "credibility": 55
+      },
+      "eligibility": "pending_verification",
+      "reason": "Weighted 55.0. arXiv ID not resolved this run; abstract not read."
+    },
+    {
+      "id": "c20261018-x-jev-agent-harness",
+      "title": "JevAgentHarness: routing routine agent steps to small decision models (UIUC, Princeton, Google)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/DevJournaI/status/2111632621981540385",
+          "publishedAt": "2026-10-18T01:37:03Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/omarsar0/status/2111496448013725697",
+          "publishedAt": "2026-10-17T16:35:57Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 60,
+        "technicalDepth": 60,
+        "reproducibility": 50,
+        "credibility": 50
+      },
+      "eligibility": "pending_verification",
+      "reason": "Weighted 54.5. Paper link not resolved to an arXiv ID this run; secondary summaries only."
+    },
+    {
+      "id": "c20261018-x-jah-7",
+      "title": "RMDWLLC Jah 7.0 small open model (MIT) announced on X",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/richardbechols/status/2111522885734936789",
+          "publishedAt": "2026-10-17T18:21:00Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/RMDWLLC/Jah-7.0",
+          "publishedAt": "2026-10-17T15:25:36Z",
+          "retrievedAt": "2026-10-19T01:04:15+08:00"
+        }
+      ],
+      "repository": {
+        "language": null,
+        "stars": null,
+        "license": "MIT",
+        "commit": "f2b688d195e01767d9272f132cf6f18de443a61b (HF repo sha)"
+      },
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 40,
+        "technicalDepth": 30,
+        "reproducibility": 50,
+        "credibility": 25
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 35.0. HF repo created 2026-10-17T15:25Z (just before window), 0 likes; self-reported capabilities only; low credibility."
+    },
+    {
+      "id": "c20261018-gh-huashu-motion",
+      "title": "alchaincyf/huashu-motion: agent skill that produces launch videos with music and point-to-edit",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/alchaincyf/huashu-motion",
+          "publishedAt": "2026-10-18T12:19:27Z",
+          "retrievedAt": "2026-10-19T01:05:13+08:00"
+        }
+      ],
+      "repository": {
+        "language": "JavaScript",
+        "stars": 178,
+        "license": "MIT",
+        "commit": "3e927801e78b587878fb7dbb65d616326df00c21"
+      },
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 75,
+        "technicalDepth": 45,
+        "reproducibility": 60,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 54.75. New repo in window (178 stars, MIT, JavaScript); README read; claims not tested; creative tooling rather than a research breakthrough."
+    },
+    {
+      "id": "c20261018-gh-agent2api",
+      "title": "Agent2API/agent2api: local gateway exposing logged-in AI client sessions as an OpenAI-compatible API",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/Agent2API/agent2api",
+          "publishedAt": "2026-10-18T08:52:59Z",
+          "retrievedAt": "2026-10-19T01:02:34+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Rust",
+        "stars": 76,
+        "license": "NOASSERTION",
+        "commit": "072e3c71d253cd6dc265f3656d8cb481dd7c9f84"
+      },
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 45,
+        "technicalDepth": 40,
+        "reproducibility": 40,
+        "credibility": 25
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 35.25. New repo (76 stars, NOASSERTION license); wraps third-party client login sessions, raising terms-of-service and credential-safety concerns; not audited."
+    },
+    {
+      "id": "c20261018-gh-audio-studio-mcp",
+      "title": "kanaworksai-hue/audio-studio-mcp: local BGM and sound effects MCP server (Stable Audio 3 on MLX)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/kanaworksai-hue/audio-studio-mcp",
+          "publishedAt": "2026-10-18T11:13:56Z",
+          "retrievedAt": "2026-10-19T01:02:34+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 40,
+        "license": "MIT",
+        "commit": "cf3d60fcbfc41be3335291845a09b6cbf4885289"
+      },
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 55,
+        "technicalDepth": 45,
+        "reproducibility": 60,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 46.25. New repo (40 stars, MIT); wrapper tooling; not run."
+    },
+    {
+      "id": "c20261018-gh-cve-intel",
+      "title": "Fazmin/cve-intel: local CVE triage intelligence with an MCP server for agents",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/Fazmin/cve-intel",
+          "publishedAt": "2026-10-18T04:20:37Z",
+          "retrievedAt": "2026-10-19T01:02:34+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Rust",
+        "stars": 33,
+        "license": "Apache-2.0",
+        "commit": "8053ae9fd5461f4ddbc54d7ad47281f8c198ce47"
+      },
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 55,
+        "technicalDepth": 55,
+        "reproducibility": 60,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 48.25. New repo (33 stars, Apache-2.0, Rust); self-described features only; not run."
+    },
+    {
+      "id": "c20261018-gh-mawoagent",
+      "title": "Aoisop/mawoagent: auditable, reversible local agent runtime that turns feedback into skills",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/Aoisop/mawoagent",
+          "publishedAt": "2026-10-18T09:51:11Z",
+          "retrievedAt": "2026-10-19T01:02:34+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 18,
+        "license": "MIT",
+        "commit": "10e716c25e0492a12d80133531fdd3d72eaa73ec"
+      },
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 55,
+        "technicalDepth": 50,
+        "reproducibility": 55,
+        "credibility": 35
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 47.5. New repo (18 stars, MIT); early stage; not run."
+    },
+    {
+      "id": "c20261018-gh-sciforge",
+      "title": "sddzlsc/SciForge: local-first research agent harness from literature to GPU experiments and papers",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/sddzlsc/SciForge",
+          "publishedAt": "2026-10-18T12:03:32Z",
+          "retrievedAt": "2026-10-19T01:02:34+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 6,
+        "license": "MIT",
+        "commit": "6241debcc71a1a7945d5f5466ca4ec55f87ede2a"
+      },
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 55,
+        "technicalDepth": 50,
+        "reproducibility": 50,
+        "credibility": 30
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 46.25. New repo (6 stars, MIT); claims untested."
+    },
+    {
+      "id": "c20261018-gh-github-star-benchmarks",
+      "title": "repoboost-hq/github-star-benchmarks: dataset of GitHub star thresholds and cohorts",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/repoboost-hq/github-star-benchmarks",
+          "publishedAt": "2026-10-18T06:19:48Z",
+          "retrievedAt": "2026-10-19T01:02:34+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 73,
+        "license": "NOASSERTION",
+        "commit": "5803291566a12adaa643fc5628e8a0eb965f4f36"
+      },
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 55,
+        "technicalDepth": 40,
+        "reproducibility": 50,
+        "credibility": 35
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 41.75. New repo (73 stars, NOASSERTION); dataset provenance not verified; commercial star-service org."
+    },
+    {
+      "id": "c20261018-gh-ollama-v0-40-7-rc0",
+      "title": "ollama/ollama v0.40.7-rc0 pre-release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.7-rc0",
+          "publishedAt": "2026-10-18T00:28:57Z",
+          "retrievedAt": "2026-10-19T01:02:37+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Go",
+        "stars": 183720,
+        "license": "MIT",
+        "commit": "8be580ad0939c1ea528ba5ece9d585f095190e06"
+      },
+      "scores": {
+        "breakthrough": 20,
+        "interestingness": 40,
+        "technicalDepth": 30,
+        "reproducibility": 70,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 41.0. Release candidate patch."
+    },
+    {
+      "id": "c20261018-gh-gemini-cli-nightly-20261018",
+      "title": "google-gemini/gemini-cli v0.66.0-nightly.20261018 pre-release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.66.0-nightly.20261018.ged96faedf",
+          "publishedAt": "2026-10-18T01:34:41Z",
+          "retrievedAt": "2026-10-19T01:02:37+08:00"
+        }
+      ],
+      "repository": {
+        "language": "TypeScript",
+        "stars": 107435,
+        "license": "Apache-2.0",
+        "commit": "12426b715e07fdbbd5ebc92864fb5afa1cf0005b"
+      },
+      "scores": {
+        "breakthrough": 15,
+        "interestingness": 35,
+        "technicalDepth": 30,
+        "reproducibility": 60,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 36.75. Automated nightly build."
+    },
+    {
+      "id": "c20261018-gh-llama-cpp-b11713-b11719",
+      "title": "ggml-org/llama.cpp builds b11713 to b11719",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11719",
+          "publishedAt": "2026-10-18T11:11:37Z",
+          "retrievedAt": "2026-10-19T01:02:37+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11713",
+          "publishedAt": "2026-10-17T16:00:52Z",
+          "retrievedAt": "2026-10-19T01:02:37+08:00"
+        }
+      ],
+      "repository": {
+        "language": "C++",
+        "stars": 131601,
+        "license": "MIT",
+        "commit": "5aeac37a35b44fde4bdffaec9159f2fcb253b622 (b11719)"
+      },
+      "scores": {
+        "breakthrough": 20,
+        "interestingness": 40,
+        "technicalDepth": 35,
+        "reproducibility": 75,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 42.75. Seven routine automated builds in window."
+    }
+  ],
+  "selectedCandidateId": null
+}
