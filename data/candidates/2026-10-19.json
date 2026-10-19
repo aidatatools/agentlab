@@ -1,0 +1,689 @@
+{
+  "date": "2026-10-19",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "candidates": [
+    {
+      "id": "c20261019-x-discoveryrsi-27b",
+      "title": "Gen-Verse DiscoveryRSI-27B: open 27B hypothesis-proposing model and recursive discovery framework",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/abbyxuu/status/2112092344979968137",
+          "publishedAt": "2026-10-19T08:03:50Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.23839",
+          "publishedAt": "2026-10-16T17:56:35Z",
+          "retrievedAt": "2026-10-20T01:10:50+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/Gen-Verse/DiscoveryRSI",
+          "publishedAt": "2026-10-15T04:31:33Z",
+          "retrievedAt": "2026-10-20T01:12:34+08:00"
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/Gen-Verse/DiscoveryRSI-27B",
+          "publishedAt": "2026-10-17T09:32:53Z",
+          "retrievedAt": "2026-10-20T01:12:34+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 48,
+        "license": null,
+        "commit": "8f7214865548bc9b48170aa844e205341d24c4b9"
+      },
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 80,
+        "technicalDepth": 75,
+        "reproducibility": 65,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 71.25 < 80 and pre-window. arXiv 2610.23839v1 submitted 2026-10-16; repo created 2026-10-15 (no SPDX license detected, 48 stars); HF weights created 2026-10-17 with no license tag. README headline metric (6.3% actionable-reference rate vs 2.3-5.4% for other models) is self-reported and was not reproduced. In-window X coverage is a third-party article."
+    },
+    {
+      "id": "c20261019-x-moss-image",
+      "title": "OpenMOSS MOSS-Image 5B open text-to-image DiT (Apache-2.0) passes 673K downloads",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/MOSS_Global/status/2112154055019803078",
+          "publishedAt": "2026-10-19T12:09:03Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.23374",
+          "publishedAt": "2026-10-16T12:27:37Z",
+          "retrievedAt": "2026-10-20T01:10:50+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/OpenMOSS/MOSS-Image",
+          "publishedAt": "2026-10-16T01:18:13Z",
+          "retrievedAt": "2026-10-20T01:12:34+08:00"
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
+          "publishedAt": "2026-10-11T07:01:17Z",
+          "retrievedAt": "2026-10-20T01:12:34+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 927,
+        "license": "Apache-2.0",
+        "commit": "95559c93ce9f85967de70435deefc1153a1a2fab"
+      },
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 75,
+        "technicalDepth": 70,
+        "reproducibility": 80,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 70.75 < 80 and pre-window. Technical report arXiv 2610.23374v1 submitted 2026-10-16, repo created 2026-10-16 (Apache-2.0, 927 stars), HF SFT repo created 2026-10-11. The in-window official post is a download milestone (673K on the Comfy-Org repo, self-reported), not a new release."
+    },
+    {
+      "id": "c20261019-x-google-envharness",
+      "title": "Google Research EnvHarness: plug-in layer that reshapes static agent training environments",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/BenedictBeauty/status/2112102396830572613",
+          "publishedAt": "2026-10-19T08:43:47Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/InfoQ/status/2111174028736208991",
+          "publishedAt": "2026-10-16T19:14:46Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2608.19880",
+          "publishedAt": "2026-08-20T10:42:06Z",
+          "retrievedAt": "2026-10-20T01:10:50+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/google-research/envharness",
+          "publishedAt": "2026-08-07T14:59:24Z",
+          "retrievedAt": "2026-10-20T01:12:34+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 70,
+        "technicalDepth": 70,
+        "reproducibility": 70,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 66.5 < 80 and pre-window. arXiv 2608.19880 dates from 2026-08-20; repo google-research/envharness (Apache-2.0, 652 stars) created 2026-08-07; InfoQ covered the open-sourcing on 2026-10-16. In-window X post is third-party commentary."
+    },
+    {
+      "id": "c20261019-gh-cmu-reuf2f",
+      "title": "cmu-l3/reuF2F: benchmark of 244 open undergraduate-research conjectures formalized in Lean for coding agents",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/cmu-l3/reuF2F",
+          "publishedAt": "2026-10-18T20:53:01Z",
+          "retrievedAt": "2026-10-20T01:12:34+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Lean",
+        "stars": 13,
+        "license": null,
+        "commit": "e577757e57f120325201bb90c2cddf33653dfb60"
+      },
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 70,
+        "technicalDepth": 70,
+        "reproducibility": 75,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 66.25 < 80. Repo created in window (2026-10-18T20:53Z, 13 stars, license file not SPDX-detected though README says MIT). README read: 244 Lean problems, Docker-based eval, ProbXiv leaderboard. The linked preprint is a PDF on a personal site, not on arXiv; no results were verified this run."
+    },
+    {
+      "id": "c20261019-gh-sglang-v0-5-22",
+      "title": "sgl-project/sglang v0.5.22 release (950 PRs, new models, DeepSeek-V4.1 throughput gains, InstantTensor loader)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.22",
+          "publishedAt": "2026-10-19T02:55:19Z",
+          "retrievedAt": "2026-10-20T01:11:27+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 37429,
+        "license": "Apache-2.0",
+        "commit": "35ce313293052f8362e0829e7512bc9bc3d336c9"
+      },
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 65,
+        "technicalDepth": 70,
+        "reproducibility": 85,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 65.5 < 80. Release notes read: 950 PRs from 245 contributors, new LLM/VLM/diffusion models, up to 2.3x DeepSeek-V4.1 throughput per H200 and 10x faster loading via InstantTensor per the PRs. Figures are the project's own benchmarks and were not reproduced. Incremental infrastructure release."
+    },
+    {
+      "id": "c20261019-x-minimax-m31-flash",
+      "title": "MiniMax M3.1 Flash announced (formerly \"Space Bunny\"); weights promised for Oct 23",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/MiniMax_AI/status/2112150867868541221",
+          "publishedAt": "2026-10-19T11:56:23Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/MiniMax_AI/status/2112111925975032241",
+          "publishedAt": "2026-10-19T09:21:38Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/vercel_dev/status/2112181432307294550",
+          "publishedAt": "2026-10-19T13:57:50Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 85,
+        "technicalDepth": 50,
+        "reproducibility": 35,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 62.0 < 80. Official MiniMax post in window: API model, vendor-reported DeepSWE 74%, Automation-Bench 62%, BabyVision 91%, $0.15/$0.60 per 1M tokens; \"model weights will arrive on Oct 23\". No weights, model card or technical report yet (MiniMaxAI HF org has no new model in window), so nothing reproducible; revisit after weights ship."
+    },
+    {
+      "id": "c20261019-ax-hexashell",
+      "title": "HexaShell: thin harness letting VLM coding agents drive a bimanual robot (39.7% on 42 RoboDojo tasks)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/HuggingPapers/status/2112096949927051581",
+          "publishedAt": "2026-10-19T08:22:08Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.23479",
+          "publishedAt": "2026-10-16T13:56:16Z",
+          "retrievedAt": "2026-10-20T01:10:50+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 70,
+        "technicalDepth": 65,
+        "reproducibility": 55,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 62.25. arXiv 2610.23479v1 submitted 2026-10-16 (pre-window preprint, not peer reviewed); only the abstract was read."
+    },
+    {
+      "id": "c20261019-x-nvidia-kimodo",
+      "title": "NVIDIA Kimodo controllable human/robot motion diffusion model highlighted on Hugging Face",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/HuggingPapers/status/2111927791742525492",
+          "publishedAt": "2026-10-18T21:09:57Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2603.15546",
+          "publishedAt": "2026-03-16T17:09:30Z",
+          "retrievedAt": "2026-10-20T01:10:50+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/nv-tlabs/kimodo",
+          "publishedAt": "2026-03-16T20:19:30Z",
+          "retrievedAt": "2026-10-20T01:12:34+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 65,
+        "technicalDepth": 70,
+        "reproducibility": 70,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 62.25. Not new: arXiv 2603.15546 (March 2026), repo nv-tlabs/kimodo created 2026-03-16 (Apache-2.0, 3,822 stars); latest nvidia Kimodo HF checkpoints dated 2026-10-13. The in-window post is re-coverage."
+    },
+    {
+      "id": "c20261019-x-decision-model-agent-states",
+      "title": "Princeton + Google paper: 4B decision model trained on agent states solves 91.5% of agent tasks (per X summary)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/rohanpaul_ai/status/2112107486098473471",
+          "publishedAt": "2026-10-19T09:04:00Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 70,
+        "technicalDepth": 65,
+        "reproducibility": 50,
+        "credibility": 50
+      },
+      "eligibility": "pending_verification",
+      "reason": "Weighted 61.0. Only a third-party X summary was read; the paper title/arXiv ID was not resolved this run, so claims (69.5% vs 91.5%) are unverified."
+    },
+    {
+      "id": "c20261019-gh-mcp-servers-v2",
+      "title": "modelcontextprotocol/servers v2.0.0: reference MCP servers refactored to the modern-era spec",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/modelcontextprotocol/servers/releases/tag/v2.0.0",
+          "publishedAt": "2026-10-19T06:46:48Z",
+          "retrievedAt": "2026-10-20T01:11:27+08:00"
+        }
+      ],
+      "repository": {
+        "language": "TypeScript",
+        "stars": 91379,
+        "license": null,
+        "commit": "51b6382a3e827aceb6bce430b1208d69b93d95ea"
+      },
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 65,
+        "technicalDepth": 55,
+        "reproducibility": 85,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 61.0. Release notes read: all reference servers migrated to TS SDK v2 and the modern-era spec while still answering legacy clients; npm 2.0.0 and PyPI 2026.10.19 packages. Important for MCP developers but a maintenance/compatibility release."
+    },
+    {
+      "id": "c20261019-ax-bizbench",
+      "title": "Ant Group BizBench: long-horizon agent benchmark on real payments workflows",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/HuggingPapers/status/2112155933845442753",
+          "publishedAt": "2026-10-19T12:16:31Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.20424",
+          "publishedAt": "2026-10-14T16:16:51Z",
+          "retrievedAt": "2026-10-20T01:10:50+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 65,
+        "technicalDepth": 65,
+        "reproducibility": 65,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 60.0. arXiv 2610.20424v1 submitted 2026-10-14 (pre-window preprint); abstract read only."
+    },
+    {
+      "id": "c20261019-ax-carryon",
+      "title": "Pack Light, CarryOn: object-oriented context runtime for long-horizon agents (+5.8 on OSWorld 2.0, -52% tokens per X)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/HuggingPapers/status/2112034137708085614",
+          "publishedAt": "2026-10-19T04:12:32Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.18784",
+          "publishedAt": "2026-10-13T17:35:27Z",
+          "retrievedAt": "2026-10-20T01:10:50+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 65,
+        "technicalDepth": 65,
+        "reproducibility": 55,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 59.5. arXiv 2610.18784 v1 2026-10-13, v2 2026-10-14 (pre-window); OSWorld figures not checked against the paper body."
+    },
+    {
+      "id": "c20261019-ax-data-world",
+      "title": "Data World: multi-agent engine synthesizing data-analysis environments for RL (+20.9 on DABstep-Hard per X)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/omarsar0/status/2111936617699332566",
+          "publishedAt": "2026-10-18T21:45:02Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.21656",
+          "publishedAt": "2026-10-15T10:35:47Z",
+          "retrievedAt": "2026-10-20T01:10:50+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 60,
+        "technicalDepth": 70,
+        "reproducibility": 55,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 59.25. arXiv 2610.21656v1 submitted 2026-10-15 (pre-window); abstract read only."
+    },
+    {
+      "id": "c20261019-ax-memorilla",
+      "title": "Memorilla: latent semantic memory tokens for frozen LLMs (16 tokens beat full context on FactKG per X)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/omarsar0/status/2111879742454665582",
+          "publishedAt": "2026-10-18T17:59:02Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.21375",
+          "publishedAt": "2026-10-15T06:55:55Z",
+          "retrievedAt": "2026-10-20T01:10:50+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 65,
+        "technicalDepth": 65,
+        "reproducibility": 50,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 58.75. arXiv 2610.21375v1 submitted 2026-10-15 (pre-window); abstract read only."
+    },
+    {
+      "id": "c20261019-x-nace-drex-max",
+      "title": "Nace AI Drex Max: multimodal decision model for computer-use agents (API)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/NaceAI/status/2112175183448461683",
+          "publishedAt": "2026-10-19T13:33:00Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "official",
+          "url": "https://www.nace.ai/drex",
+          "publishedAt": null,
+          "retrievedAt": "2026-10-20T01:11:27+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 70,
+        "technicalDepth": 45,
+        "reproducibility": 30,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 52.5. Launch in window, but Drex Max is API-only; the vendor page reports Decision Index 67.59 (+6.9 over Jev 1.14) and 174 ms per screenshot decision, all self-reported. Open weights exist only for the older Drex 2.0 (HF nace-ai/drex-v2.0-Q8_0, created 2026-10-13, license \"other\")."
+    },
+    {
+      "id": "c20261019-x-cohere-agent-teams",
+      "title": "Cohere paper: coding-agent teams gain most when extra agents only research and plan (per X summary)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/rohanpaul_ai/status/2112048784457060471",
+          "publishedAt": "2026-10-19T05:10:44Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 60,
+        "technicalDepth": 60,
+        "reproducibility": 45,
+        "credibility": 50
+      },
+      "eligibility": "pending_verification",
+      "reason": "Weighted 52.25. Third-party X summary only; paper not located this run."
+    },
+    {
+      "id": "c20261019-gh-openhands-v1-28-0",
+      "title": "OpenHands v1.28.0 release (in-chat secret requests, verify-openhands known-bug contract)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.28.0",
+          "publishedAt": "2026-10-19T14:29:10Z",
+          "retrievedAt": "2026-10-20T01:11:27+08:00"
+        }
+      ],
+      "repository": {
+        "language": "TypeScript",
+        "stars": 91285,
+        "license": "MIT",
+        "commit": "f3caa2778553662c22715bfb52b5eb6edf975d5b"
+      },
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 50,
+        "technicalDepth": 45,
+        "reproducibility": 80,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 51.0. Release notes read: product features and fixes; incremental."
+    },
+    {
+      "id": "c20261019-gh-whatsapp-mcp",
+      "title": "finereli/whatsapp-mcp: read-only WhatsApp MCP server on Cloudflare Workers",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/finereli/whatsapp-mcp",
+          "publishedAt": "2026-10-18T21:01:54Z",
+          "retrievedAt": "2026-10-20T01:12:34+08:00"
+        }
+      ],
+      "repository": {
+        "language": "TypeScript",
+        "stars": 268,
+        "license": "MIT",
+        "commit": "64f1b3017931e4f6fe33eec4f95999a10f839b99"
+      },
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 65,
+        "technicalDepth": 40,
+        "reproducibility": 75,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 48.5. Top-starred AI repo created in window (268 stars, MIT), but a small integration with privacy implications; code not audited."
+    },
+    {
+      "id": "c20261019-gh-researchboost-agent",
+      "title": "AI4AI-for-Anything/ResearchBoost-Agent: agent that profiles and optimizes AI training code",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/AI4AI-for-Anything/ResearchBoost-Agent",
+          "publishedAt": "2026-10-18T18:50:51Z",
+          "retrievedAt": "2026-10-20T01:12:34+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 39,
+        "license": null,
+        "commit": "70f665bdb15e8e8e62822e29e235d291e2365324"
+      },
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 55,
+        "technicalDepth": 50,
+        "reproducibility": 40,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 46.25. Created in window (39 stars) with no license and no paper or benchmark evidence located."
+    },
+    {
+      "id": "c20261019-gh-tidelm",
+      "title": "raspy135/tideLM: LLM engine with adaptive expert loading",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/raspy135/tideLM",
+          "publishedAt": "2026-10-19T07:16:45Z",
+          "retrievedAt": "2026-10-20T01:12:34+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 13,
+        "license": "MIT",
+        "commit": "9c22cf9ce0a7825e2eaf3cd204df52db8f1cc2b7"
+      },
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 50,
+        "technicalDepth": 50,
+        "reproducibility": 55,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 45.25. New in window (13 stars, MIT); early project without independent benchmarks."
+    },
+    {
+      "id": "c20261019-hf-hy-memory-gguf",
+      "title": "tencent/Hy-Memory-30B-A3B-GGUF quantized weights",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/tencent/Hy-Memory-30B-A3B-GGUF",
+          "publishedAt": "2026-10-19T07:52:21Z",
+          "retrievedAt": "2026-10-20T01:07:30+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 20,
+        "interestingness": 40,
+        "technicalDepth": 30,
+        "reproducibility": 80,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 42.5. Official GGUF follow-up (Apache-2.0) to Hy-Memory-30B-A3B, already covered by article-20261016-001; not a new discovery."
+    },
+    {
+      "id": "c20261019-x-anthropic-public-benefit-fund",
+      "title": "Anthropic commits 5% of shares to a new Anthropic Public Benefit Fund",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/AnthropicAI/status/2111881963657412903",
+          "publishedAt": "2026-10-18T18:07:51Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 20,
+        "interestingness": 70,
+        "technicalDepth": 10,
+        "reproducibility": 0,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 34.5. Official post in window, but corporate governance news with no technical artifact; out of scope for AgentLab discoveries."
+    },
+    {
+      "id": "c20261019-gh-claude-code-v2-1-303",
+      "title": "anthropics/claude-code v2.1.303 release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.303",
+          "publishedAt": "2026-10-18T22:26:54Z",
+          "retrievedAt": "2026-10-20T01:11:27+08:00"
+        }
+      ],
+      "repository": {
+        "language": "TypeScript",
+        "stars": 152484,
+        "license": null,
+        "commit": "ef7bfdca55d906929fe6b782025b93758c325074"
+      },
+      "scores": {
+        "breakthrough": 10,
+        "interestingness": 30,
+        "technicalDepth": 10,
+        "reproducibility": 40,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 27.5. Release notes say only \"Bug fixes and reliability improvements\"."
+    }
+  ],
+  "selectedCandidateId": null
+}
