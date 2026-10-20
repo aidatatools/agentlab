@@ -1,0 +1,633 @@
+{
+  "date": "2026-10-20",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "candidates": [
+    {
+      "id": "c20261020-deepseek-deepinfer",
+      "title": "DeepSeek open-sources DeepInfer, its production inference framework for DeepSeek-V4.1-Flash (Apache-2.0)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/deepseek_ai/status/2112476496283775135",
+          "publishedAt": "2026-10-20T09:30:19Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/deepseek-ai/DeepInfer",
+          "publishedAt": "2026-10-20T04:09:42Z",
+          "retrievedAt": "2026-10-21T01:07:56+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/deepseek-ai/DeepInfer/blob/main/doc/inference_deployment_qa.md",
+          "publishedAt": "2026-10-20T11:03:13Z",
+          "retrievedAt": "2026-10-21T01:07:56+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 10495,
+        "license": "Apache-2.0",
+        "commit": "774ce244b87cc0eb8d4b94ab9f5de2ab22049f01"
+      },
+      "scores": {
+        "breakthrough": 78,
+        "interestingness": 92,
+        "technicalDepth": 88,
+        "reproducibility": 72,
+        "credibility": 92
+      },
+      "eligibility": "eligible",
+      "reason": "Weighted 84.0 >= 80 and verified. Official 4-post @deepseek_ai thread at 2026-10-20T09:30:19Z (in window). GitHub API: repo created 2026-10-16T07:47:23Z, first commit \"initial commit\" d585e65 at 2026-10-20T04:09:42Z (in window), HEAD 774ce24, Apache-2.0 LICENSE present, Python + C++, tests/, eval/ and examples/sweep/run_sweep.sh present. README limits: only DeepSeek-V4.1-Flash, NVIDIA SM100 and Huawei Ascend 950 only; KV cache system, E/P/D disaggregation and DP load balancing are not included. Throughput and 155T tokens/day figures are self-reported and were not reproduced (code not run)."
+    },
+    {
+      "id": "c20261020-x-ornith-1-5-122b",
+      "title": "Ornith-1.5-122B open-weight MoE (MIT) announced, claims SWE-bench Verified 0.845 on a single GPU",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/ornith_/status/2112553477457268799",
+          "publishedAt": "2026-10-20T14:36:13Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/ornith-ai/Ornith-1.5-122B",
+          "publishedAt": "2026-10-16T07:14:27Z",
+          "retrievedAt": "2026-10-21T01:07:56+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/ollama/status/2112565065958449435",
+          "publishedAt": "2026-10-20T15:22:15Z",
+          "retrievedAt": null
+        }
+      ],
+      "repository": {
+        "language": null,
+        "stars": null,
+        "license": "MIT",
+        "commit": "dfa07bab90e90746ffbfc0b0cba3126eb9265de2"
+      },
+      "scores": {
+        "breakthrough": 70,
+        "interestingness": 85,
+        "technicalDepth": 70,
+        "reproducibility": 80,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 74.75 < 80. Official announcement is in window, but the Hugging Face repo was created 2026-10-16 and its weight uploads are dated 2026-10-16 (pre-window); FP8/GGUF/MLX variants were created 2026-10-20. config architecture is Qwen3_5MoeForConditionalGeneration (~125B params), license tag MIT. All benchmark numbers are self-reported by a small org (19K followers); no paper or technical report found."
+    },
+    {
+      "id": "c20261020-x-meta-muse-glimmer-report",
+      "title": "Meta publishes technical report for Muse Glimmer 30B on-device agentic open-weight model",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/AIatMeta/status/2112265822274302066",
+          "publishedAt": "2026-10-19T19:33:10Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "official",
+          "url": "https://ai.meta.com/research/publications/muse-glimmer-30b-an-on-device-agentic-model/",
+          "publishedAt": null,
+          "retrievedAt": "2026-10-21T01:07:56+08:00"
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+          "publishedAt": "2026-08-09T17:51:35Z",
+          "retrievedAt": "2026-10-21T01:07:56+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 75,
+        "technicalDepth": 80,
+        "reproducibility": 75,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 71.5 < 80. Only the technical report is new in window; the weights were published 2026-08-09 (pre-window). The go.meta.me link resolves to the ai.meta.com publication page; report content was not read in full this run."
+    },
+    {
+      "id": "c20261020-arxiv-memt-1-0",
+      "title": "MemT-1.0: memory-native foundation models with Gated DeltaNet-2 and Mixture-of-Storage (arXiv 2610.26825)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.26825",
+          "publishedAt": "2026-10-19T17:54:35Z",
+          "retrievedAt": "2026-10-21T01:07:56+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/sakikoazu/status/2112515246929617213",
+          "publishedAt": "2026-10-20T12:04:18Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 70,
+        "interestingness": 70,
+        "technicalDepth": 80,
+        "reproducibility": 65,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 71.25 < 80. arXiv v1 submitted in window (74 authors); preprint, not peer reviewed. Abstract claims a released Nano/Flash model family; release artifacts were not checked. Only third-party X coverage found."
+    },
+    {
+      "id": "c20261020-arxiv-halcyon-t2i",
+      "title": "Halcyon: text-to-image models trained without language pretraining (arXiv 2610.26863)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.26863",
+          "publishedAt": "2026-10-19T17:59:59Z",
+          "retrievedAt": "2026-10-21T01:07:56+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 65,
+        "technicalDepth": 80,
+        "reproducibility": 60,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 68.25 < 80. In-window preprint (Stanford-affiliated authors per project page link); gFD comparisons and compute ratios are self-reported; no code checked."
+    },
+    {
+      "id": "c20261020-arxiv-gpt6-astra-visuotactile",
+      "title": "GPT-6 Astra as a native visuo-tactile policy for contact-rich manipulation (arXiv 2610.26846)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.26846",
+          "publishedAt": "2026-10-19T17:59:17Z",
+          "retrievedAt": "2026-10-21T01:07:56+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 75,
+        "technicalDepth": 70,
+        "reproducibility": 40,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 64.75 < 80. In-window preprint; results are in simulation (UniVTAC/OpenViTac) using a proprietary model, so reproducibility is limited."
+    },
+    {
+      "id": "c20261020-x-openai-low-resource-languages",
+      "title": "OpenAI: model advances for COBOL, Fortran and Visual Basic migration",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/OpenAI/status/2112310345863930168",
+          "publishedAt": "2026-10-19T22:30:05Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "official",
+          "url": "https://openai.com/index/low-resource-programming-languages/",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 80,
+        "technicalDepth": 55,
+        "reproducibility": 30,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 62.0 < 80. Official post in window, but proprietary models; the linked OpenAI page was not read, and benchmark figures seen only in an X news summary."
+    },
+    {
+      "id": "c20261020-x-cloudflare-clairic",
+      "title": "Cloudflare Clairic: System One extraction model in preview on Workers AI",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Cloudflare/status/2112244042658423149",
+          "publishedAt": "2026-10-19T18:06:38Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "official",
+          "url": "https://blog.cloudflare.com/clairic-extraction-model/",
+          "publishedAt": "2026-10-19T17:48:26Z",
+          "retrievedAt": "2026-10-21T01:07:56+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 70,
+        "technicalDepth": 60,
+        "reproducibility": 40,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 62.0 < 80. Official blog in window; preview only, open weights only promised (\"coming soon\"); no weights found on Hugging Face."
+    },
+    {
+      "id": "c20261020-arxiv-wildawm",
+      "title": "Agent World Model in the Wild (WildAWM): synthesizing computer-use agent environments (arXiv 2610.26828)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.26828",
+          "publishedAt": "2026-10-19T17:55:35Z",
+          "retrievedAt": "2026-10-21T01:07:56+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 65,
+        "technicalDepth": 70,
+        "reproducibility": 55,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 62.0 < 80. In-window preprint; environments built with open-source models; code release not checked."
+    },
+    {
+      "id": "c20261020-arxiv-harnesspro",
+      "title": "HarnessPro: recursive harness self-improvement with performance-cost Pareto selection (arXiv 2610.26770)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.26770",
+          "publishedAt": "2026-10-19T17:27:38Z",
+          "retrievedAt": "2026-10-21T01:07:56+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 65,
+        "technicalDepth": 70,
+        "reproducibility": 55,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 61.5 < 80. In-window preprint, under review; incremental over prior harness-RSI work (Harness2 evaluated 2026-10-18)."
+    },
+    {
+      "id": "c20261020-x-inception-mercury-3",
+      "title": "Inception Mercury 3 diffusion LLM launched (API)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/_inception_ai/status/2112236719068369299",
+          "publishedAt": "2026-10-19T17:37:31Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 75,
+        "technicalDepth": 55,
+        "reproducibility": 30,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 60.75 < 80. API-only launch with vendor-reported benchmarks; no weights or paper read."
+    },
+    {
+      "id": "c20261020-gh-openai-multilangbench",
+      "title": "openai/MultiLangBench: SQLite-based eval of models across programming languages",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/openai/MultiLangBench",
+          "publishedAt": "2026-10-19T20:58:00Z",
+          "retrievedAt": "2026-10-21T01:05:49+08:00"
+        }
+      ],
+      "repository": {
+        "language": "PLpgSQL",
+        "stars": 11,
+        "license": "Apache-2.0",
+        "commit": "995755bffdba3da60ca367448a1606ba0e50573a"
+      },
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 60,
+        "technicalDepth": 55,
+        "reproducibility": 75,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 59.25 < 80. Official OpenAI repo created in window (Apache-2.0, 11 stars); appears to accompany the low-resource languages post; code not run."
+    },
+    {
+      "id": "c20261020-gh-vercel-labs-fx0",
+      "title": "vercel-labs/fx0: lightweight design agent that writes a page as one HTML file",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/vercel-labs/fx0",
+          "publishedAt": "2026-10-19T17:27:02Z",
+          "retrievedAt": "2026-10-21T01:05:49+08:00"
+        }
+      ],
+      "repository": {
+        "language": "TypeScript",
+        "stars": 273,
+        "license": "Apache-2.0",
+        "commit": "876407c9b7eeb688603c27d12c8dcb9abdf488c3"
+      },
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 65,
+        "technicalDepth": 50,
+        "reproducibility": 75,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 58.5 < 80. Repo created in window (Apache-2.0, 273 stars); useful tool, not a breakthrough."
+    },
+    {
+      "id": "c20261020-gh-ernie-dcore",
+      "title": "ernie-research/DCore: fair comparison of speculative-decoding drafters (acceptance vs throughput)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/ernie-research/DCore",
+          "publishedAt": "2026-10-20T07:15:34Z",
+          "retrievedAt": "2026-10-21T01:05:49+08:00"
+        }
+      ],
+      "repository": {
+        "language": null,
+        "stars": 18,
+        "license": "MIT",
+        "commit": "d2272658ccc6e6ecd4d10853abd0d9c53633545a"
+      },
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 55,
+        "technicalDepth": 65,
+        "reproducibility": 65,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 57.0 < 80. Repo created in window (MIT, 18 stars); paper not located."
+    },
+    {
+      "id": "c20261020-x-elevenlabs-eleven-realtime",
+      "title": "ElevenLabs Eleven Realtime speech-to-speech models",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/ElevenLabs/status/2112550782063247521",
+          "publishedAt": "2026-10-20T14:25:30Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 70,
+        "technicalDepth": 45,
+        "reproducibility": 30,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 55.5 < 80. Proprietary API product; latency claims are vendor-reported."
+    },
+    {
+      "id": "c20261020-x-laminar-flow-1",
+      "title": "Laminar flow-1: open model trained with RL to detect silent agent errors in traces",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/nexbit_art/status/2112289582175936762",
+          "publishedAt": "2026-10-19T21:07:35Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 60,
+        "technicalDepth": 55,
+        "reproducibility": 60,
+        "credibility": 40
+      },
+      "eligibility": "pending_verification",
+      "reason": "Weighted 54.0 < 80. Only a third-party post found; official announcement and weights not located this run."
+    },
+    {
+      "id": "c20261020-gh-unsloth-v0-1-909",
+      "title": "unslothai/unsloth v0.1.909-beta (DeepSeek-V4.1 & FLUX-3) and 1-bit DeepSeek-V4.1-Flash-1017 GGUF",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.909-beta",
+          "publishedAt": "2026-10-19T16:21:58Z",
+          "retrievedAt": "2026-10-21T01:05:49+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/UnslothAI/status/2112212605930778830",
+          "publishedAt": "2026-10-19T16:01:42Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 60,
+        "technicalDepth": 45,
+        "reproducibility": 80,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 53.5 < 80. Incremental release; quantized-accuracy claim (~88.2% retained at 1-bit) is self-reported."
+    },
+    {
+      "id": "c20261020-x-skyfall-sky-00-1",
+      "title": "Skyfall AI unveils SKY 00-1 engineering world model",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/skyfallai/status/2112246201437553045",
+          "publishedAt": "2026-10-19T18:15:12Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 65,
+        "technicalDepth": 50,
+        "reproducibility": 20,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 52.75 < 80. Vendor announcement only; speed/cost claims vendor-reported; no paper or weights read."
+    },
+    {
+      "id": "c20261020-x-agent-eval-trends",
+      "title": "Survey post: Emerging Trends in AI Agent Evaluation (33 trends)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/steverab/status/2112281241240363492",
+          "publishedAt": "2026-10-19T20:34:26Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 65,
+        "technicalDepth": 55,
+        "reproducibility": 50,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 52.75 < 80. Survey; primary document not read this run."
+    },
+    {
+      "id": "c20261020-gh-harp",
+      "title": "dominikmartn/harp: run many Claude Code and Codex agents side by side (Warp fork)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/dominikmartn/harp",
+          "publishedAt": "2026-10-20T10:39:43Z",
+          "retrievedAt": "2026-10-21T01:05:49+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Rust",
+        "stars": 185,
+        "license": "AGPL-3.0",
+        "commit": "5db6279e1f85e18895dc2894954343c421a329ac"
+      },
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 60,
+        "technicalDepth": 45,
+        "reproducibility": 70,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 50.5 < 80. Repo created in window (AGPL-3.0, 185 stars); unofficial fork, developer tooling."
+    },
+    {
+      "id": "c20261020-gh-claude-code-v2-1-304",
+      "title": "anthropics/claude-code v2.1.304 release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.304",
+          "publishedAt": "2026-10-19T21:34:39Z",
+          "retrievedAt": "2026-10-21T01:05:49+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 20,
+        "interestingness": 50,
+        "technicalDepth": 30,
+        "reproducibility": 80,
+        "credibility": 95
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 46.0 < 80. Routine release."
+    },
+    {
+      "id": "c20261020-gh-transformers-v5-20-2",
+      "title": "huggingface/transformers v5.20.2 patch release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/huggingface/transformers/releases/tag/v5.20.2",
+          "publishedAt": "2026-10-19T17:45:37Z",
+          "retrievedAt": "2026-10-21T01:05:49+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 15,
+        "interestingness": 40,
+        "technicalDepth": 30,
+        "reproducibility": 85,
+        "credibility": 95
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 42.75 < 80. Patch release."
+    },
+    {
+      "id": "c20261020-gh-openhands-v1-28-1",
+      "title": "OpenHands v1.28.1 release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.28.1",
+          "publishedAt": "2026-10-19T17:09:42Z",
+          "retrievedAt": "2026-10-21T01:05:49+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 15,
+        "interestingness": 40,
+        "technicalDepth": 30,
+        "reproducibility": 80,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 41.5 < 80. Patch release (v1.28.0 evaluated 2026-10-19)."
+    },
+    {
+      "id": "c20261020-x-deployxa-lm",
+      "title": "Deployxa LM 1.0: 1.5B open-weights SRE copilot",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/deployxa/status/2112573330528014803",
+          "publishedAt": "2026-10-20T15:55:06Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 45,
+        "technicalDepth": 40,
+        "reproducibility": 50,
+        "credibility": 30
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 40.25 < 80. Very low engagement, self-reported claims, weights not checked."
+    }
+  ],
+  "selectedCandidateId": "c20261020-deepseek-deepinfer"
+}
