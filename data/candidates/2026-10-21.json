@@ -1,0 +1,651 @@
+{
+  "date": "2026-10-21",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "candidates": [
+    {
+      "id": "c20261021-php2shell-ai-found-php-rce",
+      "title": "PHP2Shell: two critical unauthenticated RCE flaws in core PHP (CVE-2026-109618/109619), found and exploited with frontier-AI help; coordinated fix in PHP 8.2.35/8.3.36/8.4.27/8.5.12",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/OpenAI/status/2112907856018309586",
+          "publishedAt": "2026-10-21T14:04:23Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/php/php-src/security/advisories/GHSA-w8hw-w9fx-j79w",
+          "publishedAt": "2026-10-21T13:34:25Z",
+          "retrievedAt": "2026-10-22T01:09:04+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/php/php-src/security/advisories/GHSA-6wmf-4rv5-p3rp",
+          "publishedAt": "2026-10-21T13:34:13Z",
+          "retrievedAt": "2026-10-22T01:09:04+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://www.php.net/archive/2026.php#2026-10-21-5",
+          "publishedAt": null,
+          "retrievedAt": "2026-10-22T01:09:04+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
+          "publishedAt": "2026-10-21T14:17:09Z",
+          "retrievedAt": "2026-10-22T01:09:04+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://www.wiz.io/blog/php2shell-php-rce",
+          "publishedAt": "2026-10-21T13:59:59Z",
+          "retrievedAt": "2026-10-22T01:09:04+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/openai/php2shell-checker",
+          "publishedAt": "2026-10-21T00:46:01Z",
+          "retrievedAt": "2026-10-22T01:09:04+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "repository": {
+        "language": "JavaScript",
+        "stars": 81,
+        "license": "Apache-2.0",
+        "commit": "0c1945a"
+      },
+      "scores": {
+        "breakthrough": 88,
+        "interestingness": 95,
+        "technicalDepth": 88,
+        "reproducibility": 70,
+        "credibility": 92
+      },
+      "eligibility": "eligible",
+      "reason": "Weighted 87.45 >= 80 and verified against primary sources. php-src GitHub security advisories GHSA-w8hw-w9fx-j79w (CVE-2026-109618, RCE via OOM corruption) and GHSA-6wmf-4rv5-p3rp (CVE-2026-109619, RCE via stale global state) published 2026-10-21T13:34Z, both critical, CVSS 4.0 9.2, patched in 8.2.35/8.3.36/8.4.27/8.5.12; php.net releases JSON lists those four security releases dated 21 Oct 2026 and the php.net front-page advisory was read; NVD entries published 14:17Z. Wiz Research blog (2026-10-21T09:59:59-04:00) says frontier models were critical to building the exploits and thanks PHP, Calif and OpenAI; OpenAI X post 14:04:23Z attributes discovery help to OpenAI models in its Patch the Planet initiative. The AI role is self-reported by OpenAI/Wiz; the PHP advisories do not name AI. openai.com article returned HTTP 403 to curl and was not read (title and date taken from OpenAI RSS). Calif blog not read. No exploit or checker was run."
+    },
+    {
+      "id": "c20261021-nvidia-flare-local-inference",
+      "title": "NVIDIA open-sources Flare, a research-prototype local inference server for SM120/SM121 GPUs (DGX Spark class) with a Rust runtime",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/NVIDIA/flare-local-inference",
+          "publishedAt": "2026-10-20T17:09:40Z",
+          "retrievedAt": "2026-10-22T01:09:04+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 421,
+        "license": "Apache-2.0",
+        "commit": "35ed54f"
+      },
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 75,
+        "technicalDepth": 80,
+        "reproducibility": 70,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 73.25 < 80. GitHub API: repo created 2026-10-20T17:09:40Z (in window), Apache-2.0, ~421 stars, Python. README calls it a research prototype and says it is not a replacement for vLLM; no official announcement located in this run; no benchmarks verified."
+    },
+    {
+      "id": "c20261021-browser-use-rl-env-use",
+      "title": "Browser Use releases rl-env-use: build verified RL environments for any domain from real cases mined by web agents (MIT)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/browser_use/status/2112767614468694286",
+          "publishedAt": "2026-10-21T04:47:07Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/browser-use/rl-env-use",
+          "publishedAt": "2026-10-21T04:31:55Z",
+          "retrievedAt": "2026-10-22T01:09:04+08:00"
+        }
+      ],
+      "repository": {
+        "language": null,
+        "stars": 70,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 75,
+        "technicalDepth": 70,
+        "reproducibility": 70,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 68.25 < 80. Official post and repo (MIT) in window; README read. Comparison table vs Claude Code is self-reported on small mission counts; requires paid Browser Use and OpenRouter API keys."
+    },
+    {
+      "id": "c20261021-fasth3-omni",
+      "title": "Hao AI Lab FastVideo open-sources FastH3 Omni (distilled from MiniMax H3) reference-to-video model with training code",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/haoailab/status/2112625528805208257",
+          "publishedAt": "2026-10-20T19:22:31Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/multimodalart/status/2112635820611977250",
+          "publishedAt": "2026-10-20T20:03:25Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 80,
+        "technicalDepth": 70,
+        "reproducibility": 75,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 71.75 < 80. Official Hao AI Lab post in window; Hugging Face model card, license and speed claims (12x on Blackwell) were not independently checked this run."
+    },
+    {
+      "id": "c20261021-mistral-voxtral-3",
+      "title": "Mistral announces Voxtral 3 Transcribe and Speech models powering its new voice agents API",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/MistralAI/status/2112574615318876178",
+          "publishedAt": "2026-10-20T16:00:12Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 70,
+        "interestingness": 80,
+        "technicalDepth": 65,
+        "reproducibility": 40,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 68.0 < 80. Official post at 2026-10-20T16:00:12Z (12 seconds into the window). Weight availability/licence not confirmed; benchmark claims (2.1% WER per X news summary) not verified against a primary source."
+    },
+    {
+      "id": "c20261021-gradium-phonon",
+      "title": "Gradium open-sources Phonon on-device TTS models under 50M parameters (Phonon-31m, Apache-2.0)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/GradiumAI/status/2112563128487514512",
+          "publishedAt": "2026-10-20T15:14:34Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/GradiumAI/status/2112857582893244677",
+          "publishedAt": "2026-10-21T10:44:37Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 80,
+        "technicalDepth": 65,
+        "reproducibility": 80,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 70.5 < 80. Original release post is 2026-10-20T15:14:34Z, before the window; only the NVIDIA GTC follow-up is in window."
+    },
+    {
+      "id": "c20261021-openai-gpt-rosalind-dctn1",
+      "title": "OpenAI GPT-Rosalind agent swarm surfaces a cholesterol-transport hypothesis for DCTN1/Perry syndrome with PerturbAI and Scripps",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/OpenAI/status/2112899854569762936",
+          "publishedAt": "2026-10-21T13:32:35Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "official",
+          "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data/",
+          "publishedAt": "2026-10-21T04:50:00Z",
+          "retrievedAt": "2026-10-22T01:09:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 85,
+        "technicalDepth": 60,
+        "reproducibility": 30,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 63.75 < 80. A research lead (hypothesis), not a confirmed result; openai.com page not read (403 to curl), date from OpenAI RSS."
+    },
+    {
+      "id": "c20261021-humansand-ampersand",
+      "title": "humans& introduces Ampersand v0.1, a model trained for long-horizon group collaboration (API only)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/humansand/status/2112674550907552137",
+          "publishedAt": "2026-10-20T22:37:19Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 75,
+        "technicalDepth": 50,
+        "reproducibility": 30,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 57.75 < 80. API-only; benchmark claims self-reported; no paper or weights checked."
+    },
+    {
+      "id": "c20261021-bria-fibo-2",
+      "title": "Bria AI Fibo 2.0 open-weights image generation/editing model trained on licensed data",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/bria_ai_/status/2112584188713214135",
+          "publishedAt": "2026-10-20T16:38:15Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2112595597664391555",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 70,
+        "technicalDepth": 60,
+        "reproducibility": 70,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 63.5 < 80. Only partner/follow-up posts found in window; original launch time and Hugging Face licence not verified."
+    },
+    {
+      "id": "c20261021-nvidia-flora",
+      "title": "NVIDIA open-sources Flora robot/human video annotation models (per X news summary)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2112656500707737802",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 75,
+        "technicalDepth": 60,
+        "reproducibility": 60,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 62.75 < 80. Only an AI-generated X news summary was seen; no primary NVIDIA post, repo or model card checked this run."
+    },
+    {
+      "id": "c20261021-nvidia-gtc-berlin-agent-stack",
+      "title": "NVIDIA GTC Berlin: new open models for Europe, Agent Knowledge Foundation in Agent Toolkit, OpenShell Reference Architecture",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/NVIDIAAI/status/2112847569827348804",
+          "publishedAt": "2026-10-21T10:04:50Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/NVIDIAAI/status/2112852615461773370",
+          "publishedAt": "2026-10-21T10:24:53Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/nvidia/status/2112847277282721888",
+          "publishedAt": "2026-10-21T10:03:40Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 65,
+        "technicalDepth": 40,
+        "reproducibility": 50,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 54.25 < 80. Keynote product announcements; individual model releases not verified."
+    },
+    {
+      "id": "c20261021-nvidia-isaac-agile-one",
+      "title": "NVIDIA Isaac platform expansion and Agile Robots Agile ONE SN reference humanoid",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/NVIDIARobotics/status/2112854462708519013",
+          "publishedAt": "2026-10-21T10:32:13Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 65,
+        "technicalDepth": 45,
+        "reproducibility": 40,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 53.75 < 80. Platform/hardware announcement; press release not read."
+    },
+    {
+      "id": "c20261021-mistral-nvidia-industrial",
+      "title": "Mistral and NVIDIA collaborate on AI for industrial engineering (simulation, physics-AI benchmarks, CAE/EDA agent evals)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/MistralAI/status/2112870261829603589",
+          "publishedAt": "2026-10-21T11:35:00Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "official",
+          "url": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 60,
+        "technicalDepth": 30,
+        "reproducibility": 30,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 45.0 < 80. Partnership announcement; no released artifact checked."
+    },
+    {
+      "id": "c20261021-openai-google-cloud",
+      "title": "OpenAI models come to Google Cloud Marketplace / Model Garden",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://openai.com/news/rss.xml",
+          "publishedAt": "2026-10-21T12:00:00Z",
+          "retrievedAt": "2026-10-22T01:09:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 70,
+        "technicalDepth": 20,
+        "reproducibility": 20,
+        "credibility": 95
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 43.0 < 80. Business distribution news, not a technical discovery."
+    },
+    {
+      "id": "c20261021-somark-oxr-1",
+      "title": "SoMark OXR-1.0, a 1.3B open-weight document parsing model (PDF/images to Markdown/JSON)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/ModelScope2022/status/2112901338178687182",
+          "publishedAt": "2026-10-21T13:38:29Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 65,
+        "technicalDepth": 60,
+        "reproducibility": 70,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 59.75 < 80. Reposted by ModelScope; SOTA claims are the project's own comparisons; model card not checked."
+    },
+    {
+      "id": "c20261021-beacon-asymptote",
+      "title": "Asymptote Labs Beacon: open-source shared memory layer across coding agents, with $5.5M seed (per X news)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2112585551497109574",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 65,
+        "technicalDepth": 50,
+        "reproducibility": 60,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 53.75 < 80. Only an X news summary seen; repo not verified."
+    },
+    {
+      "id": "c20261021-llm-d-1",
+      "title": "llm-d 1.0 distributed inference release (CNCF project)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/PipelineWire/status/2112877866367046051",
+          "publishedAt": "2026-10-21T12:05:13Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 65,
+        "technicalDepth": 65,
+        "reproducibility": 70,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 60.25 < 80. Secondary news repost only; release notes not read."
+    },
+    {
+      "id": "c20261021-anthropic-sdk-python-v2",
+      "title": "anthropic-sdk-python v2.0.0 released",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.0.0",
+          "publishedAt": "2026-10-21T15:51:32Z",
+          "retrievedAt": "2026-10-22T01:09:04+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": null,
+        "license": null,
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 55,
+        "technicalDepth": 40,
+        "reproducibility": 80,
+        "credibility": 95
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 52.25 < 80. Routine SDK major release."
+    },
+    {
+      "id": "c20261021-arxiv-2610-28578",
+      "title": "Sage-A1.5: From Long-Horizon Execution to Scientific Exploration with Capability Composition",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.28578",
+          "publishedAt": "2026-10-20T17:32:48Z",
+          "retrievedAt": "2026-10-22T01:09:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 70,
+        "technicalDepth": 75,
+        "reproducibility": 45,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 64.25 < 80. 99-author preprint; not peer reviewed; abstract metadata only."
+    },
+    {
+      "id": "c20261021-arxiv-2610-28484",
+      "title": "Proof-Carrying Contracts: Commitments AI Agents Cannot Break",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.28484",
+          "publishedAt": "2026-10-20T16:30:34Z",
+          "retrievedAt": "2026-10-22T01:09:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 65,
+        "technicalDepth": 75,
+        "reproducibility": 45,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 60.5 < 80. Preprint; not peer reviewed."
+    },
+    {
+      "id": "c20261021-arxiv-2610-28576",
+      "title": "The Token-Energy Law of LLM Decode: Active Bytes and Realized Time Account for Joules per Token",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.28576",
+          "publishedAt": "2026-10-20T17:32:08Z",
+          "retrievedAt": "2026-10-22T01:09:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 65,
+        "technicalDepth": 70,
+        "reproducibility": 55,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 60.0 < 80. Preprint."
+    },
+    {
+      "id": "c20261021-arxiv-2610-28577",
+      "title": "Cache Engineering for Agents",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.28577",
+          "publishedAt": "2026-10-20T17:32:24Z",
+          "retrievedAt": "2026-10-22T01:09:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 70,
+        "technicalDepth": 65,
+        "reproducibility": 50,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 59.5 < 80. Preprint."
+    },
+    {
+      "id": "c20261021-arxiv-2610-28457",
+      "title": "GPT-6-Astra Understands Touch and Outperform Vision-Tactile-Language-Action Models",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.28457",
+          "publishedAt": "2026-10-20T16:15:02Z",
+          "retrievedAt": "2026-10-22T01:09:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 75,
+        "technicalDepth": 60,
+        "reproducibility": 40,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 59.25 < 80. Preprint; relies on a closed model."
+    },
+    {
+      "id": "c20261021-arxiv-2610-28589",
+      "title": "AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.28589",
+          "publishedAt": "2026-10-20T17:41:09Z",
+          "retrievedAt": "2026-10-22T01:09:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 65,
+        "technicalDepth": 65,
+        "reproducibility": 45,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 59.0 < 80. Preprint."
+    }
+  ],
+  "selectedCandidateId": "c20261021-php2shell-ai-found-php-rce"
+}
