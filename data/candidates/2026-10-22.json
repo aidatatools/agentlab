@@ -1,0 +1,699 @@
+{
+  "date": "2026-10-22",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "candidates": [
+    {
+      "id": "c20261022-hf-carbon-x-dna-language-model",
+      "title": "Hugging Face releases Carbon-X, an open (Apache-2.0) 14.8B model trained jointly on DNA and text that answers questions about raw DNA in chat",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/LoubnaBenAllal1/status/2113212025560023513",
+          "publishedAt": "2026-10-22T10:13:03Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/_lewtun/status/2113214040516268126",
+          "publishedAt": "2026-10-22T10:21:03Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "official",
+          "url": "https://huggingface.co/HuggingFaceBio/Carbon-X",
+          "publishedAt": null,
+          "retrievedAt": "2026-10-23T01:08:53+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://huggingface.co/spaces/HuggingFaceBio/Carbon-X-Release",
+          "publishedAt": null,
+          "retrievedAt": "2026-10-23T01:08:53+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/huggingface/carbon",
+          "publishedAt": null,
+          "retrievedAt": "2026-10-23T01:08:53+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 85,
+        "interestingness": 92,
+        "technicalDepth": 88,
+        "reproducibility": 85,
+        "credibility": 88
+      },
+      "eligibility": "eligible",
+      "reason": "Weighted 87.65 >= 80. Verified against primary sources: official announcement posts by Hugging Face researchers Loubna Ben Allal (10:13:03Z) and Lewis Tunstall (10:21:03Z), retweeted by @huggingface and Clement Delangue; Hugging Face API for HuggingFaceBio/Carbon-X (repo createdAt 2026-10-21T10:21:04Z, made public and announced in window; license apache-2.0; base_model Qwen/Qwen3-14B; tags dna, genomics, variant-effect-prediction); model card read in full (14.8B params, 40 layers, hybrid BPE + 6-mer DNA tokenizer with 5,515 DNA tokens, 302B-token mid-training then SFT and RL with verifiable rewards, 40,960 context, five-benchmark table: Carbon-X 66.7 avg with thinking disabled vs GPT-6.1 Sol 67.5, Opus 5.5 60.9, Kimi K3 50.4; two of five benchmarks (FrontierVEP, NextBase) built by the authors; not clinically validated); release blog Space read (authors, Kimi K3 sub-agent gain 49.4 to 60.5, ClinVar VUS cost projection, llama.cpp local use, partners Zhongguancun Academy and TIGEM/University of Naples Federico II). huggingface/carbon GitHub repo (Apache-2.0) was last pushed 2026-06-06 and does not contain Carbon-X-specific commits. All benchmark numbers are self-reported; AgentLab did not download or run the model. WIRED and Business Insider coverage seen only via X posts, not read."
+    },
+    {
+      "id": "c20261022-ant-ling-3-0-flash-sante",
+      "title": "Ant Group InclusionAI open-sources Ling-3.0-flash-Sante, a 124B (5.1B active) healthcare MoE model under MIT",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/AntLingAGI/status/2113293431435149349",
+          "publishedAt": "2026-10-22T15:36:31Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/ModelScope2022/status/2113288567640199659",
+          "publishedAt": "2026-10-22T15:17:12Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "official",
+          "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-Sante",
+          "publishedAt": null,
+          "retrievedAt": "2026-10-23T01:08:53+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 72,
+        "interestingness": 80,
+        "technicalDepth": 78,
+        "reproducibility": 80,
+        "credibility": 82
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 77.4 < 80. Official Ant Ling post and Hugging Face card (MIT, created 2026-10-19 and opened in window) read: 124B total / 5.1B active hybrid-linear MoE built on Ling-3.0-flash, 256K training context; HealthBench Professional 54.29 is self-reported; research model, not a medical device. Strong release but an incremental domain fine-tune of an existing base."
+    },
+    {
+      "id": "c20261022-arxiv-2610-30113-quant-arena",
+      "title": "Quant-Arena: Benchmarking LLM Agents for Quantitative Trading Research (Einsia AI)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.30113",
+          "publishedAt": "2026-10-21T17:54:00Z",
+          "retrievedAt": "2026-10-23T01:08:53+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2113289929438666965",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 70,
+        "interestingness": 80,
+        "technicalDepth": 75,
+        "reproducibility": 70,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 74.0 < 80. arXiv preprint (12 authors) in window; X news summary says only 4 of 9 frontier models made money and the best (10.7%) trailed equal-weight (17.1%); abstract only, figures not independently checked."
+    },
+    {
+      "id": "c20261022-arxiv-2610-29932-frontiercs-2",
+      "title": "FrontierCS 2: A Benchmark for Computer Science R&D",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.29932",
+          "publishedAt": "2026-10-21T16:04:00Z",
+          "retrievedAt": "2026-10-23T01:08:53+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 68,
+        "interestingness": 70,
+        "technicalDepth": 75,
+        "reproducibility": 70,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 70.9 < 80. 61-author preprint with website and code; metadata only; not peer reviewed."
+    },
+    {
+      "id": "c20261022-gdm-forty-forest-typology",
+      "title": "Google DeepMind releases Forest Typology (ForTy), a 10m global map separating natural, planted and farmed forests",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/GoogleDeepMind/status/2113278710795153785",
+          "publishedAt": "2026-10-22T14:38:02Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 70,
+        "technicalDepth": 65,
+        "reproducibility": 65,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 67.25 < 80. Official post in window; map, paper and data license not read this run."
+    },
+    {
+      "id": "c20261022-mit-opal-agent-optimizer",
+      "title": "MIT OPAL: an LLM agent that edits optimizer code during neural-network training (per X news)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2112981233940795447",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 75,
+        "technicalDepth": 65,
+        "reproducibility": 70,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 67.25 < 80. Only an X news summary seen; paper and repo not located or read; publication time not confirmed in window."
+    },
+    {
+      "id": "c20261022-kittenml-kitten-tts-2",
+      "title": "KittenML Kitten-TTS 2: 1.7B, 1.58-bit text-to-speech running in real time on CPU with voice cloning (per X posts)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Chahatusharma/status/2113071081292513658",
+          "publishedAt": "2026-10-22T00:52:59Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/crazyMLguy/status/2113130337568182503",
+          "publishedAt": "2026-10-22T04:48:27Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 75,
+        "technicalDepth": 60,
+        "reproducibility": 70,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 66.25 < 80. Only secondary X posts seen; official KittenML post, repo and model card not read; SOTA claim unverified."
+    },
+    {
+      "id": "c20261022-letta-frontiermemory",
+      "title": "Letta launches FrontierMemory, a benchmark for agents that learn from prior experience (per X news)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2112984434341204047",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 65,
+        "technicalDepth": 60,
+        "reproducibility": 65,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 62.0 < 80. X news summary only; benchmark repo/paper not read."
+    },
+    {
+      "id": "c20261022-mirendil-base",
+      "title": "Mirendil: solo researcher with AI agents pretrains a competitive coding base model in 3.5 months (per X news)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2112977628105703829",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 70,
+        "interestingness": 85,
+        "technicalDepth": 50,
+        "reproducibility": 30,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 61.75 < 80. X news summary only; no weights or technical report verified; internal-test claims."
+    },
+    {
+      "id": "c20261022-openai-metr-redwood-embedded-eval",
+      "title": "OpenAI: METR and Redwood Research piloted a three-week embedded evaluation of OpenAI internal monitoring",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/OpenAI/status/2113298833392496746",
+          "publishedAt": "2026-10-22T15:57:59Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 80,
+        "technicalDepth": 55,
+        "reproducibility": 30,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 62.5 < 80. Official post 2 minutes before window end; linked report not read this run."
+    },
+    {
+      "id": "c20261022-openai-google-cloud-model-garden",
+      "title": "OpenAI models and Codex workflows come to Google Cloud Model Garden",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/OpenAI/status/2112988118471295323",
+          "publishedAt": "2026-10-21T19:23:19Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 70,
+        "technicalDepth": 30,
+        "reproducibility": 40,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 52.0 < 80. Business distribution news, not a technical discovery."
+    },
+    {
+      "id": "c20261022-anthropic-public-benefit-report",
+      "title": "Anthropic publishes its annual Public Benefit Report",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/AnthropicAI/status/2112966949273801086",
+          "publishedAt": "2026-10-21T17:59:12Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 55,
+        "technicalDepth": 30,
+        "reproducibility": 20,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 40.75 < 80. Corporate governance report, not a technical discovery."
+    },
+    {
+      "id": "c20261022-nvidia-nemotron-4-signals",
+      "title": "Signals of upcoming NVIDIA Nemotron 4 Ultra/Nano in FlashInfer and TensorRT-LLM code (per X posts)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/aitrackerbot/status/2113166533690073245",
+          "publishedAt": "2026-10-22T07:12:17Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 60,
+        "technicalDepth": 30,
+        "reproducibility": 10,
+        "credibility": 30
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 37.5 < 80. Unannounced; based on third-party reading of code changes; nothing released."
+    },
+    {
+      "id": "c20261022-assetnote-php2shell-scanner",
+      "title": "Assetnote php2shell-scanner for CVE-2026-109618/109619",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/assetnote/php2shell-scanner",
+          "publishedAt": "2026-10-22T03:53:20Z",
+          "retrievedAt": "2026-10-23T01:08:53+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 215,
+        "license": null,
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 70,
+        "technicalDepth": 55,
+        "reproducibility": 70,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 59.0 < 80. Follow-up tooling for the PHP2Shell event already published from the 2026-10-21 batch (dedup by event)."
+    },
+    {
+      "id": "c20261022-gh-cuboileo-supermimic-reproduced",
+      "title": "SuperMimic-Reproduced: community reproduction of SuperMimic (arXiv:2610.28480) world-model + BPTT humanoid policy",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/CuboiLeo/SuperMimic-Reproduced",
+          "publishedAt": "2026-10-21T23:36:13Z",
+          "retrievedAt": "2026-10-23T01:08:53+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 84,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 65,
+        "technicalDepth": 65,
+        "reproducibility": 75,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 61.0 < 80. Community reproduction repo; results not checked; original paper outside window."
+    },
+    {
+      "id": "c20261022-gh-zita-ch-supermimic-vibed",
+      "title": "supermimic_vibed: SuperMimic re-implemented by vibe coding within 1 hour (README claim)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/zita-ch/supermimic_vibed",
+          "publishedAt": "2026-10-21T17:29:28Z",
+          "retrievedAt": "2026-10-23T01:08:53+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 232,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 70,
+        "technicalDepth": 50,
+        "reproducibility": 65,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 55.25 < 80. Self-described vibe-coded reimplementation; claims unverified."
+    },
+    {
+      "id": "c20261022-gh-xuyicheng-zju-tarsphere",
+      "title": "TARSphere: robot-oriented full-stack framework for long-horizon embodied agents",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/xuyicheng-zju/TARSphere",
+          "publishedAt": "2026-10-21T16:27:44Z",
+          "retrievedAt": "2026-10-23T01:08:53+08:00"
+        },
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.30043",
+          "publishedAt": "2026-10-21T17:02:00Z",
+          "retrievedAt": "2026-10-23T01:08:53+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 14,
+        "license": "Apache-2.0",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 60,
+        "technicalDepth": 65,
+        "reproducibility": 65,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 60.75 < 80. Repo plus arXiv preprint in window; metadata only."
+    },
+    {
+      "id": "c20261022-gh-keegan0521-cindervm",
+      "title": "CinderVM: deterministic bytecode VM for agent execution with snapshots and hash-chained replay journal",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/keegan0521/CinderVM",
+          "publishedAt": "2026-10-21T16:19:30Z",
+          "retrievedAt": "2026-10-23T01:08:53+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Rust",
+        "stars": 66,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 55,
+        "technicalDepth": 60,
+        "reproducibility": 65,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 53.5 < 80. Single-developer repo; no adoption or audit evidence."
+    },
+    {
+      "id": "c20261022-gh-rossark0-rossark-motion-skill",
+      "title": "rossark-motion-skill: Claude Code skill that turns SVGs into 60 fps animations",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/rossark0/rossark-motion-skill",
+          "publishedAt": "2026-10-22T03:33:03Z",
+          "retrievedAt": "2026-10-23T01:08:53+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Swift",
+        "stars": 193,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 65,
+        "technicalDepth": 45,
+        "reproducibility": 70,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 51.25 < 80. Popular skill repo; incremental tooling."
+    },
+    {
+      "id": "c20261022-gh-acelogic-snapintosh",
+      "title": "Snapintosh: EL2 hypervisor and toolchain booting macOS on Snapdragon X2 Elite laptops",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/Acelogic/Snapintosh",
+          "publishedAt": "2026-10-22T01:40:05Z",
+          "retrievedAt": "2026-10-23T01:08:53+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 463,
+        "license": "NOASSERTION",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 75,
+        "technicalDepth": 80,
+        "reproducibility": 40,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 59.75 < 80. Out of AI/agent scope; legal and provenance unclear."
+    },
+    {
+      "id": "c20261022-openhands-v1-30-0",
+      "title": "OpenHands v1.30.0 released",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.30.0",
+          "publishedAt": "2026-10-22T01:08:52Z",
+          "retrievedAt": "2026-10-23T01:08:53+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 55,
+        "technicalDepth": 45,
+        "reproducibility": 80,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 53.75 < 80. Routine release of a tracked agent framework."
+    },
+    {
+      "id": "c20261022-anthropic-sdk-python-v2-1-0",
+      "title": "anthropic-sdk-python v2.1.0 released",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.1.0",
+          "publishedAt": "2026-10-21T22:00:30Z",
+          "retrievedAt": "2026-10-23T01:08:53+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 40,
+        "technicalDepth": 35,
+        "reproducibility": 80,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 45.5 < 80. Routine SDK minor release."
+    },
+    {
+      "id": "c20261022-arxiv-2610-30136",
+      "title": "Agentic World Action Models",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.30136",
+          "publishedAt": "2026-10-21T17:59:00Z",
+          "retrievedAt": "2026-10-23T01:08:53+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 70,
+        "technicalDepth": 72,
+        "reproducibility": 55,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 66.65 < 80. 18-author preprint with project page; metadata only."
+    },
+    {
+      "id": "c20261022-arxiv-2610-30132",
+      "title": "LongZero: Enhancing Long-Context Reasoning in LLMs from Zero Data",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.30132",
+          "publishedAt": "2026-10-21T17:59:00Z",
+          "retrievedAt": "2026-10-23T01:08:53+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 65,
+        "technicalDepth": 65,
+        "reproducibility": 65,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 61.5 < 80. Preprint with code; metadata only."
+    },
+    {
+      "id": "c20261022-arxiv-2610-30105",
+      "title": "Asymmetric On-Policy Distillation Learns In-Context Exploration",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.30105",
+          "publishedAt": "2026-10-21T17:50:00Z",
+          "retrievedAt": "2026-10-23T01:08:53+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 60,
+        "technicalDepth": 70,
+        "reproducibility": 45,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 58.25 < 80. Preprint; metadata only."
+    },
+    {
+      "id": "c20261022-arxiv-2610-30047",
+      "title": "SWE-DIVE: Multi-Turn Coding Agent Evaluation with Dynamic User Simulation",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.30047",
+          "publishedAt": "2026-10-21T17:06:00Z",
+          "retrievedAt": "2026-10-23T01:08:53+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 65,
+        "technicalDepth": 60,
+        "reproducibility": 60,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 58.75 < 80. Workshop paper; metadata only."
+    },
+    {
+      "id": "c20261022-arxiv-2610-29965",
+      "title": "CORD: Conflict-Aware Optimization for Joint RL and Distillation in Agents",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.29965",
+          "publishedAt": "2026-10-21T16:19:00Z",
+          "retrievedAt": "2026-10-23T01:08:53+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 60,
+        "technicalDepth": 70,
+        "reproducibility": 45,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 58.25 < 80. Preprint; metadata only."
+    }
+  ],
+  "selectedCandidateId": "c20261022-hf-carbon-x-dna-language-model"
+}
