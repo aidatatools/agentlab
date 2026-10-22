@@ -1,0 +1,278 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "mission-20261022-001",
+  "date": "2026-10-22",
+  "timezone": "Asia/Taipei",
+  "status": "awaiting_review",
+  "objective": {
+    "goal": "Discover, score, verify and propose one outstanding AI/agent discovery for 2026-10-22 (Asia/Taipei), or document a no-publish decision.",
+    "sources": [
+      "x",
+      "github",
+      "arxiv"
+    ],
+    "deliverables": [
+      "Verified candidate batch",
+      "Published article (Carbon-X)",
+      "Mission record",
+      "Pull request"
+    ]
+  },
+  "agent": {
+    "id": "grokbot",
+    "framework": "Grok Bot (AgentLab-bot on minim4.home)",
+    "model": "grok-bot",
+    "runId": "routine-9a1f041e-20261023T0105-minim4-daily-2026-10-22"
+  },
+  "selection": {
+    "candidatesEvaluated": 27,
+    "selectedCandidateId": "c20261022-hf-carbon-x-dna-language-model",
+    "selectionScore": 87.65,
+    "rankingArtifact": "data/candidates/2026-10-22.json"
+  },
+  "skillsUsed": [
+    {
+      "skill": "x-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-x-20261022-001"
+    },
+    {
+      "skill": "github-discovery",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-gh-20261022-001"
+    },
+    {
+      "skill": "arxiv-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ax-20261022-001"
+    },
+    {
+      "skill": "fact-check",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-fc-20261022-001"
+    },
+    {
+      "skill": "article-writing",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-aw-20261022-001"
+    },
+    {
+      "skill": "image-curation",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ic-20261022-001"
+    },
+    {
+      "skill": "site-publishing",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-sp-20261022-001"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t1",
+      "action": "git checkout main, pull --ff-only (8ba4c88..b4797a6), create branch daily/2026-10-22 (tree clean)",
+      "tool": "git",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": "2026-10-23T01:05:54+08::00",
+      "evidenceIds": [
+        "ev-git-branch"
+      ]
+    },
+    {
+      "id": "t2",
+      "action": "GitHub search (repos created in window: stars>=5 total 353, spam/cheat heavy, plus llm/agent/mcp/model/paper/benchmark queries); releases of 30 tracked repos (36 in window); Hugging Face API scan of 40 orgs plus trending (4 new in-window models, all unsloth quantizations); arXiv API HTTP 200 on first call: totalResults 67",
+      "tool": "gh+python urllib",
+      "status": "success",
+      "startedAt": "2026-10-23T01:05:54+08::00",
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-gh-new",
+        "ev-gh-releases",
+        "ev-hf",
+        "ev-arxiv"
+      ]
+    },
+    {
+      "id": "t3",
+      "action": "Public X reads: 5x search_posts_all, 1x search_news, 1x get_posts_by_ids (official lab accounts, open-source model keywords, Carbon-X/Ling-Sante/Nemotron/Quant-Arena terms, Hugging Face staff, announcement posts)",
+      "tool": "x.search_posts_all+x.search_news+x.get_posts_by_ids",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-x-search"
+      ]
+    },
+    {
+      "id": "t4",
+      "action": "Verify: Hugging Face API and full model card for HuggingFaceBio/Carbon-X, official release blog Space (index.html), huggingface/carbon GitHub repo metadata and commits, HF blog list, inclusionAI/Ling-3.0-flash-Sante API and card; dedup grep over prior candidate files",
+      "tool": "curl+gh",
+      "status": "success",
+      "startedAt": "2026-10-23T01:08:53+08::00",
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-verify",
+        "ev-dedup"
+      ]
+    },
+    {
+      "id": "t5",
+      "action": "Write candidates JSON (27), rank with rank_candidates.py (proposed c20261022-hf-carbon-x-dna-language-model 87.65), write original SVG cover and zh-TW article (status published), scaffold mission with create_mission.py",
+      "tool": "python",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": "2026-10-23T01:11:00+08:00",
+      "evidenceIds": [
+        "ev-ranking",
+        "ev-article"
+      ]
+    },
+    {
+      "id": "t6",
+      "action": "Run validate_content, unittest, astro check, astro build",
+      "tool": "python+npm",
+      "status": "success",
+      "startedAt": "2026-10-23T01:11:27+08:00",
+      "finishedAt": "2026-10-23T01:11:31+08:00",
+      "evidenceIds": [
+        "ev-validate",
+        "ev-unittest",
+        "ev-astro-check",
+        "ev-astro-build"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "python scripts/validate_content.py",
+      "status": "passed",
+      "artifact": ".reports/2026-10-22/validate.log"
+    },
+    {
+      "name": "python -m unittest discover -s tests -v",
+      "status": "passed",
+      "artifact": ".reports/2026-10-22/unittest.log"
+    },
+    {
+      "name": "npm run check",
+      "status": "passed",
+      "artifact": ".reports/2026-10-22/astro-check.log"
+    },
+    {
+      "name": "npm run build",
+      "status": "passed",
+      "artifact": ".reports/2026-10-22/astro-build.log"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-git-branch",
+      "type": "git",
+      "ref": "branch daily/2026-10-22 from origin/main@b4797a6"
+    },
+    {
+      "id": "ev-gh-new",
+      "type": "http_response",
+      "ref": ".reports/2026-10-22/gh_new_repos.json (353 repos >=5 stars created in window; AI-focused queries)"
+    },
+    {
+      "id": "ev-gh-releases",
+      "type": "http_response",
+      "ref": ".reports/2026-10-22/gh_releases_window.txt (36 releases in window across 30 tracked repos)"
+    },
+    {
+      "id": "ev-hf",
+      "type": "http_response",
+      "ref": ".reports/2026-10-22/hf_orgs.txt (4 new models from 40 tracked orgs in window, plus trending)"
+    },
+    {
+      "id": "ev-arxiv",
+      "type": "http_response",
+      "ref": ".reports/2026-10-22/arxiv.xml and arxiv_entries.json (opensearch totalResults 67 for submittedDate 202610211600-202610221600; all returned entries submitted 16:01-17:59Z)"
+    },
+    {
+      "id": "ev-x-search",
+      "type": "api_response",
+      "ref": "7 public X reads; in-window official posts from OpenAI, Anthropic, Google DeepMind, Hugging Face, NVIDIA, Ant Ling, InclusionAI, ModelScope and Hugging Face researchers"
+    },
+    {
+      "id": "ev-verify",
+      "type": "http_response",
+      "ref": ".reports/2026-10-22/carbonx_readme.md, carbonx_blog.html, hf_blog.json, sante_readme.md"
+    },
+    {
+      "id": "ev-dedup",
+      "type": "local_command",
+      "ref": "grep over data/candidates/2026-10-16..21.json: no prior Carbon-X, Sante, OPAL, FrontierMemory, Mirendil, SuperMimic or Flint entries; Ornith appears in 2026-10-20 (not re-added); PHP2Shell scanner deduped against 2026-10-21 event"
+    },
+    {
+      "id": "ev-ranking",
+      "type": "local_command",
+      "ref": ".reports/2026-10-22/ranking.json (proposedCandidateId c20261022-hf-carbon-x-dna-language-model 87.65, publicationAllowed true; next c20261022-ant-ling-3-0-flash-sante 77.4)"
+    },
+    {
+      "id": "ev-article",
+      "type": "git",
+      "ref": "src/content/articles/2026/10/carbon-x-open-dna-language-model.md and public/media/2026/10/carbon-x/cover.svg"
+    },
+    {
+      "id": "ev-validate",
+      "type": "local_command",
+      "ref": "python scripts/validate_content.py: passed (Content OK: 6 article(s), 8 mission(s), 2 agent(s), 170 candidate(s).) @ 2026-10-23T01:11:28+08:00"
+    },
+    {
+      "id": "ev-unittest",
+      "type": "local_command",
+      "ref": "python -m unittest discover -s tests -v: passed (OK) @ 2026-10-23T01:11:28+08:00"
+    },
+    {
+      "id": "ev-astro-check",
+      "type": "local_command",
+      "ref": "npm run check: passed (- 0 hints) @ 2026-10-23T01:11:30+08:00"
+    },
+    {
+      "id": "ev-astro-build",
+      "type": "local_command",
+      "ref": "npm run build: passed (01:11:31 [build] Complete!) @ 2026-10-23T01:11:31+08:00"
+    }
+  ],
+  "outcome": {
+    "articleId": "article-20261022-001",
+    "githubCommit": null,
+    "githubPullRequest": null,
+    "deploymentUrl": null,
+    "publicationStatus": "in_review"
+  },
+  "metrics": {
+    "durationSeconds": null,
+    "tokens": null,
+    "estimatedCostUsd": null,
+    "humanInterventions": 0
+  },
+  "retrospective": {
+    "successes": [
+      "X, GitHub, Hugging Face and arXiv all responded on the first attempt; 27 deduplicated candidates scored with explicit reasons.",
+      "Carbon-X verified against the official announcement posts, the Hugging Face model card and API, and the official release blog; scored 87.65 and published."
+    ],
+    "failures": [
+      "arXiv API returned only submissions from 16:01-17:59Z, so later in-window papers were not seen.",
+      "Several X news items (MIT OPAL, Kitten-TTS 2, Mirendil, FrontierMemory) were scored from summaries only; primary pages not read.",
+      "WIRED/Business Insider coverage of Carbon-X not read; Carbon-X weights were not run.",
+      "X post retrievedAt timestamps were not captured per call, so they are null."
+    ],
+    "lessonsLearned": [
+      "For open-weight model launches, check Hub createdAt versus announcement time: repos are often created privately a day before going public."
+    ],
+    "nextActions": [
+      "After merge and DigitalOcean deploy, run a real smoke test in a follow-up PR before promoting the mission."
+    ]
+  }
+}
