@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
+  <title id="t">Formal verification at scale, illustrative cover</title>
+  <desc id="d">Abstract illustration: an existing fuzz test and a compiled RISC-V binary become a specification; Claude writes a Rocq proof; the Rocq checker marks it proven. Not an official image.</desc>
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <text x="600" y="86" fill="#f8fafc" font-family="sans-serif" font-size="40" font-weight="700" text-anchor="middle">From fuzz tests to machine-checked proofs</text>
+  <g font-family="sans-serif" text-anchor="middle">
+    <rect x="60" y="180" width="220" height="90" rx="12" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="170" y="222" fill="#fde68a" font-size="24">fuzz test</text>
+    <text x="170" y="252" fill="#fcd34d" font-size="17">(OSS-Fuzz entry point)</text>
+    <rect x="60" y="330" width="220" height="90" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="170" y="372" fill="#bae6fd" font-size="24">RISC-V binary</text>
+    <text x="170" y="402" fill="#7dd3fc" font-size="17">compiled library</text>
+    <path d="M285 225 L380 290 M285 375 L380 310" stroke="#94a3b8" stroke-width="4" fill="none"/>
+    <rect x="380" y="250" width="200" height="100" rx="14" fill="#312e81" stroke="#a5b4fc" stroke-width="2"/>
+    <text x="480" y="292" fill="#e0e7ff" font-size="24">spec</text>
+    <text x="480" y="322" fill="#c7d2fe" font-size="16">no crash, any input &lt; 64 MB</text>
+    <path d="M580 300 L660 300" stroke="#94a3b8" stroke-width="4"/>
+    <rect x="660" y="250" width="200" height="100" rx="14" fill="#3b0764" stroke="#d8b4fe" stroke-width="2"/>
+    <text x="760" y="292" fill="#f3e8ff" font-size="24">Claude</text>
+    <text x="760" y="322" fill="#e9d5ff" font-size="16">writes Rocq proof</text>
+    <path d="M860 300 L940 300" stroke="#94a3b8" stroke-width="4"/>
+    <rect x="940" y="250" width="200" height="100" rx="14" fill="#064e3b" stroke="#34d399" stroke-width="2"/>
+    <text x="1040" y="292" fill="#d1fae5" font-size="24">Rocq checker</text>
+    <text x="1040" y="322" fill="#a7f3d0" font-size="18">proven ✓</text>
+  </g>
+  <text x="600" y="480" fill="#cbd5e1" font-family="sans-serif" font-size="24" text-anchor="middle">239 entry points · 123 libraries · ~180M lines of proof (as reported)</text>
+  <text x="600" y="575" fill="#94a3b8" font-family="sans-serif" font-size="20" text-anchor="middle">AgentLab original illustration · illustrative only</text>
+</svg>
