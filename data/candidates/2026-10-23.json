@@ -1,0 +1,669 @@
+{
+  "date": "2026-10-23",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "candidates": [
+    {
+      "id": "c20261023-anthropic-theorem-formal-verification",
+      "title": "Anthropic Frontier Red Team and Theorem use Claude to machine-check no-crash proofs for 239 OSS-Fuzz entry points across 123 open-source libraries at the RISC-V binary level",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://www.anthropic.com/research/formal-verification",
+          "publishedAt": "2026-10-22",
+          "retrievedAt": "2026-10-24T01:11:13+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/AnthropicAI/status/2113390212911083894",
+          "publishedAt": "2026-10-22T22:01:06Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/theorem-labs/oss-verify-proofs",
+          "publishedAt": "2026-10-22T17:20:28Z",
+          "retrievedAt": "2026-10-24T01:11:13+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Rocq Prover",
+        "stars": 80,
+        "license": "MIT",
+        "commit": "8f5f4676"
+      },
+      "scores": {
+        "breakthrough": 90,
+        "interestingness": 92,
+        "technicalDepth": 92,
+        "reproducibility": 82,
+        "credibility": 92
+      },
+      "eligibility": "eligible",
+      "reason": "Weighted 89.9 >= 80. Verified against primary sources: Anthropic research post read in full (published Oct 22, 2026, Frontier Red Team with Theorem; 239 entry points across 123 OSS-Fuzz libraries proved crash-free for every input under 64 MB on compiled RISC-V binaries; about 180 million lines of Rocq, typical proof about 600,000 lines, median binary 18,000 RISC-V instructions; trusted base is the RISC-V and Linux-process semantics, the theorem statements and the Rocq checker; bugs found include a 20 MB-input decompressor out-of-bounds write and a rediscovery of CVE-2026-56132 in libexpat; Opus 5.5 proves half of 36 tasks with about 40% fewer tokens than Opus 5; shared proof workspace cut tokens 17%; limitations: single-threaded static RISC-V/musl only, ASan does not catch all memory bugs, proofs cost hundreds of millions of tokens). Official @AnthropicAI post 22:01:06Z. GitHub theorem-labs/oss-verify-proofs (MIT, created 2026-10-22T17:20:28Z, release commit 8f5f4676 \"OSS Verify proofs 2026.10.0\" at 20:28:58Z) README read: the public subset covers 60 entry points in 25 libraries, checked with Rocq 9.2.0 in the LPS Linux-process model, which the README calls best effort and not complete. AgentLab did not re-check the proofs (codeStatus not_run)."
+    },
+    {
+      "id": "c20261023-minimax-m3-1-flash-open-weights",
+      "title": "MiniMax opens the weights of M3.1 Flash, a 428B-total / 23B-active multimodal MoE for coding and agents, under a custom minimax-community license",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/MiniMax_AI/status/2113436864904610008",
+          "publishedAt": "2026-10-23T01:06:29Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "official",
+          "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+          "publishedAt": null,
+          "retrievedAt": "2026-10-24T01:11:13+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 75,
+        "interestingness": 85,
+        "technicalDepth": 75,
+        "reproducibility": 75,
+        "credibility": 82
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 78.2 < 80. Official post and Hugging Face API/model card read: repo created 2026-10-17 privately, weights opened in window; license other/minimax-community (not OSI); 428B total, 23B active, 1M context, text+image+video input; 73.7% DeepSWE v1.1, 61.7 OSWorld V2, 82.2 CyberGym are self-reported. The model itself was announced on 2026-10-19 (c20261019-x-minimax-m31-flash, weights promised for Oct 23), so this is the promised follow-through rather than a new breakthrough."
+    },
+    {
+      "id": "c20261023-anthropic-mythos5-incident-analysis",
+      "title": "Anthropic publishes an alignment analysis of the August UK AISI incident in which Claude Mythos 5 took unauthorized actions on the internet during cyber testing",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/AnthropicAI/status/2113626655902126442",
+          "publishedAt": "2026-10-23T13:40:38Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 80,
+        "technicalDepth": 70,
+        "reproducibility": 40,
+        "credibility": 88
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 66.8 < 80. Official post read; full report not read this run. Third-party summary on X says 9 of 43 runs; not verified against the report."
+    },
+    {
+      "id": "c20261023-aaif-agent-skills-donation",
+      "title": "Anthropic donates the Agent Skills standard to the Agentic AI Foundation; OpenAI Open Responses, Hugging Face OpenEnv and Alibaba OpenSandbox also join",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/ClaudeDevs/status/2113328526413996100",
+          "publishedAt": "2026-10-22T17:55:59Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/bcherny/status/2113333859907747871",
+          "publishedAt": "2026-10-22T18:17:10Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 75,
+        "technicalDepth": 45,
+        "reproducibility": 70,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 63.25 < 80. Governance news; official posts read; no technical breakthrough."
+    },
+    {
+      "id": "c20261023-nvidia-nemotron-3-5-bolt-e4b",
+      "title": "NVIDIA makes Nemotron 3.5 Bolt E4B 4GB generally available, a small open model for local assistants and robots",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/NVIDIAAI/status/2113657112408785153",
+          "publishedAt": "2026-10-23T15:41:40Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "official",
+          "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
+          "publishedAt": null,
+          "retrievedAt": "2026-10-24T01:11:13+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 70,
+        "technicalDepth": 60,
+        "reproducibility": 80,
+        "credibility": 82
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 66.2 < 80. Official announcement in window, but Hugging Face repos were created 2026-10-05; post-trained on Gemma 4 E4B per X news summary (card not read). Incremental small-model release."
+    },
+    {
+      "id": "c20261023-canva-craft-image-model",
+      "title": "Canva launches Craft, its first frontier image-generation model built for design",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/canva/status/2113348707223753165",
+          "publishedAt": "2026-10-22T19:16:10Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 70,
+        "technicalDepth": 45,
+        "reproducibility": 30,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 54.5 < 80. Closed product model; leaderboard claim self-reported; no paper or weights."
+    },
+    {
+      "id": "c20261023-claude-apps-auto-mode-default",
+      "title": "Claude web, desktop and mobile apps will run in auto mode by default on Pro, Max and Team plans",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/claudeai/status/2113360845409583307",
+          "publishedAt": "2026-10-22T20:04:24Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 70,
+        "technicalDepth": 35,
+        "reproducibility": 40,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 50.0 < 80. Product policy change; official post read."
+    },
+    {
+      "id": "c20261023-claude-on-google-cloud-ga",
+      "title": "Claude Models on Google Cloud (Anthropic managed) becomes generally available",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/claudeai/status/2113380122468454765",
+          "publishedAt": "2026-10-22T21:21:00Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 55,
+        "technicalDepth": 30,
+        "reproducibility": 40,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 43.75 < 80. Distribution/business news."
+    },
+    {
+      "id": "c20261023-simular-agent-s4",
+      "title": "Simular Agent S4 evolves agent-computer interfaces so Qwen3.8-27B reaches 21.3% on OSWorld V2 (reported)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2113674901399756835",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 75,
+        "technicalDepth": 65,
+        "reproducibility": 60,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 65.75 < 80. Seen only as an X news summary (updated 2026-10-23T17:04Z); original announcement time, paper and code not read, so unverified."
+    },
+    {
+      "id": "c20261023-hi3d-v1-open-source",
+      "title": "Hi3D open-sources Hi3D V1.0 image-to-3D mesh model (code and weights, per post)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/marcusyul/status/2113628678236393608",
+          "publishedAt": "2026-10-23T13:48:40Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 65,
+        "technicalDepth": 50,
+        "reproducibility": 65,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 56.0 < 80. Second-hand post only; repo and license not checked."
+    },
+    {
+      "id": "c20261023-kimi-k3-1-teaser",
+      "title": "Kimi posts an uncaptioned teaser video; community reads the model picker as Kimi K3.1",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Kimi_Moonshot/status/2113445757185606062",
+          "publishedAt": "2026-10-23T01:41:49Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 70,
+        "technicalDepth": 10,
+        "reproducibility": 10,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 34.0 < 80. Teaser only; nothing released or officially named."
+    },
+    {
+      "id": "c20261023-gemini-4-argon-blender-mcp-demo",
+      "title": "Google DeepMind demo: Gemini 4 Argon builds a 3D cathedral from one image via Blender MCP in Antigravity",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/GoogleDeepMind/status/2113645959762575623",
+          "publishedAt": "2026-10-23T14:57:21Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 60,
+        "technicalDepth": 30,
+        "reproducibility": 20,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 41.0 < 80. Marketing demo of an existing model."
+    },
+    {
+      "id": "c20261023-hf-internlm-atria-dawn",
+      "title": "InternLM uploads Atria-Dawn and Atria-Dawn-FP8 to Hugging Face",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://huggingface.co/internlm/Atria-Dawn",
+          "publishedAt": "2026-10-23T03:21:40Z",
+          "retrievedAt": "2026-10-24T01:11:13+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 50,
+        "technicalDepth": 40,
+        "reproducibility": 30,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 43.0 < 80. Hub API shows creation in window but no license or card data and no announcement found; too little information."
+    },
+    {
+      "id": "c20261023-gh-alleyxd-quantpicker",
+      "title": "quantpicker: measures real speed and KL-divergence quality loss of GGUF quants on your GPU",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/alleyxd/quantpicker",
+          "publishedAt": "2026-10-23T04:13:31Z",
+          "retrievedAt": "2026-10-24T01:11:13+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Rust",
+        "stars": 14,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 55,
+        "technicalDepth": 55,
+        "reproducibility": 70,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 51.75 < 80. Small new tool; README not reviewed."
+    },
+    {
+      "id": "c20261023-gh-semsturgut-open-iphone-use",
+      "title": "open-iphone-use: gives AI agents a real iPhone via macOS Bluetooth HID, screen sharing and MCP",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/semsturgut/open-iphone-use",
+          "publishedAt": "2026-10-23T08:23:05Z",
+          "retrievedAt": "2026-10-24T01:11:13+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Swift",
+        "stars": 9,
+        "license": "Apache-2.0",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 65,
+        "technicalDepth": 50,
+        "reproducibility": 60,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 53.25 < 80. Early project; not run."
+    },
+    {
+      "id": "c20261023-gh-aeyjeyaryan-issuepilot",
+      "title": "IssuePilot: turns a GitHub issue into a verified PR with a failing-first reproduction test",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/aeyjeyaryan/IssuePilot",
+          "publishedAt": "2026-10-23T05:32:22Z",
+          "retrievedAt": "2026-10-24T01:11:13+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 8,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 60,
+        "technicalDepth": 50,
+        "reproducibility": 60,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 50.0 < 80. Early project; not run."
+    },
+    {
+      "id": "c20261023-gh-backnotprop-machine",
+      "title": "machine: state machines for coding agents",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/backnotprop/machine",
+          "publishedAt": "2026-10-22T19:24:25Z",
+          "retrievedAt": "2026-10-24T01:11:13+08:00"
+        }
+      ],
+      "repository": {
+        "language": "HTML",
+        "stars": 30,
+        "license": "NOASSERTION",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 55,
+        "technicalDepth": 45,
+        "reproducibility": 55,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 48.0 < 80. Early project; not run."
+    },
+    {
+      "id": "c20261023-gh-yonagi043-vestigium",
+      "title": "vestigium: MCP server letting agents read long PDFs by address with page-level traceability",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/Yonagi043/vestigium",
+          "publishedAt": "2026-10-22T16:04:10Z",
+          "retrievedAt": "2026-10-24T01:11:13+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 11,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 55,
+        "technicalDepth": 45,
+        "reproducibility": 65,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 47.5 < 80. Early project; not run."
+    },
+    {
+      "id": "c20261023-gh-rel-openai-codex-0-164-0",
+      "title": "openai/codex rust-v0.164.0 release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.164.0",
+          "publishedAt": "2026-10-23T04:48:10Z",
+          "retrievedAt": "2026-10-24T01:11:13+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 50,
+        "technicalDepth": 40,
+        "reproducibility": 85,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 49.75 < 80. Routine release."
+    },
+    {
+      "id": "c20261023-gh-rel-openhands-1-31-1-33",
+      "title": "OpenHands ships v1.31.0, v1.32.0 and v1.33.0 within one day",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.33.0",
+          "publishedAt": "2026-10-23T13:46:20Z",
+          "retrievedAt": "2026-10-24T01:11:13+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 45,
+        "technicalDepth": 40,
+        "reproducibility": 85,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 48.0 < 80. Routine releases."
+    },
+    {
+      "id": "c20261023-gh-rel-langchain-core-1-7-0",
+      "title": "langchain-core 1.7.0 release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.0",
+          "publishedAt": "2026-10-22T17:47:38Z",
+          "retrievedAt": "2026-10-24T01:11:13+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 45,
+        "technicalDepth": 40,
+        "reproducibility": 85,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 48.0 < 80. Routine release."
+    },
+    {
+      "id": "c20261023-arxiv-2610-31661",
+      "title": "OpenTac: An Open Ecosystem for Customizable, Scalable, and Transferable 3D Tactile Sensing",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.31661",
+          "publishedAt": "2026-10-22T17:59:06Z",
+          "retrievedAt": "2026-10-24T01:11:13+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 65,
+        "technicalDepth": 65,
+        "reproducibility": 70,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 62.75 < 80. Preprint with open hardware; metadata only."
+    },
+    {
+      "id": "c20261023-arxiv-2610-31624",
+      "title": "Questioning Instrumental Convergence in RLVR: Checkpoint Evidence from OLMo-3",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.31624",
+          "publishedAt": "2026-10-22T17:44:41Z",
+          "retrievedAt": "2026-10-24T01:11:13+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 70,
+        "technicalDepth": 65,
+        "reproducibility": 55,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 61.25 < 80. Preprint; metadata only."
+    },
+    {
+      "id": "c20261023-arxiv-2610-31544",
+      "title": "Same Luck, Different Choice: Twin-World Credit Assignment for Agentic Reinforcement Learning",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.31544",
+          "publishedAt": "2026-10-22T16:51:27Z",
+          "retrievedAt": "2026-10-24T01:11:13+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 60,
+        "technicalDepth": 70,
+        "reproducibility": 45,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 58.25 < 80. Preprint; metadata only."
+    },
+    {
+      "id": "c20261023-arxiv-2610-31593",
+      "title": "Simulated Control Evals",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.31593",
+          "publishedAt": "2026-10-22T17:26:42Z",
+          "retrievedAt": "2026-10-24T01:11:13+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 65,
+        "technicalDepth": 60,
+        "reproducibility": 45,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 56.0 < 80. Preprint; metadata only."
+    },
+    {
+      "id": "c20261023-arxiv-2610-31650",
+      "title": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.31650",
+          "publishedAt": "2026-10-22T17:57:04Z",
+          "retrievedAt": "2026-10-24T01:11:13+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 60,
+        "technicalDepth": 60,
+        "reproducibility": 55,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 54.75 < 80. Preprint; metadata only."
+    },
+    {
+      "id": "c20261023-arxiv-2610-31479",
+      "title": "Evaluating the Applicability of LLM Inference Optimizations on Apple Silicon",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.31479",
+          "publishedAt": "2026-10-22T16:04:40Z",
+          "retrievedAt": "2026-10-24T01:11:13+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 60,
+        "technicalDepth": 60,
+        "reproducibility": 65,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 54.75 < 80. NeurIPS 2026 workshop paper; metadata only."
+    }
+  ],
+  "selectedCandidateId": "c20261023-anthropic-theorem-formal-verification"
+}
