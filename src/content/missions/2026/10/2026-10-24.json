@@ -1,0 +1,280 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "mission-20261024-001",
+  "date": "2026-10-24",
+  "timezone": "Asia/Taipei",
+  "status": "awaiting_review",
+  "objective": {
+    "goal": "Discover, score, verify and propose one outstanding AI/agent discovery for 2026-10-24 (Asia/Taipei), or document a no-publish decision.",
+    "sources": [
+      "x",
+      "github",
+      "arxiv"
+    ],
+    "deliverables": [
+      "Verified candidate batch",
+      "Published article (OpenAI frontier training containment red-teaming)",
+      "Mission record",
+      "Pull request"
+    ]
+  },
+  "agent": {
+    "id": "grokbot",
+    "framework": "Grok Bot (AgentLab-bot on minim4.home)",
+    "model": "grok-bot",
+    "runId": "routine-9a1f041e-20261025T0100-minim4-daily-2026-10-24"
+  },
+  "selection": {
+    "candidatesEvaluated": 15,
+    "selectedCandidateId": "c20261024-openai-frontier-training-containment-redteam",
+    "selectionScore": 82.95,
+    "rankingArtifact": "data/candidates/2026-10-24.json"
+  },
+  "skillsUsed": [
+    {
+      "skill": "x-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-x-20261024-001"
+    },
+    {
+      "skill": "github-discovery",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-gh-20261024-001"
+    },
+    {
+      "skill": "arxiv-research",
+      "version": "1.0.0",
+      "status": "failed",
+      "executionId": "exec-ax-20261024-001"
+    },
+    {
+      "skill": "fact-check",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-fc-20261024-001"
+    },
+    {
+      "skill": "article-writing",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-aw-20261024-001"
+    },
+    {
+      "skill": "image-curation",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ic-20261024-001"
+    },
+    {
+      "skill": "site-publishing",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-sp-20261024-001"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t1",
+      "action": "git checkout main, pull --ff-only (to 7b60170, merge of PR #12), create branch daily/2026-10-24 (tree clean)",
+      "tool": "git",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": "2026-10-25T01:01:18+08:00",
+      "evidenceIds": [
+        "ev-git-branch"
+      ]
+    },
+    {
+      "id": "t2",
+      "action": "GitHub search (repos created in window: stars>=5 total 365, spam/cheat heavy, plus llm/agent/mcp/model/paper/benchmark queries); releases of 30 tracked repos (19 in window); Hugging Face API scan of 40 orgs plus trending (1 new in-window model: tencent/Hy-Nomas-Diffusers); arXiv API HTTP 200 but totalResults 0 for the window (latest indexed submission 2026-10-22T17:59:48Z). First discovery pass used a wrong 48h start (2026-10-22T16:00Z) due to a script templating error; corrected and rerun, only the corrected output is used",
+      "tool": "gh+python urllib",
+      "status": "success",
+      "startedAt": "2026-10-25T01:01:18+08:00",
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-gh-new",
+        "ev-gh-releases",
+        "ev-hf",
+        "ev-arxiv"
+      ]
+    },
+    {
+      "id": "t3",
+      "action": "Public X reads: 3x search_posts_all (official lab accounts; researchers; open-source keywords), 1x search_news, 1x get_posts_by_ids for full text and links",
+      "tool": "x.search_posts_all+x.search_news+x.get_posts_by_ids",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-x-search"
+      ]
+    },
+    {
+      "id": "t4",
+      "action": "Verify: OpenAI containment post (full text via Grok Bot web fetch; curl from minim4 got HTTP 403), patchtheplanet.org/brotli metadata, Kimi K3.1 Pro tech blog, Tencent-Hunyuan/Hy-Nomas GitHub metadata/commits/README and Hugging Face API/card, letta-ai/frontiermemory metadata, arXiv abstract 2610.31642; dedup over prior candidate files",
+      "tool": "curl+gh+web fetch",
+      "status": "success",
+      "startedAt": "2026-10-25T01:04:16+08:00",
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-verify",
+        "ev-dedup"
+      ]
+    },
+    {
+      "id": "t5",
+      "action": "Write candidates JSON (15), rank with rank_candidates.py (proposed c20261024-openai-frontier-training-containment-redteam 82.95), write original SVG cover and zh-TW article (status published), scaffold mission with create_mission.py",
+      "tool": "python",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": "2026-10-25T01:07:31+08:00",
+      "evidenceIds": [
+        "ev-ranking",
+        "ev-article"
+      ]
+    },
+    {
+      "id": "t6",
+      "action": "Run validate_content, unittest, astro check, astro build",
+      "tool": "python+npm",
+      "status": "success",
+      "startedAt": "2026-10-25T01:08:01+08:00",
+      "finishedAt": "2026-10-25T01:08:04+08:00",
+      "evidenceIds": [
+        "ev-validate",
+        "ev-unittest",
+        "ev-astro-check",
+        "ev-astro-build"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "python scripts/validate_content.py",
+      "status": "passed",
+      "artifact": ".reports/2026-10-24/validate.log"
+    },
+    {
+      "name": "python -m unittest discover -s tests -v",
+      "status": "passed",
+      "artifact": ".reports/2026-10-24/unittest.log"
+    },
+    {
+      "name": "npm run check",
+      "status": "passed",
+      "artifact": ".reports/2026-10-24/astro-check.log"
+    },
+    {
+      "name": "npm run build",
+      "status": "passed",
+      "artifact": ".reports/2026-10-24/astro-build.log"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-git-branch",
+      "type": "git",
+      "ref": "branch daily/2026-10-24 from origin/main@7b60170"
+    },
+    {
+      "id": "ev-gh-new",
+      "type": "http_response",
+      "ref": ".reports/2026-10-24/gh_new_repos.json (365 repos >=5 stars created in window; AI-focused queries)"
+    },
+    {
+      "id": "ev-gh-releases",
+      "type": "http_response",
+      "ref": ".reports/2026-10-24/gh_releases_window.txt (19 releases in window across 30 tracked repos)"
+    },
+    {
+      "id": "ev-hf",
+      "type": "http_response",
+      "ref": ".reports/2026-10-24/hf_orgs.txt (1 new model from 40 tracked orgs in window, plus trending)"
+    },
+    {
+      "id": "ev-arxiv",
+      "type": "http_response",
+      "ref": ".reports/2026-10-24/arxiv.xml (totalResults 0 for submittedDate 202610231600-202610241600) and arxiv_latest.xml (newest indexed cs.AI submission 2026-10-22T17:59:48Z): arXiv source unavailable for this window"
+    },
+    {
+      "id": "ev-x-search",
+      "type": "api_response",
+      "ref": "5 public X reads; in-window official posts from OpenAI, OpenAI Developers, Kimi, Tencent Hy, MiniMax, NVIDIA, NVIDIA AI, Hugging Face, Letta, Simular and researchers Jon Barron and Ross Taylor"
+    },
+    {
+      "id": "ev-verify",
+      "type": "http_response",
+      "ref": "OpenAI post text (web fetch), .reports/2026-10-24/brotli.html, kimi_blog.txt, simular.txt, hynomas_readme.md, hf_hynomas.json, hf_hynomas_readme.md, frontiermemory_readme.md"
+    },
+    {
+      "id": "ev-dedup",
+      "type": "local_command",
+      "ref": "grep over data/candidates/2026-10-16..23.json: no prior OpenAI containment, Hy-Nomas or Kimi K3.1 Pro entries (only c20261023-kimi-k3-1-teaser); Letta FrontierMemory already c20261022-letta-frontiermemory and Simular Agent S4 already c20261023-simular-agent-s4, not re-added; arXiv 2610.31642 was in the 2026-10-23 arXiv sample, so scored but marked out of window"
+    },
+    {
+      "id": "ev-ranking",
+      "type": "local_command",
+      "ref": ".reports/2026-10-24/ranking.json (proposedCandidateId c20261024-openai-frontier-training-containment-redteam 82.95, publicationAllowed true; next arXiv 2610.31642 80.1 rejected out of window, Hy-Nomas 79.8, Kimi K3.1 Pro 77.25)"
+    },
+    {
+      "id": "ev-article",
+      "type": "git",
+      "ref": "src/content/articles/2026/10/openai-frontier-training-containment-redteam.md and public/media/2026/10/openai-containment/cover.svg"
+    },
+    {
+      "id": "ev-validate",
+      "type": "local_command",
+      "ref": "python scripts/validate_content.py: passed (Content OK: 8 article(s), 10 mission(s), 2 agent(s), 212 candidate(s).) @ 2026-10-25T01:08:01+08:00"
+    },
+    {
+      "id": "ev-unittest",
+      "type": "local_command",
+      "ref": "python -m unittest discover -s tests -v: passed (OK) @ 2026-10-25T01:08:01+08:00"
+    },
+    {
+      "id": "ev-astro-check",
+      "type": "local_command",
+      "ref": "npm run check: passed (- 0 hints) @ 2026-10-25T01:08:03+08:00"
+    },
+    {
+      "id": "ev-astro-build",
+      "type": "local_command",
+      "ref": "npm run build: passed (01:08:04 [build] Complete!) @ 2026-10-25T01:08:04+08:00"
+    }
+  ],
+  "outcome": {
+    "articleId": "article-20261024-001",
+    "githubCommit": null,
+    "githubPullRequest": null,
+    "deploymentUrl": null,
+    "publicationStatus": "in_review"
+  },
+  "metrics": {
+    "durationSeconds": null,
+    "tokens": null,
+    "estimatedCostUsd": null,
+    "humanInterventions": 0
+  },
+  "retrospective": {
+    "successes": [
+      "X and GitHub responded on the first attempt; 15 deduplicated candidates scored with explicit reasons.",
+      "The OpenAI containment red-teaming post was read in full and cross-checked with two official X posts; scored 82.95 and published."
+    ],
+    "failures": [
+      "arXiv API had not indexed any submission in the window (newest indexed 2026-10-22T17:59Z), so arXiv contributed no in-window candidates.",
+      "The first discovery pass used a wrong 48h window because of a templating error in the reused script; it was caught from the output and rerun.",
+      "openai.com returned HTTP 403 to curl from minim4; the post was read through Grok Bot web fetch instead.",
+      "patchtheplanet.org/brotli is JavaScript-rendered; only its title/metadata was read.",
+      "X post retrievedAt timestamps were not captured per call, so they are null."
+    ],
+    "lessonsLearned": [
+      "When reusing a prior day script, substitute window bounds explicitly instead of global date replacement, and print the window before running."
+    ],
+    "nextActions": [
+      "Re-check Kimi K3.1 Pro when weights land (by Nov 4) and the Hy-Nomas technical report.",
+      "After merge and DigitalOcean deploy, run a real smoke test in a follow-up PR before promoting the mission."
+    ]
+  }
+}
