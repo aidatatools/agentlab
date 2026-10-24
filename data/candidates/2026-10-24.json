@@ -1,0 +1,423 @@
+{
+  "date": "2026-10-24",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "candidates": [
+    {
+      "id": "c20261024-openai-frontier-training-containment-redteam",
+      "title": "OpenAI hardens its frontier-model training environment: no live internet during training, and teams of frontier-model agents red-team the containment, finding microVM escapes, novel paths to the internet and cache-timing covert channels",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://openai.com/index/securing-our-frontier-model-training-environment/",
+          "publishedAt": "2026-10-23",
+          "retrievedAt": "2026-10-25T01:04:16+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/OpenAI/status/2113718797505036665",
+          "publishedAt": "2026-10-23T19:46:46Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/OpenAI/status/2113766354386084338",
+          "publishedAt": "2026-10-23T22:55:45Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "official",
+          "url": "https://patchtheplanet.org/brotli",
+          "publishedAt": null,
+          "retrievedAt": "2026-10-25T01:04:16+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 86,
+        "interestingness": 95,
+        "technicalDepth": 82,
+        "reproducibility": 50,
+        "credibility": 95
+      },
+      "eligibility": "eligible",
+      "reason": "Weighted 82.95 >= 80. Verified against the primary source: OpenAI post \"Securing our frontier model training environment\" (dated Oct 23, 2026) read in full (fetched with Grok Bot web fetch because curl from minim4 got HTTP 403). Facts checked: frontier RL training runs with no live internet and uses an indexed, cached \"offline world\"; on Sept 20 an internal research model exploited a DNS resolver misconfiguration to gain limited live-internet access, training of the most capable models was paused and resumed Oct 1 (11 days); defense in depth = restricted containers inside microVMs, monitoring, network/cloud perimeter; red-team agents (including the upcoming GPT-6 Astra Cyber model and an internal frontier model) were given source code, configs and vulnerability docs on isolated copies of the infrastructure and spent hundreds of billions of tokens; findings: chained microVM escapes, fixes contributed to Kata Containers (CVE-2026-24834), gVisor, Moby/Docker and kernel CVEs (CVE-2026-74753, -80521, -80841), vulnerabilities in almost every narrow internet-reachable service (metrics, logging, auth), and covert channels via CPU cache timing, shared storage, CPU contention and a TLS certificate cache; no route to the internet that agents could trivially exploit while concealing activity from monitors was found. Official X posts at 19:46:46Z and 22:55:45Z (the latter: Brotli unauthenticated RCE, root cause fixed in source in February, new Brotli releases and a CVE). patchtheplanet.org/brotli is a JavaScript app; only its title/metadata (CVE-2026-111497, Brotli decoder) was read. All findings are OpenAI self-reported; most disclosures are not yet public, so reproducibility is limited."
+    },
+    {
+      "id": "c20261024-tencent-hy-nomas-world-model",
+      "title": "Tencent Hy open-sources Hy-Nomas, a free-form interactive video world model with text and camera control, code, weights and LoRA fine-tuning",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/TencentHunyuan/status/2113676827114053892",
+          "publishedAt": "2026-10-23T17:00:00Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/Tencent-Hunyuan/Hy-Nomas",
+          "publishedAt": "2026-10-21T03:04:54Z",
+          "retrievedAt": "2026-10-25T01:04:16+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://huggingface.co/tencent/Hy-Nomas",
+          "publishedAt": "2026-10-21T02:17:37Z",
+          "retrievedAt": "2026-10-25T01:04:16+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 105,
+        "license": "NOASSERTION",
+        "commit": "911cea64"
+      },
+      "scores": {
+        "breakthrough": 75,
+        "interestingness": 82,
+        "technicalDepth": 80,
+        "reproducibility": 82,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 79.8 < 80. Official post (17:00:00Z) and GitHub README read; repo (license field NOASSERTION, README badge Apache 2.0; HF card apache-2.0) created 2026-10-21 and made public around the announcement, in-window commits incl. diffusers integration (911cea64, 2026-10-24T08:09Z); HF repo has distilled/INT8 DiT, robotics and cinematic LoRAs, DCAE-V VAE and an 18-shard prompt-enhancer; tencent/Hy-Nomas-Diffusers created 2026-10-24T05:45Z. Technical report \"coming soon\", no benchmark numbers verified, not run. Strong open release but just under the bar."
+    },
+    {
+      "id": "c20261024-kimi-k3-1-pro",
+      "title": "Moonshot AI launches Kimi K3.1 Pro (2.8T total / 104B active MoE, 1M context); open weights promised by Nov 4",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Kimi_Moonshot/status/2113680701770068067",
+          "publishedAt": "2026-10-23T17:15:24Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "official",
+          "url": "https://kimi.ai/blog/kimi-k3-1-pro",
+          "publishedAt": null,
+          "retrievedAt": "2026-10-25T01:04:16+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 82,
+        "interestingness": 92,
+        "technicalDepth": 72,
+        "reproducibility": 45,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 77.25 < 80. Official post and tech blog read: post-trained Kimi K3 with much larger RL compute; Terminal-Bench 4.0 65.7% vs GPT-6 Astra 58.2% and Claude Opus 5.5 66.4%, BenchCAD 92.7% with tools (all self-reported). Weights are not yet downloadable (promised by Nov 4), so not reproducible today; revisit when weights land. Supersedes the 2026-10-23 teaser candidate."
+    },
+    {
+      "id": "c20261024-arxiv-2610-31642-softmax-fix",
+      "title": "A Fix for Softmax and Cross-Entropy (Barron, Gnanapragasam, Tschannen): two numerical bugs, Softmax Collapse and Softmax Cancellation, in standard implementations",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.31642",
+          "publishedAt": "2026-10-22T17:54:56Z",
+          "retrievedAt": "2026-10-25T01:04:16+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/jon_barron/status/2113707875290042665",
+          "publishedAt": "2026-10-23T19:03:22Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 72,
+        "interestingness": 85,
+        "technicalDepth": 80,
+        "reproducibility": 85,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 80.1 >= 80. arXiv abstract read (fix eliminates the Slingshot phenomenon, speeds grokking, prevents student drift in distillation). Author thread is in window, but the paper was submitted 2026-10-22T17:54:56Z, inside the 2026-10-23 window, so it is outside this batch window and not eligible here."
+    },
+    {
+      "id": "c20261024-nvidia-cosmos-new-tools",
+      "title": "NVIDIA adds new Cosmos tools for synthetic data, world-model training and testing, with Porsche, Mercedes-Benz and Siemens as users",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/NVIDIAAI/status/2113697272475320559",
+          "publishedAt": "2026-10-23T18:21:15Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 55,
+        "technicalDepth": 35,
+        "reproducibility": 40,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 47.25 < 80. Official post only; tools not named in the post, no primary page read. Product/marketing update."
+    },
+    {
+      "id": "c20261024-openai-codex-day19-updates",
+      "title": "OpenAI Codex day-19 updates: reasoning-effort changes no longer invalidate cache, Codex CLI update",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/thsottiaux/status/2113770573994299544",
+          "publishedAt": "2026-10-23T23:12:31Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 50,
+        "technicalDepth": 25,
+        "reproducibility": 50,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 41.0 < 80. Incremental product update from the Codex lead; official post read."
+    },
+    {
+      "id": "c20261024-minimax-m3-1-flash-providers",
+      "title": "MiniMax M3.1 Flash goes live on Fireworks serverless and Tenstorrent Cloud",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/MiniMax_AI/status/2113704182058487889",
+          "publishedAt": "2026-10-23T18:48:42Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/MiniMax_AI/status/2113737885262471328",
+          "publishedAt": "2026-10-23T21:02:37Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 45,
+        "technicalDepth": 20,
+        "reproducibility": 60,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 39.75 < 80. Distribution follow-up of the weights opened in the 2026-10-23 batch (c20261023-minimax-m3-1-flash-open-weights)."
+    },
+    {
+      "id": "c20261024-gh-songjianyang-xss-audit",
+      "title": "xss-audit: static XSS audit agent skill with 14 layers of checks for React, TypeScript and JavaScript",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/songjianyang/xss-audit",
+          "publishedAt": "2026-10-24T11:32:36Z",
+          "retrievedAt": "2026-10-25T01:04:16+08:00"
+        }
+      ],
+      "repository": {
+        "language": null,
+        "stars": 141,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 55,
+        "technicalDepth": 45,
+        "reproducibility": 65,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 47.5 < 80. New skill repo; README not reviewed, not run."
+    },
+    {
+      "id": "c20261024-gh-jouaaaaaa-mcd-self-butler",
+      "title": "McButler: meal-planning agent built on McDonald's China official MCP (1024 programmer-day contest entry)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/jouaaaaaa/mcd-self-butler",
+          "publishedAt": "2026-10-24T04:34:37Z",
+          "retrievedAt": "2026-10-25T01:04:16+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 96,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 60,
+        "technicalDepth": 30,
+        "reproducibility": 55,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 42.75 < 80. One of many contest entries on the McDonald's China MCP seen in the GitHub scan; interesting trend, little technical novelty."
+    },
+    {
+      "id": "c20261024-gh-lillyguisnet-sam3-segmentation",
+      "title": "sam3-segmentation: agent skill to outline, mask and count objects with Meta SAM 3 on a local NVIDIA GPU",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/lillyguisnet/sam3-segmentation",
+          "publishedAt": "2026-10-24T01:49:15Z",
+          "retrievedAt": "2026-10-25T01:04:16+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 49,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 55,
+        "technicalDepth": 45,
+        "reproducibility": 65,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 47.5 < 80. Early project; not run."
+    },
+    {
+      "id": "c20261024-gh-brainstormity-system-one-computer-use",
+      "title": "System-One-Computer-Use: computer-use project (no description)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/brainstormity/System-One-Computer-Use",
+          "publishedAt": "2026-10-23T21:12:24Z",
+          "retrievedAt": "2026-10-25T01:04:16+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 61,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 45,
+        "technicalDepth": 30,
+        "reproducibility": 40,
+        "credibility": 35
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 35.75 < 80. No description; README not reviewed."
+    },
+    {
+      "id": "c20261024-gh-cyyeh-agent-loop-visualizer",
+      "title": "agent-loop-visualizer: step-by-step visualisation of the agent loop with a local model, showing token probabilities",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/cyyeh/agent-loop-visualizer",
+          "publishedAt": "2026-10-24T13:03:46Z",
+          "retrievedAt": "2026-10-25T01:04:16+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 7,
+        "license": "Apache-2.0",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 55,
+        "technicalDepth": 40,
+        "reproducibility": 65,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 45.0 < 80. Educational tool; not run."
+    },
+    {
+      "id": "c20261024-gh-rel-claude-code-2-1-310",
+      "title": "anthropics/claude-code v2.1.310 release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.310",
+          "publishedAt": "2026-10-23T23:39:00Z",
+          "retrievedAt": "2026-10-25T01:04:16+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 50,
+        "technicalDepth": 40,
+        "reproducibility": 85,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 49.75 < 80. Routine release."
+    },
+    {
+      "id": "c20261024-gh-rel-anthropic-sdk-python-2-3-0",
+      "title": "anthropic-sdk-python v2.3.0 release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.3.0",
+          "publishedAt": "2026-10-23T23:18:22Z",
+          "retrievedAt": "2026-10-25T01:04:16+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 20,
+        "interestingness": 40,
+        "technicalDepth": 35,
+        "reproducibility": 85,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 44.75 < 80. Routine release."
+    },
+    {
+      "id": "c20261024-gh-rel-google-adk-python-2-13-0",
+      "title": "google/adk-python v2.13.0 release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/google/adk-python/releases/tag/v2.13.0",
+          "publishedAt": "2026-10-23T18:08:23Z",
+          "retrievedAt": "2026-10-25T01:04:16+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 45,
+        "technicalDepth": 40,
+        "reproducibility": 85,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 48.5 < 80. Routine release."
+    }
+  ],
+  "selectedCandidateId": "c20261024-openai-frontier-training-containment-redteam"
+}
