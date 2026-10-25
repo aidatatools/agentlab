@@ -1,0 +1,523 @@
+{
+  "date": "2026-10-25",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "candidates": [
+    {
+      "id": "c20261025-nanbeige4-3-33b",
+      "title": "Nanbeige (BOSS Zhipin) open-sources Nanbeige4.3-33B, a dense 33B agentic coding/cowork \"teacher\" model under Apache 2.0 with 512K context",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/nanbeige/status/2114328933181333798",
+          "publishedAt": "2026-10-25T12:11:14Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "official",
+          "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
+          "publishedAt": "2026-10-25T11:11:17Z",
+          "retrievedAt": "2026-10-26T01:08:29+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/TeksEdge/status/2114363856021516415",
+          "publishedAt": "2026-10-25T14:30:00Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 78,
+        "interestingness": 85,
+        "technicalDepth": 74,
+        "reproducibility": 88,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 79.65 < 80. Hugging Face card and API read: apache-2.0, 14 safetensors shards (33.1B params), base model Nanbeige4.3-33B-Base, 512K context, Transformers/SGLang/vLLM quickstart; README and figures uploaded 2026-10-25T10:19-11:11Z and announced by @nanbeige in window. Card claims Terminal-Bench 2.1 80.9 vs Qwen3.8-27B 73.0, Terminal-Bench 4.0 23.8 vs 6.3, DeepSWE 65.5 vs 42.5, but Qwen wins SWE-Bench Pro (61.7 vs 60.3) and GDPval (86.4 vs 84.8). All numbers are self-reported, no technical report and no independent evaluation yet, so credibility is not independently verified (rank prompt requirement). Not run (66 GB BF16). Revisit when independent evals appear."
+    },
+    {
+      "id": "c20261025-gh-zagitta-gpu-unlock",
+      "title": "gpu-unlock: Linux kernel module that raises FP16/BF16 issue rate on RTX 30-series (GA10x) cards to professional-card levels",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/Zagitta/gpu-unlock",
+          "publishedAt": "2026-10-18T01:28:31Z",
+          "retrievedAt": "2026-10-26T01:08:29+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/Austen/status/2114315481079296412",
+          "publishedAt": "2026-10-25T11:17:47Z",
+          "retrievedAt": null
+        }
+      ],
+      "repository": {
+        "language": null,
+        "stars": 5795,
+        "license": null,
+        "commit": "af28cbbf"
+      },
+      "scores": {
+        "breakthrough": 70,
+        "interestingness": 88,
+        "technicalDepth": 78,
+        "reproducibility": 80,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 76.6 < 80. Repo metadata, commits (latest af28cbbf 2026-10-24T15:47:28Z) and README read; 5,795 stars, no license file. Repo created 2026-10-18 (outside window); it trended in window via HN/X roundups. Throughput claims (e.g. 3090 Ti 87.5 to 157.4 TFLOPS BF16) are author/user reports, not reproduced here."
+    },
+    {
+      "id": "c20261025-gh-kohakublueleaf-kohakunlock",
+      "title": "KohakUnlock: experimental NVIDIA tensor-compute unlock research (guarded TU102 initramfs port, offline tests, Ampere reproduction notes)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/KohakuBlueleaf/KohakUnlock",
+          "publishedAt": "2026-10-25T01:18:54Z",
+          "retrievedAt": "2026-10-26T01:08:29+08:00"
+        }
+      ],
+      "repository": {
+        "language": "C",
+        "stars": 126,
+        "license": "GPL-2.0",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 70,
+        "technicalDepth": 60,
+        "reproducibility": 55,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 59.25 < 80. Created in window (126 stars, GPL-2.0); follow-on research to the gpu-unlock event, experimental, README not fully reviewed, not run."
+    },
+    {
+      "id": "c20261025-gh-slee-persis-gvs5h",
+      "title": "GVS5H: ledger-based zero-shot self-orchestration lets five Qwen3.8-27B instances match Claude Fable 5 on hard LiveCodeBench",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/slee-persis/GVS5H",
+          "publishedAt": "2026-08-26T20:56:52Z",
+          "retrievedAt": "2026-10-26T01:08:29+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/Austen/status/2114315481079296412",
+          "publishedAt": "2026-10-25T11:17:47Z",
+          "retrievedAt": null
+        }
+      ],
+      "repository": {
+        "language": null,
+        "stars": 943,
+        "license": "MIT",
+        "commit": "707e2129"
+      },
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 85,
+        "technicalDepth": 70,
+        "reproducibility": 85,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 73.0 < 80. Repo (MIT, 943 stars) created 2026-08-26, last commit 2026-09-23; only resurfaced on HN in window, so out of window. Benchmarks author-reported."
+    },
+    {
+      "id": "c20261025-arxiv-2609-40303-harness-mle",
+      "title": "How Much of a Harness Does a Strong Agent Need for Autonomous ML Engineering? Simple read/write/bash agent matches complex harnesses under equal budgets",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2609.40303",
+          "publishedAt": null,
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/BioAI_NeuralNet/status/2114161649183601012",
+          "publishedAt": "2026-10-25T01:06:31Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 80,
+        "technicalDepth": 70,
+        "reproducibility": 70,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 69.5 < 80. Discussed on X in window, but arXiv id 2609.x means a September 2026 submission, outside the window; abstract not re-read in this run."
+    },
+    {
+      "id": "c20261025-mcp-servers-v2-1-0-security",
+      "title": "modelcontextprotocol/servers v2.1.0 fixes eight vulnerabilities in server-filesystem, server-everything and mcp-server-fetch",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/modelcontextprotocol/servers/releases/tag/v2.1.0",
+          "publishedAt": "2026-10-25T00:03:20Z",
+          "retrievedAt": "2026-10-26T01:08:29+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 70,
+        "technicalDepth": 65,
+        "reproducibility": 90,
+        "credibility": 95
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 67.0 < 80. Release notes read: symlink TOCTOU and path-normalisation fixes in server-filesystem 2.0.1 (GHSA-53mr-w429-c597, GHSA-7rgq-gccq-qphx; Windows only partly fixed), plus server-everything 2.0.1 and mcp-server-fetch 2026.10.24. Important for users to upgrade, but a maintenance security release rather than a breakthrough."
+    },
+    {
+      "id": "c20261025-cerebras-trillion-param-deploy",
+      "title": "Cerebras explains how it shards ~3T-parameter models such as Kimi K3 across 59 WSE-3T wafers for 1,000+ tok/s",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+          "publishedAt": "2026-10-22",
+          "retrievedAt": "2026-10-26T01:08:29+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/Austen/status/2114315481079296412",
+          "publishedAt": "2026-10-25T11:17:47Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 70,
+        "technicalDepth": 70,
+        "reproducibility": 20,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 56.0 < 80. Official blog read; dated Oct 22 2026 (outside window). Explainer, not a product launch; proprietary hardware."
+    },
+    {
+      "id": "c20261025-dream-labs-dream-1",
+      "title": "Dream Labs releases Dream-1, a world action model controlling unseen bimanual robots zero-shot, with a $3/hour API",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://dreamlabs.ai/research/dream-1/",
+          "publishedAt": null,
+          "retrievedAt": "2026-10-26T01:08:29+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/Austen/status/2114315481079296412",
+          "publishedAt": "2026-10-25T11:17:47Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 75,
+        "interestingness": 85,
+        "technicalDepth": 60,
+        "reproducibility": 50,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 69.25 < 80. Official research page read (\"October 2026\", no exact date; cited RoboDojo-RC result dated October 18, 2026), so publication in window cannot be confirmed. Results are company-reported except one third-party leaderboard score; weights not released."
+    },
+    {
+      "id": "c20261025-block-dessa-speech-model",
+      "title": "Block research previews Dessa, a full-duplex speech-to-speech model trained only on recorded conversation",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://block.xyz/dessa",
+          "publishedAt": null,
+          "retrievedAt": "2026-10-26T01:08:29+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/Austen/status/2114315481079296412",
+          "publishedAt": "2026-10-25T11:17:47Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 75,
+        "technicalDepth": 40,
+        "reproducibility": 15,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 55.5 < 80. Official page read: waitlist/preview only, no date on page (privacy notice effective Oct 21 2026), no paper or weights found."
+    },
+    {
+      "id": "c20261025-tao-oai-math-revised",
+      "title": "Mathematicians launch oai-math-revised, a community hub for revising OpenAI math write-ups (announced on Terence Tao's blog)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://terrytao.wordpress.com/2026/10/24/oai-math-revised-a-community-hub-for-revising-openais-math-write-ups/",
+          "publishedAt": "2026-10-24T15:08:02Z",
+          "retrievedAt": "2026-10-26T01:08:29+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 70,
+        "technicalDepth": 30,
+        "reproducibility": 60,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 53.5 < 80. Blog metadata shows publication 2026-10-24T15:08:02Z, 52 minutes before the window start; community initiative, not a technical result."
+    },
+    {
+      "id": "c20261025-citrini-scorpion-binders",
+      "title": "Citrini researchers use an internal Anthropic model to design 318,484 scorpion-toxin binders; 17 of 211 tested bound",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2114350914303615054",
+          "publishedAt": "2026-10-25T16:05:22Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 80,
+        "technicalDepth": 50,
+        "reproducibility": 40,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 59.5 < 80. Only the X news summary was read; primary write-up and data were not located in this run, so unverified."
+    },
+    {
+      "id": "c20261025-assoc-human-mathematics",
+      "title": "Over 1,000 mathematicians form the Association for Human Mathematics and pledge not to collaborate with commercial AI companies",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2114275689264271444",
+          "publishedAt": "2026-10-25T16:05:56Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 15,
+        "interestingness": 65,
+        "technicalDepth": 10,
+        "reproducibility": 0,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 26.75 < 80. X news summary only; primary source not read. Policy/community news, not a technical discovery."
+    },
+    {
+      "id": "c20261025-gpt-6-1-terra-leak",
+      "title": "Commits at Microsoft/GitHub reference GPT-6.1 Terra as a default judge model, hinting at a new OpenAI coding model",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2114293527576559769",
+          "publishedAt": "2026-10-25T16:44:36Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 70,
+        "technicalDepth": 10,
+        "reproducibility": 0,
+        "credibility": 30
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 31.5 < 80. Speculation from leaked config changes (dated Oct 16); no official announcement. Not eligible."
+    },
+    {
+      "id": "c20261025-apollo-ai-payoff-note",
+      "title": "Apollo chief economist: no signs of AI payoff outside the tech sector",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+          "publishedAt": "2026-10-24",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/Austen/status/2114315481079296412",
+          "publishedAt": "2026-10-25T11:17:47Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 10,
+        "interestingness": 55,
+        "technicalDepth": 20,
+        "reproducibility": 0,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 28.75 < 80. Economics commentary dated Oct 24 (outside window per summary); not an AI/agent technical discovery. Page not fetched."
+    },
+    {
+      "id": "c20261025-gh-thomasunise-argus",
+      "title": "argus: open-source agentic security operations platform",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/thomasunise/argus",
+          "publishedAt": "2026-10-24T16:12:28Z",
+          "retrievedAt": "2026-10-26T01:08:29+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 82,
+        "license": "MIT",
+        "commit": "6e5db98d"
+      },
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 60,
+        "technicalDepth": 55,
+        "reproducibility": 70,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 54.5 < 80. Created in window (82 stars, MIT) with active commits (6e5db98d 2026-10-25T15:24Z); README not fully reviewed, not run."
+    },
+    {
+      "id": "c20261025-gh-joelhooks-lockjaw",
+      "title": "lockjaw: egress credential injection for agents, which hold placeholders while the edge fills real keys for approved hosts",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/joelhooks/lockjaw",
+          "publishedAt": "2026-10-24T17:38:39Z",
+          "retrievedAt": "2026-10-26T01:08:29+08:00"
+        }
+      ],
+      "repository": {
+        "language": "TypeScript",
+        "stars": 21,
+        "license": "MIT",
+        "commit": "00b51935"
+      },
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 62,
+        "technicalDepth": 55,
+        "reproducibility": 70,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 56.0 < 80. Created in window (21 stars, MIT); useful agent-security pattern, early, not run."
+    },
+    {
+      "id": "c20261025-gh-tenhkspark-secbrief",
+      "title": "secbrief: daily vulnerability briefing for AI-agent-managed machines (deterministic OSV + CISA KEV matching, LLM only explains)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/tenhkspark/secbrief",
+          "publishedAt": "2026-10-25T03:33:17Z",
+          "retrievedAt": "2026-10-26T01:08:29+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 12,
+        "license": "MIT",
+        "commit": "12ac0c71"
+      },
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 50,
+        "technicalDepth": 45,
+        "reproducibility": 70,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 47.0 < 80. Created in window (12 stars, MIT); small tool, not run."
+    },
+    {
+      "id": "c20261025-gh-denissergeevitch-ex-ussr-kinship-research",
+      "title": "ex-ussr-kinship-research: evidence-first genealogy agent skill for Codex/Claude Code across former-USSR archives",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
+          "publishedAt": "2026-10-25T10:05:56Z",
+          "retrievedAt": "2026-10-26T01:08:29+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 396,
+        "license": "MIT",
+        "commit": "5a430a2e"
+      },
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 60,
+        "technicalDepth": 40,
+        "reproducibility": 65,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 46.25 < 80. Created in window (396 stars, MIT); niche skill, not run."
+    },
+    {
+      "id": "c20261025-gh-rel-gemini-cli-nightly",
+      "title": "google-gemini/gemini-cli v0.67.0-nightly.20261025 prerelease",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.67.0-nightly.20261025.gcd1b45c2d",
+          "publishedAt": "2026-10-25T01:31:55Z",
+          "retrievedAt": "2026-10-26T01:08:29+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 10,
+        "interestingness": 30,
+        "technicalDepth": 20,
+        "reproducibility": 80,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 35.5 < 80. Routine nightly prerelease."
+    }
+  ],
+  "selectedCandidateId": null
+}
