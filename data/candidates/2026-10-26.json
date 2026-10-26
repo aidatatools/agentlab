@@ -1,0 +1,557 @@
+{
+  "date": "2026-10-26",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "candidates": [
+    {
+      "id": "c20261026-mirendil-fern-0-1",
+      "title": "Mirendil introduces Fern 0.1, its first from-scratch pretrained model with a context window of up to 10M tokens",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://mirendil.com/news/introducing-fern/",
+          "publishedAt": "2026-10-26T15:00:00Z",
+          "retrievedAt": "2026-10-27T01:03:27+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/bneyshabur/status/2114743262565339148",
+          "publishedAt": "2026-10-26T15:37:38Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/bneyshabur/status/2114743271624933864",
+          "publishedAt": "2026-10-26T15:37:40Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 78,
+        "interestingness": 88,
+        "technicalDepth": 70,
+        "reproducibility": 15,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 68.15 < 80. Official post read (\"Published: October 26, 2026, 8:00 am PT\", in window) and its embedded figure data parsed: Fern 0.1 = Mirendil-Base (0.1-0.5T params) after short post-training, up to 10M tokens; RULER on Mirendil-Base 100% single needle at 32K-10M, 90% multi-key and 45% HotpotQA multi-hop at 10M (20 examples at 10M); agentic table Fern 0.1 vs Claude Opus 5.5: SWE-Bench Verified 73.4 vs 98.2, DeepSWE v1.1 44.2 vs 74.2, Terminal Bench 4.0 6.1 vs 66.4. All results are company-reported, no paper or weights, access \"coming soon\" (early-access form only), so not reproducible or independently verified. Related earlier candidate c20261022-mirendil-base covered the Oct 21 pretraining post; Fern is the new model release."
+    },
+    {
+      "id": "c20261026-frontiercs-2-argon-harness-rerun",
+      "title": "FrontierCS 2 rerun: Gemini 4 Argon goes from 39.6% to 54.2% pass rate after switching from the Pi harness to Antigravity, which retries refused requests",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://frontier-cs.org/",
+          "publishedAt": "2026-10-25",
+          "retrievedAt": "2026-10-27T01:03:27+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/wenhaocha1/status/2114559544156205413",
+          "publishedAt": "2026-10-26T03:27:36Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.29932",
+          "publishedAt": "2026-10-21T16:04:27Z",
+          "retrievedAt": "2026-10-27T01:03:27+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 80,
+        "technicalDepth": 65,
+        "reproducibility": 60,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 63.0 < 80. Leaderboard page read (\"Last updated: October 25, 2026\"): notes that in 10 of 48 Pi runs a provider content-filter refusal ended the run, while Antigravity retries; Claude Opus 5.5 leads at 58.3% per X posts. A useful harness-sensitivity finding, but an update to a benchmark already evaluated as c20261022-arxiv-2610-29932-frontiercs-2, not a new breakthrough."
+    },
+    {
+      "id": "c20261026-inclusionai-lbs-27b",
+      "title": "inclusionAI releases LBS-27B, a Qwen3.8-27B-based agentic VLM that learns region zoom-in from synthetic GUI grounding and transfers it to general VQA (Apache 2.0)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://huggingface.co/inclusionAI/LBS-27B",
+          "publishedAt": "2026-10-26T05:36:52Z",
+          "retrievedAt": "2026-10-27T01:03:27+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/inclusionAI/UI-Venus/tree/LBS",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 70,
+        "technicalDepth": 72,
+        "reproducibility": 80,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 68.4 < 80. Hugging Face API and README read: created in window, apache-2.0, 12 safetensors shards; ~10K SFT examples plus 80 GRPO steps on synthetic GUI grounding only; self-reported ScreenSpot-Pro 81.15, OS-World-G 84.57, HR-Bench 4K 89.13; README itself notes chart comparisons are not controlled. No paper located, not run."
+    },
+    {
+      "id": "c20261026-forever-security-agents-md",
+      "title": "Forever Security: an AGENTS.md planted in ~/Downloads by a web page got Codex to install npm malware in 90%+ of tests",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://forever.security/blog/hijacking-ai-agents-via-downloads-folder/",
+          "publishedAt": null,
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/detaaqua/status/2114661178949373985",
+          "publishedAt": "2026-10-26T10:11:28Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/agentwirenews/status/2114694823630213482",
+          "publishedAt": "2026-10-26T12:25:09Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 85,
+        "technicalDepth": 55,
+        "reproducibility": 40,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 59.25 < 80. Widely discussed on X in window, but X posts date the finding to Oct 22 (outside window); the blog itself was not fetched in this run, so details are unverified here."
+    },
+    {
+      "id": "c20261026-gh-t3dotgg-tstack",
+      "title": "t3dotgg/tstack: Theo open-sources the agent skills he uses daily with Claude Code and Codex",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/t3dotgg/tstack",
+          "publishedAt": "2026-10-24T05:00:20Z",
+          "retrievedAt": "2026-10-27T01:03:27+08:00"
+        }
+      ],
+      "repository": {
+        "language": null,
+        "stars": 1222,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 72,
+        "technicalDepth": 35,
+        "reproducibility": 80,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 53.0 < 80. Repo metadata read (MIT, 1,222 stars) shows creation on 2026-10-24, outside the window, although X news covered it on Oct 26. Prompt/skill collection rather than a technical result."
+    },
+    {
+      "id": "c20261026-qwen-two-neuron-hostile",
+      "title": "Community demo: amplifying one neuron and suppressing another in Qwen3.5-4B flips it to hostile outputs",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2114463228033909030",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 80,
+        "technicalDepth": 40,
+        "reproducibility": 50,
+        "credibility": 35
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 52.5 < 80. Only the X news summary was read; the original post and the May 2026 paper it builds on were not located in this run, so unverified."
+    },
+    {
+      "id": "c20261026-anthropic-single-agent-guidance",
+      "title": "Anthropic advises merging subagents into a single main agent loop for enterprise agents",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2114330879086461367",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 70,
+        "technicalDepth": 35,
+        "reproducibility": 20,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 41.5 < 80. X news summary only; the primary Anthropic post was not located in this run. Guidance, not a discovery."
+    },
+    {
+      "id": "c20261026-pomerado-launch",
+      "title": "Pomerado (YC) launches a tool that turns websites into APIs for AI agents",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2114600496728092896",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 60,
+        "technicalDepth": 35,
+        "reproducibility": 40,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 42.5 < 80. X news summary says launch on Oct 25 (exact time unknown); speed claims are company-reported, product not inspected."
+    },
+    {
+      "id": "c20261026-gh-nyxfoundation-nyxis",
+      "title": "Nyxis: Lean 4 backend framework whose Cedar-policy authorization safety is formally proven, for apps written by AI agents",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/NyxFoundation/nyxis",
+          "publishedAt": "2026-10-26T04:26:18Z",
+          "retrievedAt": "2026-10-27T01:03:27+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Lean",
+        "stars": 209,
+        "license": "MIT",
+        "commit": "785c11a6"
+      },
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 72,
+        "technicalDepth": 75,
+        "reproducibility": 70,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 65.5 < 80. Created in window (209 stars, MIT, v0.1.0, status under development); README read; proofs not checked and not run."
+    },
+    {
+      "id": "c20261026-gh-codician-team-diffinery",
+      "title": "diffinery: open-source, agent-first GitHub and Actions alternative on your own Cloudflare account",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/codician-team/diffinery",
+          "publishedAt": "2026-10-25T19:10:20Z",
+          "retrievedAt": "2026-10-27T01:03:27+08:00"
+        }
+      ],
+      "repository": {
+        "language": "TypeScript",
+        "stars": 34,
+        "license": "Apache-2.0",
+        "commit": "d74e332d"
+      },
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 62,
+        "technicalDepth": 55,
+        "reproducibility": 65,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 52.75 < 80. Created in window (34 stars, Apache-2.0), active commits; not run."
+    },
+    {
+      "id": "c20261026-gh-smhanov-agentloop",
+      "title": "agentloop: Go library for the LLM tool-calling loop with budgets, hooks and skills",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/smhanov/agentloop",
+          "publishedAt": "2026-10-25T16:18:50Z",
+          "retrievedAt": "2026-10-27T01:03:27+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Go",
+        "stars": 79,
+        "license": "MIT",
+        "commit": "10c2c329"
+      },
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 55,
+        "technicalDepth": 50,
+        "reproducibility": 75,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 50.5 < 80. Created in window (79 stars, MIT); library, not run."
+    },
+    {
+      "id": "c20261026-gh-lemiur-game-decompilation-skill-for-claude",
+      "title": "Claude skill for producing byte-matching decompilations of games",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/lemiur/Game-Decompilation-Skill-For-Claude",
+          "publishedAt": "2026-10-25T19:29:03Z",
+          "retrievedAt": "2026-10-27T01:03:27+08:00"
+        }
+      ],
+      "repository": {
+        "language": null,
+        "stars": 128,
+        "license": null,
+        "commit": "eedfe281"
+      },
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 70,
+        "technicalDepth": 45,
+        "reproducibility": 50,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 50.5 < 80. Created in window (128 stars, no license); not run."
+    },
+    {
+      "id": "c20261026-gh-nju-r-l-group-embodied-lab-supermimic-repro-sim2real",
+      "title": "Unofficial SuperMimic reproduction on Unitree G1 with differentiable world-model training in mjlab and sim2real deploy",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/NJU-R-L-Group-Embodied-Lab/SuperMimic-Repro-Sim2Real",
+          "publishedAt": "2026-10-25T19:29:50Z",
+          "retrievedAt": "2026-10-27T01:03:27+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 6,
+        "license": "MIT",
+        "commit": "99d310d5"
+      },
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 55,
+        "technicalDepth": 60,
+        "reproducibility": 65,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 52.0 < 80. Created in window (6 stars, MIT); unofficial reproduction, not run."
+    },
+    {
+      "id": "c20261026-gh-syntheticgestalt-zao",
+      "title": "zao: molecular foundation model that reads each molecule as a set of conformers",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/syntheticgestalt/zao",
+          "publishedAt": "2026-10-26T08:25:21Z",
+          "retrievedAt": "2026-10-27T01:03:27+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 5,
+        "license": null,
+        "commit": "153792de"
+      },
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 50,
+        "technicalDepth": 60,
+        "reproducibility": 55,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 51.25 < 80. Created in window (5 stars); README not fully reviewed, not run."
+    },
+    {
+      "id": "c20261026-gh-betizzel-rtx2070-super-tensor-unlock",
+      "title": "RTX 2070 SUPER (TU104) full-rate FP16 to FP32 tensor cores with turing-unlock: logs and benchmarks",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/betizzel/rtx2070-super-tensor-unlock",
+          "publishedAt": "2026-10-25T17:32:32Z",
+          "retrievedAt": "2026-10-27T01:03:27+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Shell",
+        "stars": 2,
+        "license": "MIT",
+        "commit": "d7176f29"
+      },
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 60,
+        "technicalDepth": 55,
+        "reproducibility": 60,
+        "credibility": 35
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 49.0 < 80. Created in window (2 stars, MIT); follow-on to the gpu-unlock event, single-user report, not run."
+    },
+    {
+      "id": "c20261026-gh-unclebob-ub-mode",
+      "title": "ub-mode: agent skill enforcing disciplined engineering principles with deterministic quality gates",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/unclebob/ub-mode",
+          "publishedAt": "2026-10-25T16:04:09Z",
+          "retrievedAt": "2026-10-27T01:03:27+08:00"
+        }
+      ],
+      "repository": {
+        "language": null,
+        "stars": 618,
+        "license": null,
+        "commit": "57a8bdd2"
+      },
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 60,
+        "technicalDepth": 35,
+        "reproducibility": 55,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 43.75 < 80. Created in window (618 stars, no license); skill/prompt collection."
+    },
+    {
+      "id": "c20261026-gh-rkdrn79-aster",
+      "title": "aster: agentic development environment for AI researchers that keeps evidence of every experiment",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/rkdrn79/aster",
+          "publishedAt": "2026-10-25T16:39:01Z",
+          "retrievedAt": "2026-10-27T01:03:27+08:00"
+        }
+      ],
+      "repository": {
+        "language": "TypeScript",
+        "stars": 3,
+        "license": "MIT",
+        "commit": "ddf1f8f3"
+      },
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 50,
+        "technicalDepth": 45,
+        "reproducibility": 65,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 44.25 < 80. Created in window (3 stars, MIT); early, not run."
+    },
+    {
+      "id": "c20261026-gh-kimyejoon-szq",
+      "title": "szq: machine-wide queue and git-state result cache for verification commands from parallel coding agents",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/kimyejoon/szq",
+          "publishedAt": "2026-10-26T11:28:24Z",
+          "retrievedAt": "2026-10-27T01:03:27+08:00"
+        }
+      ],
+      "repository": {
+        "language": "JavaScript",
+        "stars": 6,
+        "license": "MIT",
+        "commit": "0a0aa8aa"
+      },
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 45,
+        "technicalDepth": 45,
+        "reproducibility": 70,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 42.75 < 80. Created in window (6 stars, MIT); small tool, not run."
+    },
+    {
+      "id": "c20261026-gh-rel-unsloth-v0-1-911",
+      "title": "unslothai/unsloth v0.1.911-beta: scheduled tasks, MiniMax-M3.1-Flash support, FLUX 3 editing, Mac performance",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.911-beta",
+          "publishedAt": "2026-10-26T14:23:54Z",
+          "retrievedAt": "2026-10-27T01:03:27+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 20,
+        "interestingness": 50,
+        "technicalDepth": 30,
+        "reproducibility": 90,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 47.0 < 80. Release notes read; product feature release, not a breakthrough."
+    },
+    {
+      "id": "c20261026-gh-rel-langgraph-cli-0-4-39",
+      "title": "langchain-ai/langgraph cli==0.4.39 release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.39",
+          "publishedAt": "2026-10-26T14:16:53Z",
+          "retrievedAt": "2026-10-27T01:03:27+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 5,
+        "interestingness": 20,
+        "technicalDepth": 15,
+        "reproducibility": 90,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 32.0 < 80. Routine CLI patch release."
+    }
+  ],
+  "selectedCandidateId": null
+}
