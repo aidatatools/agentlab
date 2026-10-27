@@ -1,0 +1,543 @@
+{
+  "date": "2026-10-27",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "candidates": [
+    {
+      "id": "c20261027-openai-eth-false-local-smoothing-qcd",
+      "title": "OpenAI announces three model-produced results: the Exponential Time Hypothesis is false (subexponential #k-SAT, Lean-checked), local smoothing in every dimension (implying Kakeya), and existence of 4D QCD/Yang-Mills (materials withheld), each handed to external expert shepherds",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+          "publishedAt": "2026-10-26",
+          "retrievedAt": "2026-10-28T01:03:46+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/openai/math/commit/42907c9e99",
+          "publishedAt": "2026-10-26T20:52:18Z",
+          "retrievedAt": "2026-10-28T01:03:46+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/openai/math/blob/main/history.md",
+          "publishedAt": "2026-10-26T21:18:03Z",
+          "retrievedAt": "2026-10-28T01:03:46+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/gdb/status/2114837059462627533",
+          "publishedAt": "2026-10-26T21:50:21Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 95,
+        "interestingness": 95,
+        "technicalDepth": 85,
+        "reproducibility": 65,
+        "credibility": 70
+      },
+      "eligibility": "eligible",
+      "reason": "Weighted 86.0 >= 80. Verified against primary sources: OpenAI post dated October 26, 2026 read in full via Grok Bot web fetch (curl from minim4 got HTTP 403); openai/math commit 42907c9e99 (2026-10-26T20:52:18Z, merged as 7ef5c0cc5c at 21:18:03Z, in window) and history.md entry \"October 26, 2026\" adding the two manuscripts with Lean formalizations; CONTENTS.md abstracts; lean/docs/378.md and 079.md scope notes; Comparator statements SubexponentialSAT.lean and LocalSmoothing.lean read. Key caveats: ETH paper claims time (n+m)^{O_k(1)} 2^{n/(log n)^{1/2+o(1)}}, but the Lean scope note says Lean proves the weaker 2^{O_k(n (log log n)^2/sqrt(log n))}, still subexponential and so still contradicting ETH; the physics (QCD / Yang-Mills existence) artifacts are withheld by the Gross-led group, so unverifiable now; no peer review; the same repo withdrew three manuscripts on Oct 7 after a sign error; AgentLab did not build the Lean project (code not run). Greg Brockman X post 21:50:21Z is in window."
+    },
+    {
+      "id": "c20261027-openai-gpt-6-1-terra-launch",
+      "title": "OpenAI launches GPT-6.1 Terra: computer-use model matching GPT-6 Astra on Agents' Last Exam at one-tenth the per-token price, 50% cheaper than GPT-5.6 Terra",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/OpenAI/status/2114780711664398349",
+          "publishedAt": "2026-10-26T18:06:27Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/OpenAI/status/2114780717188272382",
+          "publishedAt": "2026-10-26T18:06:28Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/OpenAI/status/2114780720170164735",
+          "publishedAt": "2026-10-26T18:06:29Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/sama/status/2114818620782248024",
+          "publishedAt": "2026-10-26T20:37:05Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 80,
+        "technicalDepth": 50,
+        "reproducibility": 40,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 61.5 < 80. Official OpenAI X thread (18:06Z, in window) read; benchmark claims are vendor-reported, closed model, product launch rather than a research breakthrough. Earlier leak tracked as c20261025-gpt-6-1-terra-leak."
+    },
+    {
+      "id": "c20261027-inclusionai-ling-3-1-flash-1019",
+      "title": "inclusionAI/Ant Ling releases Ling-3.1-flash-1019 weights (560B total / 25B active hybrid-linear MoE, 1M context, MIT): AA Intelligence Index 41 to 44, AutomationBench-AA 62% to 68%",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://huggingface.co/inclusionAI/Ling-3.1-flash-1019",
+          "publishedAt": "2026-10-27T05:46:51Z",
+          "retrievedAt": "2026-10-28T01:03:46+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/AntLingAGI/status/2115062207180591210",
+          "publishedAt": "2026-10-27T12:45:00Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 72,
+        "technicalDepth": 65,
+        "reproducibility": 85,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 68.75 < 80. Hugging Face API (created 2026-10-27T05:46:51Z, license mit) and README read: 63 KDA + 9 gated MLA layers, 512 routed experts, 8 active; gains are post-training improvements over Ling-3.1-flash, figures self-reported; incremental upgrade. Ling-3.1-flash-base was created 2026-10-25 (outside window)."
+    },
+    {
+      "id": "c20261027-tencent-hy-simulmt",
+      "title": "Tencent Hy open-sources Hy-SimulMT, a 30B-A3B streaming Chinese-English simultaneous interpretation model with voice cloning (Apache 2.0)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/TencentHunyuan/status/2114701815807947159",
+          "publishedAt": "2026-10-26T12:52:56Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 70,
+        "technicalDepth": 65,
+        "reproducibility": 75,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 66.75 < 80. Official Tencent Hunyuan post id timestamp 2026-10-26T12:52:56Z is before the window start (2026-10-26T16:00Z); Hugging Face repo id not resolved in this run (tencent/Hy-SimulMT returned an auth error), so not verified."
+    },
+    {
+      "id": "c20261027-baidu-unlimited-ocr-2",
+      "title": "Baidu Unlimited OCR 2: a 3B VLM that parses books of thousands of pages in one run with sparse reference sliding-window attention",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
+          "publishedAt": "2026-10-26T03:57:46Z",
+          "retrievedAt": "2026-10-28T01:03:46+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2114938936204079379",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 72,
+        "technicalDepth": 65,
+        "reproducibility": 80,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 68.5 < 80. Hugging Face API read: created 2026-10-26T03:57:46Z, before the window; MIT, arXiv tag 2606.23050. Benchmarks per X news summary only."
+    },
+    {
+      "id": "c20261027-deepmind-genie-4",
+      "title": "Google DeepMind unveils Genie 4 world model (research preview) with native audio and text-directed events",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2115116228721471867",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 70,
+        "interestingness": 88,
+        "technicalDepth": 50,
+        "reproducibility": 20,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 62.0 < 80. Only the X news summary (updated 2026-10-27T16:26Z) was read; no official DeepMind post was found in window by search, so launch time and claims are unverified; research preview, no public access."
+    },
+    {
+      "id": "c20261027-mainplane-go-agent",
+      "title": "Mainplane: an open-source AI agent written from scratch in Go that lives on your server and drives all your computers",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Alezander9/status/2114757115072167990",
+          "publishedAt": "2026-10-26T16:32:41Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 65,
+        "technicalDepth": 40,
+        "reproducibility": 40,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 44.75 < 80. Author announcement post in window (16:32:41Z); the GitHub repo URL was not resolvable from the post text (only an image link), so the code was not inspected."
+    },
+    {
+      "id": "c20261027-arxiv-2610-35866",
+      "title": "Auto-Research Arena: benchmarking and advancing auto-research in language modeling (code released)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.35866",
+          "publishedAt": "2026-10-26T17:59:33Z",
+          "retrievedAt": "2026-10-28T01:03:46+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 72,
+        "technicalDepth": 65,
+        "reproducibility": 70,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 64.5 < 80. arXiv API entry submitted 2026-10-26T17:59:33Z (in window, 8 authors); title, metadata and comment read, full paper not read or reproduced."
+    },
+    {
+      "id": "c20261027-arxiv-2610-35671",
+      "title": "Evaluating DeepSeek V4.1 Flash-1017 for loss-of-control and harmful-manipulation risks (17 authors, 87 pages)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.35671",
+          "publishedAt": "2026-10-26T16:14:17Z",
+          "retrievedAt": "2026-10-28T01:03:46+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 75,
+        "technicalDepth": 65,
+        "reproducibility": 50,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 62.75 < 80. arXiv API entry submitted 2026-10-26T16:14:17Z (in window, 17 authors); title, metadata and comment read, full paper not read or reproduced."
+    },
+    {
+      "id": "c20261027-arxiv-2610-35868",
+      "title": "Retriever-Free Retrieval: navigating documents with decision models",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.35868",
+          "publishedAt": "2026-10-26T17:59:44Z",
+          "retrievedAt": "2026-10-28T01:03:46+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 65,
+        "technicalDepth": 60,
+        "reproducibility": 50,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 56.75 < 80. arXiv API entry submitted 2026-10-26T17:59:44Z (in window, 6 authors); title, metadata and comment read, full paper not read or reproduced."
+    },
+    {
+      "id": "c20261027-arxiv-2610-35767",
+      "title": "Free to Look, Free to Reason: simple LLM harnesses outdiagnose hand-crafted root cause analysis agents",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.35767",
+          "publishedAt": "2026-10-26T17:12:02Z",
+          "retrievedAt": "2026-10-28T01:03:46+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 68,
+        "technicalDepth": 55,
+        "reproducibility": 60,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 56.5 < 80. arXiv API entry submitted 2026-10-26T17:12:02Z (in window, 5 authors); title, metadata and comment read, full paper not read or reproduced."
+    },
+    {
+      "id": "c20261027-arxiv-2610-35832",
+      "title": "Profiling a frontier agent with EBench: from direct control to harness with policy (InternRobotics)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.35832",
+          "publishedAt": "2026-10-26T17:51:02Z",
+          "retrievedAt": "2026-10-28T01:03:46+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 62,
+        "technicalDepth": 60,
+        "reproducibility": 50,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 55.0 < 80. arXiv API entry submitted 2026-10-26T17:51:02Z (in window, 15 authors); title, metadata and comment read, full paper not read or reproduced."
+    },
+    {
+      "id": "c20261027-arxiv-2610-35697",
+      "title": "MiRL: error-targeted reinforcement learning for correcting terminal agent misbehaviors",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.35697",
+          "publishedAt": "2026-10-26T16:25:05Z",
+          "retrievedAt": "2026-10-28T01:03:46+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 55,
+        "technicalDepth": 60,
+        "reproducibility": 65,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 53.5 < 80. arXiv API entry submitted 2026-10-26T16:25:05Z (in window, 5 authors); title, metadata and comment read, full paper not read or reproduced."
+    },
+    {
+      "id": "c20261027-arxiv-2610-35804",
+      "title": "dSpark: schedule distillation for fast diffusion language models",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.35804",
+          "publishedAt": "2026-10-26T17:35:58Z",
+          "retrievedAt": "2026-10-28T01:03:46+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 50,
+        "technicalDepth": 60,
+        "reproducibility": 70,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 53.0 < 80. arXiv API entry submitted 2026-10-26T17:35:58Z (in window, 2 authors); title, metadata and comment read, full paper not read or reproduced."
+    },
+    {
+      "id": "c20261027-arxiv-2610-35716",
+      "title": "Audit Where Hacks Pay: budgeted strong-verifier audits against reward hacking in GRPO",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.35716",
+          "publishedAt": "2026-10-26T16:38:14Z",
+          "retrievedAt": "2026-10-28T01:03:46+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 55,
+        "technicalDepth": 60,
+        "reproducibility": 50,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 51.25 < 80. arXiv API entry submitted 2026-10-26T16:38:14Z (in window, 4 authors); title, metadata and comment read, full paper not read or reproduced."
+    },
+    {
+      "id": "c20261027-gh-patch-gg-anymove",
+      "title": "anymove: motion capture for any creature from one AI-generated video, with a DINOv2 joint reader and GLB output",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/patch-gg/anymove",
+          "publishedAt": "2026-10-27T08:00:42Z",
+          "retrievedAt": "2026-10-28T01:03:46+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 131,
+        "license": "Apache-2.0",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 65,
+        "technicalDepth": 55,
+        "reproducibility": 65,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 53.5 < 80. Created 2026-10-27T08:00:42Z (132 stars, Apache-2.0); README summary only, not run."
+    },
+    {
+      "id": "c20261027-gh-johnfink8-sfnx",
+      "title": "sfnx: CUDA engine splitting each layer of a MoE LLM across three PCIe V100s, claiming 382 tok/s on a used $1,800 box",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/johnfink8/sfnx",
+          "publishedAt": "2026-10-26T20:47:54Z",
+          "retrievedAt": "2026-10-28T01:03:46+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 15,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 62,
+        "technicalDepth": 55,
+        "reproducibility": 60,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 50.0 < 80. Created 2026-10-26T20:47:54Z (15 stars, MIT); throughput claim unverified, not run."
+    },
+    {
+      "id": "c20261027-gh-udgamlabs-vemana",
+      "title": "Vemana: a 278M Telugu language model trained from scratch",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/udgamlabs/vemana",
+          "publishedAt": "2026-10-27T06:18:01Z",
+          "retrievedAt": "2026-10-28T01:03:46+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 5,
+        "license": "Apache-2.0",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 45,
+        "technicalDepth": 45,
+        "reproducibility": 70,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 43.25 < 80. Created 2026-10-27T06:18:01Z (5 stars, Apache-2.0); small regional model, not run."
+    },
+    {
+      "id": "c20261027-gh-daniellockyer-dstack",
+      "title": "dstack: personal agent-skill collection in the style of tstack",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/daniellockyer/dstack",
+          "publishedAt": "2026-10-26T18:31:07Z",
+          "retrievedAt": "2026-10-28T01:03:46+08:00"
+        }
+      ],
+      "repository": {
+        "language": null,
+        "stars": 121,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 15,
+        "interestingness": 45,
+        "technicalDepth": 20,
+        "reproducibility": 70,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 35.75 < 80. Created 2026-10-26T18:31:07Z (121 stars, MIT); prompt/skill collection, not a technical result."
+    },
+    {
+      "id": "c20261027-gh-rel-transformers-v5-21",
+      "title": "huggingface/transformers v5.21 release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/huggingface/transformers/releases/tag/v5.21",
+          "publishedAt": "2026-10-26T18:17:42Z",
+          "retrievedAt": "2026-10-28T01:03:46+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 20,
+        "interestingness": 45,
+        "technicalDepth": 40,
+        "reproducibility": 90,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 47.75 < 80. Routine library release in window."
+    },
+    {
+      "id": "c20261027-gh-rel-openhands-v1-34-0",
+      "title": "OpenHands v1.34.0 release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.34.0",
+          "publishedAt": "2026-10-27T14:35:23Z",
+          "retrievedAt": "2026-10-28T01:03:46+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 20,
+        "interestingness": 45,
+        "technicalDepth": 35,
+        "reproducibility": 85,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 45.5 < 80. Routine agent framework release in window."
+    }
+  ],
+  "selectedCandidateId": "c20261027-openai-eth-false-local-smoothing-qcd"
+}
