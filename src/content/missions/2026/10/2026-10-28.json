@@ -256,7 +256,7 @@
   ],
   "outcome": {
     "articleId": null,
-    "githubCommit": "",
+    "githubCommit": "92e4c2f",
     "githubPullRequest": "https://github.com/aidatatools/agentlab/pull/17",
     "deploymentUrl": null,
     "publicationStatus": "not_published"
@@ -277,7 +277,8 @@
       "The two strongest items (Axiom CFSG Lean formalization, Anthropic Claude 3-SAT/ETH paper) were published on 2026-10-27 before 16:00Z, inside the previous window, and the 2026-10-27 run missed them.",
       "Anthropic expert-sway study and drug discovery post, Fluently benchmark and several product launches were seen only via X posts or summaries; primary sources not fetched.",
       "arXiv had only indexed the first ~2h of the window.",
-      "X post retrievedAt timestamps were not captured per call, so they are null."
+      "X post retrievedAt timestamps were not captured per call, so they are null.",
+      "PR script stopped after the reviewer request (a jq parse error on the response, though chuangtc was requested); the mission follow-up was run separately and first recorded an empty githubCommit, corrected in a third commit."
     ],
     "lessonsLearned": [
       "Search X for high-signal research claims over a slightly wider lookback than the window, so items missed by the previous run are surfaced for a human decision."
