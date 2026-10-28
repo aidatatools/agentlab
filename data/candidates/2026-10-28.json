@@ -1,0 +1,683 @@
+{
+  "date": "2026-10-28",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "candidates": [
+    {
+      "id": "c20261028-diffuspace-clover-35b-a3b",
+      "title": "DiffuSpace open-sources Clover-35B-A3B-Preview, a block-diffusion MoE language model (35B total / ~3B active, 128K context, Apache 2.0) derived from Qwen3.6-35B-A3B, reporting 680 tok/s on one GB300 and 73.6 SWE-bench Verified",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview",
+          "publishedAt": "2026-10-28T03:07:54Z",
+          "retrievedAt": "2026-10-29T01:04:26+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/DiffuSpace/Clover-35B-A3B-Preview",
+          "publishedAt": "2026-10-28T02:40:57Z",
+          "retrievedAt": "2026-10-29T01:04:26+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://diffuspace.ai/blog/clover-35b/",
+          "publishedAt": null,
+          "retrievedAt": "2026-10-29T01:04:26+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/DiffuSpace_Labs/status/2115288124691820738",
+          "publishedAt": "2026-10-28T03:42:43Z",
+          "retrievedAt": null
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 79,
+        "license": null,
+        "commit": "e5a130a48e"
+      },
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 80,
+        "technicalDepth": 70,
+        "reproducibility": 70,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 70.0 < 80. Hugging Face API (repo created 2026-10-24 privately, lastModified 2026-10-28T03:07:54Z, apache-2.0, base_model Qwen/Qwen3.6-35B-A3B finetune), README and GitHub commits read (weights/sft files uploaded 2026-10-28T02:40Z, in window; announcement post 03:42Z in window). Architecture: Qwen3.6 GDN/full-attention MoE with learned bidirectional block attention and LowConfidence block decoding (block 32, threshold 0.95). All benchmark and throughput figures are self-reported (batch 1, internal agent data); BF16 weights need ~69 GB GPU; llama.cpp/SGLang support PRs still open per X; not run by AgentLab. A conversion of an existing AR model rather than a from-scratch result."
+    },
+    {
+      "id": "c20261028-nvidia-nemotron-3-5-transcribe",
+      "title": "NVIDIA releases Nemotron 3.5 Transcribe, an open-weight promptable 30B-A4B MoE speech model for transcription in 40 languages, diarization, translation and audio understanding",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/NVIDIAAI/status/2115462300241141882",
+          "publishedAt": "2026-10-28T15:14:50Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/NVIDIAAI/status/2115462302078320816",
+          "publishedAt": "2026-10-28T15:14:50Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "official",
+          "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+          "publishedAt": "2026-10-28T16:15:52Z",
+          "retrievedAt": "2026-10-29T01:04:26+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 72,
+        "technicalDepth": 60,
+        "reproducibility": 85,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 67.25 < 80. Official NVIDIA AI thread 15:14:50Z (in window) read; Hugging Face API shows the repo was created 2026-10-07 (private until launch) and last modified 2026-10-28T16:15Z, license other (NVIDIA open model license). Claims (#1 open model on HF Open ASR English 5.33% WER, 2.81% WER on Artificial Analysis) are vendor-reported; strong release but incremental, not a breakthrough."
+    },
+    {
+      "id": "c20261028-deepmind-genie-4-official",
+      "title": "Google DeepMind officially announces Genie 4, a real-time interactive world model with native audio and text-steerable events (research preview)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/GoogleDeepMind/status/2115114028338962672",
+          "publishedAt": "2026-10-27T16:10:55Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/GoogleAI/status/2115114625985368299",
+          "publishedAt": "2026-10-27T16:13:18Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 75,
+        "interestingness": 90,
+        "technicalDepth": 50,
+        "reproducibility": 15,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 65.75 < 80. The official @GoogleDeepMind post is 2026-10-27T16:10:55Z, inside this window (the previous run tracked Genie 4 as c20261027-deepmind-genie-4 from an X news summary only, without the official post). Research preview with no weights, paper or public access located, so not reproducible; demos only."
+    },
+    {
+      "id": "c20261028-axiom-cfsg-lean",
+      "title": "Axiom releases a complete Lean formalization of the Classification of Finite Simple Groups (~15,000 pages, ~43.1M lines of Lean in 24 days by agent swarms, 34 deviations from the published record)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/AxiomMath/CFSG",
+          "publishedAt": "2026-10-27T13:19:32Z",
+          "retrievedAt": "2026-10-29T01:04:26+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2115092528189890935",
+          "publishedAt": null,
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/Jose_A_Alonso/status/2115126665214824566",
+          "publishedAt": "2026-10-27T17:01:08Z",
+          "retrievedAt": null
+        }
+      ],
+      "repository": {
+        "language": null,
+        "stars": 123,
+        "license": null,
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 92,
+        "interestingness": 95,
+        "technicalDepth": 85,
+        "reproducibility": 80,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 88.35 >= 80. Out of window: GitHub API shows AxiomMath/CFSG created 2026-10-27T13:19:32Z (last push 15:07:45Z) and the Axiom announcement post (quoted id 2115089794867040584) decodes to 2026-10-27T14:34:38Z, both before this window start (2026-10-27T16:00Z). It also does not appear in the 2026-10-27 candidate file, so the previous run missed it; flagged for a manual decision rather than published here. Not built locally."
+    },
+    {
+      "id": "c20261028-anthropic-claude-eth-3sat",
+      "title": "Anthropic posts a Claude-authored paper and Lean 4 formalization: \"A 2^o(n) Time Algorithm for 3-SAT\" (claimed ETH refutation, found by an internal model on Oct 16)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/anthropics/formal-math/tree/main/eth",
+          "publishedAt": "2026-10-27T03:07:21Z",
+          "retrievedAt": "2026-10-29T01:04:26+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/agentwirenews/status/2115422438959854055",
+          "publishedAt": "2026-10-28T12:36:26Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/indrajeet877/status/2114949491312746554",
+          "publishedAt": "2026-10-27T05:17:07Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 90,
+        "interestingness": 92,
+        "technicalDepth": 85,
+        "reproducibility": 70,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 85.0 >= 80. Out of window: anthropics/formal-math commit 16a5ce4130 adding eth/ is 2026-10-27T03:07:21Z, before window start; earliest X coverage 05:17Z. Same claim family as the OpenAI ETH result published 2026-10-27 (article openai-eth-false-local-smoothing-qcd), whose article could be updated by a human to mention it. Not in prior candidate files (missed by the previous run)."
+    },
+    {
+      "id": "c20261028-anthropic-drug-discovery-partnerships",
+      "title": "Anthropic describes deep research partnerships with six drug-development organizations and its own drug discovery efforts with Claude",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/AnthropicAI/status/2115178675050307942",
+          "publishedAt": "2026-10-27T20:27:48Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 75,
+        "technicalDepth": 45,
+        "reproducibility": 20,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 53.75 < 80. Official @AnthropicAI post 20:27:48Z (in window) read; linked long-form post not fetched in this run; qualitative partnership report without reproducible artifacts."
+    },
+    {
+      "id": "c20261028-anthropic-agent-sways-experts-study",
+      "title": "Anthropic study: 50 professional analysts followed a Claude agent's coin-flip-assigned preference 86% of the time and rarely credited it",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2115223324565356550",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 82,
+        "technicalDepth": 55,
+        "reproducibility": 40,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 61.0 < 80. Seen only as an X news summary (updated 2026-10-28T15:56Z) and a highlight thread dated Oct 27; the primary Anthropic paper/post and its exact publication time were not located in this run, so not verified."
+    },
+    {
+      "id": "c20261028-nvidia-metatron-v1",
+      "title": "NVIDIA publishes Metatron v1 humanoid (Unitree G1) control model with native PyTorch checkpoint and browser ONNX exports",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://huggingface.co/nvidia/Metatron-v1",
+          "publishedAt": "2026-10-27T21:43:16Z",
+          "retrievedAt": "2026-10-29T01:04:26+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 55,
+        "technicalDepth": 55,
+        "reproducibility": 70,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 56.25 < 80. Hugging Face API (created 2026-10-27T21:43:16Z, in window, NVIDIA Open Model License) and model card read; no paper or announcement located; not run."
+    },
+    {
+      "id": "c20261028-mistral-responses-api",
+      "title": "Mistral launches a Responses API in public preview for building agents (answer, reasoning and tool calls returned as separate items)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/MistralAI/status/2115443720371814478",
+          "publishedAt": "2026-10-28T14:01:00Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 20,
+        "interestingness": 55,
+        "technicalDepth": 35,
+        "reproducibility": 70,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 46.25 < 80. Official post 14:01Z (in window); product API feature, not a research result."
+    },
+    {
+      "id": "c20261028-liquid-lfm3-family",
+      "title": "Liquid AI LFM3 family: six ~2B open-weight text, vision, audio and omni models on one tri-hybrid backbone",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2115137228837896636",
+          "publishedAt": null,
+          "retrievedAt": null
+        },
+        {
+          "platform": "official",
+          "url": "https://huggingface.co/LiquidAI/LFM3-Audio-2B-GGUF",
+          "publishedAt": "2026-10-27T16:38:08Z",
+          "retrievedAt": "2026-10-29T01:04:26+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 70,
+        "technicalDepth": 60,
+        "reproducibility": 85,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 66.25 < 80. Only GGUF/MLX conversions were created in window (LFM3-Audio-2B-GGUF 16:38Z, d1-2B-GGUF 19:03Z); base checkpoints predate the window (LFM3-Audio-2B created 2026-09-08, LFM3-1.7B 2026-10-23), and the launch post time was not confirmed; benchmarks vendor-reported."
+    },
+    {
+      "id": "c20261028-openbmb-minicpm-ocr-1-0",
+      "title": "OpenBMB MiniCPM-OCR 1.0 (1.3B) with Jev region-level reliability checker",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2115162230568153195",
+          "publishedAt": null,
+          "retrievedAt": null
+        },
+        {
+          "platform": "official",
+          "url": "https://huggingface.co/openbmb/MiniCPM-OCR-1.0",
+          "publishedAt": "2026-10-21T15:51:40Z",
+          "retrievedAt": "2026-10-29T01:04:26+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 65,
+        "technicalDepth": 60,
+        "reproducibility": 85,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 63.0 < 80. Hugging Face repo created 2026-10-21, before the window; in-window activity is promotion and demos only."
+    },
+    {
+      "id": "c20261028-judgment-labs-ga",
+      "title": "Judgment Labs opens its agent-trace monitoring platform to all users",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2115193410134987191",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 50,
+        "technicalDepth": 35,
+        "reproducibility": 30,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 36.5 < 80. X news summary only; commercial product launch."
+    },
+    {
+      "id": "c20261028-neywa-nativ",
+      "title": "Neywa Labs (Prince Canuma, MLX-VLM) launches Nativ, an offline app for running open models on Apple Silicon",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2115153127683088396",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 60,
+        "technicalDepth": 35,
+        "reproducibility": 60,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 44.5 < 80. X news summary only; product launch."
+    },
+    {
+      "id": "c20261028-giotto-ai-alto-solo",
+      "title": "Giotto.ai launches Giotto Alto and Giotto Solo \"sovereign\" models, partly built on Kimi weights",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2115134155079962751",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 55,
+        "technicalDepth": 30,
+        "reproducibility": 20,
+        "credibility": 35
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 35.25 < 80. X news summary only; provenance and benchmarking restrictions questioned."
+    },
+    {
+      "id": "c20261028-fluently-stt-accent-benchmark",
+      "title": "Fluently benchmark: 21 real-time speech-to-text systems on 22.2 h of spontaneous learner speech across 16 accent groups",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2115137228791820587",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 60,
+        "technicalDepth": 50,
+        "reproducibility": 65,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 50.75 < 80. X news summary only; GitHub code mentioned but not located in this run."
+    },
+    {
+      "id": "c20261028-arxiv-2610-37585",
+      "title": "Timestral: Mistral's time-series foundation model technical report (356 authors)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.37585",
+          "publishedAt": "2026-10-27T17:25:43Z",
+          "retrievedAt": "2026-10-29T01:04:26+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 65,
+        "technicalDepth": 70,
+        "reproducibility": 75,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 66.0 < 80. arXiv API entry submitted 2026-10-27T17:25:43Z (in window, 356 authors); title, metadata and comment read, full paper not read or reproduced. Weights (mistralai/Timestral-209M) were released 2026-10-14, before the window; this is the accompanying report."
+    },
+    {
+      "id": "c20261028-arxiv-2610-37657",
+      "title": "Heads of Security: learned attention gates improve prompt-injection robustness",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.37657",
+          "publishedAt": "2026-10-27T17:58:52Z",
+          "retrievedAt": "2026-10-29T01:04:26+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 65,
+        "technicalDepth": 60,
+        "reproducibility": 50,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 55.25 < 80. arXiv API entry submitted 2026-10-27T17:58:52Z (in window, 9 authors); title, metadata and comment read, full paper not read or reproduced."
+    },
+    {
+      "id": "c20261028-arxiv-2610-37648",
+      "title": "Scaling laws for tool-use agents via controllable environment synthesis",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.37648",
+          "publishedAt": "2026-10-27T17:56:46Z",
+          "retrievedAt": "2026-10-29T01:04:26+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 62,
+        "technicalDepth": 60,
+        "reproducibility": 50,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 54.5 < 80. arXiv API entry submitted 2026-10-27T17:56:46Z (in window, 8 authors); title, metadata and comment read, full paper not read or reproduced."
+    },
+    {
+      "id": "c20261028-arxiv-2610-37651",
+      "title": "GEPA-Curator: curated learning for self-improving agents",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.37651",
+          "publishedAt": "2026-10-27T17:58:11Z",
+          "retrievedAt": "2026-10-29T01:04:26+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 58,
+        "technicalDepth": 55,
+        "reproducibility": 55,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 51.75 < 80. arXiv API entry submitted 2026-10-27T17:58:11Z (in window, 11 authors); title, metadata and comment read, full paper not read or reproduced."
+    },
+    {
+      "id": "c20261028-arxiv-2610-37658",
+      "title": "When should we intervene at test time? (79 pages)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.37658",
+          "publishedAt": "2026-10-27T17:58:53Z",
+          "retrievedAt": "2026-10-29T01:04:26+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 55,
+        "technicalDepth": 60,
+        "reproducibility": 45,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 50.5 < 80. arXiv API entry submitted 2026-10-27T17:58:53Z (in window, 4 authors); title, metadata and comment read, full paper not read or reproduced."
+    },
+    {
+      "id": "c20261028-arxiv-2610-37609",
+      "title": "EnvSched: environment-aware scheduling for rollout-efficient agent RL",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.37609",
+          "publishedAt": "2026-10-27T17:38:52Z",
+          "retrievedAt": "2026-10-29T01:04:26+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 50,
+        "technicalDepth": 55,
+        "reproducibility": 50,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 47.5 < 80. arXiv API entry submitted 2026-10-27T17:38:52Z (in window, 12 authors); title, metadata and comment read, full paper not read or reproduced."
+    },
+    {
+      "id": "c20261028-gh-patch-gg-crowdbricks",
+      "title": "crowdbricks: batched NVIDIA MotionBricks generating motion for hundreds of characters in one model call",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/patch-gg/crowdbricks",
+          "publishedAt": "2026-10-27T20:49:11Z",
+          "retrievedAt": "2026-10-29T01:04:26+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 88,
+        "license": "Apache-2.0",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 58,
+        "technicalDepth": 55,
+        "reproducibility": 65,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 50.25 < 80. Created 2026-10-27T20:49:11Z (88 stars, Apache-2.0). README summary only, not run."
+    },
+    {
+      "id": "c20261028-gh-changjonathanc-neuron-finder",
+      "title": "neuron-finder: find the MLP neuron that switches a chat model into a persona, in minutes on one GPU",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/changjonathanc/neuron-finder",
+          "publishedAt": "2026-10-27T20:45:25Z",
+          "retrievedAt": "2026-10-29T01:04:26+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 6,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 65,
+        "technicalDepth": 50,
+        "reproducibility": 70,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 51.75 < 80. Created 2026-10-27T20:45:25Z (6 stars, MIT). Related to the in-window \"evil Qwen neuron\" X discussion; README summary only, not run."
+    },
+    {
+      "id": "c20261028-gh-minimax-ai-mcode-stack",
+      "title": "MiniMax mcode-stack: workflows and skills the MiniMax Code team uses to build MiniMax Code",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/MiniMax-AI/mcode-stack",
+          "publishedAt": "2026-10-28T02:17:41Z",
+          "retrievedAt": "2026-10-29T01:04:26+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 123,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 20,
+        "interestingness": 55,
+        "technicalDepth": 30,
+        "reproducibility": 75,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 44.5 < 80. Created 2026-10-28T02:17:41Z (123 stars, MIT). Official org repo; prompt/skill collection, not a technical result."
+    },
+    {
+      "id": "c20261028-gh-rel-codex-0-165-0",
+      "title": "openai/codex rust-v0.165.0 release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.165.0",
+          "publishedAt": "2026-10-27T20:09:38Z",
+          "retrievedAt": "2026-10-29T01:04:26+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 15,
+        "interestingness": 45,
+        "technicalDepth": 30,
+        "reproducibility": 90,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 44.25 < 80. Routine CLI release in window."
+    },
+    {
+      "id": "c20261028-gh-rel-claude-code-2-1-312",
+      "title": "anthropics/claude-code v2.1.312 release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.312",
+          "publishedAt": "2026-10-27T20:24:20Z",
+          "retrievedAt": "2026-10-29T01:04:26+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 10,
+        "interestingness": 40,
+        "technicalDepth": 25,
+        "reproducibility": 90,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 40.5 < 80. Routine CLI release in window."
+    }
+  ],
+  "selectedCandidateId": null
+}
