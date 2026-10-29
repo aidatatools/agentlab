@@ -1,0 +1,689 @@
+{
+  "date": "2026-10-29",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "candidates": [
+    {
+      "id": "c20261029-mistral-large-4-open-weights",
+      "title": "Mistral releases the open weights of an improved Mistral Large 4 (\"Le Chonk\"): 1T-parameter natively multimodal MoE (49B active per token, 52B incl. embeddings), 1M context, trained from scratch, under the Mistral Ecosystem Open-Weight License",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://mistral.ai/news/mistral-large-4-oss/",
+          "publishedAt": "2026-10-29T12:00:07Z",
+          "retrievedAt": "2026-10-29T17:05:05+00:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
+          "publishedAt": "2026-10-29T14:11:16Z",
+          "retrievedAt": "2026-10-29T17:05:05+00:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/MistralAI/status/2115811242556137820",
+          "publishedAt": "2026-10-29T14:21:24Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/NVIDIAAI/status/2115817617911157099",
+          "publishedAt": "2026-10-29T14:46:44Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/huggingface/transformers/releases/tag/v5.22.0",
+          "publishedAt": "2026-10-29T14:15:39Z",
+          "retrievedAt": "2026-10-29T17:05:05+00:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 72,
+        "interestingness": 92,
+        "technicalDepth": 78,
+        "reproducibility": 80,
+        "credibility": 90
+      },
+      "eligibility": "eligible",
+      "reason": "Weighted 81.2 >= 80. Verified against primary sources: Mistral blog post (datePublished 2026-10-29T12:00:07Z, in window) read in full; Hugging Face API shows the repo was created privately 2026-09-30 and its first public commit \"Initial release\" is 2026-10-29T14:11:16Z (in window), ~1.06 TB used storage, plus an NVFP4 checkpoint; model card and LICENSE read (modified MIT; Model-as-a-Service businesses need a separate commercial licence); official @MistralAI post 14:21:24Z; transformers v5.22.0 release (14:15:39Z) adds the architecture; NVIDIA day-0 NVFP4/Dynamo post 14:46:44Z. The Oct 6 preview post (API only, weights promised for end of month) is the earlier announcement; the weights and the improved RL checkpoint are new in this window. Benchmarks (FrontierCode 2.0 19.7%, Terminal-Bench 4.0 41%, AA Coding Agent Index 48%, AA Cyber Index 51%) are as presented by Mistral, partly from third-party evaluators, not reproduced by AgentLab; the model was not run (codeStatus not_run)."
+    },
+    {
+      "id": "c20261029-gemini-4-carbon",
+      "title": "Google DeepMind announces Gemini 4 Carbon, its new frontier model, claiming state-of-the-art cybersecurity and long-horizon capabilities",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/GoogleDeepMind/status/2115489356437651654",
+          "publishedAt": "2026-10-28T17:02:21Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/GoogleAI/status/2115489593818816591",
+          "publishedAt": "2026-10-28T17:03:17Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2115193409178673662",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 70,
+        "interestingness": 92,
+        "technicalDepth": 50,
+        "reproducibility": 15,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 65.25 < 80. Official @GoogleDeepMind and @GoogleAI posts 17:02Z (in window) read; closed model with staged access, no weights or technical report fetched in this run; benchmark claims vendor-reported, so low reproducibility."
+    },
+    {
+      "id": "c20261029-sauers-neural-twins",
+      "title": "\"Neural twins\": independent researcher Sauers trains two small models (from Qwen3-4B and AFM-4.5B) with LoRA adapters to communicate via activation vectors (\"neuralese\") instead of text",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Sauers_/status/2115726641410482580",
+          "publishedAt": "2026-10-29T08:45:14Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2115809249129541741",
+          "publishedAt": null,
+          "retrievedAt": null
+        },
+        {
+          "platform": "official",
+          "url": "https://huggingface.co/Sauers/neural-pairing",
+          "publishedAt": "2026-10-26T01:48:43Z",
+          "retrievedAt": "2026-10-29T17:05:05+00:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 85,
+        "technicalDepth": 65,
+        "reproducibility": 70,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 68.25 < 80. Announcement thread 08:45:14Z (in window) read (first post only); the X news summary says models and code are on Hugging Face and GitHub. The Sauers/neural-pairing repo (apache-2.0, created 2026-10-26) may be related but was not confirmed as the release; no paper; not run."
+    },
+    {
+      "id": "c20261029-qwenputer",
+      "title": "Qwenputer: Qwen3.5-4B with a 32-bit RISC-V CPU compiled into its weights, using Gated DeltaNet state as RAM, running C and MicroPython in forward passes",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/divagr1925/status/2115394340357116169",
+          "publishedAt": "2026-10-28T10:44:47Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/QwenDevs/status/2115404434503344238",
+          "publishedAt": "2026-10-28T11:24:54Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/divagr18/qwenputer",
+          "publishedAt": "2026-10-19T11:48:10Z",
+          "retrievedAt": "2026-10-29T17:05:05+00:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://huggingface.co/divagr1925/Qwen3.5-4B-Qwenputer",
+          "publishedAt": "2026-10-19T18:51:39Z",
+          "retrievedAt": "2026-10-29T17:05:05+00:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2115463035712102830",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "repository": {
+        "language": null,
+        "stars": 212,
+        "license": null,
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 75,
+        "interestingness": 90,
+        "technicalDepth": 78,
+        "reproducibility": 75,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 77.35 < 80. Out of window: the author thread is 2026-10-28T10:44:47Z and the @QwenDevs post 11:24:54Z, both before this window start (inside the previous window, which did not list it); GitHub repo and Hugging Face models were created 2026-10-19. Below 80 regardless; claims (DeepMind math 97.5-100%) are self-reported and not run."
+    },
+    {
+      "id": "c20261029-sensenova-code2video",
+      "title": "SenseTime SenseNova 6.8 Code2Video: open 27B model that generates videos as editable code (SVG, Three.js, Manim) with creation skills and traces",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/OpenSenseNova/SenseNova-6.8-Code2Video",
+          "publishedAt": "2026-10-24T07:58:58Z",
+          "retrievedAt": "2026-10-29T17:05:05+00:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://huggingface.co/sensenova/SenseNova-6.8-Code2Video",
+          "publishedAt": "2026-10-24T09:06:28Z",
+          "retrievedAt": "2026-10-29T17:05:05+00:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/SarahAnnabels/status/2115475199848054973",
+          "publishedAt": "2026-10-28T16:06:05Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2115500576997867780",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "repository": {
+        "language": null,
+        "stars": 130,
+        "license": null,
+        "commit": "776ae79824"
+      },
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 75,
+        "technicalDepth": 60,
+        "reproducibility": 75,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 65.5 < 80. Released before the window: GitHub repo created 2026-10-24 (last commit 2026-10-27T14:14:39Z), Hugging Face model created 2026-10-24; in-window X activity is promotion only."
+    },
+    {
+      "id": "c20261029-arbium-helixcove",
+      "title": "Arbium releases HelixCove, a dataset of ~1,900 work sessions and ~60,000 computer actions across a 12-person biotech team, with a 430-question organisational benchmark",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/ArbiumInc/status/2115473711646322776",
+          "publishedAt": "2026-10-28T16:00:11Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2115485483946180981",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 78,
+        "technicalDepth": 55,
+        "reproducibility": 45,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 58.25 < 80. Official post 16:00:11Z (in window) read; dataset size and model scores come from the X news summary; dataset page helixcove.arbium.ai not fetched; licence and access terms unverified."
+    },
+    {
+      "id": "c20261029-ai-peer-review-clinical-trials",
+      "title": "medRxiv preprint: 15 LLMs detected 53-96% of planted major errors in clinical trial reports versus 27% for untrained human reviewers",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/rust_ruslan/status/2115493697001513053",
+          "publishedAt": "2026-10-28T17:19:35Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2115567745374855200",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 82,
+        "technicalDepth": 55,
+        "reproducibility": 40,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 60.0 < 80. Co-author thread 17:19:35Z (in window) read; figures from the X news summary; the medRxiv preprint itself was not located or read in this run, so not verified."
+    },
+    {
+      "id": "c20261029-saez-zucman-ai-audit",
+      "title": "AI-assisted audit (Claude Opus 5.5 and GPT-6 Astra, human-verified) of 138 Saez and Zucman papers reports 2,035 issues, 147 serious",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/MargRev/status/2115518172598272077",
+          "publishedAt": "2026-10-28T18:56:51Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "web",
+          "url": "https://marginalrevolution.com/marginalrevolution/2026/10/errors-in-the-research-of-emmanuel-saez-and-gabriel-zucman.html",
+          "publishedAt": null,
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2115553123917758929",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 80,
+        "technicalDepth": 45,
+        "reproducibility": 40,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 53.5 < 80. Marginal Revolution post shared 18:56:51Z (in window); only the X link card was read, the underlying audit methodology not reviewed; contested and not an AI research result per se."
+    },
+    {
+      "id": "c20261029-particle-1",
+      "title": "Particle launches particle-1, an RL-tuned DeepSeek V4.1 Flash derivative claiming ~45% fewer tokens at parity on coding benchmarks",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Suhail/status/2115497949421883648",
+          "publishedAt": "2026-10-28T17:36:29Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2115611425599303996",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 70,
+        "technicalDepth": 45,
+        "reproducibility": 25,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 47.75 < 80. Founder announcement 17:36:29Z (in window); hosted API product, no weights or report located; claims self-reported."
+    },
+    {
+      "id": "c20261029-rime-prism",
+      "title": "Rime launches Prism speech-to-speech model claiming 300 ms response time and human-indistinguishable conversation",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/lilyjclifford/status/2115521147890520503",
+          "publishedAt": "2026-10-28T19:08:40Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 70,
+        "technicalDepth": 35,
+        "reproducibility": 20,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 44.5 < 80. CEO announcement 19:08:40Z (in window); commercial product, claims self-reported, no technical report."
+    },
+    {
+      "id": "c20261029-articul8-bivia",
+      "title": "Articul8 launches Bivia, a multimodal \"decision model\" API for complete workflows",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Articul8_AI/status/2115558202029007195",
+          "publishedAt": "2026-10-28T21:35:55Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2115664655162982655",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 55,
+        "technicalDepth": 30,
+        "reproducibility": 20,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 36.25 < 80. Official post 21:35:55Z (in window); commercial API launch without technical detail."
+    },
+    {
+      "id": "c20261029-fireworks-specialized-index",
+      "title": "Fireworks AI adds 31 partners contributing domain benchmarks to its Specialized Intelligence Index",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2115491450448159082",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 55,
+        "technicalDepth": 40,
+        "reproducibility": 50,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 43.75 < 80. X news summary only (updated 19:57Z); benchmark aggregation product."
+    },
+    {
+      "id": "c20261029-aa-intelligence-index-v5",
+      "title": "Artificial Analysis Intelligence Index v5 with 60% private test sets (FrontierCode 2.0, Terminal-Bench-Science)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2115193409178673662",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 70,
+        "technicalDepth": 50,
+        "reproducibility": 30,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 49.5 < 80. X news summary only; launched Oct 27-28 per the summary, so possibly before the window; methodology page not fetched."
+    },
+    {
+      "id": "c20261029-qwen4-teased",
+      "title": "Alibaba teases the Qwen4 series (Max, Flash, Plus, 27B) for \"next week\" at Apsara Conference Amsterdam",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/jtdavies/status/2115735632739754231",
+          "publishedAt": "2026-10-29T09:20:57Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2115776139369304510",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 20,
+        "interestingness": 75,
+        "technicalDepth": 10,
+        "reproducibility": 0,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 32.75 < 80. Attendee photo post 09:20:57Z (in window); announcement of a future release only, nothing to verify yet."
+    },
+    {
+      "id": "c20261029-anthropic-ai-for-science-expansion",
+      "title": "Anthropic expands its AI for Science program to 20 foundations, institutions and research groups",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/AnthropicAI/status/2115825653539025142",
+          "publishedAt": "2026-10-29T15:18:40Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "official",
+          "url": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 60,
+        "technicalDepth": 20,
+        "reproducibility": 10,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 36.5 < 80. Official post 15:18:40Z (in window); programme announcement, no research artifact."
+    },
+    {
+      "id": "c20261029-meta-muse-university-research",
+      "title": "Meta announces support for university research at Caltech, Ohio State, LSU, Indiana and UTHealth Houston with access to Muse models",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/AIatMeta/status/2115490919923548307",
+          "publishedAt": "2026-10-28T17:08:33Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 20,
+        "interestingness": 50,
+        "technicalDepth": 20,
+        "reproducibility": 10,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 32.0 < 80. Official post 17:08:33Z (in window); partnership announcement."
+    },
+    {
+      "id": "c20261029-gh-klingairesearch-pixelmoe",
+      "title": "KlingAIResearch PixelMoE: official PyTorch code for \"Scaling Pixel-Space Diffusion with LLM-Style Mixture-of-Experts\"",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/KlingAIResearch/PixelMoE",
+          "publishedAt": "2026-10-29T09:43:40Z",
+          "retrievedAt": "2026-10-29T17:05:05+00:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 5,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 65,
+        "technicalDepth": 65,
+        "reproducibility": 70,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 62.75 < 80. Created 2026-10-29T09:43:40Z (5 stars, MIT). Repository metadata only; paper not located on arXiv (API returned nothing for the window); not run."
+    },
+    {
+      "id": "c20261029-gh-huy-quang-dao-instanttrack",
+      "title": "instantTrack: whole-body motion tracking for Unitree G1 in 15 minutes on one GPU",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/Huy-Quang-Dao/instantTrack",
+          "publishedAt": "2026-10-29T06:30:45Z",
+          "retrievedAt": "2026-10-29T17:05:05+00:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 52,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 60,
+        "technicalDepth": 50,
+        "reproducibility": 65,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 50.75 < 80. Created 2026-10-29T06:30:45Z (52 stars, MIT). README summary only, not run."
+    },
+    {
+      "id": "c20261029-gh-chalk-ai-chalk-router-oss",
+      "title": "chalk-router: open-source Rust LLM router from Chalk",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/chalk-ai/chalk-router-oss",
+          "publishedAt": "2026-10-28T16:49:35Z",
+          "retrievedAt": "2026-10-29T17:05:05+00:00"
+        }
+      ],
+      "repository": {
+        "language": "Rust",
+        "stars": 27,
+        "license": "Apache-2.0",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 45,
+        "technicalDepth": 40,
+        "reproducibility": 70,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 43.25 < 80. Created 2026-10-28T16:49:35Z (27 stars, Apache-2.0). README summary only; infrastructure utility."
+    },
+    {
+      "id": "c20261029-gh-tuotuolyu-foresightsafety-vla",
+      "title": "ForesightSafety-VLA (IROS 2026): diagnostic safety benchmark for vision-language-action models on RoboTwin",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/tuotuoLyu/ForesightSafety-VLA",
+          "publishedAt": "2026-10-29T03:52:03Z",
+          "retrievedAt": "2026-10-29T17:05:05+00:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 2,
+        "license": null,
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 50,
+        "technicalDepth": 50,
+        "reproducibility": 55,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 46.75 < 80. Created 2026-10-29T03:52:03Z (2 stars, NOASSERTION). Repository metadata only; paper not read."
+    },
+    {
+      "id": "c20261029-gh-rel-pytorch-2-15-0",
+      "title": "pytorch/pytorch v2.15.0 release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/pytorch/pytorch/releases/tag/v2.15.0",
+          "publishedAt": "2026-10-28T17:09:49Z",
+          "retrievedAt": "2026-10-29T17:05:05+00:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 55,
+        "technicalDepth": 50,
+        "reproducibility": 90,
+        "credibility": 95
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 54.25 < 80. Routine framework release in window."
+    },
+    {
+      "id": "c20261029-gh-rel-transformers-5-22-0",
+      "title": "huggingface/transformers v5.22.0 (\"Mistral Large 4 (Le Chonk)\") release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/huggingface/transformers/releases/tag/v5.22.0",
+          "publishedAt": "2026-10-29T14:15:39Z",
+          "retrievedAt": "2026-10-29T17:05:05+00:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 20,
+        "interestingness": 55,
+        "technicalDepth": 40,
+        "reproducibility": 90,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 50.25 < 80. Library support release for the Mistral Large 4 candidate; folded into that story as a source."
+    },
+    {
+      "id": "c20261029-gh-rel-mcp-servers-2-2-0",
+      "title": "modelcontextprotocol/servers v2.2.0 release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/modelcontextprotocol/servers/releases/tag/v2.2.0",
+          "publishedAt": "2026-10-28T20:57:13Z",
+          "retrievedAt": "2026-10-29T17:05:05+00:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 15,
+        "interestingness": 40,
+        "technicalDepth": 30,
+        "reproducibility": 90,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 42.5 < 80. Routine release in window."
+    }
+  ],
+  "selectedCandidateId": "c20261029-mistral-large-4-open-weights"
+}
