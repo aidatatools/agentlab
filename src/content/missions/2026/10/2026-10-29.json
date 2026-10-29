@@ -148,6 +148,17 @@
         "ev-astro-check",
         "ev-astro-build"
       ]
+    },
+    {
+      "id": "t7",
+      "action": "Commit as agentlab-aidatatools-bot[bot], push daily/2026-10-29, open PR to main and request review from chuangtc",
+      "tool": "git+gh (GitHub App installation token)",
+      "status": "success",
+      "startedAt": "2026-10-30T01:10:44+08:00",
+      "finishedAt": "2026-10-30T01:10:50+08:00",
+      "evidenceIds": [
+        "ev-pr"
+      ]
     }
   ],
   "tests": [
@@ -242,17 +253,22 @@
       "id": "ev-astro-build",
       "type": "local_command",
       "ref": "npm run build: passed (01:09:58 [build] Complete!) @ 2026-10-30T01:09:58+08:00"
+    },
+    {
+      "id": "ev-pr",
+      "type": "github",
+      "ref": "https://github.com/aidatatools/agentlab/pull/18"
     }
   ],
   "outcome": {
     "articleId": "article-20261029-001",
-    "githubCommit": null,
-    "githubPullRequest": null,
+    "githubCommit": "1e6f07e",
+    "githubPullRequest": "https://github.com/aidatatools/agentlab/pull/18",
     "deploymentUrl": null,
     "publicationStatus": "in_review"
   },
   "metrics": {
-    "durationSeconds": null,
+    "durationSeconds": 457.0,
     "tokens": null,
     "estimatedCostUsd": null,
     "humanInterventions": 0
@@ -269,7 +285,8 @@
       "The model was not run; codeStatus not_run.",
       "Qwenputer (77.35) was posted inside the previous window and missed by the 2026-10-28 run; it is below 80, so no backfill is needed.",
       "medRxiv clinical-trial preprint, HelixCove dataset page and Gemini 4 Carbon technical material were not fetched.",
-      "X post retrievedAt timestamps were not captured per call, so they are null."
+      "X post retrievedAt timestamps were not captured per call, so they are null.",
+      "The discovery start timestamp was mis-formatted by the reused finalize helper (17:03:1:3Z) and corrected by hand to the recorded 2026-10-29T17:03:13Z before commit."
     ],
     "lessonsLearned": [
       "For model launches with an earlier preview, check the first public commit on Hugging Face to confirm when weights actually became available."
