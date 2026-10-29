@@ -1,0 +1,282 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "mission-20261029-001",
+  "date": "2026-10-29",
+  "timezone": "Asia/Taipei",
+  "status": "awaiting_review",
+  "objective": {
+    "goal": "Discover, score, verify and propose one outstanding AI/agent discovery for 2026-10-29 (Asia/Taipei), or document a no-publish decision.",
+    "sources": [
+      "x",
+      "github",
+      "arxiv"
+    ],
+    "deliverables": [
+      "Verified candidate batch",
+      "Published article (Mistral Large 4 open weights)",
+      "Mission record",
+      "Pull request"
+    ]
+  },
+  "agent": {
+    "id": "grokbot",
+    "framework": "Grok Bot (AgentLab-bot on minim4.home)",
+    "model": "grok-bot",
+    "runId": "routine-9a1f041e-20261030T0100-minim4-daily-2026-10-29"
+  },
+  "selection": {
+    "candidatesEvaluated": 23,
+    "selectedCandidateId": "c20261029-mistral-large-4-open-weights",
+    "selectionScore": 81.2,
+    "rankingArtifact": "data/candidates/2026-10-29.json"
+  },
+  "skillsUsed": [
+    {
+      "skill": "x-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-x-20261029-001"
+    },
+    {
+      "skill": "github-discovery",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-gh-20261029-001"
+    },
+    {
+      "skill": "arxiv-research",
+      "version": "1.0.0",
+      "status": "failed",
+      "executionId": "exec-ax-20261029-001"
+    },
+    {
+      "skill": "fact-check",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-fc-20261029-001"
+    },
+    {
+      "skill": "article-writing",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-aw-20261029-001"
+    },
+    {
+      "skill": "image-curation",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ic-20261029-001"
+    },
+    {
+      "skill": "site-publishing",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-sp-20261029-001"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t1",
+      "action": "git checkout main, pull --ff-only (to 9baed98, merge of PR #17), create branch daily/2026-10-29 (tree clean)",
+      "tool": "git",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": "2026-10-29T17:03:13Z",
+      "evidenceIds": [
+        "ev-git-branch"
+      ]
+    },
+    {
+      "id": "t2",
+      "action": "Discovery script with explicit window bounds 2026-10-28T16:00Z..2026-10-29T16:00Z (verified by grep before run): GitHub search (578 repos >=5 stars created in window, mostly off-topic/spam, plus llm/agent/mcp/model/paper/benchmark queries); releases of 30 tracked repos (23 in window); Hugging Face scan of 40 orgs (in-window: unsloth Mistral-Large-4 GGUF, ibm-granite speech ONNX) plus trending; arXiv API totalResults 0 for the window",
+      "tool": "gh+python urllib",
+      "status": "partial",
+      "startedAt": "2026-10-29T17:03:13Z",
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-gh-new",
+        "ev-gh-releases",
+        "ev-hf",
+        "ev-arxiv"
+      ]
+    },
+    {
+      "id": "t3",
+      "action": "Public X reads: 1x search_news, 1x search_posts_all (lab accounts, window-bounded), 1x get_posts_by_ids (15 ids from news clusters; 1 not found)",
+      "tool": "x.search_posts_all+x.search_news+x.get_posts_by_ids",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-x-search"
+      ]
+    },
+    {
+      "id": "t4",
+      "action": "Verify: Mistral blog posts mistral-large-4-oss (datePublished 2026-10-29T12:00:07Z) and mistral-large-4 (2026-10-06); Hugging Face API, commits, README and LICENSE for mistralai/Mistral-Large-4-1T-A52B; HF search for Mistral-Large-4 derivatives, Qwenputer, Code2Video, Sauers; GitHub metadata/commits for OpenSenseNova/SenseNova-6.8-Code2Video, divagr18/qwenputer; transformers v5.22.0 release body; dedup over prior candidate files",
+      "tool": "curl+gh",
+      "status": "success",
+      "startedAt": "2026-10-29T17:05:05+00:00",
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-verify",
+        "ev-dedup"
+      ]
+    },
+    {
+      "id": "t5",
+      "action": "Write candidates JSON (23), rank with rank_candidates.py (proposed c20261029-mistral-large-4-open-weights 81.2), write original SVG cover and zh-TW article (status published), scaffold mission with create_mission.py",
+      "tool": "python",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": "2026-10-30T01:09:23+08:00",
+      "evidenceIds": [
+        "ev-ranking",
+        "ev-article"
+      ]
+    },
+    {
+      "id": "t6",
+      "action": "Run validate_content, unittest, astro check, astro build",
+      "tool": "python+npm",
+      "status": "success",
+      "startedAt": "2026-10-30T01:09:55+08:00",
+      "finishedAt": "2026-10-30T01:09:58+08:00",
+      "evidenceIds": [
+        "ev-validate",
+        "ev-unittest",
+        "ev-astro-check",
+        "ev-astro-build"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "python scripts/validate_content.py",
+      "status": "passed",
+      "artifact": ".reports/2026-10-29/validate.log"
+    },
+    {
+      "name": "python -m unittest discover -s tests -v",
+      "status": "passed",
+      "artifact": ".reports/2026-10-29/unittest.log"
+    },
+    {
+      "name": "npm run check",
+      "status": "passed",
+      "artifact": ".reports/2026-10-29/astro-check.log"
+    },
+    {
+      "name": "npm run build",
+      "status": "passed",
+      "artifact": ".reports/2026-10-29/astro-build.log"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-git-branch",
+      "type": "git",
+      "ref": "branch daily/2026-10-29 from origin/main@9baed98"
+    },
+    {
+      "id": "ev-gh-new",
+      "type": "http_response",
+      "ref": ".reports/2026-10-29/gh_new_repos.json (578 repos >=5 stars created in window; AI-focused queries)"
+    },
+    {
+      "id": "ev-gh-releases",
+      "type": "http_response",
+      "ref": ".reports/2026-10-29/gh_releases_window.txt (23 releases in window across 30 tracked repos)"
+    },
+    {
+      "id": "ev-hf",
+      "type": "http_response",
+      "ref": ".reports/2026-10-29/hf_orgs.txt (in-window: unsloth/Mistral-Large-4-1T-A52B-GGUF, ibm-granite/granite-speech-5.0-2b-ONNX; trending list)"
+    },
+    {
+      "id": "ev-arxiv",
+      "type": "http_response",
+      "ref": ".reports/2026-10-29/arxiv.xml and arxiv_entries.json (totalResults 0 for submittedDate 202610281600-202610291600; arXiv source unavailable for this window)"
+    },
+    {
+      "id": "ev-x-search",
+      "type": "api_response",
+      "ref": "3 public X reads; in-window posts from @MistralAI (2115811242556137820), @NVIDIAAI (2115817617911157099), @GoogleDeepMind Gemini 4 Carbon (2115489356437651654), @Sauers_ (2115726641410482580), @ArbiumInc (2115473711646322776), @AnthropicAI (2115825653539025142); Qwenputer posts (2115394340357116169) predate the window; news summaries"
+    },
+    {
+      "id": "ev-verify",
+      "type": "http_response",
+      "ref": ".reports/2026-10-29/mistral-large-4-oss.html, mistral_oss.txt, mistral-large-4.html, ml4_readme.md; Hugging Face API commits (9bc535781e Initial release 2026-10-29T14:11:16Z)"
+    },
+    {
+      "id": "ev-dedup",
+      "type": "local_command",
+      "ref": "grep over data/candidates/2026-10-2*.json: no prior Mistral Large 4, Gemini 4 Carbon, Qwenputer, Code2Video, HelixCove or Particle entries; LFM3, Nemotron 3.5 Transcribe, Genie 4 and Anthropic expert-sway study already evaluated and not re-added"
+    },
+    {
+      "id": "ev-ranking",
+      "type": "local_command",
+      "ref": ".reports/2026-10-29/ranking.json (proposedCandidateId c20261029-mistral-large-4-open-weights 81.2, publicationAllowed true; next Qwenputer 77.35 (out of window), neural twins 68.25, Code2Video 65.5, Gemini 4 Carbon 65.25)"
+    },
+    {
+      "id": "ev-article",
+      "type": "git",
+      "ref": "src/content/articles/2026/10/mistral-large-4-le-chonk-open-weights.md and public/media/2026/10/mistral-large-4/cover.svg"
+    },
+    {
+      "id": "ev-validate",
+      "type": "local_command",
+      "ref": "python scripts/validate_content.py: passed (Content OK: 10 article(s), 15 mission(s), 2 agent(s), 321 candidate(s).) @ 2026-10-30T01:09:55+08:00"
+    },
+    {
+      "id": "ev-unittest",
+      "type": "local_command",
+      "ref": "python -m unittest discover -s tests -v: passed (OK) @ 2026-10-30T01:09:55+08:00"
+    },
+    {
+      "id": "ev-astro-check",
+      "type": "local_command",
+      "ref": "npm run check: passed (- 0 hints) @ 2026-10-30T01:09:58+08:00"
+    },
+    {
+      "id": "ev-astro-build",
+      "type": "local_command",
+      "ref": "npm run build: passed (01:09:58 [build] Complete!) @ 2026-10-30T01:09:58+08:00"
+    }
+  ],
+  "outcome": {
+    "articleId": "article-20261029-001",
+    "githubCommit": null,
+    "githubPullRequest": null,
+    "deploymentUrl": null,
+    "publicationStatus": "in_review"
+  },
+  "metrics": {
+    "durationSeconds": null,
+    "tokens": null,
+    "estimatedCostUsd": null,
+    "humanInterventions": 0
+  },
+  "retrospective": {
+    "successes": [
+      "The Mistral Large 4 weight release was pinned to the window with the blog datePublished, the Hugging Face \"Initial release\" commit and the official X post.",
+      "Reading the 10-06 preview post separated the earlier API preview from the new weights and improved checkpoint.",
+      "23 deduplicated candidates scored with explicit reasons."
+    ],
+    "failures": [
+      "arXiv API returned 0 results for the window, so no arXiv candidates.",
+      "Mistral benchmark figures were taken from the blog charts; evaluator reports (Cognition, Artificial Analysis, Surge) were not fetched.",
+      "The model was not run; codeStatus not_run.",
+      "Qwenputer (77.35) was posted inside the previous window and missed by the 2026-10-28 run; it is below 80, so no backfill is needed.",
+      "medRxiv clinical-trial preprint, HelixCove dataset page and Gemini 4 Carbon technical material were not fetched.",
+      "X post retrievedAt timestamps were not captured per call, so they are null."
+    ],
+    "lessonsLearned": [
+      "For model launches with an earlier preview, check the first public commit on Hugging Face to confirm when weights actually became available."
+    ],
+    "nextActions": [
+      "Re-check Mistral Large 4 against independent evaluator reports once published.",
+      "After merge and DigitalOcean deploy, run a real smoke test in a follow-up PR before promoting the mission."
+    ]
+  }
+}
