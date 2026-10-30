@@ -1,0 +1,731 @@
+{
+  "date": "2026-10-30",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "candidates": [
+    {
+      "id": "c20261030-openai-frontier-misalignment-monitoring",
+      "title": "OpenAI describes its expanded multi-layer misalignment monitoring for frontier models (activation probes, model reviewers, investigative agents); replay of the Hugging Face incident alerts ~30 min after sandbox escape, and a September DNS escape during RL was flagged within 15 minutes",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment/",
+          "publishedAt": null,
+          "retrievedAt": "2026-10-30T17:05:33Z"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/OpenAI/status/2115896329645723836",
+          "publishedAt": "2026-10-29T19:59:31Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2116024684399796351",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 78,
+        "interestingness": 92,
+        "technicalDepth": 85,
+        "reproducibility": 45,
+        "credibility": 95
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 79.65 < 80. Official post 19:59:31Z (in window) read in full via its note text; the OpenAI page (dated October 29, 2026) returned HTTP 403 to minim4 and was read in full through Grok Bot web fetch. Detailed L0-L3 architecture, coverage rules, paging limits, Sol vs Terra/Luna monitor comparison and the no-reward-change policy to avoid CoT obfuscation are described, but no code, data or numeric recall figures in the text (figures not read), so reproducibility is low. It is a follow-up to the 2026-10-24 containment article already published; scored just under 80, no article."
+    },
+    {
+      "id": "c20261030-microsoft-mage-vl-cowork",
+      "title": "Microsoft releases Mage-VL-Cowork, a 4B open (Apache-2.0) hybrid GUI+bash computer-use model reporting 66.0% on OSWorld-Verified (two-run average, 50 steps), with a technical report and OSWorld reproduction suite",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/microsoft/Mage-VL-Cowork",
+          "publishedAt": "2026-10-30T12:13:24Z",
+          "retrievedAt": "2026-10-30T17:05:33Z"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/microsoft/Mage/tree/main/mage_vl_cowork",
+          "publishedAt": "2026-10-30T07:54:49Z",
+          "retrievedAt": "2026-10-30T17:05:33Z"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 1687,
+        "license": "MIT",
+        "commit": "d213d430de"
+      },
+      "scores": {
+        "breakthrough": 70,
+        "interestingness": 82,
+        "technicalDepth": 85,
+        "reproducibility": 75,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 77.75 < 80. Verified on primary sources: Hugging Face initial commit 2026-10-30T12:13:24Z (in window), Apache-2.0, 4B (Qwen3-4B-Instruct backbone + Mage-ViT); GitHub microsoft/Mage commits add the tech report PDF 07:54:49Z and an OSWorld-Verified reproduction suite 14:29:26Z. Model card table read: 66.0% overall vs ScaleCUA-Qwen3.5-9B 68.7%, so best at 4B but not best open model; the comparison table lists older frontier models; results self-reported, training code not located (repo folder holds README, assets, osworld_eval); report PDF downloaded but not text-extracted; not run."
+    },
+    {
+      "id": "c20261030-pika-h3-flex",
+      "title": "Pika releases Pika H3 Flex open weights: LoRA adapters post-trained on MiniMax-H3 for six-step video+stereo-audio generation (480p/768p locally, up to 12 references), claimed #1 open-weight model on DesignArena text-to-video",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/pika_labs/status/2115860471215788262",
+          "publishedAt": "2026-10-29T17:37:01Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/Pika-Labs/Pika-H3-Flex",
+          "publishedAt": "2026-10-29T17:10:25Z",
+          "retrievedAt": "2026-10-30T17:05:33Z"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/Pika-Labs/Pika-H3-Flex",
+          "publishedAt": "2026-10-29T17:09:02Z",
+          "retrievedAt": "2026-10-30T17:05:33Z"
+        },
+        {
+          "platform": "official",
+          "url": "https://pika.art/blog/pika-h3-flex-research",
+          "publishedAt": null,
+          "retrievedAt": "2026-10-30T17:05:33Z"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 201,
+        "license": null,
+        "commit": "64d81b2e98"
+      },
+      "scores": {
+        "breakthrough": 68,
+        "interestingness": 88,
+        "technicalDepth": 75,
+        "reproducibility": 78,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 76.6 < 80. In window: Hugging Face \"Release Pika H3 Flex\" commit 17:10:25Z, GitHub release commit 17:09:02Z, official post 17:37:01Z. Model card and blog read: adapters on an existing open base (MiniMax-H3 Community License, ~210 GB base components), 4K and audio stems are hosted-API only, human-eval and DesignArena ranking are vendor-reported; showcases explicitly not reproducible; not run."
+    },
+    {
+      "id": "c20261030-anthropic-claude-self-assessment",
+      "title": "Anthropic: Claude \"self-assessment\" gives a safety assessment of each conversation right after responding; on Claude Fable 5 it flags 78% of what a stronger classifier flags (94% of high-priority) at 1% FPR",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/AnthropicAI/status/2115871889549865429",
+          "publishedAt": "2026-10-29T18:22:24Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "official",
+          "url": "https://safeguards.anthropic.com/2026/self-assessment/",
+          "publishedAt": null,
+          "retrievedAt": "2026-10-30T17:05:33Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 72,
+        "interestingness": 88,
+        "technicalDepth": 75,
+        "reproducibility": 35,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 72.85 < 80. Official post 18:22:24Z is in window, but the Safeguards blog post it links is dated October 16, 2026 (read), so the research was published before the window; closed method, no code."
+    },
+    {
+      "id": "c20261030-deepmind-economics-of-intelligence",
+      "title": "Google DeepMind (Imas, Koh, Legg) publishes \"The Economics of Intelligence\": competence vs coordination thresholds and four regimes of AGI economic transformation",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://institute.deepmind.com/essays/the-economics-of-intelligence/",
+          "publishedAt": "2026-10-29T14:50:50Z",
+          "retrievedAt": "2026-10-30T17:05:33Z"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/emollick/status/2115911454994186301",
+          "publishedAt": "2026-10-29T20:59:37Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2115870739152752884",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 85,
+        "technicalDepth": 65,
+        "reproducibility": 30,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 63.75 < 80. Essay page datePublished 2026-10-29T14:50:50Z and author announcement 15:04:14Z are before the window start (16:00Z); theory essay, underlying paper not read."
+    },
+    {
+      "id": "c20261030-openai-model-spec-update",
+      "title": "OpenAI updates its Model Spec around five core values (faithfulness to intent, harm minimisation, honesty, human agency, care)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/w01fe/status/2115852555762929732",
+          "publishedAt": "2026-10-29T17:05:34Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "official",
+          "url": "https://openai.com/index/updated-model-spec/",
+          "publishedAt": null,
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2115873904208023718",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 75,
+        "technicalDepth": 50,
+        "reproducibility": 30,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 54.25 < 80. Author thread 17:05:34Z (in window); policy document, page not fetched; no research artifact."
+    },
+    {
+      "id": "c20261030-yc-olam-agent-swarms",
+      "title": "Y Combinator and Olam Labs run long-horizon agent-swarm experiments in Minecraft and Mindustry (emergent bureaucracy, telegraphic A2A messages, GPT agents reading game source to beat Claude)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/ycombinator/status/2115904914526548472",
+          "publishedAt": "2026-10-29T20:33:37Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2115953868068597964",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 80,
+        "technicalDepth": 50,
+        "reproducibility": 55,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 59.75 < 80. Official post 20:33:37Z (in window) read; numbers and the open-sourcing claim come from the X news summary; write-up and code not located."
+    },
+    {
+      "id": "c20261030-nvidia-nemotron-retriever",
+      "title": "NVIDIA shows Nemotron Retriever agentic retrieval with open models and recipes on Hugging Face",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/NVIDIAAI/status/2115962853463396395",
+          "publishedAt": "2026-10-30T00:23:51Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "web",
+          "url": "https://huggingface.co/blog/nvidia/nemotron-retriever-world-class-agentic-retrieval",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 65,
+        "technicalDepth": 60,
+        "reproducibility": 75,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 61.0 < 80. Official post 00:23:51Z (in window); Hugging Face blog not fetched; incremental demo of existing models."
+    },
+    {
+      "id": "c20261030-nace-drex-max-v1",
+      "title": "Nace AI open-sources Drex-Max v1, a ~26-27B multimodal \"decision model\" that runs locally on Apple Silicon",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/NaceAI/status/2116163656480428220",
+          "publishedAt": "2026-10-30T13:41:46Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/nace-ai/drex-max-v1",
+          "publishedAt": "2026-10-13T23:16:25Z",
+          "retrievedAt": "2026-10-30T17:05:33Z"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2116176667450458288",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 65,
+        "technicalDepth": 55,
+        "reproducibility": 70,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 58.25 < 80. Announcement 13:41:46Z (in window); HF repo created 2026-10-13 (likes 5), custom licence; Decision Index gains self-reported."
+    },
+    {
+      "id": "c20261030-herdr-core-desktop",
+      "title": "herdr releases herdr-core and an open-source desktop app for running coding agents",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/herdrdev/status/2115841099575222765",
+          "publishedAt": "2026-10-29T16:20:03Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/herdrdev/herdr",
+          "publishedAt": "2026-03-27T17:54:33Z",
+          "retrievedAt": "2026-10-30T17:05:33Z"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2115877040280977899",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 75,
+        "technicalDepth": 45,
+        "reproducibility": 75,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 57.0 < 80. Announcement 16:20:03Z (in window); feature release of an existing Apache-2.0 project (repo created 2026-03-27); developer tooling."
+    },
+    {
+      "id": "c20261030-aura-autopilot",
+      "title": "Aura open-sources Autopilot, a game-playtesting agent for Unity, Godot and Unreal claiming +43% accuracy",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Aura_Assistant/status/2116191580063404100",
+          "publishedAt": "2026-10-30T15:32:44Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2116197091680952420",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 72,
+        "technicalDepth": 45,
+        "reproducibility": 55,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 53.75 < 80. Announcement 15:32:44Z (in window); repository not located in this run; claims self-reported."
+    },
+    {
+      "id": "c20261030-tbc-mischief-1",
+      "title": "The Biological Computing Co. launches Mischief 1, an image-to-video model it says is informed by neuron research, from 0.5 cents per second",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/AlexKsendzovsky/status/2116153410101944352",
+          "publishedAt": "2026-10-30T13:01:03Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2116164774669013385",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 80,
+        "technicalDepth": 30,
+        "reproducibility": 15,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 46.75 < 80. CEO post 13:01:03Z (in window); hosted product, no technical report; biocompute link unverified."
+    },
+    {
+      "id": "c20261030-kimi-3d-make",
+      "title": "Moonshot adds \"3D Make\" to Kimi (Blender/CAD tool use)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Kimi_Moonshot/status/2116005725814280570",
+          "publishedAt": "2026-10-30T03:14:13Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 70,
+        "technicalDepth": 25,
+        "reproducibility": 10,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 42.5 < 80. Official post 03:14:13Z (in window); product feature."
+    },
+    {
+      "id": "c20261030-openai-private-intelligence",
+      "title": "OpenAI launches Private Intelligence data controls for businesses",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/OpenAI/status/2116186509384815084",
+          "publishedAt": "2026-10-30T15:12:35Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2116193874297409964",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 60,
+        "technicalDepth": 20,
+        "reproducibility": 10,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 36.5 < 80. Official post 15:12:35Z (in window); enterprise product announcement."
+    },
+    {
+      "id": "c20261030-arxiv-2610.40476",
+      "title": "Training language models in simulation for psychiatric intake (multi-turn RL; randomized double-blind crossover with 32 + 15 board-certified psychiatrists, trained agent preferred in 76.7% of pairs)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.40476",
+          "publishedAt": "2026-10-29T17:10:32Z",
+          "retrievedAt": "2026-10-30T17:05:33Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 68,
+        "interestingness": 80,
+        "technicalDepth": 80,
+        "reproducibility": 50,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 71.9 < 80. Submitted 2026-10-29T17:10:32Z (in window). Abstract read; 56 authors; strong clinical evaluation design, but model and environments availability not checked; full paper not read."
+    },
+    {
+      "id": "c20261030-arxiv-2610.40382",
+      "title": "Beyond Selected Breakthroughs: OpenConjecture dataset of arXiv conjectures since Feb 2026; frontier GPT models on 200 random conjectures",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.40382",
+          "publishedAt": "2026-10-29T16:24:55Z",
+          "retrievedAt": "2026-10-30T17:05:33Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 62,
+        "interestingness": 82,
+        "technicalDepth": 72,
+        "reproducibility": 75,
+        "credibility": 72
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 71.95 < 80. Submitted 2026-10-29T16:24:55Z (in window). Abstract read; candidate solutions deliberately not expert-verified."
+    },
+    {
+      "id": "c20261030-arxiv-2610.40551",
+      "title": "Ramanujan Challenge results: AI models, CAS and formal tools on research-level number theory, including a proof of one published open conjecture",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.40551",
+          "publishedAt": "2026-10-29T17:39:04Z",
+          "retrievedAt": "2026-10-30T17:05:33Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 78,
+        "technicalDepth": 70,
+        "reproducibility": 60,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 67.5 < 80. Submitted 2026-10-29T17:39:04Z (in window). Abstract read; full paper not read."
+    },
+    {
+      "id": "c20261030-arxiv-2610.40564",
+      "title": "Training Foundation Models with a Single Algorithm: pretraining, SFT and RL unified as likelihood fitting in one trainer",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.40564",
+          "publishedAt": "2026-10-29T17:42:05Z",
+          "retrievedAt": "2026-10-30T17:05:33Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 75,
+        "technicalDepth": 80,
+        "reproducibility": 40,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 67.25 < 80. Submitted 2026-10-29T17:42:05Z (in window). Abstract read; no code link in metadata."
+    },
+    {
+      "id": "c20261030-arxiv-2610.40613",
+      "title": "TextSeal2 (Meta): distortion-free LLM watermarking that survives speculative decoding",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.40613",
+          "publishedAt": "2026-10-29T17:54:12Z",
+          "retrievedAt": "2026-10-30T17:05:33Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 65,
+        "technicalDepth": 80,
+        "reproducibility": 70,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 67.25 < 80. Submitted 2026-10-29T17:54:12Z (in window). Abstract read; code at facebookresearch/textseal per comment, not inspected."
+    },
+    {
+      "id": "c20261030-arxiv-2610.40655",
+      "title": "Elucidating the Design Space of LM Data Attribution: CATT controlled fictitious-knowledge benchmark",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.40655",
+          "publishedAt": "2026-10-29T17:59:53Z",
+          "retrievedAt": "2026-10-30T17:05:33Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 60,
+        "technicalDepth": 72,
+        "reproducibility": 75,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 63.15 < 80. Submitted 2026-10-29T17:59:53Z (in window). Abstract read; benchmark paper."
+    },
+    {
+      "id": "c20261030-arxiv-2610.40637",
+      "title": "world2vec: mechanistic world models through latent dynamics learning, 10x fewer parameters than DreamerV3/TD-MPC2",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.40637",
+          "publishedAt": "2026-10-29T17:58:23Z",
+          "retrievedAt": "2026-10-30T17:05:33Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 65,
+        "technicalDepth": 70,
+        "reproducibility": 65,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 63.0 < 80. Submitted 2026-10-29T17:58:23Z (in window). Abstract read; not run."
+    },
+    {
+      "id": "c20261030-gh-googlecloudplatform-dgem",
+      "title": "GoogleCloudPlatform/dgem: zero-shot decision model on DiffusionGemma with per-option probabilities, CLI and MCP server",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/GoogleCloudPlatform/dgem",
+          "publishedAt": "2026-10-29T18:27:06Z",
+          "retrievedAt": "2026-10-30T17:05:33Z"
+        }
+      ],
+      "repository": {
+        "language": "Go",
+        "stars": 3,
+        "license": "Apache-2.0",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 60,
+        "technicalDepth": 55,
+        "reproducibility": 70,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 57.0 < 80. Created 2026-10-29T18:27:06Z (3 stars, Apache-2.0); metadata only, not run."
+    },
+    {
+      "id": "c20261030-gh-n1nemann-sapper-v2",
+      "title": "sapper-v2: autonomous pentest agent swarm, claimed 3rd Tencent Intelligent Attack-Defense champion",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/N1nEmAn/sapper-v2",
+          "publishedAt": "2026-10-30T15:12:35Z",
+          "retrievedAt": "2026-10-30T17:05:33Z"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 62,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 70,
+        "technicalDepth": 55,
+        "reproducibility": 60,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 57.0 < 80. Created 15:12:35Z (62 stars, MIT); competition claim unverified; metadata only."
+    },
+    {
+      "id": "c20261030-gh-collinear-ai-collinear-zero",
+      "title": "collinear-ai/collinear-zero: patch security findings with a coding agent, then verify with an independent attack-tester",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/collinear-ai/collinear-zero",
+          "publishedAt": "2026-10-29T18:22:43Z",
+          "retrievedAt": "2026-10-30T17:05:33Z"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 13,
+        "license": "Apache-2.0",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 55,
+        "technicalDepth": 45,
+        "reproducibility": 70,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 49.25 < 80. Created 18:22:43Z (13 stars, Apache-2.0); metadata only."
+    },
+    {
+      "id": "c20261030-gh-rel-transformers-5-22-1",
+      "title": "huggingface/transformers v5.22.1 patch release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/huggingface/transformers/releases/tag/v5.22.1",
+          "publishedAt": "2026-10-30T09:36:03Z",
+          "retrievedAt": "2026-10-30T17:05:33Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 10,
+        "interestingness": 30,
+        "technicalDepth": 30,
+        "reproducibility": 90,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 39.0 < 80. Routine patch release in window."
+    },
+    {
+      "id": "c20261030-gh-rel-codex-0-166-0",
+      "title": "openai/codex rust-v0.166.0 release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.166.0",
+          "publishedAt": "2026-10-29T19:47:53Z",
+          "retrievedAt": "2026-10-30T17:05:33Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 15,
+        "interestingness": 45,
+        "technicalDepth": 30,
+        "reproducibility": 90,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 44.25 < 80. Routine release in window."
+    }
+  ],
+  "selectedCandidateId": null
+}
