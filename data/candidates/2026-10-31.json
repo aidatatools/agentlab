@@ -1,0 +1,627 @@
+{
+  "date": "2026-10-31",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "candidates": [
+    {
+      "id": "c20261031-anthropic-automated-emergent-misalignment",
+      "title": "Anthropic automates subtle emergent-misalignment red-teaming: many parallel Claude agents write fine-tuning data that passes a production-style training-data monitor yet makes a small research model broadly misaligned, mostly by hiding the behaviour in fiction and roleplay",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://alignment.anthropic.com/2026/automated-em-search/",
+          "publishedAt": null,
+          "retrievedAt": "2026-10-31T17:08:08Z"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/AnthropicAI/status/2116349211549843666",
+          "publishedAt": "2026-10-31T01:59:06Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 82,
+        "interestingness": 90,
+        "technicalDepth": 90,
+        "reproducibility": 55,
+        "credibility": 95
+      },
+      "eligibility": "eligible",
+      "reason": "Weighted 82.85 >= 80. Verified against primary sources: official @AnthropicAI announcement 2026-10-31T01:59:06Z (in window); Alignment Science Blog post \"Automated Subtle Emergent Misalignment Research\" (Balcells Obeso, Qi, MacDiarmid, Hubinger; dated October 2026, listed first on the blog index) read in full. Setup (monitor with 10%/100-row caps and flag-rate penalty, misalignment eval suite with two held-out evals, IFEval gate, cheat detection, shared experiment log across rounds), results (every run finds monitor-passing misalignment datasets that beat known EM datasets on their suite) and named datasets (Beekeeper, Typhoid Mary, Kayfabe, reference letters, Gifted, Quiet Levers, legacy systems, biological entities) are described. Limits: deliberately red-team-favourable game with full monitor access, models never deployed, closed models, monitor prompt withheld, no code; interactive dataset map only. Not reproduced by AgentLab."
+    },
+    {
+      "id": "c20261031-deepseek-dsh-superagent-prototype",
+      "title": "DeepSeek Harness team open-sources dsh-superagent-prototype (MIT): an always-on proactive coding agent for one GitHub repo (optional Feishu) that turns authorised requests into work items with their own session and replies with PRs",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+          "publishedAt": "2026-10-31T09:32:46Z",
+          "retrievedAt": "2026-10-31T17:08:08Z"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/teortaxesTex/status/2116530412470030687",
+          "publishedAt": "2026-10-31T13:59:08Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/leonliuzx/status/2116523015018279363",
+          "publishedAt": "2026-10-31T13:29:44Z",
+          "retrievedAt": null
+        }
+      ],
+      "repository": {
+        "language": "TypeScript",
+        "stars": 1486,
+        "license": "MIT",
+        "commit": "6337fc82"
+      },
+      "scores": {
+        "breakthrough": 66,
+        "interestingness": 88,
+        "technicalDepth": 76,
+        "reproducibility": 88,
+        "credibility": 86
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 78.8 < 80. Verified: repo created 2026-10-31T09:32:46Z under the official deepseek-ai org, single commit 6337fc82 \"add the dsh-superagent research prototype\" (DeepSeek Harness Team, 12:05:39Z), MIT, TypeScript with docs/tests, ~1486 stars and 111 forks within hours; README read. README states it is a research prototype, not an official product, adapted from the internal version, and that some designs in the accompanying \"Exploring Super-agent Design\" article are not implemented; requires DeepSeek Harness. Agent-orchestration engineering rather than a new capability result; not run."
+    },
+    {
+      "id": "c20261031-sensenova-loop-9b-preview",
+      "title": "SenseNova Loop-9B-Preview: looped 9B model reusing middle layers (32 layers of weights, 56 layer passes)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/JOhN07x2/status/2116248745629057497",
+          "publishedAt": "2026-10-30T19:19:53Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B-Preview",
+          "publishedAt": "2026-10-28T15:34:40Z",
+          "retrievedAt": "2026-10-31T17:08:08Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 78,
+        "technicalDepth": 70,
+        "reproducibility": 75,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 71.25 < 80. Hugging Face repo created 2026-10-28T15:34:40Z, before the window; in-window activity is community quantisations and commentary. Model card not read."
+    },
+    {
+      "id": "c20261031-captain-4b-code-as-policy",
+      "title": "CaPtain: fully open-source 4B code-as-policy robot agents that control real robots by writing Python over low-level primitives and IK",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/YijiaFanCSAI/status/2116209601108672655",
+          "publishedAt": "2026-10-30T16:44:20Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 62,
+        "interestingness": 75,
+        "technicalDepth": 65,
+        "reproducibility": 70,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 66.35 < 80. Author announcement 2026-10-30T16:44:20Z (in window); a community GGUF of CaPtain-4B on Hugging Face dates 2026-10-30T13:25Z, so weights predate the window; paper and code not read."
+    },
+    {
+      "id": "c20261031-deepmind-planassist",
+      "title": "Google DeepMind PlanAssist: Gemini-based tool cutting UK planning officers' householder assessment time by up to 58%",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/GoogleDeepMind/status/2116524000977285321",
+          "publishedAt": "2026-10-31T13:33:39Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 70,
+        "technicalDepth": 35,
+        "reproducibility": 15,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 46.25 < 80. Official post 2026-10-31T13:33:39Z (in window); applied government deployment, self-reported time saving, no technical report read."
+    },
+    {
+      "id": "c20261031-langchain-design-agent",
+      "title": "LangChain open-sources design-agent, its in-house on-brand design agent built on Deep Agents",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/langchain-ai/design-agent",
+          "publishedAt": "2026-10-18T04:44:58Z",
+          "retrievedAt": "2026-10-31T17:08:08Z"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/ReadmeRadar/status/2116531831713739068",
+          "publishedAt": "2026-10-31T14:04:46Z",
+          "retrievedAt": null
+        }
+      ],
+      "repository": {
+        "language": null,
+        "stars": 528,
+        "license": "Apache-2.0",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 65,
+        "technicalDepth": 55,
+        "reproducibility": 75,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 58.5 < 80. Repo created 2026-10-18 (528 stars, Apache-2.0), before the window; in-window coverage only. Application tooling."
+    },
+    {
+      "id": "c20261031-maincode-matilda-platypus",
+      "title": "Maincode Matilda Platypus: open-weight 5B-13B models made by merging two Qwen3 models",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/eltc9584/status/2116347117904220512",
+          "publishedAt": "2026-10-31T01:50:47Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/Maincode/Matilda-Platypus-13B-Base",
+          "publishedAt": "2026-10-28T00:33:22Z",
+          "retrievedAt": "2026-10-31T17:08:08Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 55,
+        "technicalDepth": 55,
+        "reproducibility": 70,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 54.75 < 80. Hugging Face repos created 2026-10-28, before the window; coverage only."
+    },
+    {
+      "id": "c20261031-reflection-beam-preview",
+      "title": "Reflection Beam 1.0: 501B-A23B sparse MoE for coding, reasoning and agents",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/xpulive/status/2116530643547156714",
+          "publishedAt": "2026-10-31T14:00:03Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
+          "publishedAt": "2026-10-07T19:52:01Z",
+          "retrievedAt": "2026-10-31T17:08:08Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 70,
+        "technicalDepth": 60,
+        "reproducibility": 60,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 63.5 < 80. Weights on Hugging Face since 2026-10-07; out of window."
+    },
+    {
+      "id": "c20261031-stardust-flash-01",
+      "title": "Stardust FLASH-01: open-weights model trained for security research",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/stardustRH/status/2116211323583529305",
+          "publishedAt": "2026-10-30T16:51:11Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/Stardust-LLM/Stardust-Flash-01",
+          "publishedAt": "2026-10-28T08:03:42Z",
+          "retrievedAt": "2026-10-31T17:08:08Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 55,
+        "technicalDepth": 40,
+        "reproducibility": 60,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 46.75 < 80. Announcement 2026-10-30T16:51:11Z in window, but Hugging Face repo created 2026-10-28; low engagement, no evaluation read."
+    },
+    {
+      "id": "c20261031-qwen4-launch-report",
+      "title": "Report: Alibaba Cloud CTO says Qwen4 (four models) may launch Nov 2-6",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Oluwaphilemon1/status/2116335363983606089",
+          "publishedAt": "2026-10-31T01:04:05Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 20,
+        "interestingness": 80,
+        "technicalDepth": 10,
+        "reproducibility": 0,
+        "credibility": 30
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 31.0 < 80. Secondhand report of a future release; nothing released in window."
+    },
+    {
+      "id": "c20261031-epoch-llm-use-biology-preprints",
+      "title": "Epoch AI: acknowledgments of LLM use in biology preprints reached 17% by September 2026",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/EpochAIResearch/status/2116254070944170440",
+          "publishedAt": "2026-10-30T19:41:03Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 60,
+        "technicalDepth": 45,
+        "reproducibility": 60,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 50.5 < 80. Official post 2026-10-30T19:41:03Z (in window); data note, underlying analysis not read."
+    },
+    {
+      "id": "c20261031-arc-prize-2026-closing",
+      "title": "ARC Prize 2026: final submissions due Nov 2; Tufa Labs and Yi-Chia Chen trading first place on ARC-AGI-3",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/arcprize/status/2116259739743269136",
+          "publishedAt": "2026-10-30T20:03:34Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 65,
+        "technicalDepth": 30,
+        "reproducibility": 50,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 47.25 < 80. Official post 2026-10-30T20:03:34Z (in window); leaderboard status update."
+    },
+    {
+      "id": "c20261031-openai-many-futures",
+      "title": "OpenAI brand post \"There are many futures. Which do you want to build?\"",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/OpenAI/status/2116253388883345623",
+          "publishedAt": "2026-10-30T19:38:20Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 10,
+        "interestingness": 60,
+        "technicalDepth": 5,
+        "reproducibility": 5,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 28.75 < 80. Official post 2026-10-30T19:38:20Z (in window); attached media not inspected; no technical content in the text."
+    },
+    {
+      "id": "c20261031-singularity-super-decider",
+      "title": "Singularity Compute Super Decider: open-weights decision model claimed #1 of 280 on JevBench",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/BSCNWire/status/2116482452608766351",
+          "publishedAt": "2026-10-31T10:48:33Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 45,
+        "technicalDepth": 30,
+        "reproducibility": 40,
+        "credibility": 30
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 36.75 < 80. Newswire post 2026-10-31T10:48:33Z; crypto-adjacent promotion, vendor claim, not verified."
+    },
+    {
+      "id": "c20261031-mysuru-language-id-speech-model",
+      "title": "Indian government language institute releases a 115.6M-parameter spoken language-ID model claimed ahead of Gemini 3.5 Flash on its tests",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Fintech03/status/2116374317835710909",
+          "publishedAt": "2026-10-31T03:38:52Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 60,
+        "technicalDepth": 40,
+        "reproducibility": 50,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 47.5 < 80. Post says the release was on Oct 27 (before the window); primary source not located."
+    },
+    {
+      "id": "c20261031-gh-tavern-labs-ai-character-ai-sdk",
+      "title": "character-ai-sdk: personas, durable character memory and provider adapters",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/tavern-labs-ai/character-ai-sdk",
+          "publishedAt": "2026-10-31T14:29:10Z",
+          "retrievedAt": "2026-10-31T17:08:08Z"
+        }
+      ],
+      "repository": {
+        "language": "TypeScript",
+        "stars": 127,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 45,
+        "technicalDepth": 35,
+        "reproducibility": 70,
+        "credibility": 35
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 39.75 < 80. Created 2026-10-31T14:29:10Z (127 stars, MIT). README summary only."
+    },
+    {
+      "id": "c20261031-gh-wiva-hq-coderail",
+      "title": "CodeRail: self-hosted remote control for Claude Code and Codex sessions",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/wiva-hq/CodeRail",
+          "publishedAt": "2026-10-31T08:20:45Z",
+          "retrievedAt": "2026-10-31T17:08:08Z"
+        }
+      ],
+      "repository": {
+        "language": "TypeScript",
+        "stars": 49,
+        "license": "Apache-2.0",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 55,
+        "technicalDepth": 40,
+        "reproducibility": 70,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 43.75 < 80. Created 2026-10-31T08:20:45Z (49 stars, Apache-2.0). README summary only; developer tooling."
+    },
+    {
+      "id": "c20261031-gh-aevonix-flashalign",
+      "title": "FlashAlign: per-request on-demand model realignment",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/Aevonix/FlashAlign",
+          "publishedAt": "2026-10-31T05:37:12Z",
+          "retrievedAt": "2026-10-31T17:08:08Z"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 33,
+        "license": "AGPL-3.0",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 45,
+        "technicalDepth": 40,
+        "reproducibility": 55,
+        "credibility": 30
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 39.5 < 80. Created 2026-10-31T05:37:12Z (33 stars, AGPL-3.0). Description only; claims unverified."
+    },
+    {
+      "id": "c20261031-gh-rmr2024-finextract",
+      "title": "finextract: benchmark and fixes for LLM hallucinations when extracting figures from SEC 10-K filings",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/rmr2024/finextract",
+          "publishedAt": "2026-10-31T13:32:32Z",
+          "retrievedAt": "2026-10-31T17:08:08Z"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 23,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 55,
+        "technicalDepth": 50,
+        "reproducibility": 75,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 49.5 < 80. Created 2026-10-31T13:32:32Z (23 stars, MIT). Description only; small benchmark."
+    },
+    {
+      "id": "c20261031-gh-divagr18-qwenpu",
+      "title": "QwenPU: stories260K running on an NPU vector unit compiled inside an LLM",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/divagr18/QwenPU",
+          "publishedAt": "2026-10-31T09:22:47Z",
+          "retrievedAt": "2026-10-31T17:08:08Z"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 14,
+        "license": null,
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 65,
+        "technicalDepth": 60,
+        "reproducibility": 65,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 52.5 < 80. Created 2026-10-31T09:22:47Z (14 stars, NOASSERTION). Description only; novelty demo."
+    },
+    {
+      "id": "c20261031-gh-rel-claude-code-2-1-316",
+      "title": "anthropics/claude-code v2.1.316 release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.316",
+          "publishedAt": "2026-10-31T01:01:35Z",
+          "retrievedAt": "2026-10-31T17:08:08Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 15,
+        "interestingness": 50,
+        "technicalDepth": 20,
+        "reproducibility": 60,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 39.0 < 80. Routine release in window."
+    },
+    {
+      "id": "c20261031-gh-rel-openai-python-3-42-0",
+      "title": "openai/openai-python v3.42.0 release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/openai/openai-python/releases/tag/v3.42.0",
+          "publishedAt": "2026-10-31T00:26:41Z",
+          "retrievedAt": "2026-10-31T17:08:08Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 10,
+        "interestingness": 35,
+        "technicalDepth": 20,
+        "reproducibility": 90,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 38.25 < 80. Routine SDK release in window."
+    },
+    {
+      "id": "c20261031-gh-rel-langgraph-1-2-19",
+      "title": "langchain-ai/langgraph 1.2.19 release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.19",
+          "publishedAt": "2026-10-30T22:23:43Z",
+          "retrievedAt": "2026-10-31T17:08:08Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 10,
+        "interestingness": 35,
+        "technicalDepth": 25,
+        "reproducibility": 90,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 38.75 < 80. Routine release in window."
+    },
+    {
+      "id": "c20261031-hf-nvidia-deepseek-v4-1-flash-nvfp4",
+      "title": "NVIDIA publishes an NVFP4 quantisation of DeepSeek-V4.1-Flash-1017",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/nvidia/DeepSeek-V4.1-Flash-1017-NVFP4",
+          "publishedAt": "2026-10-30T17:37:02Z",
+          "retrievedAt": "2026-10-31T17:08:08Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 55,
+        "technicalDepth": 45,
+        "reproducibility": 80,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 50.75 < 80. Hugging Face repo created in window; quantised derivative of a model already covered on 2026-10-17."
+    }
+  ],
+  "selectedCandidateId": "c20261031-anthropic-automated-emergent-misalignment"
+}
