@@ -1,0 +1,251 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "mission-20261101-001",
+  "date": "2026-11-01",
+  "timezone": "Asia/Taipei",
+  "status": "awaiting_review",
+  "objective": {
+    "goal": "Discover, score, verify and propose one outstanding AI/agent discovery for 2026-11-01 (Asia/Taipei), or document a no-publish decision.",
+    "sources": [
+      "x",
+      "github",
+      "arxiv"
+    ],
+    "deliverables": [
+      "Verified candidate batch",
+      "No-publish decision (low-signal day)",
+      "Mission record",
+      "Pull request"
+    ]
+  },
+  "agent": {
+    "id": "grokbot",
+    "framework": "Grok Bot (AgentLab-bot on minim4.home)",
+    "model": "grok-bot",
+    "runId": "routine-9a1f041e-20261102T0100-minim4-daily-2026-11-01"
+  },
+  "selection": {
+    "candidatesEvaluated": 26,
+    "selectedCandidateId": null,
+    "selectionScore": null,
+    "rankingArtifact": "data/candidates/2026-11-01.json"
+  },
+  "skillsUsed": [
+    {
+      "skill": "x-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-x-20261101-001"
+    },
+    {
+      "skill": "github-discovery",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-gh-20261101-001"
+    },
+    {
+      "skill": "arxiv-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ax-20261101-001"
+    },
+    {
+      "skill": "fact-check",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-fc-20261101-001"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t1",
+      "action": "git checkout main, pull --ff-only (main at e3ce8d3, merge of PR #19; PR #20 still open), create branch daily/2026-11-01 (tree clean)",
+      "tool": "git",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": "2026-11-01T17:00:39Z",
+      "evidenceIds": [
+        "ev-git-branch"
+      ]
+    },
+    {
+      "id": "t2",
+      "action": "Discovery script with explicit window bounds 2026-10-31T16:00Z..2026-11-01T16:00Z (checked by grep before run): GitHub search (370 repos >=5 stars created in window, mostly off-topic/spam, plus llm/agent/mcp/model/paper/benchmark queries); releases of 30 tracked repos (1 in window); Hugging Face scan of 40 orgs (0 in window) plus trending; arXiv API totalResults 0 for the window",
+      "tool": "gh+python urllib",
+      "status": "success",
+      "startedAt": "2026-11-01T17:00:39Z",
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-gh-new",
+        "ev-gh-releases",
+        "ev-hf",
+        "ev-arxiv"
+      ]
+    },
+    {
+      "id": "t3",
+      "action": "Public X reads: 5x search_posts_all (14 lab accounts window-bounded, release/paper keywords, link search, two dating searches) and 1x search_news (30h)",
+      "tool": "x.search_posts_all+x.search_news",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-x-search"
+      ]
+    },
+    {
+      "id": "t4",
+      "action": "Verify: GitHub API metadata, commits and READMEs for thu-rllab/LPO and 8 new repos; GitHub search for Memdoor/GEAR/role-spoofing repos; arXiv API title lookups for LPO (2605.06139), role spoofing (2610.40396), OmniCompass (2610.18829), Youtu-Parsing-Omni (2610.39301); X id timestamp decoding",
+      "tool": "gh+python urllib",
+      "status": "success",
+      "startedAt": "2026-11-02T01:02:55+08:00",
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-verify"
+      ]
+    },
+    {
+      "id": "t5",
+      "action": "Write candidates JSON (26), rank with rank_candidates.py (no candidate >=80, publicationAllowed false), scaffold mission with create_mission.py",
+      "tool": "python",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": "2026-11-02T01:05:19+08:00",
+      "evidenceIds": [
+        "ev-ranking"
+      ]
+    },
+    {
+      "id": "t6",
+      "action": "Run validate_content, unittest, astro check, astro build",
+      "tool": "python+npm",
+      "status": "success",
+      "startedAt": "2026-11-02T01:05:19+08:00",
+      "finishedAt": "2026-11-02T01:05:21+08:00",
+      "evidenceIds": [
+        "ev-validate",
+        "ev-unittest",
+        "ev-astro-check",
+        "ev-astro-build"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "python scripts/validate_content.py",
+      "status": "passed",
+      "artifact": ".reports/2026-11-01/validate.log"
+    },
+    {
+      "name": "python -m unittest discover -s tests -v",
+      "status": "passed",
+      "artifact": ".reports/2026-11-01/unittest.log"
+    },
+    {
+      "name": "npm run check",
+      "status": "passed",
+      "artifact": ".reports/2026-11-01/astro-check.log"
+    },
+    {
+      "name": "npm run build",
+      "status": "passed",
+      "artifact": ".reports/2026-11-01/astro-build.log"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-git-branch",
+      "type": "git",
+      "ref": "branch daily/2026-11-01 from origin/main@e3ce8d3"
+    },
+    {
+      "id": "ev-gh-new",
+      "type": "http_response",
+      "ref": ".reports/2026-11-01/gh_new_repos.json (370 repos >=5 stars created in window; AI-focused queries llm 14, agent 180, mcp 71, model 53, paper 3, benchmark 3)"
+    },
+    {
+      "id": "ev-gh-releases",
+      "type": "http_response",
+      "ref": ".reports/2026-11-01/gh_releases_window.txt (1 release in window: gemini-cli nightly)"
+    },
+    {
+      "id": "ev-hf",
+      "type": "http_response",
+      "ref": ".reports/2026-11-01/hf_orgs.txt (no new models from 40 tracked orgs in window; trending list all created before the window)"
+    },
+    {
+      "id": "ev-arxiv",
+      "type": "http_response",
+      "ref": ".reports/2026-11-01/arxiv.xml and arxiv_entries.json (totalResults 0 for submittedDate 202610311600-202611011600, a weekend window)"
+    },
+    {
+      "id": "ev-x-search",
+      "type": "api_response",
+      "ref": "6 public X reads; in-window posts used: @quyun52425662 (2116814902564384952), @randhir302 (2116800540340580749), @UP_SHIFTED (2116595749425197491), @nxtday (2116703846227747225, 2116732638803398858), @prompt48 (2116609616918552619, 2116592639105720681), @ALIN96033 (2116830204421419405), @TheViiKo (2116841339472208290), @alishohadaee (2116808939228762319), @ycnewsdigest (2116626343404155371), @popmemecoin (2116901413456351494), @nvidia (2116591473579999452), @cv_usk (2116689930663739556); X news stories 2116805922211410376, 2116851813911527712, 2116517186793775606, 2116776917126840330"
+    },
+    {
+      "id": "ev-verify",
+      "type": "http_response",
+      "ref": ".reports/2026-11-01/verify.log and readme_*.md (LPO repo created 2026-11-01T03:23:35Z, commit 6dea619f 08:18:45Z, paper arXiv 2605.06139 v1 2026-05-07; role spoofing 2610.40396 submitted 2026-10-29T16:33Z; Youtu-Parsing-Omni 2610.39301 2026-10-29; OmniCompass 2610.18829 2026-10-13; guregodevo/memdoor created 2026-10-05)"
+    },
+    {
+      "id": "ev-ranking",
+      "type": "local_command",
+      "ref": ".reports/2026-11-01/ranking.json (proposedCandidateId null, publicationAllowed false; top LPO code 76.95, Youtu-Parsing-Omni 73.25 (out of window), role spoofing 72.25 (out of window), OmniCompass 60.5, Memdoor 59.25)"
+    },
+    {
+      "id": "ev-validate",
+      "type": "local_command",
+      "ref": "python scripts/validate_content.py: passed (Content OK: 10 article(s), 17 mission(s), 2 agent(s), 373 candidate(s).) @ 2026-11-02T01:05:19+08:00"
+    },
+    {
+      "id": "ev-unittest",
+      "type": "local_command",
+      "ref": "python -m unittest discover -s tests -v: passed (OK) @ 2026-11-02T01:05:19+08:00"
+    },
+    {
+      "id": "ev-astro-check",
+      "type": "local_command",
+      "ref": "npm run check: passed (- 0 hints) @ 2026-11-02T01:05:21+08:00"
+    },
+    {
+      "id": "ev-astro-build",
+      "type": "local_command",
+      "ref": "npm run build: passed (01:05:21 [build] Complete!) @ 2026-11-02T01:05:21+08:00"
+    }
+  ],
+  "outcome": {
+    "articleId": null,
+    "githubCommit": null,
+    "githubPullRequest": null,
+    "deploymentUrl": null,
+    "publicationStatus": "not_published"
+  },
+  "metrics": {
+    "durationSeconds": null,
+    "tokens": null,
+    "estimatedCostUsd": null,
+    "humanInterventions": 0
+  },
+  "retrospective": {
+    "successes": [
+      "Window bounds were set explicitly in discover.py and checked before running.",
+      "Primary-source dates (GitHub created_at and commits, arXiv submission dates, X id decoding) moved Youtu-Parsing-Omni, role spoofing, OmniCompass, Memdoor and K2 Horizon out of the window despite in-window coverage.",
+      "26 deduplicated candidates scored with explicit reasons; no-publish decision documented instead of inventing a story."
+    ],
+    "failures": [
+      "arXiv API returned 0 results for the weekend window, so no in-window arXiv candidates.",
+      "No tracked Hugging Face org published a model in the window.",
+      "The Moonshot blog on Kimi K3.1 Pro cyber filtering and the GEAR project were not located or read; several candidates were judged from X posts and news summaries only.",
+      "No code was run (LPO not reproduced); X retrievedAt timestamps were not captured per call."
+    ],
+    "lessonsLearned": [
+      "Weekend windows are reliably low-signal: arXiv and lab accounts are quiet, and most in-window X posts are coverage of earlier releases.",
+      "A code release for an older paper should be scored on the release, not the paper; check the arXiv v1 date."
+    ],
+    "nextActions": [
+      "Check Kimi K3.1 Pro open weights (promised by Nov 4) and the Qwen4 launch reported for Nov 2-6 in the next runs.",
+      "After merge and DigitalOcean deploy, run a real smoke test in a follow-up PR before promoting the mission."
+    ]
+  }
+}

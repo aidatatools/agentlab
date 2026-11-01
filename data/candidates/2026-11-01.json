@@ -1,0 +1,695 @@
+{
+  "date": "2026-11-01",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "candidates": [
+    {
+      "id": "c20261101-thu-rllab-lpo-code",
+      "title": "Tsinghua RL lab releases official code for Listwise Policy Optimization (LPO, NeurIPS 2026): group-based RLVR recast as explicit target-projection on the response simplex, built on verl",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/thu-rllab/LPO",
+          "publishedAt": "2026-11-01T03:23:35Z",
+          "retrievedAt": "2026-11-02T01:02:55+08:00"
+        },
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2605.06139",
+          "publishedAt": "2026-05-07T12:38:17Z",
+          "retrievedAt": "2026-11-02T01:02:55+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/quyun52425662/status/2116814902564384952",
+          "publishedAt": "2026-11-01T08:49:35Z",
+          "retrievedAt": null
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 11,
+        "license": "Apache-2.0",
+        "commit": "6dea619f"
+      },
+      "scores": {
+        "breakthrough": 70,
+        "interestingness": 72,
+        "technicalDepth": 85,
+        "reproducibility": 85,
+        "credibility": 82
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 76.95 < 80. Verified: repo created 2026-11-01T03:23:35Z, single commit 6dea619f \"Initial release\" at 08:18:45Z (in window), Apache-2.0, README with install, data prep and training scripts (Qwen3-1.7B-Base example) read; author post 08:49:35Z. The paper itself is arXiv 2605.06139 (v1 submitted 2026-05-07), so the in-window event is a code release for a months-old result, not a new finding. Not run."
+    },
+    {
+      "id": "c20261101-role-spoofing-llms",
+      "title": "Understanding and Mitigating Role Spoofing in LLMs (UPenn, Princeton, Apple): tool outputs that fake chat structure and user style can impersonate the user",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.40396",
+          "publishedAt": "2026-10-29T16:33:08Z",
+          "retrievedAt": "2026-11-02T01:02:55+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/randhir302/status/2116800540340580749",
+          "publishedAt": "2026-11-01T07:52:31Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 68,
+        "interestingness": 80,
+        "technicalDepth": 78,
+        "reproducibility": 55,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 72.25 < 80. arXiv abstract read; submitted 2026-10-29T16:33:08Z, before the window (in-window activity is commentary only). Not reproduced."
+    },
+    {
+      "id": "c20261101-youtu-parsing-omni",
+      "title": "Tencent Youtu-Parsing-Omni: 5B omni-modal parser with one encoder and one schema for documents, images, audio and video",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.39301",
+          "publishedAt": "2026-10-29T03:49:25Z",
+          "retrievedAt": "2026-11-02T01:02:55+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/HuggingPapers/status/2116443322755772658",
+          "publishedAt": "2026-10-31T08:13:04Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/prompt48/status/2116592639105720681",
+          "publishedAt": "2026-10-31T18:06:24Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 68,
+        "interestingness": 72,
+        "technicalDepth": 78,
+        "reproducibility": 75,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 73.25 < 80. arXiv 2610.39301 submitted 2026-10-29 and Hugging Face weights were already discussed on 2026-10-23 (post 2113779113635057877); out of window. In-window posts are reviews and one hands-on test reporting a chart-parsing failure."
+    },
+    {
+      "id": "c20261101-omnicompass-benchmark",
+      "title": "OmniCompass: holistic benchmark for omni-modal video grounding and understanding",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.18829",
+          "publishedAt": "2026-10-13T17:54:22Z",
+          "retrievedAt": "2026-11-02T01:02:55+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/cv_usk/status/2116689930663739556",
+          "publishedAt": "2026-11-01T00:33:00Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 60,
+        "technicalDepth": 65,
+        "reproducibility": 70,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 60.5 < 80. arXiv submission 2026-10-13, out of window; in-window post is a summary."
+    },
+    {
+      "id": "c20261101-kimi-k31-pro-cyber-reduction",
+      "title": "Moonshot says it cut cyber-attack capability in Kimi K3.1 Pro before its promised Nov 4 open-weights release",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/UP_SHIFTED/status/2116595749425197491",
+          "publishedAt": "2026-10-31T18:18:45Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/nxtday/status/2116703846227747225",
+          "publishedAt": "2026-11-01T01:28:18Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/nxtday/status/2116732638803398858",
+          "publishedAt": "2026-11-01T03:22:42Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 82,
+        "technicalDepth": 45,
+        "reproducibility": 30,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 56.5 < 80. In-window posts are secondhand summaries of a Moonshot blog that was not read; Kimi K3.1 Pro launched before the window (API listings from 2026-10-27) and the weights are not yet released. A separate unconfirmed report alleges distillation from GPT-6 Astra (post 2116530563146498219). Re-check when weights drop."
+    },
+    {
+      "id": "c20261101-gear-agent-harness",
+      "title": "GEAR: framework that improves an agent harness without retraining, claimed 52.8% to 62.9% on Terminal-Bench",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/prompt48/status/2116609616918552619",
+          "publishedAt": "2026-10-31T19:13:52Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 65,
+        "technicalDepth": 55,
+        "reproducibility": 40,
+        "credibility": 35
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 53.25 < 80. Only a third-party write-up whose own pilot did not run; GitHub search found no matching repo; release date and claims unverified."
+    },
+    {
+      "id": "c20261101-memdoor-qwen-team",
+      "title": "Memdoor: five Qwen 27B agents in planner/ideator/solver/manager roles reported to beat Fable 5 on LiveCodeBench Hard",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/ALIN96033/status/2116830204421419405",
+          "publishedAt": "2026-11-01T09:50:24Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/guregodevo/memdoor",
+          "publishedAt": "2026-10-05T20:04:16Z",
+          "retrievedAt": "2026-11-02T01:02:55+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 70,
+        "technicalDepth": 55,
+        "reproducibility": 65,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 59.25 < 80. Likely repo guregodevo/memdoor was created 2026-10-05 (169 stars), out of window; benchmark claim not verified."
+    },
+    {
+      "id": "c20261101-qwen-headless-coding-harness",
+      "title": "Headless coding harness on Qwen3.8-27B said to reach Fable 5-level performance, trending on Hacker News",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/TheViiKo/status/2116841339472208290",
+          "publishedAt": "2026-11-01T10:34:38Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 65,
+        "technicalDepth": 40,
+        "reproducibility": 40,
+        "credibility": 35
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 47.25 < 80. Single secondhand post; project and evaluation not located."
+    },
+    {
+      "id": "c20261101-ifm-k2-horizon-free-api",
+      "title": "IFM (MBZUAI) K2 Horizon 375B-A23B free API quota of 10M tokens per key per day",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Ylj158852/status/2116481465106174255",
+          "publishedAt": "2026-10-31T10:44:38Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/IFM_AI/status/2115488772020138164",
+          "publishedAt": "2026-10-28T17:00:01Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 60,
+        "technicalDepth": 30,
+        "reproducibility": 50,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 47.5 < 80. K2 Horizon weights were released before the window (September per community posts; IFM local-deployment post 2026-10-28); in-window posts concern a free API quota."
+    },
+    {
+      "id": "c20261101-openai-astra-robot-index",
+      "title": "Commentary: OpenAI GPT-6 Astra leads aggregated public robot-intelligence benchmarks",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2116805922211410376",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-02T01:02:55+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 75,
+        "technicalDepth": 30,
+        "reproducibility": 20,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 46.75 < 80. X news summary of commentary; no primary OpenAI robotics release in window; underlying index not read."
+    },
+    {
+      "id": "c20261101-gpt-62-astra-sightings",
+      "title": "Users report a gpt-6.2-astra model ID in Codex usage breakdowns",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2116851813911527712",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-02T01:02:55+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 80,
+        "technicalDepth": 10,
+        "reproducibility": 0,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 33.5 < 80. Unconfirmed sightings; no official release."
+    },
+    {
+      "id": "c20261101-glm-55-leak",
+      "title": "Leaked notes suggest Zhipu GLM-5.5 is in post-training",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2116517186793775606",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-02T01:02:55+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 75,
+        "technicalDepth": 20,
+        "reproducibility": 0,
+        "credibility": 20
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 33.75 < 80. Leak, unconfirmed by Z.ai; nothing released."
+    },
+    {
+      "id": "c20261101-jun-song-blackhat-offer",
+      "title": "Researcher Jun Song says he refused a black-hat offer to post-train open-weight models on a large exploit dataset",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2116776917126840330",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-02T01:02:55+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 78,
+        "technicalDepth": 20,
+        "reproducibility": 5,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 37.25 < 80. X news summary of personal claims; some observers call it exaggerated or satirical; no verifiable artifact."
+    },
+    {
+      "id": "c20261101-claude-flags-hkust-student",
+      "title": "HKUST PhD student says Claude flagged him for \"training a competitor\" when submitting open-model RL jobs",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/alishohadaee/status/2116808939228762319",
+          "publishedAt": "2026-11-01T08:25:54Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 15,
+        "interestingness": 65,
+        "technicalDepth": 15,
+        "reproducibility": 5,
+        "credibility": 35
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 28.0 < 80. Secondhand account of a policy dispute; not a research result."
+    },
+    {
+      "id": "c20261101-lexifina-us-code-history",
+      "title": "Lexifina: Git-style line-by-line history of the U.S. Code",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/ycnewsdigest/status/2116626343404155371",
+          "publishedAt": "2026-10-31T20:20:19Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 60,
+        "technicalDepth": 40,
+        "reproducibility": 50,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 43.5 < 80. Legal-data product via an HN digest post; not AI research."
+    },
+    {
+      "id": "c20261101-trishool-haloguard",
+      "title": "Bittensor subnet project Trishool claims SOTA AI-security benchmark with HaloGuard",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/popmemecoin/status/2116901413456351494",
+          "publishedAt": "2026-11-01T14:33:21Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 35,
+        "technicalDepth": 25,
+        "reproducibility": 30,
+        "credibility": 20
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 30.75 < 80. Crypto-promotion post; claim unverified."
+    },
+    {
+      "id": "c20261101-nvidia-halloween",
+      "title": "NVIDIA Halloween robot post",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/nvidia/status/2116591473579999452",
+          "publishedAt": "2026-10-31T18:01:46Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 0,
+        "interestingness": 30,
+        "technicalDepth": 0,
+        "reproducibility": 0,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 16.5 < 80. Official in-window post with no technical content; the only in-window post returned for 14 lab accounts."
+    },
+    {
+      "id": "c20261101-gh-caru-ini-stack-diagram",
+      "title": "stack-diagram: agent skill that turns a one-sentence stack description into an architecture diagram with official logos",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/caru-ini/stack-diagram",
+          "publishedAt": "2026-11-01T05:35:12Z",
+          "retrievedAt": "2026-11-02T01:02:55+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 222,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 55,
+        "technicalDepth": 35,
+        "reproducibility": 75,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 44.0 < 80. Created 2026-11-01T05:35:12Z (222 stars, MIT). Commits 06:09Z-14:17Z read from API; application skill, not run."
+    },
+    {
+      "id": "c20261101-gh-mylea1-phongent",
+      "title": "phongent: multi-device iOS/Android agent controller and Android executor built on Mika",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/mylea1/phongent",
+          "publishedAt": "2026-11-01T04:40:37Z",
+          "retrievedAt": "2026-11-02T01:02:55+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Kotlin",
+        "stars": 111,
+        "license": "Apache-2.0",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 55,
+        "technicalDepth": 45,
+        "reproducibility": 60,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 46.25 < 80. Created 2026-11-01T04:40:37Z (111 stars, Apache-2.0). Metadata and README fetched; not run."
+    },
+    {
+      "id": "c20261101-gh-thefahien-elpis-on-7900xtx",
+      "title": "elpis: Qwen3.8-27B EXL3 with DFlash2 speculative decoding on an AMD RX 7900 XTX (recipe, patches, benchmarks)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/thefahien/elpis-on-7900xtx",
+          "publishedAt": "2026-11-01T11:13:27Z",
+          "retrievedAt": "2026-11-02T01:02:55+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 2,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 50,
+        "technicalDepth": 55,
+        "reproducibility": 70,
+        "credibility": 35
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 46.5 < 80. Created 2026-11-01T11:13:27Z (2 stars, MIT). Single commit 199f6da2; community benchmark, not reproduced."
+    },
+    {
+      "id": "c20261101-gh-pengtaoma00-how-llms-are-trained",
+      "title": "how-llms-are-trained: Chinese guide to LLM training using the open ZGCM-1 7.39B as a case study",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/pengtaoma00/how-llms-are-trained",
+          "publishedAt": "2026-11-01T07:01:38Z",
+          "retrievedAt": "2026-11-02T01:02:55+08:00"
+        }
+      ],
+      "repository": {
+        "language": null,
+        "stars": 4,
+        "license": null,
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 20,
+        "interestingness": 55,
+        "technicalDepth": 55,
+        "reproducibility": 60,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 43.75 < 80. Created 2026-11-01T07:01:38Z (4 stars, no license). Educational guide referencing arXiv 2609.13356; no new result."
+    },
+    {
+      "id": "c20261101-gh-leonxlnx-cook",
+      "title": "cook: agent skill loop for reference-matched visual builds",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/Leonxlnx/cook",
+          "publishedAt": "2026-10-31T21:48:38Z",
+          "retrievedAt": "2026-11-02T01:02:55+08:00"
+        }
+      ],
+      "repository": {
+        "language": "JavaScript",
+        "stars": 9,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 50,
+        "technicalDepth": 35,
+        "reproducibility": 70,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 41.5 < 80. Created 2026-10-31T21:48:38Z (9 stars, MIT). Single commit b23cac6f; tooling."
+    },
+    {
+      "id": "c20261101-gh-cubelink-oss-voltdir",
+      "title": "voltdir: read-only Windows disk analysis for AI agents with stable JSON output",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/CubeLink-oss/voltdir",
+          "publishedAt": "2026-11-01T00:45:17Z",
+          "retrievedAt": "2026-11-02T01:02:55+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Rust",
+        "stars": 22,
+        "license": "Apache-2.0",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 20,
+        "interestingness": 45,
+        "technicalDepth": 40,
+        "reproducibility": 70,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 39.75 < 80. Created 2026-11-01T00:45:17Z (22 stars, Apache-2.0). Speed claims self-reported; tooling."
+    },
+    {
+      "id": "c20261101-gh-saideao-research-idea-review",
+      "title": "research-idea-review: literature review and multi-model meta-review for research ideas",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/saideao/research-idea-review",
+          "publishedAt": "2026-11-01T00:15:52Z",
+          "retrievedAt": "2026-11-02T01:02:55+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 16,
+        "license": null,
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 50,
+        "technicalDepth": 40,
+        "reproducibility": 55,
+        "credibility": 35
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 39.75 < 80. Created 2026-11-01T00:15:52Z (16 stars, no license). Single init commit dbd17f40; no license."
+    },
+    {
+      "id": "c20261101-gh-kcfindstr-rsi-bench",
+      "title": "RSI-Bench: \"random sequence of integers\" multi-turn benchmark across 28 frontier models",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/KCFindstr/RSI-Bench",
+          "publishedAt": "2026-11-01T05:07:15Z",
+          "retrievedAt": "2026-11-02T01:02:55+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 2,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 10,
+        "interestingness": 45,
+        "technicalDepth": 15,
+        "reproducibility": 70,
+        "credibility": 25
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 30.25 < 80. Created 2026-11-01T05:07:15Z (2 stars, MIT). README read; the metric sums model-chosen random integers and reads as a parody benchmark."
+    },
+    {
+      "id": "c20261101-gh-rel-gemini-cli-nightly",
+      "title": "google-gemini/gemini-cli v0.67.0-nightly.20261101 prerelease",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.67.0-nightly.20261101.g6814e00d6",
+          "publishedAt": "2026-11-01T01:14:56Z",
+          "retrievedAt": "2026-11-02T01:02:55+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 10,
+        "interestingness": 30,
+        "technicalDepth": 20,
+        "reproducibility": 80,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 35.5 < 80. Routine nightly prerelease; the only release in window across 30 tracked repos."
+    }
+  ],
+  "selectedCandidateId": null
+}
