@@ -1,0 +1,691 @@
+{
+  "date": "2026-11-02",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "candidates": [
+    {
+      "id": "c20261102-deep-principle-hydrogen-1",
+      "title": "Deep Principle Hydrogen-1.0: open-weight (MIT) scientific research model post-trained from GLM-5.3 on lab records and discovery trajectories, 1M context",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/chenru_duan/status/2117249292469665838",
+          "publishedAt": "2026-11-02T13:35:42Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/DeepPrinciple/status/2117249008972550447",
+          "publishedAt": "2026-11-02T13:34:34Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/ModelScope2022/status/2117164818880696417",
+          "publishedAt": "2026-11-02T08:00:02Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/ZixuanLi_/status/2117276777538257274",
+          "publishedAt": "2026-11-02T15:24:55Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/deep-principle/Hydrogen-1.0",
+          "publishedAt": "2026-10-31T15:54:37Z",
+          "retrievedAt": "2026-11-02T17:12:05Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 78,
+        "interestingness": 85,
+        "technicalDepth": 72,
+        "reproducibility": 78,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 77.75 < 80. In window: official launch posts 2026-11-02T13:34Z (@DeepPrinciple) and 13:35Z (@chenru_duan, ~1.5k likes), ModelScope post 08:00Z; HF repo was created 2026-10-31T15:54Z but shows 0 downloads and lastModified 2026-11-02T09:00Z, consistent with a public release on 11-02. HF model card read: BF16 weights plus NVFP4/MXFP4 repos, MIT, gated auto-approve, SGLang 8-GPU deployment; full datasets and recipes not released. All benchmark claims (FrontierScience-Research 38.3% vs GPT-6-Astra 33.3%, GPQA-Diamond, internal research scenarios) are self-reported by the publisher with no paper or independent evaluation found (arXiv title search: none). A domain post-train of an existing base rather than a new method; held below the bar, as with earlier self-reported-only releases. Technical blog not read."
+    },
+    {
+      "id": "c20261102-mistral-large4-scf-demo",
+      "title": "Mistral demo: Large 4 writes a quantum-chemistry SCF solver from scratch with a 3D bond-breaking visualisation",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/MistralAI/status/2117229259425038344",
+          "publishedAt": "2026-11-02T12:16:06Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/MistralAI/status/2117229262679797822",
+          "publishedAt": "2026-11-02T12:16:07Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 75,
+        "technicalDepth": 50,
+        "reproducibility": 40,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 55.75 < 80. Official in-window demo thread; Mistral Large 4 weights were released before the window (covered 2026-10-29); a showcase, not a new release or result; solver code not located."
+    },
+    {
+      "id": "c20261102-minimax-m31-flash-quant",
+      "title": "MiniMax post on quantizing the 428B MiniMax M3.1 Flash for local hardware",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/MiniMax_AI/status/2116996123164569606",
+          "publishedAt": "2026-11-01T20:49:42Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/LyJonathan/MiniMax-M3.1-Flash-GGUF-wip",
+          "publishedAt": "2026-10-31T07:25:49Z",
+          "retrievedAt": "2026-11-02T17:12:05Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 72,
+        "technicalDepth": 60,
+        "reproducibility": 60,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 61.5 < 80. Official post 2026-11-01T20:49Z; the model predates the window (community quants on HF from 2026-10-29) and no new MiniMaxAI HF repo appeared in the window; linked write-up not read."
+    },
+    {
+      "id": "c20261102-sensenova-loop-9b",
+      "title": "SenseNova Loop-9B-Preview: looped middle layers, claimed to beat Qwen3.5-27B on office/agent benchmarks",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/saiitoshii/status/2117216108251926832",
+          "publishedAt": "2026-11-02T11:23:50Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B-Preview",
+          "publishedAt": "2026-10-28T15:34:40Z",
+          "retrievedAt": "2026-11-02T17:12:05Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 65,
+        "technicalDepth": 60,
+        "reproducibility": 70,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 64.25 < 80. HF createdAt 2026-10-28, before the window; in-window post is commentary."
+    },
+    {
+      "id": "c20261102-pika-h3-flex",
+      "title": "Pika H3 Flex open-weight text-to-video with audio",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/spectrumwebco/status/2117005174292226425",
+          "publishedAt": "2026-11-01T21:25:40Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/saveliiapps/status/2117080690961379778",
+          "publishedAt": "2026-11-02T02:25:44Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/Pika-Labs/Pika-H3-Flex",
+          "publishedAt": "2026-10-29T17:08:44Z",
+          "retrievedAt": "2026-11-02T17:12:05Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 70,
+        "technicalDepth": 55,
+        "reproducibility": 60,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 64.0 < 80. HF createdAt 2026-10-29, before the window (already evaluated on 2026-10-30); in-window posts are coverage."
+    },
+    {
+      "id": "c20261102-nace-drex-max-v1",
+      "title": "Nace AI Drex Max v1: 27B decision model scoring up to 255 options in one forward pass",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/conradlotz/status/2117240379334345154",
+          "publishedAt": "2026-11-02T13:00:17Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/Shadowfetch/status/2116990160608887068",
+          "publishedAt": "2026-11-01T20:26:00Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/nace-ai/drex-max-v1",
+          "publishedAt": "2026-10-13T23:16:25Z",
+          "retrievedAt": "2026-11-02T17:12:05Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 50,
+        "technicalDepth": 55,
+        "reproducibility": 65,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 55.25 < 80. HF repo created 2026-10-13, well before the window; in-window posts are coverage."
+    },
+    {
+      "id": "c20261102-secpo-prompt-injection",
+      "title": "SecPO: principled adversarial training for prompt-injection security (vs Meta-SecAlign DPO)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.41998",
+          "publishedAt": "2026-10-30T16:43:17Z",
+          "retrievedAt": "2026-11-02T17:12:05Z"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/gastronomy/status/2117125711467098432",
+          "publishedAt": "2026-11-02T05:24:38Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 70,
+        "interestingness": 72,
+        "technicalDepth": 78,
+        "reproducibility": 70,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 73.1 < 80. arXiv abstract read; submitted 2026-10-30T16:43Z, before the window; SecPO checkpoints on HF date from August. In-window post is a feed repost."
+    },
+    {
+      "id": "c20261102-persona-smoking-audit",
+      "title": "Same Question, Different Answers: persona-dependent variation in six LLMs on smoking-cessation advice",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/arnaudmercier/status/2117284800159453274",
+          "publishedAt": "2026-11-02T15:56:48Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 50,
+        "technicalDepth": 55,
+        "reproducibility": 60,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 51.0 < 80. Post cites arXiv 2610.42039v1 dated 30 Oct 2026, before the window; abstract not fetched."
+    },
+    {
+      "id": "c20261102-kimi-k31-pro-weights-pending",
+      "title": "Kimi K3.1 Pro open weights promised by Nov 4",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/sybx11/status/2117158274352943428",
+          "publishedAt": "2026-11-02T07:34:02Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 80,
+        "technicalDepth": 30,
+        "reproducibility": 20,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 49.0 < 80. Weights not released in the window (no new moonshotai HF repo); secondhand post. Re-check next run."
+    },
+    {
+      "id": "c20261102-longcat-25",
+      "title": "Meituan LongCat-2.5 1.6T multimodal agentic model, API only",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/myinkora/status/2117114345876337124",
+          "publishedAt": "2026-11-02T04:39:28Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 65,
+        "technicalDepth": 35,
+        "reproducibility": 20,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 47.75 < 80. Secondhand post; API-only with no open weights; no HF repo found; launch date not verified."
+    },
+    {
+      "id": "c20261102-numbat-malware-alert",
+      "title": "Security alert: HF repo burner22/numbat posing as an open-weights release is malware",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Dis3eL/status/2117017206252793967",
+          "publishedAt": "2026-11-01T22:13:28Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/burner22/numbat",
+          "publishedAt": "2026-10-23T01:37:02Z",
+          "retrievedAt": "2026-11-02T17:12:05Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 70,
+        "technicalDepth": 30,
+        "reproducibility": 20,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 39.5 < 80. Repo created 2026-10-23; single unverified alert post; not inspected (deliberately not downloaded)."
+    },
+    {
+      "id": "c20261102-embeddinggemma2-router",
+      "title": "embeddinggemma2-decision-router: 740M frozen EmbeddingGemma 2 backbone plus a small decision head for routing",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/ajeetkrup401/status/2117132858934661578",
+          "publishedAt": "2026-11-02T05:53:02Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 40,
+        "technicalDepth": 50,
+        "reproducibility": 55,
+        "credibility": 35
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 42.25 < 80. Single low-engagement author post; artifact not verified."
+    },
+    {
+      "id": "c20261102-vibe-trading-review",
+      "title": "Hands-on review of Vibe-Trading, an open-source AI trading agent",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Davidariasfin/status/2117254289554919503",
+          "publishedAt": "2026-11-02T13:55:33Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 20,
+        "interestingness": 50,
+        "technicalDepth": 30,
+        "reproducibility": 50,
+        "credibility": 35
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 35.5 < 80. Third-party review of an existing project; not new research."
+    },
+    {
+      "id": "c20261102-gh-voidash-qwenbend",
+      "title": "QwenBend: Qwen3.5-0.8B writes a Bend program, then type-checks and executes it inside its own forward pass (in-weights interpreter)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/voidash/qwenbend",
+          "publishedAt": "2026-11-01T17:49:55Z",
+          "retrievedAt": "2026-11-02T17:12:05Z"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 19,
+        "license": "Apache-2.0",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 62,
+        "interestingness": 72,
+        "technicalDepth": 72,
+        "reproducibility": 78,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 67.7 < 80. Created 2026-11-01T17:49:55Z (19 stars, Apache-2.0). Commits 18:11Z-21:14Z read (incl. benchmark vs base model with logs); README claims the in-weights trace equals a reference interpreter token for token. Single-author demo, not run."
+    },
+    {
+      "id": "c20261102-gh-sauersml-vlens",
+      "title": "vlens: render one Qwen3-VL hidden activation as an image via FLUX.2 [klein] and read it back with the same model",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/SauersML/vlens",
+          "publishedAt": "2026-11-01T17:36:09Z",
+          "retrievedAt": "2026-11-02T17:12:05Z"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 8,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 60,
+        "technicalDepth": 70,
+        "reproducibility": 70,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 61.0 < 80. Created 2026-11-01T17:36:09Z (8 stars, MIT). Active commits through 2026-11-02T15:24Z; interpretability experiment with self-reported readback accuracy; not run."
+    },
+    {
+      "id": "c20261102-gh-balanov-uncut",
+      "title": "UNCUT: lossless headless coding-agent harness, one 7 MB Go binary with four tools",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/Balanov/uncut",
+          "publishedAt": "2026-11-01T17:19:30Z",
+          "retrievedAt": "2026-11-02T17:12:05Z"
+        }
+      ],
+      "repository": {
+        "language": "Go",
+        "stars": 569,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 70,
+        "technicalDepth": 55,
+        "reproducibility": 80,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 59.5 < 80. Created 2026-11-01T17:19:30Z (569 stars, MIT). Commits 7c41bb5d (17:22Z), d5c9528d, e1512a70 read; tooling, not run."
+    },
+    {
+      "id": "c20261102-gh-blockrunai-agent-money-bench",
+      "title": "Agent Money Benchmark: 10 frontier models given wallets, 7 scammed at least once",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/BlockRunAI/agent-money-bench",
+          "publishedAt": "2026-11-02T02:12:38Z",
+          "retrievedAt": "2026-11-02T17:12:05Z"
+        }
+      ],
+      "repository": {
+        "language": null,
+        "stars": 2,
+        "license": null,
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 70,
+        "technicalDepth": 50,
+        "reproducibility": 45,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 53.75 < 80. Created 2026-11-02T02:12:38Z (2 stars, no license). Initial release commit 046875ca; results are self-reported by a payments company and the benchmark harness is not in the repo; license unclear."
+    },
+    {
+      "id": "c20261102-gh-mitkox-copilot-superagent",
+      "title": "Copilot Superagent: continuous repository agents in VS Code on the GitHub Copilot SDK, adapted from dsh-superagent",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/mitkox/copilot-superagent",
+          "publishedAt": "2026-11-02T06:40:00Z",
+          "retrievedAt": "2026-11-02T17:12:05Z"
+        }
+      ],
+      "repository": {
+        "language": "TypeScript",
+        "stars": 11,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 55,
+        "technicalDepth": 45,
+        "reproducibility": 65,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 48.0 < 80. Created 2026-11-02T06:40:00Z (11 stars, MIT). Port of the earlier dsh-superagent prototype; tooling."
+    },
+    {
+      "id": "c20261102-gh-albertirgi-replica",
+      "title": "Replica: agent skill that rebuilds a UI from a reference and scores the clone on layout, style, pixels and motion",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/albertirgi/replica",
+          "publishedAt": "2026-11-02T06:38:19Z",
+          "retrievedAt": "2026-11-02T17:12:05Z"
+        }
+      ],
+      "repository": {
+        "language": "JavaScript",
+        "stars": 18,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 55,
+        "technicalDepth": 40,
+        "reproducibility": 70,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 45.75 < 80. Created 2026-11-02T06:38:19Z (18 stars, MIT). README and tests read; tooling."
+    },
+    {
+      "id": "c20261102-gh-halachabench-halacha-bench-results",
+      "title": "HalachaBench v1 provisional results: 17 models on rabbinic ordination exam questions",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/HalachaBench/halacha-bench-results",
+          "publishedAt": "2026-11-01T19:41:22Z",
+          "retrievedAt": "2026-11-02T17:12:05Z"
+        }
+      ],
+      "repository": {
+        "language": null,
+        "stars": 13,
+        "license": null,
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 55,
+        "technicalDepth": 40,
+        "reproducibility": 40,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 42.25 < 80. Created 2026-11-01T19:41:22Z (13 stars, no license). Results graded by a single AI judge that is also a contestant; provisional by the authors own statement."
+    },
+    {
+      "id": "c20261102-gh-toyhom-awesome-computational-character-modeling",
+      "title": "Reading list for a survey of role-playing agents from a behavioral-science perspective",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/Toyhom/awesome-computational-character-modeling",
+          "publishedAt": "2026-11-02T02:12:38Z",
+          "retrievedAt": "2026-11-02T17:12:05Z"
+        }
+      ],
+      "repository": {
+        "language": "TeX",
+        "stars": 36,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 20,
+        "interestingness": 45,
+        "technicalDepth": 40,
+        "reproducibility": 70,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 41.25 < 80. Created 2026-11-02T02:12:38Z (36 stars, MIT). Curated list; the survey manuscript itself was not located on arXiv."
+    },
+    {
+      "id": "c20261102-gh-lens-lab-ai-awesome-frontier-model-robotics",
+      "title": "Curated evaluations of frontier language and multimodal models in robotics",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/LENS-Lab-AI/Awesome-Frontier-Model-Robotics",
+          "publishedAt": "2026-11-01T20:11:52Z",
+          "retrievedAt": "2026-11-02T17:12:05Z"
+        }
+      ],
+      "repository": {
+        "language": null,
+        "stars": 3,
+        "license": "CC0-1.0",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 15,
+        "interestingness": 45,
+        "technicalDepth": 30,
+        "reproducibility": 70,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 37.75 < 80. Created 2026-11-01T20:11:52Z (3 stars, CC0-1.0). Curated list; no new result."
+    },
+    {
+      "id": "c20261102-gh-rel-vllm-0330",
+      "title": "vLLM v0.33.0 (927 commits): new models incl. Reflection Beam-1.0, Step-5 Preview, Alpamayo 2 Super; PyTorch 2.14; CUDA 13.0-only wheels",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/vllm-project/vllm/releases/tag/v0.33.0rc3",
+          "publishedAt": "2026-11-02T10:10:05Z",
+          "retrievedAt": "2026-11-02T17:12:05Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 70,
+        "technicalDepth": 65,
+        "reproducibility": 85,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 65.75 < 80. Release notes read; a significant but routine infrastructure release."
+    },
+    {
+      "id": "c20261102-gh-rel-langchain",
+      "title": "langchain 1.4.8, langchain-core 1.7.4, langchain-anthropic 1.7.8 patch releases",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.8",
+          "publishedAt": "2026-11-02T15:45:02Z",
+          "retrievedAt": "2026-11-02T17:12:05Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 10,
+        "interestingness": 30,
+        "technicalDepth": 20,
+        "reproducibility": 80,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 35.5 < 80. Routine patch releases."
+    },
+    {
+      "id": "c20261102-gh-rel-codex-alpha",
+      "title": "openai/codex rust-v0.167.0-alpha.2 and alpha.3 prereleases",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.167.0-alpha.3",
+          "publishedAt": "2026-11-01T22:26:17Z",
+          "retrievedAt": "2026-11-02T17:12:05Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 10,
+        "interestingness": 40,
+        "technicalDepth": 20,
+        "reproducibility": 80,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 38.0 < 80. Routine prereleases; other in-window releases (crewAI 1.15.34, openai-python v3.42.1, gemini-cli nightly) also routine."
+    }
+  ],
+  "selectedCandidateId": null
+}
