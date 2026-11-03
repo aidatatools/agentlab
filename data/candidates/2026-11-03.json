@@ -1,0 +1,735 @@
+{
+  "date": "2026-11-03",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "candidates": [
+    {
+      "id": "c20261103-anthropic-flashprove",
+      "title": "Anthropic releases FlashProve: open-source zkSNARK provable inference for a 400B MoE model (Llama 4 Maverick) at ~110 tokens/s on one H100, with Lean-verified soundness",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://www.anthropic.com/research/provable-inference",
+          "publishedAt": "2026-11-02T00:00:00Z",
+          "retrievedAt": "2026-11-03T17:04:43Z"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/sweis/status/2117485473497309299",
+          "publishedAt": "2026-11-03T05:14:12Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/scaling01/status/2117587330454151527",
+          "publishedAt": "2026-11-03T11:58:57Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/akashneelesh/status/2117578088293024087",
+          "publishedAt": "2026-11-03T11:22:13Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/anthropics/FlashProve",
+          "publishedAt": "2026-10-30T19:29:59Z",
+          "retrievedAt": "2026-11-03T17:04:43Z"
+        }
+      ],
+      "repository": {
+        "language": "Lean",
+        "stars": 229,
+        "license": "Apache-2.0",
+        "commit": "9e2bdd8ff5"
+      },
+      "scores": {
+        "breakthrough": 88,
+        "interestingness": 88,
+        "technicalDepth": 92,
+        "reproducibility": 82,
+        "credibility": 90
+      },
+      "eligibility": "eligible",
+      "reason": "Weighted 88.1 >= 80. In window: Anthropic research post dated Nov 2, 2026 (page metadata date only); first X mentions 2026-11-03T02:00-03:00Z (hourly X counts show 0 mentions from 10-30 to 11-03T02:00Z), @sweis (Anthropic) announcement 05:14Z, first public forks 06:12Z; the GitHub repo was created 2026-10-30T19:29Z with a single \"Initial public release\" commit 9e2bdd8ff5 (2026-10-30T20:56Z), consistent with a private repo made public at launch. Read in full: official post (system, evaluation, prior work, limitations) and README plus guide/performance.md. Apache-2.0 code (C++ prover/verifier, Lean 4 verifier and soundness theorem), stored example proof. Claims are Anthropic-measured; timed-run records are not in the repo; nothing run here (verifier route needs Linux g++ 13+, prover an H100)."
+    },
+    {
+      "id": "c20261103-sarvam-prism",
+      "title": "Sarvam Prism: open-weight (Apache-2.0) System One decision model on Sarvam 105B, 71.8 average at 44 ms median latency",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/SarvamAI/status/2117621415520448838",
+          "publishedAt": "2026-11-03T14:14:23Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/pratykumar/status/2117621994934120522",
+          "publishedAt": "2026-11-03T14:16:41Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/SarvamForDevs/status/2117625820122652693",
+          "publishedAt": "2026-11-03T14:31:53Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/zaidmukaddam/status/2117645108833398802",
+          "publishedAt": "2026-11-03T15:48:32Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/sarvamai/prism",
+          "publishedAt": "2026-11-02T11:28:35Z",
+          "retrievedAt": "2026-11-03T17:04:43Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 72,
+        "interestingness": 80,
+        "technicalDepth": 70,
+        "reproducibility": 78,
+        "credibility": 72
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 74.5 < 80. Official launch 2026-11-03T14:14Z (in window); HF repo created 2026-11-02T11:28Z with 0 downloads, consistent with an in-window public release. Benchmarks are self-reported; a same-harness third-party comparison (@zaidmukaddam) puts it below a 27B dense decision model. A productised fine-tune rather than a new capability; HF model card not read."
+    },
+    {
+      "id": "c20261103-mistral-large4-tech-report",
+      "title": "Mistral Large 4 technical report: aggressive KV-cache reduction hurt agentic ability while language-model scores looked fine",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/askalphaxiv/status/2117523112594198766",
+          "publishedAt": "2026-11-03T07:43:46Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/AIQuanting/status/2117325521273188794",
+          "publishedAt": "2026-11-02T18:38:36Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/stretchcloud/status/2117374944510128225",
+          "publishedAt": "2026-11-02T21:55:00Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 62,
+        "interestingness": 80,
+        "technicalDepth": 75,
+        "reproducibility": 60,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 71.1 < 80. Report circulated in window (posts from 2026-11-02T18:38Z), but Mistral Large 4 open weights were already covered on 2026-10-29; report reached via alphaXiv and secondhand posts, not read here."
+    },
+    {
+      "id": "c20261103-evoskill-v2",
+      "title": "Sentient EvoSkill v2: stateful evolver rewrites agent skills; +7.7 pts over SkillOpt on SpreadsheetBench v2",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/SentientAGI/status/2117633884389277930",
+          "publishedAt": "2026-11-03T15:03:56Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.25931",
+          "publishedAt": "2026-10-19T07:29:21Z",
+          "retrievedAt": "2026-11-03T17:04:43Z"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/sentient-agi/EvoSkill/releases/tag/v2.0.0",
+          "publishedAt": "2026-10-26T06:18:31Z",
+          "retrievedAt": "2026-11-03T17:04:43Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 70,
+        "technicalDepth": 70,
+        "reproducibility": 80,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 70.5 < 80. Out of window: arXiv 2610.25931 submitted 2026-10-19 (v2 10-23) and GitHub release v2.0.0 published 2026-10-26; the in-window X thread is promotion of an earlier release."
+    },
+    {
+      "id": "c20261103-kimi-k31-pro-weights-pending",
+      "title": "Kimi K3.1 Pro: API live, open weights still promised for Nov 4",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/awe0_io/status/2117511366546465126",
+          "publishedAt": "2026-11-03T06:57:05Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/tillmantino/status/2117529227910357008",
+          "publishedAt": "2026-11-03T08:08:04Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/artifocial/status/2117431044433756477",
+          "publishedAt": "2026-11-03T01:37:55Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 80,
+        "technicalDepth": 30,
+        "reproducibility": 20,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 52.0 < 80. No new moonshotai HF repo (latest Kimi-K3, 2026-06-13); secondhand posts; benchmarks self-reported. Re-check next run."
+    },
+    {
+      "id": "c20261103-longcat-25",
+      "title": "Meituan LongCat-2.5: 1.6T-total / 48B-active multimodal agentic model, API only",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2117291066898444528",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-03T17:04:43Z"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/superalesha/status/2117619807814287430",
+          "publishedAt": "2026-11-03T14:08:00Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 70,
+        "technicalDepth": 40,
+        "reproducibility": 20,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 52.0 < 80. API-only, no weights; benchmarks from Meituan only; also seen on 2026-11-02; primary announcement not read."
+    },
+    {
+      "id": "c20261103-streameval",
+      "title": "StreamEval: benchmark for interactive streaming video generation across 38 models",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2117311684138209289",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-03T17:04:43Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 65,
+        "technicalDepth": 60,
+        "reproducibility": 65,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 60.0 < 80. Known only from an X news summary; paper and code not located or read in this run."
+    },
+    {
+      "id": "c20261103-tencent-hy4-protein",
+      "title": "Tencent Hy4 teaser plus open protein models HyInv and HyPLM-Flash on GitHub",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2117648658032120079",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-03T17:04:43Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 55,
+        "technicalDepth": 50,
+        "reproducibility": 60,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 52.75 < 80. Teaser of unreleased models; protein repos not located or read; no new tencent HF repo in window."
+    },
+    {
+      "id": "c20261103-levanto-sage2",
+      "title": "Levanto Labs Sage2: ~150 ms structured extraction and calibrated decisions for live chat",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2117426584508592294",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-03T17:04:43Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 55,
+        "technicalDepth": 35,
+        "reproducibility": 30,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 39.75 < 80. Commercial API; vendor-reported benchmarks; primary source not read."
+    },
+    {
+      "id": "c20261103-hume-audio-decision",
+      "title": "Hume AI Audio Decision API: plain-language questions answered directly from audio with probabilities",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2117358114655625645",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-03T17:04:43Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 60,
+        "technicalDepth": 40,
+        "reproducibility": 30,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 47.5 < 80. Commercial API; 70.7% human agreement is vendor-reported; primary source not read."
+    },
+    {
+      "id": "c20261103-stanford-claims-expire",
+      "title": "Study re-tests 50 published LLM findings on 20 recent models: 44% no longer hold",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2117491418067574993",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-03T17:04:43Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 70,
+        "technicalDepth": 55,
+        "reproducibility": 40,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 55.0 < 80. Known only from an X news summary; paper not located on arXiv in this run."
+    },
+    {
+      "id": "c20261103-sdl2-eval",
+      "title": "Dynamical Systems SDL-2: open evaluation of how agents choose materials experiments",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/dynamical__/status/2117337304838606921",
+          "publishedAt": "2026-11-02T19:25:26Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 55,
+        "technicalDepth": 55,
+        "reproducibility": 55,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 52.5 < 80. Small-lab release post in window; artifacts not read."
+    },
+    {
+      "id": "c20261103-nori-causal",
+      "title": "Synthefy Nori-Causal: zero-shot causal-discovery foundation model",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/synthefyinc/status/2117318189289996392",
+          "publishedAt": "2026-11-02T18:09:28Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 50,
+        "technicalDepth": 45,
+        "reproducibility": 40,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 45.0 < 80. Vendor post; no paper or weights verified."
+    },
+    {
+      "id": "c20261103-traceforge",
+      "title": "TraceForge: generating reasoning traces in a student model family style",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/jiqizhixin/status/2117614775031210141",
+          "publishedAt": "2026-11-03T13:48:00Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 55,
+        "technicalDepth": 50,
+        "reproducibility": 40,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 47.25 < 80. Secondhand summary of an independent technical report; report not read."
+    },
+    {
+      "id": "c20261103-phoenix-contact-rl",
+      "title": "Anyverse Dynamics and CASIA Phoenix: contact-aware learning with simulator policy refinement",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/jiqizhixin/status/2117288625843122304",
+          "publishedAt": "2026-11-02T16:12:00Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 50,
+        "technicalDepth": 50,
+        "reproducibility": 35,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 46.25 < 80. Secondhand summary; report not read."
+    },
+    {
+      "id": "c20261103-qwen-open-source-vow",
+      "title": "New Qwen lead promises open source through Qwen 4.0 and 5.0 (Yunqi Conference)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/EugenioFierro3/status/2117374713773060524",
+          "publishedAt": "2026-11-02T21:54:05Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 20,
+        "interestingness": 60,
+        "technicalDepth": 10,
+        "reproducibility": 10,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 29.5 < 80. Statement, not a release; Qwen4 not released in window (no new Qwen HF repo)."
+    },
+    {
+      "id": "c20261103-deepseek-v5-ascend",
+      "title": "Report: DeepSeek to pre-train V5 on Huawei Ascend chips",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/poezhao0605/status/2117577725426991172",
+          "publishedAt": "2026-11-03T11:20:47Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 70,
+        "technicalDepth": 10,
+        "reproducibility": 10,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 34.0 < 80. Supply-chain rumour relayed from a financial outlet; unverifiable."
+    },
+    {
+      "id": "c20261103-gh-balanov-shim",
+      "title": "Shim: zero-dependency local-first AI harness in Go with MCP and Agent Skills",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/Balanov/shim",
+          "publishedAt": "2026-11-02T17:54:29Z",
+          "retrievedAt": "2026-11-03T17:04:43Z"
+        }
+      ],
+      "repository": {
+        "language": "Go",
+        "stars": 427,
+        "license": "MIT",
+        "commit": "22b485fe5a"
+      },
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 65,
+        "technicalDepth": 50,
+        "reproducibility": 80,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 55.25 < 80. Created 2026-11-02T17:54:29Z (427 stars, MIT). Single initial commit 22b485fe5a; tooling, not run."
+    },
+    {
+      "id": "c20261103-gh-balanov-verdict",
+      "title": "Verdict: 197 KB local semantic verifier for AI agent tool calls",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/Balanov/verdict",
+          "publishedAt": "2026-11-02T19:14:51Z",
+          "retrievedAt": "2026-11-03T17:04:43Z"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 222,
+        "license": "Apache-2.0",
+        "commit": "f7fc7310fc"
+      },
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 60,
+        "technicalDepth": 55,
+        "reproducibility": 80,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 56.5 < 80. Created 2026-11-02T19:14:51Z (222 stars, Apache-2.0). Commits a5880d9d4f and f7fc7310fc read; self-reported evaluation; not run."
+    },
+    {
+      "id": "c20261103-gh-open-rua-uni-robot-agent",
+      "title": "Uni Robot Agent: unified harness for robot-use agents with open models",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/Open-RUA/uni-robot-agent",
+          "publishedAt": "2026-11-02T17:50:44Z",
+          "retrievedAt": "2026-11-03T17:04:43Z"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 100,
+        "license": "MIT",
+        "commit": "9d6a051e20"
+      },
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 60,
+        "technicalDepth": 60,
+        "reproducibility": 75,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 60.25 < 80. Created 2026-11-02T17:50:44Z (100 stars, MIT). Commits ffb6114fe8..9d6a051e20 (PyPI 0.1.0, paper citation added); paper not read; not run."
+    },
+    {
+      "id": "c20261103-gh-ruc-nlpir-coworkos",
+      "title": "CoworkOS: cowork harness for long-horizon, human-in-the-loop task execution",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/RUC-NLPIR/CoworkOS",
+          "publishedAt": "2026-11-03T00:47:02Z",
+          "retrievedAt": "2026-11-03T17:04:43Z"
+        }
+      ],
+      "repository": {
+        "language": "JavaScript",
+        "stars": 73,
+        "license": "MIT",
+        "commit": "baf03c30db"
+      },
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 60,
+        "technicalDepth": 55,
+        "reproducibility": 75,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 58.25 < 80. Created 2026-11-03T00:47:02Z (73 stars, MIT). Commits through baf03c30db read; arXiv paper linked but not read; not run."
+    },
+    {
+      "id": "c20261103-gh-rel-routine",
+      "title": "Routine releases: SGLang v0.5.23, Ollama v0.40.14, Claude Code v2.1.317, anthropic-sdk-python v2.4.0, Unsloth v0.1.914-beta",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.23",
+          "publishedAt": "2026-11-02T22:14:10Z",
+          "retrievedAt": "2026-11-03T17:04:43Z"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.14",
+          "publishedAt": "2026-11-03T01:40:40Z",
+          "retrievedAt": "2026-11-03T17:04:43Z"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.317",
+          "publishedAt": "2026-11-03T01:25:46Z",
+          "retrievedAt": "2026-11-03T17:04:43Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 50,
+        "technicalDepth": 30,
+        "reproducibility": 85,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 47.75 < 80. Routine releases in window from tracked repos; notes not read in detail."
+    },
+    {
+      "id": "c20261103-arxiv-2611-03374",
+      "title": "Characterizing When Language Models Take Harmful Actions to Protect Their Assigned Goals",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.03374",
+          "publishedAt": "2026-11-02T16:17:54Z",
+          "retrievedAt": "2026-11-03T17:04:43Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 72,
+        "technicalDepth": 72,
+        "reproducibility": 55,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 65.65 < 80. Abstract read: formalises goal-harm conflicts with logit and sampling views; solid safety-evaluation methodology, not a breakthrough."
+    },
+    {
+      "id": "c20261103-arxiv-2611-03634",
+      "title": "WebHarbor: Docking Real Websites for Evolving GUI Agent Environments",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.03634",
+          "publishedAt": "2026-11-02T18:57:36Z",
+          "retrievedAt": "2026-11-03T17:04:43Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 62,
+        "interestingness": 68,
+        "technicalDepth": 70,
+        "reproducibility": 70,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 66.6 < 80. Abstract read: 153 dockerised website environments, 3,518 tasks, RL for a 4B GUI agent; infrastructure contribution."
+    },
+    {
+      "id": "c20261103-arxiv-2611-03633",
+      "title": "Pretraining Data Scale Reverses the Muon-AdamW Fine-Tuning Gap",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.03633",
+          "publishedAt": "2026-11-02T18:56:43Z",
+          "retrievedAt": "2026-11-03T17:04:43Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 62,
+        "interestingness": 68,
+        "technicalDepth": 75,
+        "reproducibility": 55,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 65.35 < 80. Abstract read: AdamW overtakes Muon after fine-tuning beyond a data budget; margin-to-spread analysis; interesting but narrow."
+    },
+    {
+      "id": "c20261103-arxiv-2611-03523",
+      "title": "DistDebug-Bench: Can LLM Agents Diagnose Bugs in Distributed Systems?",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.03523",
+          "publishedAt": "2026-11-02T17:56:28Z",
+          "retrievedAt": "2026-11-03T17:04:43Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 60,
+        "technicalDepth": 60,
+        "reproducibility": 60,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 57.5 < 80. Title and metadata only (NeurIPS 2026 E&D); abstract not read."
+    },
+    {
+      "id": "c20261103-arxiv-2611-03412",
+      "title": "DeliverBench: Benchmarking AI Agents on Delivering Realistic Multi-Stage Professional Projects",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.03412",
+          "publishedAt": "2026-11-02T16:37:40Z",
+          "retrievedAt": "2026-11-03T17:04:43Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 62,
+        "technicalDepth": 55,
+        "reproducibility": 55,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 55.75 < 80. Title and metadata only; abstract not read."
+    }
+  ],
+  "selectedCandidateId": "c20261103-anthropic-flashprove"
+}
