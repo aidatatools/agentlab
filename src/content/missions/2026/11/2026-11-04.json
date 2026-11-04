@@ -1,0 +1,281 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "mission-20261104-001",
+  "date": "2026-11-04",
+  "timezone": "Asia/Taipei",
+  "status": "awaiting_review",
+  "objective": {
+    "goal": "Discover, score, verify and propose one outstanding AI/agent discovery for 2026-11-04 (Asia/Taipei), or document a no-publish decision.",
+    "sources": [
+      "x",
+      "github",
+      "arxiv"
+    ],
+    "deliverables": [
+      "Verified candidate batch",
+      "Published article (Kimi K3.1 Pro open weights)",
+      "Mission record",
+      "Pull request"
+    ]
+  },
+  "agent": {
+    "id": "grokbot",
+    "framework": "Grok Bot (AgentLab-bot on minim4.home)",
+    "model": "grok-bot",
+    "runId": "routine-9a1f041e-20261105T0101-minim4-daily-2026-11-04"
+  },
+  "selection": {
+    "candidatesEvaluated": 25,
+    "selectedCandidateId": "c20261104-kimi-k31-pro-open-weights",
+    "selectionScore": 81.7,
+    "rankingArtifact": "data/candidates/2026-11-04.json"
+  },
+  "skillsUsed": [
+    {
+      "skill": "x-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-x-20261104-001"
+    },
+    {
+      "skill": "github-discovery",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-gh-20261104-001"
+    },
+    {
+      "skill": "arxiv-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ax-20261104-001"
+    },
+    {
+      "skill": "fact-check",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-fc-20261104-001"
+    },
+    {
+      "skill": "article-writing",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-aw-20261104-001"
+    },
+    {
+      "skill": "image-curation",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ic-20261104-001"
+    },
+    {
+      "skill": "site-publishing",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-sp-20261104-001"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t1",
+      "action": "git checkout main, pull --ff-only (main at 11e2a06, merge of PR #23), create branch daily/2026-11-04 (tree clean)",
+      "tool": "git",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": "2026-11-04T17:01:18Z",
+      "evidenceIds": [
+        "ev-git-branch"
+      ]
+    },
+    {
+      "id": "t2",
+      "action": "Discovery script with explicit window bounds 2026-11-03T16:00Z..2026-11-04T16:00Z (checked by grep before run): GitHub search (393 repos >=5 stars created in window, mostly bulk-starred spam, plus llm/agent/mcp/model/paper/benchmark queries); releases of 30 tracked repos (40 lines in window incl. llama.cpp); Hugging Face scan of 40 orgs (0 created in window) plus trending; arXiv API totalResults 86",
+      "tool": "gh+python urllib",
+      "status": "success",
+      "startedAt": "2026-11-04T17:01:18Z",
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-gh-new",
+        "ev-gh-releases",
+        "ev-hf",
+        "ev-arxiv"
+      ]
+    },
+    {
+      "id": "t3",
+      "action": "Public X reads: search_news (36h), search_posts_all bounded to the window (launch keywords; Kimi K3.1 weights 14:30-16:00Z; Locus/RoboColosseum/Crouton etc.), from:Kimi_Moonshot, and hourly get_posts_counts_recent for Kimi K3.1 weights 2026-11-01..11-04T17:00Z",
+      "tool": "x.search_posts_all+x.search_news+x.get_posts_counts_recent",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-x-search"
+      ]
+    },
+    {
+      "id": "t4",
+      "action": "Verify: Hugging Face API (model info, commits, usedStorage) and raw README.md, LICENSE, config.json of moonshotai/Kimi-K3.1-Pro; Kimi tech blog kimi-k3-1-pro read in full; HF API for PrunaAI, tencent, LiberAI; arXiv abstracts 2611.05306/05358/05344/05345/05234/05139; dedup grep over prior candidates and articles",
+      "tool": "python urllib+curl+web fetch",
+      "status": "success",
+      "startedAt": "2026-11-04T17:03:10Z",
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-verify",
+        "ev-dedup"
+      ]
+    },
+    {
+      "id": "t5",
+      "action": "Write candidates JSON (25), rank with rank_candidates.py (proposed c20261104-kimi-k31-pro-open-weights 81.7), write original SVG cover and zh-TW article (status published), scaffold mission with create_mission.py",
+      "tool": "python",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": "2026-11-05T01:06:06+08:00",
+      "evidenceIds": [
+        "ev-ranking",
+        "ev-article"
+      ]
+    },
+    {
+      "id": "t6",
+      "action": "Run validate_content, unittest, astro check, astro build",
+      "tool": "python+npm",
+      "status": "success",
+      "startedAt": "2026-11-05T01:07:51+08:00",
+      "finishedAt": "2026-11-05T01:07:55+08:00",
+      "evidenceIds": [
+        "ev-validate",
+        "ev-unittest",
+        "ev-astro-check",
+        "ev-astro-build"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "python scripts/validate_content.py",
+      "status": "passed",
+      "artifact": ".reports/2026-11-04/validate.log"
+    },
+    {
+      "name": "python -m unittest discover -s tests -v",
+      "status": "passed",
+      "artifact": ".reports/2026-11-04/unittest.log"
+    },
+    {
+      "name": "npm run check",
+      "status": "passed",
+      "artifact": ".reports/2026-11-04/astro-check.log"
+    },
+    {
+      "name": "npm run build",
+      "status": "passed",
+      "artifact": ".reports/2026-11-04/astro-build.log"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-git-branch",
+      "type": "git",
+      "ref": "branch daily/2026-11-04 from origin/main@11e2a06"
+    },
+    {
+      "id": "ev-gh-new",
+      "type": "http_response",
+      "ref": ".reports/2026-11-04/gh_new_repos.json (393 repos >=5 stars created in window, mostly bulk-starred installers/spam; AI queries llm 16, agent 40, mcp 14, model 5, paper 4, benchmark 5)"
+    },
+    {
+      "id": "ev-gh-releases",
+      "type": "http_response",
+      "ref": ".reports/2026-11-04/gh_releases_window.txt (in window: claude-code v2.1.318, OpenHands v1.35.0, openai-python v3.43.0-v3.45.0, crewAI 1.15.35, langchain-core 1.7.5, langgraph-sdk 0.4.12, deepseek-harness dsh-v0.2.2-rc.1, prereleases of codex/gemini-cli/ollama/openai-agents-python, llama.cpp builds)"
+    },
+    {
+      "id": "ev-hf",
+      "type": "http_response",
+      "ref": ".reports/2026-11-04/hf_orgs.txt (no new models created in window by 40 tracked orgs; moonshotai/Kimi-K3.1-Pro created 2026-11-02 privately and made public in window)"
+    },
+    {
+      "id": "ev-arxiv",
+      "type": "http_response",
+      "ref": ".reports/2026-11-04/arxiv.xml and arxiv_entries.json (totalResults 86 for submittedDate 202611031600-202611041600; all entries 16:00-19:00Z on 11-03)"
+    },
+    {
+      "id": "ev-x-search",
+      "type": "api_response",
+      "ref": "Public X reads; in-window posts used: @dummerspast39 (2118003775025668296, 15:33:45Z, first observed weights report), @calebfahlgren (2118005728967332093), @AndrewCurran_ (2118008152474222701), @testingcatalog (2117885727354548370), @DesignArena (2117885235257876568), @PrunaAI (2117663564487926043), @ParikhRahil (2117663676731896305), @omarsar0 (2117666189249839291), @SentientAGI (2117655027036590345), @kirtandopamine (2117678349828976746), @Vectorizeio (2117647994048704588), @agavdev_ (2117818966261514617), @CommandCodeAI (2117784140598698248), @Hislordship_9 (2117741329187049715); just after window: @Kimi_Moonshot (2118010528123773297, 16:00:35Z); X news stories 2117648658032120079, 2117682094075789717, 2118001716335657113, 2117890894347321753, 2117993230897950979, 2117841763507326997, 2118022298854904130, 2117960690896118225, 2117685613319037400, 2118018894543860181; Kimi K3.1 weights hourly counts: 9 at 14:00Z, 43 at 15:00Z, 428 at 16:00Z"
+    },
+    {
+      "id": "ev-verify",
+      "type": "http_response",
+      "ref": ".reports/2026-11-04/verify.log, kimi_README.md, kimi_LICENSE, kimi_config.json (HF createdAt and single commit 6d0a020295 2026-11-02T04:13:51Z, 96 safetensors, usedStorage 1,561,355,732,732 bytes, license other \"Kimi K3.1-Pro License\"; Kimi tech blog read via web fetch: weights promised by Nov 4, cyber data removal xdev-bench-hard 90.5% to 81.0%; PrunaAI/P-H3-Image created 2026-10-27, lastModified 2026-11-03T16:08:56Z)"
+    },
+    {
+      "id": "ev-dedup",
+      "type": "local_command",
+      "ref": "grep over data/candidates and src/content: Kimi K3.1 Pro API launch scored 77.25 on 2026-10-24 (weights not downloadable) and weights-pending entries on 11-01..11-03; no prior Kimi K3.1 Pro article; EvoSkill v2 already scored 2026-11-03"
+    },
+    {
+      "id": "ev-ranking",
+      "type": "local_command",
+      "ref": ".reports/2026-11-04/ranking.json (proposedCandidateId c20261104-kimi-k31-pro-open-weights 81.7, publicationAllowed true; next weight-space programming 70.5 (out of window), EvoSkill v2 paper 70.5 (duplicate), Pruna P-H3-Image 70.05, arXiv 2611.05306 69.4)"
+    },
+    {
+      "id": "ev-article",
+      "type": "git",
+      "ref": "src/content/articles/2026/11/kimi-k3-1-pro-open-weights.md and public/media/2026/11/kimi-k3-1-pro/cover.svg"
+    },
+    {
+      "id": "ev-validate",
+      "type": "local_command",
+      "ref": "python scripts/validate_content.py: passed (Content OK: 13 article(s), 21 mission(s), 2 agent(s), 474 candidate(s).) @ 2026-11-05T01:07:51+08:00"
+    },
+    {
+      "id": "ev-unittest",
+      "type": "local_command",
+      "ref": "python -m unittest discover -s tests -v: passed (OK) @ 2026-11-05T01:07:51+08:00"
+    },
+    {
+      "id": "ev-astro-check",
+      "type": "local_command",
+      "ref": "npm run check: passed (- 0 hints) @ 2026-11-05T01:07:54+08:00"
+    },
+    {
+      "id": "ev-astro-build",
+      "type": "local_command",
+      "ref": "npm run build: passed (01:07:55 [build] Complete!) @ 2026-11-05T01:07:55+08:00"
+    }
+  ],
+  "outcome": {
+    "articleId": "article-20261104-001",
+    "githubCommit": null,
+    "githubPullRequest": null,
+    "deploymentUrl": null,
+    "publicationStatus": "in_review"
+  },
+  "metrics": {
+    "durationSeconds": null,
+    "tokens": null,
+    "estimatedCostUsd": null,
+    "humanInterventions": 0
+  },
+  "retrospective": {
+    "successes": [
+      "Kimi K3.1 Pro weights were pinned to the window by X posts from 15:33Z, hourly counts and the previous run finding no public repo, even though the HF commit dates from 11-02 and the official post came 35 s after the window.",
+      "Model card, LICENSE and the full tech blog were read, so architecture, licence and cyber-mitigation facts come from primary sources.",
+      "arXiv API returned 86 in-window entries."
+    ],
+    "failures": [
+      "The model was not run (1.56 TB MXFP4 weights); all benchmarks remain Moonshot-reported.",
+      "Several X news-story candidates (RoboColosseum, Liber-0, BioSimBench, Curiosity, Locus) were not traced to primary sources.",
+      "The arXiv API only returned submissions from 16:00-19:00Z on 11-03 (one listing batch)."
+    ],
+    "lessonsLearned": [
+      "An HF repo committed days earlier can be made public in the window; the commit date is not the release date, so use first public reports and the prior run scan.",
+      "Official announcement posts can land seconds after the window end; record the weights availability time separately."
+    ],
+    "nextActions": [
+      "Next run should treat the 16:00:35Z official Kimi post and post-window coverage as a duplicate of this article.",
+      "Watch Tencent Hy4 open weights and the reported GPT-6 Astra/Sol updates.",
+      "After merge and DigitalOcean deploy, run a real smoke test in a follow-up PR before promoting the mission."
+    ]
+  }
+}

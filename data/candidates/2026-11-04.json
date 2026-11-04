@@ -1,0 +1,649 @@
+{
+  "date": "2026-11-04",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "candidates": [
+    {
+      "id": "c20261104-kimi-k31-pro-open-weights",
+      "title": "Moonshot AI releases the open weights of Kimi K3.1 Pro: 2.8T-total / 104B-active multimodal MoE, 1M context, MXFP4 quantization-aware weights, Gated DSA replacing full-attention MLA",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+          "publishedAt": "2026-11-04T15:33:45Z",
+          "retrievedAt": "2026-11-04T17:03:10Z"
+        },
+        {
+          "platform": "official",
+          "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-04T17:03:10Z"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/dummerspast39/status/2118003775025668296",
+          "publishedAt": "2026-11-04T15:33:45Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/calebfahlgren/status/2118005728967332093",
+          "publishedAt": "2026-11-04T15:41:31Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/AndrewCurran_/status/2118008152474222701",
+          "publishedAt": "2026-11-04T15:51:08Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/Kimi_Moonshot/status/2118010528123773297",
+          "publishedAt": "2026-11-04T16:00:35Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 75,
+        "interestingness": 92,
+        "technicalDepth": 80,
+        "reproducibility": 78,
+        "credibility": 85
+      },
+      "eligibility": "eligible",
+      "reason": "Weighted 81.7 >= 80. In window: the Hugging Face repo moonshotai/Kimi-K3.1-Pro (createdAt and single commit 6d0a020295 \"Initial commit\" 2026-11-02T04:13:51Z, i.e. uploaded privately) became publicly visible during the window: the 2026-11-03 run found no new moonshotai HF repo, the first X posts reporting downloadable weights appear at 2026-11-04T15:33:45Z (hourly X counts for Kimi K3.1 weights jump from 9 at 14:00Z to 43 at 15:00Z), and the official @Kimi_Moonshot post \"Releasing the model weights of Kimi K3.1 Pro\" followed at 16:00:35Z, 35 s after the window end. The publishedAt used here is the first observed public report. Verified against primary sources: HF API (96 safetensors shards, usedStorage 1.56 TB, license other), model card README (2.8T total / 104B active, 93 layers = 69 KDA + 24 Gated DSA, 896 experts with 16 routed + 2 shared, 1,048,576 context, MXFP4 weights / MXFP8 activations with QAT, MoonViT-V2 401M vision encoder) and LICENSE (modified MIT; Model-as-a-Service businesses above USD 20M revenue need a separate agreement; attribution above 100M MAU or USD 20M monthly revenue) read in full; Kimi tech blog read in full (weights promised by Nov 4; cyber-related data removed from mid-training and RL before the open release, xdev-bench-hard 90.5% to 81.0%). Benchmarks (Terminal-Bench 4.0 65.7 vs Claude Opus 5.5 66.4 and GPT-6 Astra 58.2, etc.) are Moonshot-reported, partly citing third-party leaderboards; not reproduced. The API launch was scored 77.25 on 2026-10-24 because weights were not downloadable; this candidate is the weights release. Model not run (codeStatus not_run)."
+    },
+    {
+      "id": "c20261104-tencent-hy4",
+      "title": "Tencent Hy4: flagship model adds vision and computer use; API live, open weights \"coming soon\"",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/testingcatalog/status/2117885727354548370",
+          "publishedAt": "2026-11-04T07:44:40Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/DesignArena/status/2117885235257876568",
+          "publishedAt": "2026-11-04T07:42:43Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2117648658032120079",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-04T17:03:10Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 62,
+        "interestingness": 80,
+        "technicalDepth": 55,
+        "reproducibility": 30,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 61.1 < 80. Released in window on Tencent Cloud/OpenRouter (posts from 2026-11-04T07:42Z), but weights are not yet published (no new tencent HF repo in window) and benchmarks are vendor-reported; official report not read."
+    },
+    {
+      "id": "c20261104-pruna-p-h3-image",
+      "title": "Pruna AI open-sources P-H3-Image: image generation/editing model distilled from MiniMax-H3 video model, 8 steps instead of 50",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/PrunaAI/status/2117663564487926043",
+          "publishedAt": "2026-11-03T17:01:52Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/PrunaAI/P-H3-Image",
+          "publishedAt": "2026-11-03T16:08:56Z",
+          "retrievedAt": "2026-11-04T17:03:10Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 62,
+        "interestingness": 78,
+        "technicalDepth": 60,
+        "reproducibility": 85,
+        "credibility": 72
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 70.05 < 80. Launch post 2026-11-03T17:01:52Z (in window); HF repo created 2026-10-27 (private), last modified 2026-11-03T16:08:56Z, 187 GB. Derivative/distillation of an existing model; speed and quality claims self-reported; model card not read in detail."
+    },
+    {
+      "id": "c20261104-intology-locus",
+      "title": "Intology Locus: autonomous research system that builds molecular-design models, beating Codex and Claude Code under matched compute (company-reported)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/ParikhRahil/status/2117663676731896305",
+          "publishedAt": "2026-11-03T17:02:19Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/omarsar0/status/2117666189249839291",
+          "publishedAt": "2026-11-03T17:12:18Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2117682094075789717",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-04T17:03:10Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 68,
+        "interestingness": 75,
+        "technicalDepth": 60,
+        "reproducibility": 35,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 62.4 < 80. Results post 2026-11-03T17:02Z (in window); company-reported results (mean Spearman 0.622 vs Codex 0.569 vs Claude Code 0.450 on six IC50 targets per secondhand posts); system is proprietary and the Intology report was not read."
+    },
+    {
+      "id": "c20261104-robocolosseum",
+      "title": "RoboColosseum: Hugging Face, BitRobot and partners open real-world robot policy evaluation on 100+ robots in 140 scenes",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2118001716335657113",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-04T17:03:10Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 72,
+        "technicalDepth": 50,
+        "reproducibility": 70,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 63.0 < 80. Known from an X news summary (updated 2026-11-04T15:33Z); primary announcement and data not read in this run."
+    },
+    {
+      "id": "c20261104-liber-0",
+      "title": "LiberAI Liber-0: robot foundation model pretrained on 2.2M hours of human video and glove data",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2117890894347321753",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-04T17:03:10Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 72,
+        "technicalDepth": 60,
+        "reproducibility": 35,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 60.25 < 80. X news summary only; LiberAI HF repos date from October; report not read; 36% zero-shot success is self-reported."
+    },
+    {
+      "id": "c20261104-celltype-biosimbench",
+      "title": "CellType BioSimBench: benchmark for predicting gene-expression responses to perturbations",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2117993230897950979",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-04T17:03:10Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 58,
+        "interestingness": 65,
+        "technicalDepth": 55,
+        "reproducibility": 50,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 57.65 < 80. X news summary only; benchmark site and paper not read."
+    },
+    {
+      "id": "c20261104-epic-curiosity",
+      "title": "Epic, Microsoft and Yale Curiosity: generative medical-timeline models pretrained on 16B encounters",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2117841763507326997",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-04T17:03:10Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 62,
+        "interestingness": 70,
+        "technicalDepth": 60,
+        "reproducibility": 30,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 59.1 < 80. X news summary only; paper not located; publication date not confirmed in window; data and weights not public."
+    },
+    {
+      "id": "c20261104-weight-space-programming",
+      "title": "MIT CSAIL weight-space programming: GPT-6 Astra edits Qwen3.5-0.8B weights directly (MATH-500 7.9% to 48.1%)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2118022298854904130",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-04T17:03:10Z"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2117960690896118225",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-04T17:03:10Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 70,
+        "interestingness": 85,
+        "technicalDepth": 65,
+        "reproducibility": 55,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 70.5 < 80. Out of window: the work was shared on 2026-11-02; in-window posts are discussion and replications. Primary write-up not read."
+    },
+    {
+      "id": "c20261104-evoskill-v2-paper",
+      "title": "Sentient EvoSkill v2 paper thread (comparison with SkillOpt)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/SentientAGI/status/2117655027036590345",
+          "publishedAt": "2026-11-03T16:27:57Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 70,
+        "technicalDepth": 70,
+        "reproducibility": 80,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 70.5 < 80. Duplicate of c20261103-evoskill-v2 (arXiv 2610.25931 from 2026-10-19, release v2.0.0 2026-10-26); in-window post is promotion."
+    },
+    {
+      "id": "c20261104-terminal-mac",
+      "title": "terminal-mac: a full macOS VM inside the terminal for computer-use agents (MCP, CLI and skill)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/kirtandopamine/status/2117678349828976746",
+          "publishedAt": "2026-11-03T18:00:37Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 70,
+        "technicalDepth": 45,
+        "reproducibility": 70,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 55.0 < 80. Launch post 2026-11-03T18:00:37Z (in window, 5.9k likes); repository not located or read in this run; tooling."
+    },
+    {
+      "id": "c20261104-hindsight-models",
+      "title": "Vectorize Hindsight Models: open-weight small decision models for agent memory (2.5x cheaper, 2x faster)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Vectorizeio/status/2117647994048704588",
+          "publishedAt": "2026-11-03T16:00:00Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 60,
+        "technicalDepth": 50,
+        "reproducibility": 65,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 55.25 < 80. Post at 2026-11-03T16:00:00Z (window start); HF weights not located; claims self-reported."
+    },
+    {
+      "id": "c20261104-agav",
+      "title": "Agav: open-source terminal coding agent claiming 49.1% lower spend than Codex on Terminal-Bench 2.1",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/agavdev_/status/2117818966261514617",
+          "publishedAt": "2026-11-04T03:19:23Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 50,
+        "technicalDepth": 40,
+        "reproducibility": 60,
+        "credibility": 30
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 43.0 < 80. New account, self-reported cost numbers; repository not read."
+    },
+    {
+      "id": "c20261104-crouton-alpha",
+      "title": "Crouton Alpha and Pulse Alpha: free stealth 1M-context multimodal models on OpenRouter and OpenCode",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/CommandCodeAI/status/2117784140598698248",
+          "publishedAt": "2026-11-04T01:01:00Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/Hislordship_9/status/2117741329187049715",
+          "publishedAt": "2026-11-03T22:10:53Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2117685613319037400",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-04T17:03:10Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 60,
+        "technicalDepth": 15,
+        "reproducibility": 20,
+        "credibility": 30
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 33.0 < 80. Anonymous stealth previews; maker undisclosed (speculation only); no weights or report."
+    },
+    {
+      "id": "c20261104-openai-astra-sol-rumor",
+      "title": "Report: next GPT-6 Astra and Sol versions plus cyber variants expected soon",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2118018894543860181",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-04T17:03:10Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 20,
+        "interestingness": 70,
+        "technicalDepth": 5,
+        "reproducibility": 5,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 29.25 < 80. Rumour relayed from The Information; nothing released."
+    },
+    {
+      "id": "c20261104-gh-valeriodolci-frontier-weight-edit",
+      "title": "frontier-weight-edit: a frontier model hand-edits Gemma 4 12B weights (EN to IT tense)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/ValerioDolci/frontier-weight-edit",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-04T17:03:10Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 60,
+        "technicalDepth": 45,
+        "reproducibility": 65,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 51.25 < 80. Created in window (17 stars, MIT, Python). Small community experiment in the weight-space-programming trend; not run."
+    },
+    {
+      "id": "c20261104-gh-andrew-babo-muse4ai",
+      "title": "Muse4AI: local Windows bridge letting agents drive Muse image/video generation via REST and MCP",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/andrew-babo/muse4ai",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-04T17:03:10Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 40,
+        "technicalDepth": 30,
+        "reproducibility": 50,
+        "credibility": 25
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 33.5 < 80. Created in window (438 stars, MIT, TypeScript). Star count resembles the bulk-starred repos dominating this window; integration tooling."
+    },
+    {
+      "id": "c20261104-gh-shenh10-huggingarch",
+      "title": "HuggingArch: inspect an LLM architecture before deploying",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/shenh10/HuggingArch",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-04T17:03:10Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 45,
+        "technicalDepth": 40,
+        "reproducibility": 60,
+        "credibility": 35
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 40.75 < 80. Created in window (26 stars, MIT, Python). Small tool; not run."
+    },
+    {
+      "id": "c20261104-gh-rel-routine",
+      "title": "Routine releases: Claude Code v2.1.318, OpenHands v1.35.0, openai-python v3.43-3.45, crewAI 1.15.35, langchain-core 1.7.5, deepseek-harness dsh-v0.2.2-rc.1",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.318",
+          "publishedAt": "2026-11-04T00:01:03Z",
+          "retrievedAt": "2026-11-04T17:03:10Z"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.35.0",
+          "publishedAt": "2026-11-03T18:47:18Z",
+          "retrievedAt": "2026-11-04T17:03:10Z"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.2-rc.1",
+          "publishedAt": "2026-11-04T13:07:14Z",
+          "retrievedAt": "2026-11-04T17:03:10Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 50,
+        "technicalDepth": 30,
+        "reproducibility": 85,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 47.75 < 80. Routine releases in window from tracked repos; notes not read in detail."
+    },
+    {
+      "id": "c20261104-arxiv-2611-05306",
+      "title": "You don't need long context",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.05306",
+          "publishedAt": "2026-11-03T18:17:23Z",
+          "retrievedAt": "2026-11-04T17:03:10Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 68,
+        "interestingness": 78,
+        "technicalDepth": 70,
+        "reproducibility": 60,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 69.4 < 80. Abstract read: frequent compaction keeps accuracy on long-horizon tasks; one action per context still works on SWE tasks; proposes semantic state space models. Provocative but needs scrutiny."
+    },
+    {
+      "id": "c20261104-arxiv-2611-05344",
+      "title": "A Circuit for In-Context Learning",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.05344",
+          "publishedAt": "2026-11-03T18:44:34Z",
+          "retrievedAt": "2026-11-04T17:03:10Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 62,
+        "interestingness": 68,
+        "technicalDepth": 78,
+        "reproducibility": 65,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 67.45 < 80. Abstract read: key-value memory circuit over label tokens in three 3-4B transformers; solid interpretability, narrow task."
+    },
+    {
+      "id": "c20261104-arxiv-2611-05358",
+      "title": "Suppressing Misaligned Behaviors in Language Models, Durably",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.05358",
+          "publishedAt": "2026-11-03T18:54:08Z",
+          "retrievedAt": "2026-11-04T17:03:10Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 62,
+        "interestingness": 70,
+        "technicalDepth": 72,
+        "reproducibility": 60,
+        "credibility": 72
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 66.7 < 80. Abstract read (NeurIPS 2026): model organisms and durability of post-hoc suppression; useful safety methodology."
+    },
+    {
+      "id": "c20261104-arxiv-2611-05345",
+      "title": "Adversarial Speculative Reasoning Improves Long Horizon Agents",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.05345",
+          "publishedAt": "2026-11-03T18:45:23Z",
+          "retrievedAt": "2026-11-04T17:03:10Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 65,
+        "technicalDepth": 68,
+        "reproducibility": 50,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 61.35 < 80. Abstract read: speculative-decoding noise shifts long-horizon agent outputs; interesting claim, not checked."
+    },
+    {
+      "id": "c20261104-arxiv-2611-05234",
+      "title": "ARLoop: Fully-Open Pre-trained Looped Transformers with Attention Residuals",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.05234",
+          "publishedAt": "2026-11-03T17:18:33Z",
+          "retrievedAt": "2026-11-04T17:03:10Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 60,
+        "technicalDepth": 68,
+        "reproducibility": 70,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 61.6 < 80. Abstract read: depth attention for looped transformers at 140M/370M scale; small-scale."
+    },
+    {
+      "id": "c20261104-arxiv-2611-05139",
+      "title": "Meta^2: Precomputing Reusable Knowledge for Online Harness Evolution in Long-Horizon Agents",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.05139",
+          "publishedAt": "2026-11-03T16:19:21Z",
+          "retrievedAt": "2026-11-04T17:03:10Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 62,
+        "technicalDepth": 65,
+        "reproducibility": 55,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 59.25 < 80. Abstract read: learns a meta-skill for online harness evolution; incremental."
+    }
+  ],
+  "selectedCandidateId": "c20261104-kimi-k31-pro-open-weights"
+}
