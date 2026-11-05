@@ -1,0 +1,649 @@
+{
+  "date": "2026-11-05",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "candidates": [
+    {
+      "id": "c20261105-openai-cyber-linux-pipeline",
+      "title": "OpenAI autonomous cyber pipeline: mid-October run validated 1,724 Linux kernel vulns and produced 948 distinct LPE exploits plus candidate patches at $1.2M API cost",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+          "publishedAt": "2026-11-04T23:13:24Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/OpenAI/status/2118119451401048497",
+          "publishedAt": "2026-11-04T23:13:24Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/gdb/status/2118129547443056763",
+          "publishedAt": "2026-11-04T23:53:31Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 94,
+        "interestingness": 92,
+        "technicalDepth": 90,
+        "reproducibility": 48,
+        "credibility": 98
+      },
+      "eligibility": "eligible",
+      "reason": "Weighted 86.2 >= 80. In window: OpenAI published \"A thousand fewer paths to root\" and the matching @OpenAI thread at 2026-11-04T23:13Z (inside [2026-11-04T16:00Z, 2026-11-05T16:00Z)). Verified against the official post: Scout/Analyst agents audited ~2.8M LOC, reproduced 1,724 vulnerabilities, produced 291 info-leak PoCs and 948 distinct LPE exploits on a stock desktop Linux config with SMEP/SMAP/KASLR, plus candidate patches under human review for Linux maintainers / Patch the Planet; API cost $1,213,430 (~$1,279/LPE). Reproducibility scored low because the upcoming cyber model and full pipeline are not open-sourced; claims are OpenAI-reported with third-party expert consultation for novel techniques. AgentLab did not run exploits."
+    },
+    {
+      "id": "c20261105-baidu-ernie-55-flash-base",
+      "title": "Baidu releases ERNIE-5.5-Flash-Base open weights: 280B-total / 14B-active MoE pretrain checkpoint on 33.5T tokens, 1M inference context, custom license",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Base",
+          "publishedAt": "2026-11-05T06:33:30Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        },
+        {
+          "platform": "official",
+          "url": "https://ernie.baidu.com/release/ernie-5-5-flash-base/",
+          "publishedAt": "2026-11-05",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/BaiduResearch/status/2118249227939967424",
+          "publishedAt": "2026-11-05T07:49:05Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/riyazmd774/status/2118238598814367781",
+          "publishedAt": "2026-11-05T07:06:51Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 80,
+        "interestingness": 88,
+        "technicalDepth": 84,
+        "reproducibility": 86,
+        "credibility": 92
+      },
+      "eligibility": "eligible",
+      "reason": "Weighted 84.9 >= 80. In window: HF createdAt 2026-10-21 (private upload); LICENSE release date November 5, 2026; README/assets commits through 2026-11-05T06:33:30Z; X hourly counts jump from 0 before 05:00Z to 16/61/33 at 05–07Z; @BaiduResearch post 07:49Z. Verified HF model card (280B/14B, 128 safetensors, ernie5_5_moe, FP8), blog, and LICENSE. Benchmarks in card are Baidu-run vs DeepSeek-V4-Flash-Base etc. Runner-up behind OpenAI cyber on breakthrough and editorial novelty."
+    },
+    {
+      "id": "c20261105-openai-images-26",
+      "title": "OpenAI launches ChatGPT Images 2.6 with GIF generation, saved reference images, and GPT-Image-2.6 Flare/Sunburst API models (50% faster)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://openai.com/index/introducing-images-2-6/",
+          "publishedAt": "2026-11-04",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/OpenAI/status/2118124944928432327",
+          "publishedAt": "2026-11-04T23:35:14Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/gdb/status/2118174986544488876",
+          "publishedAt": "2026-11-05T02:54:05Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 82,
+        "technicalDepth": 55,
+        "reproducibility": 92,
+        "credibility": 98
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 71.6 < 80. Verified official product launch in window, but incremental product feature (GIF + reference images + faster API image models) rather than a research or open-weight breakthrough."
+    },
+    {
+      "id": "c20261105-ripple-65b-preview",
+      "title": "Ricursive Intelligence Ripple-65B Preview: 65B dense open weights (Apache-2.0), claims 80.52 TerminalBench 2.1; HF created before window",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
+          "publishedAt": "2026-11-04T02:41:21Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        },
+        {
+          "platform": "official",
+          "url": "https://www.ricursive.com/ripple",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/mikeokner/status/2118171332059811920",
+          "publishedAt": "2026-11-05T02:39:33Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 72,
+        "interestingness": 85,
+        "technicalDepth": 78,
+        "reproducibility": 80,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 77.95 < 80 and window issue: HF createdAt 2026-11-04T02:41:21Z is before window start 16:00Z (prior daily run should have considered it). README updates continue into the window; TerminalBench/SWE numbers are vendor-reported. Apache-2.0 + downloads observed."
+    },
+    {
+      "id": "c20261105-tencent-hy4-followup",
+      "title": "Tencent Hy4 continued API rollout (vision + computer use); open weights still pending",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/TencentHunyuan/status/2118170021856006185",
+          "publishedAt": "2026-11-05T02:34:21Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/ela_euk/status/2118156999934263731",
+          "publishedAt": "2026-11-05T01:42:36Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 78,
+        "technicalDepth": 65,
+        "reproducibility": 55,
+        "credibility": 88
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 67.55 < 80. Duplicate/continuation of prior-day Hy4 candidate; weights not released (\"coming in days\"); API-only."
+    },
+    {
+      "id": "c20261105-kimi-k31-pro-coverage",
+      "title": "Continued coverage of Kimi K3.1 Pro open weights (already published by AgentLab on 2026-11-04)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+          "publishedAt": "2026-11-04T15:33:45Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/Kimi_Moonshot/status/2118010528123773297",
+          "publishedAt": "2026-11-04T16:00:35Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 75,
+        "interestingness": 80,
+        "technicalDepth": 80,
+        "reproducibility": 78,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 78.7 would clear 80 but treated as duplicate: article already published in daily/2026-11-04 (PR #24). Official @Kimi_Moonshot post was 35s after prior window; this window only has follow-on coverage."
+    },
+    {
+      "id": "c20261105-mcp-servers-v230",
+      "title": "modelcontextprotocol/servers v2.3.0 release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/modelcontextprotocol/servers/releases/tag/v2.3.0",
+          "publishedAt": "2026-11-04T21:28:41Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 55,
+        "technicalDepth": 50,
+        "reproducibility": 90,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 58.25 < 80. Routine tracked-repo release.",
+      "repository": {
+        "language": null,
+        "stars": null,
+        "license": null,
+        "commit": null
+      }
+    },
+    {
+      "id": "c20261105-openai-python-v346",
+      "title": "openai/openai-python v3.46.0 release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/openai/openai-python/releases/tag/v3.46.0",
+          "publishedAt": "2026-11-05T00:55:06Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 50,
+        "technicalDepth": 45,
+        "reproducibility": 95,
+        "credibility": 95
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 55.75 < 80. SDK maintenance release.",
+      "repository": {
+        "language": "Python",
+        "stars": null,
+        "license": null,
+        "commit": null
+      }
+    },
+    {
+      "id": "c20261105-anthropic-sdk-v250",
+      "title": "anthropics/anthropic-sdk-python v2.5.0 release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.5.0",
+          "publishedAt": "2026-11-04T20:27:20Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 48,
+        "technicalDepth": 45,
+        "reproducibility": 95,
+        "credibility": 95
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 55.25 < 80. SDK maintenance release.",
+      "repository": {
+        "language": "Python",
+        "stars": null,
+        "license": null,
+        "commit": null
+      }
+    },
+    {
+      "id": "c20261105-unsloth-v01915",
+      "title": "unslothai/unsloth v0.1.915-beta (customization + browser use)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.915-beta",
+          "publishedAt": "2026-11-04T17:54:37Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 38,
+        "interestingness": 52,
+        "technicalDepth": 50,
+        "reproducibility": 85,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 55.65 < 80. Incremental tooling release.",
+      "repository": {
+        "language": "Python",
+        "stars": null,
+        "license": null,
+        "commit": null
+      }
+    },
+    {
+      "id": "c20261105-nvidia-metrictrail",
+      "title": "NVIDIA MetricTrail model created on Hugging Face in window",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/nvidia/MetricTrail",
+          "publishedAt": "2026-11-05T07:22:55Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 58,
+        "technicalDepth": 55,
+        "reproducibility": 70,
+        "credibility": 88
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 58.3 < 80. New HF repo with low early signal (likes=7, downloads=0 at retrieval)."
+    },
+    {
+      "id": "c20261105-bytedance-qwen3-sae",
+      "title": "ByteDance-Seed Qwen3-30B-A3B-MoE-SAE sparse autoencoder release on HF",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/ByteDance-Seed/Qwen3-30B-A3B-MoE-SAE",
+          "publishedAt": "2026-11-05T13:38:56Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 48,
+        "interestingness": 60,
+        "technicalDepth": 62,
+        "reproducibility": 70,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 60.8 < 80. Niche interpretability artifact; near-zero downloads at retrieval."
+    },
+    {
+      "id": "c20261105-arxiv-2611-06910",
+      "title": "FrontierPhysics: Evaluating Agents for End-to-End Physics Research",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "http://arxiv.org/abs/2611.06910",
+          "publishedAt": "2026-11-04T18:56:22Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 68,
+        "interestingness": 72,
+        "technicalDepth": 70,
+        "reproducibility": 75,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 71.65 < 80. In-window arXiv preprint (cs.AI/LG/CL/MA/RO); not independently re-implemented."
+    },
+    {
+      "id": "c20261105-arxiv-2611-06911",
+      "title": "BEAKER: Expert-Curated Benchmark for Embodied Brains in Self-Driving Chemical Laboratories",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "http://arxiv.org/abs/2611.06911",
+          "publishedAt": "2026-11-04T18:57:17Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 70,
+        "technicalDepth": 68,
+        "reproducibility": 75,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 69.85 < 80. In-window arXiv preprint (cs.AI/LG/CL/MA/RO); not independently re-implemented."
+    },
+    {
+      "id": "c20261105-arxiv-2611-06905",
+      "title": "Reinforcement Learning Enables Scaling Generalist Robot Policy Improvement",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "http://arxiv.org/abs/2611.06905",
+          "publishedAt": "2026-11-04T18:52:28Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 66,
+        "interestingness": 68,
+        "technicalDepth": 70,
+        "reproducibility": 72,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 69.6 < 80. In-window arXiv preprint (cs.AI/LG/CL/MA/RO); not independently re-implemented."
+    },
+    {
+      "id": "c20261105-arxiv-2611-06881",
+      "title": "VABAR: A Variational Automation Benchmark for Agentic Robotics",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "http://arxiv.org/abs/2611.06881",
+          "publishedAt": "2026-11-04T18:38:01Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 62,
+        "interestingness": 66,
+        "technicalDepth": 65,
+        "reproducibility": 75,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 67.35 < 80. In-window arXiv preprint (cs.AI/LG/CL/MA/RO); not independently re-implemented."
+    },
+    {
+      "id": "c20261105-arxiv-2611-06876",
+      "title": "SpecCompact: Accelerating LLM Agent Context Compaction with Slot-Parallel Semantic Speculative Verification",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "http://arxiv.org/abs/2611.06876",
+          "publishedAt": "2026-11-04T18:34:41Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 68,
+        "technicalDepth": 70,
+        "reproducibility": 72,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 67.8 < 80. In-window arXiv preprint (cs.AI/LG/CL/MA/RO); not independently re-implemented."
+    },
+    {
+      "id": "c20261105-arxiv-2611-06868",
+      "title": "On Turn-Level Best-of-N Sampling for Scaling LLM Agents",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "http://arxiv.org/abs/2611.06868",
+          "publishedAt": "2026-11-04T18:23:14Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 58,
+        "interestingness": 65,
+        "technicalDepth": 68,
+        "reproducibility": 75,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 66.5 < 80. In-window arXiv preprint (cs.AI/LG/CL/MA/RO); not independently re-implemented."
+    },
+    {
+      "id": "c20261105-arxiv-2611-06863",
+      "title": "Rethinking Self-Repair in Code-as-Policy Agents: What Drives Retry Success?",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "http://arxiv.org/abs/2611.06863",
+          "publishedAt": "2026-11-04T18:19:24Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 58,
+        "interestingness": 64,
+        "technicalDepth": 66,
+        "reproducibility": 75,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 65.85 < 80. In-window arXiv preprint (cs.AI/LG/CL/MA/RO); not independently re-implemented."
+    },
+    {
+      "id": "c20261105-arxiv-2611-06858",
+      "title": "CompressionBench: How can your coding agents compress LLMs?",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "http://arxiv.org/abs/2611.06858",
+          "publishedAt": "2026-11-04T18:14:50Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 66,
+        "technicalDepth": 65,
+        "reproducibility": 78,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 67.2 < 80. In-window arXiv preprint (cs.AI/LG/CL/MA/RO); not independently re-implemented."
+    },
+    {
+      "id": "c20261105-arxiv-2611-06841",
+      "title": "ServerBench: How can your coding agents design specialized LLM serving systems?",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "http://arxiv.org/abs/2611.06841",
+          "publishedAt": "2026-11-04T17:59:07Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 62,
+        "interestingness": 68,
+        "technicalDepth": 66,
+        "reproducibility": 78,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 68.5 < 80. In-window arXiv preprint (cs.AI/LG/CL/MA/RO); not independently re-implemented."
+    },
+    {
+      "id": "c20261105-arxiv-2611-06830",
+      "title": "Alignment Myopia in Generative AI",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "http://arxiv.org/abs/2611.06830",
+          "publishedAt": "2026-11-04T17:44:07Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 64,
+        "interestingness": 70,
+        "technicalDepth": 68,
+        "reproducibility": 70,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 68.8 < 80. In-window arXiv preprint (cs.AI/LG/CL/MA/RO); not independently re-implemented."
+    },
+    {
+      "id": "c20261105-craftos-agent-app",
+      "title": "CraftOS open-sources Agent App interface for collaborating with AI agents",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/craftos_team/status/2118142049577005470",
+          "publishedAt": "2026-11-05T00:43:12Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 62,
+        "technicalDepth": 55,
+        "reproducibility": 70,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 59.0 < 80. Early product open-source claim; limited primary verification beyond launch post."
+    },
+    {
+      "id": "c20261105-gemini-computer-use-ga",
+      "title": "Reports: Gemini API computer-use tool generally available; Antigravity v2.29 voice/remote agents",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/AIWorkfloway/status/2118302254771978412",
+          "publishedAt": "2026-11-05T11:19:48Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 58,
+        "interestingness": 70,
+        "technicalDepth": 55,
+        "reproducibility": 60,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 62.4 < 80. Secondary roundup only; no official Google post verified in this run (openai.com-style pages 403 from minim4; Google primary not fetched)."
+    },
+    {
+      "id": "c20261105-twil-8b-buzz",
+      "title": "webAI TwIL-8B local reasoning model buzz (HF original created 2026-10-14; not a new release)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/webAI-Official/TwIL-8B",
+          "publishedAt": "2026-10-14T16:50:12Z",
+          "retrievedAt": "2026-11-05T17:09:38Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 65,
+        "technicalDepth": 55,
+        "reproducibility": 80,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 61.75 < 80 and out of window: original HF createdAt 2026-10-14; window activity is GGUF/MLX ports and news summaries."
+    }
+  ],
+  "selectedCandidateId": "c20261105-openai-cyber-linux-pipeline"
+}
