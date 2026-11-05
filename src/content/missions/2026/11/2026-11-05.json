@@ -1,0 +1,250 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "mission-20261105-001",
+  "date": "2026-11-05",
+  "timezone": "Asia/Taipei",
+  "status": "awaiting_review",
+  "objective": {
+    "goal": "Discover, score, verify and propose one outstanding AI/agent discovery for 2026-11-05 (Asia/Taipei), or document a no-publish decision.",
+    "sources": [
+      "x",
+      "github",
+      "arxiv"
+    ],
+    "deliverables": [
+      "Verified candidate batch",
+      "Published article (OpenAI cyber Linux pipeline)",
+      "Mission record",
+      "Pull request"
+    ]
+  },
+  "agent": {
+    "id": "grokbot",
+    "framework": "Grok Bot (AgentLab-bot on minim4.home)",
+    "model": "grok-bot",
+    "runId": "routine-9a1f041e-20261106T0108-minim4-daily-2026-11-05"
+  },
+  "selection": {
+    "candidatesEvaluated": 25,
+    "selectedCandidateId": "c20261105-openai-cyber-linux-pipeline",
+    "selectionScore": 86.2,
+    "rankingArtifact": "data/candidates/2026-11-05.json"
+  },
+  "skillsUsed": [
+    {
+      "skill": "x-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-x-20261105-001"
+    },
+    {
+      "skill": "github-discovery",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-gh-20261105-001"
+    },
+    {
+      "skill": "arxiv-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ax-20261105-001"
+    },
+    {
+      "skill": "fact-check",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-fc-20261105-001"
+    },
+    {
+      "skill": "article-writing",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-aw-20261105-001"
+    },
+    {
+      "skill": "image-curation",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ic-20261105-001"
+    },
+    {
+      "skill": "site-publishing",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-sp-20261105-001"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t1",
+      "action": "git checkout main, pull --ff-only (main at 28137b2, merge of PR #24), create branch daily/2026-11-05 (tree clean); GitHub App key present",
+      "tool": "git",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": "2026-11-05T17:09:01Z",
+      "evidenceIds": [
+        "ev-git-branch"
+      ]
+    },
+    {
+      "id": "t2",
+      "action": "Discovery with window 2026-11-04T16:00Z..2026-11-05T16:00Z: GitHub search + tracked releases; HF org/trending scan; arXiv API totalResults 64; X public search/news/counts",
+      "tool": "gh+python urllib+X MCP",
+      "status": "success",
+      "startedAt": "2026-11-05T17:09:38Z",
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-gh-new",
+        "ev-gh-releases",
+        "ev-hf",
+        "ev-arxiv",
+        "ev-x"
+      ]
+    },
+    {
+      "id": "t3",
+      "action": "Score/verify top leads against primary sources: OpenAI cyber blog (box WebFetch; minim4 curl 403), ERNIE HF+blog+LICENSE, Ripple HF (created before window), Images 2.6 official index",
+      "tool": "webfetch+urllib+X",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": "2026-11-05T17:14:00Z",
+      "evidenceIds": [
+        "ev-verify-openai",
+        "ev-verify-ernie"
+      ]
+    },
+    {
+      "id": "t4",
+      "action": "Write 25-candidate JSON, publish article on OpenAI cyber pipeline (86.2), original cover SVG, mission awaiting_review",
+      "tool": "python gen.py",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": "2026-11-05T17:14:46Z",
+      "evidenceIds": [
+        "ev-candidates",
+        "ev-article"
+      ]
+    },
+    {
+      "id": "t5",
+      "action": "Run validate_content, unittest, npm check, npm build in venv",
+      "tool": "python+npm",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": "2026-11-05T17:15:39Z",
+      "evidenceIds": [
+        "ev-tests"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "python scripts/validate_content.py",
+      "status": "passed",
+      "artifact": ".reports/2026-11-05/validate.log"
+    },
+    {
+      "name": "python -m unittest discover -s tests -v",
+      "status": "passed",
+      "artifact": ".reports/2026-11-05/unittest.log"
+    },
+    {
+      "name": "npm run check",
+      "status": "passed",
+      "artifact": ".reports/2026-11-05/astro-check.log"
+    },
+    {
+      "name": "npm run build",
+      "status": "passed",
+      "artifact": ".reports/2026-11-05/astro-build.log"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-git-branch",
+      "type": "git",
+      "ref": "branch daily/2026-11-05 from origin/main@28137b2"
+    },
+    {
+      "id": "ev-gh-new",
+      "type": "http_response",
+      "ref": ".reports/2026-11-05/gh_new_repos.json"
+    },
+    {
+      "id": "ev-gh-releases",
+      "type": "http_response",
+      "ref": ".reports/2026-11-05/gh_releases_window.txt (MCP servers v2.3.0, openai-python v3.46.0, anthropic-sdk-python v2.5.0, unsloth v0.1.915-beta)"
+    },
+    {
+      "id": "ev-hf",
+      "type": "http_response",
+      "ref": ".reports/2026-11-05/hf_orgs.txt"
+    },
+    {
+      "id": "ev-arxiv",
+      "type": "http_response",
+      "ref": ".reports/2026-11-05/arxiv_entries.json (totalResults 64)"
+    },
+    {
+      "id": "ev-x",
+      "type": "other",
+      "ref": "X search_posts_all / search_news / get_posts_counts_recent / get_posts_by_id for window topics"
+    },
+    {
+      "id": "ev-verify-openai",
+      "type": "http_response",
+      "ref": "https://openai.com/index/a-thousand-fewer-paths-to-root (+ X 2118119451401048497)"
+    },
+    {
+      "id": "ev-verify-ernie",
+      "type": "http_response",
+      "ref": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Base + https://ernie.baidu.com/release/ernie-5-5-flash-base/ + LICENSE release date Nov 5"
+    },
+    {
+      "id": "ev-candidates",
+      "type": "file",
+      "ref": "data/candidates/2026-11-05.json"
+    },
+    {
+      "id": "ev-article",
+      "type": "file",
+      "ref": "src/content/articles/2026/11/openai-cyber-linux-pipeline.md"
+    },
+    {
+      "id": "ev-tests",
+      "type": "file",
+      "ref": ".reports/2026-11-05/results.json"
+    }
+  ],
+  "outcome": {
+    "articleId": "article-20261105-001",
+    "githubCommit": null,
+    "githubPullRequest": null,
+    "deploymentUrl": null,
+    "publicationStatus": "in_review"
+  },
+  "metrics": {
+    "durationSeconds": null,
+    "tokens": null,
+    "estimatedCostUsd": null,
+    "humanInterventions": 0
+  },
+  "retrospective": {
+    "successes": [
+      "Verified OpenAI cyber pipeline announcement against official long-form post and X thread",
+      "ERNIE-5.5-Flash-Base independently verified as eligible runner-up (84.9) via HF + blog + LICENSE",
+      "Recorded openai.com 403 from minim4 honestly; used box WebFetch for the blog"
+    ],
+    "failures": [],
+    "lessonsLearned": [
+      "Baidu ERNIE HF createdAt can precede public release by weeks; use LICENSE release date, README commit burst, and X hourly counts together",
+      "Ripple-65B-Preview createdAt 2026-11-04T02:41Z is before the next day's window—prior run should catch HF createdAt in-window even when trending later",
+      "Kimi K3.1 Pro coverage in this window is duplicate of PR #24"
+    ],
+    "nextActions": [
+      "chuangtc reviews article on DEV after merge-ready PR",
+      "Watch for ERNIE 5.5 Flash post-trained release and Hy4 open weights",
+      "Watch Qwen4 / GPT-6.2 Astra rumors without publishing on unverified quota leaks"
+    ]
+  }
+}
