@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
+  <title id="t">Inkling 2 Small schematic cover, illustrative</title>
+  <desc id="d">Abstract illustration of a MoE model with vision input and Tinker/Apache path. Not an official Thinking Machines image.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#12081f"/><stop offset="100%" stop-color="#1a2744"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#f0a36a"/><stop offset="100%" stop-color="#8b7cff"/></linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="280" cy="315" r="110" fill="none" stroke="url(#accent)" stroke-width="4"/>
+  <circle cx="280" cy="315" r="55" fill="#24345c" stroke="#f0a36a" stroke-width="2"/>
+  <text x="280" y="310" text-anchor="middle" fill="#ffe8d2" font-family="ui-sans-serif, system-ui, sans-serif" font-size="22">17B</text>
+  <text x="280" y="338" text-anchor="middle" fill="#b9c7e6" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14">active</text>
+  <g fill="#8b7cff" opacity="0.85">
+    <circle cx="200" cy="230" r="18"/><circle cx="360" cy="230" r="18"/>
+    <circle cx="180" cy="315" r="18"/><circle cx="380" cy="315" r="18"/>
+    <circle cx="200" cy="400" r="18"/><circle cx="360" cy="400" r="18"/>
+    <circle cx="280" cy="200" r="18"/><circle cx="280" cy="430" r="18"/>
+  </g>
+  <text x="280" y="480" text-anchor="middle" fill="#c9d6f5" font-family="ui-sans-serif, system-ui, sans-serif" font-size="16">594B MoE · vision in</text>
+  <g font-family="ui-sans-serif, system-ui, sans-serif" fill="#e8eefc">
+    <text x="560" y="200" font-size="36" font-weight="600">Inkling 2 Small</text>
+    <text x="560" y="250" font-size="22" fill="#b9c7e6">Thinking Machines Lab · Nov 5, 2026</text>
+    <rect x="560" y="290" width="220" height="70" rx="12" fill="#24345c" stroke="#f0a36a" stroke-width="2"/>
+    <text x="670" y="320" text-anchor="middle" font-size="18">Tinker today</text>
+    <text x="670" y="345" text-anchor="middle" font-size="14" fill="#b9c7e6">closed weights</text>
+    <rect x="810" y="290" width="260" height="70" rx="12" fill="#24345c" stroke="#8b7cff" stroke-width="2"/>
+    <text x="940" y="320" text-anchor="middle" font-size="18">Apache 2.0 planned</text>
+    <text x="940" y="345" text-anchor="middle" font-size="14" fill="#b9c7e6">after safety tests</text>
+    <text x="560" y="420" font-size="20" fill="#f0c36a">AA Intelligence Index ≈ 31</text>
+    <text x="560" y="460" font-size="16" fill="#8fb4d8">AgentLab original illustration · not official art</text>
+  </g>
+</svg>
