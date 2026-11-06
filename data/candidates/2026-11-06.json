@@ -1,0 +1,649 @@
+{
+  "date": "2026-11-06",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "candidates": [
+    {
+      "id": "c20261106-thinking-machines-inkling-2-small",
+      "title": "Thinking Machines Lab launches Inkling 2 Small: 594B/17B MoE with vision, AA Intelligence Index ~31, Tinker today, Apache-2.0 weights planned next week after safety testing",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://thinkingmachines.ai/news/inkling-2-small/",
+          "publishedAt": "2026-11-05T23:43:57Z",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/thinkymachines/status/2118489527362912566",
+          "publishedAt": "2026-11-05T23:43:57Z",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/miramurati/status/2118489804585509192",
+          "publishedAt": "2026-11-05T23:45:03Z",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 88,
+        "interestingness": 92,
+        "technicalDepth": 88,
+        "reproducibility": 48,
+        "credibility": 95
+      },
+      "eligibility": "eligible",
+      "reason": "Weighted 83.7 >= 80. In window: @thinkymachines post + official blog at 2026-11-05T23:43:57Z (inside [2026-11-05T16:00Z, 2026-11-06T16:00Z)); X hourly counts jump from 0 before 23:00Z to 170/327 at 23-01Z. Verified blog: 594B total / 17B active MoE, image inputs, variable effort, AA Index reported ~30.6-31, available on Tinker with closed weights; full Apache-2.0 weights planned next week after external safety testing. Reproducibility scored lower because weights are not downloadable yet. Runner-up METR report also eligible."
+    },
+    {
+      "id": "c20261106-metr-anthropic-rd-acceleration",
+      "title": "METR independent assessment: Anthropic AI R&D acceleration ~2x historical rate as of Oct 2026; majority of redacted evidence; companion Risk Report review",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
+          "publishedAt": "2026-11-05",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://metr.org/blog/2026-11-05-rd-section-anthropic-risk-report-august-2026-review/",
+          "publishedAt": "2026-11-05",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/METR_Evals/status/2118412223693598831",
+          "publishedAt": "2026-11-05T18:36:46Z",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/METR_Evals/status/2118417781825904708",
+          "publishedAt": "2026-11-05T18:58:52Z",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 82,
+        "interestingness": 86,
+        "technicalDepth": 92,
+        "reproducibility": 42,
+        "credibility": 96
+      },
+      "eligibility": "eligible",
+      "reason": "Weighted 80.4 >= 80. In window: METR X thread + public reports dated November 5, 2026 starting ~18:36Z. Verified via WebFetch: AECI trend ~1.9x [1.5-2.8] since Oct 2025; heavy Anthropic redactions. Runner-up behind Inkling."
+    },
+    {
+      "id": "c20261106-ant-ling-32-flash",
+      "title": "Ant Ling Ling-3.2-flash: 560B/25B native multimodal MoE (text+image+video), 1M context, API free 2 weeks; no open weights this round",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/AntLingAGI/status/2118428246664761379",
+          "publishedAt": "2026-11-05T19:40:27Z",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/AntLingAGI/status/2118428250468958478",
+          "publishedAt": "2026-11-05T19:40:28Z",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 72,
+        "interestingness": 84,
+        "technicalDepth": 72,
+        "reproducibility": 55,
+        "credibility": 88
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 74.05 < 80. In window (@AntLingAGI 19:40Z). API-first multimodal; no HF open weights this round."
+    },
+    {
+      "id": "c20261106-hyperstition-hyperkernel",
+      "title": "Hyperstitioncc/Hyperkernel: MIT open-source GPU megakernel generator claiming large speedups vs vLLM (created in window, ~127 stars)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/Hyperstitioncc/Hyperkernel",
+          "publishedAt": "2026-11-05T19:44:46Z",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2118504950720340462",
+          "publishedAt": "2026-11-06",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 68,
+        "interestingness": 80,
+        "technicalDepth": 75,
+        "reproducibility": 70,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 72.4 < 80. Repo created in window; claims vs vLLM not independently verified.",
+      "repository": {
+        "language": "Rust",
+        "stars": 127,
+        "license": "MIT",
+        "commit": null
+      }
+    },
+    {
+      "id": "c20261106-qwen-becoming-teaser",
+      "title": "Alibaba Qwen cryptic teaser The becoming begins (no model release in window)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Alibaba_Qwen/status/2118674834632978755",
+          "publishedAt": "2026-11-06T12:00:18Z",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 78,
+        "technicalDepth": 20,
+        "reproducibility": 20,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 47.5 < 80. High-engagement teaser only."
+    },
+    {
+      "id": "c20261106-kimi-k31-pro-coverage",
+      "title": "Continued coverage of Kimi K3.1 Pro open weights (already published by AgentLab on 2026-11-04)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+          "publishedAt": "2026-11-02T04:13:51Z",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/TommyBeFamous/status/2118577350883348725",
+          "publishedAt": "2026-11-06T05:32:56Z",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 70,
+        "technicalDepth": 60,
+        "reproducibility": 85,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 67.75 < 80. Duplicate of PR #24."
+    },
+    {
+      "id": "c20261106-ernie-55-followon",
+      "title": "Continued coverage of Baidu ERNIE-5.5-Flash-Base open weights (eligible runner-up on 2026-11-05; no new release in this window)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Base",
+          "publishedAt": "2026-11-05",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/tsnmediahub/status/2118455854970089651",
+          "publishedAt": "2026-11-05T21:30:09Z",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 65,
+        "technicalDepth": 70,
+        "reproducibility": 80,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 66.25 < 80. Prior-day eligible runner-up; secondary coverage only."
+    },
+    {
+      "id": "c20261106-openai-cyber-followon",
+      "title": "Follow-on discussion of OpenAI autonomous cyber Linux pipeline / GPT-6 Cyber (already published PR #25)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+          "publishedAt": "2026-11-04",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/BestBlogsDev/status/2118510817582940669",
+          "publishedAt": "2026-11-06T01:08:33Z",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 60,
+        "technicalDepth": 55,
+        "reproducibility": 40,
+        "credibility": 95
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 55.0 < 80. Duplicate of PR #25."
+    },
+    {
+      "id": "c20261106-hf-ml-intern-slack",
+      "title": "Hugging Face open-source ML Intern available as installable Slack bot",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/huggingface/status/2118430862949945612",
+          "publishedAt": "2026-11-05T19:50:50Z",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 72,
+        "technicalDepth": 50,
+        "reproducibility": 80,
+        "credibility": 92
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 62.7 < 80. Incremental productization."
+    },
+    {
+      "id": "c20261106-openhands-v137",
+      "title": "OpenHands v1.37.0 release (tracked agent framework, incremental)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.37.0",
+          "publishedAt": "2026-11-06T12:54:14Z",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 55,
+        "technicalDepth": 55,
+        "reproducibility": 90,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 59.25 < 80. Routine framework release.",
+      "repository": {
+        "language": "Python",
+        "stars": null,
+        "license": null,
+        "commit": null
+      }
+    },
+    {
+      "id": "c20261106-unsloth-v0916",
+      "title": "unsloth v0.1.916-beta: Large Performance Fixes",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.916-beta",
+          "publishedAt": "2026-11-06T14:43:33Z",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 50,
+        "technicalDepth": 55,
+        "reproducibility": 88,
+        "credibility": 88
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 56.0 < 80. Incremental tooling release."
+    },
+    {
+      "id": "c20261106-transformers-v5222",
+      "title": "huggingface/transformers v5.22.2 patch release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/huggingface/transformers/releases/tag/v5.22.2",
+          "publishedAt": "2026-11-06T15:43:27Z",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 40,
+        "technicalDepth": 45,
+        "reproducibility": 95,
+        "credibility": 95
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 51.75 < 80. Patch release."
+    },
+    {
+      "id": "c20261106-openai-python-v347",
+      "title": "openai/openai-python v3.47.0",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/openai/openai-python/releases/tag/v3.47.0",
+          "publishedAt": "2026-11-05T18:04:10Z",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 28,
+        "interestingness": 35,
+        "technicalDepth": 40,
+        "reproducibility": 95,
+        "credibility": 95
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 48.9 < 80. SDK bump."
+    },
+    {
+      "id": "c20261106-anthropic-sdk-v26",
+      "title": "anthropics/anthropic-sdk-python v2.6.0",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.6.0",
+          "publishedAt": "2026-11-05T18:58:47Z",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 28,
+        "interestingness": 35,
+        "technicalDepth": 40,
+        "reproducibility": 95,
+        "credibility": 95
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 48.9 < 80. SDK bump."
+    },
+    {
+      "id": "c20261106-bytedance-cola2",
+      "title": "ByteDance-Seed/Cola2 model card created in window (likes=6)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/ByteDance-Seed/Cola2",
+          "publishedAt": "2026-11-06T06:59:36Z",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 55,
+        "technicalDepth": 50,
+        "reproducibility": 70,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 53.75 < 80. HF createdAt in window but low signal."
+    },
+    {
+      "id": "c20261106-internlm-sage-sciperception",
+      "title": "internlm/Sage-SciPerception HF + GitHub: scientific perception toolkit for LMs",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/internlm/Sage-SciPerception",
+          "publishedAt": "2026-11-06T07:34:30Z",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/InternLM/Sage-SciPerception",
+          "publishedAt": "2026-11-06",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 60,
+        "technicalDepth": 55,
+        "reproducibility": 75,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 58.75 < 80. Niche scientific perception release."
+    },
+    {
+      "id": "c20261106-tencent-hy4-followup",
+      "title": "Tencent Hy4 continued ranking/API promotion (open weights still pending)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/TencentHunyuan/status/2118634166107754690",
+          "publishedAt": "2026-11-06T09:18:42Z",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/TencentHunyuan/status/2118683762288697387",
+          "publishedAt": "2026-11-06T12:35:46Z",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 70,
+        "technicalDepth": 55,
+        "reproducibility": 50,
+        "credibility": 88
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 59.8 < 80. Follow-on marketing; open weights not in this window."
+    },
+    {
+      "id": "c20261106-sshole-openssh",
+      "title": "oz9un/sshole: report that musl OpenSSH accepted any 257+ char password for empty-password accounts since 2016",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/oz9un/sshole",
+          "publishedAt": "2026-11-06",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 75,
+        "technicalDepth": 60,
+        "reproducibility": 85,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 67.0 < 80. Security curiosity repo; not an AI breakthrough.",
+      "repository": {
+        "language": "Shell",
+        "stars": 168,
+        "license": "MIT",
+        "commit": null
+      }
+    },
+    {
+      "id": "c20261106-arxiv-261108438",
+      "title": "Understanding AI from the Inside: The State of Mechanistic Interpretability for AI Safety",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.08438",
+          "publishedAt": "2026-11-05T18:30:54Z",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 62,
+        "interestingness": 78,
+        "technicalDepth": 80,
+        "reproducibility": 70,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 73.1 < 80. In-window arXiv preprint (cs.AI/LG/CL/MA/RO API totalResults=85)."
+    },
+    {
+      "id": "c20261106-arxiv-261108417",
+      "title": "Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.08417",
+          "publishedAt": "2026-11-05T18:18:39Z",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 58,
+        "interestingness": 75,
+        "technicalDepth": 72,
+        "reproducibility": 80,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 71.05 < 80. In-window arXiv preprint (cs.AI/LG/CL/MA/RO API totalResults=85)."
+    },
+    {
+      "id": "c20261106-arxiv-261108478",
+      "title": "Scientist World: Grow a Research World for AI-Scientists",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.08478",
+          "publishedAt": "2026-11-05T18:58:17Z",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 78,
+        "technicalDepth": 70,
+        "reproducibility": 65,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 69.25 < 80. In-window arXiv preprint (cs.AI/LG/CL/MA/RO API totalResults=85)."
+    },
+    {
+      "id": "c20261106-arxiv-261108483",
+      "title": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.08483",
+          "publishedAt": "2026-11-05T18:59:29Z",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 72,
+        "technicalDepth": 68,
+        "reproducibility": 65,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 65.85 < 80. In-window arXiv preprint (cs.AI/LG/CL/MA/RO API totalResults=85)."
+    },
+    {
+      "id": "c20261106-arxiv-261108452",
+      "title": "ReproBridge: Building Reproducibility into ML Research Artifacts",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.08452",
+          "publishedAt": "2026-11-05T18:45:36Z",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 52,
+        "interestingness": 70,
+        "technicalDepth": 68,
+        "reproducibility": 85,
+        "credibility": 82
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 67.65 < 80. In-window arXiv preprint (cs.AI/LG/CL/MA/RO API totalResults=85)."
+    },
+    {
+      "id": "c20261106-arxiv-261108472",
+      "title": "XStack: A Benchmark for ML Repo Migration",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.08472",
+          "publishedAt": "2026-11-05T18:55:54Z",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 68,
+        "technicalDepth": 65,
+        "reproducibility": 80,
+        "credibility": 82
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 65.2 < 80. In-window arXiv preprint (cs.AI/LG/CL/MA/RO API totalResults=85)."
+    },
+    {
+      "id": "c20261106-arxiv-261108281",
+      "title": "Multimodal-SEA: Benchmarking AI Agent Security under Multimodal Social Engineering Attacks",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.08281",
+          "publishedAt": "2026-11-05T16:46:00Z",
+          "retrievedAt": "2026-11-07T01:07:22+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 74,
+        "technicalDepth": 68,
+        "reproducibility": 75,
+        "credibility": 82
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 68.05 < 80. In-window arXiv preprint (cs.AI/LG/CL/MA/RO API totalResults=85)."
+    }
+  ],
+  "selectedCandidateId": "c20261106-thinking-machines-inkling-2-small"
+}
