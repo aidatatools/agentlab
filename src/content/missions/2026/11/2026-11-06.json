@@ -141,7 +141,7 @@
   "tests": [
     {
       "name": "python scripts/validate_content.py",
-      "status": "failed",
+      "status": "passed",
       "artifact": ".reports/2026-11-06/validate.log"
     },
     {
@@ -151,12 +151,12 @@
     },
     {
       "name": "npm run check",
-      "status": "failed",
+      "status": "passed",
       "artifact": ".reports/2026-11-06/astro-check.log"
     },
     {
       "name": "npm run build",
-      "status": "failed",
+      "status": "passed",
       "artifact": ".reports/2026-11-06/astro-build.log"
     }
   ],
@@ -219,13 +219,13 @@
   ],
   "outcome": {
     "articleId": "article-20261106-001",
-    "githubCommit": "5237c23",
+    "githubCommit": "817767f",
     "githubPullRequest": "https://github.com/aidatatools/agentlab/pull/26",
     "deploymentUrl": null,
     "publicationStatus": "in_review"
   },
   "metrics": {
-    "durationSeconds": 830,
+    "durationSeconds": 853,
     "tokens": null,
     "estimatedCostUsd": null,
     "humanInterventions": 0
