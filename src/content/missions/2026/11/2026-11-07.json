@@ -1,0 +1,244 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "mission-20261107-001",
+  "date": "2026-11-07",
+  "timezone": "Asia/Taipei",
+  "status": "awaiting_review",
+  "objective": {
+    "goal": "Research, validate and propose one outstanding discovery for 2026-11-07 (Asia/Taipei).",
+    "sources": [
+      "x",
+      "github",
+      "arxiv",
+      "huggingface"
+    ],
+    "deliverables": [
+      "Verified candidate",
+      "Proposed article",
+      "Mission record",
+      "Pull request"
+    ]
+  },
+  "agent": {
+    "id": "grokbot",
+    "framework": "Grok Bot (AgentLab-bot on minim4.home)",
+    "model": "grok-bot",
+    "runId": "routine-9a1f041e-20261108T0109-minim4-daily-2026-11-07"
+  },
+  "selection": {
+    "candidatesEvaluated": 19,
+    "selectedCandidateId": "c20261107-deepmind-rsa1024-cryptanalysis",
+    "selectionScore": 86.7,
+    "rankingArtifact": "data/candidates/2026-11-07.json"
+  },
+  "skillsUsed": [
+    {
+      "skill": "x-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-x-20261107-001"
+    },
+    {
+      "skill": "github-discovery",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-gh-20261107-001"
+    },
+    {
+      "skill": "arxiv-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ax-20261107-001"
+    },
+    {
+      "skill": "fact-check",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-fc-20261107-001"
+    },
+    {
+      "skill": "article-writing",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-aw-20261107-001"
+    },
+    {
+      "skill": "image-curation",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ic-20261107-001"
+    },
+    {
+      "skill": "site-publishing",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-sp-20261107-001"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t1",
+      "action": "git checkout main, pull --ff-only (d108e40..9fa2fac), create branch daily/2026-11-07; GitHub App key file present",
+      "tool": "git",
+      "status": "success",
+      "startedAt": "2026-11-07T17:10:00Z",
+      "finishedAt": "2026-11-07T17:10:00Z",
+      "evidenceIds": [
+        "ev-git-branch"
+      ]
+    },
+    {
+      "id": "t2",
+      "action": "Discovery for window 2026-11-06T16:00Z..2026-11-07T16:00Z: X public search/news/lab-account search; GitHub search API (created in window) + tracked releases; arXiv export API (400 newest cs.AI/LG/CL, newest 2026-11-05T18:59:42Z, 0 in window); HF API for NousResearch",
+      "tool": "X MCP + curl (GitHub/arXiv/HF APIs)",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-x",
+        "ev-gh",
+        "ev-arxiv",
+        "ev-hf"
+      ]
+    },
+    {
+      "id": "t3",
+      "action": "Verify top leads: downloaded both DeepMind working-paper PDFs and read abstracts; read Pushmeet Kohli X Article; fetched Reflection Beam tech report; checked PSI post timestamp (14:05:12Z, out of window); HF Arete-27B createdAt/license",
+      "tool": "curl+pdftotext, WebFetch, X MCP",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-verify-deepmind",
+        "ev-verify-beam"
+      ]
+    },
+    {
+      "id": "t4",
+      "action": "Write 19-candidate JSON, article on DeepMind RSA-1024 cryptanalysis (86.7, published), original cover SVG, mission awaiting_review",
+      "tool": "python gen.py",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": "2026-11-07T17:13:42Z",
+      "evidenceIds": [
+        "ev-candidates",
+        "ev-article"
+      ]
+    },
+    {
+      "id": "t5",
+      "action": "Run validate_content, unittest, npm run check, npm run build",
+      "tool": "python+npm",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": "2026-11-07T17:15:04Z",
+      "evidenceIds": [
+        "ev-tests"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "python scripts/validate_content.py",
+      "status": "passed",
+      "artifact": ".reports/2026-11-07/validate.log"
+    },
+    {
+      "name": "python -m unittest discover -s tests -v",
+      "status": "passed",
+      "artifact": ".reports/2026-11-07/unittest.log"
+    },
+    {
+      "name": "npm run check",
+      "status": "passed",
+      "artifact": ".reports/2026-11-07/astro-check.log"
+    },
+    {
+      "name": "npm run build",
+      "status": "passed",
+      "artifact": ".reports/2026-11-07/astro-build.log"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-git-branch",
+      "type": "git",
+      "ref": "branch daily/2026-11-07 from main 9fa2fac"
+    },
+    {
+      "id": "ev-x",
+      "type": "other",
+      "ref": "X public search/news via Grok Bot X tools"
+    },
+    {
+      "id": "ev-gh",
+      "type": "http_response",
+      "ref": "https://api.github.com/search/repositories?q=created:2026-11-06T16:00:00Z..2026-11-07T16:00:00Z+stars:>30 (total_count 241, top results mostly spam installer repos)"
+    },
+    {
+      "id": "ev-arxiv",
+      "type": "http_response",
+      "ref": "export.arxiv.org API: 400 newest cs.AI/cs.LG/cs.CL, newest published 2026-11-05T18:59:42Z; 0 entries in window (weekend announcement lag)"
+    },
+    {
+      "id": "ev-hf",
+      "type": "http_response",
+      "ref": "https://huggingface.co/api/models/NousResearch/Arete-27B"
+    },
+    {
+      "id": "ev-verify-deepmind",
+      "type": "http_response",
+      "ref": "https://storage.googleapis.com/deepmind-media/papers/Faster_Affine_Root_and_a_1024bit%20Computation.pdf"
+    },
+    {
+      "id": "ev-verify-beam",
+      "type": "http_response",
+      "ref": "https://reflection.ai/documents/beam-model-tech-report"
+    },
+    {
+      "id": "ev-candidates",
+      "type": "file",
+      "ref": "data/candidates/2026-11-07.json"
+    },
+    {
+      "id": "ev-article",
+      "type": "file",
+      "ref": "src/content/articles/2026/11/deepmind-ai-agents-rsa-1024-cryptanalysis.md"
+    },
+    {
+      "id": "ev-tests",
+      "type": "file",
+      "ref": ".reports/2026-11-07/results.json"
+    }
+  ],
+  "outcome": {
+    "articleId": "article-20261107-001",
+    "githubCommit": null,
+    "githubPullRequest": null,
+    "deploymentUrl": null,
+    "publicationStatus": "in_review"
+  },
+  "metrics": {
+    "durationSeconds": null,
+    "tokens": null,
+    "estimatedCostUsd": null,
+    "humanInterventions": 0
+  },
+  "retrospective": {
+    "successes": [
+      "DeepMind RSA-1024 papers verified from primary PDFs inside window",
+      "Reflection Beam tech report verified as eligible runner-up"
+    ],
+    "failures": [
+      "PSI Aaronson-Ambainis proof (posted 2026-11-06T14:05Z) was missed by the 2026-11-06 run and is out of this window"
+    ],
+    "lessonsLearned": [
+      "arXiv API returns no in-window entries for Friday-16:00Z..Saturday windows because of the weekend announcement schedule",
+      "Late-afternoon UTC (Taipei evening) announcements can land after the previous run's X search; search lab/startup accounts up to the window end"
+    ],
+    "nextActions": [
+      "chuangtc review on DEV then merge",
+      "Treat PSI Aaronson-Ambainis coverage as out-of-window unless Jason asks for a backfill"
+    ]
+  }
+}
