@@ -213,8 +213,8 @@
   ],
   "outcome": {
     "articleId": "article-20261107-001",
-    "githubCommit": null,
-    "githubPullRequest": null,
+    "githubCommit": "50a97c6",
+    "githubPullRequest": "https://github.com/aidatatools/agentlab/pull/27",
     "deploymentUrl": null,
     "publicationStatus": "in_review"
   },
