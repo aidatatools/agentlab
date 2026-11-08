@@ -1,0 +1,271 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "mission-20261108-001",
+  "date": "2026-11-08",
+  "timezone": "Asia/Taipei",
+  "status": "awaiting_review",
+  "objective": {
+    "goal": "Discover, score, verify and propose one outstanding AI/agent discovery for 2026-11-08 (Asia/Taipei), or document a no-publish decision.",
+    "sources": [
+      "x",
+      "github",
+      "arxiv"
+    ],
+    "deliverables": [
+      "Verified candidate batch",
+      "No-publish decision (low-signal day)",
+      "Mission record",
+      "Pull request"
+    ]
+  },
+  "agent": {
+    "id": "grokbot",
+    "framework": "Grok Bot (AgentLab-bot on minim4.home)",
+    "model": "grok-bot",
+    "runId": "routine-9a1f041e-20261109T0106-minim4-daily-2026-11-08"
+  },
+  "selection": {
+    "candidatesEvaluated": 21,
+    "selectedCandidateId": null,
+    "selectionScore": null,
+    "rankingArtifact": "data/candidates/2026-11-08.json"
+  },
+  "skillsUsed": [
+    {
+      "skill": "x-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-x-20261108-001"
+    },
+    {
+      "skill": "github-discovery",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-gh-20261108-001"
+    },
+    {
+      "skill": "arxiv-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ax-20261108-001"
+    },
+    {
+      "skill": "fact-check",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-fc-20261108-001"
+    },
+    {
+      "skill": "code-review",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-cr-20261108-001"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t1",
+      "action": "git checkout main, pull --ff-only (fast-forward to c4fed1d), create branch daily/2026-11-08; tree clean; GitHub App key file present",
+      "tool": "git",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": "2026-11-08T17:06:38Z",
+      "evidenceIds": [
+        "ev-git-branch"
+      ]
+    },
+    {
+      "id": "t2",
+      "action": "Public X reads bounded to [2026-11-07T16:00Z, 2026-11-08T16:00Z): keyword searches (release/open-weights, paper/arXiv, huggingface/github links), lab timelines (Anthropic 11-06..11-08, OpenAI, Qwen, Google DeepMind, DeepSeek: 0 posts in window), a combined lab from: query (0 results), counts, X news (30 h), targeted follow-ups (Robocurve, Anthropic fiction study, Prefrontal LSA, HyperFlow, BLA, Sutton/Mollick)",
+      "tool": "x.search_posts_all/get_users_posts/search_news/get_posts_counts_recent",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-x-search"
+      ]
+    },
+    {
+      "id": "t3",
+      "action": "GitHub: search new repos created in window (>30 stars: mostly spam software-crack repos; topic:llm query), releases of 9 tracked repos (llama.cpp b12207/b12208, codex alpha in window)",
+      "tool": "gh api",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-gh"
+      ]
+    },
+    {
+      "id": "t4",
+      "action": "arXiv export API query (cs.AI OR cs.LG OR cs.CL) submittedDate 202611071600..202611081600: totalResults 0; latest cs.LG submission 2026-11-05T18:59:42Z (weekend announcement lag). First attempt failed locally because curl globbed the brackets; rerun with -g succeeded (HTTP 200)",
+      "tool": "curl",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-arxiv"
+      ]
+    },
+    {
+      "id": "t5",
+      "action": "Verify GitHub candidates (repo metadata, commits, READMEs for satmux, LaplacesScissors, studsmith; codex and llama.cpp release notes); X post timestamps for out-of-window checks",
+      "tool": "gh api",
+      "status": "success",
+      "startedAt": "2026-11-08T17:09:11Z",
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-verify"
+      ]
+    },
+    {
+      "id": "t6",
+      "action": "Write 21 deduplicated candidates, rank with rank_candidates.py (no candidate >=80; publicationAllowed false), scaffold mission with create_mission.py",
+      "tool": "python",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-ranking"
+      ]
+    },
+    {
+      "id": "t7",
+      "action": "Run validate_content, unittest, astro check, astro build",
+      "tool": "python+npm",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-validate",
+        "ev-unittest",
+        "ev-astro-check",
+        "ev-astro-build"
+      ]
+    },
+    {
+      "id": "t8",
+      "action": "Commit as agentlab-aidatatools-bot[bot], push daily/2026-11-08 with a GitHub App installation token, open PR to main and request review from chuangtc",
+      "tool": "git+gh (GitHub App installation token)",
+      "status": "pending",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-pr"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "python scripts/validate_content.py",
+      "status": "passed",
+      "artifact": ".reports/2026-11-08/validate.log"
+    },
+    {
+      "name": "python -m unittest discover -s tests -v",
+      "status": "passed",
+      "artifact": ".reports/2026-11-08/unittest.log"
+    },
+    {
+      "name": "npm run check",
+      "status": "passed",
+      "artifact": ".reports/2026-11-08/astro-check.log"
+    },
+    {
+      "name": "npm run build",
+      "status": "passed",
+      "artifact": ".reports/2026-11-08/astro-build.log"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-git-branch",
+      "type": "git",
+      "ref": "branch daily/2026-11-08 from origin/main@c4fed1d"
+    },
+    {
+      "id": "ev-x-search",
+      "type": "api_response",
+      "ref": "Public X reads; in-window posts used: @RichardSSutton (2119142310894334262), @emollick (2119140502746308674), @video_rebirth (2119435155932885085), @milhouscc (2119427329730515290), @GetConcordAI (2119130714201292816), @askalphaxiv (2119348608122449939), @shine_gupta17 (2119128898160206258), @aiSignalDrift (2119401819336052879), @Badris02 (2119265527474311442), @ZeeshhDecodes (2119402806390194210), @sakikoazu (2119399736277180535), @Kishore_1017 (2119271194306453894), @snowowl_media (2119225312726638925), @Leon99AI (2119415876021588037), @suayptalha (2119431017513488633), @Pawankalhans (2119414222111314253); out-of-window references: @video_rebirth (2118729711086076135, 2026-11-06T15:38Z), @GitGem (2117561120886333870, 2026-11-03), @ValleyEdgeDigit (2119079794252144657, 2026-11-07T14:49Z); counts query 1454 posts in window"
+    },
+    {
+      "id": "ev-gh",
+      "type": "http_response",
+      "ref": "GitHub search created:>=2026-11-07T16:00:00Z stars:>30 (top results satmux plus ~19 spam cracked-software repos created 2026-11-08T08:36-14:29Z); topic:llm query (studsmith, LaplacesScissors, others <20 stars); tracked releases in window: llama.cpp b12207/b12208, codex rust-v0.169.0-alpha.3"
+    },
+    {
+      "id": "ev-arxiv",
+      "type": "http_response",
+      "ref": ".reports/2026-11-08/arxiv.xml (totalResults 0 for submittedDate 202611071600-202611081600)"
+    },
+    {
+      "id": "ev-verify",
+      "type": "http_response",
+      "ref": ".reports/2026-11-08/verify.log (satmux created 2026-11-07T16:09:41Z, 870 stars, MIT; LaplacesScissors created 2026-11-07T18:11:57Z, 25 stars, MIT, single commit; studsmith created 2026-11-08T13:11:10Z, upload-only binary repo, no license; codex alpha.3 2026-11-07T19:31:41Z prerelease; llama.cpp b12208 2026-11-08T15:47:03Z)"
+    },
+    {
+      "id": "ev-ranking",
+      "type": "local_command",
+      "ref": ".reports/2026-11-08/ranking.json (proposedCandidateId null, publicationAllowed false; top Prefrontal LSA 76.0 (out of window), Anthropic fiction study 68.25 (out of window), HyperFlow H3 Flash 67.75 (out of window), satmux 61.75, Terminal-RSI 61.5 (out of window))"
+    },
+    {
+      "id": "ev-validate",
+      "type": "local_command",
+      "ref": "python scripts/validate_content.py: passed (Content OK: 16 article(s), 25 mission(s), 2 agent(s), 564 candidate(s).)"
+    },
+    {
+      "id": "ev-unittest",
+      "type": "local_command",
+      "ref": "python -m unittest discover -s tests -v: passed (Ran 6 tests, OK)"
+    },
+    {
+      "id": "ev-astro-check",
+      "type": "local_command",
+      "ref": "npm run check: passed (0 errors, 0 hints)"
+    },
+    {
+      "id": "ev-astro-build",
+      "type": "local_command",
+      "ref": "npm run build: passed ([build] Complete!)"
+    },
+    {
+      "id": "ev-pr",
+      "type": "github",
+      "ref": "pending"
+    }
+  ],
+  "outcome": {
+    "articleId": null,
+    "githubCommit": null,
+    "githubPullRequest": null,
+    "deploymentUrl": null,
+    "publicationStatus": "not_published"
+  },
+  "metrics": {
+    "durationSeconds": null,
+    "tokens": null,
+    "estimatedCostUsd": null,
+    "humanInterventions": 0
+  },
+  "retrospective": {
+    "successes": [
+      "Every X search and GitHub query was bounded to the window; out-of-window items (Prefrontal LSA, Anthropic fiction study, HyperFlow H3 Flash, Terminal-RSI) were kept as rejected with reasons instead of being promoted.",
+      "21 deduplicated candidates scored; no-publish decision documented instead of inventing a story."
+    ],
+    "failures": [
+      "arXiv API returned 0 results for the window (weekend lag), so no in-window arXiv candidates.",
+      "No major lab posted on X in the window; several paper candidates could only be seen through secondary posts and their papers were not resolved or read.",
+      "Primary source for the Anthropic fiction/self-preservation study was not located.",
+      "No code was run; X retrievedAt timestamps were not captured per call."
+    ],
+    "lessonsLearned": [
+      "Combined from: OR queries with many handles returned 0 results; per-account timeline reads are more reliable.",
+      "Pass curl -g for arXiv queries with bracketed date ranges."
+    ],
+    "nextActions": [
+      "Monday arXiv announcements will include weekend submissions; the 11-09 run should expect a larger arXiv batch.",
+      "Watch for an official OpenAI announcement behind the \"GPT-6.2 Sol\" reports and for Inkling 2 Small Apache weights (treat as duplicate of PR #26 coverage).",
+      "After merge and DigitalOcean deploy, run a real smoke test in a follow-up PR before promoting the mission."
+    ]
+  }
+}
