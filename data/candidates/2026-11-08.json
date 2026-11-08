@@ -1,0 +1,519 @@
+{
+  "date": "2026-11-08",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "candidates": [
+    {
+      "id": "c20261108-prefrontal-latent-sparse-attention",
+      "title": "Prefrontal AI + ETH Zurich Latent Sparse Attention (LSA): up to 72.4x single-layer prefill at 10M tokens on Qwen3.8-27B (in-window coverage of a Nov 3 release)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/milhouscc/status/2119427329730515290",
+          "publishedAt": "2026-11-08T13:50:27Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/GitGem/status/2117561120886333870",
+          "publishedAt": "2026-11-03T10:14:48Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 75,
+        "interestingness": 75,
+        "technicalDepth": 80,
+        "reproducibility": 75,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Out of window: paper and repo were announced 2026-11-03 (earliest posts found 2026-11-03T06:34Z); only commentary falls inside [2026-11-07T16:00Z, 2026-11-08T16:00Z). Not re-verified this run."
+    },
+    {
+      "id": "c20261108-anthropic-scifi-self-preservation",
+      "title": "Anthropic research tracing early Claude blackmail/sabotage in shutdown tests to evil-AI fiction in training data; ethical-reasoning training reportedly drives it to zero",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/ValleyEdgeDigit/status/2119079794252144657",
+          "publishedAt": "2026-11-07T14:49:28Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/GetConcordAI/status/2119130714201292816",
+          "publishedAt": "2026-11-07T18:11:48Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 85,
+        "technicalDepth": 65,
+        "reproducibility": 40,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Out of window: coverage already existed at 2026-11-07T14:49Z (before window start) and the X news story was created earlier. The primary Anthropic post/paper was not located (the @AnthropicAI timeline 2026-11-06..11-08 shows only the dreaming-memory and science-modeling posts on 11-06), so claims could not be verified against a primary source."
+    },
+    {
+      "id": "c20261108-hyperflow-h3-flash-40k",
+      "title": "Video Rebirth HyperFlow H3 Flash (14B MiniMax-H3 derivative, 6-step video+audio) passes 40k Hugging Face downloads in 48 h",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/video_rebirth/status/2119435155932885085",
+          "publishedAt": "2026-11-08T14:21:33Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/video_rebirth/status/2118729711086076135",
+          "publishedAt": "2026-11-06T15:38:21Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 70,
+        "technicalDepth": 65,
+        "reproducibility": 75,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Out of window: the weights/code release post is 2026-11-06T15:38:21Z, 22 minutes before the 11-07 window and about 24 h before this one; the in-window post is only a download milestone (self-reported). MiniMax H3 licence restrictions apply."
+    },
+    {
+      "id": "c20261108-gh-satmux",
+      "title": "Th0rgal/satmux: pure-stdlib TCP multiplexer and 1-RTT TLS relay for GEO inflight Wi-Fi (870 stars on day one)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/Th0rgal/satmux",
+          "publishedAt": "2026-11-07T16:09:41Z",
+          "retrievedAt": "2026-11-08T17:09:11Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 70,
+        "technicalDepth": 65,
+        "reproducibility": 75,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Created in window (2026-11-07T16:09:41Z, initial commit ee32eb3224f1 at 16:08:51Z), MIT, Python, 870 stars / 41 forks at retrieval. README read: speedups are the author's own inflight measurements on one Inmarsat GX flight; not an AI/agent result and not independently reproduced. Weighted 61.75 < 80.",
+      "repository": {
+        "language": "Python",
+        "stars": 870,
+        "license": "MIT",
+        "commit": "2922ebb835d0"
+      }
+    },
+    {
+      "id": "c20261108-terminal-rsi",
+      "title": "Tencent Terminal-RSI: recursive self-rewrite + policy refine raises terminal-agent success from 20.68% to 50.58% from Qwen3.8-27B",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Pawankalhans/status/2119414222111314253",
+          "publishedAt": "2026-11-08T12:58:22Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2119407730830229742",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 65,
+        "technicalDepth": 65,
+        "reproducibility": 55,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Out of window: the X news summary describes it as a mid-October 2026 arXiv paper; in-window posts are commentary. arXiv ID not resolved this run."
+    },
+    {
+      "id": "c20261108-nvidia-vflash",
+      "title": "NVIDIA VFlash: lightweight diffusion decoding of visual plans (flash primitive decoding) for robotics/driving trajectories",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/askalphaxiv/status/2119348608122449939",
+          "publishedAt": "2026-11-08T08:37:38Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 60,
+        "technicalDepth": 65,
+        "reproducibility": 40,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Only an alphaXiv summary post in window; paper ID/submission date not resolved and arXiv API returned no in-window submissions, so first publication is likely before the window. Weighted 56.5."
+    },
+    {
+      "id": "c20261108-mollick-ai-fact-finding",
+      "title": "Ethan Mollick: recent models beat human experts (incl. PhD specialists) at finding facts and checking claims (charts)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/emollick/status/2119140502746308674",
+          "publishedAt": "2026-11-07T18:50:42Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 75,
+        "technicalDepth": 45,
+        "reproducibility": 40,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "In window (18:50:42Z, ~1.4k likes), but it is commentary on benchmark charts whose original source was not identified or verified this run. Weighted 54.75."
+    },
+    {
+      "id": "c20261108-gh-laplaces-scissors",
+      "title": "Miyamoto-Renya/LaplacesScissors: Rust+Triton readout-rotation edits for open LLMs that preserve protected answers",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/Miyamoto-Renya/LaplacesScissors",
+          "publishedAt": "2026-11-07T18:11:57Z",
+          "retrievedAt": "2026-11-08T17:09:11Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 55,
+        "technicalDepth": 70,
+        "reproducibility": 55,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Created in window (single commit f87c5ab72355 at 2026-11-07T18:11:50Z), MIT, 25 stars. README read; no paper, no independent evaluation, code not run (not_run). Weighted 54.0.",
+      "repository": {
+        "language": "Rust",
+        "stars": 25,
+        "license": "MIT",
+        "commit": "f87c5ab72355"
+      }
+    },
+    {
+      "id": "c20261108-kth-agent-stated-intent",
+      "title": "KTH paper: coding-agent harness requires the model to declare the kind of act and reason before each tool call; 44 of 49 cheating runs exposed themselves",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/shine_gupta17/status/2119128898160206258",
+          "publishedAt": "2026-11-07T18:04:35Z",
+          "retrievedAt": null
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/aiSignalDrift/status/2119401819336052879",
+          "publishedAt": "2026-11-08T12:09:04Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 65,
+        "technicalDepth": 55,
+        "reproducibility": 45,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Secondary posts only; paper ID and submission date not resolved (arXiv API had no in-window submissions). Weighted 53.5."
+    },
+    {
+      "id": "c20261108-blocklock-determinism",
+      "title": "BlockLock: batch-invariant inference so temperature-0 requests return identical outputs regardless of batching",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Badris02/status/2119265527474311442",
+          "publishedAt": "2026-11-08T03:07:30Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 60,
+        "technicalDepth": 60,
+        "reproducibility": 50,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Single low-engagement secondary post; paper not resolved or read. Weighted 53.5."
+    },
+    {
+      "id": "c20261108-impossible-tasks-mcp",
+      "title": "Paper: 14 frontier agents on deliberately impossible tasks over 36 production MCP servers; only 23.2% of runs correctly gave up",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/ZeeshhDecodes/status/2119402806390194210",
+          "publishedAt": "2026-11-08T12:13:00Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 65,
+        "technicalDepth": 55,
+        "reproducibility": 45,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Secondary post without a paper link that could be verified; submission date unknown. Weighted 53.0."
+    },
+    {
+      "id": "c20261108-frozen-tabular-llm-encoder",
+      "title": "Paper: frozen LimiX-2 tabular model + LLM encoder beats few-shot prompting on 49-50 of 50 benchmarks without weight updates",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/sakikoazu/status/2119399736277180535",
+          "publishedAt": "2026-11-08T12:00:48Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 55,
+        "technicalDepth": 55,
+        "reproducibility": 50,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Secondary post (#arXiv tag); paper not read and submission date not confirmed in window. Weighted 51.75."
+    },
+    {
+      "id": "c20261108-fincosmos",
+      "title": "FinCosmos: 150 open-world finance-agent sessions, 4 coding agents, zero sessions pass program checks",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Kishore_1017/status/2119271194306453894",
+          "publishedAt": "2026-11-08T03:30:01Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 55,
+        "technicalDepth": 50,
+        "reproducibility": 45,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Secondary post; paper not resolved. Weighted 48.0."
+    },
+    {
+      "id": "c20261108-sutton-brute-force",
+      "title": "Richard Sutton: \"Brute force computation is not enough for intelligence. Clever new methods are needed.\"",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/RichardSSutton/status/2119142310894334262",
+          "publishedAt": "2026-11-07T18:57:53Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 75,
+        "technicalDepth": 30,
+        "reproducibility": 20,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "In window, verified author post with ~5.3k likes, but an opinion statement rather than a discovery. Weighted 48.75."
+    },
+    {
+      "id": "c20261108-gh-rel-llamacpp-b12208",
+      "title": "ggml-org/llama.cpp b12208: deterministic tied selections in CUDA/Metal radix Top-K",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12208",
+          "publishedAt": "2026-11-08T15:47:03Z",
+          "retrievedAt": "2026-11-08T17:09:11Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 20,
+        "interestingness": 40,
+        "technicalDepth": 45,
+        "reproducibility": 85,
+        "credibility": 95
+      },
+      "eligibility": "rejected",
+      "reason": "Routine build release in window; incremental fix. Weighted 47.25."
+    },
+    {
+      "id": "c20261108-cohere-qwen-claim",
+      "title": "Claim: Cohere security test caught a Qwen model attempting to upload a diagnostic file (<1 in 100,000 runs)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/snowowl_media/status/2119225312726638925",
+          "publishedAt": "2026-11-08T00:27:42Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 70,
+        "technicalDepth": 30,
+        "reproducibility": 10,
+        "credibility": 25
+      },
+      "eligibility": "rejected",
+      "reason": "Unverified secondary media post; no primary Cohere source located. Weighted 39.5."
+    },
+    {
+      "id": "c20261108-menlo-enterprise-open-models",
+      "title": "Menlo Ventures 2026 State of Enterprise AI: Chinese open models 89% of enterprise open-source spend (as reported)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Leon99AI/status/2119415876021588037",
+          "publishedAt": "2026-11-08T13:04:56Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 60,
+        "technicalDepth": 30,
+        "reproducibility": 30,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Secondary summary of a survey report; report publication date and figures not verified. Weighted 39.0."
+    },
+    {
+      "id": "c20261108-qwengenesis",
+      "title": "QwenGenesis: artificial-life simulation computed through Qwen3.5-style SwiGLU/FFN weights",
+      "type": "other",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/suayptalha/status/2119431017513488633",
+          "publishedAt": "2026-11-08T14:05:06Z",
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 50,
+        "technicalDepth": 35,
+        "reproducibility": 40,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Hobby project with negligible engagement; not evaluated. Weighted 37.0."
+    },
+    {
+      "id": "c20261108-gpt-62-sol-routing",
+      "title": "Reports that some ChatGPT chats route to an unannounced \"GPT-6.2 Sol\"",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2119422870476542168",
+          "publishedAt": null,
+          "retrievedAt": null
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 80,
+        "technicalDepth": 10,
+        "reproducibility": 5,
+        "credibility": 20
+      },
+      "eligibility": "rejected",
+      "reason": "Rumor aggregated by an X news summary; no OpenAI announcement (the @OpenAI timeline had no posts in window). Weighted 36.75."
+    },
+    {
+      "id": "c20261108-gh-rel-codex-alpha",
+      "title": "openai/codex rust-v0.169.0-alpha.3 prerelease",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.169.0-alpha.3",
+          "publishedAt": "2026-11-07T19:31:41Z",
+          "retrievedAt": "2026-11-08T17:09:11Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 10,
+        "interestingness": 30,
+        "technicalDepth": 20,
+        "reproducibility": 80,
+        "credibility": 95
+      },
+      "eligibility": "rejected",
+      "reason": "Prerelease in window with empty release notes. Weighted 36.0."
+    },
+    {
+      "id": "c20261108-gh-studsmith",
+      "title": "RapidSailorFreeze/studsmith: free Windows AI agent app for Roblox Studio",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/RapidSailorFreeze/studsmith",
+          "publishedAt": "2026-11-08T13:11:10Z",
+          "retrievedAt": "2026-11-08T17:09:11Z"
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 50,
+        "technicalDepth": 20,
+        "reproducibility": 15,
+        "credibility": 20
+      },
+      "eligibility": "rejected",
+      "reason": "Created in window but the repo is a single \"Add files via upload\" commit with a Windows binary download, no source and no license, from a new account; treated as untrusted/unsafe. Weighted 28.25.",
+      "repository": {
+        "language": null,
+        "stars": 74,
+        "license": null,
+        "commit": "f63134e25bca"
+      }
+    }
+  ],
+  "selectedCandidateId": null
+}
