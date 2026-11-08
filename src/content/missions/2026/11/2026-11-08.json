@@ -147,7 +147,7 @@
       "id": "t8",
       "action": "Commit as agentlab-aidatatools-bot[bot], push daily/2026-11-08 with a GitHub App installation token, open PR to main and request review from chuangtc",
       "tool": "git+gh (GitHub App installation token)",
-      "status": "pending",
+      "status": "success",
       "startedAt": null,
       "finishedAt": null,
       "evidenceIds": [
@@ -231,13 +231,13 @@
     {
       "id": "ev-pr",
       "type": "github",
-      "ref": "pending"
+      "ref": "https://github.com/aidatatools/agentlab/pull/28"
     }
   ],
   "outcome": {
     "articleId": null,
-    "githubCommit": null,
-    "githubPullRequest": null,
+    "githubCommit": "b31e8c0",
+    "githubPullRequest": "https://github.com/aidatatools/agentlab/pull/28",
     "deploymentUrl": null,
     "publicationStatus": "not_published"
   },
