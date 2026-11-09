@@ -1,0 +1,257 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "mission-20261109-001",
+  "date": "2026-11-09",
+  "timezone": "Asia/Taipei",
+  "status": "awaiting_review",
+  "objective": {
+    "goal": "Research, validate and propose one outstanding discovery for 2026-11-09 (Asia/Taipei).",
+    "sources": [
+      "x",
+      "github",
+      "arxiv",
+      "huggingface"
+    ],
+    "deliverables": [
+      "Verified candidate",
+      "Proposed article",
+      "Mission record",
+      "Pull request"
+    ]
+  },
+  "agent": {
+    "id": "grokbot",
+    "framework": "Grok Bot (AgentLab-bot on minim4.home)",
+    "model": "grok-bot",
+    "runId": "routine-9a1f041e-20261110T0102-minim4-daily-2026-11-09"
+  },
+  "selection": {
+    "candidatesEvaluated": 22,
+    "selectedCandidateId": "c20261109-longcat-25-open-weights",
+    "selectionScore": 84.0,
+    "rankingArtifact": "data/candidates/2026-11-09.json"
+  },
+  "skillsUsed": [
+    {
+      "skill": "x-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-x-20261109-001"
+    },
+    {
+      "skill": "github-discovery",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-gh-20261109-001"
+    },
+    {
+      "skill": "arxiv-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ax-20261109-001"
+    },
+    {
+      "skill": "fact-check",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-fc-20261109-001"
+    },
+    {
+      "skill": "article-writing",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-aw-20261109-001"
+    },
+    {
+      "skill": "image-curation",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ic-20261109-001"
+    },
+    {
+      "skill": "site-publishing",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-sp-20261109-001"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t1",
+      "action": "git checkout main, pull --ff-only (c4fed1d..d2ae0c8), create branch daily/2026-11-09; GitHub App key file present",
+      "tool": "git",
+      "status": "success",
+      "startedAt": "2026-11-09T17:02:37Z",
+      "finishedAt": "2026-11-09T17:02:37Z",
+      "evidenceIds": [
+        "ev-git-branch"
+      ]
+    },
+    {
+      "id": "t2",
+      "action": "Discovery for window 2026-11-08T16:00Z..2026-11-09T16:00Z: X news search, keyword searches, counts, per-account timelines (OpenAI, Anthropic, Google DeepMind, Qwen, DeepSeek, OpenAI Devs, Pushmeet Kohli, Mistral, Meituan LongCat); GitHub search API (created in window) + tracked releases; arXiv export API (submittedDate query returned empty body; 400 newest cs.AI/LG/CL newest 2026-11-06T18:59:34Z, 0 in window); HF API",
+      "tool": "X MCP + curl (GitHub/arXiv/HF APIs)",
+      "status": "success",
+      "startedAt": "2026-11-09T17:02:37Z",
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-x",
+        "ev-gh",
+        "ev-arxiv",
+        "ev-hf"
+      ]
+    },
+    {
+      "id": "t3",
+      "action": "Verify LongCat-2.5: official X post timestamp, HF API (public, ungated, mit, 208 shards, commit history), LICENSE, anonymous HEAD of shard 1 (HTTP 200, 17146392392 bytes), model card and tech blog read in full",
+      "tool": "curl, WebFetch, X MCP",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-verify-longcat"
+      ]
+    },
+    {
+      "id": "t4",
+      "action": "Write 22-candidate JSON, article on LongCat-2.5 open weights (84.0, published), original cover SVG, mission awaiting_review",
+      "tool": "python gen.py",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": "2026-11-09T17:07:43Z",
+      "evidenceIds": [
+        "ev-candidates",
+        "ev-article"
+      ]
+    },
+    {
+      "id": "t5",
+      "action": "Run validate_content, unittest, npm run check, npm run build",
+      "tool": "python+npm",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": "2026-11-09T17:09:18Z",
+      "evidenceIds": [
+        "ev-tests"
+      ]
+    },
+    {
+      "id": "t6",
+      "action": "Commit as agentlab-aidatatools-bot[bot], push with short-lived installation token, open PR requesting chuangtc",
+      "tool": "git + GitHub API",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-pr"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "python scripts/validate_content.py",
+      "status": "passed",
+      "artifact": ".reports/2026-11-09/validate.log"
+    },
+    {
+      "name": "python -m unittest discover -s tests -v",
+      "status": "passed",
+      "artifact": ".reports/2026-11-09/unittest.log"
+    },
+    {
+      "name": "npm run check",
+      "status": "passed",
+      "artifact": ".reports/2026-11-09/astro-check.log"
+    },
+    {
+      "name": "npm run build",
+      "status": "passed",
+      "artifact": ".reports/2026-11-09/astro-build.log"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-git-branch",
+      "type": "git",
+      "ref": "branch daily/2026-11-09 from origin/main@d2ae0c8"
+    },
+    {
+      "id": "ev-x",
+      "type": "api_response",
+      "ref": "Public X reads via Grok Bot X tools; key posts: Meituan_LongCat 2119793531393040462 (2026-11-09T14:05:36Z), ArtificialAnlys 2119578471559213411, garrytan 2119492448200405110, gdb 2119561347805687848, OpenAIDevs 2119521359185478140, MistralAI 2119813326712520848/2119651192737259701; counts query 894 posts in window"
+    },
+    {
+      "id": "ev-gh",
+      "type": "http_response",
+      "ref": "GitHub search created:2026-11-08T16:00:00Z..2026-11-09T16:00:00Z stars:>30 (total 112, top GestaltX 1073 plus many spam installer repos), topic:llm (465), agent in:description stars:>10 (10); tracked releases in window: llama.cpp b12209-b12224 only"
+    },
+    {
+      "id": "ev-arxiv",
+      "type": "http_response",
+      "ref": ".reports/2026-11-09/arxiv_recent.xml (400 newest cs.AI/LG/CL, newest 2026-11-06T18:59:34Z; 0 in window, weekend submissions not yet announced)"
+    },
+    {
+      "id": "ev-hf",
+      "type": "http_response",
+      "ref": "https://huggingface.co/api/models/meituan-longcat/LongCat-2.5"
+    },
+    {
+      "id": "ev-verify-longcat",
+      "type": "http_response",
+      "ref": ".reports/2026-11-09/verify.log; https://longcat.ai/blog/longcat-2.5/; https://huggingface.co/meituan-longcat/LongCat-2.5/blob/main/LICENSE"
+    },
+    {
+      "id": "ev-candidates",
+      "type": "file",
+      "ref": "data/candidates/2026-11-09.json"
+    },
+    {
+      "id": "ev-article",
+      "type": "file",
+      "ref": "src/content/articles/2026/11/meituan-longcat-2-5-open-weights.md"
+    },
+    {
+      "id": "ev-tests",
+      "type": "file",
+      "ref": ".reports/2026-11-09/results.json"
+    },
+    {
+      "id": "ev-pr",
+      "type": "github",
+      "ref": "https://github.com/aidatatools/agentlab/pull/29"
+    }
+  ],
+  "outcome": {
+    "articleId": "article-20261109-001",
+    "githubCommit": "63e5f58",
+    "githubPullRequest": "https://github.com/aidatatools/agentlab/pull/29",
+    "deploymentUrl": null,
+    "publicationStatus": "in_review"
+  },
+  "metrics": {
+    "durationSeconds": null,
+    "tokens": null,
+    "estimatedCostUsd": null,
+    "humanInterventions": 0
+  },
+  "retrospective": {
+    "successes": [
+      "LongCat-2.5 weights release verified from the official X post, Hugging Face API/LICENSE and an anonymous shard download check inside the window",
+      "22 candidates scored with out-of-window and secondary-only items kept as rejected with reasons"
+    ],
+    "failures": [
+      "arXiv submittedDate query returned an empty body over http; newest-400 fallback showed 0 in-window papers (Monday announcement not yet out)",
+      "Several research leads (RoboHarm, XStack, memory-note study, Vimoo) only reachable via secondary X posts; primaries not resolved",
+      "No code or model was run; X retrievedAt timestamps are per batch, not per call"
+    ],
+    "lessonsLearned": [
+      "A model previously rejected as API-only can qualify when its weights go public; check the official account for 'releasing the weights' posts and confirm with HF private/gated flags plus a shard HEAD request",
+      "Use https for export.arxiv.org; the http endpoint returned an empty body this run"
+    ],
+    "nextActions": [
+      "chuangtc review on DEV then merge",
+      "Treat further LongCat-2.5 coverage (GPU support, quantizations) as duplicate unless materially new",
+      "After merge and DigitalOcean deploy, run a real smoke test in a follow-up PR before promoting the mission"
+    ]
+  }
+}

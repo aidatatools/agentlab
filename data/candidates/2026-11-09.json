@@ -1,0 +1,565 @@
+{
+  "date": "2026-11-09",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "candidates": [
+    {
+      "id": "c20261109-longcat-25-open-weights",
+      "title": "Meituan releases LongCat-2.5 open weights under MIT: 1.6T-total / ~48B-active natively multimodal MoE for long-horizon agentic coding (BF16 + W4A4 repos on Hugging Face)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Meituan_LongCat/status/2119793531393040462",
+          "publishedAt": "2026-11-09T14:05:36Z",
+          "retrievedAt": "2026-11-10T01:07:43+08:00"
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/meituan-longcat/LongCat-2.5",
+          "publishedAt": "2026-11-04T11:48:50Z",
+          "retrievedAt": "2026-11-10T01:07:43+08:00"
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/meituan-longcat/LongCat-2.5-W4A4",
+          "publishedAt": "2026-11-04T13:50:12Z",
+          "retrievedAt": "2026-11-10T01:07:43+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://longcat.ai/blog/longcat-2.5/",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-10T01:07:43+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/Meituan_LongCat/status/2117264311714537633",
+          "publishedAt": "2026-11-02T14:35:23Z",
+          "retrievedAt": "2026-11-10T01:07:43+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 78,
+        "interestingness": 88,
+        "technicalDepth": 82,
+        "reproducibility": 88,
+        "credibility": 90
+      },
+      "eligibility": "eligible",
+      "reason": "Weighted 84.0. >= 80, selected. Official 'We're releasing the weights for LongCat-2.5 today ... Released under MIT' post at 2026-11-09T14:05:36Z, inside [2026-11-08T16:00Z, 2026-11-09T16:00Z). Hugging Face API: repo public (private=false, gated=false), license mit, 208 safetensors shards (shard 1 HTTP 200, 17,146,392,392 bytes), safetensors param count 1,779,752,648,320 (BF16+F32; card says 1.6T, difference not explained). Repo created 2026-11-04 and shards uploaded 2026-11-05 while private; model card updated 2026-11-09T11:38:03Z. LICENSE file read (MIT, Copyright 2026 Meituan). Tech blog read in full (visual RVQ discrete tokens, long-horizon agentic RL, multi-teacher OPD, domestic-accelerator training, bitwise train/inference logprob alignment, W4A4 +43.3% prefill / +42.77% decode vs W8A8). Model launched API-only on 2026-11-02 and was rejected by the 11-02/11-03 runs for lacking weights, so the weights release is the new in-window event. Benchmarks are Meituan self-reported; model not run."
+    },
+    {
+      "id": "c20261109-aa-decision-index-v2",
+      "title": "Artificial Analysis Decision Index v2: new proprietary evaluation and calibration-adjusted Decision Score",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/ArtificialAnlys/status/2119578471559213411",
+          "publishedAt": "2026-11-08T23:51:02Z",
+          "retrievedAt": "2026-11-10T01:07:43+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 70,
+        "technicalDepth": 65,
+        "reproducibility": 55,
+        "credibility": 88
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 64.05. < 80. In window; benchmark/leaderboard update, private datasets limit reproducibility."
+    },
+    {
+      "id": "c20261109-swantale-tech-report",
+      "title": "SwanTale: unified multi-speaker speech and audio generation (Swan series technical report)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/AaronZ345/status/2119637642602263021",
+          "publishedAt": "2026-11-09T03:46:09Z",
+          "retrievedAt": "2026-11-10T01:07:43+08:00"
+        },
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2608.02023",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-10T01:07:43+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 70,
+        "technicalDepth": 72,
+        "reproducibility": 55,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 65.15. < 80. X share in window, but the report carries arXiv ID 2608.02023 (first submitted before the window); abstract not re-read; no weights confirmed."
+    },
+    {
+      "id": "c20261109-vimoo-1-open-weights",
+      "title": "Vimoo 1.0 open-weight T2V/I2V video models (11.7B dual-stream MMDiT on Wan 2.2 VAE), as reported on X",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/VORTEX_Promos/status/2119500443831169516",
+          "publishedAt": "2026-11-08T18:40:58Z",
+          "retrievedAt": "2026-11-10T01:07:43+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://vimoo.ai/vimoo-docs/models",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-10T01:07:43+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 72,
+        "technicalDepth": 60,
+        "reproducibility": 70,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 63.0. < 80. Only a secondary promotional post found in window; no Hugging Face org located under Vimoo/vimoo-ai, release date and licence not verified."
+    },
+    {
+      "id": "c20261109-apex-35b-v1",
+      "title": "Apex Intelligence Apex-35B-V1.0 (Qwen3.6-35B-A3B post-train, Apache-2.0)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/cutetoxicguy/status/2119482583851438195",
+          "publishedAt": "2026-11-08T17:30:00Z",
+          "retrievedAt": "2026-11-10T01:07:43+08:00"
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0",
+          "publishedAt": "2026-10-28T09:58:45Z",
+          "retrievedAt": "2026-11-10T01:07:43+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 70,
+        "technicalDepth": 60,
+        "reproducibility": 80,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 64.0. < 80 and out of window: HF repo created 2026-10-28; in-window post is secondary coverage; benchmarks developer-reported."
+    },
+    {
+      "id": "c20261109-garrytan-harness-evals",
+      "title": "Garry Tan open-source eval of seven coding-agent harnesses with frontier models (pass rates 71-79%)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/garrytan/status/2119492448200405110",
+          "publishedAt": "2026-11-08T18:09:12Z",
+          "retrievedAt": "2026-11-10T01:07:43+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 75,
+        "technicalDepth": 55,
+        "reproducibility": 65,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 60.0. < 80. In window; informal eval thread, 20 tasks, results shown as images only."
+    },
+    {
+      "id": "c20261109-robocurve-roboharm",
+      "title": "Robocurve RoboHarm: edited video makes frontier VLA/LLM-driven robot arms attempt harmful actions (97% with edited footage)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2118887406934122605",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-10T01:07:43+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 80,
+        "technicalDepth": 55,
+        "reproducibility": 40,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 60.0. < 80. Known only from an X news summary (updated 2026-11-08T18:50Z); primary paper/post not located, publication time unverified."
+    },
+    {
+      "id": "c20261109-princeton-xstack",
+      "title": "Princeton XStack: coding agents porting whole PyTorch repos to JAX (31% pass rate), as summarised on X",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/eltc9584/status/2119791360572338441",
+          "publishedAt": "2026-11-09T13:56:58Z",
+          "retrievedAt": "2026-11-10T01:07:43+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 65,
+        "technicalDepth": 60,
+        "reproducibility": 50,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 55.25. < 80. Secondary X Article only; primary paper not resolved."
+    },
+    {
+      "id": "c20261109-memory-note-backfire",
+      "title": "Study: saved agent memory notes ('don't ask, just do it') raise unchecked actions from 0.5% to 80.1%, as summarised on X",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Extravagantor/status/2119644151419740633",
+          "publishedAt": "2026-11-09T04:12:01Z",
+          "retrievedAt": "2026-11-10T01:07:43+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 72,
+        "technicalDepth": 50,
+        "reproducibility": 40,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 53.0. < 80. Secondary X Article; primary paper not resolved."
+    },
+    {
+      "id": "c20261109-mistral-studio-agents",
+      "title": "Mistral Studio: managed agents and apps (public preview), workflows GA on Mistral Cloud",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/MistralAI/status/2119813326712520848",
+          "publishedAt": "2026-11-09T15:24:15Z",
+          "retrievedAt": "2026-11-10T01:07:43+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 68,
+        "technicalDepth": 50,
+        "reproducibility": 35,
+        "credibility": 92
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 56.45. < 80. In window; enterprise product rollout, closed platform."
+    },
+    {
+      "id": "c20261109-mistral-voxtral3-live",
+      "title": "Mistral: Voxtral 3 Transcribe live real-time captioning at AI Engineer Paris with context biasing",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/MistralAI/status/2119651192737259701",
+          "publishedAt": "2026-11-09T04:40:00Z",
+          "retrievedAt": "2026-11-10T01:07:43+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 62,
+        "technicalDepth": 45,
+        "reproducibility": 40,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 51.5. < 80. In window; deployment showcase of an existing model."
+    },
+    {
+      "id": "c20261109-aa-personalitybench",
+      "title": "Artificial Analysis AA-PersonalityBench trait correlations",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/ArtificialAnlys/status/2119813983536283923",
+          "publishedAt": "2026-11-09T15:26:52Z",
+          "retrievedAt": "2026-11-10T01:07:43+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 60,
+        "technicalDepth": 45,
+        "reproducibility": 50,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 50.5. < 80. In window; benchmark analysis post."
+    },
+    {
+      "id": "c20261109-deepseek-harness-dau",
+      "title": "DeepSeek Harness reported at 1.54M daily active users and ~92T tokens/day",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/v_shakthi/status/2119599331540132257",
+          "publishedAt": "2026-11-09T01:13:55Z",
+          "retrievedAt": "2026-11-10T01:07:43+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 72,
+        "technicalDepth": 30,
+        "reproducibility": 40,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 49.5. < 80. Usage metric (as of 2026-11-04 per posts), secondary coverage; primary DeepSeek statement not read."
+    },
+    {
+      "id": "c20261109-gdb-engine-of-discovery",
+      "title": "Greg Brockman: frontier models with test-time compute 'becoming the engine of scientific discovery'",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/gdb/status/2119561347805687848",
+          "publishedAt": "2026-11-08T22:42:59Z",
+          "retrievedAt": "2026-11-10T01:07:43+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 75,
+        "technicalDepth": 20,
+        "reproducibility": 10,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 45.25. < 80. In window; commentary. The referenced OpenAI Navier-Stokes result dates from 2026-09 and is out of window."
+    },
+    {
+      "id": "c20261109-openai-devs-tomorrow",
+      "title": "OpenAI Developers 'Tomorrow.' teaser (reported as ModRetro/Codex hardware tie-in)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/OpenAIDevs/status/2119521359185478140",
+          "publishedAt": "2026-11-08T20:04:05Z",
+          "retrievedAt": "2026-11-10T01:07:43+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 20,
+        "interestingness": 70,
+        "technicalDepth": 5,
+        "reproducibility": 5,
+        "credibility": 95
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 34.75. < 80. Teaser with no content; the launch itself was not observed inside the window."
+    },
+    {
+      "id": "c20261109-coreweave-wayve",
+      "title": "CoreWeave multi-year deal to train Wayve AI Driver models on Blackwell GPUs",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2119783883948396631",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-10T01:07:43+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 55,
+        "technicalDepth": 20,
+        "reproducibility": 10,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 38.25. < 80. Business deal, not research; seen via X news summary only."
+    },
+    {
+      "id": "c20261109-gh-image-to-sculpt",
+      "title": "gokayfem/image-to-sculpt: coding-agent skill turning one image into a 3D sculpt with Blender replay",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/gokayfem/image-to-sculpt",
+          "publishedAt": "2026-11-08T21:32:08Z",
+          "retrievedAt": "2026-11-10T01:07:43+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 65,
+        "technicalDepth": 55,
+        "reproducibility": 70,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 55.25. < 80. Created in window (171 stars at retrieval, MIT); agent skill, not a research result.",
+      "repository": {
+        "language": "Python",
+        "stars": 171,
+        "license": "MIT",
+        "commit": null
+      }
+    },
+    {
+      "id": "c20261109-gh-numbrone",
+      "title": "stevenmichaelthomas/numbrone: chief-of-staff router for per-project coding agents",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/stevenmichaelthomas/numbrone",
+          "publishedAt": "2026-11-08T21:30:51Z",
+          "retrievedAt": "2026-11-10T01:07:43+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 55,
+        "technicalDepth": 40,
+        "reproducibility": 65,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 45.5. < 80. Created in window (99 stars, MIT); orchestration tooling.",
+      "repository": {
+        "language": "Shell",
+        "stars": 99,
+        "license": "MIT",
+        "commit": null
+      }
+    },
+    {
+      "id": "c20261109-gh-bookleme",
+      "title": "bookleme/bookleme: compile a book into an Agent Skill with fidelity back-checking",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/bookleme/bookleme",
+          "publishedAt": "2026-11-09T03:29:27Z",
+          "retrievedAt": "2026-11-10T01:07:43+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 55,
+        "technicalDepth": 45,
+        "reproducibility": 65,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 46.0. < 80. Created in window (36 stars, MIT).",
+      "repository": {
+        "language": "Python",
+        "stars": 36,
+        "license": "MIT",
+        "commit": null
+      }
+    },
+    {
+      "id": "c20261109-gh-learn-from-lessons",
+      "title": "assassin808/learn-from-lessons: coding agents learn from user corrections",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/assassin808/learn-from-lessons",
+          "publishedAt": "2026-11-09T02:42:48Z",
+          "retrievedAt": "2026-11-10T01:07:43+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 55,
+        "technicalDepth": 40,
+        "reproducibility": 65,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 45.0. < 80. Created in window (22 stars, MIT).",
+      "repository": {
+        "language": "Python",
+        "stars": 22,
+        "license": "MIT",
+        "commit": null
+      }
+    },
+    {
+      "id": "c20261109-gh-gestaltx",
+      "title": "huamidev/GestaltX: MobileGestalt editor for iOS 27 (top new repo by stars in window)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/huamidev/GestaltX",
+          "publishedAt": "2026-11-09T05:15:48Z",
+          "retrievedAt": "2026-11-10T01:07:43+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 20,
+        "interestingness": 50,
+        "technicalDepth": 55,
+        "reproducibility": 60,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 44.0. < 80. Created in window (1,082 stars, GPL-3.0); not AI. Most other top new repos in window were spam installer repos and were not recorded.",
+      "repository": {
+        "language": "Swift",
+        "stars": 1082,
+        "license": "GPL-3.0",
+        "commit": null
+      }
+    },
+    {
+      "id": "c20261109-gh-rel-llamacpp",
+      "title": "ggml-org/llama.cpp builds b12209-b12224 released in window",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12224",
+          "publishedAt": "2026-11-09T13:52:29Z",
+          "retrievedAt": "2026-11-10T01:07:43+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 45,
+        "technicalDepth": 45,
+        "reproducibility": 85,
+        "credibility": 95
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 50.0. < 80. Routine tracked build releases (b12209 16:01:05Z ... b12224 13:52:29Z)."
+    }
+  ],
+  "selectedCandidateId": "c20261109-longcat-25-open-weights"
+}
