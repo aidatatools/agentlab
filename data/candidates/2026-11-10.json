@@ -1,0 +1,543 @@
+{
+  "date": "2026-11-10",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "selectedCandidateId": "c20261110-alphaproof-code-signal",
+  "candidates": [
+    {
+      "id": "c20261110-alphaproof-code-signal",
+      "title": "Google DeepMind AlphaProof Code: AI agents formally verify key security properties of Signal libsignal compiled AArch64 machine code in Lean; artifacts open-sourced",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://deepmind.google/blog/formal-verification-signal-protocol",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/pushmeet/status/2120127611137634376",
+          "publishedAt": "2026-11-10T12:13:07Z",
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/google-deepmind/code-verification",
+          "publishedAt": "2026-11-10T08:14:18Z",
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 92,
+        "interestingness": 90,
+        "technicalDepth": 88,
+        "reproducibility": 75,
+        "credibility": 93
+      },
+      "eligibility": "eligible",
+      "reason": "Weighted 88.25. >= 80, selected. Pushmeet Kohli announcement 2026-11-10T12:13:07Z and DeepMind blog dated 2026-11-10 are inside [2026-11-09T16:00Z, 2026-11-10T16:00Z). Blog read in full: Gemini Carbon-powered agents, >6M lines of Lean (secondary X posts say 3M; blog figure used), 4 weeks, ~1% flagged for human review, two reintroduced historical bugs yielded machine-checked insecurity proofs, Signal CTO Ehren Kret quoted. GitHub API: google-deepmind/code-verification public, created 2026-10-26 (private prep), single 'Initial commit' 2026-11-10T08:14:18Z, Apache-2.0 per README/LICENSE (GitHub shows NOASSERTION because LICENSE lists extra third-party terms; copied libsignal is AGPL-3.0-only), Lean ~443 MB by linguist, Lean v4.34.0 pin. README: symbolic (Dolev-Yao) and computational (game-based) proofs for libsignal v0.105.4 + spqr v1.6.0 compiled AArch64 in a CLI harness with hooked cryptographic primitives. docs/PAPER_MAP.md marks some results conditional (e.g. on KeyIndRoGap ROM assumption). Paper is a draft; not peer reviewed. Proofs not rebuilt by AgentLab (several hours, 15-34 GiB RAM)."
+    },
+    {
+      "id": "c20261110-claude-fable-52-fermat",
+      "title": "Anthropic Claude Fable 5.2 / Mythos 5.2 launch; 1,000 Fable 5.2 agents reproduce a Lean formalization of Fermat's Last Theorem in 28.7 hours",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/claudeai/status/2119867114450268322",
+          "publishedAt": "2026-11-09T18:57:59Z",
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 80,
+        "interestingness": 92,
+        "technicalDepth": 82,
+        "reproducibility": 45,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 78.65. < 80. In window (claudeai 18:57:59Z). Launch page and multi-agent blog read: formalization reproduces Anthropic's own September formalization of an existing proof (60 given statements, 47 proved lemmas supplied), closed model, Lean artifact release not found, all benchmarks self-reported. Strong runner-up."
+    },
+    {
+      "id": "c20261110-gemini-robotics-25",
+      "title": "Google DeepMind Gemini Robotics 2.5: hundreds of everyday skills, Apptronik/Mercedes-Benz proof of concept",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/GoogleDeepMind/status/2120169787896525104",
+          "publishedAt": "2026-11-10T15:00:42Z",
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 75,
+        "interestingness": 85,
+        "technicalDepth": 65,
+        "reproducibility": 30,
+        "credibility": 88
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 70.05. < 80. In window; closed model, demo-driven claims, no paper or weights checked."
+    },
+    {
+      "id": "c20261110-lingbot-touch",
+      "title": "Robbyant (Ant Group) LingBot-Touch: open tactile foundation model pretrained on ~5,000 h of heterogeneous tactile data (Apache-2.0 code and weights)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/robbyant_brain/status/2119870554056651004",
+          "publishedAt": "2026-11-09T19:11:40Z",
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/Robbyant/lingbot-touch",
+          "publishedAt": "2026-11-09T09:02:29Z",
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/robbyant/lingbot-touch-small",
+          "publishedAt": "2026-11-09T17:31:51Z",
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        },
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.12806",
+          "publishedAt": "2026-11-09T18:12:00Z",
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 72,
+        "interestingness": 78,
+        "technicalDepth": 80,
+        "reproducibility": 88,
+        "credibility": 82
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 78.5. < 80. In window; GitHub repo Apache-2.0, HF Tiny/Small weights, arXiv 2611.12806 abstract read; 26 real-robot tasks, gains self-reported."
+    },
+    {
+      "id": "c20261110-skild-steel",
+      "title": "Skild AI + NVIDIA open-source Steel rigid-body solver for Newton (up to 13x PhysX throughput, ~3x less GPU memory)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/SkildAI/status/2119844954893946999",
+          "publishedAt": "2026-11-09T17:29:56Z",
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/skild-ai/steel",
+          "publishedAt": "2026-11-09T08:21:50Z",
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://www.skild.ai/blogs/steel",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 68,
+        "interestingness": 75,
+        "technicalDepth": 78,
+        "reproducibility": 88,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 76.45. < 80. In window; Apache-2.0 repo exists; speedups self-reported, not run."
+    },
+    {
+      "id": "c20261110-nvidia-gr00t-2",
+      "title": "NVIDIA GR00T 2 open world-action model for humanoids at CoRL 2026",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/NVIDIARobotics/status/2119794454190006428",
+          "publishedAt": "2026-11-09T14:09:16Z",
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://research.nvidia.com/labs/gear/gr00t-2/",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 75,
+        "interestingness": 80,
+        "technicalDepth": 72,
+        "reproducibility": 45,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 72.65. Out of window: announced 2026-11-09T14:09:16Z, before 16:00Z start; code said to come in December."
+    },
+    {
+      "id": "c20261110-meta-muse-ember",
+      "title": "Meta Muse Ember: smallest, most efficient Muse model, 1M context, API only",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/AIatMeta/status/2119853591703998787",
+          "publishedAt": "2026-11-09T18:04:15Z",
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 72,
+        "technicalDepth": 55,
+        "reproducibility": 35,
+        "credibility": 88
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 59.55. < 80. In window; API-only product launch, benchmark claims via Artificial Analysis."
+    },
+    {
+      "id": "c20261110-openai-control-room",
+      "title": "OpenAI Control Room: central system to halt research workloads within 35 seconds",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/OpenAI/status/2119913172039868579",
+          "publishedAt": "2026-11-09T22:01:00Z",
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://openai.com/index/control-room/",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 78,
+        "technicalDepth": 60,
+        "reproducibility": 30,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 63.0. < 80. In window; internal safety infrastructure description, not reproducible."
+    },
+    {
+      "id": "c20261110-zonos3-mini",
+      "title": "Zyphra ZONOS3-Mini: open Apache-2.0 on-device TTS with voice cloning and word-level control",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/ZyphraAI/status/2119914895861076151",
+          "publishedAt": "2026-11-09T22:07:51Z",
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 72,
+        "technicalDepth": 68,
+        "reproducibility": 85,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 70.35. < 80. In window; weights claimed Apache-2.0; ZTTS2-Eval is Zyphra's own benchmark."
+    },
+    {
+      "id": "c20261110-arloop",
+      "title": "ARLoop: fully open pretrained looped transformers with Attention Residuals (ARLoop-1.2B)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/yuekun_yao/status/2119982422259622086",
+          "publishedAt": "2026-11-10T02:36:11Z",
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 62,
+        "interestingness": 70,
+        "technicalDepth": 75,
+        "reproducibility": 88,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 71.3. < 80. In window; full recipe claimed; paper/repo not independently opened this run."
+    },
+    {
+      "id": "c20261110-anthropic-ipo-roadshow",
+      "title": "Anthropic launches IPO roadshow",
+      "type": "other",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/AnthropicAI/status/2120117722230968385",
+          "publishedAt": "2026-11-10T11:33:49Z",
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://www.anthropic.com/news/roadshow-launch",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 20,
+        "interestingness": 80,
+        "technicalDepth": 10,
+        "reproducibility": 10,
+        "credibility": 95
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 39.0. < 80. Business news, not a technical discovery."
+    },
+    {
+      "id": "c20261110-underdog-woof-jp",
+      "title": "Underdog Woof Japanese: 40 MB in-browser TTS with two voices",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/UnderdogAI/status/2120018851773771889",
+          "publishedAt": "2026-11-10T05:00:56Z",
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 55,
+        "technicalDepth": 40,
+        "reproducibility": 50,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 47.25. < 80. Small product update."
+    },
+    {
+      "id": "c20261110-mach-studio",
+      "title": "Syzygy Research Mach Studio GA: local-first ADE for quantization research",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/syzygyeng/status/2119897178030456859",
+          "publishedAt": "2026-11-09T20:57:27Z",
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 45,
+        "technicalDepth": 45,
+        "reproducibility": 55,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 44.0. < 80. Product GA, low engagement."
+    },
+    {
+      "id": "c20261110-gh-ai-portals",
+      "title": "emollick/ai-portals (new repo, no description)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/emollick/ai-portals",
+          "publishedAt": "2026-11-09T18:59:43Z",
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 50,
+        "technicalDepth": 30,
+        "reproducibility": 60,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 44.0. < 80. Created in window, 94 stars, purpose undocumented."
+    },
+    {
+      "id": "c20261110-gh-ste80-humanizer",
+      "title": "Dodaios/ste80-humanizer: agent skill rewriting text toward ASD-STE100",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/Dodaios/ste80-humanizer",
+          "publishedAt": "2026-11-09T17:18:59Z",
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 55,
+        "technicalDepth": 35,
+        "reproducibility": 75,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 46.0. < 80. Prompt/skill repo, MIT, 273 stars."
+    },
+    {
+      "id": "c20261110-gh-busy",
+      "title": "MatiSolina/busy: team of AI bots with memory, tools and own computer",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/MatiSolina/busy",
+          "publishedAt": "2026-11-09T16:34:00Z",
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 50,
+        "technicalDepth": 40,
+        "reproducibility": 70,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 46.0. < 80. Apache-2.0 agent app, early."
+    },
+    {
+      "id": "c20261110-gh-line-art-animation",
+      "title": "JDhruv14/line-art-animation: Claude skill + TS library for animated line-art SVG",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/JDhruv14/line-art-animation",
+          "publishedAt": "2026-11-10T09:25:25Z",
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 50,
+        "technicalDepth": 35,
+        "reproducibility": 75,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 42.75. < 80. Small tooling repo."
+    },
+    {
+      "id": "c20261110-arxiv-fp4-rare-facts",
+      "title": "What the Loss Curve Misses: FP4 Pretraining Slows the Acquisition of Rare Facts",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.12832",
+          "publishedAt": "2026-11-09T18:30:41Z",
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 68,
+        "technicalDepth": 68,
+        "reproducibility": 60,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 62.6. < 80. Abstract read: NVFP4 needs 1.32-1.52x exposures vs BF16 for rare-fact recall at near-equal loss."
+    },
+    {
+      "id": "c20261110-arxiv-ai-peer-review",
+      "title": "How Well Does AI Peer Review Work? A Benchmark Built from 100 Planted Errors",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.12820",
+          "publishedAt": "2026-11-09T18:22:19Z",
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 70,
+        "technicalDepth": 60,
+        "reproducibility": 65,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 60.75. < 80. Abstract read: best system caught 71/100 planted errors, pooled 93."
+    },
+    {
+      "id": "c20261110-arxiv-swam",
+      "title": "SWAM: Scaling World Action Models with Cross-Modal Alignment",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.12870",
+          "publishedAt": "2026-11-09T18:55:04Z",
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 62,
+        "technicalDepth": 70,
+        "reproducibility": 50,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 61.5. < 80. Abstract read: ~47,000 h video pool, language-video alignment during action learning."
+    },
+    {
+      "id": "c20261110-arxiv-wicl",
+      "title": "World In-Context Learning for Agentic Robot Manipulation",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.12885",
+          "publishedAt": "2026-11-09T18:59:45Z",
+          "retrievedAt": "2026-11-11T00:52:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 60,
+        "technicalDepth": 65,
+        "reproducibility": 50,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 58.0. < 80. Abstract read; in-context transfer across scenes."
+    }
+  ]
+}

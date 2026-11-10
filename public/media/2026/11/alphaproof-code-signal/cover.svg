@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
+  <title id="t">AI agents proving properties of compiled machine code, illustrative</title>
+  <desc id="d">Abstract illustration: columns of machine-code lines flow into a grid of proof blocks that turn green with check marks, ending at a padlock. Not an official Google DeepMind or Signal image.</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0a1222"/><stop offset="100%" stop-color="#14233a"/></linearGradient></defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="17" fill="#8fb3e8" opacity="0.85">
+    <text x="70" y="150">ldr  x0, [sp, #16]</text><text x="70" y="182">eor  v1.16b, v1.16b, v2.16b</text><text x="70" y="214">bl   hkdf_expand</text><text x="70" y="246">cbz  w8, .Lreject</text><text x="70" y="278">stp  x29, x30, [sp, #-32]!</text><text x="70" y="310">ret</text>
+  </g>
+  <path d="M370 230 C 430 230, 430 315, 490 315" stroke="#5c7fb8" stroke-width="3" fill="none" stroke-dasharray="6 6"/>
+  <g>
+    <g fill="#1f6f53"><rect x="500" y="170" width="70" height="56" rx="8"/><rect x="582" y="170" width="70" height="56" rx="8"/><rect x="664" y="170" width="70" height="56" rx="8"/><rect x="500" y="238" width="70" height="56" rx="8"/><rect x="582" y="238" width="70" height="56" rx="8"/><rect x="500" y="306" width="70" height="56" rx="8"/><rect x="664" y="306" width="70" height="56" rx="8"/><rect x="582" y="374" width="70" height="56" rx="8"/><rect x="664" y="374" width="70" height="56" rx="8"/></g>
+    <g fill="#b38b2e"><rect x="664" y="238" width="70" height="56" rx="8"/><rect x="582" y="306" width="70" height="56" rx="8"/><rect x="500" y="374" width="70" height="56" rx="8"/></g>
+    <g stroke="#d9fbe9" stroke-width="5" fill="none" stroke-linecap="round"><path d="M520 198 l10 10 l20 -18"/><path d="M602 198 l10 10 l20 -18"/><path d="M684 198 l10 10 l20 -18"/><path d="M520 266 l10 10 l20 -18"/><path d="M602 266 l10 10 l20 -18"/><path d="M520 334 l10 10 l20 -18"/><path d="M684 334 l10 10 l20 -18"/><path d="M602 402 l10 10 l20 -18"/><path d="M684 402 l10 10 l20 -18"/></g>
+  </g>
+  <path d="M750 300 L 860 300" stroke="#5c7fb8" stroke-width="3" fill="none" stroke-dasharray="6 6"/>
+  <g transform="translate(880,210)"><path d="M40 80 V50 a60 60 0 0 1 120 0 V80" stroke="#e8eef8" stroke-width="16" fill="none"/><rect x="10" y="80" width="180" height="150" rx="18" fill="#2b4a7a" stroke="#e8eef8" stroke-width="4"/><circle cx="100" cy="145" r="18" fill="#e8eef8"/><rect x="93" y="150" width="14" height="40" rx="4" fill="#e8eef8"/></g>
+  <g font-family="ui-sans-serif, system-ui, sans-serif"><text x="70" y="540" font-size="30" fill="#e8eef8">compiled code  →  machine-checked proofs  →  security properties</text><text x="70" y="580" font-size="16" fill="#8fb3e8">AgentLab original illustration · not an official Google DeepMind or Signal image</text></g>
+</svg>
