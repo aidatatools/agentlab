@@ -1,0 +1,250 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "mission-20261110-001",
+  "date": "2026-11-10",
+  "timezone": "Asia/Taipei",
+  "status": "awaiting_review",
+  "objective": {
+    "goal": "Research, validate and propose one outstanding discovery for 2026-11-10 (Asia/Taipei).",
+    "sources": [
+      "x",
+      "github",
+      "arxiv"
+    ],
+    "deliverables": [
+      "Verified candidate",
+      "Proposed article",
+      "Mission record",
+      "Pull request"
+    ]
+  },
+  "agent": {
+    "id": "grokbot",
+    "framework": "Grok Bot (AgentLab-bot on minim4.home)",
+    "model": "grok-bot",
+    "runId": "routine-9a1f041e-20261111T0048-minim4-daily-2026-11-10"
+  },
+  "selection": {
+    "candidatesEvaluated": 21,
+    "selectedCandidateId": "c20261110-alphaproof-code-signal",
+    "selectionScore": 88.25,
+    "rankingArtifact": "data/candidates/2026-11-10.json"
+  },
+  "skillsUsed": [
+    {
+      "skill": "x-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-x-20261110-001"
+    },
+    {
+      "skill": "github-discovery",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-gh-20261110-001"
+    },
+    {
+      "skill": "arxiv-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ax-20261110-001"
+    },
+    {
+      "skill": "fact-check",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-fc-20261110-001"
+    },
+    {
+      "skill": "article-writing",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-aw-20261110-001"
+    },
+    {
+      "skill": "image-curation",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ic-20261110-001"
+    },
+    {
+      "skill": "site-publishing",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-sp-20261110-001"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t1",
+      "action": "git checkout main, pull --ff-only (d2ae0c8..4afcf02), create branch daily/2026-11-10; GitHub App key file present",
+      "tool": "git",
+      "status": "success",
+      "startedAt": "2026-11-10T16:48:14Z",
+      "finishedAt": "2026-11-10T16:48:14Z",
+      "evidenceIds": [
+        "ev-git-branch"
+      ]
+    },
+    {
+      "id": "t2",
+      "action": "Discovery for window 2026-11-09T16:00Z..2026-11-10T16:00Z: X news search, keyword searches, per-account timelines (Google DeepMind, Anthropic, AI at Meta, OpenAI, Zyphra, Skild AI, NVIDIA Robotics, Sundar Pichai), AlphaProof Code / Fable 5.2 / LingBot-Touch searches; GitHub search API (created in window, stars>40) + tracked repos; arXiv export API submittedDate query (73 cs.AI/LG/CL/RO, latest 2026-11-09T18:59:45Z; later submissions not yet announced)",
+      "tool": "X MCP + gh + curl",
+      "status": "success",
+      "startedAt": "2026-11-10T16:48:30Z",
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-x",
+        "ev-gh",
+        "ev-arxiv"
+      ]
+    },
+    {
+      "id": "t3",
+      "action": "Verify AlphaProof Code: DeepMind blog read in full, Pushmeet Kohli post timestamp, GitHub API for google-deepmind/code-verification (public, created 2026-10-26, Initial commit 2026-11-10T08:14:18Z, languages, README, LICENSE, docs/PAPER_MAP.md statuses); runner-up Anthropic launch page and claude.dev multi-agent blog read",
+      "tool": "WebFetch, gh api, X MCP",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-verify"
+      ]
+    },
+    {
+      "id": "t4",
+      "action": "Write 21-candidate JSON, article on AlphaProof Code Signal verification (88.25, published), original cover SVG, mission awaiting_review",
+      "tool": "python gen.py + heredoc",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": "2026-11-10T16:53:26Z",
+      "evidenceIds": [
+        "ev-candidates",
+        "ev-article"
+      ]
+    },
+    {
+      "id": "t5",
+      "action": "Run validate_content, unittest, npm run check, npm run build",
+      "tool": "python+npm",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": "2026-11-10T16:54:06Z",
+      "evidenceIds": [
+        "ev-tests"
+      ]
+    },
+    {
+      "id": "t6",
+      "action": "Commit as agentlab-aidatatools-bot[bot], push with short-lived installation token, open PR requesting chuangtc",
+      "tool": "git + GitHub API",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-pr"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "python scripts/validate_content.py",
+      "status": "passed",
+      "artifact": ".reports/2026-11-10/validate.log"
+    },
+    {
+      "name": "python -m unittest discover -s tests -v",
+      "status": "passed",
+      "artifact": ".reports/2026-11-10/unittest.log"
+    },
+    {
+      "name": "npm run check",
+      "status": "passed",
+      "artifact": ".reports/2026-11-10/astro-check.log"
+    },
+    {
+      "name": "npm run build",
+      "status": "passed",
+      "artifact": ".reports/2026-11-10/astro-build.log"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-git-branch",
+      "type": "git",
+      "ref": "branch daily/2026-11-10 from origin/main@4afcf02"
+    },
+    {
+      "id": "ev-x",
+      "type": "api_response",
+      "ref": "Public X reads via Grok Bot X tools; key posts: pushmeet 2120127611137634376 (2026-11-10T12:13:07Z), claudeai 2119867114450268322, GoogleDeepMind 2120169787896525104, robbyant_brain 2119870554056651004, SkildAI 2119844954893946999, NVIDIARobotics 2119794454190006428, AIatMeta 2119853591703998787, OpenAI 2119913172039868579, ZyphraAI 2119914895861076151, yuekun_yao 2119982422259622086"
+    },
+    {
+      "id": "ev-gh",
+      "type": "http_response",
+      "ref": "GitHub search created:2026-11-09T16:00:00Z..2026-11-10T16:00:00Z stars:>40 (top 20 mostly spam installer/game repos); repos google-deepmind/code-verification, skild-ai/steel, Robbyant/lingbot-touch"
+    },
+    {
+      "id": "ev-arxiv",
+      "type": "http_response",
+      "ref": "https://export.arxiv.org/api/query submittedDate:[202611091600 TO 202611101600] cs.AI/LG/CL/RO: 73 results"
+    },
+    {
+      "id": "ev-verify",
+      "type": "http_response",
+      "ref": "https://deepmind.google/blog/formal-verification-signal-protocol; https://github.com/google-deepmind/code-verification/blob/main/docs/PAPER_MAP.md; https://www.anthropic.com/claude-fable-and-mythos-5-2"
+    },
+    {
+      "id": "ev-candidates",
+      "type": "file",
+      "ref": "data/candidates/2026-11-10.json"
+    },
+    {
+      "id": "ev-article",
+      "type": "file",
+      "ref": "src/content/articles/2026/11/deepmind-alphaproof-code-signal-verification.md"
+    },
+    {
+      "id": "ev-tests",
+      "type": "file",
+      "ref": ".reports/2026-11-10/results.json"
+    },
+    {
+      "id": "ev-pr",
+      "type": "github",
+      "ref": "https://github.com/aidatatools/agentlab/pull/30"
+    }
+  ],
+  "outcome": {
+    "articleId": "article-20261110-001",
+    "githubCommit": null,
+    "githubPullRequest": "https://github.com/aidatatools/agentlab/pull/30",
+    "deploymentUrl": null,
+    "publicationStatus": "in_review"
+  },
+  "metrics": {
+    "durationSeconds": null,
+    "tokens": null,
+    "estimatedCostUsd": null,
+    "humanInterventions": 0
+  },
+  "retrospective": {
+    "successes": [
+      "AlphaProof Code verified from the DeepMind blog, the announcement post and the public GitHub repo (README, LICENSE, PAPER_MAP statuses) inside the window",
+      "21 candidates scored; out-of-window GR00T 2 and closed-model launches kept as rejected with reasons"
+    ],
+    "failures": [
+      "arXiv only had submissions through 2026-11-09T18:59:45Z; later in-window papers not yet announced",
+      "Gemini 4 Carbon and Yvligo seen only in X news summaries without a primary timestamp; not added as candidates",
+      "Lean proofs not rebuilt (hours, 15-34 GiB RAM); X retrievedAt timestamps are per batch"
+    ],
+    "lessonsLearned": [
+      "Strong-signal day: two flagship items (AlphaProof Code, Fable 5.2 Fermat) — score reproducibility honestly; a closed-model reproduction of an existing formalization stays below 80",
+      "Prefer the primary blog figure (6M+ Lean lines) over secondary reposts (3M)"
+    ],
+    "nextActions": [
+      "chuangtc review on DEV then merge",
+      "Treat later AlphaProof Code coverage (paper release, other protocols) as duplicate unless materially new",
+      "After merge and DigitalOcean deploy, run a real smoke test in a follow-up PR before promoting the mission"
+    ]
+  }
+}
