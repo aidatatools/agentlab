@@ -135,9 +135,9 @@
     },
     {
       "id": "t6",
-      "action": "Commit as agentlab-aidatatools-bot[bot], push with short-lived installation token, open PR requesting chuangtc",
+      "action": "Commit as agentlab-aidatatools-bot[bot], push with short-lived installation token, open PR requesting chuangtc (first commit 39f8083)",
       "tool": "git + GitHub API",
-      "status": "pending",
+      "status": "success",
       "startedAt": null,
       "finishedAt": null,
       "evidenceIds": [
@@ -211,13 +211,13 @@
     {
       "id": "ev-pr",
       "type": "github",
-      "ref": "https://github.com/aidatatools/agentlab/pulls"
+      "ref": "https://github.com/aidatatools/agentlab/pull/31"
     }
   ],
   "outcome": {
     "articleId": "article-20261111-001",
     "githubCommit": null,
-    "githubPullRequest": null,
+    "githubPullRequest": "https://github.com/aidatatools/agentlab/pull/31",
     "deploymentUrl": null,
     "publicationStatus": "in_review"
   },
