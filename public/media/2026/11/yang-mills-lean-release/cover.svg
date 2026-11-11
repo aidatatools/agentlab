@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
+  <title id="t">From a Wilson lattice to a continuum field, checked in Lean, illustrative</title>
+  <desc id="d">Abstract illustration: a square lattice with a gold Wilson loop on the left, an arrow to smooth continuum field waves on the right, and a row of green check marks. Not an official OpenAI or Yang–Mills group image.</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d1020"/><stop offset="100%" stop-color="#1b2140"/></linearGradient></defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g stroke="#4f6aa8" stroke-width="2" opacity="0.8">
+    <path d="M80 120 V420 M140 120 V420 M200 120 V420 M260 120 V420 M320 120 V420 M380 120 V420 M440 120 V420"/>
+    <path d="M80 120 H440 M80 180 H440 M80 240 H440 M80 300 H440 M80 360 H440 M80 420 H440"/>
+  </g>
+  <g fill="#9fb4e8"><circle cx="140" cy="180" r="5"/><circle cx="200" cy="240" r="5"/><circle cx="320" cy="300" r="5"/><circle cx="380" cy="360" r="5"/><circle cx="260" cy="180" r="5"/></g>
+  <path d="M200 180 H380 V360 H200 Z" fill="none" stroke="#e7b63c" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M480 270 L 640 270" stroke="#8fa6dc" stroke-width="4" fill="none"/><path d="M640 270 l-18 -12 v24 z" fill="#8fa6dc"/>
+  <g fill="none" stroke-width="4" stroke-linecap="round">
+    <path d="M690 170 C 760 120, 830 220, 900 170 S 1040 120, 1110 170" stroke="#6fd3c1"/>
+    <path d="M690 240 C 760 190, 830 290, 900 240 S 1040 190, 1110 240" stroke="#58b8d8" opacity="0.9"/>
+    <path d="M690 310 C 760 260, 830 360, 900 310 S 1040 260, 1110 310" stroke="#4a93d6" opacity="0.8"/>
+    <path d="M690 380 C 760 330, 830 430, 900 380 S 1040 330, 1110 380" stroke="#3f72c4" opacity="0.7"/>
+  </g>
+  <g transform="translate(80,455)" stroke="#d9fbe9" stroke-width="5" fill="none" stroke-linecap="round">
+    <rect x="0" y="0" width="54" height="40" rx="8" fill="#1f6f53" stroke="none"/><path d="M14 20 l9 9 l18 -16"/>
+    <rect x="66" y="0" width="54" height="40" rx="8" fill="#1f6f53" stroke="none"/><path d="M80 20 l9 9 l18 -16"/>
+    <rect x="132" y="0" width="54" height="40" rx="8" fill="#1f6f53" stroke="none"/><path d="M146 20 l9 9 l18 -16"/>
+    <rect x="198" y="0" width="54" height="40" rx="8" fill="#7a5a1e" stroke="none"/><path d="M212 20 h26" stroke="#f3dca0"/>
+  </g>
+  <g font-family="ui-sans-serif, system-ui, sans-serif"><text x="80" y="550" font-size="30" fill="#e8eef8">lattice  →  scaling limit  →  Wightman QFT  (mass gap: open)</text><text x="80" y="588" font-size="16" fill="#9fb4e8">AgentLab original illustration · not an official OpenAI or Yang–Mills group image</text></g>
+</svg>

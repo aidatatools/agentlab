@@ -1,0 +1,557 @@
+{
+  "date": "2026-11-11",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "selectedCandidateId": "c20261111-openai-yang-mills-lean-release",
+  "candidates": [
+    {
+      "id": "c20261111-openai-yang-mills-lean-release",
+      "title": "Yang-Mills group (Gross-led) releases OpenAI's Lean construction of 4D pure Yang-Mills plus a 35-page independent validation; existence via Wilson lattice scaling limit confirmed in their judgment, mass gap and uniqueness not proved",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/yang-mills-group/YM",
+          "publishedAt": "2026-11-10T21:09:02Z",
+          "retrievedAt": "2026-11-12T00:59:00+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://github.com/yang-mills-group/YM/blob/main/docs/assessment-1.pdf",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-12T00:59:00+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/yang-mills-group/OpenAI-YM-20261028",
+          "publishedAt": "2026-11-05T23:01:12Z",
+          "retrievedAt": "2026-11-12T00:59:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/danintheory/status/2120380088151916981",
+          "publishedAt": "2026-11-11T04:56:22Z",
+          "retrievedAt": "2026-11-12T00:59:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 93,
+        "interestingness": 92,
+        "technicalDepth": 92,
+        "reproducibility": 85,
+        "credibility": 92
+      },
+      "eligibility": "eligible",
+      "reason": "Weighted 91.25. >= 80, selected. Materially new vs AgentLab's 2026-10-27 article, which reported the group had decided not to release the AI-produced material. GitHub API: yang-mills-group/YM created 2026-11-10T16:45:55Z, single commit 'Assemble October Yang-Mills assessment and verification' by Michael R Douglas 2026-11-10T21:09:02Z, pushed 2026-11-11T03:38:25Z (all in window); archive repo OpenAI-YM-20261028 created 2026-11-05 (private prep), Apache-2.0, Lean ~64 MB. Assessment PDF (35 pp, dated Nov 10 2026) read: Wightman QFT constructed as scaling limit of 4D Wilson lattice gauge theory for any simple compact group; no uniqueness of infinite-volume limit, no mass gap, not the full Jaffe-Witten problem. Clean rebuild 9,470 modules ~184 min zero errors; 250,319 declarations, no project axioms/sorryAx; only propext, Classical.choice, Quot.sound; Comparator passed Oct 30 and Nov 3 with four controls; 2,453 warnings and code-quality concerns; group says it does not yet fully understand the proof. AgentLab did not rebuild the Lean proof."
+    },
+    {
+      "id": "c20261111-alphagenome-2",
+      "title": "Google DeepMind AlphaGenome 2: cell-type/state-conditional DNA variant-effect model trained on >107M cell profiles; non-commercial API",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/GoogleDeepMind/status/2120532824465805749",
+          "publishedAt": "2026-11-11T15:03:17Z",
+          "retrievedAt": "2026-11-12T00:59:00+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-12T00:59:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 84,
+        "interestingness": 85,
+        "technicalDepth": 85,
+        "reproducibility": 45,
+        "credibility": 92
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 79.4. < 80. In window; DeepMind blog read via search excerpt (Nov 11 2026): conditional model, TenK10K causal variants 30% vs 16%, ETS2/IBD macrophage case reproduced computationally; API-only for non-commercial research, no weights; claims self-reported. Strong runner-up."
+    },
+    {
+      "id": "c20261111-e-means-faiss",
+      "title": "Meta FAIR e-means: k-means replacement converging in ~10x fewer epochs, released in FAISS",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/swann_bessa/status/2120200714630594911",
+          "publishedAt": "2026-11-10T17:03:36Z",
+          "retrievedAt": "2026-11-12T00:59:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 82,
+        "technicalDepth": 75,
+        "reproducibility": 92,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 76.8. < 80. In window (8.8k likes); released in FAISS per author thread; speedups self-reported, release not opened this run."
+    },
+    {
+      "id": "c20261111-runway-praxis-1",
+      "title": "Runway Praxis-1: 27B world action model for robot control with Apache-2.0 open weights",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/runwayml/status/2120533081182577116",
+          "publishedAt": "2026-11-11T15:04:18Z",
+          "retrievedAt": "2026-11-12T00:59:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 72,
+        "interestingness": 80,
+        "technicalDepth": 72,
+        "reproducibility": 85,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 76.75. < 80. In window; open weights claimed, leaderboard numbers self-reported; repo/weights not opened this run."
+    },
+    {
+      "id": "c20261111-mbzuai-pan-2",
+      "title": "MBZUAI IFM PAN 2: 29B open world model predicting action-conditioned video, Apache-2.0",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/IFM_AI/status/2120199814696828942",
+          "publishedAt": "2026-11-10T17:00:01Z",
+          "retrievedAt": "2026-11-12T00:59:00+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/ifm-ai/pan2",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-12T00:59:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 72,
+        "interestingness": 78,
+        "technicalDepth": 75,
+        "reproducibility": 85,
+        "credibility": 78
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 76.65. < 80. In window; open weights and code linked by author; benchmark claims self-reported, not run."
+    },
+    {
+      "id": "c20261111-nvidia-alpamayo-2-edge",
+      "title": "NVIDIA Alpamayo 2 Edge: 2B reasoning VLA for in-vehicle driving on DRIVE AGX Thor, open model",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/NVIDIADRIVE/status/2120185515563749581",
+          "publishedAt": "2026-11-10T16:03:12Z",
+          "retrievedAt": "2026-11-12T00:59:00+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits/",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-12T00:59:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 72,
+        "technicalDepth": 70,
+        "reproducibility": 80,
+        "credibility": 88
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 72.3. < 80. In window (16:03:12Z); gains measured in NVIDIA's own simulator."
+    },
+    {
+      "id": "c20261111-gemini-4-carbon",
+      "title": "Google Gemini 4 Carbon rollout (API, Gemini app for Ultra)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/sundarpichai/status/2120185896469496180",
+          "publishedAt": "2026-11-10T16:04:43Z",
+          "retrievedAt": "2026-11-12T00:59:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/Google/status/2120186185423159331",
+          "publishedAt": "2026-11-10T16:05:52Z",
+          "retrievedAt": "2026-11-12T00:59:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 78,
+        "interestingness": 90,
+        "technicalDepth": 60,
+        "reproducibility": 30,
+        "credibility": 92
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 71.6. < 80. In window; closed model, benchmark claims self-reported."
+    },
+    {
+      "id": "c20261111-goodfire-readable-neurons",
+      "title": "Goodfire technical report: neurons in Qwen3.6-35B-A3B are largely legible and sparse",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/GoodfireAI/status/2120221477245182460",
+          "publishedAt": "2026-11-10T18:26:06Z",
+          "retrievedAt": "2026-11-12T00:59:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 62,
+        "interestingness": 75,
+        "technicalDepth": 75,
+        "reproducibility": 65,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 70.1. < 80. In window; single-model study, report not opened this run."
+    },
+    {
+      "id": "c20261111-msr-lazarus-backdoor",
+      "title": "Microsoft Research: reprogramming a few dormant neurons creates a trigger-activated agent backdoor",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/MSFTResearch/status/2120295164379824154",
+          "publishedAt": "2026-11-10T23:18:55Z",
+          "retrievedAt": "2026-11-12T00:59:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 78,
+        "technicalDepth": 70,
+        "reproducibility": 50,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 69.0. < 80. In window; security research, paper not opened this run."
+    },
+    {
+      "id": "c20261111-novaatom-lite",
+      "title": "Geodesic NovaAtom-Lite all-atom structure prediction claims to beat AlphaFold 3 on FoldBench (API)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Geodesiclab/status/2120214931731775587",
+          "publishedAt": "2026-11-10T18:00:06Z",
+          "retrievedAt": "2026-11-12T00:59:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 70,
+        "interestingness": 78,
+        "technicalDepth": 65,
+        "reproducibility": 40,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 66.0. < 80. In window; API-only, benchmark self-reported by a 5-month-old startup."
+    },
+    {
+      "id": "c20261111-lila-open-endedness",
+      "title": "Lila Sciences Open-Endedness team: vision blog + 4 preprints",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/kenneth0stanley/status/2120170682109796511",
+          "publishedAt": "2026-11-10T15:04:16Z",
+          "retrievedAt": "2026-11-12T00:59:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 70,
+        "technicalDepth": 70,
+        "reproducibility": 60,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 66.0. Out of window: posted 2026-11-10T15:04:16Z, before 16:00Z start."
+    },
+    {
+      "id": "c20261111-gh-deleting-weights",
+      "title": "agentic-learning-ai-lab/deleting-weights: code for 'The Surprising Effectiveness of Deleting Weights in LLM Post-Training'",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/agentic-learning-ai-lab/deleting-weights",
+          "publishedAt": "2026-11-10T16:19:07Z",
+          "retrievedAt": "2026-11-12T00:59:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 65,
+        "technicalDepth": 65,
+        "reproducibility": 85,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 65.0. < 80. Created in window, MIT, 44 stars."
+    },
+    {
+      "id": "c20261111-arxiv-continual-arc",
+      "title": "Continual-ARC: Measuring Skill Acquisition over a Working Lifetime",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.14505",
+          "publishedAt": "2026-11-10T18:55:01Z",
+          "retrievedAt": "2026-11-12T00:59:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 68,
+        "technicalDepth": 62,
+        "reproducibility": 65,
+        "credibility": 62
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 61.85. < 80. Abstract read: lifelong stream from three ARC-AGI editions comparing memory- and weight-based learners."
+    },
+    {
+      "id": "c20261111-ernie-5-5-flash-preview",
+      "title": "Baidu ERNIE 5.5 Flash Preview (280B/14B active MoE); weights promised by Nov 25",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Baidu_Inc/status/2120391732248637734",
+          "publishedAt": "2026-11-11T05:42:38Z",
+          "retrievedAt": "2026-11-12T00:59:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 75,
+        "technicalDepth": 55,
+        "reproducibility": 40,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 61.75. < 80. In window; API preview only, weights not yet released, scores self-reported."
+    },
+    {
+      "id": "c20261111-openai-july19-misalignment-report",
+      "title": "OpenAI misalignment report on the July 19 agent intrusion into research infrastructure",
+      "type": "other",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/davideoks/status/2120280505920721214",
+          "publishedAt": "2026-11-10T22:20:40Z",
+          "retrievedAt": "2026-11-12T00:59:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 85,
+        "technicalDepth": 60,
+        "reproducibility": 20,
+        "credibility": 88
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 61.55. < 80. In window; incident report, not a reproducible technical result."
+    },
+    {
+      "id": "c20261111-n8n-nod",
+      "title": "n8n Labs Nod: open-source local personal agent (Apache-2.0)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/n8n_io/status/2120431328458076315",
+          "publishedAt": "2026-11-11T08:19:59Z",
+          "retrievedAt": "2026-11-12T00:59:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 70,
+        "technicalDepth": 50,
+        "reproducibility": 85,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 61.25. < 80. In window; product launch."
+    },
+    {
+      "id": "c20261111-arxiv-policy-opt-theory",
+      "title": "A Theory of Policy Optimization in Post-Training: Coverage Collapse and Reference Resets",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.14467",
+          "publishedAt": "2026-11-10T18:31:36Z",
+          "retrievedAt": "2026-11-12T00:59:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 60,
+        "technicalDepth": 72,
+        "reproducibility": 55,
+        "credibility": 62
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 60.35. < 80. Abstract read: REINFORCE-based methods can collapse coverage; coverage-preserving algorithms proposed."
+    },
+    {
+      "id": "c20261111-arxiv-are-bench",
+      "title": "ARE-bench: Benchmarking Agents' Research Ability in Real-World Researcher Sessions and Workspaces",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.14364",
+          "publishedAt": "2026-11-10T17:21:31Z",
+          "retrievedAt": "2026-11-12T00:59:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 62,
+        "technicalDepth": 60,
+        "reproducibility": 65,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 58.25. < 80. Abstract read."
+    },
+    {
+      "id": "c20261111-arxiv-contrastive-discovery",
+      "title": "Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.14514",
+          "publishedAt": "2026-11-10T18:58:43Z",
+          "retrievedAt": "2026-11-12T00:59:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 52,
+        "interestingness": 62,
+        "technicalDepth": 62,
+        "reproducibility": 55,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 57.75. < 80. Abstract read."
+    },
+    {
+      "id": "c20261111-qwen4-max-preview",
+      "title": "Alibaba Qwen4-Max preview on Token Plan",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Alibaba_Qwen/status/2120335993643684315",
+          "publishedAt": "2026-11-11T02:01:09Z",
+          "retrievedAt": "2026-11-12T00:59:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 80,
+        "technicalDepth": 35,
+        "reproducibility": 20,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 55.0. < 80. In window; closed preview, no benchmarks or weights."
+    },
+    {
+      "id": "c20261111-hedra-model-factory",
+      "title": "Hedra Model Factory: autonomous training/inference platform for physical AI",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/hedra_labs/status/2120207555263905973",
+          "publishedAt": "2026-11-10T17:30:47Z",
+          "retrievedAt": "2026-11-12T00:59:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 70,
+        "technicalDepth": 45,
+        "reproducibility": 30,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 52.5. < 80. In window; commercial platform launch."
+    },
+    {
+      "id": "c20261111-gh-fable52-fps-repro",
+      "title": "wquguru/fable52-fps-repro: one-prompt 3D FPS reproduction demos with prompts and cost data",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/wquguru/fable52-fps-repro",
+          "publishedAt": "2026-11-11T04:58:58Z",
+          "retrievedAt": "2026-11-12T00:59:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 55,
+        "technicalDepth": 35,
+        "reproducibility": 75,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 46.0. < 80. Created in window, MIT, 51 stars; demo repo."
+    },
+    {
+      "id": "c20261111-gh-xj-scanner",
+      "title": "MZULALI/xj-scanner: read a 1991-95 Jeep engine computer with an Arduino Nano and an AI agent",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/MZULALI/xj-scanner",
+          "publishedAt": "2026-11-10T17:03:05Z",
+          "retrievedAt": "2026-11-12T00:59:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 55,
+        "technicalDepth": 40,
+        "reproducibility": 75,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 45.5. < 80. Created in window, GPL-3.0, 97 stars; hobby project."
+    }
+  ]
+}
