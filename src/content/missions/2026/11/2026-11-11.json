@@ -1,0 +1,250 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "mission-20261111-001",
+  "date": "2026-11-11",
+  "timezone": "Asia/Taipei",
+  "status": "awaiting_review",
+  "objective": {
+    "goal": "Research, validate and propose one outstanding discovery for 2026-11-11 (Asia/Taipei).",
+    "sources": [
+      "x",
+      "github",
+      "arxiv"
+    ],
+    "deliverables": [
+      "Verified candidate",
+      "Proposed article",
+      "Mission record",
+      "Pull request"
+    ]
+  },
+  "agent": {
+    "id": "grokbot",
+    "framework": "Grok Bot (AgentLab-bot on minim4.home)",
+    "model": "grok-bot",
+    "runId": "routine-9a1f041e-20261112T0055-minim4-daily-2026-11-11"
+  },
+  "selection": {
+    "candidatesEvaluated": 23,
+    "selectedCandidateId": "c20261111-openai-yang-mills-lean-release",
+    "selectionScore": 91.25,
+    "rankingArtifact": "data/candidates/2026-11-11.json"
+  },
+  "skillsUsed": [
+    {
+      "skill": "x-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-x-20261111-001"
+    },
+    {
+      "skill": "github-discovery",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-gh-20261111-001"
+    },
+    {
+      "skill": "arxiv-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ax-20261111-001"
+    },
+    {
+      "skill": "fact-check",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-fc-20261111-001"
+    },
+    {
+      "skill": "article-writing",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-aw-20261111-001"
+    },
+    {
+      "skill": "image-curation",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ic-20261111-001"
+    },
+    {
+      "skill": "site-publishing",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-sp-20261111-001"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t1",
+      "action": "git checkout main, pull --ff-only (4afcf02..7134242), create branch daily/2026-11-11; GitHub App key file present",
+      "tool": "git",
+      "status": "success",
+      "startedAt": "2026-11-11T16:55:09Z",
+      "finishedAt": "2026-11-11T16:55:09Z",
+      "evidenceIds": [
+        "ev-git-branch"
+      ]
+    },
+    {
+      "id": "t2",
+      "action": "Discovery for window 2026-11-10T16:00Z..2026-11-11T16:00Z: X news search (25 stories), cluster post lookups, keyword search, lab-account search; GitHub search API (created in window, stars>40, 18 repos, mostly spam/hobby); arXiv export API submittedDate query (73 cs.AI/LG/CL/RO, latest 2026-11-10T18:59:54Z; later submissions not yet announced)",
+      "tool": "X MCP + gh + curl",
+      "status": "success",
+      "startedAt": "2026-11-11T16:56:00Z",
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-x",
+        "ev-gh",
+        "ev-arxiv"
+      ]
+    },
+    {
+      "id": "t3",
+      "action": "Verify Yang-Mills release: GitHub API for yang-mills-group/YM and OpenAI-YM-20261028 (created/pushed dates, commits, README, license, languages, org profile); 35-page assessment PDF read (summary, open questions, Part II validation, acknowledgements); runner-up AlphaGenome 2 blog checked via search excerpts",
+      "tool": "gh api, curl + pdftotext, WebSearch, X MCP",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-verify"
+      ]
+    },
+    {
+      "id": "t4",
+      "action": "Write 23-candidate JSON, article on Yang-Mills Lean release and validation (91.25, published), original cover SVG, mission awaiting_review",
+      "tool": "python gen.py + heredoc",
+      "status": "success",
+      "startedAt": "2026-11-11T16:59:14Z",
+      "finishedAt": "2026-11-11T17:00:35Z",
+      "evidenceIds": [
+        "ev-candidates",
+        "ev-article"
+      ]
+    },
+    {
+      "id": "t5",
+      "action": "Run validate_content, unittest, npm run check, npm run build",
+      "tool": "python+npm",
+      "status": "success",
+      "startedAt": "2026-11-11T17:00:46Z",
+      "finishedAt": "2026-11-11T17:00:50Z",
+      "evidenceIds": [
+        "ev-tests"
+      ]
+    },
+    {
+      "id": "t6",
+      "action": "Commit as agentlab-aidatatools-bot[bot], push with short-lived installation token, open PR requesting chuangtc",
+      "tool": "git + GitHub API",
+      "status": "pending",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-pr"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "python scripts/validate_content.py",
+      "status": "passed",
+      "artifact": ".reports/2026-11-11/validate.log"
+    },
+    {
+      "name": "python -m unittest discover -s tests -v",
+      "status": "passed",
+      "artifact": ".reports/2026-11-11/unittest.log"
+    },
+    {
+      "name": "npm run check",
+      "status": "passed",
+      "artifact": ".reports/2026-11-11/astro-check.log"
+    },
+    {
+      "name": "npm run build",
+      "status": "passed",
+      "artifact": ".reports/2026-11-11/astro-build.log"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-git-branch",
+      "type": "git",
+      "ref": "branch daily/2026-11-11 from origin/main@7134242"
+    },
+    {
+      "id": "ev-x",
+      "type": "api_response",
+      "ref": "Public X reads via Grok Bot X tools; key posts: danintheory 2120380088151916981 (2026-11-11T04:56:22Z), GoogleDeepMind 2120532824465805749, swann_bessa 2120200714630594911, runwayml 2120533081182577116, IFM_AI 2120199814696828942, NVIDIADRIVE 2120185515563749581, sundarpichai 2120185896469496180, GoodfireAI 2120221477245182460, MSFTResearch 2120295164379824154, Geodesiclab 2120214931731775587, davideoks 2120280505920721214, Baidu_Inc 2120391732248637734, n8n_io 2120431328458076315, Alibaba_Qwen 2120335993643684315, hedra_labs 2120207555263905973, kenneth0stanley 2120170682109796511"
+    },
+    {
+      "id": "ev-gh",
+      "type": "http_response",
+      "ref": "GitHub search created:2026-11-10T16:00:00Z..2026-11-11T16:00:00Z stars:>40 (18 repos); repos yang-mills-group/YM, yang-mills-group/OpenAI-YM-20261028"
+    },
+    {
+      "id": "ev-arxiv",
+      "type": "http_response",
+      "ref": "https://export.arxiv.org/api/query submittedDate:[202611101600 TO 202611111600] cs.AI/LG/CL/RO: 73 results"
+    },
+    {
+      "id": "ev-verify",
+      "type": "http_response",
+      "ref": "https://github.com/yang-mills-group/YM/blob/main/docs/assessment-1.pdf; https://github.com/yang-mills-group/YM; https://github.com/yang-mills-group/OpenAI-YM-20261028; https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/"
+    },
+    {
+      "id": "ev-candidates",
+      "type": "file",
+      "ref": "data/candidates/2026-11-11.json"
+    },
+    {
+      "id": "ev-article",
+      "type": "file",
+      "ref": "src/content/articles/2026/11/openai-yang-mills-lean-release-validation.md"
+    },
+    {
+      "id": "ev-tests",
+      "type": "file",
+      "ref": ".reports/2026-11-11/results.json"
+    },
+    {
+      "id": "ev-pr",
+      "type": "github",
+      "ref": "https://github.com/aidatatools/agentlab/pulls"
+    }
+  ],
+  "outcome": {
+    "articleId": "article-20261111-001",
+    "githubCommit": null,
+    "githubPullRequest": null,
+    "deploymentUrl": null,
+    "publicationStatus": "in_review"
+  },
+  "metrics": {
+    "durationSeconds": null,
+    "tokens": null,
+    "estimatedCostUsd": null,
+    "humanInterventions": 0
+  },
+  "retrospective": {
+    "successes": [
+      "Yang-Mills release verified from both GitHub repos (API metadata, README, commits) and the full 35-page assessment PDF inside the window",
+      "23 candidates scored; out-of-window Lila Sciences and API-only launches kept as rejected with reasons"
+    ],
+    "failures": [
+      "arXiv only had submissions through 2026-11-10T18:59:54Z; later in-window papers not yet announced",
+      "Most X runner-ups (Praxis-1, PAN 2, e-means) scored from X posts only; their repos/weights were not opened",
+      "Lean proof not rebuilt (~184 min on Apple Silicon per the assessment); X retrievedAt timestamps are per batch"
+    ],
+    "lessonsLearned": [
+      "A previously unverifiable claim (2026-10-27) can become publishable when primary artifacts are released; treat it as a materially new event, not a duplicate",
+      "Search X news clusters for follow-up releases of earlier stories, not only new launches"
+    ],
+    "nextActions": [
+      "chuangtc review on DEV then merge",
+      "Watch for the group's assessment of OpenAI's 2026-11-04 submission and QCD/chiral SU(5) repos; treat as new only if materially new",
+      "After merge and DigitalOcean deploy, run a real smoke test in a follow-up PR before promoting the mission"
+    ]
+  }
+}
