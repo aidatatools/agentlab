@@ -1,0 +1,583 @@
+{
+  "date": "2026-11-12",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "selectedCandidateId": null,
+  "candidates": [
+    {
+      "id": "c20261112-alphagenome-2-podcast",
+      "title": "Google DeepMind AlphaGenome 2 follow-up podcast on rare-disease variant discovery",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/GoogleDeepMind/status/2120841923237683462",
+          "publishedAt": "2026-11-12T11:31:32Z",
+          "retrievedAt": "2026-11-13T00:48:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/GoogleDeepMind/status/2120532824465805749",
+          "publishedAt": "2026-11-11T15:03:17Z",
+          "retrievedAt": "2026-11-13T00:48:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 82,
+        "interestingness": 85,
+        "technicalDepth": 80,
+        "reproducibility": 55,
+        "credibility": 92
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 79.3. < 80. Launch (2026-11-11T15:03:17Z) was before this window and already scored in the 2026-11-11 batch (79.4, API-only); the in-window podcast is not materially new."
+    },
+    {
+      "id": "c20261112-openai-cot-monitorability",
+      "title": "OpenAI alignment research: chain-of-thought monitorability across the model lifecycle (no-CoT capability tracks perplexity; RL raises CoT controllability)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://alignment.openai.com/cot-monitorability-model-lifecycle/",
+          "publishedAt": "2026-11-10",
+          "retrievedAt": "2026-11-13T00:48:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/jeffreygwang/status/2120581630196879460",
+          "publishedAt": "2026-11-11T18:17:13Z",
+          "retrievedAt": "2026-11-13T00:48:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 78,
+        "interestingness": 85,
+        "technicalDepth": 85,
+        "reproducibility": 35,
+        "credibility": 92
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 76.1. < 80. Primary post read: dated November 10, 2026, i.e. before this window (it fell in the 2026-11-11 window and was not captured that day); author thread on X at 2026-11-11T18:17:13Z is in window. Findings rely on internal GPT-6 Astra-class models, no released code/data, so low reproducibility. Out of window and below threshold."
+    },
+    {
+      "id": "c20261112-ci-proto",
+      "title": "Continuous Intelligence ci-proto: open-weight time-series foundation model with 2M+ step context, claims #1 on fev-bench",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/benjaminwalker/status/2120864197340955028",
+          "publishedAt": "2026-11-12T13:00:03Z",
+          "retrievedAt": "2026-11-13T00:48:00+08:00"
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/ContinuousIntelligence/ci-proto",
+          "publishedAt": "2026-11-11T10:21:15Z",
+          "retrievedAt": "2026-11-13T00:48:00+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/continuousintelligence/ci",
+          "publishedAt": "2026-11-11T10:51:54Z",
+          "retrievedAt": "2026-11-13T00:48:00+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://pypi.org/project/continuousintelligence/0.1.1/",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-13T00:48:00+08:00"
+        },
+        {
+          "platform": "benchmark",
+          "url": "https://tsfm.ai/benchmarks/fev-bench",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-13T00:48:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 72,
+        "interestingness": 75,
+        "technicalDepth": 72,
+        "reproducibility": 88,
+        "credibility": 72
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 75.15. < 80. Public launch in window (X 2026-11-12T13:00:03Z; HF/GitHub repos created 11-11 ~10:30Z as prep, updated 11-12 ~09:20Z). Verified: HF model card + pip package with weights (custom ci-proto licence; package lists LicenseRef-ci-proto AND Apache-2.0 AND CC-BY-4.0), 2M+ context via long checkpoint, 9 quantiles. Independent fev-bench mirror (tsfm.ai) ranks it #2 by MASE skill score (40.80 vs TimeRSI-1.5 41.44) with fastest inference among top models; the '#1' claim depends on metric. Solid open release but an incremental step in time-series forecasting. Model not run by AgentLab."
+    },
+    {
+      "id": "c20261112-minimax-h3-image",
+      "title": "MiniMax H3-Image: 33.1B open-weight native 4K text-to-image and editing model",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/RyanLeeMiniMax/status/2120489349485862941",
+          "publishedAt": "2026-11-11T12:10:32Z",
+          "retrievedAt": "2026-11-13T00:48:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 70,
+        "interestingness": 78,
+        "technicalDepth": 65,
+        "reproducibility": 85,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 74.25. < 80. Out of window: launched 2026-11-10 per news cluster; X coverage continued in window but not materially new."
+    },
+    {
+      "id": "c20261112-rayline-arc",
+      "title": "Rayline ARC 1.0: open-weight routing decision model for AI agents (Qwen3.5-0.8B based), claims 97.5% of Opus 5.5 quality at ~1/10 cost",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/davidvgilmore/status/2120583960447029699",
+          "publishedAt": "2026-11-11T18:26:29Z",
+          "retrievedAt": "2026-11-13T00:48:00+08:00"
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/rayline-ai/ARC-1.0",
+          "publishedAt": "2026-11-10T18:40:00Z",
+          "retrievedAt": "2026-11-13T00:48:00+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://docs.rayline.ai/arc/open-source",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-13T00:48:00+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/rayline-ai/raydock",
+          "publishedAt": "2026-06-19T07:28:18Z",
+          "retrievedAt": "2026-11-13T00:48:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 70,
+        "technicalDepth": 68,
+        "reproducibility": 60,
+        "credibility": 62
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 65.8. < 80. Launch post in window; weights on HF since 2026-11-10 (Apache-2.0). Docs say the vllm-arc plugin is WIP, end-to-end self-hosted serving is not yet supported and the hosted API is the operational path. Quality/cost claims are self-reported."
+    },
+    {
+      "id": "c20261112-ernie-55-flash",
+      "title": "Baidu ERNIE 5.5 Flash Preview (280B total/14B active) near #2 open model on Code Arena WebDev; weights 'will be open-sourced soon'",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/arena/status/2120685092909838405",
+          "publishedAt": "2026-11-12T01:08:21Z",
+          "retrievedAt": "2026-11-13T00:48:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/Baidu_Inc/status/2120391732248637734",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-13T00:48:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 70,
+        "technicalDepth": 55,
+        "reproducibility": 40,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 60.5. < 80. Arena post in window; Baidu launch post was already recorded in the 2026-11-11 batch. Weights not yet released (Apache-2.0 promised)."
+    },
+    {
+      "id": "c20261112-google-health-age",
+      "title": "Google Research: investigational framework turning wearable signals into a coachable 'health age' with an action-conditioned world model for 12-week what-if habit simulations",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/GoogleResearch/status/2120613625186673087",
+          "publishedAt": "2026-11-11T20:24:21Z",
+          "retrievedAt": "2026-11-13T00:48:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 62,
+        "interestingness": 65,
+        "technicalDepth": 62,
+        "reproducibility": 30,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 60.25. < 80. In window. Investigational research blog only; no code or model release found; not opened beyond the X post."
+    },
+    {
+      "id": "c20261112-gh-guizang-game-skill",
+      "title": "op7418/guizang-game-skill: agent skill for Claude Code/Codex that builds playable browser 3D action games",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/op7418/guizang-game-skill",
+          "publishedAt": "2026-11-11T16:28:54Z",
+          "retrievedAt": "2026-11-13T00:48:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 65,
+        "technicalDepth": 45,
+        "reproducibility": 75,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 54.0. < 80. Created in window (GitHub search). Prompt/skill package with demo game; incremental.",
+      "repository": {
+        "language": null,
+        "stars": 217,
+        "license": "AGPL-3.0",
+        "commit": null
+      }
+    },
+    {
+      "id": "c20261112-gh-makepad-relax",
+      "title": "makepad/relax: Relax Rust JIT",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/makepad/relax",
+          "publishedAt": "2026-11-11T19:12:58Z",
+          "retrievedAt": "2026-11-13T00:48:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 50,
+        "technicalDepth": 60,
+        "reproducibility": 70,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 53.5. < 80. Created in window. Not AI-related.",
+      "repository": {
+        "language": null,
+        "stars": 213,
+        "license": "MIT",
+        "commit": null
+      }
+    },
+    {
+      "id": "c20261112-shaped-dating-agents",
+      "title": "Study: five frontier models texted real people on a dating app for 6 days; 1,277 conversations, 510 agreed to meet, only 8 asked if it was a bot",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/shaped/status/2120565783554400495",
+          "publishedAt": "2026-11-11T17:14:15Z",
+          "retrievedAt": "2026-11-13T00:48:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 80,
+        "technicalDepth": 45,
+        "reproducibility": 25,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 51.75. < 80. In window. Informal experiment from an X thread; methodology and ethics not independently verifiable."
+    },
+    {
+      "id": "c20261112-omarchy-46",
+      "title": "Omarchy 4.6 shares local AI models across a Tailscale network",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/dhh/status/2120535700491891109",
+          "publishedAt": "2026-11-11T15:14:43Z",
+          "retrievedAt": "2026-11-13T00:48:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 55,
+        "technicalDepth": 35,
+        "reproducibility": 70,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 47.25. < 80. Out of window (2026-11-11T15:14:43Z)."
+    },
+    {
+      "id": "c20261112-plurai-simulation",
+      "title": "Plurai Simulation: free platform to stress-test AI agents with simulated users, $13M seed",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/ilan_kadar/status/2120524450831413518",
+          "publishedAt": "2026-11-11T14:30:01Z",
+          "retrievedAt": "2026-11-13T00:48:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 55,
+        "technicalDepth": 40,
+        "reproducibility": 50,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 46.75. < 80. Out of window (2026-11-11T14:30:01Z)."
+    },
+    {
+      "id": "c20261112-anthropic-ipo",
+      "title": "Anthropic announces its initial public offering (SEC registration statement filed)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/AnthropicAI/status/2120841731302154708",
+          "publishedAt": "2026-11-12T11:30:46Z",
+          "retrievedAt": "2026-11-13T00:48:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 90,
+        "technicalDepth": 15,
+        "reproducibility": 10,
+        "credibility": 95
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 45.5. < 80. In window and high-interest corporate news, but not a technical breakthrough; out of AgentLab's research scope."
+    },
+    {
+      "id": "c20261112-gh-gradient-face",
+      "title": "sirioberati/gradient-descent-for-a-face: colour blobs fitted to a photo by gradient descent, then rendered in 3D",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/sirioberati/gradient-descent-for-a-face",
+          "publishedAt": "2026-11-11T21:00:09Z",
+          "retrievedAt": "2026-11-13T00:48:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 60,
+        "technicalDepth": 40,
+        "reproducibility": 70,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 45.5. < 80. Created in window. Creative coding demo, no license.",
+      "repository": {
+        "language": null,
+        "stars": 58,
+        "license": null,
+        "commit": null
+      }
+    },
+    {
+      "id": "c20261112-gh-elu",
+      "title": "ELU-Labs/elu: full-screen terminal app orchestrating existing AI coding CLIs with reviewer bots",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/ELU-Labs/elu",
+          "publishedAt": "2026-11-11T18:45:47Z",
+          "retrievedAt": "2026-11-13T00:48:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 50,
+        "technicalDepth": 40,
+        "reproducibility": 65,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 43.25. < 80. Created in window. Early tooling project.",
+      "repository": {
+        "language": null,
+        "stars": 48,
+        "license": "MIT",
+        "commit": null
+      }
+    },
+    {
+      "id": "c20261112-thorsten-4",
+      "title": "Millionways Thorsten-4 'Large Psychology Model' predicting behavioural traits from conversations",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/outofcords/status/2120881466230137198",
+          "publishedAt": "2026-11-12T14:08:40Z",
+          "retrievedAt": "2026-11-13T00:48:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 60,
+        "technicalDepth": 40,
+        "reproducibility": 15,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 42.75. < 80. In window. API product; 90% accuracy claim unverified, no paper or weights."
+    },
+    {
+      "id": "c20261112-gh-mate",
+      "title": "lawandrorder/mate: text-first shopping agent for cashback, discount codes and price alerts",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/lawandrorder/mate",
+          "publishedAt": "2026-11-12T14:05:28Z",
+          "retrievedAt": "2026-11-13T00:48:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 50,
+        "technicalDepth": 35,
+        "reproducibility": 65,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 42.25. < 80. Created in window. Consumer agent app.",
+      "repository": {
+        "language": null,
+        "stars": 138,
+        "license": "MIT",
+        "commit": null
+      }
+    },
+    {
+      "id": "c20261112-gemini-4-hydrogen",
+      "title": "Gemini 4 Hydrogen spotted in Google Cloud billing catalog ahead of release",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/OfficialLoganK/status/2120738935261585576",
+          "publishedAt": "2026-11-12T04:42:18Z",
+          "retrievedAt": "2026-11-13T00:48:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 75,
+        "technicalDepth": 20,
+        "reproducibility": 10,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 40.75. < 80. In window. Leak/teaser only (official post is a one-word teaser); no official release or specs."
+    },
+    {
+      "id": "c20261112-nvidia-elevenlabs",
+      "title": "NVIDIA Nemotron models added to ElevenLabs ElevenAgents for enterprise voice agents",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/nvidia/status/2120627069952340361",
+          "publishedAt": "2026-11-11T21:17:47Z",
+          "retrievedAt": "2026-11-13T00:48:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 50,
+        "technicalDepth": 25,
+        "reproducibility": 20,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 36.5. < 80. In window. Partnership news."
+    },
+    {
+      "id": "c20261112-persistent-agents-spend",
+      "title": "SemiAnalysis: persistent agents now 45% of the firm's AI spend",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/dylan522p/status/2120617704101155270",
+          "publishedAt": "2026-11-11T20:40:34Z",
+          "retrievedAt": "2026-11-13T00:48:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 65,
+        "technicalDepth": 20,
+        "reproducibility": 10,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 36.25. < 80. In window. Opinion/usage anecdote."
+    },
+    {
+      "id": "c20261112-lysios",
+      "title": "Pliny launches Lysios, an open research / red-teaming 'superorg'",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/elder_plinius/status/2120739057944629509",
+          "publishedAt": "2026-11-12T04:42:47Z",
+          "retrievedAt": "2026-11-13T00:48:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 20,
+        "interestingness": 70,
+        "technicalDepth": 10,
+        "reproducibility": 10,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 32.0. < 80. In window. Organisational announcement with no technical artifact."
+    },
+    {
+      "id": "c20261112-open-model-preservation",
+      "title": "Community push to mirror open models (GGUF, torrents) amid fears of Hugging Face access limits",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Da7_Tech/status/2120679312965968304",
+          "publishedAt": "2026-11-12T00:45:23Z",
+          "retrievedAt": "2026-11-13T00:48:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 15,
+        "interestingness": 55,
+        "technicalDepth": 10,
+        "reproducibility": 20,
+        "credibility": 30
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 26.25. < 80. In window. Speculative community discussion."
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "mission-20261112-001",
+  "date": "2026-11-12",
+  "timezone": "Asia/Taipei",
+  "status": "awaiting_review",
+  "objective": {
+    "goal": "Discover, score, verify and propose one outstanding AI/agent discovery for 2026-11-12 (Asia/Taipei), or document a no-publish decision.",
+    "sources": [
+      "x",
+      "github",
+      "arxiv"
+    ],
+    "deliverables": [
+      "Verified candidate batch",
+      "No-publish decision (low-signal day)",
+      "Mission record",
+      "Pull request"
+    ]
+  },
+  "agent": {
+    "id": "grokbot",
+    "framework": "Grok Bot (AgentLab-bot on minim4.home)",
+    "model": "grok-bot",
+    "runId": "routine-9a1f041e-20261113T0045-minim4-daily-2026-11-12"
+  },
+  "selection": {
+    "candidatesEvaluated": 22,
+    "selectedCandidateId": null,
+    "selectionScore": null,
+    "rankingArtifact": "data/candidates/2026-11-12.json"
+  },
+  "skillsUsed": [
+    {
+      "skill": "x-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-x-20261112-001"
+    },
+    {
+      "skill": "github-discovery",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-gh-20261112-001"
+    },
+    {
+      "skill": "arxiv-research",
+      "version": "1.0.0",
+      "status": "failed",
+      "executionId": "exec-ax-20261112-001"
+    },
+    {
+      "skill": "fact-check",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-fc-20261112-001"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t1",
+      "action": "git checkout main, pull --ff-only (7134242..ad3af67), create branch daily/2026-11-12; GitHub App key file present",
+      "tool": "git",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-git-branch"
+      ]
+    },
+    {
+      "id": "t2",
+      "action": "Discovery for window 2026-11-11T16:00Z..2026-11-12T16:00Z: GitHub search API (created in window, stars>30: 37 repos, mostly spam/cracked-software/hobby); arXiv export API submittedDate query cs.AI/LG/CL/RO returned 0 (latest indexed submission 2026-11-10T18:59:54Z, in-window papers not yet announced); X news search (25 stories), post lookups for 14 cluster posts, lab-account search (9 posts)",
+      "tool": "gh + curl + X MCP",
+      "status": "success",
+      "startedAt": "2026-11-12T16:46:06Z",
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-x",
+        "ev-gh",
+        "ev-arxiv"
+      ]
+    },
+    {
+      "id": "t3",
+      "action": "Verify top candidates: ci-proto HF model API, GitHub repo API, PyPI card and independent fev-bench mirror; OpenAI CoT monitorability post (time tag 2026-11-10, out of window); Rayline ARC HF card and docs (self-hosted serving WIP); dedupe against earlier candidate files",
+      "tool": "curl, gh api, WebSearch",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": "2026-11-12T16:48:00Z",
+      "evidenceIds": [
+        "ev-verify"
+      ]
+    },
+    {
+      "id": "t4",
+      "action": "Write 22-candidate JSON (no candidate >= 80, no article) and mission awaiting_review",
+      "tool": "python",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": "2026-11-12T16:48:49Z",
+      "evidenceIds": [
+        "ev-candidates"
+      ]
+    },
+    {
+      "id": "t5",
+      "action": "Run validate_content, unittest, npm run check, npm run build",
+      "tool": "python+npm",
+      "status": "success",
+      "startedAt": "2026-11-12T16:49:02Z",
+      "finishedAt": "2026-11-12T16:49:06Z",
+      "evidenceIds": [
+        "ev-tests"
+      ]
+    },
+    {
+      "id": "t6",
+      "action": "Commit as agentlab-aidatatools-bot[bot], push with short-lived installation token, open PR requesting chuangtc",
+      "tool": "git + GitHub API",
+      "status": "planned",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-pr"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "python scripts/validate_content.py",
+      "status": "passed",
+      "artifact": ".reports/2026-11-12/validate.log"
+    },
+    {
+      "name": "python -m unittest discover -s tests -v",
+      "status": "passed",
+      "artifact": ".reports/2026-11-12/unittest.log"
+    },
+    {
+      "name": "npm run check",
+      "status": "passed",
+      "artifact": ".reports/2026-11-12/astro-check.log"
+    },
+    {
+      "name": "npm run build",
+      "status": "passed",
+      "artifact": ".reports/2026-11-12/astro-build.log"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-git-branch",
+      "type": "git",
+      "ref": "branch daily/2026-11-12 from origin/main@ad3af67"
+    },
+    {
+      "id": "ev-x",
+      "type": "api_response",
+      "ref": "Public X reads via Grok Bot X tools; key posts: benjaminwalker 2120864197340955028, jeffreygwang 2120581630196879460, davidvgilmore 2120583960447029699, GoogleResearch 2120613625186673087, AnthropicAI 2120841731302154708, arena 2120685092909838405, shaped 2120565783554400495, outofcords 2120881466230137198, elder_plinius 2120739057944629509, OfficialLoganK 2120738935261585576, nvidia 2120627069952340361, dylan522p 2120617704101155270, Da7_Tech 2120679312965968304, GoogleDeepMind 2120841923237683462"
+    },
+    {
+      "id": "ev-gh",
+      "type": "http_response",
+      "ref": "GitHub search created:2026-11-11T16:00:00Z..2026-11-12T16:00:00Z stars:>30 (37 repos)"
+    },
+    {
+      "id": "ev-arxiv",
+      "type": "http_response",
+      "ref": "https://export.arxiv.org/api/query submittedDate:[202611111600 TO 202611121600] cs.AI/LG/CL/RO: 0 results (latest indexed 2026-11-10T18:59:54Z)"
+    },
+    {
+      "id": "ev-verify",
+      "type": "http_response",
+      "ref": "https://huggingface.co/ContinuousIntelligence/ci-proto; https://github.com/continuousintelligence/ci; https://pypi.org/project/continuousintelligence/0.1.1/; https://tsfm.ai/benchmarks/fev-bench; https://alignment.openai.com/cot-monitorability-model-lifecycle/; https://huggingface.co/rayline-ai/ARC-1.0; https://docs.rayline.ai/arc/open-source"
+    },
+    {
+      "id": "ev-candidates",
+      "type": "file",
+      "ref": "data/candidates/2026-11-12.json"
+    },
+    {
+      "id": "ev-tests",
+      "type": "file",
+      "ref": ".reports/2026-11-12/validate.log"
+    },
+    {
+      "id": "ev-pr",
+      "type": "github",
+      "ref": "pending"
+    }
+  ],
+  "outcome": {
+    "articleId": null,
+    "githubCommit": null,
+    "githubPullRequest": null,
+    "deploymentUrl": null,
+    "publicationStatus": "not_published"
+  },
+  "metrics": {
+    "durationSeconds": null,
+    "tokens": null,
+    "estimatedCostUsd": null,
+    "humanInterventions": 0
+  },
+  "retrospective": {
+    "successes": [
+      "22 candidates captured with original URLs and timestamps; top candidate ci-proto verified against HF, GitHub, PyPI and an independent fev-bench mirror",
+      "No breakthrough invented on a low-signal day"
+    ],
+    "failures": [
+      "arXiv returned no in-window submissions (announcement lag); arxiv-research marked failed for this window",
+      "OpenAI's CoT monitorability post (dated 2026-11-10) was missed in the 2026-11-11 batch and is out of window here",
+      "Most X candidates scored from X posts only; X retrievedAt timestamps are per batch"
+    ],
+    "lessonsLearned": [
+      "Check primary-source date tags (e.g. <time datetime>) rather than the X thread date when deciding window membership",
+      "Benchmark '#1' claims can depend on the metric; cross-check an independent leaderboard mirror"
+    ],
+    "nextActions": [
+      "chuangtc review on DEV then merge",
+      "Re-check arXiv on the next run for papers submitted 2026-11-11T16:00Z..2026-11-12T16:00Z",
+      "Watch for ERNIE 5.5 Flash weights release and an official Gemini 4 Hydrogen launch"
+    ]
+  }
+}
