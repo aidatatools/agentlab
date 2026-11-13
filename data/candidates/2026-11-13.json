@@ -1,0 +1,739 @@
+{
+  "date": "2026-11-13",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "selectedCandidateId": null,
+  "candidates": [
+    {
+      "id": "c20261113-aws-emulator-agent-built",
+      "title": "AWS Emulator: open-source (CC0) local emulator of 200+ AWS services, written and maintained 100% by autonomous AI agents",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-emulator-now-available/",
+          "publishedAt": "2026-11-11",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://www.aboutamazon.com/news/aws/how-autonomous-ai-agents-built-aws-emulator",
+          "publishedAt": "2026-11-11",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/aws/aws-emulator",
+          "publishedAt": "2026-09-11T19:01:12Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/rustaceans_rs/status/2121202288609861677",
+          "publishedAt": "2026-11-13T11:23:30Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/MrPunyapal/status/2121237747725713754",
+          "publishedAt": "2026-11-13T13:44:24Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 78,
+        "interestingness": 88,
+        "technicalDepth": 78,
+        "reproducibility": 90,
+        "credibility": 95
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 84.0. >= 80. Out of window: AWS What's New, AWS News Blog and the aboutamazon engineering post are all dated 2026-11-11 (window opens 2026-11-12T16:00Z); in-window X posts are secondary reshares. Verified repo aws/aws-emulator (Rust, CC0-1.0, 18 releases, v1.0.250 on 2026-11-07, v1.0.343 on 2026-11-13). Scores >= 80 on merit but it was not captured by the 2026-11-11 run and is ineligible here by window rule."
+    },
+    {
+      "id": "c20261113-inkling-2-small-open-weights",
+      "title": "Thinking Machines releases Inkling 2 Small open weights (594B total / 17B active MoE, Apache-2.0) on Hugging Face",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/thinkymachines/status/2120982625582195011",
+          "publishedAt": "2026-11-12T20:50:38Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/miramurati/status/2120983826407268458",
+          "publishedAt": "2026-11-12T20:55:24Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
+          "publishedAt": "2026-11-12T19:53:15Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 85,
+        "technicalDepth": 80,
+        "reproducibility": 90,
+        "credibility": 95
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 78.25. < 80. In window and verified: HF model API shows license apache-2.0, safetensors ~383B stored params (NVFP4), first 'upload model' commit 2026-11-12T19:53:15Z; card states 594B total / 17B active, 48 layers, 8 of 384 experts, 1M context, SGLang/vLLM recipes. Deduplicated by event: the Inkling 2 Small launch was already selected and published on 2026-11-06 (c20261106-thinking-machines-inkling-2-small), whose article already reported the planned Apache-2.0 weights; the weights drop delivers that promise but is not a new discovery, so breakthrough is scored for novelty. Suggest a follow-up edit to the existing article rather than a new one."
+    },
+    {
+      "id": "c20261113-edge0-145b-open-weights",
+      "title": "Edge0 releases Edge0-145B / 120B: Qwen3.8-Flash-Next-derived latent MoE (10B active) trained natively at 4-bit, runs on one 24GB consumer GPU, claims 86.5 Terminal-Bench 2.1",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/SamuelZengML/status/2120939739431972922",
+          "publishedAt": "2026-11-12T18:00:13Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/SamuelZengML/status/2120940287887622146",
+          "publishedAt": "2026-11-12T18:02:24Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+          "publishedAt": "2026-11-12",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/Edge0/Edge0-145B-NVFP4",
+          "publishedAt": "2026-11-11T05:22:51Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/Edge0-AI/Edge0",
+          "publishedAt": "2026-11-12",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 76,
+        "interestingness": 88,
+        "technicalDepth": 78,
+        "reproducibility": 70,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 77.4. < 80. Launch post 2026-11-12T18:00:13Z in window (HF repos created 2026-11-11 but announced in window). Verified HF card: base_model Qwen/Qwen3.8-Flash-Next, 145B total / 10.12B active, 512 experts, 256K context, NVFP4 47.79 GiB, RTX 5090 D throughput tables. Caveats lower credibility/reproducibility: all quality scores are Edge0's internal evaluations (no independent Terminal-Bench 2.1 entry found on Artificial Analysis), technical report and reproduction setup not yet released, license is the restrictive Edge0 Community Model License 1.0 (not Apache) on top of the upstream Qwen license, and it is a derivative of an existing open model. Below threshold."
+    },
+    {
+      "id": "c20261113-prefrontal-cram-energy-reasoning",
+      "title": "Prefrontal CRAM: learned Hopfield–Tank energy solves 99.996% Sudoku-Extreme after 42 ms training, >=1,000x faster than looped models",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.17309",
+          "publishedAt": "2026-11-12T18:56:56Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/Prefrontal-AI/CRAM",
+          "publishedAt": "2026-11-12T12:59:08Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 75,
+        "interestingness": 85,
+        "technicalDepth": 85,
+        "reproducibility": 50,
+        "credibility": 78
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 76.05. < 80. arXiv submission 2026-11-12T18:56:56Z in window (cs.AI; Hoover, Blayney, Whittington). Abstract verified: 99.996% Sudoku-Extreme / 100% Maze-Unique after 42/132 ms training on one GPU, 282x fewer inference FLOPs. Repo README says 'Code coming soon' (only README/assets), so reproducibility is limited; the paper itself cautions that Sudoku/Maze are trivially solvable benchmarks, capping breakthrough. Below threshold."
+    },
+    {
+      "id": "c20261113-llama-cpp-v1-0-0",
+      "title": "llama.cpp and ggml reach v1.0.0 with semantic versioning, server hardening and FP8 KV cache",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/ggerganov/status/2121246103312212124",
+          "publishedAt": "2026-11-13T14:17:36Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v1.0.0",
+          "publishedAt": "2026-11-13T10:20:19Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+          "publishedAt": "2026-11-13",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 82,
+        "technicalDepth": 70,
+        "reproducibility": 95,
+        "credibility": 95
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 74.75. < 80. Verified GitHub release v1.0.0 published 2026-11-13T10:20:19Z (in window). Important ecosystem milestone and fully reproducible, but a versioning/stability release rather than a research breakthrough."
+    },
+    {
+      "id": "c20261113-perplexity-decider-v1-3",
+      "title": "Perplexity open-weights Decider v1.3 and Decider Flash v1.3 decision models with new 'locate' span extraction",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/perplexitydevs/status/2120948200232419356",
+          "publishedAt": "2026-11-12T18:33:50Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/AravSrinivas/status/2121020114321703210",
+          "publishedAt": "2026-11-12T23:19:36Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/perplexity-ai/pplx-decider-v1.3",
+          "publishedAt": "2026-11-09T08:38:41Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 62,
+        "interestingness": 75,
+        "technicalDepth": 72,
+        "reproducibility": 88,
+        "credibility": 88
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 73.75. < 80. Announced 2026-11-12T18:33:50Z in window; HF repos perplexity-ai/pplx-decider-v1.3 and flash-v1.3 exist (created 2026-11-09). Incremental version of a model family already scored on 2026-10-17 and 2026-10-31; benchmark numbers vendor-reported."
+    },
+    {
+      "id": "c20261113-goal-encoding-llms",
+      "title": "Goal Encoding in LLMs: sparse attention heads causally encode the next sub-goal and transplant across programming languages",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.17297",
+          "publishedAt": "2026-11-12T18:55:06Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 78,
+        "technicalDepth": 82,
+        "reproducibility": 60,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 72.4. < 80. arXiv 2026-11-12T18:55:06Z in window. Solid interpretability result from abstract; code availability not checked."
+    },
+    {
+      "id": "c20261113-deepmind-pardig-satweave-datasets",
+      "title": "Google DeepMind releases PARDIG and SatWeave, the observation datasets behind WeatherNext 3",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/GoogleDeepMind/status/2121229774865527097",
+          "publishedAt": "2026-11-13T13:12:43Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 70,
+        "technicalDepth": 70,
+        "reproducibility": 85,
+        "credibility": 92
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 71.45. < 80. Official post 2026-11-13T13:12:43Z in window. Useful open data release for weather/climate ML, but datasets rather than a new capability; dataset pages not separately verified."
+    },
+    {
+      "id": "c20261113-world-labs-atlas-public",
+      "title": "World Labs opens Atlas 3D world generation to everyone with apps and API (keyframes, video, 3D Gaussian splats)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/theworldlabs/status/2120942033401717108",
+          "publishedAt": "2026-11-12T18:09:20Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 70,
+        "interestingness": 85,
+        "technicalDepth": 65,
+        "reproducibility": 40,
+        "credibility": 88
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 70.05. < 80. Official post 2026-11-12T18:09:20Z in window. Product availability expansion of a closed model; no paper or weights in this release."
+    },
+    {
+      "id": "c20261113-agentssl",
+      "title": "AgentSSL: MLE agents synthesize semi-supervised learning pipelines beating human baselines in 8/12 settings",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.17323",
+          "publishedAt": "2026-11-12T18:59:06Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 70,
+        "technicalDepth": 75,
+        "reproducibility": 60,
+        "credibility": 78
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 67.3. < 80. arXiv 2026-11-12T18:59:06Z in window. Abstract-level verification only."
+    },
+    {
+      "id": "c20261113-mape-agent-memory-evolution",
+      "title": "MAPE: program evolution discovers agent memory designs, +12% on LoCoMo/LongMemEval at 35% serving cost",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.17068",
+          "publishedAt": "2026-11-12T16:42:04Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 72,
+        "technicalDepth": 75,
+        "reproducibility": 60,
+        "credibility": 72
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 67.2. < 80. arXiv 2026-11-12T16:42:04Z in window. Abstract-level verification only."
+    },
+    {
+      "id": "c20261113-cyberbingym",
+      "title": "CyberBinGym (Berkeley RDI): agents turn compiled security patches into working exploits without source code",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/ResilientCyber/status/2121005414720360532",
+          "publishedAt": "2026-11-12T22:21:11Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 62,
+        "interestingness": 72,
+        "technicalDepth": 72,
+        "reproducibility": 60,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 67.0. < 80. Post 2026-11-12T22:21:11Z in window; secondary summary, primary paper/repo not located in this run."
+    },
+    {
+      "id": "c20261113-openai-cyber-at-the-frontier-daybreak",
+      "title": "OpenAI 'Cyber at the Frontier' livestream: Daybreak Red Team and Daybreak Defense Factory, preview of unreleased cyber model (77.0% ExploitGym)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/semgrep/status/2120954412768051582",
+          "publishedAt": "2026-11-12T18:58:32Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/aBrightFuture69/status/2121005814152409529",
+          "publishedAt": "2026-11-12T22:22:47Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/aBrightFuture69/status/2121007320591118370",
+          "publishedAt": "2026-11-12T22:28:46Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 72,
+        "interestingness": 85,
+        "technicalDepth": 65,
+        "reproducibility": 20,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 66.85. < 80. Livestream 2026-11-12 10am PT (18:00Z) in window; partner post (Semgrep) and talk quotes on X. Products are early access / sales-gated, the new cyber model is unreleased and its ExploitGym/PatchBench scores are self-reported; primary OpenAI page not fetched. Low reproducibility."
+    },
+    {
+      "id": "c20261113-seeeeg-vision-fm-eeg",
+      "title": "SeeEEG: frozen vision foundation models beat EEG foundation models once signals are rendered as images",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.17031",
+          "publishedAt": "2026-11-12T16:17:16Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 62,
+        "interestingness": 72,
+        "technicalDepth": 72,
+        "reproducibility": 55,
+        "credibility": 72
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 66.45. < 80. arXiv 2026-11-12T16:17:16Z in window. Abstract-level verification only."
+    },
+    {
+      "id": "c20261113-tencent-hy4-cwe-bench-aa",
+      "title": "Tencent Hy4 (Apache-2.0) tops Artificial Analysis CWE-Bench-AA vulnerability-fixing leaderboard at 76%",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/MartinSzerment/status/2121139639427690567",
+          "publishedAt": "2026-11-13T07:14:33Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 70,
+        "technicalDepth": 60,
+        "reproducibility": 80,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 65.0. < 80. Post 2026-11-13T07:14:33Z in window. Hy4 itself was scored 2026-11-03..06; this is a leaderboard follow-up, not verified on AA directly."
+    },
+    {
+      "id": "c20261113-nopo-one-sided-verifiable-rewards",
+      "title": "Negative-Only Policy Optimization for RL with one-sided verifiable rewards",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.17287",
+          "publishedAt": "2026-11-12T18:52:33Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 58,
+        "interestingness": 65,
+        "technicalDepth": 78,
+        "reproducibility": 55,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 65.0. < 80. arXiv 2026-11-12T18:52:33Z in window. Abstract-level verification only."
+    },
+    {
+      "id": "c20261113-gemini-4-hydrogen",
+      "title": "Google DeepMind launches Gemini 4 Hydrogen: fast model, 2.5x faster than 3.8 Flash, above Argon on AA Intelligence Index",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/GoogleDeepMind/status/2120940338869055788",
+          "publishedAt": "2026-11-12T18:02:36Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 85,
+        "technicalDepth": 55,
+        "reproducibility": 20,
+        "credibility": 92
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 63.95. < 80. Official post 2026-11-12T18:02:36Z in window (the 2026-11-12 run flagged it as a pending official launch). Closed API model, vendor and AA-index claims only; low reproducibility."
+    },
+    {
+      "id": "c20261113-deepnote-agent-initiative-benchmark",
+      "title": "Deepnote Agent Initiative Benchmark: 12 frontier models as proactive agents in a synthetic company with 6 years of history",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/jakubjurovych/status/2121256499552915586",
+          "publishedAt": "2026-11-13T14:58:55Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 58,
+        "interestingness": 75,
+        "technicalDepth": 68,
+        "reproducibility": 45,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 63.5. < 80. Post 2026-11-13T14:58:55Z in window. Vendor benchmark; methodology and data release not verified."
+    },
+    {
+      "id": "c20261113-deepseek-app-api",
+      "title": "DeepSeek exposes full App capabilities via API: search, files, links, safety, voice; standalone OCR/ASR/TTS APIs",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/deepseek_ai/status/2121247896918253875",
+          "publishedAt": "2026-11-13T14:24:44Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 78,
+        "technicalDepth": 45,
+        "reproducibility": 60,
+        "credibility": 92
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 60.2. < 80. Official post 2026-11-13T14:24:44Z in window. API product expansion, not a research result."
+    },
+    {
+      "id": "c20261113-pruna-qwen-image-remove-object",
+      "title": "Pruna AI open-sources P-Q-Image-2.1-Remove-Object LoRAs for Qwen-Image-2.1",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/PrunaAI/status/2120924648804069632",
+          "publishedAt": "2026-11-12T17:00:15Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 60,
+        "technicalDepth": 55,
+        "reproducibility": 85,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 58.25. < 80. Post 2026-11-12T17:00:15Z in window. Useful open adapters; incremental."
+    },
+    {
+      "id": "c20261113-tether-botpsy",
+      "title": "Tether BotPsy: 0.8B open-weight on-device agent model (Apache-2.0)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/ChristopheLams/status/2121136157836841293",
+          "publishedAt": "2026-11-13T07:00:43Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 60,
+        "technicalDepth": 50,
+        "reproducibility": 80,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 56.0. < 80. Post 2026-11-13T07:00:43Z in window; vendor-reported benchmarks, secondary source."
+    },
+    {
+      "id": "c20261113-octen-pulse-search",
+      "title": "OctenAI Octen Pulse: low-latency open-source search engine for AI agents",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/KZouAPT/status/2120924733768380655",
+          "publishedAt": "2026-11-12T17:00:36Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/MushrafAli3593/status/2121124709794214178",
+          "publishedAt": "2026-11-13T06:15:14Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 68,
+        "technicalDepth": 50,
+        "reproducibility": 55,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 55.75. < 80. Launch post in window (timestamp derived from post ID). Repository and latency claims not verified."
+    },
+    {
+      "id": "c20261113-taan-v1-preview",
+      "title": "Taan v1-preview controllable music foundation model (YC) with multimodal conditioning and timed events",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/mp3addi/status/2120925450243551498",
+          "publishedAt": "2026-11-12T17:03:26Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 72,
+        "technicalDepth": 50,
+        "reproducibility": 20,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 53.5. < 80. Launch post 2026-11-12T17:03:26Z in window. Closed commercial model; vendor-reported instruction-following metrics."
+    },
+    {
+      "id": "c20261113-github-scandot",
+      "title": "ScanDot: experimental Android 3D scanning and point-cloud viewer",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/faizfahmi77/ScanDot",
+          "publishedAt": "2026-11-13T04:07:57Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 50,
+        "technicalDepth": 45,
+        "reproducibility": 70,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 45.5. < 80. Created in window (315 stars). Not clearly AI-related; experimental."
+    },
+    {
+      "id": "c20261113-github-1helm",
+      "title": "1Helm: personal AI workspace on your own Cloudflare account with persistent memory",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/gitcommit90/1Helm",
+          "publishedAt": "2026-11-12T23:35:30Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 45,
+        "technicalDepth": 40,
+        "reproducibility": 70,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 41.25. < 80. Created in window (62 stars). Hobby-scale project."
+    },
+    {
+      "id": "c20261113-google-phd-fellowship-2026",
+      "title": "Google PhD Fellowship 2026: 148 recipients across 38 countries",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/GoogleResearch/status/2121016419668365812",
+          "publishedAt": "2026-11-12T23:04:55Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 10,
+        "interestingness": 45,
+        "technicalDepth": 10,
+        "reproducibility": 10,
+        "credibility": 95
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 27.25. < 80. Post 2026-11-12T23:04:55Z in window. Program announcement, not research."
+    },
+    {
+      "id": "c20261113-china-open-source-goodwill",
+      "title": "Discussion: Chinese open-weight labs earning global goodwill and soft power",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/tszzl/status/2121014721302442150",
+          "publishedAt": "2026-11-12T22:58:10Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 10,
+        "interestingness": 60,
+        "technicalDepth": 10,
+        "reproducibility": 10,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 26.5. < 80. Post 2026-11-12T22:58:10Z in window. Opinion/discussion, not a discovery."
+    },
+    {
+      "id": "c20261113-github-blender-ai-copilot-cluster",
+      "title": "Cluster of ~12 near-identical 'Blender AI copilot / MCP' repos created within minutes, each with ~115 stars",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/precygtrucqui1981/blender-ai-copilot-lab",
+          "publishedAt": "2026-11-12T19:33:16Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/racdeufindurch198812/Blender-AI-MCP-Studio",
+          "publishedAt": "2026-11-12T19:28:20Z",
+          "retrievedAt": "2026-11-14T00:54:04+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 5,
+        "interestingness": 20,
+        "technicalDepth": 10,
+        "reproducibility": 20,
+        "credibility": 5
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 12.0. < 80. Created in window, but coordinated star-farming pattern (throwaway accounts, same 10-minute burst, uniform star counts); treated as spam. GitHub window search was dominated by spam/cracked-software repos and ~40 cloned 'ai--manus' repos."
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "mission-20261113-001",
+  "date": "2026-11-13",
+  "timezone": "Asia/Taipei",
+  "status": "awaiting_review",
+  "objective": {
+    "goal": "Discover, score, verify and propose one outstanding AI/agent discovery for 2026-11-13 (Asia/Taipei), or document a no-publish decision.",
+    "sources": [
+      "x",
+      "github",
+      "arxiv"
+    ],
+    "deliverables": [
+      "Verified candidate batch",
+      "No-publish decision (low-signal day)",
+      "Mission record",
+      "Pull request"
+    ]
+  },
+  "agent": {
+    "id": "grokbot",
+    "framework": "Grok Bot (AgentLab-bot on minim4.home)",
+    "model": "grok-bot",
+    "runId": "routine-9a1f041e-20261114T0049-minim4-daily-2026-11-13"
+  },
+  "selection": {
+    "candidatesEvaluated": 28,
+    "selectedCandidateId": null,
+    "selectionScore": null,
+    "rankingArtifact": "data/candidates/2026-11-13.json"
+  },
+  "skillsUsed": [
+    {
+      "skill": "x-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-x-20261113-001"
+    },
+    {
+      "skill": "github-discovery",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-gh-20261113-001"
+    },
+    {
+      "skill": "arxiv-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ax-20261113-001"
+    },
+    {
+      "skill": "fact-check",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-fc-20261113-001"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t1",
+      "action": "git checkout main, pull --ff-only (ad3af67..cddc931), create branch daily/2026-11-13; GitHub App key file present",
+      "tool": "git",
+      "status": "success",
+      "startedAt": "2026-11-13T16:49:14Z",
+      "finishedAt": "2026-11-13T16:49:17Z",
+      "evidenceIds": [
+        "ev-git-branch"
+      ]
+    },
+    {
+      "id": "t2",
+      "action": "Discovery for window 2026-11-12T16:00Z..2026-11-13T16:00Z: GitHub search API (created in window, stars>30: 288 repos, dominated by spam/cracked-software and ~40 cloned 'ai--manus' repos); arXiv export API cs.AI/LG/CL/RO submittedDate query (latest indexed 2026-11-12T18:59:54Z, 83 in-window papers 16:00Z-18:59Z); X news search (25 stories), lab-account searches, release-keyword search, cluster post lookups (20 posts)",
+      "tool": "gh + curl + X MCP",
+      "status": "success",
+      "startedAt": "2026-11-13T16:49:32Z",
+      "finishedAt": "2026-11-13T16:52:30Z",
+      "evidenceIds": [
+        "ev-x",
+        "ev-gh",
+        "ev-arxiv"
+      ]
+    },
+    {
+      "id": "t3",
+      "action": "Verify top candidates: AWS Emulator official posts (dated 2026-11-11, out of window) and repo/releases; Inkling 2 Small HF API, card and commits (dedup vs 2026-11-06 published article); Edge0-145B HF card, commits and launch blog (internal evals only); CRAM arXiv abstract and Prefrontal-AI/CRAM repo (code coming soon); llama.cpp v1.0.0 release; dedupe against earlier candidate files",
+      "tool": "curl, gh api, WebSearch",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": "2026-11-13T16:53:30Z",
+      "evidenceIds": [
+        "ev-verify"
+      ]
+    },
+    {
+      "id": "t4",
+      "action": "Write 28-candidate JSON (no eligible in-window candidate >= 80, no article) and mission awaiting_review",
+      "tool": "python",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": "2026-11-13T16:54:04Z",
+      "evidenceIds": [
+        "ev-candidates"
+      ]
+    },
+    {
+      "id": "t5",
+      "action": "Run validate_content, unittest, npm run check, npm run build (first validate failed: 3 candidates used type 'github_repository'; corrected to schema value 'github_project' and all four re-run and passed)",
+      "tool": "python+npm",
+      "status": "success",
+      "startedAt": "2026-11-13T16:54:38Z",
+      "finishedAt": "2026-11-13T16:54:51Z",
+      "evidenceIds": [
+        "ev-tests"
+      ]
+    },
+    {
+      "id": "t6",
+      "action": "Commit as agentlab-aidatatools-bot[bot], push with short-lived installation token, open PR requesting chuangtc",
+      "tool": "git + GitHub API",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-pr"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "python scripts/validate_content.py",
+      "status": "passed",
+      "artifact": ".reports/2026-11-13/validate.log"
+    },
+    {
+      "name": "python -m unittest discover -s tests -v",
+      "status": "passed",
+      "artifact": ".reports/2026-11-13/unittest.log"
+    },
+    {
+      "name": "npm run check",
+      "status": "passed",
+      "artifact": ".reports/2026-11-13/astro-check.log"
+    },
+    {
+      "name": "npm run build",
+      "status": "passed",
+      "artifact": ".reports/2026-11-13/astro-build.log"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-git-branch",
+      "type": "git",
+      "ref": "branch daily/2026-11-13 from origin/main@cddc931"
+    },
+    {
+      "id": "ev-x",
+      "type": "api_response",
+      "ref": "Public X reads via Grok Bot X tools; key posts: thinkymachines 2120982625582195011, miramurati 2120983826407268458, SamuelZengML 2120939739431972922, perplexitydevs 2120948200232419356, ggerganov 2121246103312212124, GoogleDeepMind 2120940338869055788 and 2121229774865527097, theworldlabs 2120942033401717108, deepseek_ai 2121247896918253875, rustaceans_rs 2121202288609861677, semgrep 2120954412768051582, jakubjurovych 2121256499552915586, mp3addi 2120925450243551498, tszzl 2121014721302442150"
+    },
+    {
+      "id": "ev-gh",
+      "type": "http_response",
+      "ref": "GitHub search created:2026-11-12T16:00:00Z..2026-11-13T16:00:00Z stars:>30 (288 repos)"
+    },
+    {
+      "id": "ev-arxiv",
+      "type": "http_response",
+      "ref": "https://export.arxiv.org/api/query submittedDate:[202611111600 TO 202611131600] cs.AI/LG/CL/RO: 200 returned, 83 in window (latest indexed 2026-11-12T18:59:54Z)"
+    },
+    {
+      "id": "ev-verify",
+      "type": "http_response",
+      "ref": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-emulator-now-available/; https://www.aboutamazon.com/news/aws/how-autonomous-ai-agents-built-aws-emulator; https://github.com/aws/aws-emulator; https://huggingface.co/thinkingmachines/Inkling-2-Small; https://huggingface.co/Edge0/Edge0-145B-NVFP4; https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer; https://arxiv.org/abs/2611.17309; https://github.com/Prefrontal-AI/CRAM; https://github.com/ggml-org/llama.cpp/releases/tag/v1.0.0"
+    },
+    {
+      "id": "ev-candidates",
+      "type": "file",
+      "ref": "data/candidates/2026-11-13.json"
+    },
+    {
+      "id": "ev-tests",
+      "type": "file",
+      "ref": ".reports/2026-11-13/validate.log"
+    },
+    {
+      "id": "ev-pr",
+      "type": "github",
+      "ref": "https://github.com/aidatatools/agentlab/pull/33"
+    }
+  ],
+  "outcome": {
+    "articleId": null,
+    "githubCommit": "888c3b4",
+    "githubPullRequest": "https://github.com/aidatatools/agentlab/pull/33",
+    "deploymentUrl": null,
+    "publicationStatus": "not_published"
+  },
+  "metrics": {
+    "durationSeconds": null,
+    "tokens": null,
+    "estimatedCostUsd": null,
+    "humanInterventions": 0
+  },
+  "retrospective": {
+    "successes": [
+      "28 candidates captured with original URLs and timestamps; top items verified against HF API/cards, GitHub API and official posts",
+      "arXiv returned in-window submissions this time (83 papers 16:00Z-18:59Z on 2026-11-12)",
+      "No breakthrough invented on a low-signal day"
+    ],
+    "failures": [
+      "Highest-scoring item (AWS Emulator, 84.0) was announced 2026-11-11 and missed by the 2026-11-11 run; ineligible here by window rule",
+      "Many X candidates scored from X posts only; X retrievedAt timestamps are per batch",
+      "GitHub new-repo search was dominated by spam and star-farmed clones"
+    ],
+    "lessonsLearned": [
+      "Search official vendor blogs (AWS What's New, company news pages) alongside X; big launches can be under-surfaced by X news clusters on their launch day",
+      "Deduplicate by event: an open-weights drop for a model already published is a follow-up, not a new article"
+    ],
+    "nextActions": [
+      "chuangtc review on DEV then merge",
+      "Consider a follow-up edit to the 2026-11-06 Inkling 2 Small article noting the Apache-2.0 weights went live 2026-11-12",
+      "Watch for Edge0 technical report / independent Terminal-Bench 2.1 results and CRAM code release",
+      "Re-check arXiv on the next run for papers submitted after 2026-11-12T18:59:54Z"
+    ]
+  }
+}
