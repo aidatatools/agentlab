@@ -187,13 +187,13 @@
     {
       "id": "ev-pr",
       "type": "github",
-      "ref": "pending"
+      "ref": "https://github.com/aidatatools/agentlab/pull/33"
     }
   ],
   "outcome": {
     "articleId": null,
-    "githubCommit": null,
-    "githubPullRequest": null,
+    "githubCommit": "888c3b4",
+    "githubPullRequest": "https://github.com/aidatatools/agentlab/pull/33",
     "deploymentUrl": null,
     "publicationStatus": "not_published"
   },
