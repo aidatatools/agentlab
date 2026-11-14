@@ -1,0 +1,227 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "mission-20261114-001",
+  "date": "2026-11-14",
+  "timezone": "Asia/Taipei",
+  "status": "awaiting_review",
+  "objective": {
+    "goal": "Discover, score, verify and propose one outstanding AI/agent discovery for 2026-11-14 (Asia/Taipei), or document a no-publish decision.",
+    "sources": [
+      "x",
+      "github",
+      "arxiv"
+    ],
+    "deliverables": [
+      "Verified candidate batch",
+      "No-publish decision (low-signal day)",
+      "Mission record",
+      "Pull request"
+    ]
+  },
+  "agent": {
+    "id": "grokbot",
+    "framework": "Grok Bot (AgentLab-bot on minim4.home)",
+    "model": "grok-bot",
+    "runId": "routine-9a1f041e-20261115T0123-minim4-daily-2026-11-14"
+  },
+  "selection": {
+    "candidatesEvaluated": 27,
+    "selectedCandidateId": null,
+    "selectionScore": null,
+    "rankingArtifact": "data/candidates/2026-11-14.json"
+  },
+  "skillsUsed": [
+    {
+      "skill": "x-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-x-20261114-001"
+    },
+    {
+      "skill": "github-discovery",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-gh-20261114-001"
+    },
+    {
+      "skill": "arxiv-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ax-20261114-001"
+    },
+    {
+      "skill": "fact-check",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-fc-20261114-001"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t1",
+      "action": "git checkout main, pull --ff-only (cddc931..cd7aea9), create branch daily/2026-11-14; GitHub App key file present",
+      "tool": "git",
+      "status": "success",
+      "startedAt": "2026-11-14T17:23:18Z",
+      "finishedAt": "2026-11-14T17:23:21Z",
+      "evidenceIds": [
+        "ev-git-branch"
+      ]
+    },
+    {
+      "id": "t2",
+      "action": "Discovery for window 2026-11-13T16:00Z..2026-11-14T16:00Z: X news search (25 stories), X release-keyword and topic searches (~95 posts); GitHub search (repos created since 2026-11-13 by stars: dominated by spam and ~15 cloned ai--manus/IPTV repos; targeted repo searches); arXiv export API cs.AI/LG/CL/RO submittedDate-desc query (200 returned, latest indexed 2026-11-12T18:59:54Z, 0 in window due to announcement lag; first attempt returned an empty body and was retried)",
+      "tool": "gh + curl + X MCP",
+      "status": "success",
+      "startedAt": "2026-11-14T17:23:30Z",
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-x",
+        "ev-gh",
+        "ev-arxiv"
+      ]
+    },
+    {
+      "id": "t3",
+      "action": "Verify top candidates: read Google Research /teamwork blog in full; arXiv search found Courtade-Kumar proof preprint 2609.24931 (2026-09-21) and Lean repo dpwoodru/general-courtade-kumar-lean (2026-09-24); GitHub searches found no public Lean artifacts for Weil/Bochner-Riesz/LEAP formalizations; GitHub API checks of google/tpu-sync, cloudflare/kitesurf, deepnote/agent-initiative-benchmark, ggml-org/llama.cpp; dedupe against earlier candidate files",
+      "tool": "WebFetch, curl, gh api",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": "2026-11-14T17:26:54Z",
+      "evidenceIds": [
+        "ev-verify"
+      ]
+    },
+    {
+      "id": "t4",
+      "action": "Write 27-candidate JSON (no eligible in-window candidate >= 80, no article) and mission awaiting_review",
+      "tool": "python",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-candidates"
+      ]
+    },
+    {
+      "id": "t5",
+      "action": "Run validate_content, unittest, npm run check, npm run build",
+      "tool": "python+npm",
+      "status": "success",
+      "startedAt": "2026-11-14T17:27:30Z",
+      "finishedAt": "2026-11-14T17:27:34Z",
+      "evidenceIds": [
+        "ev-tests"
+      ]
+    },
+    {
+      "id": "t6",
+      "action": "Commit as agentlab-aidatatools-bot[bot], push with short-lived installation token, open PR requesting chuangtc (first mission update recorded an empty PR number because the PR API response failed to parse locally; corrected in a follow-up commit)",
+      "tool": "git + GitHub API",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-pr"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "python scripts/validate_content.py",
+      "status": "passed",
+      "artifact": ".reports/2026-11-14/validate.log"
+    },
+    {
+      "name": "python -m unittest discover -s tests -v",
+      "status": "passed",
+      "artifact": ".reports/2026-11-14/unittest.log"
+    },
+    {
+      "name": "npm run check",
+      "status": "passed",
+      "artifact": ".reports/2026-11-14/astro-check.log"
+    },
+    {
+      "name": "npm run build",
+      "status": "passed",
+      "artifact": ".reports/2026-11-14/astro-build.log"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-git-branch",
+      "type": "git",
+      "ref": "branch daily/2026-11-14 from origin/main@cd7aea9"
+    },
+    {
+      "id": "ev-x",
+      "type": "api_response",
+      "ref": "Public X reads via Grok Bot X tools; key posts: mirrokni 2121348503511470144 and 2121351383236436247, GoogleCloudTech 2121335850491375915, 2logics 2121357155995652217, allscreenshot 2121484780948852787, lauraprobi 2121257361381724202, gurtej__gill_ 2121504973272051858, octavusai 2121375423728583141; X news clusters 2121362268055052493, 2121367664450732253, 2120997983403852045, 2121351013193941354"
+    },
+    {
+      "id": "ev-gh",
+      "type": "http_response",
+      "ref": "gh search repos --created >=2026-11-13 --sort stars; targeted searches (courtade kumar lean, weil conjectures lean, teamwork-leap, bochner-riesz lean, kitesurf, agentssl, tpu sync, agent-initiative-benchmark)"
+    },
+    {
+      "id": "ev-arxiv",
+      "type": "http_response",
+      "ref": "https://export.arxiv.org/api/query cat:cs.AI/LG/CL/RO sortBy=submittedDate desc max_results=200: latest indexed 2026-11-12T18:59:54Z, 0 in window; all:\"Courtade-Kumar\" query"
+    },
+    {
+      "id": "ev-verify",
+      "type": "http_response",
+      "ref": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/; https://arxiv.org/abs/2609.24931; https://github.com/dpwoodru/general-courtade-kumar-lean; https://github.com/google/tpu-sync; https://github.com/cloudflare/kitesurf; https://github.com/deepnote/agent-initiative-benchmark; https://github.com/ggml-org/llama.cpp"
+    },
+    {
+      "id": "ev-candidates",
+      "type": "file",
+      "ref": "data/candidates/2026-11-14.json"
+    },
+    {
+      "id": "ev-tests",
+      "type": "file",
+      "ref": ".reports/2026-11-14/validate.log"
+    },
+    {
+      "id": "ev-pr",
+      "type": "github",
+      "ref": "https://github.com/aidatatools/agentlab/pull/34"
+    }
+  ],
+  "outcome": {
+    "articleId": null,
+    "githubCommit": "c1643ed",
+    "githubPullRequest": "https://github.com/aidatatools/agentlab/pull/34",
+    "deploymentUrl": null,
+    "publicationStatus": "not_published"
+  },
+  "metrics": {
+    "durationSeconds": null,
+    "tokens": null,
+    "estimatedCostUsd": null,
+    "humanInterventions": 0
+  },
+  "retrospective": {
+    "successes": [
+      "27 candidates captured with original URLs and timestamps; top item (Google /teamwork) verified against the official blog, arXiv and GitHub",
+      "Found that the headline Courtade-Kumar proof predates the window (arXiv 2609.24931, 2026-09-21), avoiding a stale article",
+      "No breakthrough invented on a low-signal day"
+    ],
+    "failures": [
+      "arXiv returned 0 in-window papers (index ended 2026-11-12T18:59:54Z; weekend announcement lag); first API call returned an empty body",
+      "Many X candidates scored from X posts or news clusters only; X retrievedAt timestamps are per batch",
+      "GitHub new-repo search dominated by spam and cloned repos"
+    ],
+    "lessonsLearned": [
+      "Vendor roll-up posts can re-announce older results; check arXiv/GitHub dates for each headline claim",
+      "Self-reported formalizations without released Lean artifacts stay below the verification bar"
+    ],
+    "nextActions": [
+      "chuangtc review on DEV then merge",
+      "Watch for public Lean artifacts of the Weil/Bochner-Riesz/Navier-Stokes formalizations from Google /teamwork-LEAP",
+      "Re-check arXiv on the next run for papers submitted after 2026-11-12T18:59:54Z"
+    ]
+  }
+}
