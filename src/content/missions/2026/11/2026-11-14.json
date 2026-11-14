@@ -116,7 +116,7 @@
     },
     {
       "id": "t6",
-      "action": "Commit as agentlab-aidatatools-bot[bot], push with short-lived installation token, open PR requesting chuangtc",
+      "action": "Commit as agentlab-aidatatools-bot[bot], push with short-lived installation token, open PR requesting chuangtc (first mission update recorded an empty PR number because the PR API response failed to parse locally; corrected in a follow-up commit)",
       "tool": "git + GitHub API",
       "status": "success",
       "startedAt": null,
@@ -187,13 +187,13 @@
     {
       "id": "ev-pr",
       "type": "github",
-      "ref": "https://github.com/aidatatools/agentlab/pull/"
+      "ref": "https://github.com/aidatatools/agentlab/pull/34"
     }
   ],
   "outcome": {
     "articleId": null,
     "githubCommit": "c1643ed",
-    "githubPullRequest": "https://github.com/aidatatools/agentlab/pull/",
+    "githubPullRequest": "https://github.com/aidatatools/agentlab/pull/34",
     "deploymentUrl": null,
     "publicationStatus": "not_published"
   },
