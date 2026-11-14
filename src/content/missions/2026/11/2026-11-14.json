@@ -108,8 +108,8 @@
       "action": "Run validate_content, unittest, npm run check, npm run build",
       "tool": "python+npm",
       "status": "success",
-      "startedAt": null,
-      "finishedAt": null,
+      "startedAt": "2026-11-14T17:27:30Z",
+      "finishedAt": "2026-11-14T17:27:34Z",
       "evidenceIds": [
         "ev-tests"
       ]
@@ -187,13 +187,13 @@
     {
       "id": "ev-pr",
       "type": "github",
-      "ref": "pull request opened after this commit"
+      "ref": "https://github.com/aidatatools/agentlab/pull/"
     }
   ],
   "outcome": {
     "articleId": null,
-    "githubCommit": null,
-    "githubPullRequest": null,
+    "githubCommit": "c1643ed",
+    "githubPullRequest": "https://github.com/aidatatools/agentlab/pull/",
     "deploymentUrl": null,
     "publicationStatus": "not_published"
   },
