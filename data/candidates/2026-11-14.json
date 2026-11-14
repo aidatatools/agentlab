@@ -1,0 +1,711 @@
+{
+  "date": "2026-11-14",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "selectedCandidateId": null,
+  "candidates": [
+    {
+      "id": "c20261114-inkling-2-small-weights",
+      "title": "Thinking Machines Inkling 2 Small Apache-2.0 weights",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
+          "publishedAt": "2026-11-12T19:53:15Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/ChaiWithAi/status/2121318433879163139",
+          "publishedAt": "2026-11-13T19:05:01Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 85,
+        "technicalDepth": 80,
+        "reproducibility": 90,
+        "credibility": 95
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 78.25. < 80. Duplicate (re-scored independently in this run; number in parentheses is the earlier run score): weights drop evaluated 2026-11-13 run; launch article already published 2026-11-06."
+    },
+    {
+      "id": "c20261114-google-antigravity-teamwork-results",
+      "title": "Google Research: Antigravity /teamwork multi-agent results (Courtade-Kumar Lean proof, autonomous Weil conjectures formalization ~1.8M Lean lines, NMR 95% top-1, libgav1/Zircon Rust rewrites, 4.09x JAXBench)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+          "publishedAt": "2026-11-13",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/mirrokni/status/2121348503511470144",
+          "publishedAt": "2026-11-13T21:04:30Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/mirrokni/status/2121351383236436247",
+          "publishedAt": "2026-11-13T21:15:57Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        },
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2609.24931",
+          "publishedAt": "2026-09-21T17:26:28Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/dpwoodru/general-courtade-kumar-lean",
+          "publishedAt": "2026-09-24T06:35:41Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 85,
+        "interestingness": 92,
+        "technicalDepth": 75,
+        "reproducibility": 45,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 77.75. < 80. In window (blog dated 2026-11-13; Vahab Mirrokni announcement 21:04Z). Blog read in full. Not publishable: (1) the Courtade-Kumar proof is not new in this window: arXiv 2609.24931 \"A Proof of the Most Informative Boolean Function Conjecture\" (Chen, Gohari, Javanmard, Lin, Mirrokni, Nair) was posted 2026-09-21 and the Lean repo dpwoodru/general-courtade-kumar-lean exists since 2026-09-24; (2) the genuinely new headline claims (autonomous Weil conjectures formalization ~1.8M lines / 28,800 subagent calls, Hilbert 10th over rings of integers 919k lines, 3D Navier-Stokes smooth-forcing blowup formalization, Birkhoff and 3D Bochner-Riesz formalizations) have no public Lean artifacts or preprints found on GitHub/arXiv in this run, so they rest on Google self-report only; (3) it is a roll-up of many results, most \"still in preprints\". Reproducibility and independent credibility scored accordingly. Revisit if Google releases the Lean formalizations."
+    },
+    {
+      "id": "c20261114-runway-praxis-1",
+      "title": "Runway Praxis-1 open robotics model (Apache-2.0)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/truthmediaapp/status/2121544176328175967",
+          "publishedAt": "2026-11-14T10:02:02Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/kevin980606/status/2121565725471256850",
+          "publishedAt": "2026-11-14T11:27:40Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 80,
+        "technicalDepth": 75,
+        "reproducibility": 85,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 75.75. < 80. Duplicate (re-scored independently in this run; number in parentheses is the earlier run score): evaluated in the 2026-11-11 run (76.75); in-window posts are reshares."
+    },
+    {
+      "id": "c20261114-edge0-145b",
+      "title": "Edge0-145B / Edge0-120B open-weight latent MoE (10B active) for laptops",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/ohyeahx1/status/2121573564138811894",
+          "publishedAt": "2026-11-14T11:58:49Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/bsormagec/status/2121299220833452543",
+          "publishedAt": "2026-11-13T17:48:40Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 85,
+        "technicalDepth": 75,
+        "reproducibility": 85,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 75.5. < 80. Duplicate (re-scored independently in this run; number in parentheses is the earlier run score): released 2026-11-12 and evaluated in the 2026-11-13 run (77.4); in-window posts are reshares/commentary."
+    },
+    {
+      "id": "c20261114-llama-cpp-v1-0-0",
+      "title": "llama.cpp v1.0.0 stable release with semantic versioning",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/ggml-org/llama.cpp",
+          "publishedAt": "2023-03-10T18:58:00Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2121258171821904345",
+          "publishedAt": "2026-11-14T15:17:16Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 85,
+        "technicalDepth": 70,
+        "reproducibility": 95,
+        "credibility": 95
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 72.5. < 80. Duplicate (re-scored independently in this run; number in parentheses is the earlier run score): evaluated in the 2026-11-13 run (74.75); v1.0.0 announced 2026-11-13 before window; latest builds b12381/b12383 on 2026-11-14 are routine."
+    },
+    {
+      "id": "c20261114-cloudflare-kitesurf-open-source",
+      "title": "Cloudflare open-sources Kitesurf, an experimental agent-oriented browser engine running on Workers (Apache-2.0, speaks CDP)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/cloudflare/kitesurf",
+          "publishedAt": "2026-09-30T08:51:43Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/2logics/status/2121357155995652217",
+          "publishedAt": "2026-11-13T21:38:53Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/allscreenshot/status/2121484780948852787",
+          "publishedAt": "2026-11-14T06:06:01Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 75,
+        "technicalDepth": 70,
+        "reproducibility": 90,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 71.75. < 80. Repo verified via GitHub API: Apache-2.0, TypeScript, 1,105 stars, pushed 2026-11-14T09:30Z. Product first introduced in August; open-sourcing is a useful release, and a third party (Allscreenshots) already reports it ~2.5x slower than optimized Chromium. Not a breakthrough."
+    },
+    {
+      "id": "c20261114-meta-fair-nyu-vlm-design-study",
+      "title": "Meta FAIR + NYU (Ellis Brown et al.): 200+ vision-language models trained from scratch (1B-6.4B) show dedicated vision parameters matter; encoder-free designs need ~3x compute",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2121362268055052493",
+          "publishedAt": "2026-11-14T01:58:28Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 75,
+        "technicalDepth": 80,
+        "reproducibility": 70,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 71.75. < 80. Only an X news cluster was read; the underlying paper was not located on arXiv in this run (arXiv index lag), so details are unverified. Controlled scaling study, useful guidance, not a breakthrough."
+    },
+    {
+      "id": "c20261114-prefrontal-cram",
+      "title": "Prefrontal CRAM: learned Hopfield-Tank energies solve reasoning puzzles ~1000x faster to train than looped models",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.17309",
+          "publishedAt": "2026-11-12",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/grok/status/2121386961281617982",
+          "publishedAt": "2026-11-13T23:37:19Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 75,
+        "technicalDepth": 80,
+        "reproducibility": 60,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 71.25. < 80. Duplicate (re-scored independently in this run; number in parentheses is the earlier run score): evaluated in the 2026-11-13 run (76.05); code still not verified as released."
+    },
+    {
+      "id": "c20261114-google-tpu-sync-open-source",
+      "title": "Google Cloud open-sources TPU Sync (C++, Apache-2.0): unified HBM/host DRAM/SSD/Lustre hierarchy for KV-cache and RL weight transfer, >90% lower KV transfer latency on 235B-480B MoE (Google-reported)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/google/tpu-sync",
+          "publishedAt": "2026-05-09T01:51:29Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/GoogleCloudTech/status/2121335850491375915",
+          "publishedAt": "2026-11-13T20:14:13Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/dominguezdaniel/status/2121285260503617954",
+          "publishedAt": "2026-11-13T16:53:12Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 70,
+        "technicalDepth": 75,
+        "reproducibility": 85,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 70.75. < 80. Repo verified via GitHub API: Apache-2.0, C++, 181 stars, active commits 2026-11-13T21:32Z..2026-11-14T00:39Z. Solid infrastructure release, but latency numbers are Google internal benchmarks and it is incremental systems engineering rather than a breakthrough."
+    },
+    {
+      "id": "c20261114-will-depue-blackwell-fingerprints",
+      "title": "Will DePue reports hardware fingerprints of export-restricted NVIDIA Blackwell GPUs recovered from weights of six Chinese open models",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2120997983403852045",
+          "publishedAt": "2026-11-13T23:08:19Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 90,
+        "technicalDepth": 70,
+        "reproducibility": 55,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 69.75. < 80. X news cluster only (story cluster id dates from 2026-11-12/13, likely first posted before the window); primary analysis not verified in this run. Policy-relevant forensics claim; does not meet 80 or verification bar."
+    },
+    {
+      "id": "c20261114-deepnote-agent-initiative-benchmark",
+      "title": "Deepnote Agent Initiative Benchmark: 12 frontier models as proactive Slack agents in synthetic company PageMantle (50 scenarios); GPT-6 Astra 8.97, GPT-6.1 Sol 8.65, Claude Fable 5.2 8.17",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/lauraprobi/status/2121257361381724202",
+          "publishedAt": "2026-11-13T15:02:20Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/deepnote/agent-initiative-benchmark",
+          "publishedAt": "2026-11-08T17:15:16Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/AGTPinsights/status/2121275564157730985",
+          "publishedAt": "2026-11-13T16:14:40Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 80,
+        "technicalDepth": 65,
+        "reproducibility": 85,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 68.25. < 80. Out of window: launch posts at 2026-11-13T15:02Z, before window start 16:00Z (only reshares in window). Repo deepnote/agent-initiative-benchmark verified (Apache-2.0, Python, last push 2026-11-13T07:49Z). Small (50 tasks) vendor benchmark with model grading; interesting finding that models fail to stay silent ~4 in 10 times."
+    },
+    {
+      "id": "c20261114-agentssl-cornell",
+      "title": "Cornell AgentSSL: agents write semi-supervised learning code beating human baselines in 8/12 settings; ~17,000-program SSL benchmark",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/gurtej__gill_/status/2121504973272051858",
+          "publishedAt": "2026-11-14T07:26:15Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 65,
+        "technicalDepth": 65,
+        "reproducibility": 70,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 62.75. < 80. Only a roundup post read; paper/repo not located in this run (GitHub search for AgentSSL found only an unrelated 2026-03 repo)."
+    },
+    {
+      "id": "c20261114-perplexity-decider-v1-3",
+      "title": "Perplexity Decider v1.3 / Flash v1.3 open decision models with locate tool (Apache-2.0)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2121020438839185863",
+          "publishedAt": "2026-11-13T03:52:13Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 60,
+        "technicalDepth": 55,
+        "reproducibility": 85,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 60.75. < 80. Out of window: release 2026-11-12/13 before 16:00Z (perplexitydevs post captured in 2026-11-13 run)."
+    },
+    {
+      "id": "c20261114-mafia-social-deception-benchmark",
+      "title": "Mafia-style social deception evaluation: 28 AI models, 500,000+ rounds vs ~250,000 humans; simulated fruit-fly brain beats 17 models",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2121367664450732253",
+          "publishedAt": "2026-11-13T22:26:25Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 85,
+        "technicalDepth": 55,
+        "reproducibility": 50,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 60.25. < 80. X news cluster only; primary paper/organizer not verified in this run. Curious result but credibility unverified."
+    },
+    {
+      "id": "c20261114-liquidcodec",
+      "title": "Liquid AI releases LiquidCodec, a 74M-parameter streaming speech codec",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/gurtej__gill_/status/2121504973272051858",
+          "publishedAt": "2026-11-14T07:26:15Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 55,
+        "technicalDepth": 60,
+        "reproducibility": 70,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 57.75. < 80. Roundup mention only; primary release not verified in this run. Incremental component release."
+    },
+    {
+      "id": "c20261114-anthropic-safety-eval-recommendations",
+      "title": "Anthropic publishes 10 recommendations for designing, running and reporting AI safety evaluations",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2121351013193941354",
+          "publishedAt": "2026-11-13T21:22:35Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/marcopapa99/status/2121581808458568094",
+          "publishedAt": "2026-11-14T12:31:34Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 70,
+        "technicalDepth": 55,
+        "reproducibility": 60,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 57.0. < 80. Methodology guidance, not a discovery; Anthropic page not fetched in this run."
+    },
+    {
+      "id": "c20261114-gemini-4-hydrogen",
+      "title": "Gemini 4 Hydrogen / Carbon availability and Antigravity Orchestrator",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2121286245951078839",
+          "publishedAt": "2026-11-14T16:52:32Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/octavusai/status/2121375423728583141",
+          "publishedAt": "2026-11-13T22:51:28Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 80,
+        "technicalDepth": 50,
+        "reproducibility": 20,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 57.0. < 80. Out of window: Hydrogen launched 2026-11-12 and Carbon API 2026-11-10 per weekly roundup; API-only models."
+    },
+    {
+      "id": "c20261114-budget3d",
+      "title": "Budget3D: open-source single-image-to-3D model whose single checkpoint runs on a variable token budget",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Pro_Algorithm/status/2121467960732659800",
+          "publishedAt": "2026-11-14T04:59:11Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 60,
+        "technicalDepth": 60,
+        "reproducibility": 65,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 56.75. < 80. Low-reach X post only; repo/paper not verified in this run."
+    },
+    {
+      "id": "c20261114-deepseek-api-app-tools",
+      "title": "DeepSeek exposes its app tools (web search, URL reading, file parsing, safety checks, OCR/ASR/TTS) through the API on V4.1-Flash",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/deepseek_ai/status/2121247896918253875",
+          "publishedAt": "2026-11-13",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/AGTPinsights/status/2121273457534976029",
+          "publishedAt": "2026-11-13T16:06:18Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 70,
+        "technicalDepth": 45,
+        "reproducibility": 60,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 55.0. < 80. Official announcement post (2121247896918253875) predates the window start by its id timestamp (~2026-11-13T14:2xZ); product/API feature, not a new model."
+    },
+    {
+      "id": "c20261114-nace-weight-space-programming",
+      "title": "Nace AI \"Weight Space Programming\": agents adjust per-tensor GGUF quantization precision to reduce accuracy loss",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/crazyMLguy/status/2121363530108826054",
+          "publishedAt": "2026-11-13T22:04:13Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 65,
+        "technicalDepth": 55,
+        "reproducibility": 50,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 52.75. < 80. Secondary X post only; vendor claims unverified."
+    },
+    {
+      "id": "c20261114-veriloop-coding-agent",
+      "title": "VeriLoop open-source local coding agent that blocks changes until they pass independent verification",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/TeksEdge/status/2121279759917482302",
+          "publishedAt": "2026-11-13T16:31:20Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 60,
+        "technicalDepth": 55,
+        "reproducibility": 65,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 52.75. < 80. Secondary X post; repo not verified in this run."
+    },
+    {
+      "id": "c20261114-breken-simulated-production",
+      "title": "Breken launches simulated-production testing platform (76 real bugs across 33 OSS products, 85% precision, self-reported)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2121306567622754363",
+          "publishedAt": "2026-11-13T18:25:01Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 65,
+        "technicalDepth": 55,
+        "reproducibility": 40,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 52.75. < 80. Commercial waitlist product with self-reported benchmark."
+    },
+    {
+      "id": "c20261114-google-tpu-8i-max-8tx",
+      "title": "Google adds TPU 8i Max (384GB HBM, long-context inference) and TPU 8tx (confidential inference) systems",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/LenardReads/status/2121356680764047620",
+          "publishedAt": "2026-11-13T21:37:00Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 60,
+        "technicalDepth": 50,
+        "reproducibility": 10,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 47.0. < 80. Hardware product announcement; quoted original post predates window; no reproducible artifact."
+    },
+    {
+      "id": "c20261114-erik-hoel-qualiaphobic-ai",
+      "title": "Erik Hoel (Bicameral Labs): \"qualiaphobic\" AI architectures designed to resist any theory of consciousness",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2121225062665888235",
+          "publishedAt": "2026-11-13T17:05:38Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 65,
+        "technicalDepth": 40,
+        "reproducibility": 30,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 43.75. < 80. Position/philosophy paper per X news cluster; arXiv entry not verified in this run."
+    },
+    {
+      "id": "c20261114-chatgpt-wallet",
+      "title": "OpenAI ChatGPT Wallet: tokenized agent checkout with per-payment biometric approval",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/KrakowiakK/status/2121498621120065792",
+          "publishedAt": "2026-11-14T07:01:01Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 75,
+        "technicalDepth": 30,
+        "reproducibility": 10,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 43.75. < 80. Product launch with few technical details (\"zero details in the post\" per reshares); not a research breakthrough."
+    },
+    {
+      "id": "c20261114-dwarkesh-timeline-update",
+      "title": "Dwarkesh Patel essay: median AI-researcher parity 2028, superintelligence by 2030",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2121594432789283052",
+          "publishedAt": "2026-11-14T15:59:42Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 20,
+        "interestingness": 75,
+        "technicalDepth": 30,
+        "reproducibility": 20,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 40.25. < 80. Opinion/forecast essay, not a discovery."
+    },
+    {
+      "id": "c20261114-openai-robotics-reorg",
+      "title": "OpenAI folds its robotics team into core research (Mark Chen) and applied (Greg Brockman) groups",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2121315412797239725",
+          "publishedAt": "2026-11-14T16:46:55Z",
+          "retrievedAt": "2026-11-15T01:27:30+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 15,
+        "interestingness": 60,
+        "technicalDepth": 10,
+        "reproducibility": 10,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 31.0. < 80. Organizational news; no technical artifact."
+    }
+  ]
+}
