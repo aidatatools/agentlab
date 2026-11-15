@@ -1,0 +1,228 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "mission-20261115-001",
+  "date": "2026-11-15",
+  "timezone": "Asia/Taipei",
+  "status": "awaiting_review",
+  "objective": {
+    "goal": "Discover, score, verify and propose one outstanding AI/agent discovery for 2026-11-15 (Asia/Taipei), or document a no-publish decision.",
+    "sources": [
+      "x",
+      "github",
+      "arxiv"
+    ],
+    "deliverables": [
+      "Verified candidate batch",
+      "No-publish decision (low-signal day)",
+      "Mission record",
+      "Pull request"
+    ]
+  },
+  "agent": {
+    "id": "grokbot",
+    "framework": "Grok Bot (AgentLab-bot on minim4.home)",
+    "model": "grok-bot",
+    "runId": "routine-9a1f041e-20261116T0120-minim4-daily-2026-11-15"
+  },
+  "selection": {
+    "candidatesEvaluated": 26,
+    "selectedCandidateId": null,
+    "selectionScore": null,
+    "rankingArtifact": "data/candidates/2026-11-15.json"
+  },
+  "skillsUsed": [
+    {
+      "skill": "x-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-x-20261115-001"
+    },
+    {
+      "skill": "github-discovery",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-gh-20261115-001"
+    },
+    {
+      "skill": "arxiv-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ax-20261115-001"
+    },
+    {
+      "skill": "fact-check",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-fc-20261115-001"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t1",
+      "action": "git checkout main, pull --ff-only (cd7aea9..014774a), create branch daily/2026-11-15; GitHub App key file present",
+      "tool": "git",
+      "status": "success",
+      "startedAt": "2026-11-15T17:19:58Z",
+      "finishedAt": "2026-11-15T17:20:01Z",
+      "evidenceIds": [
+        "ev-git-branch"
+      ]
+    },
+    {
+      "id": "t2",
+      "action": "Discovery for window 2026-11-14T16:00Z..2026-11-15T16:00Z: X news search (25 stories), 4 X post searches (release/open-weights, papers/releases, official lab accounts, math/Lean); GitHub search (repos created since 2026-11-13/14 by stars, dominated by spam clones of ai--manus/IPTV/Copilot; keyword searches agent/llm/mcp/model); arXiv export API cs.AI/LG/CL/RO submittedDate-desc (300 returned, latest indexed 2026-11-12T18:59:54Z, 0 in window due to weekend announcement lag); Hugging Face model API checks",
+      "tool": "gh + curl + X MCP",
+      "status": "success",
+      "startedAt": "2026-11-15T17:20:01Z",
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-x",
+        "ev-gh",
+        "ev-arxiv"
+      ]
+    },
+    {
+      "id": "t3",
+      "action": "Verify top candidates: mit-han-lab/pear repo, commits and README, PEAR project blog, HF mit-han-lab model dates; X search for PEAR announcement dates; HF API for LongCat-2.5 and Nex-N2.6; arXiv id_list for 2611.17167 and 2611.08318; n4ze3m/tiny-voca README and commits; alibaba/open-code-review and meta/astryx metadata; dedupe against earlier candidate files",
+      "tool": "curl, gh api, X MCP",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": "2026-11-15T17:22:57Z",
+      "evidenceIds": [
+        "ev-verify"
+      ]
+    },
+    {
+      "id": "t4",
+      "action": "Write 26-candidate JSON (no eligible in-window candidate >= 80, no article) and mission awaiting_review",
+      "tool": "python",
+      "status": "success",
+      "startedAt": "2026-11-15T17:22:57Z",
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-candidates"
+      ]
+    },
+    {
+      "id": "t5",
+      "action": "Run validate_content, unittest, npm run check, npm run build",
+      "tool": "python+npm",
+      "status": "success",
+      "startedAt": "2026-11-15T17:23:32Z",
+      "finishedAt": "2026-11-15T17:23:35Z",
+      "evidenceIds": [
+        "ev-tests"
+      ]
+    },
+    {
+      "id": "t6",
+      "action": "Commit as agentlab-aidatatools-bot[bot], push with short-lived installation token, open PR requesting chuangtc",
+      "tool": "git + GitHub API",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-pr"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "python scripts/validate_content.py",
+      "status": "passed",
+      "artifact": ".reports/2026-11-15/validate.log"
+    },
+    {
+      "name": "python -m unittest discover -s tests -v",
+      "status": "passed",
+      "artifact": ".reports/2026-11-15/unittest.log"
+    },
+    {
+      "name": "npm run check",
+      "status": "passed",
+      "artifact": ".reports/2026-11-15/astro-check.log"
+    },
+    {
+      "name": "npm run build",
+      "status": "passed",
+      "artifact": ".reports/2026-11-15/astro-build.log"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-git-branch",
+      "type": "git",
+      "ref": "branch daily/2026-11-15 from origin/main@014774a"
+    },
+    {
+      "id": "ev-x",
+      "type": "api_response",
+      "ref": "Public X reads via Grok Bot X tools; key posts: Oluwaphilemon1 2121401067430609308, PtVHVQ2FPQ51994 2121943211350618588, HowToPrompt__ 2121886161677262890, prz_chojecki 2121649391790391562, DailyAIOfficial 2121930270257365362, paperswithcodee 2121966735062425750, rohanpaul_ai 2121679426194718837, olaverse_ 2121905955944509636; X news clusters 2121872944007872699, 2121941105608360258, 2121663366028726702, 2121315412797239725"
+    },
+    {
+      "id": "ev-gh",
+      "type": "http_response",
+      "ref": "gh search repos --created >=2026-11-14 --sort stars; gh search repos agent/llm/mcp/model --created >=2026-11-13; gh search repos astryx"
+    },
+    {
+      "id": "ev-arxiv",
+      "type": "http_response",
+      "ref": "https://export.arxiv.org/api/query cat:cs.AI/LG/CL/RO sortBy=submittedDate desc max_results=300: latest indexed 2026-11-12T18:59:54Z, 0 in window; id_list=2611.17167,2611.08318"
+    },
+    {
+      "id": "ev-verify",
+      "type": "http_response",
+      "ref": "https://github.com/mit-han-lab/pear; https://mit-han-lab.github.io/pear-blog/; https://huggingface.co/mit-han-lab/Qwen3.8-27B-PEAR; https://huggingface.co/meituan-longcat/LongCat-2.5; https://huggingface.co/nex-agi/Nex-N2.6; https://github.com/n4ze3m/tiny-voca; https://github.com/alibaba/open-code-review; https://github.com/meta/astryx; https://arxiv.org/abs/2611.17167; https://arxiv.org/abs/2611.08318"
+    },
+    {
+      "id": "ev-candidates",
+      "type": "file",
+      "ref": "data/candidates/2026-11-15.json"
+    },
+    {
+      "id": "ev-tests",
+      "type": "file",
+      "ref": ".reports/2026-11-15/validate.log"
+    },
+    {
+      "id": "ev-pr",
+      "type": "github",
+      "ref": "https://github.com/aidatatools/agentlab/pull/35"
+    }
+  ],
+  "outcome": {
+    "articleId": null,
+    "githubCommit": "5c94345",
+    "githubPullRequest": "https://github.com/aidatatools/agentlab/pull/35",
+    "deploymentUrl": null,
+    "publicationStatus": "not_published"
+  },
+  "metrics": {
+    "durationSeconds": null,
+    "tokens": null,
+    "estimatedCostUsd": null,
+    "humanInterventions": 0
+  },
+  "retrospective": {
+    "successes": [
+      "26 candidates captured with original URLs and timestamps; top items verified against repos, project blog, Hugging Face API and arXiv",
+      "Identified MIT HAN Lab PEAR (82.15 quality) as a 2026-11-14-window release missed by the previous run instead of publishing it out of window",
+      "No breakthrough invented on a low-signal weekend day"
+    ],
+    "failures": [
+      "arXiv returned 0 in-window papers (index ended 2026-11-12T18:59:54Z; weekend announcement lag)",
+      "Most in-window X items are reshares of earlier releases; X retrievedAt timestamps are per batch",
+      "GitHub new-repo search dominated by spam clone repos",
+      "PEAR missed by the 2026-11-14 run because its X coverage was low-engagement and the repo search was flooded by spam"
+    ],
+    "lessonsLearned": [
+      "Also query Hugging Face org model creation dates and project blogs from major labs, not just new-repo star ranking, since spam floods GitHub search",
+      "Reshares inflate weekend X volume; dedupe by artifact creation date"
+    ],
+    "nextActions": [
+      "chuangtc review on DEV then merge",
+      "Jason to decide whether to backfill the missed PEAR article (2026-11-14 window)",
+      "Re-check arXiv on the next run for papers submitted after 2026-11-12T18:59:54Z"
+    ]
+  }
+}
