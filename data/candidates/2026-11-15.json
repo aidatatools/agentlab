@@ -1,0 +1,695 @@
+{
+  "date": "2026-11-15",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "selectedCandidateId": null,
+  "candidates": [
+    {
+      "id": "c20261115-mit-han-lab-pear",
+      "title": "MIT HAN Lab PEAR: Robot-Use RL trains open Qwen3.8-27B to use real robots entirely in simulation, no demonstrations (LIBERO 1.6% -> 74.4%, 60% real dual-arm)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/mit-han-lab/pear",
+          "publishedAt": "2026-11-13T17:43:06Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://mit-han-lab.github.io/pear-blog/",
+          "publishedAt": "2026-11-13",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/mit-han-lab/Qwen3.8-27B-PEAR",
+          "publishedAt": "2026-11-12T01:43:47Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/Oluwaphilemon1/status/2121401067430609308",
+          "publishedAt": "2026-11-14T00:33:22Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/PtVHVQ2FPQ51994/status/2121943211350618588",
+          "publishedAt": "2026-11-15T12:27:40Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 78,
+        "interestingness": 85,
+        "technicalDepth": 85,
+        "reproducibility": 80,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 82.15. >= 80 on quality, but not eligible: out of window. Verified against the repo (first commit 2026-11-13T17:40Z, Apache-2.0), project blog (TL;DR, authors MIT/UC Berkeley/UCSD/NVIDIA/Inco AI, benchmark figures) and Hugging Face weights (created 2026-11-12). Public release (repo 2026-11-13T17:43Z, first X coverage 2026-11-14T00:33Z) falls in the 2026-11-14 window and was missed by that run; only reshares are in this window. Weighted score shown is the quality score ignoring the window; actual eligibility is blocked by the window rule. Flagged for Jason; results are lab self-reported, not independently reproduced."
+    },
+    {
+      "id": "c20261115-courtade-kumar-teamwork-reshares",
+      "title": "Google Antigravity /teamwork Courtade-Kumar ~50M-line Lean proof (weekend reshares and commentary)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/DiggleXS/status/2121983779065487783",
+          "publishedAt": "2026-11-15T15:08:52Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/unclewang_x/status/2121900454779261197",
+          "publishedAt": "2026-11-15T09:37:46Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+          "publishedAt": "2026-11-13",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 85,
+        "interestingness": 92,
+        "technicalDepth": 75,
+        "reproducibility": 45,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 77.75. < 80. Duplicate: evaluated and rejected in the 2026-11-14 run (77.75); proof preprint arXiv 2609.24931 dates from 2026-09-21. In-window posts are commentary only."
+    },
+    {
+      "id": "c20261115-longcat-2-5-reshare",
+      "title": "Meituan LongCat-2.5 1.6T/48B-active open weights (MIT), trained on Chinese chips (reshares)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/DailyAIOfficial/status/2121930270257365362",
+          "publishedAt": "2026-11-15T11:36:14Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/malkocoglu_x/status/2121951484346503596",
+          "publishedAt": "2026-11-15T13:00:32Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/meituan-longcat/LongCat-2.5",
+          "publishedAt": "2026-11-04T11:48:50Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 70,
+        "interestingness": 85,
+        "technicalDepth": 75,
+        "reproducibility": 85,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 78.5. < 80. Duplicate: HF weights created 2026-11-04 and evaluated in the 2026-11-09 run; in-window posts are reshares."
+    },
+    {
+      "id": "c20261115-cram-energy-reasoning-reshare",
+      "title": "CRAM (Compact Reasoning Associative Memory) energy-based reasoning, 282x fewer inference FLOPs on extreme Sudoku (viral reshare)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/HowToPrompt__/status/2121886161677262890",
+          "publishedAt": "2026-11-15T08:40:58Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 75,
+        "interestingness": 82,
+        "technicalDepth": 75,
+        "reproducibility": 70,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 76.0. < 80. Duplicate: Prefrontal CRAM evaluated in the 2026-11-13 run (76.05); in-window post is a viral reshare (413 likes) with no new artifact."
+    },
+    {
+      "id": "c20261115-edge0-145b-reshare",
+      "title": "Edge0-145B open-weights MoE agent model on a laptop (reshares and license commentary)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/MrAsifShah/status/2121991811350605912",
+          "publishedAt": "2026-11-15T15:40:47Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/Imfulao/status/2121805320225706445",
+          "publishedAt": "2026-11-15T03:19:44Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/Edge0/Edge0-145B-NVFP4",
+          "publishedAt": "2026-11-11T05:22:51Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 70,
+        "interestingness": 85,
+        "technicalDepth": 75,
+        "reproducibility": 75,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 76.5. < 80. Duplicate: evaluated in the 2026-11-13 and 2026-11-14 runs (77.4); weights from 2026-11-11; license restricts serving."
+    },
+    {
+      "id": "c20261115-runway-praxis-1-reshare",
+      "title": "Runway Praxis-1 open robotics model (Apache-2.0), reshares",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/iqtauhid/status/2121634278219870705",
+          "publishedAt": "2026-11-14T16:00:04Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/HumanoidTracker/status/2121885420493352994",
+          "publishedAt": "2026-11-15T08:38:01Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 80,
+        "technicalDepth": 75,
+        "reproducibility": 85,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 75.75. < 80. Duplicate: evaluated in the 2026-11-11 and 2026-11-14 runs; in-window posts are reshares."
+    },
+    {
+      "id": "c20261115-tiny-voca",
+      "title": "tiny-voca: 4.5M-parameter two-voice English TTS trained from scratch, with code, weights, recipe and dataset (Apache-2.0)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/n4ze3m/tiny-voca",
+          "publishedAt": "2026-11-14T16:02:56Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/n4ze3m/tiny-voca",
+          "publishedAt": "2026-11-14",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 70,
+        "technicalDepth": 70,
+        "reproducibility": 95,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 68.75. < 80. In window (repo created 2026-11-14T16:02:56Z). Verified repo README and commits (active 2026-11-15). Fully open and reproducible but an incremental small-TTS release, not a breakthrough. Best fully in-window candidate."
+    },
+    {
+      "id": "c20261115-nex-n2-6",
+      "title": "Nex AGI Nex-N2.6: 321B open-weights agent model on GLM-5.3-Flash (Apache-2.0)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/paperswithcodee/status/2121966735062425750",
+          "publishedAt": "2026-11-15T14:01:08Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/nex-agi/Nex-N2.6",
+          "publishedAt": "2026-11-10T05:34:28Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 75,
+        "technicalDepth": 70,
+        "reproducibility": 85,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 69.0. < 80. Out of window: HF weights created 2026-11-10; in-window posts are coverage. Benchmarks are lab self-reported."
+    },
+    {
+      "id": "c20261115-jev-decision-model-paper",
+      "title": "Actor, Judge, or Teacher? Decision model JEV lifts a 1.5B agent from 72.8% to 82.9% on ALFWorld as a judge (arXiv 2611.17167)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.17167",
+          "publishedAt": "2026-11-12T17:42:46Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/rohanpaul_ai/status/2121679426194718837",
+          "publishedAt": "2026-11-14T18:59:28Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 75,
+        "technicalDepth": 70,
+        "reproducibility": 60,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 67.25. < 80. Out of window: arXiv submission 2026-11-12T17:42Z; in-window posts are commentary."
+    },
+    {
+      "id": "c20261115-criteria-exposure-paper",
+      "title": "Learning the Task or Learning the Verifier? Criteria exposure in embodied self-improvement (arXiv 2611.08318)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.08318",
+          "publishedAt": "2026-11-05T17:14:37Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/Kishore_1017/status/2121951974602027189",
+          "publishedAt": "2026-11-15T13:02:29Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 65,
+        "technicalDepth": 65,
+        "reproducibility": 60,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 60.25. < 80. Out of window: arXiv 2026-11-05."
+    },
+    {
+      "id": "c20261115-erdosbench-gemini-4-carbon",
+      "title": "ErdosBench (226 Erdos-inspired research problems): Gemini 4 Carbon #3, near-tie with GPT-6 Astra and Opus 5.5",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/prz_chojecki/status/2121649391790391562",
+          "publishedAt": "2026-11-14T17:00:07Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 75,
+        "technicalDepth": 60,
+        "reproducibility": 40,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 59.75. < 80. In window. Third-party benchmark result reported on X with a chart; no public problem set or grading artifacts found in this run."
+    },
+    {
+      "id": "c20261115-gemini-4-carbon-scratchpad-leak",
+      "title": "Gemini 4 Carbon low-effort mode dumps raw internal reasoning in a math query (Alon Amit)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2121872944007872699",
+          "publishedAt": "2026-11-15T07:52:33Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 80,
+        "technicalDepth": 40,
+        "reproducibility": 50,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 53.5. < 80. In window. Viral anecdote from an X news cluster; not a research result."
+    },
+    {
+      "id": "c20261115-alibaba-open-code-review",
+      "title": "alibaba/open-code-review: hybrid deterministic + LLM-agent code review CLI (Apache-2.0) trending",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/alibaba/open-code-review",
+          "publishedAt": "2026-05-18T02:16:36Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/Khaled865412521/status/2121690451530875361",
+          "publishedAt": "2026-11-14T19:43:17Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 70,
+        "technicalDepth": 65,
+        "reproducibility": 90,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 61.5. < 80. Repo created 2026-05-18 (51.8k stars); trending, not a new release in window."
+    },
+    {
+      "id": "c20261115-meta-astryx",
+      "title": "Meta Astryx agent-ready open-source design system (MIT)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/meta/astryx",
+          "publishedAt": "2026-01-09T16:20:32Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/stakynlabs/status/2121692491640611112",
+          "publishedAt": "2026-11-14T19:51:23Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 60,
+        "technicalDepth": 50,
+        "reproducibility": 90,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 54.5. < 80. Repo created 2026-01-09; in-window post is promotion; not AI research."
+    },
+    {
+      "id": "c20261115-termination-lag-paper",
+      "title": "Termination Lag: coding agents solve the task early but keep going (35-60% of steps after the fix)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Minglong51/status/2121661996806582399",
+          "publishedAt": "2026-11-14T17:50:13Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/betolateral/status/2121990799483379889",
+          "publishedAt": "2026-11-15T15:36:45Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 70,
+        "technicalDepth": 55,
+        "reproducibility": 50,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 56.0. < 80. Paper discussed on X in window; primary arXiv entry not located in this run (arXiv index lag), so unverified."
+    },
+    {
+      "id": "c20261115-mist-qg",
+      "title": "Olaverse MIST-QG: 4B question-generation model for 324 languages, open weights",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/olaverse_/status/2121905955944509636",
+          "publishedAt": "2026-11-15T09:59:37Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 60,
+        "technicalDepth": 55,
+        "reproducibility": 40,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 50.0. < 80. In window (vendor post). Hugging Face search for the weights returned nothing in this run; unverified."
+    },
+    {
+      "id": "c20261115-ernie-5-5-flash-preview",
+      "title": "Baidu ERNIE 5.5 Flash Preview (280B/14B active, 1M context), open weights promised by Nov 25",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/XclusiveInsight/status/2121859412612759684",
+          "publishedAt": "2026-11-15T06:54:40Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 70,
+        "technicalDepth": 60,
+        "reproducibility": 40,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 59.5. < 80. Duplicate of 2026-11-11/12 candidates; weights not yet released."
+    },
+    {
+      "id": "c20261115-botpsy-0-8b-reshare",
+      "title": "Tether QVAC BotPsy-0.8B on-device agent model (reshare)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/paperswithcodee/status/2121785542543081520",
+          "publishedAt": "2026-11-15T02:01:08Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 70,
+        "technicalDepth": 60,
+        "reproducibility": 85,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 64.25. < 80. Duplicate: evaluated in the 2026-11-13 run."
+    },
+    {
+      "id": "c20261115-dirgate",
+      "title": "DirGate: least-privilege, expiring server accounts for AI agents (open source)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/MerlincsZeroYin/status/2121979020732715369",
+          "publishedAt": "2026-11-15T14:49:57Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 55,
+        "technicalDepth": 50,
+        "reproducibility": 60,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 45.75. < 80. In window; small tool announced on X, repo not inspected; low breakthrough."
+    },
+    {
+      "id": "c20261115-openai-robotics-team-reorg",
+      "title": "OpenAI folds dedicated robotics team into core research groups",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2121315412797239725",
+          "publishedAt": "2026-11-14T19:14:09Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2121691715010806143",
+          "publishedAt": "2026-11-14T22:46:50Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 75,
+        "technicalDepth": 30,
+        "reproducibility": 10,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 47.25. < 80. Duplicate of 2026-11-14 candidate; corporate news, not a technical discovery."
+    },
+    {
+      "id": "c20261115-dwarkesh-superintelligence-2030",
+      "title": "Dwarkesh Patel essay: superintelligence by 2030",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2121819943419441384",
+          "publishedAt": "2026-11-15T04:22:20Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 75,
+        "technicalDepth": 40,
+        "reproducibility": 10,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 43.25. < 80. Duplicate of 2026-11-14 candidate; opinion essay."
+    },
+    {
+      "id": "c20261115-amodei-solve-biology",
+      "title": "Dario Amodei: AI could 'solve biology'; Anthropic wet lab",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2121663366028726702",
+          "publishedAt": "2026-11-14T18:03:57Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 70,
+        "technicalDepth": 25,
+        "reproducibility": 10,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 40.5. < 80. In window; executive talk, no technical artifact."
+    },
+    {
+      "id": "c20261115-amodei-white-collar-jobs",
+      "title": "Dario Amodei warns AI could cut half of entry-level white-collar jobs in 1-5 years",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2121941105608360258",
+          "publishedAt": "2026-11-15T14:41:18Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 70,
+        "technicalDepth": 20,
+        "reproducibility": 10,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 38.0. < 80. In window; commentary, not a discovery."
+    },
+    {
+      "id": "c20261115-anthropic-26b-placement",
+      "title": "Anthropic IPO roadshow and $26B strategic placement (Nvidia, Google ~$10B each)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/kwinkich/status/2121991830371778749",
+          "publishedAt": "2026-11-15T15:40:51Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 75,
+        "technicalDepth": 20,
+        "reproducibility": 10,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 41.75. < 80. In window; financial news, out of scope for a technical article."
+    },
+    {
+      "id": "c20261115-pew-ai-medicine-survey",
+      "title": "Pew survey: 60% of U.S. adults uncomfortable with doctors relying on AI",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2121751101321961782",
+          "publishedAt": "2026-11-14T23:49:05Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 15,
+        "interestingness": 60,
+        "technicalDepth": 30,
+        "reproducibility": 40,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 40.0. < 80. In window; survey news, not a discovery."
+    },
+    {
+      "id": "c20261115-ms365-outage",
+      "title": "Microsoft 365 / Copilot ~20h outage and staffing debate",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2121906410506346887",
+          "publishedAt": "2026-11-15T10:05:37Z",
+          "retrievedAt": "2026-11-16T01:21:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 10,
+        "interestingness": 60,
+        "technicalDepth": 20,
+        "reproducibility": 10,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 30.5. < 80. Not an AI discovery."
+    }
+  ]
+}
