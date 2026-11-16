@@ -1,0 +1,593 @@
+{
+  "date": "2026-11-16",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "selectedCandidateId": null,
+  "candidates": [
+    {
+      "id": "c20261116-craig-lattice-standard-model-openai-blog",
+      "title": "OpenAI science blog launch: Nathaniel Craig on a GPT-6 Astra-led candidate lattice definition of the Standard Model",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://openai.com/index/step-toward-defining-the-standard-model/",
+          "publishedAt": "2026-11-15",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        },
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2610.09093",
+          "publishedAt": "2026-10-06T20:47:54Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/Rahul_Pandey02/status/2122157689379975627",
+          "publishedAt": "2026-11-16T02:39:55Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/wifeydoteth/status/2122238241290031528",
+          "publishedAt": "2026-11-16T08:00:00Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 90,
+        "technicalDepth": 80,
+        "reproducibility": 70,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 77.0. < 80. Verified: OpenAI post (dated 2026-11-15, first X coverage found 2026-11-16T02:39Z, in window) explains arXiv 2610.09093 'A gauge-invariant measure for lattice chiral fermions' (submitted 2026-10-06, hep-lat, sole author Craig; Lean formalization on Zenodo 10.5281/zenodo.23196062). The preprint's own acknowledgments already state that GPT-6 Astra was essential and led the proof, so neither the result nor the AI attribution is new in this window; the blog is a retrospective explainer and explicitly calls the construction a candidate (reflection positivity at finite spacing open). Breakthrough scored for in-window novelty, not the October result; same policy as the 2026-11-14 Courtade-Kumar decision."
+    },
+    {
+      "id": "c20261116-internlm-sage-s2-1-flash",
+      "title": "Shanghai AI Lab InternLM Sage S2.1 Flash scientific multimodal agent model (open weights, GitHub repo)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/InternLM/Sage-S2.1-Flash",
+          "publishedAt": "2026-11-16T03:34:03Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/internlm/Sage-S2.1-Flash",
+          "publishedAt": "2026-11-15T02:34:59Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 72,
+        "technicalDepth": 75,
+        "reproducibility": 80,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 72.0. < 80. GitHub repo created in window; HF weights created 2026-11-15T02:34Z (just before window). README claims first place on 4 of 15 benchmarks (MLE-bench Lite 90.3, OfficeQA Pro, Harvey LAB, SpreadsheetBench 2); all self-reported, no independent evaluation; incremental Flash variant of Sage S2.1 (2026-10-23)."
+    },
+    {
+      "id": "c20261116-nvidia-gr00t-2-corl",
+      "title": "NVIDIA GR00T 2 at CoRL 2026 (one-demo 71%, five-demo 95%) coverage",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2122251111830626629",
+          "publishedAt": "2026-11-16T08:55:32Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/HazelwoodAI/status/2122356817582014633",
+          "publishedAt": "2026-11-16T15:51:11Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://research.nvidia.com/labs/gear/gr00t-2/",
+          "publishedAt": "2026-11-10",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 75,
+        "interestingness": 80,
+        "technicalDepth": 75,
+        "reproducibility": 60,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 75.0. < 80. Duplicate: GR00T 2 was evaluated in the 2026-11-10/11 run; in-window posts are CoRL coverage."
+    },
+    {
+      "id": "c20261116-meituan-longcat-video-avatar-1-6",
+      "title": "Meituan LongCat-Video-Avatar-1.6 local talking-avatar video model (open weights)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6",
+          "publishedAt": "2026-11-13T02:45:33Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/TeksEdge/status/2122208048521302341",
+          "publishedAt": "2026-11-16T06:00:02Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 70,
+        "technicalDepth": 60,
+        "reproducibility": 75,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 64.75. < 80. Out of window: HF repo created 2026-11-13T02:45Z; in-window post is commentary."
+    },
+    {
+      "id": "c20261116-tencent-hy4-flash",
+      "title": "Tencent Hy4 Flash: 224B total / 12B active MoE, 1M context, multimodal, low-cost API (open source promised)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Chinazhidx/status/2122200361293504995",
+          "publishedAt": "2026-11-16T05:29:29Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/Xianbao_QIAN/status/2122200717750595803",
+          "publishedAt": "2026-11-16T05:30:54Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/tsnmediahub/status/2122298803810086991",
+          "publishedAt": "2026-11-16T12:00:39Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 80,
+        "technicalDepth": 60,
+        "reproducibility": 45,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 64.75. < 80. In window (TokenHub listing 2026-11-16). API-only today; weights only promised; performance claims (near Claude Haiku 5.5, 1/8 task cost) are vendor-reported; no tencent HF repo found for it."
+    },
+    {
+      "id": "c20261116-alibaba-qwen4-max",
+      "title": "Alibaba Qwen4-Max flagship (2.4T total / ~71B active MoE, 1M context), closed weights",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2122182546100261250",
+          "publishedAt": "2026-11-16T16:06:05Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/ollie_npm/status/2122256824866939286",
+          "publishedAt": "2026-11-16T09:13:51Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 85,
+        "technicalDepth": 60,
+        "reproducibility": 30,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 63.75. < 80. In window. Closed weights; numbers from Alibaba only; product launch rather than research."
+    },
+    {
+      "id": "c20261116-expo-exact",
+      "title": "expo/exact: Rust cross-platform UI runtime with agent-owned clock (MIT), trending",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/expo/exact",
+          "publishedAt": "2026-11-02T01:29:01Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/GitGem/status/2122248412779401458",
+          "publishedAt": "2026-11-16T08:40:25Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 65,
+        "technicalDepth": 60,
+        "reproducibility": 85,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 61.0. < 80. Repo created 2026-11-02 (4.4k stars); trending, not a new release in window."
+    },
+    {
+      "id": "c20261116-liquid-d1-2",
+      "title": "Liquid AI d1.2 and d1.2-ultra omnimodal decision models (API), #1 on Artificial Analysis Decision Index v2.1",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Aurelien_L_/status/2122352375931297857",
+          "publishedAt": "2026-11-16T15:33:32Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2122355745052365063",
+          "publishedAt": "2026-11-16T15:56:15Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 70,
+        "technicalDepth": 55,
+        "reproducibility": 35,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 58.25. < 80. In window (launch post 15:33Z). API-only, weights 'planned'; benchmark is a third-party index but task-specific."
+    },
+    {
+      "id": "c20261116-m1mic-mlx",
+      "title": "m1mic-mlx: train a Unitree G1 whole-body motion tracker on a MacBook (world-model RL, MuJoCo + MLX)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/VittorioPastore/m1mic-mlx",
+          "publishedAt": "2026-11-15T03:14:36Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 60,
+        "technicalDepth": 55,
+        "reproducibility": 75,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 53.75. < 80. Out of window (created 2026-11-15T03:14Z); individual project, results unverified."
+    },
+    {
+      "id": "c20261116-witten-claude-preprint",
+      "title": "Report that Edward Witten's latest preprint acknowledges Claude Opus 5.5",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/FflbJohn/status/2122267625178775862",
+          "publishedAt": "2026-11-16T09:56:46Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 80,
+        "technicalDepth": 40,
+        "reproducibility": 20,
+        "credibility": 30
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 52.0. < 80. Unverified: arXiv author search for Witten E returned no recent entry in this run; secondhand X post only."
+    },
+    {
+      "id": "c20261116-domyn-europa-jupiter",
+      "title": "Domyn EUROPA test on JUPITER supercomputer scaled to 951.9B parameters",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2122358673267888592",
+          "publishedAt": "2026-11-16T16:04:45Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/grok/status/2122352293915832560",
+          "publishedAt": "2026-11-16T15:33:12Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 65,
+        "technicalDepth": 55,
+        "reproducibility": 30,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 51.75. < 80. In window news cluster; a scaling test of a planned open model, no weights or paper; primary source not located."
+    },
+    {
+      "id": "c20261116-fixed-seed-robin",
+      "title": "Robin open-weights 48 kHz speech model (voice design, re-voicing, LoRA; EN/JA)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/Fixed-Seed/Robin",
+          "publishedAt": "2026-11-15T19:45:15Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 55,
+        "technicalDepth": 50,
+        "reproducibility": 65,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 50.0. < 80. In window; small project (9 stars), license NOASSERTION, quality unverified."
+    },
+    {
+      "id": "c20261116-emotion-probing-financial-contracts",
+      "title": "Interpretability probe: emotion features in open-weight LLM residual streams when pricing neutralized financial contracts",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/xmattwest/status/2122319539249836380",
+          "publishedAt": "2026-11-16T13:23:03Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 60,
+        "technicalDepth": 50,
+        "reproducibility": 40,
+        "credibility": 35
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 48.0. < 80. In window; individual X article, no paper or code verified."
+    },
+    {
+      "id": "c20261116-tiny-2-1-dos",
+      "title": "Tiny-2.1: a language model for DOS that fits on a floppy disk",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/WollyMonjac/Tiny-2.1",
+          "publishedAt": "2026-11-15T21:28:29Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 65,
+        "technicalDepth": 45,
+        "reproducibility": 60,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 47.75. < 80. In window; novelty demo, no license."
+    },
+    {
+      "id": "c20261116-jade-1-1-tts",
+      "title": "Jade 1.1: 109M on-device TTS, 23 languages, open weights",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/SynnJJ_/status/2122334149096751130",
+          "publishedAt": "2026-11-16T14:21:06Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 55,
+        "technicalDepth": 45,
+        "reproducibility": 60,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 46.25. < 80. In window; single low-engagement post, weights not verified."
+    },
+    {
+      "id": "c20261116-cordgeist",
+      "title": "cordgeist: MCP server letting agents operate a real Android phone without root",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/preferedev/status/2122029830371995901",
+          "publishedAt": "2026-11-15T18:11:51Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 60,
+        "technicalDepth": 40,
+        "reproducibility": 60,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 45.0. < 80. In window; tool launch, repo not verified."
+    },
+    {
+      "id": "c20261116-superbot",
+      "title": "davidondrej/superbot: open-source self-hosted agent bot (MIT)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/davidondrej/superbot",
+          "publishedAt": "2026-11-15T17:30:43Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 55,
+        "technicalDepth": 35,
+        "reproducibility": 70,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 43.75. < 80. In window; app scaffold, not research."
+    },
+    {
+      "id": "c20261116-ai4xe-parallax",
+      "title": "AI4XE/Parallax: hands-off development plugin for AI coding agents (MIT)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/AI4XE/Parallax",
+          "publishedAt": "2026-11-15T10:31:00Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 50,
+        "technicalDepth": 40,
+        "reproducibility": 65,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 42.25. < 80. Out of window (created 2026-11-15T10:31Z); workflow plugin."
+    },
+    {
+      "id": "c20261116-ywza",
+      "title": "ywza: let an AI model use your PC remotely (Rust, MCP)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/LeloElmorsy/status/2122110133845078048",
+          "publishedAt": "2026-11-15T23:30:57Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 50,
+        "technicalDepth": 40,
+        "reproducibility": 60,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 41.0. < 80. In window; small tool launch."
+    },
+    {
+      "id": "c20261116-diego3g-craft",
+      "title": "diego3g/craft: design skills for AI agents",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/diego3g/craft",
+          "publishedAt": "2026-11-15T20:08:15Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 20,
+        "interestingness": 50,
+        "technicalDepth": 35,
+        "reproducibility": 65,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 40.25. < 80. In window; prompt/skill pack."
+    },
+    {
+      "id": "c20261116-brianbell-codehygiene",
+      "title": "brianbell-x/codehygiene: 33 KB weight-space programmed code-hygiene model",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/brianbell-x/codehygiene",
+          "publishedAt": "2026-11-15T07:28:14Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 55,
+        "technicalDepth": 45,
+        "reproducibility": 55,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 45.5. < 80. Out of window (created 2026-11-15T07:28Z); unverified claims."
+    },
+    {
+      "id": "c20261116-openai-delay-security-culture",
+      "title": "Discussion: OpenAI release delays and security culture",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2122072308038639850",
+          "publishedAt": "2026-11-16T07:49:06Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 10,
+        "interestingness": 60,
+        "technicalDepth": 20,
+        "reproducibility": 10,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 28.5. < 80. Commentary/rumor cluster, not a discovery."
+    },
+    {
+      "id": "c20261116-ai-detector-backlash",
+      "title": "AI text detector false positives backlash (Pangram, literary prizes)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2122221887849681341",
+          "publishedAt": "2026-11-16T14:52:37Z",
+          "retrievedAt": "2026-11-17T01:30:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 15,
+        "interestingness": 60,
+        "technicalDepth": 25,
+        "reproducibility": 20,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 33.0. < 80. Not a research discovery."
+    }
+  ]
+}

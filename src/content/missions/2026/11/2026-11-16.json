@@ -1,0 +1,228 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "mission-20261116-001",
+  "date": "2026-11-16",
+  "timezone": "Asia/Taipei",
+  "status": "awaiting_review",
+  "objective": {
+    "goal": "Discover, score, verify and propose one outstanding AI/agent discovery for 2026-11-16 (Asia/Taipei), or document a no-publish decision.",
+    "sources": [
+      "x",
+      "github",
+      "arxiv"
+    ],
+    "deliverables": [
+      "Verified candidate batch",
+      "No-publish decision (low-signal day)",
+      "Mission record",
+      "Pull request"
+    ]
+  },
+  "agent": {
+    "id": "grokbot",
+    "framework": "Grok Bot (AgentLab-bot on minim4.home)",
+    "model": "grok-bot",
+    "runId": "routine-9a1f041e-20261117T0119-minim4-daily-2026-11-16"
+  },
+  "selection": {
+    "candidatesEvaluated": 23,
+    "selectedCandidateId": null,
+    "selectionScore": null,
+    "rankingArtifact": "data/candidates/2026-11-16.json"
+  },
+  "skillsUsed": [
+    {
+      "skill": "x-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-x-20261116-001"
+    },
+    {
+      "skill": "github-discovery",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-gh-20261116-001"
+    },
+    {
+      "skill": "arxiv-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ax-20261116-001"
+    },
+    {
+      "skill": "fact-check",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-fc-20261116-001"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t1",
+      "action": "git checkout main, pull --ff-only (014774a..a92248e), create branch daily/2026-11-16; tree clean; GitHub App key file present",
+      "tool": "git",
+      "status": "success",
+      "startedAt": "2026-11-16T17:19:05Z",
+      "finishedAt": "2026-11-16T17:19:08Z",
+      "evidenceIds": [
+        "ev-git-branch"
+      ]
+    },
+    {
+      "id": "t2",
+      "action": "Discovery for window 2026-11-15T16:00Z..2026-11-16T16:00Z: X news search (25 stories), X post searches (open-weights/introducing, arXiv/HF/GitHub links, Hy4/MiniMax/Meituan/Liquid/GR00T, Craig lattice); arXiv export API cs.AI/LG/CL/RO submittedDate-desc (400 returned, latest indexed 2026-11-13T18:59:43Z, 0 in window); GitHub search repos created >=2026-11-15 by stars (flooded by Gemini-Config-Checker spam clones) plus agent/llm/model/mcp keyword searches; Hugging Face org model listings",
+      "tool": "gh + curl + X MCP",
+      "status": "success",
+      "startedAt": "2026-11-16T17:19:35Z",
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-x",
+        "ev-gh",
+        "ev-arxiv"
+      ]
+    },
+    {
+      "id": "t3",
+      "action": "Verify top candidates: OpenAI science blog post, arXiv 2610.09093 metadata and PDF acknowledgments (Astra role already disclosed 2026-10-06), earliest X coverage; InternLM/Sage-S2.1-Flash repo README and HF createdAt; HF dates for Meituan LongCat-Video-Avatar-1.6; repo metadata for expo/exact, Robin, m1mic-mlx, codehygiene, Tiny-2.1, Parallax, superbot; arXiv author search for Witten; dedupe against earlier candidate files (GR00T 2, LongCat, Praxis-1)",
+      "tool": "curl, gh api, X MCP, WebFetch",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": "2026-11-16T17:24:00Z",
+      "evidenceIds": [
+        "ev-verify"
+      ]
+    },
+    {
+      "id": "t4",
+      "action": "Write 23-candidate JSON (first validation failed on candidate type model_release, fixed to technology_news; no eligible in-window candidate >= 80, no article) and mission awaiting_review",
+      "tool": "python",
+      "status": "success",
+      "startedAt": "2026-11-16T17:24:11Z",
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-candidates"
+      ]
+    },
+    {
+      "id": "t5",
+      "action": "Run validate_content, unittest, npm run check, npm run build",
+      "tool": "python+npm",
+      "status": "success",
+      "startedAt": "2026-11-16T17:25:13Z",
+      "finishedAt": "2026-11-16T17:25:15Z",
+      "evidenceIds": [
+        "ev-tests"
+      ]
+    },
+    {
+      "id": "t6",
+      "action": "Commit as agentlab-aidatatools-bot[bot], push with short-lived installation token, open PR requesting chuangtc",
+      "tool": "git + GitHub API",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-pr"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "python scripts/validate_content.py",
+      "status": "passed",
+      "artifact": ".reports/2026-11-16/validate.log"
+    },
+    {
+      "name": "python -m unittest discover -s tests -v",
+      "status": "passed",
+      "artifact": ".reports/2026-11-16/unittest.log"
+    },
+    {
+      "name": "npm run check",
+      "status": "passed",
+      "artifact": ".reports/2026-11-16/astro-check.log"
+    },
+    {
+      "name": "npm run build",
+      "status": "passed",
+      "artifact": ".reports/2026-11-16/astro-build.log"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-git-branch",
+      "type": "git",
+      "ref": "branch daily/2026-11-16 from origin/main@a92248e"
+    },
+    {
+      "id": "ev-x",
+      "type": "api_response",
+      "ref": "Public X reads via Grok Bot X tools; key posts: Rahul_Pandey02 2122157689379975627, wifeydoteth 2122238241290031528, Chinazhidx 2122200361293504995, Xianbao_QIAN 2122200717750595803, Aurelien_L_ 2122352375931297857, TeksEdge 2122208048521302341, ollie_npm 2122256824866939286, FflbJohn 2122267625178775862; X news clusters 2122251111830626629, 2122182546100261250, 2122355745052365063, 2122358673267888592. One X search hit a shared-access HTTP 429 and was retried after the reset"
+    },
+    {
+      "id": "ev-gh",
+      "type": "http_response",
+      "ref": "gh search repos --created >=2026-11-15 --sort stars; gh search repos agent/llm/model/mcp --created >=2026-11-15; gh api repos/* metadata"
+    },
+    {
+      "id": "ev-arxiv",
+      "type": "http_response",
+      "ref": "https://export.arxiv.org/api/query cat:cs.AI/LG/CL/RO sortBy=submittedDate desc max_results=400: latest indexed 2026-11-13T18:59:43Z, 0 in window; id_list=2610.09093; au:Witten_E"
+    },
+    {
+      "id": "ev-verify",
+      "type": "http_response",
+      "ref": "https://openai.com/index/step-toward-defining-the-standard-model/; https://arxiv.org/abs/2610.09093; https://github.com/InternLM/Sage-S2.1-Flash; https://huggingface.co/internlm/Sage-S2.1-Flash; https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6; https://github.com/expo/exact"
+    },
+    {
+      "id": "ev-candidates",
+      "type": "file",
+      "ref": "data/candidates/2026-11-16.json"
+    },
+    {
+      "id": "ev-tests",
+      "type": "file",
+      "ref": ".reports/2026-11-16/validate.log"
+    },
+    {
+      "id": "ev-pr",
+      "type": "github",
+      "ref": "https://github.com/aidatatools/agentlab/pulls (opened by this run; see PR for number)"
+    }
+  ],
+  "outcome": {
+    "articleId": null,
+    "githubCommit": null,
+    "githubPullRequest": null,
+    "deploymentUrl": null,
+    "publicationStatus": "not_published"
+  },
+  "metrics": {
+    "durationSeconds": null,
+    "tokens": null,
+    "estimatedCostUsd": null,
+    "humanInterventions": 0
+  },
+  "retrospective": {
+    "successes": [
+      "23 candidates captured with original URLs and timestamps; top items verified against the OpenAI post, arXiv metadata and PDF, GitHub and Hugging Face APIs",
+      "Checked the Craig preprint's acknowledgments and found the GPT-6 Astra role was already public on 2026-10-06, so the in-window blog was not treated as a new breakthrough",
+      "No breakthrough invented on a low-signal day"
+    ],
+    "failures": [
+      "arXiv returned 0 in-window papers (index ended 2026-11-13T18:59:43Z; weekend announcement lag)",
+      "GitHub new-repo search flooded by Gemini-Config-Checker spam clones",
+      "Witten/Claude preprint report could not be verified on arXiv",
+      "One X search returned HTTP 429 from shared access"
+    ],
+    "lessonsLearned": [
+      "For lab blog posts about earlier preprints, read the preprint acknowledgments before treating the AI contribution as new",
+      "Filter spam clone repos by name before ranking GitHub stars"
+    ],
+    "nextActions": [
+      "chuangtc review on DEV then merge",
+      "Re-check arXiv on the next run for papers submitted after 2026-11-13T18:59:43Z",
+      "Re-check Tencent Hy4 Flash and Liquid d1.2 if weights are released"
+    ]
+  }
+}
