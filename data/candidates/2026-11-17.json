@@ -1,0 +1,601 @@
+{
+  "date": "2026-11-17",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "selectedCandidateId": null,
+  "candidates": [
+    {
+      "id": "c20261117-scalevla-552b",
+      "title": "ScaleVLA: Scaling Vision-Language-Action Models to 552 Billion Parameters (Tsinghua, PKU, SJTU, Galbot)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.21607",
+          "publishedAt": "2026-11-16T18:59:37Z",
+          "retrievedAt": "2026-11-18T01:26:00+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://galaxygeneralrobotics.github.io/scalevla/",
+          "publishedAt": "2026-11-16",
+          "retrievedAt": "2026-11-18T01:26:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 75,
+        "interestingness": 85,
+        "technicalDepth": 85,
+        "reproducibility": 40,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 74.75. < 80. In window. Verified on arXiv abstract and project page: 552B DeepSeek-V4.1-Flash backbone with a trainable action DiT, compared against 2B-552B backbones; 10-demo LIBERO-Goal 87.8% vs 85.6% for a 2B backbone with 50 demos, LIBERO-PRO 45.1% vs at most 31.3%, real charger insertion 9/10 vs 4/10, 216 ms median latency. Gains are modest on simulation, the real-robot test is 10 trials, and no code or weights are linked from the paper or project page, so reproducibility is low."
+    },
+    {
+      "id": "c20261117-meta-ram-self-improving-memory",
+      "title": "Meta RAM: Self-Improving Memory (harness meta-optimization and distillation for continual-learning agents)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/jaseweston/status/2122691693543817397",
+          "publishedAt": "2026-11-17T14:01:52Z",
+          "retrievedAt": "2026-11-18T01:26:00+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://facebookresearch.github.io/RAM/blogs/self_improving_memory",
+          "publishedAt": "2026-11-17",
+          "retrievedAt": "2026-11-18T01:26:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 80,
+        "technicalDepth": 75,
+        "reproducibility": 55,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 69.75. < 80. In window. Verified on the Meta RAM blog: Kimi-K2.6 rewrites its own memory prompts (56.0 vs 44.6 for best hand-written on three Continual Learning Bench tasks) and distillation gives 43.1 vs 37.6 with generic prompts. Three tasks only; no arXiv paper or code found in this run."
+    },
+    {
+      "id": "c20261117-benchleaking-gair",
+      "title": "Benchleaking Is Accelerating: benchmark contamination reaching pre-training base models (GAIR-NLP)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.21315",
+          "publishedAt": "2026-11-16T16:10:16Z",
+          "retrievedAt": "2026-11-18T01:26:00+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/GAIR-NLP/Benchleaking",
+          "publishedAt": "2026-11-16",
+          "retrievedAt": "2026-11-18T01:26:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 80,
+        "technicalDepth": 70,
+        "reproducibility": 75,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 70.75. < 80. In window. Few-shot continuation audit over 20 benchmarks and four public base models; important measurement work rather than a new capability."
+    },
+    {
+      "id": "c20261117-infrathon",
+      "title": "Infrathon: benchmark of 25 long-horizon AI-infrastructure optimization tasks for agents (UW, Ai2 and others)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/TengX6/status/2122465133389873210",
+          "publishedAt": "2026-11-16T23:01:35Z",
+          "retrievedAt": "2026-11-18T01:26:00+08:00"
+        },
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.11995",
+          "publishedAt": "2026-11-09T07:24:54Z",
+          "retrievedAt": "2026-11-18T01:26:00+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/InfrathonX/Infrathon",
+          "publishedAt": "2026-11-16",
+          "retrievedAt": "2026-11-18T01:26:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 75,
+        "technicalDepth": 75,
+        "reproducibility": 85,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 70.5. < 80. Out of window: the arXiv paper was submitted 2026-11-09; the in-window X thread is the launch announcement with code, dataset and Docker image."
+    },
+    {
+      "id": "c20261117-latent-lattice-lms",
+      "title": "Latent Lattice Language Models: per-layer recurrent latent streams alongside the residual stream (Adobe/MIT)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.21608",
+          "publishedAt": "2026-11-16T18:59:38Z",
+          "retrievedAt": "2026-11-18T01:26:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 70,
+        "technicalDepth": 80,
+        "reproducibility": 55,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 68.25. < 80. In window; architecture paper with a project page; incremental relative to hyper-connections and hybrid SSMs."
+    },
+    {
+      "id": "c20261117-turing-agent",
+      "title": "Turing Agent: agentic formal verification of research-level mathematics",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.21299",
+          "publishedAt": "2026-11-16T16:02:37Z",
+          "retrievedAt": "2026-11-18T01:26:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 75,
+        "technicalDepth": 75,
+        "reproducibility": 50,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 66.25. < 80. In window; agent harness for theorem and proof formalization evaluated on TCS results; code availability not verified."
+    },
+    {
+      "id": "c20261117-weight-space-programming-replication",
+      "title": "Replicating and Extending Weight-Space Programming: frontier LLMs compile programs into weights",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.21449",
+          "publishedAt": "2026-11-16T17:35:18Z",
+          "retrievedAt": "2026-11-18T01:26:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 80,
+        "technicalDepth": 65,
+        "reproducibility": 70,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 65.5. < 80. In window; independent three-day replication of MIT's GPT-6 Astra weight-writing result (Breakout scores 514/550/307 vs 517); replication, not a new discovery."
+    },
+    {
+      "id": "c20261117-certisum-mxfp4",
+      "title": "CertiSum: bitwise-identical MXFP4 training across platforms and parallelism layouts",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.21584",
+          "publishedAt": "2026-11-16T18:54:07Z",
+          "retrievedAt": "2026-11-18T01:26:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 60,
+        "technicalDepth": 80,
+        "reproducibility": 65,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 62.75. < 80. In window; systems contribution for deterministic 4-bit training, evaluated on 200-step Qwen3-8B-Base runs."
+    },
+    {
+      "id": "c20261117-optimistic-verifiers-hacked",
+      "title": "Optimistic Verifiers Get Hacked: reward hacking under an exact process oracle",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.21538",
+          "publishedAt": "2026-11-16T18:25:42Z",
+          "retrievedAt": "2026-11-18T01:26:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 65,
+        "technicalDepth": 75,
+        "reproducibility": 60,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 61.25. < 80. In window; controlled RLVR study with seven degraded verifiers; workshop-scale."
+    },
+    {
+      "id": "c20261117-k2-horizon-formal-launch",
+      "title": "MBZUAI IFM formally launches the K2 Horizon open model family (0.9B to 375B-A23B, Apache 2.0, data and checkpoints)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/RookieAcme/status/2122692484266627102",
+          "publishedAt": "2026-11-17T14:05:00Z",
+          "retrievedAt": "2026-11-18T01:26:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 70,
+        "interestingness": 80,
+        "technicalDepth": 70,
+        "reproducibility": 90,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 76.5. < 80. Duplicate/out of window: K2 Horizon weights were public before the window (evaluated in the 2026-11-01 run; HF derivatives exist from 2026-11-09). The in-window item is a formal launch event; IFM org listings were not reachable via the HF API in this run."
+    },
+    {
+      "id": "c20261117-kormo-web-kaist",
+      "title": "KAIST KORMo-Web open-weight web agent (4B/9B/11B) with Chrome extension",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/KORMo-VL/KORMo-Web-4B",
+          "publishedAt": "2026-11-14T11:22:47Z",
+          "retrievedAt": "2026-11-18T01:26:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/poweredbymuse/status/2122622092361535587",
+          "publishedAt": "2026-11-17T09:25:17Z",
+          "retrievedAt": "2026-11-18T01:26:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 70,
+        "technicalDepth": 60,
+        "reproducibility": 75,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 62.75. < 80. Out of window: HF repos created 2026-11-14; the in-window post is coverage (42.3% of real web tasks claimed for 4B)."
+    },
+    {
+      "id": "c20261117-dreamfar-amazon",
+      "title": "amazon-far/DreamFAR: real-time long-horizon action-conditioned world model for bimanual manipulation (Apache-2.0)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/amazon-far/dreamfar",
+          "publishedAt": "2026-11-16T21:37:46Z",
+          "retrievedAt": "2026-11-18T01:26:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 70,
+        "technicalDepth": 65,
+        "reproducibility": 65,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 63.75. < 80. In window (repo created 2026-11-16T21:37Z, 3 stars); only repo metadata checked, no paper or results verified."
+    },
+    {
+      "id": "c20261117-gdm-robotics-antigravity-plugin",
+      "title": "google-deepmind/robotics-antigravity-plugin: GDM robotics skills for agentic sim and real-robot workflows",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/google-deepmind/robotics-antigravity-plugin",
+          "publishedAt": "2026-11-16T18:50:28Z",
+          "retrievedAt": "2026-11-18T01:26:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 65,
+        "technicalDepth": 45,
+        "reproducibility": 70,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 56.25. < 80. In window; tooling plugin, not a research result."
+    },
+    {
+      "id": "c20261117-visual-cipher-bench",
+      "title": "Einsia AI Visual Cipher Bench: frontier models score at most 26.7% on visual rule-induction puzzles",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2122725444952695043",
+          "publishedAt": "2026-11-17T16:21:36Z",
+          "retrievedAt": "2026-11-18T01:26:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 70,
+        "technicalDepth": 55,
+        "reproducibility": 50,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 55.0. < 80. In window news cluster; primary benchmark page not verified in this run."
+    },
+    {
+      "id": "c20261117-hitch-humanoid-harness",
+      "title": "HITCH: teaching a VLM to operate a humanoid through a whole-body harness (MIT)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/Axellwppr/HITCH",
+          "publishedAt": "2026-11-16T15:56:30Z",
+          "retrievedAt": "2026-11-18T01:26:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 65,
+        "technicalDepth": 60,
+        "reproducibility": 65,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 58.0. < 80. Out of window by minutes (repo created 2026-11-16T15:56Z); small repo, results unverified."
+    },
+    {
+      "id": "c20261117-inference-optimisation-skill",
+      "title": "sybil-solutions/inference-optimisation-skill: agent skill for hill-climbing local LLM serving speed (MIT, 720 stars)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
+          "publishedAt": "2026-11-16T18:40:04Z",
+          "retrievedAt": "2026-11-18T01:26:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 65,
+        "technicalDepth": 50,
+        "reproducibility": 75,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 53.0. < 80. In window; popular agent skill, not research."
+    },
+    {
+      "id": "c20261117-karpo-decision-31b",
+      "title": "Karpo Decision 31B (Gemma-based) claims tie for #1 on the Decision Index",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/MachinePulseAI/karpo-decision-31B",
+          "publishedAt": "2026-11-05T15:33:15Z",
+          "retrievedAt": "2026-11-18T01:26:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/felix_muller_ai/status/2122590044615786903",
+          "publishedAt": "2026-11-17T07:17:57Z",
+          "retrievedAt": "2026-11-18T01:26:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 60,
+        "technicalDepth": 55,
+        "reproducibility": 70,
+        "credibility": 35
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 53.5. < 80. Out of window (HF repo created 2026-11-05); in-window promotion consists largely of templated replies, lowering credibility."
+    },
+    {
+      "id": "c20261117-openai-embedded-safety-assessments",
+      "title": "OpenAI embedded safety assessments with Apollo Research, METR, Transluce and Goodfire",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2122364735656239141",
+          "publishedAt": "2026-11-17T03:11:42Z",
+          "retrievedAt": "2026-11-18T01:26:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 80,
+        "technicalDepth": 40,
+        "reproducibility": 20,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 52.5. < 80. In window news cluster; governance/partnership announcement, not a research result; primary OpenAI post not fetched."
+    },
+    {
+      "id": "c20261117-aa-intelligence-index-v5",
+      "title": "Artificial Analysis Intelligence Index v5 methodology overhaul",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/paulnugent92159/status/2122661050671898875",
+          "publishedAt": "2026-11-17T12:00:06Z",
+          "retrievedAt": "2026-11-18T01:26:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 70,
+        "technicalDepth": 40,
+        "reproducibility": 30,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 48.0. < 80. In window; benchmark methodology update reported secondhand."
+    },
+    {
+      "id": "c20261117-opencrawl-agents",
+      "title": "OpenCrawl: open-source shared history and message board for coding agents",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2122630092400554203",
+          "publishedAt": "2026-11-17T10:04:01Z",
+          "retrievedAt": "2026-11-18T01:26:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 60,
+        "technicalDepth": 35,
+        "reproducibility": 65,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 45.25. < 80. In window; developer tool launch."
+    },
+    {
+      "id": "c20261117-hf-openrouter",
+      "title": "Hugging Face integrates OpenRouter routing for 160 chat models",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2122406447795614103",
+          "publishedAt": "2026-11-17T06:00:04Z",
+          "retrievedAt": "2026-11-18T01:26:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 60,
+        "technicalDepth": 25,
+        "reproducibility": 40,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 41.5. < 80. Product integration, not research."
+    },
+    {
+      "id": "c20261117-noeri-launch",
+      "title": "Noeri (Yejin Choi, Carlos Guestrin) emerges from stealth with $110M for self-improving company AI",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2122395173061853264",
+          "publishedAt": "2026-11-17T02:36:40Z",
+          "retrievedAt": "2026-11-18T01:26:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 70,
+        "technicalDepth": 25,
+        "reproducibility": 10,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 40.0. < 80. In window; funding news, no technical artifact."
+    },
+    {
+      "id": "c20261117-touchbridge",
+      "title": "TouchBridge: tactile-conditioned human-to-robot transfer for dexterous manipulation",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/touchbridge2026/TouchBridge",
+          "publishedAt": "2026-11-17T03:33:22Z",
+          "retrievedAt": "2026-11-18T01:26:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 55,
+        "technicalDepth": 55,
+        "reproducibility": 40,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 48.75. < 80. In window; no license, no paper found."
+    },
+    {
+      "id": "c20261117-rust-anything",
+      "title": "erkamyaman/rust-anything: incremental app rewrite to Rust checked against recorded behavior",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/erkamyaman/rust-anything",
+          "publishedAt": "2026-11-16T12:10:36Z",
+          "retrievedAt": "2026-11-18T01:26:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 65,
+        "technicalDepth": 50,
+        "reproducibility": 70,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 50.75. < 80. Out of window (created 2026-11-16T12:10Z); developer tool."
+    },
+    {
+      "id": "c20261117-pulsar-mcp",
+      "title": "yocontra/pulsar: MCP server for coding agents across harnesses to find and message each other",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/yocontra/pulsar",
+          "publishedAt": "2026-11-17T03:07:57Z",
+          "retrievedAt": "2026-11-18T01:26:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 25,
+        "interestingness": 55,
+        "technicalDepth": 35,
+        "reproducibility": 70,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 43.25. < 80. In window; small tool."
+    }
+  ]
+}

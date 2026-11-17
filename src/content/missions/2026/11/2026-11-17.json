@@ -1,0 +1,229 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "mission-20261117-001",
+  "date": "2026-11-17",
+  "timezone": "Asia/Taipei",
+  "status": "awaiting_review",
+  "objective": {
+    "goal": "Discover, score, verify and propose one outstanding AI/agent discovery for 2026-11-17 (Asia/Taipei), or document a no-publish decision.",
+    "sources": [
+      "x",
+      "github",
+      "arxiv"
+    ],
+    "deliverables": [
+      "Verified candidate batch",
+      "No-publish decision (low-signal day)",
+      "Mission record",
+      "Pull request"
+    ]
+  },
+  "agent": {
+    "id": "grokbot",
+    "framework": "Grok Bot (AgentLab-bot on minim4.home)",
+    "model": "grok-bot",
+    "runId": "routine-9a1f041e-20261118T0122-minim4-daily-2026-11-17"
+  },
+  "selection": {
+    "candidatesEvaluated": 25,
+    "selectedCandidateId": null,
+    "selectionScore": null,
+    "rankingArtifact": "data/candidates/2026-11-17.json"
+  },
+  "skillsUsed": [
+    {
+      "skill": "x-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-x-20261117-001"
+    },
+    {
+      "skill": "github-discovery",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-gh-20261117-001"
+    },
+    {
+      "skill": "arxiv-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ax-20261117-001"
+    },
+    {
+      "skill": "fact-check",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-fc-20261117-001"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t1",
+      "action": "git checkout main, pull --ff-only (a92248e..e1fdd60), create branch daily/2026-11-17; tree clean; GitHub App key file present",
+      "tool": "git",
+      "status": "success",
+      "startedAt": "2026-11-17T17:22:12Z",
+      "finishedAt": "2026-11-17T17:22:15Z",
+      "evidenceIds": [
+        "ev-git-branch"
+      ]
+    },
+    {
+      "id": "t2",
+      "action": "Discovery for window 2026-11-16T16:00Z..2026-11-17T16:00Z: X news search (25 stories), X post searches (open weights/arXiv/HF launches, Introducing/release posts, named candidates); arXiv export API cs.AI/LG/CL/RO submittedDate-desc (400 returned, latest 2026-11-16T18:59:38Z, 100 in window); GitHub search repos created >=2026-11-16 by stars plus agent/llm/model/mcp/robot keyword searches; Hugging Face model searches",
+      "tool": "gh + curl + X MCP",
+      "status": "success",
+      "startedAt": "2026-11-17T17:22:30Z",
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-x",
+        "ev-gh",
+        "ev-arxiv"
+      ]
+    },
+    {
+      "id": "t3",
+      "action": "Verify top candidates: ScaleVLA arXiv abstract, HTML and project page (no code or weights linked); Meta RAM Self-Improving Memory blog; Infrathon arXiv date (2026-11-09); K2 Horizon dedupe against 2026-11-01 candidates and HF derivative dates; KORMo-Web and Karpo HF createdAt; arXiv metadata for Benchleaking, Latent Lattice, Turing Agent, CertiSum, weight-space replication, verifier hacking; GitHub metadata for dreamfar, GDM robotics plugin, HITCH, TouchBridge, inference-optimisation-skill",
+      "tool": "curl, gh api, X MCP",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": "2026-11-17T17:25:50Z",
+      "evidenceIds": [
+        "ev-verify"
+      ]
+    },
+    {
+      "id": "t4",
+      "action": "Write 25-candidate JSON (no eligible in-window candidate >= 80, no article) and mission awaiting_review; first mission-patch attempt failed on a Python quoting error and was rewritten",
+      "tool": "python",
+      "status": "success",
+      "startedAt": "2026-11-17T17:26:03Z",
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-candidates"
+      ]
+    },
+    {
+      "id": "t5",
+      "action": "Run validate_content, unittest, npm run check, npm run build",
+      "tool": "python+npm",
+      "status": "success",
+      "startedAt": "2026-11-17T17:27:22Z",
+      "finishedAt": "2026-11-17T17:27:24Z",
+      "evidenceIds": [
+        "ev-tests"
+      ]
+    },
+    {
+      "id": "t6",
+      "action": "Commit as agentlab-aidatatools-bot[bot], push with short-lived installation token, open PR requesting chuangtc",
+      "tool": "git + GitHub API",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-pr"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "python scripts/validate_content.py",
+      "status": "passed",
+      "artifact": ".reports/2026-11-17/validate.log"
+    },
+    {
+      "name": "python -m unittest discover -s tests -v",
+      "status": "passed",
+      "artifact": ".reports/2026-11-17/unittest.log"
+    },
+    {
+      "name": "npm run check",
+      "status": "passed",
+      "artifact": ".reports/2026-11-17/astro-check.log"
+    },
+    {
+      "name": "npm run build",
+      "status": "passed",
+      "artifact": ".reports/2026-11-17/astro-build.log"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-git-branch",
+      "type": "git",
+      "ref": "branch daily/2026-11-17 from origin/main@e1fdd60"
+    },
+    {
+      "id": "ev-x",
+      "type": "api_response",
+      "ref": "Public X reads via Grok Bot X tools; key posts: jaseweston 2122691693543817397, TengX6 2122465133389873210, RookieAcme 2122692484266627102, felix_muller_ai 2122590044615786903, poweredbymuse 2122622092361535587, paulnugent92159 2122661050671898875; X news clusters 2122725444952695043, 2122364735656239141, 2122630092400554203, 2122406447795614103, 2122395173061853264"
+    },
+    {
+      "id": "ev-gh",
+      "type": "http_response",
+      "ref": "gh search repos --created >=2026-11-16 --sort stars; keyword searches agent/llm/model/mcp/robot; gh api repos/* metadata"
+    },
+    {
+      "id": "ev-arxiv",
+      "type": "http_response",
+      "ref": "https://export.arxiv.org/api/query cat:cs.AI/LG/CL/RO sortBy=submittedDate desc max_results=400: latest 2026-11-16T18:59:38Z, 100 in window; id_list 2611.21607,2611.21299,2611.21315,2611.21584,2611.21608,2611.21538,2611.21449,2611.11995"
+    },
+    {
+      "id": "ev-verify",
+      "type": "http_response",
+      "ref": "https://arxiv.org/html/2611.21607v1; https://galaxygeneralrobotics.github.io/scalevla/; https://facebookresearch.github.io/RAM/blogs/self_improving_memory; https://huggingface.co/api/models?search=K2-Horizon; https://huggingface.co/api/models/MachinePulseAI/karpo-decision-31B"
+    },
+    {
+      "id": "ev-candidates",
+      "type": "file",
+      "ref": "data/candidates/2026-11-17.json"
+    },
+    {
+      "id": "ev-tests",
+      "type": "file",
+      "ref": ".reports/2026-11-17/validate.log"
+    },
+    {
+      "id": "ev-pr",
+      "type": "github",
+      "ref": "https://github.com/aidatatools/agentlab/pulls (opened by this run; see PR for number)"
+    }
+  ],
+  "outcome": {
+    "articleId": null,
+    "githubCommit": null,
+    "githubPullRequest": null,
+    "deploymentUrl": null,
+    "publicationStatus": "not_published"
+  },
+  "metrics": {
+    "durationSeconds": null,
+    "tokens": null,
+    "estimatedCostUsd": null,
+    "humanInterventions": 0
+  },
+  "retrospective": {
+    "successes": [
+      "25 candidates captured with original URLs and timestamps; top items verified against arXiv metadata and HTML, project pages, the Meta RAM blog, GitHub and Hugging Face APIs",
+      "arXiv returned 100 in-window papers (no weekend lag)",
+      "K2 Horizon formal launch deduped against the 2026-11-01 run",
+      "No breakthrough invented on a low-signal day"
+    ],
+    "failures": [
+      "ScaleVLA, the strongest in-window research item, links no code or weights, so it stays below 80",
+      "Hugging Face author listings for LLM360 and MBZUAI-IFM returned empty, so K2 Horizon dates came from derivative repos",
+      "Primary pages for the OpenAI embedded-assessment news and Visual Cipher Bench were not fetched",
+      "First mission patch script failed on a quoting error and was rewritten"
+    ],
+    "lessonsLearned": [
+      "Templated reply floods (Karpo Decision) should lower credibility",
+      "A formal launch event for an already-public model is not a new release"
+    ],
+    "nextActions": [
+      "chuangtc review on DEV then merge",
+      "Re-check ScaleVLA if code or weights are released",
+      "Re-check arXiv on the next run for papers submitted after 2026-11-16T18:59:38Z"
+    ]
+  }
+}
