@@ -1,0 +1,228 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "mission-20261119-001",
+  "date": "2026-11-19",
+  "timezone": "Asia/Taipei",
+  "status": "awaiting_review",
+  "objective": {
+    "goal": "Discover, score, verify and propose one outstanding AI/agent discovery for 2026-11-19 (Asia/Taipei), or document a no-publish decision.",
+    "sources": [
+      "x",
+      "github",
+      "arxiv",
+      "huggingface"
+    ],
+    "deliverables": [
+      "Verified candidate batch",
+      "No-publish decision (low-signal day)",
+      "Mission record",
+      "Pull request"
+    ]
+  },
+  "agent": {
+    "id": "grokbot",
+    "framework": "Grok Bot (AgentLab-bot on minim4.home)",
+    "model": "grok-bot",
+    "runId": "routine-9a1f041e-20261120T0117-minim4-daily-2026-11-19"
+  },
+  "selection": {
+    "candidatesEvaluated": 27,
+    "selectedCandidateId": null,
+    "selectionScore": null,
+    "rankingArtifact": "data/candidates/2026-11-19.json"
+  },
+  "skillsUsed": [
+    {
+      "skill": "x-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-x-20261119-001"
+    },
+    {
+      "skill": "github-discovery",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-gh-20261119-001"
+    },
+    {
+      "skill": "arxiv-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ax-20261119-001"
+    },
+    {
+      "skill": "fact-check",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-fc-20261119-001"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t1",
+      "action": "git checkout main, pull --ff-only (fast-forward e1fdd60..23a4ba1), create branch daily/2026-11-19; tree clean; GitHub App key file present",
+      "tool": "git",
+      "status": "success",
+      "startedAt": "2026-11-19T17:17:36Z",
+      "finishedAt": "2026-11-19T17:17:39Z",
+      "evidenceIds": [
+        "ev-git-branch"
+      ]
+    },
+    {
+      "id": "t2",
+      "action": "Discovery for window 2026-11-18T16:00Z..2026-11-19T16:00Z: X news searches, X post searches (release/open-weights, official lab accounts, arXiv/HF links, named items); GitHub repo search created in window plus 30 tracked repos releases; Hugging Face org listings and trending; arXiv export API returned HTTP 429 on 5 attempts (minim4 and a second network), so arXiv was read from rss.arxiv.org (cs.AI/LG/CL/RO, 19 Nov announcement) and submission times taken from abs pages (in-window boundary 2611.24669 at 16:06:04Z; 52 new in-window papers through 2611.24940 at 18:59:38Z; later submissions not yet announced)",
+      "tool": "gh + curl + X MCP",
+      "status": "partial",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-x",
+        "ev-gh",
+        "ev-arxiv"
+      ]
+    },
+    {
+      "id": "t3",
+      "action": "Verify top candidates: openai.com chip-design post, AMD posts, architectlabs.com Frostbite blog (no RTL/proof/silicon artifacts), arXiv abstracts for 8 papers, HF API metadata for Aion, Rumble-2-Flash, DaisyRose, MetaDecision; dedupe against 2026-10-16..11-18 candidate files (Genie 4 duplicate; Qwen4-Max and Google SIM out of window)",
+      "tool": "curl, gh api, X MCP, web search",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-verify"
+      ]
+    },
+    {
+      "id": "t4",
+      "action": "Write 27-candidate JSON (no candidate >= 80, no article) and mission awaiting_review",
+      "tool": "python",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-candidates"
+      ]
+    },
+    {
+      "id": "t5",
+      "action": "Run validate_content, unittest, npm run check, npm run build",
+      "tool": "python+npm",
+      "status": "success",
+      "startedAt": "2026-11-19T17:26:59Z",
+      "finishedAt": "2026-11-19T17:27:02Z",
+      "evidenceIds": [
+        "ev-tests"
+      ]
+    },
+    {
+      "id": "t6",
+      "action": "Commit as agentlab-aidatatools-bot[bot], push with short-lived installation token, open PR requesting chuangtc",
+      "tool": "git + GitHub API",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-pr"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "python scripts/validate_content.py",
+      "status": "passed",
+      "artifact": ".reports/2026-11-19/validate.log"
+    },
+    {
+      "name": "python -m unittest discover -s tests -v",
+      "status": "passed",
+      "artifact": ".reports/2026-11-19/unittest.log"
+    },
+    {
+      "name": "npm run check",
+      "status": "passed",
+      "artifact": ".reports/2026-11-19/astro-check.log"
+    },
+    {
+      "name": "npm run build",
+      "status": "passed",
+      "artifact": ".reports/2026-11-19/astro-build.log"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-git-branch",
+      "type": "git",
+      "ref": "branch daily/2026-11-19 from origin/main 23a4ba1"
+    },
+    {
+      "id": "ev-x",
+      "type": "api_response",
+      "ref": "Public X reads via Grok Bot X tools; key posts: OpenAI 2123100386638877054 and 2123191365983248653, AMD 2123132122047164902, architectlabs 2123187520276152487, bespokelabsai 2123099143996616741, GoogleDeepMind 2123167884411077030 and 2123117733709586849, contralabs 2123145563679940716, Alibaba_Qwen 2122148127520289151; X news stories 2123337188947734794, 2123077207887065519, 2123149190117339480, 2122652647824228432"
+    },
+    {
+      "id": "ev-gh",
+      "type": "http_response",
+      "ref": "GitHub search/repositories created:2026-11-18T16:00:00Z..2026-11-19T16:00:00Z (7 keyword queries, mostly spam/game repos), releases of 30 tracked repos (31 in window); gh api repos/microsoft/web-grounding-evals, pegainfer-project/kern-rsi-demo"
+    },
+    {
+      "id": "ev-arxiv",
+      "type": "http_response",
+      "ref": "https://export.arxiv.org/api/query -> HTTP 429 (5 attempts); https://rss.arxiv.org/rss/cs.AI, cs.LG, cs.CL, cs.RO (pubDate Thu, 19 Nov 2026); https://arxiv.org/abs/2611.24669 (v1 2026-11-18T16:06:04Z) .. https://arxiv.org/abs/2611.24940 (v1 2026-11-18T18:59:38Z)"
+    },
+    {
+      "id": "ev-verify",
+      "type": "http_response",
+      "ref": "https://openai.com/index/advancing-chip-design-with-our-models/; https://architectlabs.com/blog/frostbite; https://huggingface.co/api/models/microsoft/Aion-1.0-Instruct-2.3B; https://huggingface.co/api/models/Reson8/Rumble-2-Flash; https://arxiv.org/abs/2611.24844; https://arxiv.org/abs/2611.24778"
+    },
+    {
+      "id": "ev-candidates",
+      "type": "file",
+      "ref": "data/candidates/2026-11-19.json"
+    },
+    {
+      "id": "ev-tests",
+      "type": "file",
+      "ref": ".reports/2026-11-19/validate.log"
+    },
+    {
+      "id": "ev-pr",
+      "type": "github",
+      "ref": "https://github.com/aidatatools/agentlab/pull/39"
+    }
+  ],
+  "outcome": {
+    "articleId": null,
+    "githubCommit": "0161787",
+    "githubPullRequest": "https://github.com/aidatatools/agentlab/pull/39",
+    "deploymentUrl": null,
+    "publicationStatus": "not_published"
+  },
+  "metrics": {
+    "durationSeconds": null,
+    "tokens": null,
+    "estimatedCostUsd": null,
+    "humanInterventions": 0
+  },
+  "retrospective": {
+    "successes": [
+      "27 candidates captured with original URLs and timestamps (X 12, arXiv 9, GitHub 4, HF 2)",
+      "Top items verified against primary sources: OpenAI chip-design post, Architect Labs Frostbite blog, arXiv abstracts",
+      "arXiv window reconstructed from RSS plus abs-page submission times despite API rate limiting"
+    ],
+    "failures": [
+      "arXiv export API returned HTTP 429 on every attempt",
+      "arXiv submissions after 2026-11-18T18:59:38Z are not yet announced and were not covered",
+      "Primary sources for FrontierML, ResolveAI SRE-1 and the Handmer audit were not located",
+      "No candidate reached 80; top OpenAI/AMD chip design (75.95) lacks public artifacts or independent measurements"
+    ],
+    "lessonsLearned": [
+      "When the arXiv API rate-limits, RSS plus abs-page v1 timestamps (IDs are sequential) recover the in-window set",
+      "Pre-silicon or vendor-only chip results score low on reproducibility even with strong claims"
+    ],
+    "nextActions": [
+      "chuangtc review on DEV then merge",
+      "Re-check arXiv on the next run for papers submitted 2026-11-18T19:00Z..2026-11-19T16:00Z (announced 20 Nov ET)"
+    ]
+  }
+}
