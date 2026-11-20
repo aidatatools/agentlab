@@ -1,0 +1,218 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "mission-20261120-001",
+  "date": "2026-11-20",
+  "timezone": "Asia/Taipei",
+  "status": "awaiting_review",
+  "objective": {
+    "goal": "Discover, score, verify and propose one outstanding AI/agent discovery for 2026-11-20 (Asia/Taipei), or document a no-publish decision.",
+    "sources": [
+      "x",
+      "github",
+      "arxiv",
+      "huggingface"
+    ],
+    "deliverables": [
+      "Verified candidate batch",
+      "No-publish decision (no eligible verified candidate)",
+      "Mission record",
+      "Pull request"
+    ]
+  },
+  "agent": {
+    "id": "grokbot",
+    "framework": "Grok Bot (AgentLab-bot on minim4.home)",
+    "model": "grok-bot",
+    "runId": "routine-9a1f041e-20261121T0118-minim4-daily-2026-11-20"
+  },
+  "selection": {
+    "candidatesEvaluated": 20,
+    "selectedCandidateId": null,
+    "selectionScore": null,
+    "rankingArtifact": "data/candidates/2026-11-20.json"
+  },
+  "skillsUsed": [
+    {
+      "skill": "x-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-x-20261120-001"
+    },
+    {
+      "skill": "github-discovery",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-gh-20261120-001"
+    },
+    {
+      "skill": "arxiv-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ax-20261120-001"
+    },
+    {
+      "skill": "fact-check",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-fc-20261120-001"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t1",
+      "action": "git checkout main, pull --ff-only (fast-forward 23a4ba1..5f3740d), create branch daily/2026-11-20; tree clean; GitHub App key file present",
+      "tool": "git",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-git-branch"
+      ]
+    },
+    {
+      "id": "t2",
+      "action": "Discovery for window 2026-11-19T16:00Z..2026-11-20T16:00Z: ~25 X full-archive searches (releases/open weights, official lab accounts, papers, named items); GitHub repo search created >= 2026-11-19 sorted by stars (mostly spam/game/template repos); Hugging Face API metadata and 7-day trending; arXiv export API (cs.AI/LG/CL/RO/CV, newest 200 by submittedDate) answered, but its newest indexed submission was 2026-11-19T18:59:57Z and the fetched response was truncated after 55 entries (all in window, down to 17:16:21Z), so later in-window submissions were not covered",
+      "tool": "X MCP + gh + curl + web fetch",
+      "status": "partial",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-x",
+        "ev-gh",
+        "ev-arxiv",
+        "ev-hf"
+      ]
+    },
+    {
+      "id": "t3",
+      "action": "Verify top candidates: fetched alpo.ge/remark.pdf and HEAD-checked Lean archive parts; gh api on tristanbuckmaster/navier-stokes and CocoSgt/riemann-hypothesis-lean (README states no independent build/review yet); searched X for independent build reports (none in window); Anthropic black-hole post date (Nov 17; first X coverage 2026-11-18T18:52:40Z, out of window); HF API for apple/DepthPro2; arXiv abstracts for 10 papers; dedupe against 2026-10-16..11-19 candidate files (Gemini 4 Neon, DaisyRose, Aion, Hy4 already covered)",
+      "tool": "curl, gh api, X MCP, web search",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-verify"
+      ]
+    },
+    {
+      "id": "t4",
+      "action": "Write 20-candidate JSON and mission awaiting_review; no article: the two candidates above 80 in window (RH claim 84.15, Navier–Stokes claim 83.1) lack independently verified credibility, the third (81.25) is out of window",
+      "tool": "python",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-candidates"
+      ]
+    },
+    {
+      "id": "t5",
+      "action": "Run validate_content (Content OK: 20 articles, 37 missions, 2 agents, 852 candidates), unittest (6 tests OK), npm run check (0 errors/warnings/hints), npm run build (63 pages)",
+      "tool": "python+npm",
+      "status": "success",
+      "startedAt": "2026-11-20T17:23:39Z",
+      "finishedAt": "2026-11-20T17:23:42Z",
+      "evidenceIds": [
+        "ev-tests"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "python scripts/validate_content.py",
+      "status": "passed",
+      "artifact": ".reports/2026-11-20/validate.log"
+    },
+    {
+      "name": "python -m unittest discover -s tests -v",
+      "status": "passed",
+      "artifact": ".reports/2026-11-20/unittest.log"
+    },
+    {
+      "name": "npm run check",
+      "status": "passed",
+      "artifact": ".reports/2026-11-20/astro-check.log"
+    },
+    {
+      "name": "npm run build",
+      "status": "passed",
+      "artifact": ".reports/2026-11-20/astro-build.log"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-git-branch",
+      "type": "git",
+      "ref": "branch daily/2026-11-20 from origin/main 5f3740d"
+    },
+    {
+      "id": "ev-x",
+      "type": "api_response",
+      "ref": "Public X reads via Grok Bot X tools; key posts: scottnarmstrong 2123773651531305190 and 2123776968839630924, ShunyuYao14 2123783205178265871, kimmonismus 2123791432800698792, birdsnfrogs 2123787339453640721, AnthropicAI 2123461658890686863, _akhaliq 2123586174405296481, VarunGangal 2123587090332127373, cognition 2123553121653944391, AIatMeta 2123484005089558692, GoogleDeepMind 2123519772390215780"
+    },
+    {
+      "id": "ev-gh",
+      "type": "http_response",
+      "ref": "gh search repos --created >=2026-11-19 --sort stars (30 results, mostly spam/game/template repos); gh api repos/tristanbuckmaster/navier-stokes, repos/CocoSgt/riemann-hypothesis-lean (+readme), repos/apple/ml-depth-pro-2 (404)"
+    },
+    {
+      "id": "ev-arxiv",
+      "type": "http_response",
+      "ref": "http://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.LG+OR+cat:cs.CL+OR+cat:cs.RO+OR+cat:cs.CV&sortBy=submittedDate&sortOrder=descending&max_results=200 (newest 2611.26629 at 2026-11-19T18:59:57Z; 55 parsed entries)"
+    },
+    {
+      "id": "ev-hf",
+      "type": "http_response",
+      "ref": "https://huggingface.co/api/models/apple/DepthPro2, /api/models/tencent/Hy4, /api/models?sort=likes7d"
+    },
+    {
+      "id": "ev-verify",
+      "type": "http_response",
+      "ref": "https://alpo.ge/remark.pdf (fetched), https://alpo.ge/lean.tar.gz.part01 and part14 (HTTP 200), https://www.anthropic.com/research/claude-black-hole-physics, https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+    },
+    {
+      "id": "ev-candidates",
+      "type": "file",
+      "ref": "data/candidates/2026-11-20.json"
+    },
+    {
+      "id": "ev-tests",
+      "type": "file",
+      "ref": ".reports/2026-11-20/"
+    }
+  ],
+  "outcome": {
+    "articleId": null,
+    "githubCommit": "336c11c",
+    "githubPullRequest": "https://github.com/aidatatools/agentlab/pull/40",
+    "deploymentUrl": null,
+    "publicationStatus": "not_published"
+  },
+  "metrics": {
+    "durationSeconds": null,
+    "tokens": null,
+    "estimatedCostUsd": null,
+    "humanInterventions": 0
+  },
+  "retrospective": {
+    "successes": [
+      "20 candidates captured with original URLs and timestamps (arXiv 10, X 7, GitHub 2, HF/arXiv 1)",
+      "Both Millennium-problem claims checked against their primary artifacts (remark.pdf, Lean archives, GitHub repo) the same day",
+      "Missed 11-19 item (Anthropic black-hole physics) detected and flagged rather than backfilled"
+    ],
+    "failures": [
+      "arXiv index ended at 2026-11-19T18:59:57Z and the API response was truncated at 55 entries; later in-window submissions not covered",
+      "No independent build or review of the RH or Navier–Stokes Lean packages existed in the window, so neither could be published",
+      "Anthropic black-hole physics post (81.25) was missed by the 2026-11-19 run",
+      "GitHub search was dominated by spam/template repos"
+    ],
+    "lessonsLearned": [
+      "A score above 80 is not enough: unreviewed claims need independently verified credibility before publication",
+      "Search X for first coverage of a lab post to place it in the right window"
+    ],
+    "nextActions": [
+      "If an independent Lean build/axiom check or expert review of the Alpöge RH or Alpöge–Buckmaster Navier–Stokes claims appears, re-score in that day's run",
+      "Reviewer to decide whether to backfill the missed Anthropic black-hole physics item"
+    ]
+  }
+}
