@@ -1,0 +1,559 @@
+{
+ "date": "2026-11-21",
+ "timezone": "Asia/Taipei",
+ "demo": false,
+ "discoveredBy": "grokbot",
+ "selectedCandidateId": "c20261121-rh-lean-proof-independent-verification",
+ "candidates": [
+  {
+   "id": "c20261121-rh-lean-proof-independent-verification",
+   "title": "Lean FRO and Mathlib Initiative certify the Alpöge–Claude Lean proof of the Riemann Hypothesis after independent kernel checks (MIT verification page: nanoda, con-leche, lean4lean, leanchecker; Comparator statement match)",
+   "type": "technology_news",
+   "sources": [
+    {
+     "platform": "official",
+     "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+     "publishedAt": "2026-11-21T13:55:00Z",
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    },
+    {
+     "platform": "official",
+     "url": "https://math.mit.edu/~drew/grh/",
+     "publishedAt": null,
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    },
+    {
+     "platform": "x",
+     "url": "https://x.com/nasqret/status/2123858004542189855",
+     "publishedAt": "2026-11-20T19:16:22Z",
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    },
+    {
+     "platform": "github",
+     "url": "https://github.com/Deicyde/riemann-hypothesis",
+     "publishedAt": "2026-11-20T14:47:49Z",
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    },
+    {
+     "platform": "official",
+     "url": "https://alpo.ge/remark.pdf",
+     "publishedAt": null,
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 99,
+    "interestingness": 98,
+    "technicalDepth": 90,
+    "reproducibility": 85,
+    "credibility": 92
+   },
+   "eligibility": "eligible",
+   "reason": "Weighted 94.15. Selected and published. New in-window event: the independent verification of the claim scored on 2026-11-20 (84.15, rejected then only for lack of independent verification, with the note to re-score once an independent compile/axiom check appeared). Verified against primary sources: (1) Lean FRO + Mathlib Initiative joint statement, article:published_time 2026-11-21T13:55:00Z, certifying statement and proof correct against the four criteria (Mathlib RiemannHypothesis statement; compiles, dozens reproduced the same export; comparator and con-leche --compare confirm the statement; export checked by Lean kernel, con-leche, con-ron and third-party checkers). (2) Andrew Sutherland (MIT) verification page, last updated 2026-11-21 12:55 UTC: 175,187 modules compile (finished 16:43:21 UTC), axioms only propext/Classical.choice/Quot.sound, leanchecker replay 175,187/175,187, nanoda accepts (19:05:45 UTC), con-leche master accepts 1,468,418 declarations and --compare justifies all five theorems (21:19 UTC), lean4lean passes all modules; lake comparator and Lean default/paranoid kernel replay of the export still running at that update; scope of GRH limited to Dirichlet L-functions; caveats on unsandboxed build. (3) Deicyde/riemann-hypothesis Comparator repo (created 2026-11-20T14:47:49Z, active commits by leanprover-community maintainers in window). Not peer reviewed; no human-readable proof yet; AgentLab did not run the checks itself (codeStatus not_run)."
+  },
+  {
+   "id": "c20261121-alpoge-buckmaster-navier-stokes-followup",
+   "title": "Follow-up coverage of the Alpöge–Buckmaster unforced 3D Navier–Stokes blow-up claim (79-page paper plus Lean package)",
+   "type": "research_paper",
+   "sources": [
+    {
+     "platform": "github",
+     "url": "https://github.com/tristanbuckmaster/navier-stokes",
+     "publishedAt": "2026-11-20T10:40:33Z",
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    },
+    {
+     "platform": "x",
+     "url": "https://x.com/LifanBuilds/status/2124145257147494733",
+     "publishedAt": "2026-11-21T14:17:48Z",
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 95,
+    "interestingness": 92,
+    "technicalDepth": 88,
+    "reproducibility": 55,
+    "credibility": 50
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 82.35. Duplicate / out of window: repository public 2026-11-20T10:40:33Z and scored on 2026-11-20 (83.1). In-window posts say the numerical certificate is still forthcoming and no independent rebuild or comparator verdict has been published, so credibility is unchanged. Re-score when an independent check appears."
+  },
+  {
+   "id": "c20261121-thinking-machines-inkling-2-mini",
+   "title": "Thinking Machines Inkling 2 Mini: 26.4B-total / 3.4B-active looped MoE transformer (middle layers run three times per token), Apache-2.0 open weights, plus a variable-loop research variant and monitorability study",
+   "type": "technology_news",
+   "sources": [
+    {
+     "platform": "x",
+     "url": "https://x.com/thinkymachines/status/2123871643797995872",
+     "publishedAt": "2026-11-20T20:10:34Z",
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    },
+    {
+     "platform": "official",
+     "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+     "publishedAt": "2026-11-20T20:10:34Z",
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    },
+    {
+     "platform": "huggingface",
+     "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
+     "publishedAt": null,
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    },
+    {
+     "platform": "x",
+     "url": "https://x.com/JonSaadFalcon/status/2123939023546892637",
+     "publishedAt": "2026-11-21T00:38:18Z",
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 70,
+    "interestingness": 84,
+    "technicalDepth": 82,
+    "reproducibility": 88,
+    "credibility": 80
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 79.6. < 80, not published. In window (official post 2026-11-20T20:10:34Z; HF repo created 2026-11-17 while private, Apache-2.0, lastModified 2026-11-20T22:55:20Z; unsloth GGUF repo created 13:09Z but release coverage starts after 20:00Z). Verified on the official page: looped middle layers x3, 26.4B total, 3.4B active, 5.4B weight activations per token; self-reported DeepSWE v1.1 48.2% and Vals Index v2.2 46.5% (leads open models under 100B by its own chart); variable-loop no-CoT time horizon 16s to 37s. Benchmarks are vendor-reported; LLMBenchmark.ai notes independent boards have not scored it yet; only early-access third-party data is the Stanford Intelligence-per-Watt run. Strong, reproducible release but incremental capability; Inkling 2 Small was published 2026-11 already."
+  },
+  {
+   "id": "c20261121-goodfire-interpreting-inkling-2-mini",
+   "title": "Goodfire: interpreting Inkling 2 Mini, how a looped transformer routes information across layers, blocks and loops (early-access interpretability study)",
+   "type": "research_paper",
+   "sources": [
+    {
+     "platform": "x",
+     "url": "https://x.com/GoodfireAI/status/2123873150803100059",
+     "publishedAt": "2026-11-20T20:16:33Z",
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    },
+    {
+     "platform": "official",
+     "url": "https://www.goodfire.com/research/interpreting-inkling-2-mini/",
+     "publishedAt": "2026-11-20T20:16:33Z",
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 62,
+    "interestingness": 72,
+    "technicalDepth": 78,
+    "reproducibility": 55,
+    "credibility": 80
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 68.45. < 80. In window. Blog post reachable (HTTP 200); first interpretability study of a production looped model, but a companion piece to the Inkling release, no code release found."
+  },
+  {
+   "id": "c20261121-tensorlean-gpu-kernel-verification",
+   "title": "TensorLean (CertiK and Columbia): formal verification of production GPU kernels, 38 bugs found across 149 instances",
+   "type": "research_paper",
+   "sources": [
+    {
+     "platform": "x",
+     "url": "https://x.com/i/trending/2123802972136071676",
+     "publishedAt": "2026-11-20T15:37:41Z",
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 65,
+    "interestingness": 70,
+    "technicalDepth": 75,
+    "reproducibility": 60,
+    "credibility": 70
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 68.0. < 80. Out of window: the X story was created 2026-11-20T15:37:41Z, before the window start, and it is not in the 2026-11-20 file. Primary paper/repo not located in this run."
+  },
+  {
+   "id": "c20261121-openai-medchembench",
+   "title": "OpenAI MedChemBench: 99 medicinal-chemistry reasoning problems from 117 papers and patents (761 structures); GPT-6.2 Astra 84.5% at xhigh",
+   "type": "research_paper",
+   "sources": [
+    {
+     "platform": "x",
+     "url": "https://x.com/OpenAI/status/2123856316187975756",
+     "publishedAt": "2026-11-20T19:09:39Z",
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    },
+    {
+     "platform": "official",
+     "url": "https://openai.com/index/introducing-medchembench/",
+     "publishedAt": "2026-11-20T19:09:39Z",
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 60,
+    "interestingness": 70,
+    "technicalDepth": 70,
+    "reproducibility": 45,
+    "credibility": 80
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 64.25. < 80. In window. Official page read: four graded components (structures, reasoning, ranking/selection, property prediction); scores GPT-6.2 Astra 84.5%, GPT-6 Astra 83.3%, GPT-6.1 Sol 82.0%, GPT-5.6 Sol 58.2%. Vendor benchmark of its own models; paper linked."
+  },
+  {
+   "id": "c20261121-sybil-skill-distill",
+   "title": "sybil-solutions/skill-distill: distill a good Claude Code / Codex session into a skill an open-weight model can follow",
+   "type": "github_project",
+   "sources": [
+    {
+     "platform": "github",
+     "url": "https://github.com/sybil-solutions/skill-distill",
+     "publishedAt": "2026-11-21T01:43:00Z",
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 55,
+    "interestingness": 70,
+    "technicalDepth": 60,
+    "reproducibility": 75,
+    "credibility": 55
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 62.75. < 80. Created in window (2026-11-21T01:43:00Z), Python, MIT, ~243 stars, last commit 4c3b307096 at 03:48Z. Useful tooling, no evaluation of reproduction rates found."
+  },
+  {
+   "id": "c20261121-inference-optimization-playbook",
+   "title": "alesha-pro/inference-optimization-playbook: 97 tested hypotheses for running huge MoE LLMs on 4x RTX 3090 with experts in RAM",
+   "type": "github_project",
+   "sources": [
+    {
+     "platform": "github",
+     "url": "https://github.com/alesha-pro/inference-optimization-playbook",
+     "publishedAt": "2026-11-20T22:17:50Z",
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 45,
+    "interestingness": 62,
+    "technicalDepth": 65,
+    "reproducibility": 80,
+    "credibility": 55
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 59.5. < 80. Created in window, Python, MIT, ~35 stars, commit 53868e29b2. Practitioner notes with negative results; single-author measurements."
+  },
+  {
+   "id": "c20261121-openai-combatting-adversarial-distillation",
+   "title": "OpenAI research on combatting adversarial distillation: reasoning-trace protection and campaign detection (extraction success reportedly 54% to 0.2%)",
+   "type": "technology_news",
+   "sources": [
+    {
+     "platform": "x",
+     "url": "https://x.com/OpenAI/status/2123862344422088794",
+     "publishedAt": "2026-11-20T19:33:37Z",
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    },
+    {
+     "platform": "official",
+     "url": "https://openai.com/index/combatting-adversarial-distillation/",
+     "publishedAt": "2026-11-20T19:33:37Z",
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 55,
+    "interestingness": 72,
+    "technicalDepth": 60,
+    "reproducibility": 25,
+    "credibility": 80
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 58.25. < 80. In window. Official post (dated November 20, 2026) read; safety/policy research without reproducible artifacts. The related API reasoning-binding change was summarized on X before the window (story created 2026-11-20T03:19Z)."
+  },
+  {
+   "id": "c20261121-openai-agents-python-v1-alpha",
+   "title": "openai/openai-agents-python v1.0.0-alpha.1 (Agents SDK 1.0 pre-release)",
+   "type": "github_project",
+   "sources": [
+    {
+     "platform": "github",
+     "url": "https://github.com/openai/openai-agents-python/releases/tag/v1.0.0-alpha.1",
+     "publishedAt": "2026-11-20T20:51:28Z",
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 35,
+    "interestingness": 55,
+    "technicalDepth": 40,
+    "reproducibility": 80,
+    "credibility": 90
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 53.25. < 80. Release published in window (prerelease). SDK milestone, incremental."
+  },
+  {
+   "id": "c20261121-bluesky-diderot",
+   "title": "bluesky-social/diderot: self-hosted search and Q&A over Slack, coding-agent sessions, docs and tickets",
+   "type": "github_project",
+   "sources": [
+    {
+     "platform": "github",
+     "url": "https://github.com/bluesky-social/diderot",
+     "publishedAt": "2026-11-20T23:39:20Z",
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 35,
+    "interestingness": 55,
+    "technicalDepth": 50,
+    "reproducibility": 75,
+    "credibility": 75
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 53.0. < 80. Created in window, Go, Apache-2.0, ~32 stars. Internal tooling open-sourced; not a research advance."
+  },
+  {
+   "id": "c20261121-openai-neurodegeneration-perturbai-scripps",
+   "title": "OpenAI: AI helping scientists find leads on neurodegenerative disease, with Perturb AI and Scripps Research",
+   "type": "technology_news",
+   "sources": [
+    {
+     "platform": "x",
+     "url": "https://x.com/OpenAI/status/2123899406550528422",
+     "publishedAt": "2026-11-20T22:00:53Z",
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 50,
+    "interestingness": 65,
+    "technicalDepth": 45,
+    "reproducibility": 20,
+    "credibility": 75
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 50.75. < 80. In window. Video/collaboration story; no paper or data located."
+  },
+  {
+   "id": "c20261121-tencent-hy4-ama",
+   "title": "Tencent Hy team AMA on r/LocalLLaMA about Hy4 and Hy4 flash",
+   "type": "technology_news",
+   "sources": [
+    {
+     "platform": "x",
+     "url": "https://x.com/TencentHunyuan/status/2123812576723341329",
+     "publishedAt": "2026-11-20T16:15:51Z",
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 40,
+    "interestingness": 55,
+    "technicalDepth": 40,
+    "reproducibility": 60,
+    "credibility": 80
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 50.75. < 80. Out of window as a release: Tencent said it had shipped Hy4 and Hy4 flash in a 2026-11-18T16:46:05Z post; Hy4 flash weights were published 2026-11-18 (article-20261118-001). In-window item is only the AMA."
+  },
+  {
+   "id": "c20261121-hf-transformers-v5-24",
+   "title": "huggingface/transformers v5.24.0 release",
+   "type": "github_project",
+   "sources": [
+    {
+     "platform": "github",
+     "url": "https://github.com/huggingface/transformers/releases/tag/v5.24.0",
+     "publishedAt": "2026-11-21T12:28:26Z",
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 30,
+    "interestingness": 45,
+    "technicalDepth": 40,
+    "reproducibility": 85,
+    "credibility": 90
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 50.0. < 80. Routine library release in window."
+  },
+  {
+   "id": "c20261121-rsinfer",
+   "title": "open-agent-infra/RSInfer: an RSI-native LLM serving engine for live, compositional and safe self-improvement",
+   "type": "github_project",
+   "sources": [
+    {
+     "platform": "github",
+     "url": "https://github.com/open-agent-infra/RSInfer",
+     "publishedAt": "2026-11-20T19:50:44Z",
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 45,
+    "interestingness": 50,
+    "technicalDepth": 55,
+    "reproducibility": 55,
+    "credibility": 40
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 49.25. < 80. Created in window, Python, Apache-2.0, 8 stars. Early project, no benchmarks verified."
+  },
+  {
+   "id": "c20261121-pibot-desktop-agent-team",
+   "title": "w01fb0ss/PiBot: local-first desktop AI agent team (multi-agent chats, computer use, MCP, routines and approvals)",
+   "type": "github_project",
+   "sources": [
+    {
+     "platform": "github",
+     "url": "https://github.com/w01fb0ss/PiBot",
+     "publishedAt": "2026-11-21T06:54:24Z",
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 30,
+    "interestingness": 55,
+    "technicalDepth": 45,
+    "reproducibility": 70,
+    "credibility": 50
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 47.25. < 80. Created in window, TypeScript, Apache-2.0, ~119 stars. App integration, no new method."
+  },
+  {
+   "id": "c20261121-openhands-v1-43",
+   "title": "OpenHands v1.43.0 release",
+   "type": "github_project",
+   "sources": [
+    {
+     "platform": "github",
+     "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.43.0",
+     "publishedAt": "2026-11-20T18:51:00Z",
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 25,
+    "interestingness": 40,
+    "technicalDepth": 35,
+    "reproducibility": 85,
+    "credibility": 85
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 45.75. < 80. Routine release in window."
+  },
+  {
+   "id": "c20261121-inkling-2-mini-sglang-dgx-spark",
+   "title": "thefullctx/inkling-2-mini-sglang-dgx-spark: serving Inkling 2 Mini (NVFP4/MXFP8) on one DGX Spark with SGLang, with benchmarks",
+   "type": "github_project",
+   "sources": [
+    {
+     "platform": "github",
+     "url": "https://github.com/thefullctx/inkling-2-mini-sglang-dgx-spark",
+     "publishedAt": "2026-11-21T02:22:04Z",
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 25,
+    "interestingness": 40,
+    "technicalDepth": 45,
+    "reproducibility": 70,
+    "credibility": 45
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 41.5. < 80. Created in window, 2 stars; deployment recipe for the Inkling release."
+  },
+  {
+   "id": "c20261121-nvidia-inception-labs-report",
+   "title": "Report that Nvidia is buying Inception Labs (diffusion LLM Mercury)",
+   "type": "technology_news",
+   "sources": [
+    {
+     "platform": "x",
+     "url": "https://x.com/zbruceli/status/2123890233347608909",
+     "publishedAt": "2026-11-20T21:24:26Z",
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 40,
+    "interestingness": 65,
+    "technicalDepth": 30,
+    "reproducibility": 10,
+    "credibility": 40
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 39.75. < 80. Unconfirmed report relayed by a third party; no official announcement located."
+  },
+  {
+   "id": "c20261121-allenai-litagent-joint-sft-9b",
+   "title": "allenai/LitAgent-Joint-SFT-9B checkpoint on Hugging Face",
+   "type": "other",
+   "sources": [
+    {
+     "platform": "huggingface",
+     "url": "https://huggingface.co/allenai/LitAgent-Joint-SFT-9B-lg7eae-2n",
+     "publishedAt": "2026-11-20T21:25:01Z",
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 25,
+    "interestingness": 30,
+    "technicalDepth": 35,
+    "reproducibility": 50,
+    "credibility": 70
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 36.5. < 80. HF repo created in window; experimental checkpoint, no card details or paper located."
+  },
+  {
+   "id": "c20261121-arcfront-decision-arc-data",
+   "title": "Arcfront launches with expert \"Decision Arc Data\" for RL on real-world judgment",
+   "type": "technology_news",
+   "sources": [
+    {
+     "platform": "x",
+     "url": "https://x.com/i/trending/2123863174470643877",
+     "publishedAt": "2026-11-20T19:36:54Z",
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 30,
+    "interestingness": 45,
+    "technicalDepth": 25,
+    "reproducibility": 10,
+    "credibility": 50
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 31.75. < 80. Startup launch; X story summary only, no dataset or paper located."
+  },
+  {
+   "id": "c20261121-meta-open-source-ai-science-summit",
+   "title": "Meta Open Source AI for Science Summit recap (Muse Glimmer, SAM, DINOv3, TRIBE v2, UMA)",
+   "type": "technology_news",
+   "sources": [
+    {
+     "platform": "x",
+     "url": "https://x.com/AIatMeta/status/2123882678332322134",
+     "publishedAt": "2026-11-20T20:54:25Z",
+     "retrievedAt": "2026-11-22T01:25:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 20,
+    "interestingness": 40,
+    "technicalDepth": 20,
+    "reproducibility": 20,
+    "credibility": 80
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 31.0. < 80. Event recap, no new release."
+  }
+ ]
+}
