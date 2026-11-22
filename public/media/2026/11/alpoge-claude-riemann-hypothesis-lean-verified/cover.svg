@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
+  <title id="t">Zeros on the critical line, checked by several independent kernels, illustrative</title>
+  <desc id="d">Abstract illustration: a vertical gold line at real part one half on a dark complex plane with small dots on it, and on the right four stacked boxes with green check marks representing independent proof checkers. Not an official image from Alpöge, Anthropic, MIT or the Lean FRO.</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0b1022"/><stop offset="100%" stop-color="#1a2244"/></linearGradient></defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g stroke="#2c3866" stroke-width="1">
+    <line x1="80" y1="80" x2="80" y2="560"/><line x1="160" y1="80" x2="160" y2="560"/><line x1="240" y1="80" x2="240" y2="560"/><line x1="400" y1="80" x2="400" y2="560"/><line x1="480" y1="80" x2="480" y2="560"/><line x1="560" y1="80" x2="560" y2="560"/>
+    <line x1="60" y1="140" x2="600" y2="140"/><line x1="60" y1="220" x2="600" y2="220"/><line x1="60" y1="300" x2="600" y2="300"/><line x1="60" y1="380" x2="600" y2="380"/><line x1="60" y1="460" x2="600" y2="460"/><line x1="60" y1="540" x2="600" y2="540"/>
+  </g>
+  <line x1="320" y1="60" x2="320" y2="580" stroke="#f2c14e" stroke-width="5"/>
+  <g fill="#ffe08a">
+    <circle cx="320" cy="110" r="7"/><circle cx="320" cy="175" r="7"/><circle cx="320" cy="215" r="7"/><circle cx="320" cy="262" r="7"/><circle cx="320" cy="338" r="7"/><circle cx="320" cy="385" r="7"/><circle cx="320" cy="425" r="7"/><circle cx="320" cy="490" r="7"/><circle cx="320" cy="530" r="7"/>
+  </g>
+  <text x="330" y="600" fill="#f2c14e" font-family="Helvetica, Arial, sans-serif" font-size="26">Re(s) = 1/2</text>
+  <path d="M640 315 L720 315" stroke="#8fa3ff" stroke-width="4" marker-end="url(#a)"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#8fa3ff"/></marker></defs>
+  <g font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#e6ebff">
+    <rect x="760" y="120" width="360" height="70" rx="12" fill="#22305e" stroke="#4a5fa8"/><text x="790" y="165">kernel A</text><path d="M1050 140 l15 18 l28 -34" stroke="#47d16c" stroke-width="7" fill="none"/>
+    <rect x="760" y="220" width="360" height="70" rx="12" fill="#22305e" stroke="#4a5fa8"/><text x="790" y="265">kernel B</text><path d="M1050 240 l15 18 l28 -34" stroke="#47d16c" stroke-width="7" fill="none"/>
+    <rect x="760" y="320" width="360" height="70" rx="12" fill="#22305e" stroke="#4a5fa8"/><text x="790" y="365">kernel C</text><path d="M1050 340 l15 18 l28 -34" stroke="#47d16c" stroke-width="7" fill="none"/>
+    <rect x="760" y="420" width="360" height="70" rx="12" fill="#22305e" stroke="#4a5fa8"/><text x="790" y="465">statement match</text><path d="M1050 440 l15 18 l28 -34" stroke="#47d16c" stroke-width="7" fill="none"/>
+  </g>
+  <text x="760" y="560" fill="#8892b8" font-family="Helvetica, Arial, sans-serif" font-size="20">AgentLab illustration, not an official image</text>
+</svg>

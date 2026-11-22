@@ -1,0 +1,247 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "mission-20261121-001",
+  "date": "2026-11-21",
+  "timezone": "Asia/Taipei",
+  "status": "awaiting_review",
+  "objective": {
+    "goal": "Discover, score, verify and propose one outstanding AI/agent discovery for 2026-11-21 (Asia/Taipei), or document a no-publish decision.",
+    "sources": [
+      "x",
+      "github",
+      "arxiv",
+      "huggingface"
+    ],
+    "deliverables": [
+      "Verified candidate batch",
+      "Published article (status published, pending merge review)",
+      "Mission record",
+      "Pull request"
+    ]
+  },
+  "agent": {
+    "id": "grokbot",
+    "framework": "Grok Bot (AgentLab-bot on minim4.home)",
+    "model": "grok-bot",
+    "runId": "routine-9a1f041e-20261122T0121-minim4-daily-2026-11-21"
+  },
+  "selection": {
+    "candidatesEvaluated": 22,
+    "selectedCandidateId": "c20261121-rh-lean-proof-independent-verification",
+    "selectionScore": 94.15,
+    "rankingArtifact": "data/candidates/2026-11-21.json"
+  },
+  "skillsUsed": [
+    {
+      "skill": "x-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-x-20261121-001"
+    },
+    {
+      "skill": "github-discovery",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-gh-20261121-001"
+    },
+    {
+      "skill": "arxiv-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ax-20261121-001"
+    },
+    {
+      "skill": "fact-check",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-fc-20261121-001"
+    },
+    {
+      "skill": "article-writing",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-aw-20261121-001"
+    },
+    {
+      "skill": "image-curation",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-img-20261121-001"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t1",
+      "action": "git checkout main, pull --ff-only (fast-forward 5f3740d..0ea447b), create branch daily/2026-11-21; tree clean at start; GitHub App key file present",
+      "tool": "git",
+      "status": "success",
+      "startedAt": "2026-11-21T17:21:33Z",
+      "finishedAt": "2026-11-21T17:22:10Z",
+      "evidenceIds": [
+        "ev-git-branch"
+      ]
+    },
+    {
+      "id": "t2",
+      "action": "Discovery for window 2026-11-20T16:00Z..2026-11-21T16:00Z: X news searches and full-archive post searches (official lab accounts, open-weights releases, RH/Navier-Stokes follow-ups, Inkling 2 Mini evaluations); GitHub repo search created in window (7 queries, mostly spam/game repos) plus releases of 30 tracked repos (24 in window); Hugging Face org listings and trending; arXiv export API answered HTTP 200 but its newest indexed submission was 2026-11-19T18:59:34Z and the in-window submittedDate query returned 0 results; rss.arxiv.org cs.AI for Sat 21 Nov had 0 items (weekend announcement lag), so no in-window arXiv papers were public",
+      "tool": "gh + curl + X MCP",
+      "status": "partial",
+      "startedAt": "2026-11-21T17:22:30Z",
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-x",
+        "ev-gh",
+        "ev-arxiv"
+      ]
+    },
+    {
+      "id": "t3",
+      "action": "Verify top candidates against primary sources: Lean FRO/Mathlib Initiative statement (published_time 2026-11-21T13:55:00Z), Sutherland MIT verification page (updated 2026-11-21 12:55 UTC), alpo.ge/remark.pdf, Deicyde/riemann-hypothesis via gh api; thinkingmachines.ai Inkling 2 Mini page and HF API; OpenAI MedChemBench and adversarial-distillation posts; gh api metadata and latest commits for 6 repos; dedupe against 2026-11-15..11-20 candidate files (Navier-Stokes claim duplicate; Hy4 and TensorLean out of window)",
+      "tool": "curl, gh api, X MCP, web search",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-verify"
+      ]
+    },
+    {
+      "id": "t4",
+      "action": "Write 22-candidate JSON, article article-20261121-001 (status published, score 94.15) with original SVG cover, and mission awaiting_review",
+      "tool": "python + shell heredoc on minim4",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-candidates",
+        "ev-article"
+      ]
+    },
+    {
+      "id": "t5",
+      "action": "Run validate_content, unittest, npm run check, npm run build",
+      "tool": "python+npm",
+      "status": "success",
+      "startedAt": "2026-11-21T17:30:09Z",
+      "finishedAt": "2026-11-21T17:30:13Z",
+      "evidenceIds": [
+        "ev-tests"
+      ]
+    },
+    {
+      "id": "t6",
+      "action": "Commit as agentlab-aidatatools-bot[bot], push with short-lived installation token, open PR requesting chuangtc",
+      "tool": "git + GitHub API",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-pr"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "python scripts/validate_content.py",
+      "status": "passed",
+      "artifact": ".reports/2026-11-21/validate.log"
+    },
+    {
+      "name": "python -m unittest discover -s tests -v",
+      "status": "passed",
+      "artifact": ".reports/2026-11-21/unittest.log"
+    },
+    {
+      "name": "npm run check",
+      "status": "passed",
+      "artifact": ".reports/2026-11-21/astro-check.log"
+    },
+    {
+      "name": "npm run build",
+      "status": "passed",
+      "artifact": ".reports/2026-11-21/astro-build.log"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-git-branch",
+      "type": "git",
+      "ref": "branch daily/2026-11-21 from origin/main 0ea447b"
+    },
+    {
+      "id": "ev-x",
+      "type": "api_response",
+      "ref": "Public X reads via Grok Bot X tools; key posts: nasqret 2123858004542189855, atulit_gaur 2124028966373916967, thinkymachines 2123871643797995872, GoodfireAI 2123873150803100059, OpenAI 2123856316187975756 / 2123862344422088794 / 2123899406550528422, JonSaadFalcon 2123939023546892637, TencentHunyuan 2123812576723341329 and 2123095410327879735; X news stories 2123789463809835447, 2123876268458340764, 2123802972136071676"
+    },
+    {
+      "id": "ev-gh",
+      "type": "http_response",
+      "ref": "GitHub search/repositories created:2026-11-20T16:00:00Z..2026-11-21T16:00:00Z (7 keyword queries), releases of 30 tracked repos (24 in window); gh api repos/Deicyde/riemann-hypothesis, sybil-solutions/skill-distill, alesha-pro/inference-optimization-playbook, open-agent-infra/RSInfer, bluesky-social/diderot, w01fb0ss/PiBot"
+    },
+    {
+      "id": "ev-arxiv",
+      "type": "http_response",
+      "ref": "https://export.arxiv.org/api/query (HTTP 200; submittedDate [202611201600 TO 202611211600] -> 0 results; newest cs.AI entry 2611.26624v1 published 2026-11-19T18:59:34Z); https://rss.arxiv.org/rss/cs.AI (pubDate Sat, 21 Nov 2026, 0 items)"
+    },
+    {
+      "id": "ev-verify",
+      "type": "http_response",
+      "ref": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/; https://math.mit.edu/~drew/grh/; https://alpo.ge/remark.pdf; https://github.com/Deicyde/riemann-hypothesis; https://thinkingmachines.ai/news/inkling-2-mini/; https://huggingface.co/api/models/thinkingmachines/Inkling-2-Mini; https://openai.com/index/introducing-medchembench/; https://openai.com/index/combatting-adversarial-distillation/"
+    },
+    {
+      "id": "ev-candidates",
+      "type": "file",
+      "ref": "data/candidates/2026-11-21.json"
+    },
+    {
+      "id": "ev-article",
+      "type": "file",
+      "ref": "src/content/articles/2026/11/alpoge-claude-riemann-hypothesis-lean-verified.md"
+    },
+    {
+      "id": "ev-tests",
+      "type": "file",
+      "ref": ".reports/2026-11-21/validate.log"
+    },
+    {
+      "id": "ev-pr",
+      "type": "github",
+      "ref": "https://github.com/aidatatools/agentlab/pull/41"
+    }
+  ],
+  "outcome": {
+    "articleId": "article-20261121-001",
+    "githubCommit": "cfa8c7b",
+    "githubPullRequest": "https://github.com/aidatatools/agentlab/pull/41",
+    "deploymentUrl": null,
+    "publicationStatus": "in_review"
+  },
+  "metrics": {
+    "durationSeconds": null,
+    "tokens": null,
+    "estimatedCostUsd": null,
+    "humanInterventions": 0
+  },
+  "retrospective": {
+    "successes": [
+      "22 candidates captured with original URLs and timestamps (X 10, GitHub 10, official 1, HF 1, arXiv 0)",
+      "Independent verification of the Alpöge-Claude RH Lean proof confirmed from primary sources (Lean FRO/Mathlib Initiative statement, MIT verification page) and published as article-20261121-001 (94.15)",
+      "Out-of-window and duplicate items identified against previous candidate files"
+    ],
+    "failures": [
+      "No in-window arXiv papers were public (Saturday; export API index ends 2026-11-19T18:59:34Z)",
+      "lake comparator end-to-end and Lean default/paranoid kernel replay of the export were still running on the MIT page at its last update",
+      "TensorLean and the MIT harness paper primary sources were not located"
+    ],
+    "lessonsLearned": [
+      "A claim rejected for lack of independent verification should be re-scored as a new event when the independent verification lands in a later window (same pattern as the Yang-Mills release, 2026-11-11)",
+      "X snowflake IDs decode to creation time and quickly place X news stories inside or outside the window"
+    ],
+    "nextActions": [
+      "chuangtc review on DEV then merge",
+      "Update the article if the remaining comparator/kernel runs on the MIT page report a failure",
+      "Re-check arXiv on the next run (in-window submissions announced Sunday evening ET)",
+      "Re-score Navier-Stokes blow-up claim if an independent check appears"
+    ]
+  }
+}
