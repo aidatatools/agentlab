@@ -1,0 +1,230 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "mission-20261122-001",
+  "date": "2026-11-22",
+  "timezone": "Asia/Taipei",
+  "status": "awaiting_review",
+  "objective": {
+    "goal": "Discover, score, verify and propose one outstanding AI/agent discovery for 2026-11-22 (Asia/Taipei), or document a no-publish decision.",
+    "sources": [
+      "x",
+      "github",
+      "arxiv",
+      "huggingface"
+    ],
+    "deliverables": [
+      "Verified candidate batch",
+      "No-publish decision (no eligible candidate >= 80)",
+      "Mission record",
+      "Pull request"
+    ]
+  },
+  "agent": {
+    "id": "grokbot",
+    "framework": "Grok Bot (AgentLab-bot on minim4.home)",
+    "model": "grok-bot",
+    "runId": "agent-1aa644c8-86c2-4df4-9a24-4b7f6120d60c-20261123T0117-minim4-daily-2026-11-22"
+  },
+  "selection": {
+    "candidatesEvaluated": 21,
+    "selectedCandidateId": null,
+    "selectionScore": null,
+    "rankingArtifact": "data/candidates/2026-11-22.json"
+  },
+  "skillsUsed": [
+    {
+      "skill": "x-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-x-20261122-001"
+    },
+    {
+      "skill": "github-discovery",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-gh-20261122-001"
+    },
+    {
+      "skill": "arxiv-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ax-20261122-001"
+    },
+    {
+      "skill": "fact-check",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-fc-20261122-001"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t1",
+      "action": "git checkout main, pull --ff-only (fast-forward 0ea447b..8fff49b), create branch daily/2026-11-22; tree clean at start; GitHub App key file present",
+      "tool": "git",
+      "status": "success",
+      "startedAt": "2026-11-22T17:17:39Z",
+      "finishedAt": "2026-11-22T17:17:41Z",
+      "evidenceIds": [
+        "ev-git-branch"
+      ]
+    },
+    {
+      "id": "t2",
+      "action": "Discovery for window 2026-11-21T16:00Z..2026-11-22T16:00Z: X news searches and full-archive post searches (lab accounts, open-weights releases, RH follow-ups, robotics, papers); GitHub repo search created in window (7 queries, dominated by spam/game repos) plus releases of 30 tracked repos (26 in window, 22 of them llama.cpp builds); Hugging Face org listings and trending; arXiv export API submittedDate [202611211600 TO 202611221600] returned 0 results and rss.arxiv.org cs.AI for Sun 22 Nov had 0 items (weekend announcement lag), so no in-window arXiv papers were public",
+      "tool": "gh + curl + X tools",
+      "status": "partial",
+      "startedAt": "2026-11-22T17:17:50Z",
+      "finishedAt": "2026-11-22T17:18:37Z",
+      "evidenceIds": [
+        "ev-x",
+        "ev-gh",
+        "ev-arxiv"
+      ]
+    },
+    {
+      "id": "t3",
+      "action": "Verify top candidates against primary sources: Ant Ling X thread and HF API/model card/commit history for inclusionAI/LingSante-3.1-flash and -MXFP4; Sarvam X thread and HF commit history for sarvamai/sarvam-105b-1711 (weights public since 2026-11-17); MIT RH verification page (last updated 2026-11-22 16:20 UTC); Waddle Labs and Robocurve X posts (2026-11-20, out of window); dedupe against 2026-11-13..11-21 candidate files",
+      "tool": "curl, gh api, X tools",
+      "status": "success",
+      "startedAt": "2026-11-22T17:20:25Z",
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-verify"
+      ]
+    },
+    {
+      "id": "t4",
+      "action": "Write 21-candidate JSON (no candidate eligible: top LingSante-3.1-flash 75.85) and mission awaiting_review; no article on a low-signal day",
+      "tool": "python + shell heredoc on minim4",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": "2026-11-22T17:23:48Z",
+      "evidenceIds": [
+        "ev-candidates"
+      ]
+    },
+    {
+      "id": "t5",
+      "action": "Run validate_content, unittest, npm run check, npm run build",
+      "tool": "python+npm",
+      "status": "success",
+      "startedAt": "2026-11-22T17:25:00Z",
+      "finishedAt": "2026-11-22T17:25:03Z",
+      "evidenceIds": [
+        "ev-tests"
+      ]
+    },
+    {
+      "id": "t6",
+      "action": "Commit as agentlab-aidatatools-bot[bot], push with short-lived installation token, open PR requesting chuangtc",
+      "tool": "git + GitHub API",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-pr"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "python scripts/validate_content.py",
+      "status": "passed",
+      "artifact": ".reports/2026-11-22/validate.log"
+    },
+    {
+      "name": "python -m unittest discover -s tests -v",
+      "status": "passed",
+      "artifact": ".reports/2026-11-22/unittest.log"
+    },
+    {
+      "name": "npm run check",
+      "status": "passed",
+      "artifact": ".reports/2026-11-22/astro-check.log"
+    },
+    {
+      "name": "npm run build",
+      "status": "passed",
+      "artifact": ".reports/2026-11-22/astro-build.log"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-git-branch",
+      "type": "git",
+      "ref": "branch daily/2026-11-22 from origin/main 8fff49b"
+    },
+    {
+      "id": "ev-x",
+      "type": "api_response",
+      "ref": "Public X reads via Grok Bot X tools; key posts: AntLingAGI 2124523916819648945, SarvamAI 2124532170505273661 / 2124542398177153428, theWaddleLabs 2123886705824452927, robocurve 2123903771436863629; X news stories 2124545688717402222, 2124503920990974093, 2124343638314336411, 2124520629768454557"
+    },
+    {
+      "id": "ev-gh",
+      "type": "http_response",
+      "ref": "GitHub search/repositories created:2026-11-21T16:00:00Z..2026-11-22T16:00:00Z (7 keyword queries), releases of 30 tracked repos (.reports/2026-11-22/gh_releases_window.txt); gh api repos/BerriAI/inference-stack, Visionary-Laboratory/LoopVGGT"
+    },
+    {
+      "id": "ev-arxiv",
+      "type": "http_response",
+      "ref": "https://export.arxiv.org/api/query (submittedDate [202611211600 TO 202611221600] -> 0 results); https://rss.arxiv.org/rss/cs.AI (pubDate Sun, 22 Nov 2026, 0 items)"
+    },
+    {
+      "id": "ev-verify",
+      "type": "http_response",
+      "ref": "https://huggingface.co/api/models/inclusionAI/LingSante-3.1-flash (+ /commits/main); https://huggingface.co/inclusionAI/LingSante-3.1-flash; https://huggingface.co/api/models/sarvamai/sarvam-105b-1711 (+ /commits/main); https://math.mit.edu/~drew/grh/"
+    },
+    {
+      "id": "ev-candidates",
+      "type": "file",
+      "ref": "data/candidates/2026-11-22.json"
+    },
+    {
+      "id": "ev-tests",
+      "type": "file",
+      "ref": ".reports/2026-11-22/validate.log"
+    },
+    {
+      "id": "ev-pr",
+      "type": "github",
+      "ref": "https://github.com/aidatatools/agentlab/pull/42"
+    }
+  ],
+  "outcome": {
+    "articleId": null,
+    "githubCommit": "c8030e4",
+    "githubPullRequest": "https://github.com/aidatatools/agentlab/pull/42",
+    "deploymentUrl": null,
+    "publicationStatus": "not_published"
+  },
+  "metrics": {
+    "durationSeconds": null,
+    "tokens": null,
+    "estimatedCostUsd": null,
+    "humanInterventions": 0
+  },
+  "retrospective": {
+    "successes": [
+      "21 candidates captured with original URLs and timestamps (X 14, GitHub 6, official 1, HF 0 separate, arXiv 0)",
+      "LingSante-3.1-flash release time verified against X and HF commit history (weights uploaded 05:05Z, announced 15:22Z, in window)",
+      "Sarvam-105B-1711 identified as weights public before the window despite an in-window announcement"
+    ],
+    "failures": [
+      "No in-window arXiv papers were public (Sunday; export API 0 results, RSS 0 items)",
+      "No candidate reached 80; top LingSante-3.1-flash (75.85) has only vendor-reported benchmarks",
+      "Waddle-1 (2026-11-20T21:10Z) and the Masullo/Vakil GRH draft (2026-11-20) belonged to the 2026-11-21 window and were missed by that run; flagged, not backfilled",
+      "Primary sources for the CrowdStrike LoRA backdoor claim and NBER GitHub study were not located"
+    ],
+    "lessonsLearned": [
+      "HF createdAt can predate the real release; check /commits/main to see when weight files were uploaded",
+      "An in-window announcement does not make a model new if its weights were already downloadable (Sarvam-105B-1711 HF repo from 2026-11-17)"
+    ],
+    "nextActions": [
+      "chuangtc review on DEV then merge",
+      "Re-score LingSante-3.1-flash if an independent medical benchmark or technical report appears",
+      "Re-check arXiv on the next run (weekend submissions announced Sunday evening ET)",
+      "Update article-20261121-001 if the MIT lake comparator or Lean kernel replay reports a failure"
+    ]
+  }
+}

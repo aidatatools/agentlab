@@ -1,0 +1,591 @@
+{
+ "date": "2026-11-22",
+ "timezone": "Asia/Taipei",
+ "demo": false,
+ "discoveredBy": "grokbot",
+ "selectedCandidateId": null,
+ "candidates": [
+  {
+   "id": "c20261122-ant-lingsante-3-1-flash",
+   "title": "Ant Ling (inclusionAI) releases LingSante-3.1-flash: MIT-licensed 560B-total / 25B-active hybrid-linear MoE medical model with 1M context (FP8 and MXFP4 weights)",
+   "type": "technology_news",
+   "sources": [
+    {
+     "platform": "x",
+     "url": "https://x.com/AntLingAGI/status/2124523916819648945",
+     "publishedAt": "2026-11-22T15:22:28Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    },
+    {
+     "platform": "huggingface",
+     "url": "https://huggingface.co/inclusionAI/LingSante-3.1-flash",
+     "publishedAt": "2026-11-22T05:05:51Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    },
+    {
+     "platform": "huggingface",
+     "url": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
+     "publishedAt": "2026-11-22T03:19:38Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    },
+    {
+     "platform": "x",
+     "url": "https://x.com/AntLingAGI/status/2124523946360053771",
+     "publishedAt": "2026-11-22T15:22:35Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 70,
+    "interestingness": 82,
+    "technicalDepth": 72,
+    "reproducibility": 85,
+    "credibility": 72
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 75.85. < 80. In window: official X thread 2026-11-22T15:22:28Z; HF repo was created 2026-11-19 with only an initial commit, weight files were uploaded 2026-11-22T05:05Z, earliest third-party X mention 15:29Z. Verified on HF API/model card: MIT license, not gated, 572.1B safetensors params (FP8), 63 KDA + 9 gated MLA layers, 512 routed experts with 8 active, 1M context, SGLang/vLLM recipes for 8xH200. Built on Ling-3.1-flash (scored 2026-10-27), so architecture is not new; gains are post-training (medical mid-training, RL, multi-teacher on-policy distillation). All benchmark numbers (HealthBench Professional 65.72, HLE 72.22, BrowseComp 94.10, EHR-Complex 74.40 vs Claude Opus 5.5 41.80) are vendor-reported in images; no technical report and no independent evaluation within the window (release came 38 minutes before window end). Not a medical device per its card. Re-score if an independent medical benchmark or tech report appears."
+  },
+  {
+   "id": "c20261122-sarvam-105b-1711",
+   "title": "Sarvam AI announces Sarvam-105B-1711 checkpoint (105B MoE, ~10.3B active, 160K context, Apache-2.0, NVFP4 production weights) claiming Flash-Lite-class Pareto frontier",
+   "type": "technology_news",
+   "sources": [
+    {
+     "platform": "x",
+     "url": "https://x.com/SarvamAI/status/2124532170505273661",
+     "publishedAt": "2026-11-22T15:55:16Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    },
+    {
+     "platform": "x",
+     "url": "https://x.com/SarvamAI/status/2124542398177153428",
+     "publishedAt": "2026-11-22T16:35:54Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    },
+    {
+     "platform": "huggingface",
+     "url": "https://huggingface.co/sarvamai/sarvam-105b-1711",
+     "publishedAt": "2026-11-17T14:09:42Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    },
+    {
+     "platform": "huggingface",
+     "url": "https://huggingface.co/omunaman/sarvam-105b-1711-thinkless-r1",
+     "publishedAt": "2026-11-20T04:07:22Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    },
+    {
+     "platform": "x",
+     "url": "https://x.com/i/trending/2124545688717402222",
+     "publishedAt": "2026-11-22T16:48:58Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 55,
+    "interestingness": 70,
+    "technicalDepth": 65,
+    "reproducibility": 80,
+    "credibility": 72
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 66.2. < 80. Announcement in window (2026-11-22T15:55:16Z) but weights were public before the window: HF sarvamai/sarvam-105b-1711 commit history starts with Initial release 2026-11-17T14:09Z (311 downloads at retrieval) and third-party derivatives such as omunaman/sarvam-105b-1711-thinkless-r1 existed from 2026-11-20T04:07Z. Incremental checkpoint of an existing model; average 73.9 vs Gemini 3.5 Flash-Lite 74.0 is vendor-run (own eval). Engineering details (8-bit pre-training MFU 19%->38%, NVFP4 + speculative decoder ~6,000 tok/s on one B200) are self-reported."
+  },
+  {
+   "id": "c20261122-waddle-labs-waddle-1",
+   "title": "Waddle Labs (YC) Waddle-1 robot-use agent: cloud LLM planner directing local policies scores 81.4 mean progress on Robocurve RoboDojo-RC Tier 1 vs GPT-6.2 Astra 65.7",
+   "type": "technology_news",
+   "sources": [
+    {
+     "platform": "x",
+     "url": "https://x.com/theWaddleLabs/status/2123886705824452927",
+     "publishedAt": "2026-11-20T21:10:25Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    },
+    {
+     "platform": "x",
+     "url": "https://x.com/robocurve/status/2123903771436863629",
+     "publishedAt": "2026-11-20T22:18:13Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    },
+    {
+     "platform": "x",
+     "url": "https://x.com/fierce788/status/2124444921230671941",
+     "publishedAt": "2026-11-22T10:08:34Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 72,
+    "interestingness": 82,
+    "technicalDepth": 60,
+    "reproducibility": 40,
+    "credibility": 60
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 66.1. < 80. Out of window: first public announcement 2026-11-20T21:10:25Z (belongs to the 2026-11-21 window and was not captured by that run; not in any prior candidate file). Flag only, no backfill. Caveats noted on X: Waddle-1 ran without the 40-call cap applied to other models and kept one context across trials; benchmark run by Robocurve, no code or weights."
+  },
+  {
+   "id": "c20261122-masullo-vakil-grh-human-draft",
+   "title": "Ravi Vakil announces Alessandro Masullo (Stanford) 940-page human proposed proof of GRH",
+   "type": "technology_news",
+   "sources": [
+    {
+     "platform": "x",
+     "url": "https://x.com/fortnow/status/2123882688360874396",
+     "publishedAt": "2026-11-20T20:54:27Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    },
+    {
+     "platform": "x",
+     "url": "https://x.com/i/trending/2124191100197818481",
+     "publishedAt": "2026-11-21T17:19:58Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 60,
+    "interestingness": 85,
+    "technicalDepth": 70,
+    "reproducibility": 30,
+    "credibility": 65
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 64.25. < 80. Out of window: announced on 2026-11-20 (retweets of the Strogatz post from 2026-11-20T20:17Z); missed by the 2026-11-21 run. Human (not AI) work, unrefereed draft; primary manuscript not located in this run. Flag only."
+  },
+  {
+   "id": "c20261122-mit-harnesses-compositional-generalizers",
+   "title": "Language Model Harnesses can be Compositional Generalizers (Recursive Language Models follow-up, MIT)",
+   "type": "research_paper",
+   "sources": [
+    {
+     "platform": "x",
+     "url": "https://x.com/a1zhang/status/2123774129102831891",
+     "publishedAt": "2026-11-20T13:43:04Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    },
+    {
+     "platform": "x",
+     "url": "https://x.com/askalphaxiv/status/2123831274544738382",
+     "publishedAt": "2026-11-20T17:30:09Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 55,
+    "interestingness": 70,
+    "technicalDepth": 70,
+    "reproducibility": 55,
+    "credibility": 70
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 63.25. < 80. Out of window: author thread 2026-11-20T13:43Z. In-window posts are commentary only."
+  },
+  {
+   "id": "c20261122-cpu-inside-an-llm",
+   "title": "A CPU Inside an LLM: zero-gradient compilation of exact arithmetic circuits into pretrained weights",
+   "type": "research_paper",
+   "sources": [
+    {
+     "platform": "x",
+     "url": "https://x.com/labulaka_ai/status/2124036842462859767",
+     "publishedAt": "2026-11-21T07:07:00Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    },
+    {
+     "platform": "x",
+     "url": "https://x.com/atimisMoon/status/2124468328945377525",
+     "publishedAt": "2026-11-22T11:41:34Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 55,
+    "interestingness": 70,
+    "technicalDepth": 70,
+    "reproducibility": 50,
+    "credibility": 55
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 61.0. < 80. Duplicate and out of window: already in data/candidates/2026-11-20.json; X posts from 2026-11-21T07:07Z predate the window."
+  },
+  {
+   "id": "c20261122-rh-lean-proof-mit-page-update",
+   "title": "Follow-up: MIT verification page for the Alpöge–Claude RH Lean proof adds con-ron --compare and a byte-for-byte sandboxed reproduction; lake comparator and Lean default/paranoid kernel replay still running",
+   "type": "technology_news",
+   "sources": [
+    {
+     "platform": "official",
+     "url": "https://math.mit.edu/~drew/grh/",
+     "publishedAt": "2026-11-22T16:20:00Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    },
+    {
+     "platform": "x",
+     "url": "https://x.com/i/trending/2124503920990974093",
+     "publishedAt": "2026-11-22T14:03:00Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 40,
+    "interestingness": 60,
+    "technicalDepth": 60,
+    "reproducibility": 80,
+    "credibility": 92
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 60.2. < 80. Follow-up and duplicate of article-20261121-001 (published 2026-11-21, 94.15). The MIT page last update is 2026-11-22 16:20 UTC (just after window end); new items are con-ron (Rust port of con-leche) --compare confirming all five theorems and an independent sandboxed lake build reproducing the export byte for byte. The lake comparator run and Lean default/paranoid kernel replay of the export were still running with no verdict, so no new verification milestone to report. X story 2124503920990974093 (2026-11-22T14:03Z) only recaps the 11-21 certification."
+  },
+  {
+   "id": "c20261122-anys1-system1-agent-decisions",
+   "title": "AnyS1: one 4B System-1 model for decision points mined from 1,072 agent SKILL.md files (75-91% lower episode cost, arXiv 2611.23751)",
+   "type": "research_paper",
+   "sources": [
+    {
+     "platform": "x",
+     "url": "https://x.com/summerAI_O/status/2123298422497374711",
+     "publishedAt": "2026-11-19T06:12:47Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    },
+    {
+     "platform": "x",
+     "url": "https://x.com/omeganyanya/status/2124516010736652670",
+     "publishedAt": "2026-11-22T14:51:03Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 45,
+    "interestingness": 60,
+    "technicalDepth": 65,
+    "reproducibility": 55,
+    "credibility": 60
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 55.75. < 80. Out of window: discussed from 2026-11-19T06:12Z; costs are author-reported."
+  },
+  {
+   "id": "c20261122-ibm-self-distilled-agent-memory",
+   "title": "IBM: How much should an agent remember? Self-distilled memory (altk-evolve, CUGA) on AppWorld",
+   "type": "research_paper",
+   "sources": [
+    {
+     "platform": "x",
+     "url": "https://x.com/arkyyang/status/2123792840878903500",
+     "publishedAt": "2026-11-20T14:57:26Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    },
+    {
+     "platform": "x",
+     "url": "https://x.com/omeganyanya/status/2124177507603652835",
+     "publishedAt": "2026-11-21T16:25:57Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 40,
+    "interestingness": 55,
+    "technicalDepth": 55,
+    "reproducibility": 65,
+    "credibility": 65
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 53.0. < 80. Out of window: arXiv preprint dated 2026-11-19; in-window post (2026-11-21T16:25Z) is commentary."
+  },
+  {
+   "id": "c20261122-openai-adversarial-distillation-x-story",
+   "title": "X news story on OpenAI adversarial distillation defenses",
+   "type": "technology_news",
+   "sources": [
+    {
+     "platform": "x",
+     "url": "https://x.com/i/trending/2124343638314336411",
+     "publishedAt": "2026-11-22T03:26:06Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    },
+    {
+     "platform": "official",
+     "url": "https://openai.com/index/combatting-adversarial-distillation/",
+     "publishedAt": null,
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 45,
+    "interestingness": 60,
+    "technicalDepth": 55,
+    "reproducibility": 30,
+    "credibility": 85
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 52.5. < 80. Duplicate: the OpenAI post was published 2026-11-20 and is already in data/candidates/2026-11-21.json; the in-window X story only recaps it."
+  },
+  {
+   "id": "c20261122-gh-loopvggt",
+   "title": "Visionary-Laboratory/LoopVGGT: official code for Training-Free Looped Vision Geometry Transformers",
+   "type": "github_project",
+   "sources": [
+    {
+     "platform": "github",
+     "url": "https://github.com/Visionary-Laboratory/LoopVGGT",
+     "publishedAt": "2026-11-22T13:22:36Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 35,
+    "interestingness": 50,
+    "technicalDepth": 55,
+    "reproducibility": 65,
+    "credibility": 55
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 49.25. < 80. Created in window (MIT, 4 stars); README says the arXiv paper is coming soon, so results cannot be checked yet."
+  },
+  {
+   "id": "c20261122-anthropic-tool-use-engineering-notes-story",
+   "title": "X story: Anthropic engineering patterns cut agent tool-context tokens by 85% and lift Opus tool accuracy 49% -> 74%",
+   "type": "technology_news",
+   "sources": [
+    {
+     "platform": "x",
+     "url": "https://x.com/i/trending/2124520629768454557",
+     "publishedAt": "2026-11-22T15:09:24Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    },
+    {
+     "platform": "x",
+     "url": "https://x.com/i/trending/2124550442956829080",
+     "publishedAt": "2026-11-22T17:07:52Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 30,
+    "interestingness": 55,
+    "technicalDepth": 50,
+    "reproducibility": 60,
+    "credibility": 60
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 47.75. < 80. Recap of Anthropic engineering guidance; no Anthropic primary post dated inside the window was located in this run, so it could not be verified as a new event."
+  },
+  {
+   "id": "c20261122-lora-adapter-backdoor-claim",
+   "title": "Claim: 35 MB LoRA adapter turns an open model into a backdoor while passing benchmarks (attributed to CrowdStrike)",
+   "type": "technology_news",
+   "sources": [
+    {
+     "platform": "x",
+     "url": "https://x.com/whyNexqor/status/2124183422662815763",
+     "publishedAt": "2026-11-21T16:49:28Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 45,
+    "interestingness": 65,
+    "technicalDepth": 45,
+    "reproducibility": 30,
+    "credibility": 40
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 47.25. < 80. In-window viral post (2026-11-21T16:49Z) but the CrowdStrike primary source was not located, so the claim is unverified and its original date unknown; LoRA-backdoor topics appeared in earlier candidate files."
+  },
+  {
+   "id": "c20261122-nber-ai-agents-github-study",
+   "title": "NBER study of 500,000+ GitHub developers: AI agents raise commits 240% but releases only 30%",
+   "type": "technology_news",
+   "sources": [
+    {
+     "platform": "x",
+     "url": "https://x.com/i/trending/2124313869023891573",
+     "publishedAt": "2026-11-22T01:27:48Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 30,
+    "interestingness": 60,
+    "technicalDepth": 45,
+    "reproducibility": 40,
+    "credibility": 70
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 46.0. < 80. X story created in window (2026-11-22T01:27Z) but the paper itself was not located and is likely older; economics study, not an AI breakthrough."
+  },
+  {
+   "id": "c20261122-gh-berriai-inference-stack",
+   "title": "BerriAI/inference-stack: one-command LiteLLM + llm-d + vLLM stack with launcher and Grafana",
+   "type": "github_project",
+   "sources": [
+    {
+     "platform": "github",
+     "url": "https://github.com/BerriAI/inference-stack",
+     "publishedAt": "2026-11-21T21:46:33Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 20,
+    "interestingness": 45,
+    "technicalDepth": 40,
+    "reproducibility": 75,
+    "credibility": 70
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 43.5. < 80. Created in window (MIT, 17 stars at discovery); integration tooling, not a breakthrough."
+  },
+  {
+   "id": "c20261122-gh-anvil-macos-coding-agent",
+   "title": "deeeeone/Anvil: native macOS coding agent for almost any model (diffs, checkpoints, sub-sessions, browser and iOS Simulator tools)",
+   "type": "github_project",
+   "sources": [
+    {
+     "platform": "github",
+     "url": "https://github.com/deeeeone/Anvil",
+     "publishedAt": "2026-11-21T19:09:55Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 20,
+    "interestingness": 45,
+    "technicalDepth": 40,
+    "reproducibility": 70,
+    "credibility": 40
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 39.75. < 80. Created in window (AGPL-3.0, 37 stars); individual project, no evaluation."
+  },
+  {
+   "id": "c20261122-gh-deepseek-harness-v0-2-3-alpha",
+   "title": "deepseek-ai/deepseek-harness dsh-v0.2.3-alpha.1 and alpha.2 prereleases",
+   "type": "github_project",
+   "sources": [
+    {
+     "platform": "github",
+     "url": "https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.3-alpha.1",
+     "publishedAt": "2026-11-22T03:19:36Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    },
+    {
+     "platform": "github",
+     "url": "https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.3-alpha.2",
+     "publishedAt": "2026-11-22T11:00:39Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 15,
+    "interestingness": 40,
+    "technicalDepth": 30,
+    "reproducibility": 70,
+    "credibility": 80
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 39.0. < 80. Routine prereleases."
+  },
+  {
+   "id": "c20261122-gh-browser-use-1-0-8",
+   "title": "browser-use 1.0.8 release",
+   "type": "github_project",
+   "sources": [
+    {
+     "platform": "github",
+     "url": "https://github.com/browser-use/browser-use/releases/tag/1.0.8",
+     "publishedAt": "2026-11-22T03:30:41Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 10,
+    "interestingness": 30,
+    "technicalDepth": 20,
+    "reproducibility": 80,
+    "credibility": 80
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 34.5. < 80. Routine maintenance release."
+  },
+  {
+   "id": "c20261122-gh-gemini-cli-nightly",
+   "title": "google-gemini/gemini-cli v0.71.0 nightly (2026-11-22)",
+   "type": "github_project",
+   "sources": [
+    {
+     "platform": "github",
+     "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.71.0-nightly.20261122.geecccfcd5",
+     "publishedAt": "2026-11-22T01:20:22Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 5,
+    "interestingness": 20,
+    "technicalDepth": 15,
+    "reproducibility": 80,
+    "credibility": 80
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 29.5. < 80. Automated nightly build."
+  },
+  {
+   "id": "c20261122-acurast-laya-on-phone",
+   "title": "Acurast Laya: lightweight model running on Android phones in a decentralized compute network (Tetris and prompt-safety demos)",
+   "type": "technology_news",
+   "sources": [
+    {
+     "platform": "x",
+     "url": "https://x.com/i/trending/2124452137904288080",
+     "publishedAt": "2026-11-22T10:37:14Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    },
+    {
+     "platform": "x",
+     "url": "https://x.com/i/trending/2124444937294897304",
+     "publishedAt": "2026-11-22T10:08:37Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 15,
+    "interestingness": 35,
+    "technicalDepth": 20,
+    "reproducibility": 30,
+    "credibility": 35
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 25.25. < 80. Promotional demo from a crypto compute network; no model card or paper."
+  },
+  {
+   "id": "c20261122-p-vs-np-rumor",
+   "title": "Unconfirmed rumors of an AI-found fast factoring method / P vs NP resolution",
+   "type": "technology_news",
+   "sources": [
+    {
+     "platform": "x",
+     "url": "https://x.com/i/trending/2124204778423235015",
+     "publishedAt": "2026-11-21T18:14:19Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    },
+    {
+     "platform": "x",
+     "url": "https://x.com/atlintell_labs/status/2124225170013643206",
+     "publishedAt": "2026-11-21T19:35:21Z",
+     "retrievedAt": "2026-11-23T01:35:00+08:00"
+    }
+   ],
+   "scores": {
+    "breakthrough": 10,
+    "interestingness": 40,
+    "technicalDepth": 5,
+    "reproducibility": 0,
+    "credibility": 10
+   },
+   "eligibility": "rejected",
+   "reason": "Weighted 15.0. < 80. No primary source; rumor only. P vs NP remains open."
+  }
+ ]
+}
