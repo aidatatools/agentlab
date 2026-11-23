@@ -1,0 +1,229 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "mission-20261123-001",
+  "date": "2026-11-23",
+  "timezone": "Asia/Taipei",
+  "status": "awaiting_review",
+  "objective": {
+    "goal": "Discover, score, verify and propose one outstanding AI/agent discovery for 2026-11-23 (Asia/Taipei), or document a no-publish decision.",
+    "sources": [
+      "x",
+      "github",
+      "arxiv",
+      "huggingface"
+    ],
+    "deliverables": [
+      "Verified candidate batch",
+      "No-publish decision (no eligible new candidate >= 80)",
+      "Mission record",
+      "Pull request"
+    ]
+  },
+  "agent": {
+    "id": "grokbot",
+    "framework": "Grok Bot (AgentLab-bot on minim4.home)",
+    "model": "grok-bot",
+    "runId": "routine-9a1f041e-66d2-5f4f-a421-aac3d301a605-20261124T0116-minim4-daily-2026-11-23"
+  },
+  "selection": {
+    "candidatesEvaluated": 16,
+    "selectedCandidateId": null,
+    "selectionScore": null,
+    "rankingArtifact": "data/candidates/2026-11-23.json"
+  },
+  "skillsUsed": [
+    {
+      "skill": "x-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-x-20261123-001"
+    },
+    {
+      "skill": "github-discovery",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-gh-20261123-001"
+    },
+    {
+      "skill": "arxiv-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ax-20261123-001"
+    },
+    {
+      "skill": "fact-check",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-fc-20261123-001"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t1",
+      "action": "git checkout main, pull --ff-only (fast-forward 8fff49b..1d32dde), create branch daily/2026-11-23; tree clean at start; GitHub App key file present",
+      "tool": "git",
+      "status": "success",
+      "startedAt": "2026-11-23T17:16:45Z",
+      "finishedAt": "2026-11-23T17:16:48Z",
+      "evidenceIds": [
+        "ev-git-branch"
+      ]
+    },
+    {
+      "id": "t2",
+      "action": "Discovery for window 2026-11-22T16:00Z..2026-11-23T16:00Z (approx. 17:17-17:20Z by X rate-limit windows): X news search and about 18 full-archive post searches (lab accounts, open weights, papers, robotics, RH follow-ups, time-sliced queries); GitHub repo search created in window (spam/game-cheat repos dominate, filtered); Hugging Face trending and org listings (zai-org, inclusionAI, x-square-robot); arXiv export API submittedDate [202611221600 TO 202611231600] returned 0 results (latest cs.AI submission 2026-11-20T18:58Z; weekend announcement lag), so no in-window arXiv papers were public",
+      "tool": "gh + curl + X tools",
+      "status": "partial",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-x",
+        "ev-gh",
+        "ev-arxiv"
+      ]
+    },
+    {
+      "id": "t3",
+      "action": "Verify top candidates against primary sources: MIT RH verification page (last updated 2026-11-23 14:35 UTC); z.ai/blog/glm-5.4 and HF zai-org listing (no weights); HF API and commits for inclusionAI/Ling-3.2-air; LoopRes project page and GitHub repo; GlobeNewswire WALL-OSS-1.0 release; X post counts for OpenAI Perplexity and Intelligence; Duke Humanoid V2 repo creation dates; dedupe against earlier candidate files",
+      "tool": "curl, gh api, web fetch, X tools",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": "2026-11-23T17:21:00Z",
+      "evidenceIds": [
+        "ev-verify"
+      ]
+    },
+    {
+      "id": "t4",
+      "action": "Write 16-candidate JSON (no new eligible candidate: RH kernel-acceptance follow-up 81.5 is an update to article-20261121-001; top new item GLM-5.4 74.1) and mission awaiting_review; no article on a low-signal day",
+      "tool": "python + shell heredoc on minim4",
+      "status": "success",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-candidates"
+      ]
+    },
+    {
+      "id": "t5",
+      "action": "Run validate_content, unittest, npm run check, npm run build",
+      "tool": "python+npm",
+      "status": "success",
+      "startedAt": "2026-11-23T17:22:08Z",
+      "finishedAt": "2026-11-23T17:22:11Z",
+      "evidenceIds": [
+        "ev-tests"
+      ]
+    },
+    {
+      "id": "t6",
+      "action": "Commit as agentlab-aidatatools-bot[bot], push with short-lived installation token, open PR requesting chuangtc",
+      "tool": "git + GitHub API",
+      "status": "not_run",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-pr"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "python scripts/validate_content.py",
+      "status": "passed",
+      "artifact": ".reports/2026-11-23/validate.log"
+    },
+    {
+      "name": "python -m unittest discover -s tests -v",
+      "status": "passed",
+      "artifact": ".reports/2026-11-23/unittest.log"
+    },
+    {
+      "name": "npm run check",
+      "status": "passed",
+      "artifact": ".reports/2026-11-23/astro-check.log"
+    },
+    {
+      "name": "npm run build",
+      "status": "passed",
+      "artifact": ".reports/2026-11-23/astro-build.log"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-git-branch",
+      "type": "git",
+      "ref": "branch daily/2026-11-23 from origin/main 1d32dde"
+    },
+    {
+      "id": "ev-x",
+      "type": "api_response",
+      "ref": "Public X reads via Grok Bot X tools; key posts: Zai_org 2124805514722771349 / 2124811995912286352, AntLingAGI 2124891223597240338, oahzxl 2124890218373534069, AIQuanting 2124883560024912214, nasqret 2124815328156754330, alexandr_wang 2124636606959345776, clankrmedia 2124869616123924706; X news stories 2124723174994842088, 2124555482450846020, 2124808097709666606"
+    },
+    {
+      "id": "ev-gh",
+      "type": "http_response",
+      "ref": "GitHub search/repositories created:>=2026-11-22T16:00:00Z (stars and keyword queries); gh api repos/NUS-HPC-AI-Lab/LoopRes, R44VC0RP/dashsplat, erkamyaman/safe-anything, enwove/flyx, wrong-nebula/procgen-kit, generalroboticslab/duke_humanoid_v2_deploy"
+    },
+    {
+      "id": "ev-arxiv",
+      "type": "http_response",
+      "ref": "https://export.arxiv.org/api/query (submittedDate [202611221600 TO 202611231600] -> 0 results; latest cs.AI submission 2611.27983v1 at 2026-11-20T18:58:45Z)"
+    },
+    {
+      "id": "ev-verify",
+      "type": "http_response",
+      "ref": "https://math.mit.edu/~drew/grh/; https://z.ai/blog/glm-5.4; https://huggingface.co/api/models/inclusionAI/Ling-3.2-air (+ /commits/main); https://oahzxl.github.io/LoopRes; https://www.globenewswire.com/news-release/2026/11/23/3408046/0/en/; https://openai.com/index/perplexity-and-intelligence/"
+    },
+    {
+      "id": "ev-candidates",
+      "type": "file",
+      "ref": "data/candidates/2026-11-23.json"
+    },
+    {
+      "id": "ev-tests",
+      "type": "file",
+      "ref": ".reports/2026-11-23/validate.log"
+    },
+    {
+      "id": "ev-pr",
+      "type": "github",
+      "ref": "https://github.com/aidatatools/agentlab/pulls (opened by this run)"
+    }
+  ],
+  "outcome": {
+    "articleId": null,
+    "githubCommit": null,
+    "githubPullRequest": null,
+    "deploymentUrl": null,
+    "publicationStatus": "not_published"
+  },
+  "metrics": {
+    "durationSeconds": null,
+    "tokens": null,
+    "estimatedCostUsd": null,
+    "humanInterventions": 0
+  },
+  "retrospective": {
+    "successes": [
+      "16 candidates captured with original URLs and timestamps (X 11 incl. 1 with HF weights and 1 with a GitHub repo, GitHub 4, official 1, arXiv 0)",
+      "RH proof follow-up verified on the MIT page: Lean default kernel and paranoid kernel (allocator variant) accept the full export",
+      "GLM-5.4 checked against the official blog: no open weights or API yet"
+    ],
+    "failures": [
+      "No in-window arXiv papers were public (export API 0 results; weekend lag)",
+      "No new candidate reached 80; top new item GLM-5.4 (74.1) has vendor-only benchmarks and no weights",
+      "Primary papers for the MATS/Arb/Anthropic latent-readout, agent unsanctioned-actions and CoEvoBench posts were not retrieved"
+    ],
+    "lessonsLearned": [
+      "X full-archive search returns the newest posts first; time-slice end_time to see earlier parts of the window",
+      "A strong follow-up on an already published story (RH kernel checks) should update that article rather than become a new one"
+    ],
+    "nextActions": [
+      "chuangtc review on DEV then merge",
+      "Consider updating article-20261121-001 with the completed kernel checks; lake comparator v4.36.0 and default paranoid replay still running",
+      "Re-score GLM-5.4 if weights or an independent evaluation appear",
+      "Re-check arXiv on the next run for Sunday/Monday submissions"
+    ]
+  }
+}
