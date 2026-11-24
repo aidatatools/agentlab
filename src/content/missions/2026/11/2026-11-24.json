@@ -1,0 +1,229 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "mission-20261124-001",
+  "date": "2026-11-24",
+  "timezone": "Asia/Taipei",
+  "status": "awaiting_review",
+  "objective": {
+    "goal": "Discover, score, verify and propose one outstanding AI/agent discovery for 2026-11-24 (Asia/Taipei), or document a no-publish decision.",
+    "sources": [
+      "x",
+      "github",
+      "arxiv",
+      "huggingface"
+    ],
+    "deliverables": [
+      "Verified candidate batch",
+      "No-publish decision (no eligible in-window candidate >= 80)",
+      "Mission record",
+      "Pull request"
+    ]
+  },
+  "agent": {
+    "id": "grokbot",
+    "framework": "Grok Bot (AgentLab-bot on minim4.home)",
+    "model": "grok-bot",
+    "runId": "grokbot-minim4-daily-2026-11-24-20261125T0124+0800"
+  },
+  "selection": {
+    "candidatesEvaluated": 25,
+    "selectedCandidateId": null,
+    "selectionScore": null,
+    "rankingArtifact": "data/candidates/2026-11-24.json"
+  },
+  "skillsUsed": [
+    {
+      "skill": "x-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-x-20261124-001"
+    },
+    {
+      "skill": "github-discovery",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-gh-20261124-001"
+    },
+    {
+      "skill": "arxiv-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ax-20261124-001"
+    },
+    {
+      "skill": "fact-check",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-fc-20261124-001"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t1",
+      "action": "git checkout main, pull --ff-only (fast-forward 1d32dde..5f0bcea, incl. PR #43 and #44), create branch daily/2026-11-24; tree clean at start; GitHub App key file present",
+      "tool": "git",
+      "status": "success",
+      "startedAt": "2026-11-24T17:24:00Z",
+      "finishedAt": "2026-11-24T17:24:48Z",
+      "evidenceIds": [
+        "ev-git-branch"
+      ]
+    },
+    {
+      "id": "t2",
+      "action": "Discovery for window 2026-11-23T16:00Z..2026-11-24T16:00Z: X news search (2 queries) and 5 full-archive post searches (lab accounts, releases, DeepMind quantum, Claude Ship/China Telecom/RoboUniverse); GitHub repo search created in window (game-mod/cheat spam dominates, filtered) and releases of 30 tracked repos; Hugging Face org listings and trending; arXiv export API returned HTTP 429, so fell back to rss.arxiv.org (cs.AI, cs.LG, cs.CL, cs.RO, quant-ph; 2026-11-24 announcement, 794 new items) plus abs pages for submission times",
+      "tool": "gh + curl + X tools",
+      "status": "success",
+      "startedAt": "2026-11-24T17:24:48Z",
+      "finishedAt": "2026-11-24T17:26:34Z",
+      "evidenceIds": [
+        "ev-x",
+        "ev-gh",
+        "ev-arxiv"
+      ]
+    },
+    {
+      "id": "t3",
+      "action": "Verify top candidates against primary sources: DeepMind blog, arXiv 2611.09822 submission history (v1 2026-11-06) and v1/v3 abstracts, google-deepmind/formal-quantum-computation commits; arXiv 2611.31002 history, Einsia GitHub/HF API and project page; OpenAI Shirudo blog and repo; OpenAI 948-bug page date (2026-11-04) and dedupe against openai-cyber-linux-pipeline; HF API for baidu/ERNIE-5.5-Flash-Preview, sensenova, Aleph-Alpha; MIT RH verification page (updated 2026-11-24 05:25 UTC); dedupe against all earlier candidate files",
+      "tool": "curl, gh api, web search, X tools",
+      "status": "success",
+      "startedAt": "2026-11-24T17:26:34Z",
+      "finishedAt": "2026-11-24T17:28:01Z",
+      "evidenceIds": [
+        "ev-verify"
+      ]
+    },
+    {
+      "id": "t4",
+      "action": "Write 25-candidate JSON and mission awaiting_review. No article: the only >= 80 items are out of window (DeepMind formally verified quantum algorithms 87.9, arXiv v1 2026-11-06) or a follow-up (RH verification 81.25); best in-window candidate RoboUniverse-10K scored 78.7",
+      "tool": "python + shell heredoc on minim4",
+      "status": "success",
+      "startedAt": "2026-11-24T17:29:46Z",
+      "finishedAt": "2026-11-24T17:29:46Z",
+      "evidenceIds": [
+        "ev-candidates"
+      ]
+    },
+    {
+      "id": "t5",
+      "action": "Run validate_content, unittest, npm run check, npm run build",
+      "tool": "python+npm",
+      "status": "success",
+      "startedAt": "2026-11-24T17:30:27Z",
+      "finishedAt": "2026-11-24T17:30:30Z",
+      "evidenceIds": [
+        "ev-tests"
+      ]
+    },
+    {
+      "id": "t6",
+      "action": "Commit as agentlab-aidatatools-bot[bot], push with short-lived installation token, open PR and request chuangtc via requested_reviewers API",
+      "tool": "git + GitHub API",
+      "status": "not_run",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-pr"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "python scripts/validate_content.py",
+      "status": "passed",
+      "artifact": ".reports/2026-11-24/validate.log"
+    },
+    {
+      "name": "python -m unittest discover -s tests -v",
+      "status": "passed",
+      "artifact": ".reports/2026-11-24/unittest.log"
+    },
+    {
+      "name": "npm run check",
+      "status": "passed",
+      "artifact": ".reports/2026-11-24/astro-check.log"
+    },
+    {
+      "name": "npm run build",
+      "status": "passed",
+      "artifact": ".reports/2026-11-24/astro-build.log"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-git-branch",
+      "type": "git",
+      "ref": "branch daily/2026-11-24 from origin/main 5f0bcea"
+    },
+    {
+      "id": "ev-x",
+      "type": "api_response",
+      "ref": "Public X reads via Grok Bot X tools; key posts: GoogleDeepMind 2124911073266413634, OpenAI 2124980590717911527 / 2125007927098699827, Baidu_Inc 2125077484442190137, AntLingAGI 2124905985433272539, SenseTime_AI 2125046695436386816, TencentHunyuan 2125170622049485093, allen_ai 2124919777256702054, claudeai 2124970294523945328, SakanaAILabs 2125046221631086970; X news stories 2125253987951677442, 2124959147682824529, 2125276013378609490"
+    },
+    {
+      "id": "ev-gh",
+      "type": "http_response",
+      "ref": "GitHub search/repositories created:2026-11-23T16:00:00Z..2026-11-24T16:00:00Z (7 queries) and releases of 30 tracked repos (.reports/2026-11-24/gh_new_repos.json, gh_releases_window.txt); gh api repos/google-deepmind/formal-quantum-computation, Einsia/RoboUniverse-10K, shirudo-dev/shirudo"
+    },
+    {
+      "id": "ev-arxiv",
+      "type": "http_response",
+      "ref": "https://export.arxiv.org/api/query -> HTTP 429; fallback https://rss.arxiv.org/rss/{cs.AI,cs.LG,cs.CL,cs.RO,quant-ph} (pubDate Tue, 24 Nov 2026 00:00 -0500); abs pages 2611.09822, 2611.31002, 2611.28827, 2611.28420, 2611.30254, 2611.28430"
+    },
+    {
+      "id": "ev-verify",
+      "type": "http_response",
+      "ref": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/; https://arxiv.org/abs/2611.09822 (v1 2026-11-06T18:08:06Z); https://arxiv.org/abs/2611.31002 (v1 2026-11-23T16:53:57Z); https://huggingface.co/api/models/Einsia/RoboUniverse-35B-A3B; https://openai.com/index/introducing-shirudo; https://openai.com/index/a-thousand-fewer-paths-to-root/; https://huggingface.co/api/models/baidu/ERNIE-5.5-Flash-Preview; https://math.mit.edu/~drew/grh/"
+    },
+    {
+      "id": "ev-candidates",
+      "type": "file",
+      "ref": "data/candidates/2026-11-24.json"
+    },
+    {
+      "id": "ev-tests",
+      "type": "file",
+      "ref": ".reports/2026-11-24/tests.json"
+    },
+    {
+      "id": "ev-pr",
+      "type": "github",
+      "ref": "https://github.com/aidatatools/agentlab/pulls (opened by this run)"
+    }
+  ],
+  "outcome": {
+    "articleId": null,
+    "githubCommit": null,
+    "githubPullRequest": null,
+    "deploymentUrl": null,
+    "publicationStatus": "not_published"
+  },
+  "metrics": {
+    "durationSeconds": null,
+    "tokens": null,
+    "estimatedCostUsd": null,
+    "humanInterventions": 0
+  },
+  "retrospective": {
+    "successes": [
+      "25 candidates with original URLs and timestamps (X 15, arXiv 5, GitHub 3, official 1, Hugging Face 1); Monday arXiv listing captured via RSS despite export API 429",
+      "Caught that the DeepMind quantum-algorithm announcement rests on arXiv 2611.09822 v1 from 2026-11-06 with the same headline numbers, so it is out of window",
+      "RH follow-up status read from the MIT page: default paranoid kernel accepted; lake comparator v4.36.0 in final stage"
+    ],
+    "failures": [
+      "No eligible in-window candidate reached 80 (best RoboUniverse-10K 78.7)",
+      "arXiv export API rate-limited (429); in-window filtering relied on the RSS announcement date",
+      "Primary pages for Claude Ship, SnyderBench and LingSante-Pulse were not retrieved"
+    ],
+    "lessonsLearned": [
+      "Big lab blog posts can follow an arXiv preprint by weeks; always check the arXiv submission history before treating the blog date as the discovery date",
+      "zsh treats a bare echo ===== as a command; quote separator strings in minim4 commands"
+    ],
+    "nextActions": [
+      "chuangtc review on DEV then merge",
+      "Decide whether to backfill the missed DeepMind formally verified quantum algorithms story (87.9, out of window)",
+      "Update article-20261121-001 once the lake comparator v4.36.0 final stage finishes",
+      "Re-score RoboUniverse-10K or ERNIE 5.5 Flash if independent evaluations appear"
+    ]
+  }
+}

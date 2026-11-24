@@ -1,0 +1,691 @@
+{
+  "date": "2026-11-24",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "selectedCandidateId": null,
+  "candidates": [
+    {
+      "id": "c20261124-deepmind-formally-verified-quantum-algorithms",
+      "title": "Google DeepMind: teams of Gemini 4 agents discover cheaper quantum algorithms, each proved correct and costed in a new open-source Lean 4 library (290x arcsin, 11.8x fusion, 8x photochemistry, 2.5x P450, up to 2.57x parallel Grover)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+          "publishedAt": "2026-11-23T17:00:00Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/GoogleDeepMind/status/2124911073266413634",
+          "publishedAt": "2026-11-23T17:00:53Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        },
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.09822",
+          "publishedAt": "2026-11-06T18:08:06Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/google-deepmind/formal-quantum-computation",
+          "publishedAt": "2026-11-17T02:29:29Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 85,
+        "interestingness": 88,
+        "technicalDepth": 90,
+        "reproducibility": 88,
+        "credibility": 92
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 87.9. >= 80 but rejected as out of window. The DeepMind blog and X announcement are in window (X post 2026-11-23T17:00:53Z), but the underlying paper arXiv 2611.09822 was public from v1 on 2026-11-06T18:08:06Z (v2 11-09, v3 11-16) and v1 already reported the 290x arithmetic, 11x fusion, 8x photochemistry and 2.5x drug-metabolism results; the v3 abstract names Gemini 4 and raises parallel search to 2.57x. The Lean library repo (Apache-2.0, created 2026-11-14) had its single public commit on 2026-11-17T02:29:29Z. Not found in any earlier candidate file, so it was missed by earlier runs; flagged to Jason, not written (same rule as the 11-16 OpenAI/arXiv case). Verified on the official blog: 11.8x cost cut and 5,650 -> 4,338 logical qubits for an inertial-confinement-fusion quantity, P450 481 -> 333 qubits; DeepMind notes these remain beyond first error-corrected machines and are not hardware demonstrations."
+    },
+    {
+      "id": "c20261124-rh-lean-verification-followup-1124",
+      "title": "Follow-up: MIT verification page (updated 2026-11-24 05:25 UTC) reports Lean's paranoid kernel with default settings accepts the full RH proof export (72 h 20 min), plus Robin's-inequality and Lagarias-criterion consequences checked; lake comparator v4.36.0 main run still in its last stage",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://math.mit.edu/~drew/grh/",
+          "publishedAt": "2026-11-24T05:25:00Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2125276013378609490",
+          "publishedAt": "2026-11-24T17:11:01Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 70,
+        "interestingness": 85,
+        "technicalDepth": 80,
+        "reproducibility": 92,
+        "credibility": 92
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 81.25. >= 80 but rejected as a follow-up to article-20261121-001 (already updated in PR #44), not a new discovery. New status vs PR #44: leanchecker-paranoid (Lean v4.36.0, default settings) accepted the full export at 19:01:08 UTC on 23 Nov; the lake comparator v4.36.0 end-to-end run from exports passed its paranoid-kernel stage (~19:53 UTC 23 Nov) and nanoda stage (~21:31 UTC) and was still in its final Lean default-kernel stage as of 05:25 UTC 24 Nov. New section: Robin1984 combined with the proof yields robin_inequality, lagarias_inequality and cyclotomic_corrected_ideal_robin; con-leche, con-ron, nanoda, Comparator v4.33.0 and lake comparator v4.36.0 (Robin1984 alone) pass. Suggest a small article update when the final comparator stage finishes."
+    },
+    {
+      "id": "c20261124-robouniverse-10k-real2sim",
+      "title": "Einsia RoboUniverse-10K: 10,807 resettable, verifiable Isaac Sim environments built from real robot videos (4,132 Franka + 6,675 AgileX), a 500-task RoboUniverse-Verified benchmark, and an open RoboUniverse-35B-A3B model",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.31002",
+          "publishedAt": "2026-11-23T16:53:57Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/Einsia/RoboUniverse-10K",
+          "publishedAt": "2026-11-24T16:27:29Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/Einsia/RoboUniverse-35B-A3B",
+          "publishedAt": "2026-11-24T07:25:17Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://lab.einsia.ai/robo-universe/",
+          "publishedAt": "2026-11-24T07:27:31Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2125253987951677442",
+          "publishedAt": "2026-11-24T15:43:30Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 72,
+        "interestingness": 80,
+        "technicalDepth": 82,
+        "reproducibility": 90,
+        "credibility": 72
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 78.7. < 80 (closest in-window candidate). In window: arXiv v1 submitted 2026-11-23T16:53:57Z and announced in the 2026-11-24 cs.RO listing; project page last-modified 2026-11-24T07:27Z; GitHub repo (Apache-2.0) and HF repos were created 11-22/11-23 but updated and announced on 11-24. Verified from the abstract and repo: Harbor-compatible harness with hidden verifiers, 11 models evaluated (frontier best 85.8% vs open-source 2.6-10.0%), SFT of Qwen3.6-35B-A3B on ~17K GPT-6 Astra trajectories (0.79B tokens) lifts RoboUniverse-Verified from 0.8% to 21.2%; code, dataset and 36B safetensors weights are public and ungated. Mainly a benchmark/environment contribution from a young lab; all numbers author-reported; sim-to-real shown on a single Franka task, which keeps breakthrough and credibility below article level."
+    },
+    {
+      "id": "c20261124-openai-gpt6-cyber-linux-948-promo",
+      "title": "OpenAI X post: GPT-6 Cyber helped validate 948 Linux kernel local-root bugs and generate patches (research write-up promotion)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/OpenAI/status/2125007927098699827",
+          "publishedAt": "2026-11-23T23:25:45Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+          "publishedAt": "2026-11-04T00:00:00Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 85,
+        "interestingness": 90,
+        "technicalDepth": 80,
+        "reproducibility": 40,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 78.5. Rejected: duplicate and out of window. The research page is dated 2026-11-04 and is already covered by the published article openai-cyber-linux-pipeline; the in-window X post (2026-11-23T23:25:45Z) only re-promotes it."
+    },
+    {
+      "id": "c20261124-openai-cisco-shirudo",
+      "title": "OpenAI and Cisco open-source Shirudo, an eBPF runtime where agents (e.g. Codex) write signed, TPM-attested shields that block exploit paths on running Linux systems without restarts",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "official",
+          "url": "https://openai.com/index/introducing-shirudo",
+          "publishedAt": "2026-11-23T21:37:07Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/OpenAI/status/2124980590717911527",
+          "publishedAt": "2026-11-23T21:37:07Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/shirudo-dev/shirudo",
+          "publishedAt": "2026-11-24T16:35:10Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m11/cisco-and-openai-launch-shirudo-a-new-project-to-safeguard-agentic-ai.html",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        }
+      ],
+      "repository": {
+        "language": null,
+        "stars": 1501,
+        "license": "BSD-2-Clause",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 70,
+        "interestingness": 80,
+        "technicalDepth": 75,
+        "reproducibility": 85,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 77.25. < 80. In window (OpenAI X post 2026-11-23T21:37:07Z; blog dated 2026-11-23). Verified on the OpenAI blog and repo README: BSD-2-Clause (BPF programs dual BSD/GPL), pre-release, needs kernel patches with a signed-loader ABI plus TPM 2.0; a Codex-generated shield blocked a Java4Shell attempt on a running Elasticsearch in a controlled test. Repo was created 2026-10-13 (public-visibility date not confirmed) and had ~1.5K stars. Useful infrastructure, but the agent part is a single demo and the system is not yet production-ready."
+    },
+    {
+      "id": "c20261124-baidu-ernie-5-5-flash-preview-weights",
+      "title": "Baidu open-sources ERNIE 5.5 Flash Preview weights (280B total / 14B active MoE, 1M context) under Apache 2.0 with vLLM/SGLang support",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Baidu_Inc/status/2125077484442190137",
+          "publishedAt": "2026-11-24T04:02:08Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview",
+          "publishedAt": "2026-11-23T09:00:29Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 62,
+        "interestingness": 78,
+        "technicalDepth": 68,
+        "reproducibility": 85,
+        "credibility": 72
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 71.65. < 80. Weights release announced in window (Baidu X post 2026-11-24T04:02:08Z); HF API: apache-2.0, not gated, ~299.6B safetensors params, repo created 2026-11-23T09:00Z (first public visibility not confirmed). The model itself was announced 11-11 (API preview, scored ~60-62 in the 11-11/12/15 batches). Benchmarks (e.g. DeepSWE 71.2) are vendor-reported; no independent evaluation found."
+    },
+    {
+      "id": "c20261124-china-telecom-xing4-1-preview",
+      "title": "China Telecom Xing4.1-Preview: 285B / 17B-active Apache-2.0 MoE coding-agent model trained on 8,192 Huawei Ascend 910C chips",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/vatanmalik_45/status/2124705568036462768",
+          "publishedAt": "2026-11-23T03:24:17Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/TeksEdge/status/2125039197061038170",
+          "publishedAt": "2026-11-24T01:30:00Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 70,
+        "technicalDepth": 62,
+        "reproducibility": 82,
+        "credibility": 68
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 67.0. Rejected: out of window. Weights and coverage were public by 2026-11-23T03:24Z, before the window opened."
+    },
+    {
+      "id": "c20261124-ant-lingsante-pulse",
+      "title": "Ant Ling LingSante-Pulse: open-weight general physiological-signal foundation model; one frozen encoder for multimodal and single-sensor use across 38 task configurations",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/AntLingAGI/status/2124905985433272539",
+          "publishedAt": "2026-11-23T16:40:40Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 58,
+        "interestingness": 65,
+        "technicalDepth": 65,
+        "reproducibility": 80,
+        "credibility": 68
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 65.45. < 80. In window (2026-11-23T16:40:40Z). Open weights and inference code per the post; results vendor-reported (best dataset-balanced mean rank); not independently checked."
+    },
+    {
+      "id": "c20261124-sensenova-u1-6-self-correction",
+      "title": "SenseTime SenseNova U1.6: 8B open image model with native text self-correction and ComfyUI support",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/SenseTime_AI/status/2125046695436386816",
+          "publishedAt": "2026-11-24T01:59:48Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/sensenova/SenseNova-U1.6-8B-MoT-Native",
+          "publishedAt": "2026-11-19T11:52:54Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 65,
+        "technicalDepth": 62,
+        "reproducibility": 82,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 64.45. Rejected: out of window. The in-window post (2026-11-24T01:59:48Z) adds ComfyUI support, but the U1.6 weights were on HF from 2026-11-18/19."
+    },
+    {
+      "id": "c20261124-ai2-robotrack",
+      "title": "Ai2 RoboTrack: evaluation set, training data and models for point tracking in robotic manipulation under occlusion",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/allen_ai/status/2124919777256702054",
+          "publishedAt": "2026-11-23T17:35:28Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 52,
+        "interestingness": 60,
+        "technicalDepth": 65,
+        "reproducibility": 82,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 63.9. < 80. In window (2026-11-23T17:35:28Z). Solid open release but a narrow perception subproblem."
+    },
+    {
+      "id": "c20261124-arxiv-100-conjecture-calibration",
+      "title": "Does a frontier LLM know what it can solve? ChatGPT 5.6 Sol Ultra on 100 open geometric-analysis conjectures: stated 0.617 success vs 0.103 observed, AUROC 0.714",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.28827",
+          "publishedAt": "2026-11-24T05:00:00Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 72,
+        "technicalDepth": 62,
+        "reproducibility": 60,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 62.9. < 80. Announced in the 2026-11-24 arXiv listing (in window). Abstract verified; single-model, single-domain calibration study."
+    },
+    {
+      "id": "c20261124-tencent-hy-mt3",
+      "title": "Tencent Hy MT3: third-generation open-source translation models, coverage expanded from 38 to 102 languages, image/OCR translation",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/TencentHunyuan/status/2125170622049485093",
+          "publishedAt": "2026-11-24T10:12:14Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 62,
+        "technicalDepth": 60,
+        "reproducibility": 82,
+        "credibility": 72
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 62.0. < 80. In window (2026-11-24T10:12:14Z). Incremental model update; quality claims vendor-reported."
+    },
+    {
+      "id": "c20261124-aleph-alpha-kolibri-1-1",
+      "title": "Aleph Alpha Kolibri 1.1: 75B / 3.44B-active Apache-2.0 model, 3.4x less GPU time than 1.0",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2124892104384000101",
+          "publishedAt": "2026-11-23T15:45:30Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1.1",
+          "publishedAt": "2026-11-20T09:01:10Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 60,
+        "technicalDepth": 58,
+        "reproducibility": 85,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 61.35. Rejected: out of window (HF weights created 2026-11-20)."
+    },
+    {
+      "id": "c20261124-snyderbench-study-design",
+      "title": "SnyderBench: frontier models (e.g. GPT-6.2 Astra) win 93% of blind study-design matchups against Harvard political scientist Jim Snyder, but lag at choosing compelling questions",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/i/trending/2124959147682824529",
+          "publishedAt": "2026-11-23T20:11:55Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 72,
+        "technicalDepth": 60,
+        "reproducibility": 45,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 59.75. < 80. In window (X story 2026-11-23T20:11:55Z). Primary paper not retrieved; claims unverified."
+    },
+    {
+      "id": "c20261124-arxiv-dive-rsi-small-models",
+      "title": "DiVE: recursive self-improvement with ensembles of five 8-12B open-weight models on 22 MLE-bench Lite competitions",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.28420",
+          "publishedAt": "2026-11-24T05:00:00Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 60,
+        "technicalDepth": 62,
+        "reproducibility": 70,
+        "credibility": 62
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 59.1. < 80. Announced 2026-11-24 (in window). Abstract verified; incremental method."
+    },
+    {
+      "id": "c20261124-anthropic-claude-ship",
+      "title": "Anthropic launches Claude Ship: Code Review (GA) plus beta PR Steward and approval agents that review, fix and approve routine pull requests under team policy",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/trytellwhen/status/2124956499604603292",
+          "publishedAt": "2026-11-23T20:01:23Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/daniel_mac8/status/2124965505123426749",
+          "publishedAt": "2026-11-23T20:37:11Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 78,
+        "technicalDepth": 55,
+        "reproducibility": 30,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 58.5. < 80. In window (announced 2026-11-23 ~20:00Z). Commercial product launch; no technical paper or reproducible evaluation; primary Anthropic page not retrieved."
+    },
+    {
+      "id": "c20261124-google-research-deepcrossattention",
+      "title": "Google Research blog: DeepCrossAttention reframes residual connections as learnable depth-wise routing (ICML 2025 paper)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/GoogleResearch/status/2124933889131164116",
+          "publishedAt": "2026-11-23T18:31:33Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 60,
+        "technicalDepth": 65,
+        "reproducibility": 60,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 57.5. Rejected: not new. The in-window blog (2026-11-23T18:31:33Z) explains an ICML 2025 paper."
+    },
+    {
+      "id": "c20261124-arxiv-innata-0",
+      "title": "Innata-0: native embodied world system co-designing a tri-tower world-action model and an agent with memory, verification and recovery",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.30254",
+          "publishedAt": "2026-11-24T05:00:00Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 62,
+        "technicalDepth": 65,
+        "reproducibility": 40,
+        "credibility": 62
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 57.2. < 80. Announced 2026-11-24 (in window). Abstract verified; no code or weights confirmed."
+    },
+    {
+      "id": "c20261124-arxiv-lean-census",
+      "title": "Lean Census: distributional comparison of four AI-generated Lean libraries with Mathlib and human libraries (longer proofs, more inline claims)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.28430",
+          "publishedAt": "2026-11-24T05:00:00Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 62,
+        "technicalDepth": 55,
+        "reproducibility": 80,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 57.0. < 80. Announced 2026-11-24 (in window). Abstract verified; analysis package released; timely given AI-written Lean proofs."
+    },
+    {
+      "id": "c20261124-unsloth-inkling-finetuning-release",
+      "title": "Unsloth v0.1.924-beta: Inkling 2 fine-tuning support and performance fixes",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.924-beta",
+          "publishedAt": "2026-11-24T14:38:51Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": null,
+        "license": "Apache-2.0",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 55,
+        "technicalDepth": 45,
+        "reproducibility": 85,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 54.0. < 80. In window. Tooling release."
+    },
+    {
+      "id": "c20261124-tencent-omnievie-4b",
+      "title": "Tencent OmniEVIE-4B: new Apache-2.0 feature-extraction model on Hugging Face",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/tencent/OmniEVIE-4B",
+          "publishedAt": "2026-11-24T03:16:57Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 45,
+        "technicalDepth": 45,
+        "reproducibility": 75,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 50.0. < 80. In window (HF created 2026-11-24T03:16:57Z). Little public documentation reviewed."
+    },
+    {
+      "id": "c20261124-claude-plugins",
+      "title": "Claude connectors and skills merge into plugins (10,000+ plugins) on Free, Pro, Max and Ultra plans",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/claudeai/status/2124970294523945328",
+          "publishedAt": "2026-11-23T20:56:12Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 65,
+        "technicalDepth": 40,
+        "reproducibility": 40,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 49.25. < 80. In window (2026-11-23T20:56:12Z). Product packaging update, not a research advance."
+    },
+    {
+      "id": "c20261124-ibbd-benchmark",
+      "title": "ibbd-benchmark: benchmark for query-conditioned execution risk in LLM agents",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/hustcsking/ibbd-benchmark",
+          "publishedAt": "2026-11-24T07:28:18Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 30,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 45,
+        "technicalDepth": 45,
+        "reproducibility": 70,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 45.25. < 80. In window (created 2026-11-24T07:28:18Z, MIT, 30 stars). Early project, no paper verified."
+    },
+    {
+      "id": "c20261124-weaponized-curiosity-skill",
+      "title": "weaponized-curiosity: portable agent skill for evidence-driven research, experimentation and bounded optimization",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/AyushRajSinghParihar/weaponized-curiosity",
+          "publishedAt": "2026-11-23T20:59:13Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 139,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 50,
+        "technicalDepth": 40,
+        "reproducibility": 70,
+        "credibility": 40
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 44.0. < 80. In window (created 2026-11-23T20:59:13Z, MIT, 139 stars). Prompt/skill package, no evaluation."
+    },
+    {
+      "id": "c20261124-sakana-applied-research-lab",
+      "title": "Sakana AI announces an Applied Research Lab in Tokyo for finance and economics",
+      "type": "other",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/SakanaAILabs/status/2125046221631086970",
+          "publishedAt": "2026-11-24T01:57:55Z",
+          "retrievedAt": "2026-11-25T01:40:00+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 55,
+        "technicalDepth": 30,
+        "reproducibility": 10,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 37.75. < 80. In window (2026-11-24T01:57:55Z). Organizational announcement, no technical result."
+    }
+  ]
+}
