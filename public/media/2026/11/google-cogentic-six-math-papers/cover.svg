@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
+  <title id="t">Cogentic unconditional integer factorization, illustrative</title>
+  <desc id="d">Abstract illustration: an integer N splits into prime powers, an arrow to the complexity bound L_N[1/3, 105], six paper tiles, and a dashed badge that Lean is not yet public. Not an official Google image.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1020"/>
+      <stop offset="100%" stop-color="#1b2140"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g fill="none" stroke="#4f6aa8" stroke-width="3">
+    <rect x="70" y="140" width="160" height="160" rx="8"/>
+  </g>
+  <text x="150" y="238" fill="#e7b63c" font-family="Helvetica, Arial, sans-serif" font-size="72" text-anchor="middle">N</text>
+  <path d="M250 220 L330 220" stroke="#8fa6dc" stroke-width="4"/>
+  <path d="M330 220 l-18 -12 v24 z" fill="#8fa6dc"/>
+  <g fill="none" stroke="#4f6aa8" stroke-width="2">
+    <rect x="350" y="110" width="130" height="70" rx="6"/>
+    <rect x="500" y="110" width="130" height="70" rx="6"/>
+    <rect x="425" y="210" width="130" height="70" rx="6"/>
+  </g>
+  <g fill="#9fb4e8" font-family="Helvetica, Arial, sans-serif" font-size="28" text-anchor="middle">
+    <text x="415" y="155">p₁ᵉ¹</text>
+    <text x="565" y="155">p₂ᵉ²</text>
+    <text x="490" y="255">pₖᵉᵏ</text>
+  </g>
+  <path d="M680 185 L760 185" stroke="#8fa6dc" stroke-width="4"/>
+  <path d="M760 185 l-18 -12 v24 z" fill="#8fa6dc"/>
+  <text x="970" y="160" fill="#e7b63c" font-family="Helvetica, Arial, sans-serif" font-size="44" text-anchor="middle">L_N[1/3, 105]</text>
+  <text x="970" y="210" fill="#9fb4e8" font-family="Helvetica, Arial, sans-serif" font-size="22" text-anchor="middle">vs proven L_N[1/2, 1]</text>
+  <rect x="790" y="250" width="360" height="54" rx="8" fill="none" stroke="#c9a44c" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="970" y="285" fill="#c9a44c" font-family="Helvetica, Arial, sans-serif" font-size="22" text-anchor="middle">Lean formalization not public</text>
+  <g>
+    <rect x="70" y="360" width="160" height="150" rx="8" fill="#243056" stroke="#e7b63c" stroke-width="3"/>
+    <rect x="260" y="370" width="150" height="130" rx="8" fill="none" stroke="#4f6aa8" stroke-width="2"/>
+    <rect x="440" y="370" width="150" height="130" rx="8" fill="none" stroke="#4f6aa8" stroke-width="2"/>
+    <rect x="620" y="370" width="150" height="130" rx="8" fill="none" stroke="#4f6aa8" stroke-width="2"/>
+    <rect x="800" y="370" width="150" height="130" rx="8" fill="none" stroke="#4f6aa8" stroke-width="2"/>
+    <rect x="980" y="370" width="150" height="130" rx="8" fill="none" stroke="#4f6aa8" stroke-width="2"/>
+  </g>
+  <g fill="#dce3f7" font-family="Helvetica, Arial, sans-serif" font-size="18" text-anchor="middle">
+    <text x="150" y="430">Factoring</text>
+    <text x="150" y="458">L[1/3, 105]</text>
+    <text x="335" y="430">Discrete log</text>
+    <text x="335" y="458">(pn)ᵒ(log n)</text>
+    <text x="515" y="430">Deterministic</text>
+    <text x="515" y="458">L[3/4]</text>
+    <text x="695" y="430">Nash 1/5</text>
+    <text x="695" y="458">exact poly-time</text>
+    <text x="875" y="430">Log-rank</text>
+    <text x="875" y="458">r^{1/2−ε}</text>
+    <text x="1055" y="430">Edge recon.</text>
+    <text x="1055" y="458">m ≥ 1000 n</text>
+  </g>
+  <text x="600" y="580" fill="#6f7fb0" font-family="Helvetica, Arial, sans-serif" font-size="20" text-anchor="middle">AgentLab original illustration · illustrative, not an official image</text>
+</svg>

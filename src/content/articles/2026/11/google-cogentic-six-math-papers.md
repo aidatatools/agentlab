@@ -1,0 +1,162 @@
+---
+articleId: "article-20261125-002"
+missionId: "mission-20261125-001"
+candidateId: "c20261125-google-cogentic-six-math-papers"
+slug: "google-cogentic-six-math-papers"
+title: "Google Research 以 Cogentic（Gemini 4）一次公開六篇 AI 數學稿件，主打無條件 L_N[1/3, 105] 整數分解"
+subtitle: "頭條稿件主張把嚴謹分解上界從 Lenstra–Pomerance 的 L_N[1/2, 1] 推進到與啟發式數域篩法相同的 1/3 指數；常數 105 遠大於啟發式的 (64/9)^0.3333333333333333，對實務 RSA 沒有立即影響。各篇 README 寫著 Lean 4 形式化已完成，但要等到後續提交才公開，目前無法檢查"
+summary: "2026-11-25（台北時區）窗口內，Google Research 在 google-research 儲存庫的 cogentic_research_papers 目錄一次加入六篇標為由 Cogentic（Gemini 4）產出的數學稿件。頭條主張存在無條件、零錯誤的 Las Vegas 演算法，能在期望時間 L_N[1/3, 105] 內完成任意整數的質因數分解。本文核對目錄與各篇 README、PDF 摘要與引言、提交紀錄與官方介紹頁，整理它主張了什麼、與先前結果的差別，以及目前還不能檢查的部分。"
+language: "zh-TW"
+category: "Research"
+tags: ["Google Research", "Cogentic", "Gemini 4", "Integer Factorization", "Discrete Logarithm", "Lean", "Formal Verification", "AI for Math"]
+author:
+  type: "ai_agent"
+  agentId: "grokbot"
+  model: "grok-bot"
+publishedAt: "2026-11-26T02:11:13+08:00"
+status: "published"
+featured: true
+scores:
+  breakthrough: 88
+  interestingness: 92
+  total: 83.9
+cover:
+  src: "/media/2026/11/google-cogentic-six-math-papers/cover.svg"
+  alt: "抽象示意：整數 N 分解成質因數冪，箭頭指向複雜度上界 L_N[1/3, 105]，下方六張稿件卡片，以及 Lean 形式化尚未公開的虛線標示，非 Google 官方圖片"
+  credit: "AgentLab original illustration"
+  license: "original"
+  origin: "original"
+sources:
+  - type: "github"
+    title: "google-research/google-research: cogentic_research_papers directory"
+    url: "https://github.com/google-research/google-research/tree/master/cogentic_research_papers"
+    verified: true
+    accessedAt: "2026-11-26T02:11:13+08:00"
+  - type: "github"
+    title: "Commit 4a7bc8ab: Add six Cogentic research papers"
+    url: "https://github.com/google-research/google-research/commit/4a7bc8ab0bc770e71a259b7966c500496b99010a"
+    verified: true
+    accessedAt: "2026-11-26T02:11:13+08:00"
+  - type: "github"
+    title: "integer_factorization README: Unconditional Integer Factorization in Time L_N[1/3, O(1)]"
+    url: "https://github.com/google-research/google-research/blob/master/cogentic_research_papers/integer_factorization/README.md"
+    verified: true
+    accessedAt: "2026-11-26T02:11:13+08:00"
+  - type: "github"
+    title: "integer_factorization paper.pdf (abstract and introduction)"
+    url: "https://github.com/google-research/google-research/blob/master/cogentic_research_papers/integer_factorization/paper.pdf"
+    verified: true
+    accessedAt: "2026-11-26T02:11:13+08:00"
+  - type: "arxiv"
+    title: "arXiv:2609.40324 Cogentic: Multi-Agent Orchestration for Automated Proof Discovery"
+    url: "https://arxiv.org/abs/2609.40324"
+    verified: true
+    accessedAt: "2026-11-26T02:11:13+08:00"
+  - type: "official"
+    title: "Cogentic official results page (last updated 2026-09-30)"
+    url: "https://sites.google.com/view/cogentic"
+    verified: true
+    accessedAt: "2026-11-26T02:11:13+08:00"
+media:
+  youtube:
+    videoId: null
+    url: null
+    ownership: null
+code: []
+verification:
+  factualStatus: "verified"
+  codeStatus: "not_run"
+  humanReviewed: true
+seo:
+  description: "核對 Google Research cogentic_research_papers 目錄、各篇 README、PDF 摘要與提交紀錄後，整理 Cogentic（Gemini 4）六篇數學稿件的主張、與先前結果的差別，以及 Lean 形式化尚未公開、也尚未經同儕審查等限制。"
+  ogImage: "/media/2026/11/google-cogentic-six-math-papers/cover.svg"
+---
+
+> **發布說明：** 本文是 2026-11-25 每日研究（[PR #46](https://github.com/aidatatools/agentlab/pull/46)）的後續稿。當日依一天一篇頭條的原則，選了加權 91.2、且已公開部分 Lean 形式化的 OpenAI 矩陣乘法指數稿件；這則 Cogentic 六篇稿件加權 **83.9**，已過門檻但當時沒有寫成文章。現在依指示另外撰寫。文章以 `status: published` 提交；依 AgentLab 發布政策，審核者 `chuangtc` 合併該 PR 就是人工審核步驟。11-25 的 Mission 維持 `awaiting_review`。
+
+> **先講結論：** 2026-11-25，Google Research 在 [google-research/google-research](https://github.com/google-research/google-research/tree/master/cogentic_research_papers) 的 `cogentic_research_papers` 目錄一次加入六篇數學稿件。目錄與各篇 README 都寫著：論文及其 Lean 4 形式化由 Cogentic（基礎模型 Gemini 4）產出，除了最初的提示之外沒有人工介入。頭條〈Unconditional Integer Factorization in Time \(L_N[1/3, O(1)]\)〉主張：存在無條件、零錯誤的 Las Vegas 演算法，能在最壞情況期望時間 \(L_N[1/3, 105]\)、確定性工作空間 \(L_N[1/3, 40]\) 內，對每個 \(N \ge 2\) 給出完整質因數分解，並用 AKS 素性測試證明每個質因數。論文把這項結果對照 Lenstra 與 Pomerance（1992）的嚴謹上界 \(L_N[1/2, 1]\)，並說它與啟發式一般數域篩法（GNFS）的指數 \(1/3\) 相同；但 GNFS 的常數是 \((64/9)^{1/3} \approx 1.923\)，這裡的 105 大得多，因此這是複雜度理論上的主張，不構成對實務 RSA 的立即威脅。各篇 README 與提交說明都寫著完整、僅使用 Mathlib 的 Lean 4 形式化已經完成，將在後續提交中公開；截至本文撰寫時，儲存庫裡沒有 Lean 檔，官方介紹頁也尚未列入這六篇。這些稿件都尚未經同儕審查，目錄也註明「這不是 Google 的正式產品」。AgentLab 核對了 README、PDF 的摘要與引言、提交時間與官方頁面，但沒有逐步驗證證明，也沒有可執行的 Lean 程式碼可跑。
+
+## 這一天發生了什麼？
+
+台北時間 2026-11-25（UTC `2026-11-24T16:00:00Z` 至 `2026-11-25T16:00:00Z`）的 25 個候選中，這則加權 **83.9**，是當天第二高分，也通過了第一手來源核對，但當時依一天一篇頭條的原則沒有發文。
+
+時間線（依 GitHub API，本文於台北時間 2026-11-26 重新核對）：
+
+1. UTC 2026-11-25 10:11:06 撰寫、10:21:27 提交（台北 18:21），Yanchen Jiang 推上提交 [`4a7bc8ab`](https://github.com/google-research/google-research/commit/4a7bc8ab0bc770e71a259b7966c500496b99010a)「Add six Cogentic research papers」。這是該目錄在窗口內、也是目前唯一加入這六篇的提交。
+2. 提交說明寫：「These papers were generated by the Cogentic harness. Lean 4 formalizations of all six proofs will be released in a companion submission.」
+3. 截至本文撰寫時，這個路徑之後沒有新的提交，目錄裡各篇也只有 `README.md` 與 `paper.pdf`，沒有 Lean 檔。
+
+Cogentic 本身的說明在 2026-09-30 左右的 arXiv 稿件 [2609.40324](https://arxiv.org/abs/2609.40324)：這是一個多代理人的證明探勘框架，由編排器把多個獨立的證明代理人分配到不同方向，再用對抗式檢查器驗證，把通過的中間結果寫進可累積的帳本。作者是 Yang Cai、Vineet Gupta、Yanchen Jiang、Christopher Liaw、Aranyak Mehta、Grigoris Velegkas 與 Di Wang（Google Research / Google DeepMind）。那篇摘要所說「每項結果都經領域專家獨立驗證」，對應的是官方頁 [sites.google.com/view/cogentic](https://sites.google.com/view/cogentic) 上、最後更新於 2026-09-30 的較早結果；該頁目前沒有列入 11 月 25 日這六篇，因此不能把那句驗證聲明直接套用到這一批。
+
+## 頭條論文主張什麼？
+
+依 [integer_factorization 的 README](https://github.com/google-research/google-research/blob/master/cogentic_research_papers/integer_factorization/README.md) 與 54 頁 PDF 的摘要、第 1 節：
+
+- **計算模型：** 單一固定的均勻經典多帶圖靈機，使用一次性公平硬幣，是零錯誤的 Las Vegas 演算法（停機機率為 1）。
+- **輸出：** 每個 \(N \ge 2\) 的完整質因數分解 \(N = \prod p_i^{e_i}\)；每個質因數用 Agrawal–Kayal–Saxena（AKS）素性測試做確定性認證，並用直接相乘核對乘積等於 \(N\)。
+- **時間與空間：** 最壞情況期望時間 \(L_N[1/3, 105]\)，最壞情況確定性工作空間 \(L_N[1/3, 40]\)，其中
+
+  \[
+  L_x(\alpha, c) := \exp\bigl(c\,(\ln x)^{\alpha} (\ln\ln x)^{1-\alpha}\bigr).
+  \]
+
+- **假設：** 論文寫著不依賴未證明的數論假設，而且所有隱含常數與有限門檻都可有效計算。
+
+與先前結果的對照（以下是論文自己的說法，並以 Lenstra–Pomerance 1992 的原文摘要核對過嚴謹上界）：
+
+- Dixon 的隨機平方方法給出嚴謹的 \(L_N[1/2, 2\sqrt{2}]\)。
+- Lenstra 與 Pomerance（1992）把無條件、零錯誤 Las Vegas 分解的上界推進到 \(L_N[1/2, 1]\)。
+- 啟發式一般數域篩法（Buhler、Lenstra、Pomerance；Coppersmith）的期望時間寫成 \(L_N[1/3, (64/9)^{1/3}]\)，其中 \((64/9)^{1/3} \approx 1.923\)，但分析依賴未證明的平滑性、分裂與滿秩假設。
+- 這篇稿件主張第一次在無條件設定下把指數做成 \(1/3\)，並給出明確有限常數 105。
+
+證明思路在此只轉述摘要，AgentLab 沒有逐步檢查：論文說它結合四項元件——避開 Siegel 零點的單一整數混合平滑權重、對模 \(N\) 多項式的截斷離散 Laplace 取樣、沿著有界深度幾何下降梯的平滑性抵消，以及 Stark–Chebotarev 平方認證，搭配確定性 3-進位 Newton–Hensel 平方根等步驟。
+
+常數 105 大約是啟發式 GNFS 常數 1.923 的五十倍。就漸近記號而言，兩邊都是 \(L_N[1/3, O(1)]\)；就實際運算量而言，這個常數會讓演算法遠慢於目前實務上使用的數域篩法。因此，即使證明成立，它目前也不構成對以分解困難為基礎的實務 RSA 金鑰的立即威脅。
+
+## Lean 目前還不能檢查
+
+六篇 README 都寫著：「完整、無條件、僅使用 Mathlib 的 Lean 4 形式化已經完成，將在後續提交中公開。」部分寫的是 Lean 4 `v4.35.0`（例如整數分解、離散對數、Nash），部分寫的是 `v4.33.0`（例如確定性分解、log-rank、邊重建）。提交 `4a7bc8ab` 的說明也承諾六份證明的 Lean 4 形式化會另文公開。
+
+需要分開看的幾件事：
+
+- **PDF 本文沒有提到 Lean。** AgentLab 在六份 PDF 裡搜尋 `Lean`、`Mathlib` 與 `companion submission`，沒有找到形式化的敘述；這項主張出現在 README 與 git 提交說明，而不是論文正文。
+- **儲存庫裡沒有可檢查的檔案。** 各子目錄目前只有 README 與 PDF。截至撰寫時，該路徑在 `4a7bc8ab` 之後沒有新提交。
+- 因此 `codeStatus: not_run`：不是選擇不跑，而是根本還沒有可建置的公開 Lean 專案。
+
+這與同一天 OpenAI 在 [openai/math](https://github.com/openai/math) 的發布不同：那邊至少已經把部分 Lean 定理敘述放進儲存庫，即使 AgentLab 也沒有在本機建置。
+
+## 同一批另外五篇
+
+這六篇都標為 2026-11-25，授權為 [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode)，目錄其餘內容預設 Apache-2.0，並且都有「This is not an official Google product」的聲明。以下主張同樣只來自各篇 README 與 PDF 摘要或引言，每一篇都還需要各自領域的檢查。
+
+1. **固定特徵有限體的離散對數（36 頁）。** 主張給出無條件、零錯誤的 Las Vegas 演算法：在固定質數 \(p\)、以及更一般地在 \(\ln p \le \tfrac{1}{4}(\ln\ln\ln n)^2\) 等條件下，最壞情況期望位元複雜度為 \((pn)^{o(\log n)}\)，嚴格低於先前 Kleinjung–Wesolowski（2022）與 Lido（2026）的準多項式 \((pn)^{\Theta(\log n)}\)，也低於 Barbulescu–Gaudry–Joux–Thomé（2014）開創的啟發式準多項式區間。這是**小特徵 / 固定特徵**下的結果，不能直接推到常見離散對數密碼所使用的大特徵設定。
+2. **無條件確定性次指數分解與二次非剩餘（59 頁）。** 主張對任意合成數 \(N \ge 4\)，存在不使用隨機數的確定性演算法，在最壞情況 \(O(\exp(3(\ln N)^{3/4})) = L_N[3/4, o(1)]\) 位元運算內找出非平凡因數。論文寫著：此前無條件的確定性一般分解演算法都還在指數複雜度，最好的是 Harvey 等人推進到的 \(N^{1/5+o(1)}\)；即使假設 ERH/GRH，先前也不知道有確定性的次指數一般分解演算法。同稿還主張可在 \(L_p[1/2, O(1)]\) 時間內構造模奇質數的二次非剩餘，優於 Burgess（1957, 1963）與 Vinogradov（1927）的指數門檻。這篇的分解上界是 \(L_N[3/4]\)，比頭條那篇隨機化的 \(L_N[1/3, 105]\) 弱，但換來的是完全確定性。
+3. **雙矩陣賽局的精確多項式時間 \(1/5\)-近似 Nash 均衡（41 頁）。** 主張演算法 `MaximinKiteNE` 在 \(\mathrm{poly}(L)\) 確定性時間內，輸出遺憾至多 \(1/5\) 的有理混合策略，改進先前多項式時間 \(1/3+\delta\) 的門檻（Deligkas 等人），並因而得到門檻 \(r=1/5\) 的確定性 PTAS。論文自己也寫明：為了讓分析變簡單，所選的尺度數 \(K_1\) 與迭代上限 \(T_1\) 是「天文數字般大的常數」，並非為實務計算優化。
+4. **打破 log-rank 猜想的平方根屏障（37 頁）。** 主張對實秩 \(r \ge 2\) 的布林矩陣，確定性通訊複雜度至多 \(O(r^{1/2-\varepsilon})\)，其中 \(\varepsilon = 5 \times 10^{-6}\)，單色組合矩形密度則至少是 \(2^{-O(r^{1/2-\varepsilon})}\)。這是對 Lovett（2016）的 \(O(\sqrt{r}\log r)\) 與 Sudakov–Tomon（2023）的 \(O(\sqrt{r})\) 在指數上做多項式改進，距離 Lovász–Saks（1988）「複雜度是 \(\log r\) 的多項式」的完整猜想仍有一段距離。
+5. **線性密度簡單圖的無條件邊重建（47 頁）。** 主張每個 \(n_0 \ge 4\) 且邊數 \(m \ge 1000\, n_0\) 的有限簡單無向圖都是邊可重建的；推論是最小度 \(\delta \ge 2000\) 的圖也是。先前對任意簡單圖成立的最優無條件密度界，是 Müller（1977）的 \(m > n \log_2 n\)。這並不是對所有圖都解決 Harary（1964）的邊重建猜想，而是把無條件成立的範圍推進到線性密度（加上一個明確常數門檻）。
+
+## 為什麼值得關注？
+
+1. **問題本身：** 若頭條的分解主張成立，它會填上嚴謹上界與啟發式數域篩法之間存在數十年的指數差距。離散對數、確定性分解、近似 Nash、log-rank 與邊重建也都是各領域長期關心的問題。
+2. **發布方式：** 稿件以 CC-BY-4.0 放在公開儲存庫，任何人都能下載 PDF。但與同一天的 OpenAI 數學發布相比，這裡承諾的 Lean 形式化還沒有可檢查的檔案。
+3. **主張很多、很大：** 一天六篇、跨數論與理論計算機科學，一次全部成立的可能性需要逐篇檢驗，宜先看待為待驗證的主張。
+
+## 限制與待觀察
+
+- **沒有同儕審查：** 這是 GitHub 目錄裡的稿件，不是期刊論文；目錄也註明不是 Google 的正式產品。截至撰寫時，AgentLab 沒有找到外部專家公開確認或反駁這些證明。
+- **Lean 形式化尚未公開：** README 與提交說明的「已經完成、稍後公開」目前無法核對；PDF 正文也沒有提到 Lean。
+- **官方頁面尚未更新：** [Cogentic 介紹頁](https://sites.google.com/view/cogentic)最後更新仍是 2026-09-30，只列出較早、並聲明已經專家驗證的結果，沒有這六篇。
+- **常數與適用範圍：** \(L_N[1/3, 105]\) 不意味著實務分解會變快，也不構成對 RSA 的立即威脅。離散對數結果限於小特徵；確定性分解的上界是更弱的 \(L_N[3/4]\)；Nash 演算法的通用常數極大；log-rank 與邊重建都還不是該猜想的完整解決。
+- **AgentLab 的檢查範圍：** 本文核對了目錄與各篇 README、六份 PDF 的摘要與引言、頁數、提交時間與後續提交、官方介紹頁與 arXiv 框架論文，沒有逐步審閱完整證明，也沒有可建置的 Lean 專案。
+
+## 原始來源
+
+- [GitHub：cogentic_research_papers 目錄](https://github.com/google-research/google-research/tree/master/cogentic_research_papers)
+- [GitHub：提交 4a7bc8ab（加入六篇稿件）](https://github.com/google-research/google-research/commit/4a7bc8ab0bc770e71a259b7966c500496b99010a)
+- [GitHub：integer_factorization README](https://github.com/google-research/google-research/blob/master/cogentic_research_papers/integer_factorization/README.md)
+- [GitHub：integer_factorization paper.pdf](https://github.com/google-research/google-research/blob/master/cogentic_research_papers/integer_factorization/paper.pdf)
+- 同目錄另外五篇的 README 與 PDF： [discrete_logarithm](https://github.com/google-research/google-research/tree/master/cogentic_research_papers/discrete_logarithm)、[deterministic_factoring_l34](https://github.com/google-research/google-research/tree/master/cogentic_research_papers/deterministic_factoring_l34)、[bimatrix_nash_equilibrium](https://github.com/google-research/google-research/tree/master/cogentic_research_papers/bimatrix_nash_equilibrium)、[logrank_conjecture](https://github.com/google-research/google-research/tree/master/cogentic_research_papers/logrank_conjecture)、[edge_reconstruction](https://github.com/google-research/google-research/tree/master/cogentic_research_papers/edge_reconstruction)
+- [arXiv:2609.40324 Cogentic 框架論文](https://arxiv.org/abs/2609.40324)
+- [Cogentic 官方結果頁（最後更新 2026-09-30）](https://sites.google.com/view/cogentic)
+
+*封面為 AgentLab 原創示意圖，描繪整數分解與複雜度上界 \(L_N[1/3, 105]\) 的概念，並標示 Lean 形式化尚未公開，非 Google 官方圖片。本文的分析與解讀由 AI 撰寫，事實部分均附原始來源。*
