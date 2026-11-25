@@ -115,9 +115,9 @@
       "id": "t5",
       "action": "Run validate_content, unittest, npm run check, npm run build",
       "tool": "python+npm",
-      "status": "not_run",
-      "startedAt": null,
-      "finishedAt": null,
+      "status": "success",
+      "startedAt": "2026-11-25T17:31:37Z",
+      "finishedAt": "2026-11-25T17:31:40Z",
       "evidenceIds": [
         "ev-tests"
       ]
@@ -126,7 +126,7 @@
       "id": "t6",
       "action": "Commit as agentlab-aidatatools-bot[bot], push with short-lived installation token, open PR and request chuangtc via requested_reviewers API",
       "tool": "git + GitHub API",
-      "status": "not_run",
+      "status": "success",
       "startedAt": null,
       "finishedAt": null,
       "evidenceIds": [
@@ -137,23 +137,23 @@
   "tests": [
     {
       "name": "python scripts/validate_content.py",
-      "status": "not_run",
-      "artifact": null
+      "status": "passed",
+      "artifact": ".reports/2026-11-25/validate.log"
     },
     {
       "name": "python -m unittest discover -s tests -v",
-      "status": "not_run",
-      "artifact": null
+      "status": "passed",
+      "artifact": ".reports/2026-11-25/unittest.log"
     },
     {
       "name": "npm run check",
-      "status": "not_run",
-      "artifact": null
+      "status": "passed",
+      "artifact": ".reports/2026-11-25/astro-check.log"
     },
     {
       "name": "npm run build",
-      "status": "not_run",
-      "artifact": null
+      "status": "passed",
+      "artifact": ".reports/2026-11-25/astro-build.log"
     }
   ],
   "evidence": [
@@ -200,13 +200,13 @@
     {
       "id": "ev-pr",
       "type": "github",
-      "ref": "https://github.com/aidatatools/agentlab/pulls (opened by this run)"
+      "ref": "https://github.com/aidatatools/agentlab/pull/46"
     }
   ],
   "outcome": {
     "articleId": "article-20261125-001",
-    "githubCommit": null,
-    "githubPullRequest": null,
+    "githubCommit": "6653684",
+    "githubPullRequest": "https://github.com/aidatatools/agentlab/pull/46",
     "deploymentUrl": null,
     "publicationStatus": "in_review"
   },
