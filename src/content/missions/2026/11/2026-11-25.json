@@ -1,0 +1,241 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "mission-20261125-001",
+  "date": "2026-11-25",
+  "timezone": "Asia/Taipei",
+  "status": "awaiting_review",
+  "objective": {
+    "goal": "Discover, score, verify and propose one outstanding AI/agent discovery for 2026-11-25 (Asia/Taipei), or document a no-publish decision.",
+    "sources": [
+      "x",
+      "github",
+      "arxiv",
+      "huggingface"
+    ],
+    "deliverables": [
+      "Verified candidate batch",
+      "Published article for the selected candidate (score >= 80)",
+      "Mission record",
+      "Pull request"
+    ]
+  },
+  "agent": {
+    "id": "grokbot",
+    "framework": "Grok Bot (AgentLab-bot on minim4.home)",
+    "model": "grok-bot",
+    "runId": "grokbot-minim4-daily-2026-11-25-20261126T0123+0800"
+  },
+  "selection": {
+    "candidatesEvaluated": 25,
+    "selectedCandidateId": "c20261125-openai-math-matrix-exponent-nine-fourths",
+    "selectionScore": 91.2,
+    "rankingArtifact": "data/candidates/2026-11-25.json"
+  },
+  "skillsUsed": [
+    {
+      "skill": "x-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-x-20261125-001"
+    },
+    {
+      "skill": "github-discovery",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-gh-20261125-001"
+    },
+    {
+      "skill": "arxiv-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ax-20261125-001"
+    },
+    {
+      "skill": "fact-check",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-fc-20261125-001"
+    },
+    {
+      "skill": "article-writing",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-aw-20261125-001"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t1",
+      "action": "git checkout main, pull --ff-only (to 498a773, merge of PR #45), create branch daily/2026-11-25; tree clean at start; GitHub App key file present",
+      "tool": "git",
+      "status": "success",
+      "startedAt": "2026-11-25T17:24:17Z",
+      "finishedAt": "2026-11-25T17:24:17Z",
+      "evidenceIds": [
+        "ev-git-branch"
+      ]
+    },
+    {
+      "id": "t2",
+      "action": "Discovery for window 2026-11-24T16:00Z..2026-11-25T16:00Z: X news search (4 queries), full-archive post searches (lab accounts, Bubeck, Cogentic, OpenAI protein, Anthropic Siren, matrix multiplication 9/4); GitHub repo search created in window (7 queries; game-cheat spam filtered) and releases of 30 tracked repos; Hugging Face org listings and trending; arXiv export API (cs.AI/LG/CL/MA/RO, submittedDate window) returned 89 entries",
+      "tool": "gh + python urllib + X tools",
+      "status": "success",
+      "startedAt": "2026-11-25T17:24:17Z",
+      "finishedAt": "2026-11-25T17:25:04Z",
+      "evidenceIds": [
+        "ev-x",
+        "ev-gh",
+        "ev-arxiv"
+      ]
+    },
+    {
+      "id": "t3",
+      "action": "Verify top candidates against primary sources: openai/math commit history for the preprint path (92b516ef, 2026-11-25T00:04:41Z), preprint README and PDF, history.md, CONTENTS.md, lean/docs/107.md, ExactExponent.lean; google-research cogentic_research_papers commit history (4a7bc8ab, 2026-11-25T10:21:27Z) and READMEs; OpenAI protein-design page, Anthropic Siren and neuron-basis pages via web search; MIT RH verification page (still last updated 2026-11-24 05:25 UTC); dedupe against earlier candidate files and articles",
+      "tool": "gh api, curl, web search/fetch, X tools",
+      "status": "success",
+      "startedAt": "2026-11-25T17:25:04Z",
+      "finishedAt": "2026-11-25T17:27:42Z",
+      "evidenceIds": [
+        "ev-verify"
+      ]
+    },
+    {
+      "id": "t4",
+      "action": "Write 25-candidate JSON, original SVG cover and the Traditional Chinese article (status published) for the selected OpenAI matrix-multiplication-exponent release (91.2); Cogentic six papers (83.9) eligible but not selected under the one-top-story-per-day policy",
+      "tool": "python + shell heredoc on minim4",
+      "status": "success",
+      "startedAt": "2026-11-25T17:31:37Z",
+      "finishedAt": "2026-11-25T17:31:37Z",
+      "evidenceIds": [
+        "ev-candidates",
+        "ev-article"
+      ]
+    },
+    {
+      "id": "t5",
+      "action": "Run validate_content, unittest, npm run check, npm run build",
+      "tool": "python+npm",
+      "status": "not_run",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-tests"
+      ]
+    },
+    {
+      "id": "t6",
+      "action": "Commit as agentlab-aidatatools-bot[bot], push with short-lived installation token, open PR and request chuangtc via requested_reviewers API",
+      "tool": "git + GitHub API",
+      "status": "not_run",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-pr"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "python scripts/validate_content.py",
+      "status": "not_run",
+      "artifact": null
+    },
+    {
+      "name": "python -m unittest discover -s tests -v",
+      "status": "not_run",
+      "artifact": null
+    },
+    {
+      "name": "npm run check",
+      "status": "not_run",
+      "artifact": null
+    },
+    {
+      "name": "npm run build",
+      "status": "not_run",
+      "artifact": null
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-git-branch",
+      "type": "git",
+      "ref": "branch daily/2026-11-25 from origin/main 498a773"
+    },
+    {
+      "id": "ev-x",
+      "type": "api_response",
+      "ref": "Public X reads via Grok Bot X tools; key posts: SebastienBubeck 2125402576145572334, gdb 2125418102049628201, OpenAI 2125334383490105601, AnthropicAI 2125341904644763678 / 2125365268381929637, kimmonismus 2125574747882704951, jerryjliu0 2125266115874144473, Telos_lab 2125292671032013294, higgsfield 2125290656692085164; X news stories 2125399639667196362, 2125612308223107560, 2125340342006526344"
+    },
+    {
+      "id": "ev-gh",
+      "type": "http_response",
+      "ref": "GitHub search/repositories created:2026-11-24T16:00:00Z..2026-11-25T16:00:00Z (7 queries) and releases of 30 tracked repos (.reports/2026-11-25/gh_new_repos.json, gh_releases_window.txt); gh api repos/openai/math commits and contents; repos/google-research/google-research commits?path=cogentic_research_papers"
+    },
+    {
+      "id": "ev-arxiv",
+      "type": "http_response",
+      "ref": "https://export.arxiv.org/api/query search_query=(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.MA OR cat:cs.RO) AND submittedDate:[202611241600 TO 202611251600] -> 89 entries (.reports/2026-11-25/arxiv_entries.json)"
+    },
+    {
+      "id": "ev-verify",
+      "type": "http_response",
+      "ref": "https://github.com/openai/math/tree/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026; https://github.com/openai/math/blob/main/lean/docs/107.md; https://github.com/openai/math/blob/main/history.md; https://github.com/google-research/google-research/tree/master/cogentic_research_papers; https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities; https://safeguards.anthropic.com/2026/siren/; https://math.mit.edu/~drew/grh/"
+    },
+    {
+      "id": "ev-candidates",
+      "type": "file",
+      "ref": "data/candidates/2026-11-25.json"
+    },
+    {
+      "id": "ev-article",
+      "type": "file",
+      "ref": "src/content/articles/2026/11/openai-matrix-multiplication-exponent-nine-fourths.md"
+    },
+    {
+      "id": "ev-tests",
+      "type": "file",
+      "ref": ".reports/2026-11-25/tests.json"
+    },
+    {
+      "id": "ev-pr",
+      "type": "github",
+      "ref": "https://github.com/aidatatools/agentlab/pulls (opened by this run)"
+    }
+  ],
+  "outcome": {
+    "articleId": "article-20261125-001",
+    "githubCommit": null,
+    "githubPullRequest": null,
+    "deploymentUrl": null,
+    "publicationStatus": "in_review"
+  },
+  "metrics": {
+    "durationSeconds": null,
+    "tokens": null,
+    "estimatedCostUsd": null,
+    "humanInterventions": 0
+  },
+  "retrospective": {
+    "successes": [
+      "25 candidates with original URLs and timestamps; arXiv export API answered this time (89 in-window entries)",
+      "Window check from GitHub commit history: both the OpenAI (00:04Z) and Google Cogentic (10:21Z) math releases fall inside the 11-25 window",
+      "Recorded that the Lean formalization covers a division-free model, narrower than the paper claim"
+    ],
+    "failures": [
+      "No independent expert verification of the 9/4 claim was available at writing time",
+      "Lean code was not built locally (codeStatus not_run)",
+      "The OpenAI protein page and Anthropic pages were read through web search/fetch, not curl on minim4"
+    ],
+    "lessonsLearned": [
+      "Check a lab math repo commit history to date a release when the manuscript carries only a calendar date",
+      "When two items clear 80 on the same day, follow the one-top-story policy and record the runner-up as eligible but not selected"
+    ],
+    "nextActions": [
+      "chuangtc review on DEV then merge",
+      "Decide whether to write up Google Cogentic six papers (83.9) separately or wait for its Lean release",
+      "Follow up the 9/4 article when outside experts or the Lean build confirm or dispute it",
+      "Update article-20261121-001 once the RH lake comparator v4.36.0 run finishes"
+    ]
+  }
+}

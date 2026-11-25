@@ -1,0 +1,679 @@
+{
+  "date": "2026-11-25",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "selectedCandidateId": "c20261125-openai-math-matrix-exponent-nine-fourths",
+  "candidates": [
+    {
+      "id": "c20261125-openai-math-matrix-exponent-nine-fourths",
+      "title": "OpenAI November 24 math release: nine AI-produced manuscripts with selected Lean formalizations, headlined by a proof that the square matrix multiplication exponent is exactly 9/4 over every field (plus claimed strongly polynomial LP, polynomial Hirsch disproof, fixed-petal sunflower bound, Hamiltonian-cycle/permanent circuit lower bounds)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/openai/math/tree/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026",
+          "publishedAt": "2026-11-25T00:04:41Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/openai/math/blob/main/lean/OAI/LinearAlgebra/SpectralBooks/ExactExponent.lean",
+          "publishedAt": "2026-11-25T00:04:41Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/openai/math/blob/main/history.md",
+          "publishedAt": "2026-11-25T00:04:41Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/SebastienBubeck/status/2125402576145572334",
+          "publishedAt": "2026-11-25T01:33:56Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/gdb/status/2125418102049628201",
+          "publishedAt": "2026-11-25T02:35:38Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Lean",
+        "stars": 18250,
+        "license": "Apache-2.0",
+        "commit": "92b516ef8e"
+      },
+      "scores": {
+        "breakthrough": 95,
+        "interestingness": 95,
+        "technicalDepth": 92,
+        "reproducibility": 85,
+        "credibility": 78
+      },
+      "eligibility": "eligible",
+      "reason": "Weighted 91.2. Selected. In window: openai/math commit 92b516ef \"Add November 24 mathematics manuscripts and Lean formalizations\" at 2026-11-25T00:04:41Z is the only commit touching the preprint directory; Bubeck X post 2026-11-25T01:33:56Z. Verified on primary sources: preprint README and abstract (lower bound of ceil(n^(9/4)/2) nonscalar multiplication/division gates for formal arithmetic circuits at every n>=2, geometric border rank >= n^(9/4), asymptotic rank = n^(9/4); the upper bound came from earlier OpenAI releases); history.md lists nine manuscripts in families 379 and 380; lean/docs/107.md and ExactExponent.lean state theorem square_exponent (formalOmega F 1 1 1 = 9/4) for division-free programs over every field, plus dual exponent 1/2 and the rectangular formula. Not found in earlier candidate files. Credibility held at 78: OpenAI self-published, not peer reviewed, no independent expert verification found as of retrieval, Lean covers selected results in a division-free model only, and AgentLab did not build the Lean code."
+    },
+    {
+      "id": "c20261125-google-cogentic-six-math-papers",
+      "title": "Google Research Cogentic (Gemini 4) posts six AI-generated math papers, led by an unconditional Las Vegas integer factorization in expected time L_N[1/3, 105]; also discrete log in fixed characteristic, 1/5-approximate Nash, deterministic subexponential factoring, log-rank and edge reconstruction",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/google-research/google-research/tree/master/cogentic_research_papers",
+          "publishedAt": "2026-11-25T10:21:27Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/kimmonismus/status/2125574747882704951",
+          "publishedAt": "2026-11-25T12:58:05Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/dummerspast39/status/2125547001433526759",
+          "publishedAt": "2026-11-25T11:07:50Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        },
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2609.40324",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 88,
+        "interestingness": 92,
+        "technicalDepth": 90,
+        "reproducibility": 60,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 83.9. Eligible (>= 80) but not selected: the editorial policy allows one top story per day and the OpenAI release scores higher with Lean code already public. In window: commit 4a7bc8ab \"Add six Cogentic research papers\" at 2026-11-25T10:21:27Z (authored 10:11:06Z). Verified on the integer_factorization README: zero-error Las Vegas algorithm, worst-case expected time L_N[1/3,105], workspace L_N[1/3,40], AKS-certified factors, CC-BY-4.0; README says a Mathlib-only Lean 4 formalization is complete but will be released in a companion submission, so it is not yet checkable; no human input after the initial prompt; not peer reviewed. The constant 105 versus the heuristic number field sieve constant means no practical RSA impact. Suggest a follow-up if the Lean files are released."
+    },
+    {
+      "id": "c20261125-openai-gpt6-protein-design-wetlab",
+      "title": "OpenAI preprint: GPT-6 family designs protein shapes and sequences through reasoning and code; Onava wet-lab test finds 35 of 322 minibinders bind their targets",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/OpenAI/status/2125334383490105601",
+          "publishedAt": "2026-11-24T21:02:58Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 80,
+        "interestingness": 85,
+        "technicalDepth": 80,
+        "reproducibility": 60,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 78.75. < 80. In window (X post 2026-11-24T21:02:58Z; page dated November 24, 2026). Per the OpenAI page and coverage, the wet-lab hits came from a hybrid pipeline in which specialized models supplied sequences and filtered candidates, so it does not show end-to-end GPT-6-only design; preprint, no code or designs reviewed by AgentLab."
+    },
+    {
+      "id": "c20261125-anthropic-siren-sandbox-escape",
+      "title": "Anthropic Siren: 1,700+ scenarios across 26 deliberately weakened sandboxes measure whether Claude agents escape to use something outside; newer models 0.6-1.6% misaligned use vs 12.7-25.8% for earlier Mythos models",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/AnthropicAI/status/2125341904644763678",
+          "publishedAt": "2026-11-24T21:32:51Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://safeguards.anthropic.com/2026/siren/",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 70,
+        "interestingness": 82,
+        "technicalDepth": 78,
+        "reproducibility": 70,
+        "credibility": 88
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 76.4. < 80. In window (X post 2026-11-24T21:32:51Z). Verified on the Siren page: bubblewrap, namespace jails, Docker, gVisor and QEMU setups each with a misconfiguration or CVE, honeypots and pressure prompts; mitigations reduce escapes. Valuable safety evaluation from the developer of the evaluated models; not a capability breakthrough."
+    },
+    {
+      "id": "c20261125-rh-lean-proof-recap-1125",
+      "title": "Riemann Hypothesis Lean proof recap posts (17M lines, 175,187 modules) circulate again on X",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/b1rkh0ff/status/2125302038535754170",
+          "publishedAt": "2026-11-24T18:54:26Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://math.mit.edu/~drew/grh/",
+          "publishedAt": "2026-11-24T05:25:00Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 80,
+        "technicalDepth": 70,
+        "reproducibility": 90,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 74.5. Rejected as a follow-up to article-20261121-001 with no new status: the MIT verification page still reads \"last updated 2026-11-24 05:25 UTC\" with the lake comparator v4.36.0 run in progress, the same state recorded by the 11-24 run."
+    },
+    {
+      "id": "c20261125-anthropic-fellows-neuron-basis",
+      "title": "Anthropic Fellows: Returning to the neuron basis for interpretability (two parts): MLP neurons mostly add one concept, keep meaning across layers, read with the J-lens; neurons used for harmful-concept detection, steering and backdoor-trigger audits",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/AnthropicAI/status/2125365268381929637",
+          "publishedAt": "2026-11-24T23:05:42Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://alignment.anthropic.com/2026/neuron-basis-theory/",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://alignment.anthropic.com/2026/neuron-basis-applications/",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 75,
+        "technicalDepth": 80,
+        "reproducibility": 72,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 73.55. < 80. In window (X post 2026-11-24T23:05:42Z). Verified on the two alignment.anthropic.com posts. Solid interpretability argument, incremental relative to prior neuron and lens work."
+    },
+    {
+      "id": "c20261125-llamaindex-ocria-1-weights",
+      "title": "LlamaIndex open-sources OCRia-1, a 4B document-OCR VLM (second open-weight release in two days)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/jerryjliu0/status/2125266115874144473",
+          "publishedAt": "2026-11-24T16:31:42Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 65,
+        "technicalDepth": 60,
+        "reproducibility": 85,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 65.0. < 80. In window (2026-11-24T16:31:42Z). Useful open weights; benchmark claims are self-reported and the model card was not reviewed."
+    },
+    {
+      "id": "c20261125-openai-perplexity-intelligence-metric",
+      "title": "Jakub Pachocki \"Perplexity and Intelligence\": OpenAI proposes log-perplexity on a fixed code set as a shared progress metric; Jason Wei replicates the idea with public data",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/_jasonwei/status/2125294984949809309",
+          "publishedAt": "2026-11-24T18:26:25Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 80,
+        "technicalDepth": 60,
+        "reproducibility": 40,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 62.5. < 80. In-window discussion (2026-11-24T18:26:25Z). The OpenAI curve uses an unreleased internal dataset; primary OpenAI post not retrieved by AgentLab."
+    },
+    {
+      "id": "c20261125-arxiv-canon-feynman-integrals",
+      "title": "CANON: Agent-Assisted Construction of Canonical Differential Equations for Feynman Integrals",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.33100",
+          "publishedAt": "2026-11-24T18:35:05Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 65,
+        "technicalDepth": 70,
+        "reproducibility": 50,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 61.25. < 80. In window (2026-11-24T18:35:05Z). Agent-for-physics tooling; not verified beyond the abstract."
+    },
+    {
+      "id": "c20261125-arxiv-omniact-million-embodiments",
+      "title": "OmniAct: One Policy, One Million Embodiments",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.33158",
+          "publishedAt": "2026-11-24T18:59:58Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 70,
+        "technicalDepth": 65,
+        "reproducibility": 45,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 60.75. < 80. In window (submitted 2026-11-24T18:59:58Z). Abstract-level review only; code/weights not verified."
+    },
+    {
+      "id": "c20261125-telos-live-1-full-duplex",
+      "title": "Telos Lab Telos-Live-1 preview: omni-modal full-duplex model that keeps talking while it searches, uses tools or operates computers",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Telos_lab/status/2125292671032013294",
+          "publishedAt": "2026-11-24T18:17:13Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://teloslab.com/research/introducing-telos-live-1",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 70,
+        "technicalDepth": 60,
+        "reproducibility": 40,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 59.0. < 80. In window (2026-11-24T18:17:13Z). Preview only, no weights or independent evaluation."
+    },
+    {
+      "id": "c20261125-arxiv-aichipbench",
+      "title": "AIChipBench: Benchmarking LLM Agents for Automated AI Accelerator Design",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.33093",
+          "publishedAt": "2026-11-24T18:28:41Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/frontiereval/AIChipBench",
+          "publishedAt": "2026-11-24T18:24:55Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        }
+      ],
+      "repository": {
+        "language": "HTML",
+        "stars": 2,
+        "license": "Apache-2.0",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 60,
+        "technicalDepth": 60,
+        "reproducibility": 70,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 58.0. < 80. In window (arXiv 2026-11-24T18:28:41Z; repo created in window). New benchmark, early."
+    },
+    {
+      "id": "c20261125-arxiv-mirror-test-robot-policies",
+      "title": "Embodied AI Fails the Mirror Test: How a Simple Mirror Breaks Robot Policies",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.33010",
+          "publishedAt": "2026-11-24T17:32:00Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 70,
+        "technicalDepth": 50,
+        "reproducibility": 70,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 57.0. < 80. In window (2026-11-24T17:32:00Z); code linked in the comment (iPPLab/robodojo-mirror). Robustness finding, narrow scope."
+    },
+    {
+      "id": "c20261125-higgsfield-magi-2-video",
+      "title": "MAGI-2 video model launches exclusively on Higgsfield (up to 30 s 1080p, $0.08/s); 400B open weights promised",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/higgsfield/status/2125290656692085164",
+          "publishedAt": "2026-11-24T18:09:13Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 75,
+        "technicalDepth": 45,
+        "reproducibility": 30,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 55.25. < 80. In window (2026-11-24T18:09:13Z). Closed hosted launch; open weights only promised."
+    },
+    {
+      "id": "c20261125-arxiv-shellbench",
+      "title": "ShellBench: What Matters More for AI Agents, Models, or Harness for Everyday Tasks",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.32946",
+          "publishedAt": "2026-11-24T16:48:06Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 60,
+        "technicalDepth": 55,
+        "reproducibility": 60,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 54.5. < 80. In window (2026-11-24T16:48:06Z), 22 authors. Benchmark study, not verified beyond the abstract."
+    },
+    {
+      "id": "c20261125-arxiv-pyrua-dex",
+      "title": "PyRUA-Dex: Learning Programmatic Policies for Dexterous Bimanual Manipulation with Coding Agents",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.33144",
+          "publishedAt": "2026-11-24T18:56:44Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 60,
+        "technicalDepth": 60,
+        "reproducibility": 45,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 54.25. < 80. In window (2026-11-24T18:56:44Z). Abstract-level review only."
+    },
+    {
+      "id": "c20261125-ternary-bonsai-2-5-27b-gguf",
+      "title": "prism-ml Ternary-Bonsai-2.5-27B-GGUF on Hugging Face (trending)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
+          "publishedAt": "2026-11-24T16:32:20Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 55,
+        "technicalDepth": 45,
+        "reproducibility": 80,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 53.75. < 80. HF repo created in window; quantized packaging of an existing model, card not reviewed."
+    },
+    {
+      "id": "c20261125-facebookresearch-agentbox",
+      "title": "facebookresearch/agentbox: distributed container orchestrator for AI agents",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/facebookresearch/agentbox",
+          "publishedAt": "2026-11-24T22:39:03Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 9,
+        "license": "Apache-2.0",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 55,
+        "technicalDepth": 50,
+        "reproducibility": 70,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 53.25. < 80. Repo created in window; infrastructure release without evaluation."
+    },
+    {
+      "id": "c20261125-shadownet-benchmark",
+      "title": "shadownet-benchmark: agentic penetration-testing benchmark with a 96-container enterprise network and 103 dynamic flags",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/inwpu/shadownet-benchmark",
+          "publishedAt": "2026-11-25T03:52:50Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 28,
+        "license": "NOASSERTION",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 55,
+        "technicalDepth": 55,
+        "reproducibility": 70,
+        "credibility": 45
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 53.25. < 80. Repo created in window; no paper verified."
+    },
+    {
+      "id": "c20261125-xiaomi-os-memory",
+      "title": "XiaoMi/os-memory: OS-centric personal memory for on-device agents built from cross-app phone records",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/XiaoMi/os-memory",
+          "publishedAt": "2026-11-25T08:17:55Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 20,
+        "license": "Apache-2.0",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 55,
+        "technicalDepth": 50,
+        "reproducibility": 70,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 52.75. < 80. Repo created in window; early project, no paper verified."
+    },
+    {
+      "id": "c20261125-arxiv-delegent",
+      "title": "Delegent: A Multi-Agent Harness That Reduces Cost without Sacrificing Performance",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.33098",
+          "publishedAt": "2026-11-24T18:34:40Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 55,
+        "technicalDepth": 55,
+        "reproducibility": 50,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 50.75. < 80. In window (2026-11-24T18:34:40Z). Abstract-level review only."
+    },
+    {
+      "id": "c20261125-llm-asm-bare-metal",
+      "title": "llm.asm: 12 KB Qwen3-0.6B inference in assembly plus a bootable 22 KB OS",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/alesha-pro/llm.asm",
+          "publishedAt": "2026-11-25T07:28:51Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Assembly",
+        "stars": 17,
+        "license": "MIT",
+        "commit": null
+      },
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 60,
+        "technicalDepth": 50,
+        "reproducibility": 75,
+        "credibility": 35
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 50.25. < 80. Repo created in window; hobby project, claims not reproduced."
+    },
+    {
+      "id": "c20261125-openhands-v1-46-0",
+      "title": "OpenHands v1.46.0 release",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.46.0",
+          "publishedAt": "2026-11-25T14:13:07Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 45,
+        "technicalDepth": 40,
+        "reproducibility": 85,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 49.0. < 80. Routine release in window."
+    },
+    {
+      "id": "c20261125-tencent-wepocketmodel-mlx",
+      "title": "Tencent WePocketModel1.0-4B/2B MLX builds on Hugging Face",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/tencent/WePocketModel1.0-4B-MLX",
+          "publishedAt": "2026-11-25T06:25:21Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 40,
+        "technicalDepth": 35,
+        "reproducibility": 70,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 44.5. < 80. Created in window; little documentation reviewed."
+    },
+    {
+      "id": "c20261125-google-gemini-4-neon-usage-record",
+      "title": "Sundar Pichai: Gemini 4 Neon set a Day-1 paid-API usage record; Antigravity tokens/day up 82% since Argon",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/sundarpichai/status/2125311868168515603",
+          "publishedAt": "2026-11-24T19:33:30Z",
+          "retrievedAt": "2026-11-26T01:31:37+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 60,
+        "technicalDepth": 20,
+        "reproducibility": 20,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 38.5. < 80. Usage metric post (2026-11-24T19:33:30Z), no technical content."
+    }
+  ]
+}
