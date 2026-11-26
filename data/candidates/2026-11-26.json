@@ -1,0 +1,693 @@
+{
+  "date": "2026-11-26",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "selectedCandidateId": null,
+  "candidates": [
+    {
+      "id": "c20261126-grh-lean-sernau-76k",
+      "title": "Anthropic researcher Luke Sernau releases lsernau/grh-lean: a rewritten Lean 4 proof of RH and GRH for Dirichlet L-functions, about 76,000 lines (compact) / 300,000 lines (readable), versus the 17.4M-line Alpöge-Claude original",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/lsernau/grh-lean",
+          "publishedAt": "2026-11-25T20:42:55Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/lsernau/grh-lean/tree/main/grh-compact",
+          "publishedAt": "2026-11-25T20:38:07Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/RyanYanBuilds/status/2125822346393157697",
+          "publishedAt": "2026-11-26T05:21:57Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/illulachy_/status/2125746558532825095",
+          "publishedAt": "2026-11-26T00:20:48Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Lean",
+        "stars": 818,
+        "license": "Apache-2.0",
+        "commit": "72fead102f"
+      },
+      "scores": {
+        "breakthrough": 85,
+        "interestingness": 92,
+        "technicalDepth": 90,
+        "reproducibility": 85,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 86.75. Score >= 80 but not a new article: it is a follow-up to the already-published RH Lean story (article-20261121-001), the same five theorems re-proved by a shorter rewriting. In window: single commit 72fead102f 'Lean proof of GRH' authored 2026-11-25T20:38:07Z, repo created 20:42:55Z. Verified on primary source: README and grh-compact/README state a rewriting of Alpöge's proof, Lean v4.35.0 + Mathlib 56a00585, axioms propext/Classical.choice/Quot.sound only, five theorems (riemannHypothesis, zeta zeros on Re=1/2, Dirichlet L non-vanishing for Re>1/2, zeros on the line, primitive case), Comparator v4.35.0 accepted by the authors; README: 'The proof has passed machine checks only... No mathematician has read it through, and no paper comes with it.' Apache-2.0, Copyright Anthropic PBC. AgentLab did not build it (1-2 h, 24 GB) and found no independent check yet. Flagged to Jason as a candidate update to article-20261121-001."
+    },
+    {
+      "id": "c20261126-chandrasekaran-null-cone-quantum-gravity",
+      "title": "Venkatesa Chandrasekaran (OpenAI) arXiv 2611.34924: background-independent algebraic quantization of vacuum 4D gravity from null cones; acknowledgements say several calculations and proofs were developed with GPT-6 Astra (~400M tokens)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.34924",
+          "publishedAt": "2026-11-25T18:58:55Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/tszzl/status/2125809711509336342",
+          "publishedAt": "2026-11-26T04:31:45Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 82,
+        "interestingness": 88,
+        "technicalDepth": 90,
+        "reproducibility": 45,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 77.85. < 80. In window (submitted 2026-11-25T18:58:55Z, hep-th). Verified abstract (finite graviton pair amplitude nonperturbative in G_N, finite-dimensional Hilbert space for causal diamonds, Bekenstein-Hawking entropy with Sen's log correction, semiclassical Einstein equations at one loop) and the HTML acknowledgements crediting GPT-6 Astra for several calculations and proofs. Single-author physics preprint, extraordinary claim, no independent review or code; the AI share is not separable from the paper."
+    },
+    {
+      "id": "c20261126-sensenova-roborsi-27b",
+      "title": "SenseTime SenseNova-RoboRSI-27B: open (Apache-2.0) embodied model trained with recursive self-improvement, no real-robot data in post-training, deployed on Piper arms; RoboDojo 34.7",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/KI_HAL_2023/status/2125862758516478084",
+          "publishedAt": "2026-11-26T08:02:32Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/OpenSenseNova/SenseNova-RoboRSI",
+          "publishedAt": "2026-10-09T14:28:26Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 72,
+        "interestingness": 80,
+        "technicalDepth": 78,
+        "reproducibility": 85,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 77.45. Out of window: repo created 2026-10-09 with RoboDojo results in README since 2026-10-16; quoted SenseTime_AI post 2125586674830959069 dates to 2026-11-25T13:45Z (snowflake), before the window. < 80, no backfill flag. Not found in earlier candidate files."
+    },
+    {
+      "id": "c20261126-hazy-platos-key",
+      "title": "Stanford Hazy Research 'Plato's Key': one closed-form rotation plus global scale lets an LLM use another LLM's hidden states (factual recall across 12 base LLMs, 8 families, 1.5B-27B)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/viviencheng__/status/2125631050319831474",
+          "publishedAt": "2026-11-25T16:41:49Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://hazyresearch.stanford.edu/blog/2026-11-25-platos-key",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 72,
+        "interestingness": 82,
+        "technicalDepth": 80,
+        "reproducibility": 65,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 75.85. < 80. In window (X 2026-11-25T16:41:49Z; blog dated Nov 25, 2026). Blog read: rotation + scale fit in closed form, donor 'France' state swapped into recipient flips Berlin to Paris. Blog post only, no peer review; limited to factual recall."
+    },
+    {
+      "id": "c20261126-hf-scaling-swarms",
+      "title": "Hugging Face 'Scaling Swarms to Thousands of Agents' open field report (1,000 DeepSeek agents build PyBot)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/lvwerra/status/2125612908499349833",
+          "publishedAt": "2026-11-25T15:29:44Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/spaces/HuggingFaceSwarms/scaling-swarms",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 82,
+        "technicalDepth": 70,
+        "reproducibility": 80,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 74.0. Out of window: first post 2026-11-25T15:29:44Z, before 16:00Z (belongs to the 11-25 window). < 80, so no backfill flag."
+    },
+    {
+      "id": "c20261126-anthropic-messages-api-rust-migration",
+      "title": "Anthropic engineering: Messages API migrated from Python to Rust, with Claude agent teams using the old service as an oracle (shadowing) to find and fix behavioral differences",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/AnthropicAI/status/2125627317263466739",
+          "publishedAt": "2026-11-25T16:26:59Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://www.anthropic.com/research/migrating-api-to-rust",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 70,
+        "interestingness": 85,
+        "technicalDepth": 80,
+        "reproducibility": 40,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 73.25. < 80. In window (X 2026-11-25T16:26:59Z; page 'Published Nov 25, 2026'). Read the official post: ~700 integration tests, >100 weakened assertions found when auditing ported tests, production shadowing as oracle. Internal system, not reproducible; engineering report rather than a research breakthrough."
+    },
+    {
+      "id": "c20261126-papail-weight-space-micromachines",
+      "title": "Dimitris Papailiopoulos: 'weight-space micromachines' written by Claude and bolted into Qwen3-0.6B weights (IFEval 58->72, GSM8K 68->83)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/DimitrisPapail/status/2125617058331160951",
+          "publishedAt": "2026-11-25T15:46:13Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://papail.io/papers/wsm/",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 70,
+        "interestingness": 82,
+        "technicalDepth": 70,
+        "reproducibility": 70,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 73.0. Out of window (post 2026-11-25T15:46:13Z, before 16:00Z). < 80."
+    },
+    {
+      "id": "c20261126-agenticppl",
+      "title": "Wenhao Chai 'AgenticPPL': perplexity on whole agent trajectories ranks models backwards on Terminal-Bench 2.1; perplexity on the ~0.3% command tokens written after terminal output ranks them correctly",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/wenhaocha1/status/2125721109303533973",
+          "publishedAt": "2026-11-25T22:39:41Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "http://wenhaochai.com/blogs/agentic-ppl.html",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 78,
+        "technicalDepth": 75,
+        "reproducibility": 75,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 72.25. < 80. In window. Blog read (dated Nov 25, 2026; toolkit and data linked). Blog, not peer reviewed; single benchmark."
+    },
+    {
+      "id": "c20261126-ramp-speculative-encoding",
+      "title": "Ramp Labs speculative encoding: a 2.35B MoE translates hidden states between 7 models, keeping 96.9% of base accuracy and cutting prefill latency up to 7.5x on long documents",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/RampLabs/status/2125627502802653330",
+          "publishedAt": "2026-11-25T16:27:43Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 70,
+        "interestingness": 78,
+        "technicalDepth": 75,
+        "reproducibility": 50,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 70.0. < 80. In window. Only the X thread was read; no paper or code verified."
+    },
+    {
+      "id": "c20261126-arxiv-tokenisation-not-apx",
+      "title": "arXiv 2611.34938: Tokenisation is not in APX (no constant-factor approximation unless P=NP)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.34938",
+          "publishedAt": "2026-11-25T18:59:38Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 62,
+        "interestingness": 70,
+        "technicalDepth": 85,
+        "reproducibility": 60,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 69.6. < 80. In window. Abstract verified. Theory result, narrow audience."
+    },
+    {
+      "id": "c20261126-arxiv-attack-policy-monitor-eval",
+      "title": "arXiv 2611.34934: Attack policy selection can mislead monitor evaluators (ex-production OpenAI monitor FNR 0.5%-23% depending on attack method)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.34934",
+          "publishedAt": "2026-11-25T18:59:28Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 58,
+        "interestingness": 72,
+        "technicalDepth": 75,
+        "reproducibility": 55,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 66.65. < 80. In window. Abstract verified."
+    },
+    {
+      "id": "c20261126-arxiv-coding-agents-over-edit",
+      "title": "arXiv 2611.34875: How much do coding agents over-edit? Delta Residue Attribution on 7,660 Copilot CLI trajectories from 18 models",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.34875",
+          "publishedAt": "2026-11-25T18:37:06Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 70,
+        "technicalDepth": 75,
+        "reproducibility": 70,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 66.5. < 80. In window. Abstract verified."
+    },
+    {
+      "id": "c20261126-ant-ming-image-02-design",
+      "title": "Ant Group inclusionAI Ming-Image-0.2-Design (6B DiT) open weights, #1 open-weight model on AA-Image-T2I v2.1 (1,095 Elo)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/AntLingAGI/status/2125916926048358827",
+          "publishedAt": "2026-11-26T11:37:47Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/inclusionAI/Ming-Image-0.2-Design",
+          "publishedAt": "2026-11-25T04:02:44Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 70,
+        "technicalDepth": 60,
+        "reproducibility": 80,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 65.5. < 80. Announced in window (HF repo createdAt 2026-11-25T04:02Z, likely private until announcement). Incremental image model."
+    },
+    {
+      "id": "c20261126-lucid-inference-proofs",
+      "title": "Lucid Computing and partners launch Inference Proofs, an open benchmark and public map of systems that prove which model produced an answer",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/LucidComputing/status/2125635757033361570",
+          "publishedAt": "2026-11-25T17:00:31Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/ai-verification-observatory/inference-proofs",
+          "publishedAt": "2026-11-03T09:06:38Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 65,
+        "technicalDepth": 65,
+        "reproducibility": 80,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 64.75. < 80. Launch in window; repo exists since 2026-11-03 (Apache-2.0, 23 stars)."
+    },
+    {
+      "id": "c20261126-tencent-dfly2",
+      "title": "Tencent Hunyuan open-sources DFly2, the Hy4 flash speculative-decoding drafter (claimed up to 4.2x speedup, shares target KV cache)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/TencentHunyuan/status/2125928146113585468",
+          "publishedAt": "2026-11-26T12:22:22Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 65,
+        "technicalDepth": 65,
+        "reproducibility": 70,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 63.75. < 80. In window. Repo/weights not located via GitHub/HF search at retrieval; claim not verified. Hy4 flash itself was covered 11-18."
+    },
+    {
+      "id": "c20261126-arxiv-dart-math-traces",
+      "title": "arXiv 2611.34928 (Apple): DART mines diverse alternative reasoning traces for hard math problems",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.34928",
+          "publishedAt": "2026-11-25T18:59:11Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 58,
+        "technicalDepth": 72,
+        "reproducibility": 55,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 61.15. < 80. In window. Abstract verified."
+    },
+    {
+      "id": "c20261126-real2worlds2real",
+      "title": "Real2Worlds2Real: scaling self-improving agentic Real2Sim2Real for robot manipulation (code release)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/real2worlds2real/real2worlds2real",
+          "publishedAt": "2026-11-26T09:01:59Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 60,
+        "technicalDepth": 65,
+        "reproducibility": 65,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 60.25. < 80. Repo created in window (MIT, 22 stars); paper not reviewed."
+    },
+    {
+      "id": "c20261126-arxiv-mixture-of-loops",
+      "title": "arXiv 2611.34923: Mixture-of-Loops Transformer (MoLT)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.34923",
+          "publishedAt": "2026-11-25T18:58:53Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 55,
+        "technicalDepth": 75,
+        "reproducibility": 55,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 60.0. < 80. In window. Abstract verified."
+    },
+    {
+      "id": "c20261126-model-carving",
+      "title": "KadenZheng/model-carving: code for 'Model Carving: Training Transformers That Optimize Their Own Topology'",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/KadenZheng/model-carving",
+          "publishedAt": "2026-11-25T17:29:46Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 50,
+        "interestingness": 55,
+        "technicalDepth": 65,
+        "reproducibility": 65,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 57.0. < 80. Repo created in window; paper not located."
+    },
+    {
+      "id": "c20261126-arxiv-drbench-pro",
+      "title": "arXiv 2611.34852: DRBench Pro, knowledge-centric benchmark for deep research agents",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.34852",
+          "publishedAt": "2026-11-25T18:25:30Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 55,
+        "technicalDepth": 65,
+        "reproducibility": 60,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 55.25. < 80. In window. Abstract verified."
+    },
+    {
+      "id": "c20261126-inspect-robots",
+      "title": "robodeltas/inspect-robots: open-source evals for physical AI (any LLM/VLA on any arm/humanoid, real or sim)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/robodeltas/inspect-robots",
+          "publishedAt": "2026-11-26T06:26:31Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 55,
+        "technicalDepth": 50,
+        "reproducibility": 75,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 54.5. < 80. Repo created in window (MIT, 23 stars)."
+    },
+    {
+      "id": "c20261126-cloudflare-search-for-agents",
+      "title": "Cloudflare Search for Agents beta: /.well-known/search endpoint returning Markdown passages",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/CFchangelog/status/2125930378066002388",
+          "publishedAt": "2026-11-26T12:31:14Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://developers.cloudflare.com/changelog/post/2026-11-25-search-for-agents/",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 65,
+        "technicalDepth": 35,
+        "reproducibility": 60,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 52.75. < 80. Product feature."
+    },
+    {
+      "id": "c20261126-obsidian-agent-connectors",
+      "title": "Obsidian official connectors letting any AI agent use a local vault",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/obsdmd/status/2125700941156651151",
+          "publishedAt": "2026-11-25T21:19:32Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 65,
+        "technicalDepth": 30,
+        "reproducibility": 70,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 51.75. < 80. Product feature."
+    },
+    {
+      "id": "c20261126-qwen-audio-3-1-multilingual",
+      "title": "Qwen-Audio-3.1 adds multilingual capabilities, focusing on Chinese dialects",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Alibaba_Qwen/status/2125798914490249411",
+          "publishedAt": "2026-11-26T03:48:51Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 55,
+        "technicalDepth": 45,
+        "reproducibility": 60,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 51.75. < 80. Capability update to an earlier release."
+    },
+    {
+      "id": "c20261126-openai-private-inference",
+      "title": "OpenAI tests Private Inference (confidential computing) with a small customer group",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/sama/status/2125638790593274259",
+          "publishedAt": "2026-11-25T17:12:34Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 70,
+        "technicalDepth": 40,
+        "reproducibility": 20,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 50.5. < 80. Limited test announcement, no technical details reviewed."
+    },
+    {
+      "id": "c20261126-microsoft-cogact2-libero",
+      "title": "microsoft/CogACT2-LIBERO checkpoint on Hugging Face",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/microsoft/CogACT2-LIBERO",
+          "publishedAt": "2026-11-26T15:53:37Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 40,
+        "technicalDepth": 40,
+        "reproducibility": 60,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 44.0. < 80. Created in window, no model card details or likes at retrieval."
+    },
+    {
+      "id": "c20261126-openai-codex-0-174-alpha",
+      "title": "openai/codex rust-v0.174.0-alpha.6 / alpha.7 prereleases",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.174.0-alpha.6",
+          "publishedAt": "2026-11-25T19:35:37Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.174.0-alpha.7",
+          "publishedAt": "2026-11-26T04:36:47Z",
+          "retrievedAt": "2026-11-27T01:29:16+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 20,
+        "interestingness": 35,
+        "technicalDepth": 30,
+        "reproducibility": 70,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 39.75. < 80. Routine prereleases."
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "mission-20261126-001",
+  "date": "2026-11-26",
+  "timezone": "Asia/Taipei",
+  "status": "awaiting_review",
+  "objective": {
+    "goal": "Discover, score, verify and propose one outstanding AI/agent discovery for 2026-11-26 (Asia/Taipei), or document a no-publish decision.",
+    "sources": [
+      "x",
+      "github",
+      "arxiv",
+      "huggingface"
+    ],
+    "deliverables": [
+      "Verified candidate batch",
+      "No-publish decision (no eligible new in-window candidate >= 80)",
+      "Mission record",
+      "Pull request"
+    ]
+  },
+  "agent": {
+    "id": "grokbot",
+    "framework": "Grok Bot (AgentLab-bot on minim4.home)",
+    "model": "grok-bot",
+    "runId": "grokbot-minim4-daily-2026-11-26-20261127T0123+0800"
+  },
+  "selection": {
+    "candidatesEvaluated": 27,
+    "selectedCandidateId": null,
+    "selectionScore": null,
+    "rankingArtifact": "data/candidates/2026-11-26.json"
+  },
+  "skillsUsed": [
+    {
+      "skill": "x-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-x-20261126-001"
+    },
+    {
+      "skill": "github-discovery",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-gh-20261126-001"
+    },
+    {
+      "skill": "arxiv-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ax-20261126-001"
+    },
+    {
+      "skill": "fact-check",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-fc-20261126-001"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t1",
+      "action": "git checkout main, pull --ff-only (to 9749d56, merge of PR #47), create branch daily/2026-11-26; tree clean at start; GitHub App key file present",
+      "tool": "git",
+      "status": "success",
+      "startedAt": "2026-11-26T17:23:24Z",
+      "finishedAt": "2026-11-26T17:23:24Z",
+      "evidenceIds": [
+        "ev-git-branch"
+      ]
+    },
+    {
+      "id": "t2",
+      "action": "Discovery for window 2026-11-25T16:00Z..2026-11-26T16:00Z: X news search (3 queries), full-archive post searches (lab accounts, release/paper keywords, GRH/Navier-Stokes, grh-lean); GitHub repo search created in window (7 queries; first attempt had a sed bug that set the window start equal to the end and was killed and rerun) and releases of 30 tracked repos; Hugging Face org listings and trending; arXiv export API (cs.AI/LG/CL/MA/RO, submittedDate window) returned 108 entries, all submitted 2026-11-25 18:20-19:00Z (US Thanksgiving 11-26)",
+      "tool": "gh + python urllib + X tools",
+      "status": "success",
+      "startedAt": "2026-11-26T17:23:24Z",
+      "finishedAt": "2026-11-26T17:25:04Z",
+      "evidenceIds": [
+        "ev-x",
+        "ev-gh",
+        "ev-arxiv"
+      ]
+    },
+    {
+      "id": "t3",
+      "action": "Verify top candidates on primary sources: lsernau/grh-lean commit 72fead102f (2026-11-25T20:38:07Z), README and grh-compact/README; arXiv 2611.34924 abstract and HTML acknowledgements (GPT-6 Astra credit); Anthropic Rust migration post; Hazy Research Plato's Key blog; AgenticPPL blog; SenseNova-RoboRSI repo dates; Ming-Image HF createdAt; inference-proofs repo; dedupe against earlier candidate files and articles (RH Lean article-20261121-001)",
+      "tool": "gh api, curl, X tools",
+      "status": "success",
+      "startedAt": "2026-11-26T17:25:04Z",
+      "finishedAt": "2026-11-26T17:26:35Z",
+      "evidenceIds": [
+        "ev-verify"
+      ]
+    },
+    {
+      "id": "t4",
+      "action": "Write 27-candidate JSON; no article: the only >= 80 item (grh-lean, 86.75) is a follow-up to the published RH Lean story, and no new in-window candidate reached 80 (best Chandrasekaran null-cone quantum gravity preprint 77.85)",
+      "tool": "python on minim4",
+      "status": "success",
+      "startedAt": "2026-11-26T17:29:16Z",
+      "finishedAt": "2026-11-26T17:29:16Z",
+      "evidenceIds": [
+        "ev-candidates"
+      ]
+    },
+    {
+      "id": "t5",
+      "action": "Run validate_content, unittest, npm run check, npm run build",
+      "tool": "python+npm",
+      "status": "success",
+      "startedAt": "2026-11-26T17:29:16Z",
+      "finishedAt": "2026-11-26T17:29:19Z",
+      "evidenceIds": [
+        "ev-tests"
+      ]
+    },
+    {
+      "id": "t6",
+      "action": "Commit as agentlab-aidatatools-bot[bot], push with short-lived installation token (in-memory URL), open PR and request chuangtc via requested_reviewers API",
+      "tool": "git + GitHub API",
+      "status": "not_run",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-pr"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "python scripts/validate_content.py",
+      "status": "passed",
+      "artifact": ".reports/2026-11-26/validate.log"
+    },
+    {
+      "name": "python -m unittest discover -s tests -v",
+      "status": "passed",
+      "artifact": ".reports/2026-11-26/unittest.log"
+    },
+    {
+      "name": "npm run check",
+      "status": "passed",
+      "artifact": ".reports/2026-11-26/astro-check.log"
+    },
+    {
+      "name": "npm run build",
+      "status": "passed",
+      "artifact": ".reports/2026-11-26/astro-build.log"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-git-branch",
+      "type": "git",
+      "ref": "branch daily/2026-11-26 from origin/main 9749d56"
+    },
+    {
+      "id": "ev-x",
+      "type": "api_response",
+      "ref": "Public X reads via Grok Bot X tools; key posts: AnthropicAI 2125627317263466739, viviencheng__ 2125631050319831474, RampLabs 2125627502802653330, wenhaocha1 2125721109303533973, tszzl 2125809711509336342, AntLingAGI 2125916926048358827, TencentHunyuan 2125928146113585468, RyanYanBuilds 2125822346393157697, lvwerra 2125612908499349833, DimitrisPapail 2125617058331160951, KI_HAL_2023 2125862758516478084"
+    },
+    {
+      "id": "ev-gh",
+      "type": "http_response",
+      "ref": "GitHub search/repositories created:2026-11-25T16:00:00Z..2026-11-26T16:00:00Z (7 queries) and releases of 30 tracked repos (.reports/2026-11-26/gh_new_repos.json, gh_releases_window.txt); gh api repos/lsernau/grh-lean commits, readme, contents/grh-compact/README.md"
+    },
+    {
+      "id": "ev-arxiv",
+      "type": "http_response",
+      "ref": "https://export.arxiv.org/api/query search_query=(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.MA OR cat:cs.RO) AND submittedDate:[202611251600 TO 202611261600] -> 108 entries (.reports/2026-11-26/arxiv_entries.json); id_list query for top papers (.reports/2026-11-26/arxiv_top.xml)"
+    },
+    {
+      "id": "ev-verify",
+      "type": "http_response",
+      "ref": "https://github.com/lsernau/grh-lean; https://arxiv.org/abs/2611.34924; https://arxiv.org/html/2611.34924v1; https://www.anthropic.com/research/migrating-api-to-rust; https://hazyresearch.stanford.edu/blog/2026-11-25-platos-key; http://wenhaochai.com/blogs/agentic-ppl.html; https://github.com/OpenSenseNova/SenseNova-RoboRSI (.reports/2026-11-26/verify1.txt, verify2.txt)"
+    },
+    {
+      "id": "ev-candidates",
+      "type": "file",
+      "ref": "data/candidates/2026-11-26.json"
+    },
+    {
+      "id": "ev-tests",
+      "type": "file",
+      "ref": ".reports/2026-11-26/tests.json"
+    },
+    {
+      "id": "ev-pr",
+      "type": "github",
+      "ref": "pending"
+    }
+  ],
+  "outcome": {
+    "articleId": null,
+    "githubCommit": null,
+    "githubPullRequest": null,
+    "deploymentUrl": null,
+    "publicationStatus": "not_published"
+  },
+  "metrics": {
+    "durationSeconds": null,
+    "tokens": null,
+    "estimatedCostUsd": null,
+    "humanInterventions": 0
+  },
+  "retrospective": {
+    "successes": [
+      "27 candidates with original URLs and timestamps (X 14, arXiv 7, GitHub 5, Hugging Face 1); arXiv export API answered (108 in-window entries)",
+      "Dated grh-lean from its single commit (2026-11-25T20:38:07Z) and recognised it as a follow-up to the published RH Lean story rather than a new article",
+      "Found the GPT-6 Astra credit in the acknowledgements of arXiv 2611.34924 instead of relying on X summaries"
+    ],
+    "failures": [
+      "No new in-window candidate reached 80 (best 77.85)",
+      "First discovery run used a wrong window start (sed substitution bug) and had to be killed and rerun",
+      "Tencent DFly2 code/weights and Ramp Labs speculative-encoding paper were not located; grh-lean was not built locally"
+    ],
+    "lessonsLearned": [
+      "When cloning the previous day's scripts with sed, substitute the end date before the start date or use explicit S/E assignments, and grep the result before running",
+      "Check arXiv HTML acknowledgements for AI-assistance credits; pdftotext is not installed on minim4"
+    ],
+    "nextActions": [
+      "chuangtc review on DEV then merge",
+      "Decide whether to update article-20261121-001 with the grh-lean 76k-line rewrite (86.75, follow-up)",
+      "Re-score the Chandrasekaran null-cone quantum gravity preprint if physicists review it"
+    ]
+  }
+}
