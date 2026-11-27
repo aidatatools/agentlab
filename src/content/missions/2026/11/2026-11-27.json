@@ -1,0 +1,228 @@
+{
+  "schemaVersion": "1.0",
+  "missionId": "mission-20261127-001",
+  "date": "2026-11-27",
+  "timezone": "Asia/Taipei",
+  "status": "awaiting_review",
+  "objective": {
+    "goal": "Discover, score, verify and propose one outstanding AI/agent discovery for 2026-11-27 (Asia/Taipei), or document a no-publish decision.",
+    "sources": [
+      "x",
+      "github",
+      "arxiv",
+      "huggingface"
+    ],
+    "deliverables": [
+      "Verified candidate batch",
+      "No-publish decision (no eligible in-window candidate >= 80)",
+      "Mission record",
+      "Pull request"
+    ]
+  },
+  "agent": {
+    "id": "grokbot",
+    "framework": "Grok Bot (AgentLab-bot on minim4.home)",
+    "model": "grok-bot",
+    "runId": "grokbot-minim4-daily-2026-11-27-20261128T0118+0800"
+  },
+  "selection": {
+    "candidatesEvaluated": 23,
+    "selectedCandidateId": null,
+    "selectionScore": null,
+    "rankingArtifact": "data/candidates/2026-11-27.json"
+  },
+  "skillsUsed": [
+    {
+      "skill": "x-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-x-20261127-001"
+    },
+    {
+      "skill": "github-discovery",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-gh-20261127-001"
+    },
+    {
+      "skill": "arxiv-research",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-ax-20261127-001"
+    },
+    {
+      "skill": "fact-check",
+      "version": "1.0.0",
+      "status": "success",
+      "executionId": "exec-fc-20261127-001"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t1",
+      "action": "git checkout main, pull --ff-only (to 9b31143, merge of PR #48), create branch daily/2026-11-27; tree clean at start; GitHub App key file present",
+      "tool": "git",
+      "status": "success",
+      "startedAt": "2026-11-27T17:18:42Z",
+      "finishedAt": "2026-11-27T17:18:42Z",
+      "evidenceIds": [
+        "ev-git-branch"
+      ]
+    },
+    {
+      "id": "t2",
+      "action": "Discovery for window 2026-11-26T16:00Z..2026-11-27T16:00Z (explicit S/E in discover.py): X news search (2 queries), full-archive post searches (lab accounts, researcher accounts, release/paper keywords, launch phrases); GitHub repo search created in window (7 queries) and releases of 30 tracked repos; Hugging Face org listings and trending; arXiv export API (cs.AI/LG/CL/MA/RO, submittedDate window) returned 0 entries because the newest indexed submission was 2026-11-25T18:59Z (no arXiv announcement over US Thanksgiving)",
+      "tool": "gh + python urllib + X tools",
+      "status": "success",
+      "startedAt": "2026-11-27T17:18:42Z",
+      "finishedAt": "2026-11-27T17:19:38Z",
+      "evidenceIds": [
+        "ev-x",
+        "ev-gh",
+        "ev-arxiv"
+      ]
+    },
+    {
+      "id": "t3",
+      "action": "Verify top candidates on primary sources: Robbyant/lingbot-navi and lingbot-map-v2 READMEs, commits and PublicEvent; earliest X posts for LingBot (robbyant_brain 18:30Z) and GigaChat 4 (12:32Z, before window); emad-ii/dot-product README and commits; MOSS-ZETA, R3-Video-Agent, AccelerateMD, qwen38-27b-baremetal-os repos; arXiv id_list dates for 2611.29240, 2611.34849, 2611.34575; MCP servers v2.6.0 and browser-use 1.0.9 release notes; HF cards for Sage-Med-Preview and Hy-Embodied-Apexio; dedupe against earlier candidate files and articles",
+      "tool": "gh api, curl, X tools",
+      "status": "success",
+      "startedAt": "2026-11-27T17:19:38Z",
+      "finishedAt": "2026-11-27T17:24:08Z",
+      "evidenceIds": [
+        "ev-verify"
+      ]
+    },
+    {
+      "id": "t4",
+      "action": "Write 23-candidate JSON; no article: no eligible in-window candidate reached 80 (best LingBot-Navi + LingBot-Map 2.0 at 78.95; GigaChat 4 77.6 is out of window)",
+      "tool": "python on minim4",
+      "status": "success",
+      "startedAt": "2026-11-27T17:26:05Z",
+      "finishedAt": "2026-11-27T17:26:12Z",
+      "evidenceIds": [
+        "ev-candidates"
+      ]
+    },
+    {
+      "id": "t5",
+      "action": "Run validate_content, unittest, npm run check, npm run build",
+      "tool": "python+npm",
+      "status": "success",
+      "startedAt": "2026-11-27T17:26:49Z",
+      "finishedAt": "2026-11-27T17:26:52Z",
+      "evidenceIds": [
+        "ev-tests"
+      ]
+    },
+    {
+      "id": "t6",
+      "action": "Commit as agentlab-aidatatools-bot[bot], push with short-lived installation token (in-memory URL), open PR and request chuangtc via requested_reviewers API",
+      "tool": "git + GitHub API",
+      "status": "not_run",
+      "startedAt": null,
+      "finishedAt": null,
+      "evidenceIds": [
+        "ev-pr"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "python scripts/validate_content.py",
+      "status": "passed",
+      "artifact": ".reports/2026-11-27/validate.log"
+    },
+    {
+      "name": "python -m unittest discover -s tests -v",
+      "status": "passed",
+      "artifact": ".reports/2026-11-27/unittest.log"
+    },
+    {
+      "name": "npm run check",
+      "status": "passed",
+      "artifact": ".reports/2026-11-27/astro-check.log"
+    },
+    {
+      "name": "npm run build",
+      "status": "passed",
+      "artifact": ".reports/2026-11-27/astro-build.log"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-git-branch",
+      "type": "git",
+      "ref": "branch daily/2026-11-27 from origin/main 9b31143"
+    },
+    {
+      "id": "ev-x",
+      "type": "api_response",
+      "ref": "Public X reads via Grok Bot X tools; key posts: robbyant_brain 2126020736066421010, ant_oss 2126023013653246369, EMostaque 2126045673581957242, mapte_fireball 2125930737895706831, QiweiWu7 2126223667181015244, MOSS_Global 2126261692854424042, rohanpaul_ai 2126118827264294915, _philschmid 2126312943520243885, ClementDelangue 2126322165364719677, Kimi_Moonshot 2126154696947871760, TencentHunyuan 2126261924803535020, MistralAI 2126292459265442028"
+    },
+    {
+      "id": "ev-gh",
+      "type": "http_response",
+      "ref": "GitHub search/repositories created:2026-11-26T16:00:00Z..2026-11-27T16:00:00Z (7 queries) and releases of 30 tracked repos (.reports/2026-11-27/gh_new_repos.json, gh_releases_window.txt)"
+    },
+    {
+      "id": "ev-arxiv",
+      "type": "http_response",
+      "ref": "https://export.arxiv.org/api/query search_query=(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.MA OR cat:cs.RO) AND submittedDate:[202611261600 TO 202611271600] -> 0 entries; newest cs.AI submission indexed 2026-11-25T18:59:57Z (.reports/2026-11-27/arxiv.xml, arxiv_entries.json)"
+    },
+    {
+      "id": "ev-verify",
+      "type": "http_response",
+      "ref": "https://github.com/Robbyant/lingbot-navi; https://github.com/Robbyant/lingbot-map-v2; https://github.com/emad-ii/dot-product; https://github.com/modelcontextprotocol/servers/releases/tag/v2.6.0; https://huggingface.co/internlm/Sage-Med-Preview; https://huggingface.co/ai-sage/GigaChat4-708B-A41B (.reports/2026-11-27/verify1.txt, verify2.txt)"
+    },
+    {
+      "id": "ev-candidates",
+      "type": "file",
+      "ref": "data/candidates/2026-11-27.json"
+    },
+    {
+      "id": "ev-tests",
+      "type": "file",
+      "ref": ".reports/2026-11-27/tests.json"
+    },
+    {
+      "id": "ev-pr",
+      "type": "github",
+      "ref": "pending"
+    }
+  ],
+  "outcome": {
+    "articleId": null,
+    "githubCommit": null,
+    "githubPullRequest": null,
+    "deploymentUrl": null,
+    "publicationStatus": "not_published"
+  },
+  "metrics": {
+    "durationSeconds": null,
+    "tokens": null,
+    "estimatedCostUsd": null,
+    "humanInterventions": 0
+  },
+  "retrospective": {
+    "successes": [
+      "23 candidates with original URLs and timestamps (X 11, GitHub 7, Hugging Face 3, arXiv 2 out of window)",
+      "Dated GigaChat 4 from earliest X posts (2026-11-26T12:32Z) and kept it out of this window instead of counting the 11-27 news cluster",
+      "Found that lingbot-navi was public on GitHub hours before the official launch thread"
+    ],
+    "failures": [
+      "No eligible in-window candidate reached 80 (best 78.95)",
+      "arXiv had no in-window submissions indexed (US Thanksgiving gap), so arXiv contributed 0 in-window items",
+      "Several X-summarised papers (NVIDIA self-compaction, NVIDIA chip-design forking, Amazon harness, Anthropic unlearning) were not traced to primary papers"
+    ],
+    "lessonsLearned": [
+      "After a US holiday, check the newest arXiv submission date before concluding a source is empty",
+      "X recency search returns only the newest results; to date a launch, rerun with end_time just before the oldest result",
+      "GigaChat 4 shows the previous window can miss non-English launches; add Russian-language and Sber terms to discovery"
+    ],
+    "nextActions": [
+      "chuangtc review on DEV then merge",
+      "Optional: decide whether GigaChat 4 (77.6, missed by the 11-26 run) deserves any coverage; below 80, so no backfill by default"
+    ]
+  }
+}

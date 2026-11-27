@@ -1,0 +1,671 @@
+{
+  "date": "2026-11-27",
+  "timezone": "Asia/Taipei",
+  "demo": false,
+  "discoveredBy": "grokbot",
+  "selectedCandidateId": null,
+  "candidates": [
+    {
+      "id": "c20261127-robbyant-lingbot-navi-map2",
+      "title": "Ant Group Robbyant open-sources LingBot-Navi (scene-aware navigation with reusable 3D spatial memory, weights + workplace dataset) and LingBot-Map 2.0 (reconsolidatable streaming 3D reconstruction with on-demand Refine)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/robbyant_brain/status/2126020736066421010",
+          "publishedAt": "2026-11-26T18:30:17Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/ant_oss/status/2126023013653246369",
+          "publishedAt": "2026-11-26T18:39:20Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/Robbyant/lingbot-navi",
+          "publishedAt": "2026-11-26T06:05:26Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/Robbyant/lingbot-map-v2",
+          "publishedAt": "2026-11-26T10:17:03Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/robbyant/lingbot-navi",
+          "publishedAt": "2026-11-25T11:42:02Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 86,
+        "license": "Apache-2.0",
+        "commit": "ddf9e633ce"
+      },
+      "scores": {
+        "breakthrough": 72,
+        "interestingness": 80,
+        "technicalDepth": 84,
+        "reproducibility": 85,
+        "credibility": 78
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 78.95. < 80. Official launch thread by @robbyant_brain at 2026-11-26T18:30Z (in window); note the lingbot-navi repo was already public from 2026-11-26T06:05Z (GitHub PublicEvent) with one commit 'Initial LingBot-Navi release' 10:02Z, and the LingBot-Map 2.0 README lists streaming inference code from 2026-11-21, so availability partly predates the window. Verified on primary sources: Navi README (spatial memory encoder + VL decoder + trajectory decoder; object grounding, image localization, coordinate navigation; Apache-2.0; weights on HF/ModelScope; dataset of reconstructed workplaces; 'First public release 2026-11-26'); Map 2.0 README (geometric streaming base model, without GCR). Results are self-reported: GOAT-Bench subset 68.60% subtask success and 38.04% SPL under simulator-controlled movement; Map 2.0 VBR ATE 31.12 m -> 4.72 m with Refine (from the X thread/tech report, not re-run). Solid open embodied release, not a field-changing result."
+    },
+    {
+      "id": "c20261127-sber-gigachat-4",
+      "title": "Sber GigaChat 4 open weights: GigaChat4-708B-A41B (MIT) and 37B-A4B, 1M-token context, Gated DeltaNet + DeepSeek Sparse Attention hybrid, instant and reasoning modes; self-reported SWE-bench Verified 80.89%",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/ai-sage/GigaChat4-708B-A41B",
+          "publishedAt": "2026-11-20T12:15:30Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/ai-sage/GigaChat4-37B-A4B",
+          "publishedAt": "2026-11-20T14:13:00Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/mapte_fireball/status/2125930737895706831",
+          "publishedAt": "2026-11-26T12:32:40Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/leo114119/status/2125936646398804076",
+          "publishedAt": "2026-11-26T12:56:09Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/AgentSparko/status/2126009121262473468",
+          "publishedAt": "2026-11-26T17:44:08Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 72,
+        "interestingness": 85,
+        "technicalDepth": 75,
+        "reproducibility": 85,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 77.6. Out of window: released at AI Journey (Moscow) on 2026-11-26 and already discussed on X from 2026-11-26T12:32Z (before 16:00Z), so it belonged to the 11-26 window, which did not capture it. < 80 in any case, so no backfill flag. HF createdAt 2026-11-20 (private until release), lastModified 2026-11-27; 708B card license MIT, 37B card 'other' (non-commercial per posts). Benchmarks are self-reported only."
+    },
+    {
+      "id": "c20261127-emad-dot-product-lean",
+      "title": "Emad Mostaque 'A Dot Product Is All You Need': four-page paper claiming the Gaussian law, Born weights and Lorentz structure of a free massive scalar field follow from a single positive dot product, with a Lean companion (emad-ii/dot-product)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/EMostaque/status/2126045673581957242",
+          "publishedAt": "2026-11-26T20:09:23Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        },
+        {
+          "platform": "github",
+          "url": "https://github.com/emad-ii/dot-product",
+          "publishedAt": "2026-11-26T19:40:30Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/EMostaque/status/2126050281817334147",
+          "publishedAt": "2026-11-26T20:27:41Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/qingbin_liu/status/2126197847146332575",
+          "publishedAt": "2026-11-27T06:14:04Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Lean",
+        "stars": 68,
+        "license": null,
+        "commit": "5ddedbef0d"
+      },
+      "scores": {
+        "breakthrough": 70,
+        "interestingness": 85,
+        "technicalDepth": 80,
+        "reproducibility": 75,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 74.5. < 80. In window (repo created 2026-11-26T19:40:30Z, first commit 'Release A Dot Product Is All You Need' 20:10:53Z; announcement 20:09Z). README read: scope is a 'mathematical determination theorem for a free massive scalar field, not an empirical claim'; Lean check covers a stated finite construction, and independent readers note the continuum-limit analytic steps are not formalised. Author credits GPT 6.2 Astra and Gemini Neon for finishing and formalising. Single-author, unreviewed, the headline ('every axiom of QM and SR') overstates the proved scope."
+    },
+    {
+      "id": "c20261127-nvidia-model-self-compaction",
+      "title": "NVIDIA paper: letting models compact their own context (NOOA) nearly triples GPT-6.1 Sol's score at a 32K budget, with large differences between models",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/rohanpaul_ai/status/2126118827264294915",
+          "publishedAt": "2026-11-27T01:00:04Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/Ldataengineer/status/2126025265943810374",
+          "publishedAt": "2026-11-26T18:48:17Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 65,
+        "interestingness": 72,
+        "technicalDepth": 75,
+        "reproducibility": 55,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 67.25. < 80. Only X summaries were read; the paper link and submission date were not verified (arXiv had no in-window entries, so the paper likely predates the window)."
+    },
+    {
+      "id": "c20261127-internlm-sage-med-preview",
+      "title": "Shanghai AI Lab Sage-Med-Preview: 35B-A3B medical multimodal model on Intern-S2-Preview (164M records, 226B tokens), self-reported 58.26 average over 31 medical benchmarks",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/internlm/Sage-Med-Preview",
+          "publishedAt": "2026-11-27T04:41:40Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        },
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.34575",
+          "publishedAt": "2026-11-25T15:39:45Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 62,
+        "interestingness": 65,
+        "technicalDepth": 75,
+        "reproducibility": 70,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 66.85. < 80. Weights posted in window (HF createdAt 2026-11-27T04:41:40Z); model card read; the paper predates the window. Domain model with self-reported results only."
+    },
+    {
+      "id": "c20261127-tacinf-tactile-infra",
+      "title": "Tacinf: open-source tactile infrastructure for robot manipulation (Tacumi collection, teleop and simulation data, VTLA policies, sim-to-real evaluation) under USD 2,500",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.29240",
+          "publishedAt": "2026-11-22T05:17:54Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/QiweiWu7/status/2126223667181015244",
+          "publishedAt": "2026-11-27T07:56:40Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://tacinf.github.io/",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 62,
+        "interestingness": 60,
+        "technicalDepth": 70,
+        "reproducibility": 80,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 66.1. Out of window: arXiv v1 submitted 2026-11-22T05:17:54Z; the in-window author post is a re-announcement. < 80."
+    },
+    {
+      "id": "c20261127-accelerate-md-benchmark",
+      "title": "AccelerateMD: benchmark of coding agents optimising OpenMM molecular-dynamics CUDA code; Claude Opus 5.5 saves 52.47% of runtime (2.104x) on six private systems",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/0oSigma/AccelerateMD",
+          "publishedAt": "2026-11-26T16:50:51Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://0osigma.github.io/AccelerateMD/",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        }
+      ],
+      "repository": {
+        "language": "HTML",
+        "stars": 6,
+        "license": null,
+        "commit": "f68e62775e"
+      },
+      "scores": {
+        "breakthrough": 62,
+        "interestingness": 68,
+        "technicalDepth": 72,
+        "reproducibility": 65,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 65.75. < 80. In window (repo created 2026-11-26T16:50:51Z, commit 'Publish AccelerateMD benchmark and results'). README read; private test systems limit reproducibility; small unknown team, 6 stars."
+    },
+    {
+      "id": "c20261127-anthropic-unlearning-still-know",
+      "title": "Anthropic researchers: 14 of 23 models trained to forget cyberattack knowledge still rank the right answers first",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/rohanpaul_ai/status/2126088997017706717",
+          "publishedAt": "2026-11-26T23:01:32Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 62,
+        "interestingness": 70,
+        "technicalDepth": 72,
+        "reproducibility": 55,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 65.75. < 80. Only an X summary was read; paper and date not verified."
+    },
+    {
+      "id": "c20261127-real2simlab",
+      "title": "Real2SimLab (PKU): unified platform that freezes and re-scores coding agents rebuilding simulations from real video (47 agents, 6 benchmarks)",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "arxiv",
+          "url": "https://arxiv.org/abs/2611.34849",
+          "publishedAt": "2026-11-25T18:23:41Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/yaro360/status/2126139760515117342",
+          "publishedAt": "2026-11-27T02:23:15Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 58,
+        "interestingness": 62,
+        "technicalDepth": 70,
+        "reproducibility": 75,
+        "credibility": 70
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 65.15. Out of window: arXiv submitted 2026-11-25T18:23:41Z (11-25 window). < 80."
+    },
+    {
+      "id": "c20261127-amazon-self-built-harness",
+      "title": "Amazon paper: frontier models can build their own agent harness from scratch, but self-revisions barely transfer to unseen tasks",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/rohanpaul_ai/status/2126127228329300257",
+          "publishedAt": "2026-11-27T01:33:27Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 72,
+        "technicalDepth": 70,
+        "reproducibility": 55,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 64.75. < 80. Only an X summary was read; paper and date not verified."
+    },
+    {
+      "id": "c20261127-qwen38-baremetal-os",
+      "title": "mitkox/qwen38-27b-baremetal-os: Qwen3.8-27B run as a bare-metal KVM OS in pure x86-64 NASM assembly (model via ivshmem)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/mitkox/qwen38-27b-baremetal-os",
+          "publishedAt": "2026-11-26T18:03:22Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Assembly",
+        "stars": 18,
+        "license": "MIT",
+        "commit": "6c43decc38"
+      },
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 75,
+        "technicalDepth": 70,
+        "reproducibility": 60,
+        "credibility": 60
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 64.25. < 80. Repo created in window (first commit authored 2026-11-25 'llm.asm Qwen3-0.6B inference'); README read; engineering stunt, performance not independently checked."
+    },
+    {
+      "id": "c20261127-mcp-servers-v2-6-0",
+      "title": "modelcontextprotocol/servers v2.6.0: eight security fixes across mcp-server-git, server-memory, mcp-server-fetch and server-filesystem (Windows)",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/modelcontextprotocol/servers/releases/tag/v2.6.0",
+          "publishedAt": "2026-11-27T09:51:35Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 60,
+        "technicalDepth": 65,
+        "reproducibility": 90,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 64.0. < 80. In window; release notes read (GHSA advisories for LFS program execution, repository-root escape, credential leak via git_remote, env expansion in repo_path, alternates race, git_merge overwriting ignored files). Important maintenance, not a breakthrough."
+    },
+    {
+      "id": "c20261127-openmoss-moss-zeta",
+      "title": "OpenMOSS MOSS-ZETA: full-duplex game agent harness with asynchronous high-frequency policy inference, demoed playing GTA 6",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/OpenMOSS/MOSS-ZETA",
+          "publishedAt": "2026-11-26T20:03:31Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/MOSS_Global/status/2126261692854424042",
+          "publishedAt": "2026-11-27T10:27:46Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 12,
+        "license": null,
+        "commit": "863c412f77"
+      },
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 75,
+        "technicalDepth": 65,
+        "reproducibility": 55,
+        "credibility": 55
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 63.5. < 80. Repo created in window (first commit 2026-11-26T19:45:58Z); demo video only, no benchmark verified."
+    },
+    {
+      "id": "c20261127-nju-r3-video-agent",
+      "title": "NJU R3 Video Agent: Revise, Replan, Remember agentic harness for self-improving long-form audiovisual storytelling",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/NJU-PCALab/R3-Video-Agent",
+          "publishedAt": "2026-11-27T07:08:49Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        }
+      ],
+      "repository": {
+        "language": "Python",
+        "stars": 16,
+        "license": "MIT",
+        "commit": "abddbbf84f"
+      },
+      "scores": {
+        "breakthrough": 55,
+        "interestingness": 62,
+        "technicalDepth": 65,
+        "reproducibility": 70,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 62.0. < 80. Repo created in window (MIT); paper not reviewed."
+    },
+    {
+      "id": "c20261127-nvidia-chip-design-live-fork",
+      "title": "NVIDIA paper: agents fixing chip designs finish a 23.7-hour job in 2.5 hours by testing fixes in parallel on 1-second live forks of the design session",
+      "type": "research_paper",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/rohanpaul_ai/status/2126238347261886638",
+          "publishedAt": "2026-11-27T08:55:00Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 60,
+        "interestingness": 62,
+        "technicalDepth": 72,
+        "reproducibility": 50,
+        "credibility": 65
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 61.9. < 80. Only an X summary was read; paper and date not verified."
+    },
+    {
+      "id": "c20261127-gemini-neon-deep-research-skill",
+      "title": "Google (Philipp Schmid) experimental deep research skill for Gemini 4 Neon coding agents (3-5 angles, parallel subagents with 8-12 step caps, primary sources)",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/_philschmid/status/2126312943520243885",
+          "publishedAt": "2026-11-27T13:51:25Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 45,
+        "interestingness": 70,
+        "technicalDepth": 50,
+        "reproducibility": 70,
+        "credibility": 75
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 59.0. < 80. In window; prompt/skill engineering, not research."
+    },
+    {
+      "id": "c20261127-google-distillation-guide",
+      "title": "Google Gemini Enterprise Agent Platform guide to distilling open models (Gemma, Qwen), endorsed by Hugging Face CEO",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/ClementDelangue/status/2126322165364719677",
+          "publishedAt": "2026-11-27T14:28:04Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 65,
+        "technicalDepth": 55,
+        "reproducibility": 60,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 56.25. < 80. In window; documentation guide, original Google page not read."
+    },
+    {
+      "id": "c20261127-browser-use-1-0-9",
+      "title": "browser-use 1.0.9: rotate_proxy for cloud browsers (11 blocking sites 48% -> 62%) and Claude prompt caching on all routes",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/browser-use/browser-use/releases/tag/1.0.9",
+          "publishedAt": "2026-11-26T22:45:43Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 50,
+        "technicalDepth": 50,
+        "reproducibility": 85,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 55.25. < 80. Routine release; notes read."
+    },
+    {
+      "id": "c20261127-tencent-hy-mt3-gguf",
+      "title": "Tencent Hy-MT3-30B-A3B translation model (102 languages) available in GGUF for llama.cpp",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/TencentHunyuan/status/2126261924803535020",
+          "publishedAt": "2026-11-27T10:28:41Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        },
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/tencent/Hy-MT3-30B-A3B-GGUF",
+          "publishedAt": "2026-11-17T02:08:12Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 55,
+        "technicalDepth": 40,
+        "reproducibility": 85,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 55.0. < 80. Packaging announcement in window; the model and GGUF repo date from 2026-11-17."
+    },
+    {
+      "id": "c20261127-mistral-voxtral-aa-ranking",
+      "title": "Mistral: five Voxtral models in the Artificial Analysis top 40 for transcription accuracy",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/MistralAI/status/2126292459265442028",
+          "publishedAt": "2026-11-27T12:30:01Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        },
+        {
+          "platform": "official",
+          "url": "https://artificialanalysis.ai/speech-to-text/non-streaming#error-rate-tabs",
+          "publishedAt": null,
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 35,
+        "interestingness": 45,
+        "technicalDepth": 35,
+        "reproducibility": 50,
+        "credibility": 80
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 44.25. < 80. Leaderboard marketing post."
+    },
+    {
+      "id": "c20261127-kimi-science-credits",
+      "title": "Moonshot AI offers free Kimi API credits for scientific research teams worldwide",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "x",
+          "url": "https://x.com/Kimi_Moonshot/status/2126154696947871760",
+          "publishedAt": "2026-11-27T03:22:36Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 30,
+        "interestingness": 60,
+        "technicalDepth": 20,
+        "reproducibility": 30,
+        "credibility": 90
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 41.5. < 80. Program announcement, no technical content."
+    },
+    {
+      "id": "c20261127-openai-codex-0-174-alpha8",
+      "title": "openai/codex rust-v0.174.0-alpha.8 prerelease",
+      "type": "github_project",
+      "sources": [
+        {
+          "platform": "github",
+          "url": "https://github.com/openai/codex/releases/tag/rust-v0.174.0-alpha.8",
+          "publishedAt": "2026-11-26T21:56:07Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 20,
+        "interestingness": 35,
+        "technicalDepth": 30,
+        "reproducibility": 70,
+        "credibility": 85
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 39.75. < 80. Routine prerelease."
+    },
+    {
+      "id": "c20261127-tencent-hy-embodied-apexio",
+      "title": "tencent/Hy-Embodied-Apexio-1.0 repository created on Hugging Face",
+      "type": "technology_news",
+      "sources": [
+        {
+          "platform": "huggingface",
+          "url": "https://huggingface.co/tencent/Hy-Embodied-Apexio-1.0",
+          "publishedAt": "2026-11-27T05:46:43Z",
+          "retrievedAt": "2026-11-28T01:26:05+08:00"
+        }
+      ],
+      "scores": {
+        "breakthrough": 40,
+        "interestingness": 40,
+        "technicalDepth": 30,
+        "reproducibility": 40,
+        "credibility": 50
+      },
+      "eligibility": "rejected",
+      "reason": "Weighted 39.0. < 80. Created in window but README not found (empty repo at retrieval); no claims to verify."
+    }
+  ]
+}
